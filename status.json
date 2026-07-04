@@ -1,9 +1,11 @@
 {
-  "updated_at": "2026-07-03T18:56:25.658184+00:00",
+  "updated_at": "2026-07-04T01:26:31.291775+00:00",
   "source": "ci",
-  "overall": "ok",
+  "overall": "warning",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "data.json is 54h old -- consider running scraper.py"
+  ],
   "repairs": [],
   "data": {
     "data_size_kb": 2157,
@@ -12,7 +14,7 @@
     "data_teams": 33,
     "rider_profiles": 100,
     "scraped_at": "2026-07-01T19:37:35.477682+00:00",
-    "data_age_hours": 47.3,
+    "data_age_hours": 53.8,
     "index_html_bytes": 194919
   }
 }

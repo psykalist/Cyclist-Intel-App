@@ -5,6 +5,16 @@ on:
     - cron: '30 17 * * *'   # 18:30 Irish time (UTC+1)
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
+# Serializes this workflow against scrape.yml and health-check.yml so they
+# never commit/push to main at the same time. Without this, two workflows
+# racing to push caused "[rejected] main -> main (fetch first)" followed by
+# a failed rebase retry ("cannot pull with rebase: you have unstaged
+# changes") -- losing a freshly-scraped data.json every time (bit us
+# 2026-07-02 through 2026-07-05, see incident notes in CLAUDE.md).
+concurrency:
+  group: uci-calendar-git-write
+  cancel-in-progress: false    
+
 permissions:
   contents: write
 

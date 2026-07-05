@@ -20,6 +20,13 @@ on:
         required: false
         default: 'false'
 
+# Serializes this workflow against update-data.yml and scrape.yml so they
+# never commit/push to main at the same time -- see the matching note in
+# update-data.yml for the incident this fixes.
+concurrency:
+  group: uci-calendar-git-write
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

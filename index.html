@@ -2290,7 +2290,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v78';
+const APP_VERSION = 'v79';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2834,13 +2834,37 @@ function computePoints(riderNames,createdAt,raceKey){
   let pts=0;const breakdown=[];
   const pool=[...(appData.recent||[]),...(appData.live||[])];
   const races=raceKey?pool.filter(race=>_raceKey(race)===raceKey):pool;
+  // Lazily built map of normalized team name -> normalized rider names on that
+  // team's roster (from appData.teams, the season-wide squad lists). Needed
+  // because TTT (team time trial) stage results are recorded by TEAM name in
+  // stage.top10 (r.is_ttt === true), not by rider -- e.g. TDF 2026 stage 1.
+  // Without this, matching r.name against myNorm directly never matches (a
+  // team name isn't a rider name), so a TTT stage win couldn't score any
+  // fantasy rider even though the real riders on that team earned it.
+  let teamRosterNorm=null;
+  function ridersOnTeam(teamNameRaw){
+    if(!teamRosterNorm){
+      teamRosterNorm=new Map();
+      for(const t of (appData.teams||[])){
+        teamRosterNorm.set(normName(t.name||''), new Set((t.riders||[]).map(r=>normName(r.name))));
+      }
+    }
+    return teamRosterNorm.get(normName(teamNameRaw))||new Set();
+  }
   for(const race of races){
     if(cutoff&&race.end_date){const rd=new Date(race.end_date);if(rd<cutoff)continue;}
     for(const stage of (race.stages||[])){
       for(const r of (stage.top10||[])){
-        if(r.rank>=1&&r.rank<=10&&myNorm.has(normName(r.name))){
-          const p=STAGE_PTS[r.rank]||0;
-          if(p>0){pts+=p;breakdown.push({race:race.name,label:'Stage '+stage.num,rank:r.rank,pts:p,rider:r.name});}
+        if(!(r.rank>=1&&r.rank<=10))continue;
+        const p=STAGE_PTS[r.rank]||0;
+        if(!p)continue;
+        if(r.is_ttt){
+          const roster=ridersOnTeam(r.name);
+          for(const name of riderNames){
+            if(roster.has(normName(name))){pts+=p;breakdown.push({race:race.name,label:'Stage '+stage.num+' (TTT)',rank:r.rank,pts:p,rider:name});}
+          }
+        } else if(myNorm.has(normName(r.name))){
+          pts+=p;breakdown.push({race:race.name,label:'Stage '+stage.num,rank:r.rank,pts:p,rider:r.name});
         }
       }
     }

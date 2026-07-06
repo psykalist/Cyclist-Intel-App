@@ -118,6 +118,23 @@ header h1 span { color: var(--accent); }
   position: absolute; top: 8px; right: 10px; cursor: pointer; color: var(--muted); font-size: .9rem;
 }
 
+.scripts-status-btn { margin-left: 6px; cursor: pointer; opacity: .55; font-size: .82rem; }
+.scripts-status-btn:hover { opacity: 1; }
+.scripts-panel { max-height: 70vh; overflow-y: auto; }
+.script-row { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.script-row:last-child { border-bottom: none; }
+.script-row.failed { background: rgba(230,57,70,.08); margin: 0 -14px; padding: 8px 14px; }
+.script-name { font-weight: 700; font-size: .85rem; display: flex; align-items: center; gap: 6px; }
+.script-row.failed .script-name { color: var(--live); }
+.script-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.script-dot.ok       { background: #2dd36f; }
+.script-dot.fail     { background: var(--live); }
+.script-dot.running  { background: var(--accent); }
+.script-dot.unknown  { background: var(--muted); }
+.script-desc { color: var(--muted); font-size: .76rem; margin-top: 3px; line-height: 1.4; }
+.script-meta { color: var(--muted); font-size: .72rem; margin-top: 5px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.script-meta a { color: var(--upcoming); text-decoration: none; }
+
 /* ── Filter bar ── */
 .filter-bar {
   display: flex;
@@ -996,8 +1013,9 @@ header h1 span { color: var(--accent); }
     </div>
   </div>
   <div class="header-sub">
-    <span id="last-updated">Loading…</span><span id="data-health" class="data-health" onclick="toggleHealthDetail()" title="Tap for update diagnostics"></span> <span id="app-version" style="opacity:.45;margin-left:6px"></span>
+    <span id="last-updated">Loading…</span><span id="data-health" class="data-health" onclick="toggleHealthDetail()" title="Tap for update diagnostics"></span> <span id="app-version" style="opacity:.45;margin-left:6px"></span><span id="scripts-status-btn" class="scripts-status-btn" onclick="toggleScriptsPanel()" title="View update scripts status">⚙️</span>
     <div id="health-detail" class="health-detail-panel"></div>
+    <div id="scripts-panel" class="health-detail-panel scripts-panel"></div>
   </div>
 </header>
 
@@ -2315,7 +2333,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v81';
+const APP_VERSION = 'v82';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2618,6 +2636,108 @@ async function toggleHealthDetail() {
 }
 
 setInterval(renderDataHealth, 60 * 1000); // keep the late/next-update badge live between fetches
+
+// ── Update scripts status panel ─────────────────────────────────────────────
+// Lists every GitHub Actions workflow that touches data.json/rider_profiles.json,
+// what it does, when it's scheduled, and whether its most recent run on GitHub
+// succeeded -- pulled live from GitHub's public REST API (no auth needed for a
+// public repo). Local-only mechanisms (Cowork scheduled tasks) aren't queryable
+// from here, so this only covers the GitHub Actions side.
+const UCI_REPO = 'psykalist/UCI-Calendar';
+const UPDATE_SCRIPTS = [
+  {
+    file: 'scrape.yml',
+    name: 'Results + Startlists',
+    desc: 'Fetches new stage results/classifications for currently live races, promotes races between Live → Upcoming → Recent, and refreshes startlists for upcoming/live races.',
+    schedule: '11:00 & 17:00 UTC daily'
+  },
+  {
+    file: 'health-check.yml',
+    name: 'Health Watchdog',
+    desc: 'Checks data.json is valid and fresh; auto-repairs (restores from git, re-triggers a scrape) if it looks stale or broken. Runs on GitHub’s own cloud servers, independent of the self-hosted runner.',
+    schedule: 'Every 6 hours'
+  },
+  {
+    file: 'update-co-stats.yml',
+    name: 'CyclingOracle Stats',
+    desc: 'Refreshes rider co_stats (form, climbing, sprint, TT scores etc.) used for the Rankings tab and Team Claudius.',
+    schedule: 'Monday 06:00 UTC'
+  },
+  {
+    file: 'update-data.yml',
+    name: 'Full Scrape (manual)',
+    desc: 'Full calendar discovery + team rosters + rider profile backfill + startlists, all together. Only needed if the race calendar itself changes (season start, race added/cancelled) — no longer runs on a schedule.',
+    schedule: 'Manual only'
+  },
+  {
+    file: 'scrape-teams.yml',
+    name: 'Refresh Team Rosters (manual)',
+    desc: 'Refreshes WorldTeam/ProTeam rosters only — run after a transfer window or roster announcement.',
+    schedule: 'Manual only'
+  },
+  {
+    file: 'scrape-rider-profiles.yml',
+    name: 'Backfill Rider Profiles (manual)',
+    desc: 'Fetches profiles for riders not yet known to the app — run when a new signing/neo-pro is missing from search or rankings.',
+    schedule: 'Manual only'
+  },
+];
+
+let _scriptsRunStatus = {};
+async function fetchScriptRunStatus(file) {
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${UCI_REPO}/actions/workflows/${file}/runs?per_page=1&branch=main`,
+      { cache: 'no-store' }
+    );
+    if (!r.ok) return null;
+    const d = await r.json();
+    const run = (d.workflow_runs || [])[0];
+    if (!run) return null;
+    return { status: run.status, conclusion: run.conclusion, created_at: run.created_at, url: run.html_url };
+  } catch (e) { return null; }
+}
+
+function fmtRelTime(iso) {
+  if (!iso) return '';
+  return fmtDuration(Date.now() - new Date(iso).getTime()) + ' ago';
+}
+
+function buildScriptsPanelHTML() {
+  const rows = UPDATE_SCRIPTS.map(s => {
+    const run = _scriptsRunStatus[s.file];
+    let dotCls = 'unknown', statusText = 'No run data yet', rowCls = '';
+    if (run) {
+      if (run.status !== 'completed') {
+        dotCls = 'running'; statusText = '⏳ running now';
+      } else if (run.conclusion === 'success') {
+        dotCls = 'ok'; statusText = `✅ ${fmtRelTime(run.created_at)}`;
+      } else {
+        dotCls = 'fail'; rowCls = 'failed';
+        statusText = `❌ ${esc(run.conclusion || 'failed')} · ${fmtRelTime(run.created_at)}`;
+      }
+    }
+    const link = run ? ` · <a href="${esc(run.url)}" target="_blank" rel="noopener">view run</a>` : '';
+    return `<div class="script-row ${rowCls}">
+      <div class="script-name"><span class="script-dot ${dotCls}"></span>${esc(s.name)}</div>
+      <div class="script-desc">${esc(s.desc)}</div>
+      <div class="script-meta"><span>⏰ ${esc(s.schedule)}</span><span>${statusText}${link}</span></div>
+    </div>`;
+  }).join('');
+  return `<span class="hd-close" onclick="toggleScriptsPanel()">✕</span><h4>Update Scripts</h4>${rows}`;
+}
+
+async function toggleScriptsPanel() {
+  const panel = document.getElementById('scripts-panel');
+  if (!panel) return;
+  if (panel.classList.contains('show')) { panel.classList.remove('show'); return; }
+  panel.innerHTML = '<h4>Update Scripts</h4><div class="script-row">Loading…</div>';
+  panel.classList.add('show');
+  await Promise.all(UPDATE_SCRIPTS.map(async s => {
+    _scriptsRunStatus[s.file] = await fetchScriptRunStatus(s.file);
+  }));
+  panel.innerHTML = buildScriptsPanelHTML();
+}
 
 
 

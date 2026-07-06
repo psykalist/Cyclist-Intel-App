@@ -31,7 +31,7 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
 
   const isHtml = url.pathname.endsWith('/') || url.pathname.endsWith('.html');
-  const isData = url.pathname.endsWith('data.json') || url.pathname.endsWith('pcs_stats.json') || url.pathname.endsWith('rider_profiles.json') || url.pathname.endsWith('pcs_enrichment.json');
+  const isData = url.pathname.endsWith('data.json') || url.pathname.endsWith('pcs_stats.json') || url.pathname.endsWith('rider_profiles.json') || url.pathname.endsWith('pcs_enrichment.json') || url.pathname.endsWith('status.json');
 
   if (isHtml || isData) {
     // Network-first: try live, fall back to cache.
@@ -82,5 +82,4 @@ self.addEventListener('notificationclick', event => {
   event.notification.close();
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then(list => {
-      const existing = list.find(c => c.url.includes('index.html') || c.url.endsWith('/'));
-     
+      const existing = list.find(c => c.url.includes('ind

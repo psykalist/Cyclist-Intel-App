@@ -95,7 +95,28 @@ header h1 span { color: var(--accent); }
 }
 .refresh-btn:hover { color: var(--text); }
 
-.header-sub { font-size: .78rem; color: var(--muted); }
+.header-sub { font-size: .78rem; color: var(--muted); position: relative; }
+
+.data-health { margin-left: 6px; cursor: pointer; padding: 1px 6px; border-radius: 8px; }
+.data-health.health-ok { color: var(--muted); }
+.data-health.health-warn { background: rgba(244,162,97,.15); color: var(--accent); font-weight: 600; }
+.data-health.health-error { background: rgba(230,57,70,.15); color: var(--live); font-weight: 700; }
+.health-detail-panel {
+  display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 50;
+  margin-top: 8px; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px; font-size: .78rem; color: var(--text);
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+}
+.health-detail-panel.show { display: block; }
+.health-detail-panel h4 {
+  margin: 0 0 8px; font-size: .72rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .6px; font-weight: 700;
+}
+.health-detail-panel .hd-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
+.health-detail-panel .hd-list { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
+.health-detail-panel .hd-close {
+  position: absolute; top: 8px; right: 10px; cursor: pointer; color: var(--muted); font-size: .9rem;
+}
 
 /* ── Filter bar ── */
 .filter-bar {
@@ -974,7 +995,10 @@ header h1 span { color: var(--accent); }
       <button class="refresh-btn" onclick="refreshData()" title="Refresh">↻</button>
     </div>
   </div>
-  <div class="header-sub"><span id="last-updated">Loading…</span> <span id="app-version" style="opacity:.45;margin-left:6px"></span></div>
+  <div class="header-sub">
+    <span id="last-updated">Loading…</span><span id="data-health" class="data-health" onclick="toggleHealthDetail()" title="Tap for update diagnostics"></span> <span id="app-version" style="opacity:.45;margin-left:6px"></span>
+    <div id="health-detail" class="health-detail-panel"></div>
+  </div>
 </header>
 
 <div class="filter-bar" id="filter-bar">
@@ -2253,6 +2277,7 @@ async function loadData(force=false) {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     appData = await r.json();
     document.getElementById('last-updated').textContent = `Updated ${appData.scraped_at_human || '—'}`;
+    renderDataHealth();
     document.getElementById('loading').style.display = 'none';
     document.querySelectorAll('.section').forEach(s => s.style.display = '');
     renderLive(appData.live || []);
@@ -2290,7 +2315,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v79';
+const APP_VERSION = 'v80';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2382,6 +2407,7 @@ async function silentCheck() {
       appData = d;
       _lastScrapedAt = d.scraped_at;
       document.getElementById('last-updated').textContent = `Updated ${d.scraped_at_human || '—'}`;
+      renderDataHealth();
       renderLive(appData.live || []);
       renderUpcoming(appData.upcoming || []);
       renderRecent(appData.recent || []);
@@ -2470,6 +2496,128 @@ setInterval(silentCheck, 30 * 60 * 1000); // every 30 min
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') silentCheck();
 });
+
+// ── Data update health (expected update time + missing/late detector) ──────────
+// scrape.yml runs the results-only scraper at 11:00 & 17:00 UTC daily -- this is
+// the reliable core schedule (fires from GitHub Actions regardless of whether
+// Cowork or the local machine are running). We use it to predict the next
+// expected update and flag when a scheduled slot has passed without fresh data
+// landing -- see incident 2026-07-01/02 where data.json went stale 169h with no
+// visible signal until someone thought to check GitHub Actions manually.
+const UPDATE_SCHEDULE_UTC_HOURS = [11, 17];
+const UPDATE_GRACE_MIN = 45; // minutes after a scheduled slot before flagging late
+// Matches heal.py's own DATA_WARN_HOURS/DATA_ERROR_HOURS thresholds so the
+// in-app badge and the watchdog agree on what counts as a real problem.
+const HEALTH_WARN_HOURS = 26;
+const HEALTH_ERROR_HOURS = 72;
+
+function fmtDuration(ms) {
+  if (ms < 0) ms = 0;
+  const mins = Math.floor(ms / 60000);
+  const days = Math.floor(mins / 1440);
+  const hrs = Math.floor((mins % 1440) / 60);
+  const m = mins % 60;
+  if (days > 0) return `${days}d ${hrs}h`;
+  if (hrs > 0) return `${hrs}h ${m}m`;
+  return `${m}m`;
+}
+
+function computeUpdateSlots(now) {
+  // Candidate slots across yesterday/today/tomorrow so we always have a
+  // most-recent-past slot and a soonest-future slot relative to `now`.
+  const slots = [];
+  for (let dayOffset = -1; dayOffset <= 1; dayOffset++) {
+    for (const h of UPDATE_SCHEDULE_UTC_HOURS) {
+      slots.push(new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset, h, 0, 0)));
+    }
+  }
+  slots.sort((a, b) => a - b);
+  let recent = null, next = null;
+  for (const s of slots) {
+    if (s <= now) recent = s;
+    if (s > now && !next) next = s;
+  }
+  return { recent, next };
+}
+
+function computeDataHealth(scrapedAtISO) {
+  if (!scrapedAtISO) return null;
+  const lastScrape = new Date(scrapedAtISO);
+  if (isNaN(lastScrape)) return null;
+  const now = new Date();
+  const { recent, next } = computeUpdateSlots(now);
+  const graceMs = UPDATE_GRACE_MIN * 60000;
+  // "Late" means a scheduled slot has already passed (plus grace) but the
+  // last successful scrape happened before that slot was due to run.
+  const isLate = !!recent && lastScrape < recent && (now - recent) > graceMs;
+  const ageMs = now - lastScrape;
+  const ageHours = ageMs / 3600000;
+  let severity = 'ok';
+  if (isLate) severity = ageHours > HEALTH_ERROR_HOURS ? 'error' : 'warn';
+  return { lastScrape, recent, next, isLate, severity, ageMs, ageHours };
+}
+
+let _healthState = null;
+function renderDataHealth() {
+  const el = document.getElementById('data-health');
+  if (!el) return;
+  const h = computeDataHealth(appData.scraped_at);
+  _healthState = h;
+  if (!h) { el.textContent = ''; el.className = 'data-health'; return; }
+  const timeOpts = { hour: '2-digit', minute: '2-digit' };
+  if (h.isLate) {
+    el.className = 'data-health ' + (h.severity === 'error' ? 'health-error' : 'health-warn');
+    el.textContent = ` ⚠ ${fmtDuration(h.ageMs)} since update (expected ~${h.recent.toLocaleTimeString([], timeOpts)})`;
+  } else {
+    el.className = 'data-health health-ok';
+    el.textContent = h.next ? ` · next ~${h.next.toLocaleTimeString([], timeOpts)}` : '';
+  }
+}
+
+let _healthStatusJson = null;
+async function fetchHealthStatus() {
+  try {
+    const r = await fetch('./status.json?t=' + Date.now(), { cache: 'no-store' });
+    _healthStatusJson = r.ok ? await r.json() : null;
+  } catch (e) { _healthStatusJson = null; }
+}
+
+function buildHealthDetailHTML() {
+  const h = _healthState;
+  const timeOpts = { hour: '2-digit', minute: '2-digit', month: 'short', day: 'numeric' };
+  let rows = '';
+  if (h) {
+    rows += `<div class="hd-row"><span>Last data update</span><span>${esc(appData.scraped_at_human || '—')} (${fmtDuration(h.ageMs)} ago)</span></div>`;
+    rows += `<div class="hd-row"><span>Update schedule</span><span>~11:00 &amp; 17:00 UTC daily</span></div>`;
+    rows += `<div class="hd-row"><span>Next expected</span><span>${h.next ? h.next.toLocaleTimeString([], timeOpts) : '—'}</span></div>`;
+    rows += `<div class="hd-row"><span>Status</span><span>${h.isLate ? `⚠ overdue since ~${h.recent.toLocaleTimeString([], timeOpts)}` : '✅ on schedule'}</span></div>`;
+  } else {
+    rows += `<div class="hd-row"><span>Status</span><span>No data timestamp available</span></div>`;
+  }
+  const s = _healthStatusJson;
+  if (s) {
+    const icon = s.overall === 'ok' ? '✅' : s.overall === 'warning' ? '⚠' : '❌';
+    const checkedAt = s.updated_at ? new Date(s.updated_at).toLocaleString([], timeOpts) : '—';
+    rows += `<div class="hd-row" style="margin-top:6px;border-top:1px solid var(--border);padding-top:8px"><span>Watchdog (heal.py)</span><span>${icon} ${esc(s.overall || 'unknown')} · ${esc(checkedAt)}</span></div>`;
+    const issues = [...(s.errors || []), ...(s.warnings || [])];
+    if (issues.length) rows += `<ul class="hd-list">${issues.map(m => `<li>${esc(m)}</li>`).join('')}</ul>`;
+  } else {
+    rows += `<div class="hd-row" style="opacity:.6"><span>Watchdog (heal.py)</span><span>unavailable</span></div>`;
+  }
+  return `<span class="hd-close" onclick="toggleHealthDetail()">✕</span><h4>Data update health</h4>${rows}`;
+}
+
+async function toggleHealthDetail() {
+  const panel = document.getElementById('health-detail');
+  if (!panel) return;
+  if (panel.classList.contains('show')) { panel.classList.remove('show'); return; }
+  panel.innerHTML = '<h4>Data update health</h4><div class="hd-row"><span>Loading…</span></div>';
+  panel.classList.add('show');
+  await fetchHealthStatus();
+  panel.innerHTML = buildHealthDetailHTML();
+}
+
+setInterval(renderDataHealth, 60 * 1000); // keep the late/next-update badge live between fetches
 
 
 

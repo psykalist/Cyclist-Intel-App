@@ -2315,7 +2315,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v80';
+const APP_VERSION = 'v81';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2564,7 +2564,7 @@ function renderDataHealth() {
   const h = computeDataHealth(appData.scraped_at);
   _healthState = h;
   if (!h) { el.textContent = ''; el.className = 'data-health'; return; }
-  const timeOpts = { hour: '2-digit', minute: '2-digit' };
+  const timeOpts = { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' };
   if (h.isLate) {
     el.className = 'data-health ' + (h.severity === 'error' ? 'health-error' : 'health-warn');
     el.textContent = ` ⚠ ${fmtDuration(h.ageMs)} since update (expected ~${h.recent.toLocaleTimeString([], timeOpts)})`;
@@ -2584,11 +2584,11 @@ async function fetchHealthStatus() {
 
 function buildHealthDetailHTML() {
   const h = _healthState;
-  const timeOpts = { hour: '2-digit', minute: '2-digit', month: 'short', day: 'numeric' };
+  const timeOpts = { hour: '2-digit', minute: '2-digit', month: 'short', day: 'numeric', timeZone: 'Europe/Madrid' };
   let rows = '';
   if (h) {
     rows += `<div class="hd-row"><span>Last data update</span><span>${esc(appData.scraped_at_human || '—')} (${fmtDuration(h.ageMs)} ago)</span></div>`;
-    rows += `<div class="hd-row"><span>Update schedule</span><span>~11:00 &amp; 17:00 UTC daily</span></div>`;
+    rows += `<div class="hd-row"><span>Update schedule</span><span>~11:00 &amp; 17:00 UTC daily (Madrid time below)</span></div>`;
     rows += `<div class="hd-row"><span>Next expected</span><span>${h.next ? h.next.toLocaleTimeString([], timeOpts) : '—'}</span></div>`;
     rows += `<div class="hd-row"><span>Status</span><span>${h.isLate ? `⚠ overdue since ~${h.recent.toLocaleTimeString([], timeOpts)}` : '✅ on schedule'}</span></div>`;
   } else {

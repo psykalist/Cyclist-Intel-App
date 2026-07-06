@@ -1,9 +1,20 @@
-name: Update UCI Race Data
+name: Full Scrape - Calendar & Teams (manual)
 
+# Manual-only. This runs the full scraper.py (calendar discovery, team
+# rosters, rider profile backfill, and startlists all together) -- the
+# "do everything" ~20 min mode. It used to run on a daily cron, but once a
+# season's race calendar is published it essentially never finds anything
+# new: calendar discovery only matters if races are added/postponed/
+# cancelled mid-season, which is rare. Startlists (the one piece that does
+# change often) moved to scrape.yml's frequent job. Team roster refresh
+# and rider-profile backfill got their own focused, separately-triggerable
+# workflows (scrape-teams.yml, scrape-rider-profiles.yml) so you're not
+# stuck waiting on a 20-minute full run just to catch a transfer or a new
+# neo-pro. Run this one from the Actions tab only when the calendar itself
+# needs re-discovering -- e.g. at the start of a new season, or if a race
+# gets added/cancelled mid-year.
 on:
-  schedule:
-    - cron: '30 17 * * *'   # 18:30 Irish time (UTC+1)
-  workflow_dispatch:          # Allow manual trigger from GitHub UI
+  workflow_dispatch:
 
 # Serializes this workflow against scrape.yml and health-check.yml so they
 # never commit/push to main at the same time. Without this, two workflows
@@ -13,7 +24,7 @@ on:
 # 2026-07-02 through 2026-07-05, see incident notes in CLAUDE.md).
 concurrency:
   group: uci-calendar-git-write
-  cancel-in-progress: false    
+  cancel-in-progress: false
 
 permissions:
   contents: write

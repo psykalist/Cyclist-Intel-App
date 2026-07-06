@@ -1,0 +1,137 @@
+name: Refresh Team Rosters (manual)
+
+# Manual-only. Runs `scraper.py --teams-only` -- refreshes WorldTeam/ProTeam
+# rosters from cyclingflash.com without touching calendar, results, or
+# startlists. Split out from the old daily full scrape (see
+# scrape-full-manual.yml) so a mid-season transfer can be picked up in a
+# couple of minutes from the Actions tab instead of waiting on -- or
+# triggering -- the full ~20 min calendar/teams/rider-profile run.
+#
+# Run this whenever team rosters change (transfer windows, roster
+# announcements) -- there's no automatic trigger for that, someone has to
+# notice and run it.
+
+on:
+  workflow_dispatch:
+
+# Serializes this workflow against the other scrape/health workflows so they
+# never commit/push to main at the same time -- see the matching note in
+# update-data.yml for the incident this fixes.
+concurrency:
+  group: uci-calendar-git-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: "utf-8"
+
+jobs:
+  scrape-teams:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Same PATH-discovery dance as the other self-hosted workflows -- the
+      # runner service has no interactive user profile, so it only sees the
+      # machine-wide PATH. See scrape.yml for the full explanation.
+      - name: Locate Python and add it to PATH
+        shell: powershell
+        run: |
+          $found = $null
+
+          try {
+            $viaPy = & py -3 -c "import sys; print(sys.executable)" 2>$null
+            if ($LASTEXITCODE -eq 0 -and $viaPy) { $found = Split-Path $viaPy }
+          } catch {}
+
+          if (-not $found) {
+            foreach ($exe in @('python.exe','python3.exe')) {
+              try {
+                $whereOut = & where.exe $exe 2>$null
+                if ($LASTEXITCODE -eq 0 -and $whereOut) {
+                  foreach ($line in ($whereOut -split "`r?`n")) {
+                    if ($line -and (Test-Path $line) -and ((Get-Item $line).Length -gt 0)) {
+                      $found = Split-Path $line
+                      break
+                    }
+                  }
+                }
+              } catch {}
+              if ($found) { break }
+            }
+          }
+
+          if (-not $found) {
+            $regRoots = @(
+              'HKLM:\SOFTWARE\Python\PythonCore',
+              'HKLM:\SOFTWARE\WOW6432Node\Python\PythonCore',
+              'HKCU:\SOFTWARE\Python\PythonCore'
+            )
+            foreach ($root in $regRoots) {
+              if (Test-Path $root) {
+                $versions = Get-ChildItem $root -ErrorAction SilentlyContinue | Sort-Object Name -Descending
+                foreach ($v in $versions) {
+                  $ip = Get-ItemProperty -Path (Join-Path $v.PSPath 'InstallPath') -ErrorAction SilentlyContinue
+                  $dir = $ip.'(default)'
+                  if ($dir -and (Test-Path (Join-Path $dir 'python.exe'))) { $found = $dir.TrimEnd('\'); break }
+                }
+              }
+              if ($found) { break }
+            }
+          }
+
+          if (-not $found) {
+            $candidates = @()
+            $candidates += Get-ChildItem "C:\Program Files\Python*" -Directory -ErrorAction SilentlyContinue
+            $candidates += Get-ChildItem "C:\Program Files (x86)\Python*" -Directory -ErrorAction SilentlyContinue
+            $candidates += Get-ChildItem "C:\Users\*\AppData\Local\Programs\Python\Python*" -Directory -ErrorAction SilentlyContinue
+            $candidates += Get-ChildItem "C:\Python*" -Directory -ErrorAction SilentlyContinue
+            $candidates += Get-ChildItem "C:\ProgramData\chocolatey\lib\python*\tools" -Directory -ErrorAction SilentlyContinue
+            $match = $candidates | Where-Object { Test-Path (Join-Path $_.FullName "python.exe") } | Sort-Object FullName -Descending | Select-Object -First 1
+            if ($match) { $found = $match.FullName }
+          }
+
+          if (-not $found) {
+            Write-Error "Could not locate python.exe via py launcher, where.exe, registry, or filesystem search. Install Python 'for all users', or add its folder to this runner's system PATH manually."
+            exit 1
+          }
+          Write-Host "Found Python at: $found"
+          Add-Content -Path $env:GITHUB_PATH -Value $found
+          Add-Content -Path $env:GITHUB_PATH -Value (Join-Path $found "Scripts")
+
+      - name: Configure git + pull latest
+        shell: cmd
+        run: |
+          git config user.name "UCI Calendar Bot"
+          git config user.email "uci-bot@users.noreply.github.com"
+          git pull --rebase origin main || git pull origin main
+
+      - name: Run teams-only scraper
+        shell: cmd
+        run: python scraper.py --teams-only
+
+      - name: Commit and push if teams changed
+        shell: python
+        run: |
+          import subprocess
+          from datetime import datetime, timezone
+
+          subprocess.run(['git', 'add', 'data.json'], check=True)
+          diff = subprocess.run(['git', 'diff', '--staged', '--quiet'])
+          if diff.returncode != 0:
+              timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+              subprocess.run(['git', 'commit', '-m', f'data: refresh team rosters {timestamp}'], check=True)
+              result = subprocess.run(['git', 'push', 'origin', 'main'])
+              if result.returncode != 0:
+                  subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
+                  subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+              print('Pushed to GitHub')
+          else:
+              print('No team changes to commit')

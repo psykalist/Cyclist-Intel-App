@@ -166,6 +166,20 @@ jobs:
         shell: cmd
         run: python scraper.py --results-only
 
+      # Moved here from the old daily full-scrape workflow (now manual-only,
+      # see update-data.yml) -- startlists are the one piece of that job
+      # that genuinely changes often (published 2-7 days out, filled in
+      # gradually), so they belong in the frequent job alongside results
+      # instead of waiting on a full calendar/teams/rider-profile run that
+      # rarely has anything new to find once the season's calendar is set.
+      # PCS blocking CI IPs (the reason --startlists-only used to require a
+      # local machine) doesn't apply here -- this runs on the self-hosted
+      # runner, i.e. a normal residential/office IP, not a shared cloud range.
+      - name: Run startlists-only scraper
+        if: steps.reachability.outputs.reachable == 'true'
+        shell: cmd
+        run: python scraper.py --startlists-only
+
       - name: Strip any women's races from data.json
         if: steps.reachability.outputs.reachable == 'true'
         shell: python

@@ -1810,10 +1810,16 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
     </div>`;
   }
 
-  const team = raceEntry.team;
+  // If Team Claudius has already been added to the league, use that stored copy
+  // (with its real created_at) rather than the live best_teams.json preview —
+  // otherwise this panel's score can drift from what the League Table shows
+  // (best_teams.json can be regenerated later, and passing created_at=null here
+  // ignored the from-creation-date filter that computePoints/League Table use).
+  const icTeam = iClaudiusGet(raceKey);
+  const team = icTeam || raceEntry.team;
   if (!team) return '';
 
-  const autoScore = computePoints(team.riders.map(r => r.name), null, raceKey).total;
+  const autoScore = computePoints(team.riders.map(r => r.name), icTeam ? icTeam.created_at : null, raceKey).total;
   const diff = myTotal - autoScore;
   let comparison = '';
   if (myTotal > 0 || autoScore > 0) {
@@ -1823,7 +1829,7 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
   }
 
   const rows = team.riders.map(r => {
-    const rpts = computePoints([r.name], null, raceKey).total;
+    const rpts = computePoints([r.name], icTeam ? icTeam.created_at : null, raceKey).total;
     const nat  = r.nat ? `<img src="https://flagcdn.com/16x12/${r.nat.toLowerCase()}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px">` : '';
     return `<div style="display:flex;align-items:center;gap:8px;padding:9px 16px;border-bottom:1px solid var(--border)">
       ${nat}<span style="flex:1;font-size:.88rem;font-weight:600">${esc(r.name)}</span>
@@ -2333,7 +2339,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v82';
+const APP_VERSION = 'v83';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2659,13 +2665,13 @@ const UPDATE_SCRIPTS = [
   },
   {
     file: 'update-co-stats.yml',
-    name: 'CyclingOracle Stats',
+    name: 'Stats Update',
     desc: 'Refreshes rider co_stats (form, climbing, sprint, TT scores etc.) used for the Rankings tab and Team Claudius.',
     schedule: 'Monday 06:00 UTC'
   },
   {
     file: 'update-data.yml',
-    name: 'Full Scrape (manual)',
+    name: 'New Season Initiation',
     desc: 'Full calendar discovery + team rosters + rider profile backfill + startlists, all together. Only needed if the race calendar itself changes (season start, race added/cancelled) — no longer runs on a schedule.',
     schedule: 'Manual only'
   },
@@ -2915,7 +2921,6 @@ async function renderFollowing() {
 // ── Fantasy League ─────────────────────────────────────────────────────────────
 
 const FANTASY_LEAGUE_KEY = 'fantasy_league';
-const FANTASY_WATCH_KEY  = 'fantasy_watchlist';
 const FANTASY_DRAFT_KEY  = 'fantasy_draft';
 const ICLAUDIUS_KEY      = 'iclaudius_teams';  // {raceKey: I Claudius team}
 // Squad size varies by race type: one-day races (total_stages===1) get a
@@ -2929,7 +2934,6 @@ function maxSquad(raceKey) {
   if (stages === 1) return 3;
   return stages >= 21 ? 8 : 7;
 }
-const MAX_WATCH = 10;
 const FANTASY_BUDGET = 100;   // total credits per team
 const COST_FLOOR    = 4;      // cheapest rider
 const COST_CEIL     = 22;     // most expensive rider (sqrt-scaled from race results)
@@ -3004,7 +3008,6 @@ function leagueLoad(){try{return JSON.parse(localStorage.getItem(FANTASY_LEAGUE_
 function leagueSave(l){localStorage.setItem(FANTASY_LEAGUE_KEY,JSON.stringify(l));}
 function leagueAdd(t){const l=leagueLoad();l.push(t);leagueSave(l);}
 function leagueRemove(i){const l=leagueLoad();l.splice(i,1);leagueSave(l);renderFantasy();}
-function watchLoad(){try{return JSON.parse(localStorage.getItem(FANTASY_WATCH_KEY)||'[]');}catch(e){return[];}}
 function draftLoad(){try{return JSON.parse(localStorage.getItem(FANTASY_DRAFT_KEY)||'null');}catch(e){return null;}}
 function draftSave(d){localStorage.setItem(FANTASY_DRAFT_KEY,JSON.stringify(d));}
 function draftClear(){localStorage.removeItem(FANTASY_DRAFT_KEY);}
@@ -3013,7 +3016,6 @@ function iClaudiusSaveAll(d){localStorage.setItem(ICLAUDIUS_KEY,JSON.stringify(d
 function iClaudiusGet(rk){const d=iClaudiusLoadAll();return rk?d[rk]||null:null;}
 function iClaudiusSet(rk,t){const d=iClaudiusLoadAll();if(rk){d[rk]=t;iClaudiusSaveAll(d);}}
 function iClaudiusClear(rk){const d=iClaudiusLoadAll();if(rk){delete d[rk];iClaudiusSaveAll(d);}}
-function watchSave(w){localStorage.setItem(FANTASY_WATCH_KEY,JSON.stringify(w));}
 
 const normName = n => (n||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z]/g,' ').replace(/\s+/g,' ').trim();
 
@@ -3287,22 +3289,18 @@ function renderFantasy(){
   const allTeams=[{...myTeam,points:total,isMine:true},...league.map((t,i)=>({...t,points:computePoints((t.riders||[]).map(r=>r.name),t.created_at,_ark).total,leagueIdx:i})),...(_icTeam?[{..._icTeam,points:computePoints((_icTeam.riders||[]).map(r=>r.name),_icTeam.created_at,_ark).total,isIClaudius:true}]:[])];
   allTeams.sort((a,b)=>b.points-a.points);
   el.innerHTML='<div style="max-width:480px;margin:0 auto;padding:16px">'
-    +renderHowToPlay()
-    +renderRulesCard()
     +renderRaceSelector()
     +'</div>'
     // Auto-team placeholder (replaced async once best_teams.json loads)
     +'<div id="auto-team-panel" style="max-width:480px;margin:0 auto 24px;padding:20px;text-align:center;color:var(--muted);font-size:.82rem">⏳ Building Team Claudius…</div>'
-    +renderLeagueTable(allTeams)+renderMySquad(myTeam,total,breakdown)+renderWatchlist(watchLoad());
+    +renderLeagueTable(allTeams)+renderMySquad(myTeam,total,breakdown);
   // Load auto-team async (non-blocking)
   loadAndRenderAutoTeam(_ark, total).catch(()=>{});
   // Wire up delegated events after render
   el.querySelectorAll('[data-pick]').forEach(el=>el.addEventListener('click',()=>fPickRider(el.dataset.pick)));
   el.querySelectorAll('[data-unpick]').forEach(el=>el.addEventListener('click',()=>fRemovePicked(el.dataset.unpick)));
 
-  el.querySelectorAll('[data-unwatch]').forEach(el=>el.addEventListener('click',()=>fRemoveWatch(el.dataset.unwatch)));
   el.querySelectorAll('[data-doswap]').forEach(el=>el.addEventListener('click',()=>fDoSwap(el.dataset.doswap)));
-  el.querySelectorAll('[data-addwatch]').forEach(el=>el.addEventListener('click',()=>fAddWatch(el.dataset.addwatch,el.dataset.nat||'',el.dataset.slug||'')));
 }
 
 function flag(nat){return nat?'<img src="https://flagcdn.com/16x12/'+nat.toLowerCase()+'.png" width="16" height="11" style="flex-shrink:0;border-radius:1px">'  :'';}
@@ -3421,8 +3419,6 @@ function renderFantasySetup(){
     )
     :'';
   const html = '<div style="max-width:480px;margin:0 auto;padding:16px">'
-    +renderHowToPlay()
-    +renderRulesCard()
     +renderRaceSelector()
     +_slBanner
     +'<div style="margin-bottom:12px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px">'
@@ -3761,86 +3757,6 @@ function renderLeagueTable(teams){
     +'</div>'
   +'</div>';
 }
-// ── Watchlist ─────────────────────────────────────────────────────────────────
-
-function renderWatchlist(watchlist){
-  const allRaces=[...(appData.recent||[]),...(appData.live||[])];
-  const watched=watchlist.map(w=>{
-    let wins=0,top3=0,pts=0;
-    for(const race of allRaces){
-      for(const stage of (race.stages||[])){
-        const r=(stage.top10||[]).find(r=>normName(r.name)===normName(w.name));
-        if(r){if(r.rank===1)wins++;if(r.rank<=3)top3++;pts+=(STAGE_PTS[r.rank]||0);}
-      }
-      const cl=race.classifications||{};
-      for(const r of (cl.gc||[])){if(normName(r.name)===normName(w.name)){pts+=(GC_PTS[r.rank]||0);}}
-    }
-    return '<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;position:relative">'
-      +'<button data-unwatch="'+esc(w.name)+'" style="position:absolute;top:8px;right:8px;background:none;border:none;color:var(--muted);font-size:.85rem;cursor:pointer;line-height:1">✕</button>'
-      +(w.nat?'<img src="https://flagcdn.com/16x12/'+w.nat.toLowerCase()+'.png" width="22" height="15" style="margin-bottom:4px;border-radius:1px">':'')
-      +'<div style="font-size:.88rem;font-weight:700;margin-bottom:8px;padding-right:24px">'+esc(w.name)+'</div>'
-      +'<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;text-align:center">'
-        +'<div style="background:var(--surface2);border-radius:5px;padding:6px 4px"><div style="font-size:1.1rem;font-weight:800;color:var(--gold)">'+wins+'</div><div style="font-size:.62rem;color:var(--muted)">WINS</div></div>'
-        +'<div style="background:var(--surface2);border-radius:5px;padding:6px 4px"><div style="font-size:1.1rem;font-weight:800">'+top3+'</div><div style="font-size:.62rem;color:var(--muted)">TOP 3</div></div>'
-        +'<div style="background:var(--surface2);border-radius:5px;padding:6px 4px"><div style="font-size:1.1rem;font-weight:800;color:var(--upcoming)">'+pts+'</div><div style="font-size:.62rem;color:var(--muted)">PTS</div></div>'
-      +'</div>'
-    +'</div>';
-  });
-
-  const canAdd=watchlist.length<MAX_WATCH;
-  const addCard=canAdd?'<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:90px">'
-    +'<div style="font-size:.78rem;color:var(--muted);margin-bottom:6px">Follow a rider</div>'
-    +'<input id="fWatchSearch" type="search" placeholder="Type name to search riders…" autocomplete="off" style="width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:var(--text);font-size:.85rem;outline:none" oninput="fSearchWatch(this.value)" onfocus="fSearchWatch(this.value)">'
-    +'<div id="fWatchResults" style="max-height:160px;overflow-y:auto;margin-top:6px;display:none;border:1px solid var(--border);border-radius:6px;background:var(--surface2)"></div>'
-  +'</div>':'';
-
-  return '<div>'
-    +'<div class="group-header">👁 Rider Watchlist ('+watchlist.length+'/'+MAX_WATCH+')</div>'
-    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">'
-      +watched.join('')+addCard
-    +'</div>'
-  +'</div>';
-}
-
-function fSearchWatch(q){
-  const el=document.getElementById('fWatchResults');if(!el)return;
-  const raw=q.trim();
-  const watched=new Set(watchLoad().map(w=>w.name));
-  const all=getAllRiders().filter(r=>!watched.has(r.name));
-  let matches;
-  if(!raw){
-    matches=all.slice(0,15);
-  } else {
-    const lq=raw.toLowerCase();
-    const starts=all.filter(r=>(r.name||'').toLowerCase().startsWith(lq));
-    const contains=all.filter(r=>!(r.name||'').toLowerCase().startsWith(lq)&&(r.name||'').toLowerCase().includes(lq));
-    matches=[...starts,...contains].slice(0,15);
-  }
-  if(!matches.length&&!all.length){el.style.display='none';return;}
-  if(!matches.length){el.style.display='block';el.innerHTML='<div style="padding:10px;color:var(--muted);font-size:.82rem">No riders found</div>';return;}
-  el.style.display='block';
-  el.innerHTML=matches.map(r=>
-    '<div data-addwatch="'+esc(r.name)+'" data-nat="'+esc(r.nat||'')+'" data-slug="'+esc(r.slug||'')+'" style="padding:9px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);transition:background .15s" onmouseenter="this.style.background=\'var(--surface)\'" onmouseleave="this.style.background=\'\'">'
-      +(r.nat?flag(r.nat):'<span style="width:20px;display:inline-block"></span>')
-      +'<span style="flex:1;font-size:.85rem">'+esc(r.name)+'</span>'
-      +'<span style="color:var(--upcoming);font-weight:700">+</span>'
-    +'</div>'
-  ).join('');
-  el.querySelectorAll('[data-addwatch]').forEach(node=>node.addEventListener('click',()=>fAddWatch(node.dataset.addwatch,node.dataset.nat||'',node.dataset.slug||'')));
-}
-
-function fAddWatch(name,nat,slug){
-  const w=watchLoad();
-  if(w.length>=MAX_WATCH||w.find(x=>x.name===name))return;
-  watchSave([...w,{name,nat:nat||'',slug:slug||''}]);
-  renderFantasy();
-}
-
-function fRemoveWatch(name){
-  watchSave(watchLoad().filter(w=>w.name!==name));
-  renderFantasy();
-}
-
 // ── Export / Import ───────────────────────────────────────────────────────────
 
 function fExportTeam(){
@@ -4177,13 +4093,14 @@ function renderHelp() {
         ['Jersey Pts','15 points per stage for holding the Points, KOM, or White jersey (not awarded if the rider also leads GC).'],
         ['I Claudius','The AI opponent — a single statistically-optimal squad picked from CyclingOracle rider stats for this race.'],
         ['DNS? badge','This rider isn\'t on the official confirmed startlist for this race yet — you can still pick them (they\'re a teammate of someone who is confirmed), but there\'s a real chance they don\'t actually start, in which case they\'ll score zero.'],
-        ['Watchlist', 'A list of riders you want to keep an eye on without adding to your squad.'],
       ]
     },
   ];
 
   const html = `<div class="help-wrap">
     <div class="help-note">This app tracks men\'s professional road cycling — UCI WorldTour and Pro Series races. Tap any rider\'s name to open their full profile.</div>
+    ${renderHowToPlay()}
+    ${renderRulesCard()}
     ${sections.map(sec => `
     <div class="help-section">
       <div class="help-section-title">${esc(sec.title)}</div>
@@ -4201,3 +4118,4 @@ function renderHelp() {
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

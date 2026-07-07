@@ -2339,7 +2339,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v83';
+const APP_VERSION = 'v84';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2975,7 +2975,19 @@ function buildRiderCosts(){
 }
 
 function riderCost(name){ return _riderCosts[normName(name)]||COST_FLOOR; }
-function squadCost(riders){ return riders.reduce((s,r)=>s+riderCost(r.name||r),0); }
+// Once a rider is picked onto a squad, fPickRider/fDoSwap stamp a `cost` field
+// onto that rider object (frozen at the price on the day they were picked).
+// riderCostFor() prefers that frozen value over the live-recomputed price, so a
+// rider's in-race results (e.g. a Tour stage win) can't silently inflate an
+// already-drafted squad's cost above budget mid-race. A brand-new pick (or a
+// pick for a different race) has no frozen cost yet, so it falls back to the
+// current live price -- which is exactly the "picked again elsewhere uses
+// updated cost" behaviour that's wanted.
+function riderCostFor(r){
+  if(r&&typeof r==='object'&&typeof r.cost==='number') return r.cost;
+  return riderCost((r&&r.name)||r);
+}
+function squadCost(riders){ return riders.reduce((s,r)=>s+riderCostFor(r),0); }
 
 function costColor(c){
   if(c>=18) return '#ef4444';   // red — premium
@@ -2983,8 +2995,8 @@ function costColor(c){
   if(c>=8)  return '#eab308';   // yellow — value
   return 'var(--muted)';         // grey — budget
 }
-function costBadge(name){
-  const c=riderCost(name);
+function costBadge(r){
+  const c=riderCostFor(r);
   return '<span style="font-size:.72rem;font-weight:700;color:'+costColor(c)+';background:rgba(0,0,0,.25);border-radius:4px;padding:1px 5px;min-width:22px;text-align:center">'+c+'</span>';
 }
 
@@ -3001,10 +3013,45 @@ function fantasyLoadAll(){try{const s=localStorage.getItem(FANTASY_TEAMS_KEY);if
 function fantasySaveAll(d){localStorage.setItem(FANTASY_TEAMS_KEY,JSON.stringify(d));}
 function fantasyGetRace(){const k=localStorage.getItem(FANTASY_ACTIVE_KEY)||'';return k||_autoRace();}
 function fantasySetRace(k){localStorage.setItem(FANTASY_ACTIVE_KEY,k);}
-function fantasyLoad(){const d=fantasyLoadAll(),k=fantasyGetRace();return k?d[k]||null:null;}
+// One-time migration for squads saved before per-rider cost freezing existed:
+// stamp today's live price onto any rider still missing a `.cost` field and
+// persist it, so from this point on their price stops moving with the rider's
+// live results. (We can't recover the *original* draft-day price for these
+// older squads -- appData isn't versioned/dated far enough back for that --
+// so this locks in today's number as the new frozen baseline.)
+function _freezeMissingCosts(riders){
+  let changed=false;
+  const out=riders.map(r=>{
+    if(r&&typeof r.cost==='number')return r;
+    changed=true;
+    return {...r,cost:riderCost(r.name)};
+  });
+  return {riders:out,changed};
+}
+function fantasyLoad(){
+  const d=fantasyLoadAll(),k=fantasyGetRace();
+  if(!k)return null;
+  const team=d[k]||null;
+  if(!team||!Array.isArray(team.riders))return team;
+  const {riders,changed}=_freezeMissingCosts(team.riders);
+  if(changed){team.riders=riders;d[k]=team;fantasySaveAll(d);}
+  return team;
+}
 function fantasySave(t){const d=fantasyLoadAll(),k=fantasyGetRace();if(k){d[k]=t;fantasySaveAll(d);}}
 function fantasyDelete(){const d=fantasyLoadAll(),k=fantasyGetRace();if(k){delete d[k];fantasySaveAll(d);}}
-function leagueLoad(){try{return JSON.parse(localStorage.getItem(FANTASY_LEAGUE_KEY)||'[]');}catch(e){return[];}}
+function leagueLoad(){
+  let l;
+  try{l=JSON.parse(localStorage.getItem(FANTASY_LEAGUE_KEY)||'[]');}catch(e){l=[];}
+  let anyChanged=false;
+  l=l.map(t=>{
+    if(!t||!Array.isArray(t.riders))return t;
+    const {riders,changed}=_freezeMissingCosts(t.riders);
+    if(changed){anyChanged=true;return{...t,riders};}
+    return t;
+  });
+  if(anyChanged)leagueSave(l);
+  return l;
+}
 function leagueSave(l){localStorage.setItem(FANTASY_LEAGUE_KEY,JSON.stringify(l));}
 function leagueAdd(t){const l=leagueLoad();l.push(t);leagueSave(l);}
 function leagueRemove(i){const l=leagueLoad();l.splice(i,1);leagueSave(l);renderFantasy();}
@@ -3525,7 +3572,11 @@ function fPickRider(name){
   const cost=riderCost(name);
   const spent=squadCost(_fPicked);
   if(spent+cost>FANTASY_BUDGET){alert('Not enough budget! '+name+' costs '+cost+' cr but you only have '+(FANTASY_BUDGET-spent)+' cr left.');return;}
-  _fPicked.push(r);
+  // Freeze this rider's cost at today's price. Their cost can keep moving
+  // live (e.g. a Tour stage win bumps it) but this squad's price for them is
+  // locked from the moment they're picked -- picking the same rider again for
+  // a different race starts fresh and freezes at whatever the price is then.
+  _fPicked.push({...r,cost});
   renderPickedList();
   const srch=document.getElementById('fRiderSearch');
   fSearchRiders(srch?srch.value:'');
@@ -3572,7 +3623,7 @@ function renderPickedList(){
       '<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:9px 12px;display:flex;align-items:center;gap:8px">'
         +(r.nat?flag(r.nat):'<span style="width:16px;display:inline-block"></span>')
         +'<span style="flex:1;font-size:.9rem;font-weight:600">'+esc(r.name)+'</span>'
-        +costBadge(r.name)
+        +costBadge(r)
         +'<button data-unpick="'+esc(r.name)+'" style="background:none;border:none;color:var(--live);font-size:1rem;cursor:pointer;padding:0 4px">✕</button>'
       +'</div>'
     ).join('')
@@ -3643,7 +3694,7 @@ function renderMySquad(team,total,breakdown){
     return '<div style="padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px">'
       +(r.nat?flag(r.nat):'<span style="width:16px;display:inline-block"></span>')
       +'<span style="flex:1;font-size:.88rem;font-weight:600">'+esc(r.name)+'</span>'
-      +costBadge(r.name)
+      +costBadge(r)
       +(rpts>0?'<span style="font-size:.82rem;font-weight:700;color:var(--gold);min-width:42px;text-align:right">'+rpts+' pts</span>':'<span style="font-size:.78rem;color:var(--muted);min-width:42px;text-align:right">—</span>')
 
     +'</div>';
@@ -3703,13 +3754,18 @@ function fDoSwap(inName){
   const team=fantasyLoad();if(!team)return;
   if((team.transfers_used||0)>=team.transfers_total){alert('No transfers remaining!');return;}
   const inR=getAllRiders().find(r=>r.name===inName);if(!inR)return;
-  const outCost=riderCost(_fSwapOut);
+  // Outgoing rider's cost comes from their frozen price on this squad (not
+  // today's live price) so a mid-race price swing on the rider you're
+  // dropping can't throw off the budget math. Incoming rider gets today's
+  // live price frozen onto them as part of this transfer.
+  const outRider=team.riders.find(r=>r.name===_fSwapOut);
+  const outCost=riderCostFor(outRider);
   const inCost=riderCost(inName);
   const currentCost=squadCost(team.riders);
   const newCost=currentCost-outCost+inCost;
   if(newCost>FANTASY_BUDGET){alert('Over budget! Swapping in '+inName+' ('+inCost+' cr) would take your squad to '+newCost+' cr — budget is '+FANTASY_BUDGET+' cr.');return;}
   fVerifyPin(team,'confirm this transfer',()=>{
-    team.riders=team.riders.map(r=>r.name===_fSwapOut?inR:r);
+    team.riders=team.riders.map(r=>r.name===_fSwapOut?{...inR,cost:inCost}:r);
     team.transfers_used=(team.transfers_used||0)+1;
     fantasySave(team);renderFantasy();
   });
@@ -4118,3 +4174,4 @@ function renderHelp() {
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

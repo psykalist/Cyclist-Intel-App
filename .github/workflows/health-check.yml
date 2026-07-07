@@ -175,14 +175,28 @@ jobs:
         run: |
           python - <<'EOF'
           import urllib.request, os
+          # Was hitting /races.php?... -- a legacy PHP-era URL the current
+          # Next.js site doesn't really serve, returning an effectively empty
+          # response regardless of reachability. Point at a real page with
+          # the same full header set scraper.py's own fetch() sends, and
+          # require a real-sized body rather than just "no exception."
           try:
               req = urllib.request.Request(
-                  'https://cyclingflash.com/races.php?category=1&filter=Filter&p=uci&s=latest-results',
-                  headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+                  'https://cyclingflash.com/race/tour-de-france-2026',
+                  headers={
+                      'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                                      'AppleWebKit/537.36 (KHTML, like Gecko) '
+                                      'Chrome/124.0.0.0 Safari/537.36'),
+                      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                      'Accept-Language': 'en-GB,en;q=0.9',
+                  }
               )
               with urllib.request.urlopen(req, timeout=15) as r:
-                  print(f'cyclingflash.com reachable -- HTTP {r.status}')
-                  reachable = True
+                  body_len = len(r.read())
+                  print(f'cyclingflash.com reachable -- HTTP {r.status}, {body_len} bytes')
+                  reachable = body_len > 500
+                  if not reachable:
+                      print(f'  response too short ({body_len} bytes) -- treating as unreachable')
           except Exception as e:
               print(f'cyclingflash.com unreachable from GitHub Actions: {e}')
               reachable = False

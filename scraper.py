@@ -1315,13 +1315,51 @@ def main_results_only():
                 break
 
     if write_ok:
-        # 3. File did not shrink by more than 10%
-        new_size = os.path.getsize(OUTPUT_FILE)
-        if pre_write_size > 0 and new_size < pre_write_size * 0.90:
-            write_ok, fail_reason = False, (
-                f"file shrank by {(pre_write_size - new_size) // 1024} KB "
-                f"({pre_write_size // 1024} KB → {new_size // 1024} KB) — possible truncation"
-            )
+        # 3. Content didn't shrink -- compare structural counts, not raw
+        # byte size. Byte size isn't a reliable signal here: data.json gets
+        # written by more than one code path (this one always uses compact
+        # separators=(",", ":"), but other writers pretty-print with
+        # indent=2), so switching between compact and pretty-printed
+        # formatting alone can look like a 40%+ "shrink" with zero actual
+        # content lost. Hit this for real on 2026-07-07: a legitimate
+        # stage-4 fetch got discarded and the whole run crashed because the
+        # incoming file happened to be pretty-printed, not because anything
+        # was actually truncated. Compare rider_profiles/race counts (which
+        # this function only ever adds to, never removes from) instead.
+        old_counts = None
+        if os.path.exists(backup_file):
+            try:
+                with open(backup_file, encoding="utf-8") as f:
+                    d_old = json.load(f)
+                old_counts = {
+                    "races": sum(len(d_old.get(k, [])) for k in ("live", "upcoming", "recent")),
+                    "rider_profiles": len(d_old.get("rider_profiles", {})),
+                }
+            except Exception:
+                old_counts = None
+
+        if old_counts:
+            new_counts = {
+                "races": sum(len(d_check.get(k, [])) for k in ("live", "upcoming", "recent")),
+                "rider_profiles": len(d_check.get("rider_profiles", {})),
+            }
+            for key, old_n in old_counts.items():
+                new_n = new_counts[key]
+                if old_n > 0 and new_n < old_n * 0.90:
+                    write_ok, fail_reason = False, (
+                        f"{key} count dropped {old_n} -> {new_n} — possible truncation"
+                    )
+                    break
+        else:
+            # No readable backup to compare content against (e.g. very
+            # first run ever) -- fall back to a much looser byte-size
+            # sanity check just to catch a truly empty/near-empty write.
+            new_size = os.path.getsize(OUTPUT_FILE)
+            if pre_write_size > 0 and new_size < pre_write_size * 0.50:
+                write_ok, fail_reason = False, (
+                    f"file shrank by {(pre_write_size - new_size) // 1024} KB "
+                    f"({pre_write_size // 1024} KB → {new_size // 1024} KB) — possible truncation"
+                )
 
     if write_ok:
         # 4. Each live race still has a name and slug

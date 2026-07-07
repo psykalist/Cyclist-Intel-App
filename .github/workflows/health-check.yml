@@ -39,6 +39,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write   # so the notify step can open/update/close an alert issue
 
 jobs:
   health-check:
@@ -92,11 +93,27 @@ jobs:
               print("No status.json found -- treating as unknown")
               overall = "unknown"
 
+          # A live race updates (at minimum) daily -- scrape.yml runs at 11am
+          # and 5pm UTC. 26h of slack made sense when nothing was live, but
+          # during a Grand Tour it let a full missed stage look "fresh" for
+          # over a day (the 2026-07-07 stage-4 incident: 24.6h old and this
+          # check still said "skip, data is fresh"). Tighten to 8h whenever
+          # data.json actually has a live race; keep the old lenient window
+          # for the off-season case where nothing's actually running.
+          live_count = 0
+          if os.path.exists("data.json"):
+              try:
+                  live_count = len(json.load(open("data.json")).get("live", []))
+              except Exception:
+                  pass
+          stale_threshold = 8 if live_count > 0 else 26
+          print(f"live_count={live_count} -> stale_threshold={stale_threshold}h")
+
           force = os.environ.get("FORCE_SCRAPE", "false").lower() == "true"
           need_scrape = (
               force
               or overall in ("error", "unknown")
-              or age_hours > 26
+              or age_hours > stale_threshold
               or not data_valid
           )
 
@@ -214,16 +231,30 @@ jobs:
                       if n == 0:
                           warnings.append(f"data.json has no {key}")
                   info["rider_profiles"] = len(data.get("rider_profiles", {}))
+                  live_count = len(data.get("live", []))
+                  info["live_races"] = live_count
                   scraped = data.get("scraped_at", "")
                   info["scraped_at"] = scraped
                   if scraped:
                       dt = datetime.fromisoformat(scraped.replace("Z", "+00:00"))
                       age_h = (datetime.now(timezone.utc) - dt).total_seconds() / 3600
                       info["data_age_hours"] = round(age_h, 1)
-                      if age_h > 168:   # 7 days -- only error if very stale
-                          errors.append(f"data.json is {age_h:.0f}h old -- run scraper.py locally")
-                      elif age_h > 48:
-                          warnings.append(f"data.json is {age_h:.0f}h old -- consider running scraper.py")
+                      # Tighter window whenever a race is actually live -- see
+                      # matching note in the "Read status.json" step above.
+                      # Off-season (no live race), keep the old lenient window
+                      # since there's genuinely nothing new to miss.
+                      err_at  = 20  if live_count > 0 else 168
+                      warn_at = 8   if live_count > 0 else 48
+                      if age_h > err_at:
+                          errors.append(
+                              f"data.json is {age_h:.0f}h old ({'a live race is running' if live_count else 'off-season'}) "
+                              f"-- run scraper.py locally"
+                          )
+                      elif age_h > warn_at:
+                          warnings.append(
+                              f"data.json is {age_h:.0f}h old ({'a live race is running' if live_count else 'off-season'}) "
+                              f"-- consider running scraper.py"
+                          )
               except json.JSONDecodeError as e:
                   errors.append(f"data.json invalid JSON: {e}")
 
@@ -287,9 +318,15 @@ jobs:
           for e in errors:   print(f"  x {e}")
           for w in warnings: print(f"  ! {w}")
 
-          if errors:
-              sys.exit(1)
+          # Don't sys.exit(1) here -- that would skip the commit and notify
+          # steps below (no `if: always()` upstream of them historically
+          # meant an error run never even got its status.json committed).
+          # Job failure (for the Actions red-X / default GH email) happens
+          # in a dedicated last step instead, after commit+notify have run.
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write(f"overall={overall}\n")
           EOF
+        id: write_status
 
       # -- Commit and push -----------------------------------------------------
       - name: Commit and push
@@ -301,4 +338,81 @@ jobs:
             TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
             git commit -m "heal(ci): auto-repair ${TIMESTAMP}"
             git push
+          fi
+
+      # -- Notify: open/update/close a GitHub Issue on status changes ---------
+      # This is the actual "tell me" channel -- GitHub emails repo watchers
+      # on issue open/comment by default, which is more reliable than relying
+      # on the user's personal Actions-failure-email settings. Dedups against
+      # a single open issue by exact title instead of spamming a new one
+      # every run; auto-closes with a resolved comment once healthy again.
+      - name: Notify via GitHub Issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OVERALL: ${{ steps.write_status.outputs.overall }}
+        run: |
+          python - <<'EOF'
+          import json, os, subprocess
+          from datetime import datetime, timezone
+
+          overall = os.environ.get("OVERALL", "unknown")
+          TITLE = "Health check failing"
+
+          def gh(*args):
+              return subprocess.run(["gh", *args], capture_output=True, text=True)
+
+          existing = gh("issue", "list", "--state", "open", "--search", TITLE,
+                         "--json", "number,title")
+          issue_number = None
+          if existing.returncode == 0:
+              try:
+                  for it in json.loads(existing.stdout or "[]"):
+                      if it["title"] == TITLE:
+                          issue_number = it["number"]
+                          break
+              except Exception as e:
+                  print(f"could not parse issue list: {e}")
+
+          status   = json.load(open("status.json")) if os.path.exists("status.json") else {}
+          errors   = status.get("errors", [])
+          warnings = status.get("warnings", [])
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+          run_url = (f"{os.environ.get('GITHUB_SERVER_URL','https://github.com')}/"
+                     f"{os.environ.get('GITHUB_REPOSITORY','')}/actions/runs/"
+                     f"{os.environ.get('GITHUB_RUN_ID','')}")
+
+          if overall == "error":
+              lines = [f"**Status as of {now}:** ERROR", "", "**Errors:**"]
+              lines += [f"- {e}" for e in errors] or ["- (none listed)"]
+              if warnings:
+                  lines += ["", "**Warnings:**"] + [f"- {w}" for w in warnings]
+              lines += ["", f"[View run]({run_url})"]
+              body = "\n".join(lines)
+
+              if issue_number:
+                  r = gh("issue", "comment", str(issue_number), "--body", body)
+                  print(f"Updated existing issue #{issue_number}: {r.returncode}")
+              else:
+                  r = gh("issue", "create", "--title", TITLE, "--body", body)
+                  print(f"Opened new issue: {r.returncode} {r.stdout}")
+          elif issue_number:
+              gh("issue", "comment", str(issue_number), "--body",
+                 f"**Resolved as of {now}** -- status.json now shows `{overall}`.")
+              r = gh("issue", "close", str(issue_number))
+              print(f"Closed issue #{issue_number}: {r.returncode}")
+          else:
+              print("Healthy, no open issue to close")
+          EOF
+
+      # -- Fail the job if unhealthy (after commit+notify already ran) --------
+      # Deliberately last: everything above (status.json commit, GitHub Issue)
+      # must happen regardless of health, so this is the only step allowed to
+      # actually fail the run.
+      - name: Fail job if status is error
+        if: always()
+        run: |
+          if [ "${{ steps.write_status.outputs.overall }}" = "error" ]; then
+            echo "Health check status is ERROR -- failing job for visibility."
+            exit 1
           fi

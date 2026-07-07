@@ -1225,6 +1225,13 @@ def main_results_only():
             race["last_stage_winner"]      = last["winner"]
             race["last_stage_winner_flag"] = last.get("winner_flag", "")
             race["last_stage_num"]         = last["num"]
+            # Keep this in sync with last_stage_num -- only main() (full
+            # scrape) used to set it, so a --results-only run could update
+            # last_stage_num/last_stage_winner correctly while this stayed
+            # stale. index.html's renderProgramme() falls back to s.winner
+            # per-stage so this wasn't visibly broken, but let's not rely on
+            # every reader having that same fallback.
+            race["stages_completed"] = len(done)
 
         # Update classifications after latest completed stage
         if completed_nums:

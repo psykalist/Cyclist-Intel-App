@@ -223,10 +223,13 @@ jobs:
       - name: Commit and push if data changed
         shell: python
         run: |
-          import subprocess, sys
+          import subprocess, sys, os
           from datetime import datetime, timezone
 
-          subprocess.run(['git', 'add', 'data.json', 'changelog.json', 'best_teams.json', 'scrape_log.json'], check=True)
+          files = ['data.json', 'changelog.json', 'best_teams.json']
+          if os.path.exists('scrape_log.json'):
+              files.append('scrape_log.json')
+          subprocess.run(['git', 'add'] + files, check=True)
           diff = subprocess.run(['git', 'diff', '--staged', '--quiet'])
           if diff.returncode != 0:
               timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
@@ -234,7 +237,4 @@ jobs:
               result = subprocess.run(['git', 'push', 'origin', 'main'])
               if result.returncode != 0:
                   subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
-                  subprocess.run(['git', 'push', 'origin', 'main'], check=True)
-              print('Pushed to GitHub')
-          else:
-              print('No changes to commit')
+                  subprocess.run(['git', 'push', 'origi

@@ -1,89 +1,61 @@
 {
-  "generated_at": "2026-06-21T18:15:33.218883+00:00",
+  "generated_at": "2026-07-07T21:12:15.175496+00:00",
   "entries": [
     {
-      "id": "5f521dcbf520",
-      "timestamp": "2026-06-21T10:22:20.626390+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Baloise Belgium Tour GC: 🇪🇸 Alex Aranburu Deba leads"
+      "id": "c5d84094ff38",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Tour de France: 🇩🇰 Mads Pedersen wins"
     },
     {
-      "id": "84aec94ae020",
-      "timestamp": "2026-06-21T10:22:20.626390+00:00",
+      "id": "f4fd1b18d38c",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour de France GC: 🇳🇴 Torstein Træen leads"
+    },
+    {
+      "id": "08e58e943460",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
       "type": "leader_change",
       "icon": "green",
-      "text": "Baloise Belgium Tour Points: 🇧🇪 Tim Merlier leads"
+      "text": "Tour de France Points: 🇩🇰 Mads Pedersen leads"
     },
     {
-      "id": "b04c487fc240",
-      "timestamp": "2026-06-21T10:22:20.626390+00:00",
+      "id": "03d6c0f3b2cf",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
       "type": "leader_change",
       "icon": "white",
-      "text": "Baloise Belgium Tour Youth: 🇪🇸 Hector Alvarez Martinez leads"
+      "text": "Tour de France Youth: 🇨🇿 Mathias Vacek leads"
     },
     {
-      "id": "8df809f5be6a",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
+      "id": "71720b37e718",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
       "type": "stage_result",
       "icon": "trophy",
-      "text": "Stage 4 Tour de Suisse: 🇸🇮 Tadej Pogačar wins"
+      "text": "Stage 4 Sibiu Cycling Tour: 🇳🇱 Danny van Poppel wins"
     },
     {
-      "id": "9a3b26f13bd0",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Baloise Belgium Tour: 🇳🇱 Olav Kooij wins"
+      "id": "a202a55b364b",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour of Magnificent Qinghai startlist: Iker Mintegi, Jon Agirre, Louis Sutton (+2 more) added"
     },
     {
-      "id": "57ae8bb7a1bb",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Tour of Slovenia: 🇩🇪 Florian Lipowitz wins"
+      "id": "c5b3e6adb8a8",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Maryland Cycling Classic startlist published (1 riders)"
     },
     {
-      "id": "f6c8fad7227b",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Slovenia GC: 🇩🇪 Florian Lipowitz leads"
-    },
-    {
-      "id": "a0de3874a08b",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Slovenia KOM: 🇩🇪 Florian Lipowitz leads"
-    },
-    {
-      "id": "33474ca10675",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour of Slovenia Youth: 🇸🇮 Jakob Omrzel leads"
-    },
-    {
-      "id": "dd19a4b2729c",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 La Route d'Occitanie - CIC: 🇮🇹 Davide Piganzoli wins"
-    },
-    {
-      "id": "5634c6d65480",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "La Route d'Occitanie - CIC GC: 🇮🇹 Davide Piganzoli leads"
-    },
-    {
-      "id": "752efe1ca378",
-      "timestamp": "2026-06-20T17:39:27.236850+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "La Route d'Occitanie - CIC Youth: 🇮🇹 Davide Piganzoli leads"
+      "id": "f7a4b10ee701",
+      "timestamp": "2026-07-07T21:12:15.172145+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour of Austria startlist: Adam Bittman, Adrian Stieger, António Morgado (+11 more) added"
     }
   ]
 }

@@ -1097,9 +1097,27 @@ def main_results_only():
             still_live.append(r)
     d["live"] = still_live
 
+    # Load the previous run's scrape log (if any) so we can tell "stage
+    # genuinely hasn't happened yet" apart from "we keep failing to parse a
+    # page that's actually there" -- a single miss is normal (the next stage
+    # just hasn't finished), but the *same* stage still unmatched across
+    # several runs spanning many hours, on a page that fetched fine (HTTP
+    # 200, decent size), means the parser is silently blind to it. See
+    # CLAUDE.md incident notes for the 2026-07-07 stage-4 case this is for.
+    prev_scrape_log = {}
+    if os.path.exists("scrape_log.json"):
+        try:
+            with open("scrape_log.json", encoding="utf-8") as f:
+                for r in json.load(f).get("races", []):
+                    if r.get("slug"):
+                        prev_scrape_log[r["slug"]] = r
+        except Exception as e:
+            print(f"  [log] could not read previous scrape_log.json: {e}", flush=True)
+
     # Fetch missing results for live races only
     stages_updated   = 0
     new_winner_slugs = set()   # rider slugs who won a NEW (uncached) stage this run
+    scrape_log_races = []      # structured per-race probe outcomes for health-check
     for race in d["live"]:
         slug   = race.get("cf_slug") or f"{race.get('slug','')}-{race.get('year','2026')}"
         name   = race.get("name", slug)
@@ -1107,19 +1125,67 @@ def main_results_only():
         total  = race.get("total_stages", len(stages))
         print(f"\n  {name}", flush=True)
 
+        stages_completed_before = len([s for s in stages if s.get("top10")])
+
         # Find which stages are done (use cache first, probe for new ones)
         completed_nums = []
+        probe = None   # outcome for the first stage we couldn't satisfy from cache
         for n in range(1, total + 1):
             cached = next((s for s in stages if s.get("num") == n), None)
             if cached and cached.get("top10"):
                 completed_nums.append(n)
                 continue
-            html = fetch(f"{BASE_URL}/race/{slug}/result/stage-{n}")
+            url = f"{BASE_URL}/race/{slug}/result/stage-{n}"
+            html = fetch(url)
             time.sleep(DELAY)
-            if html and re.search(r'<td[^>]*>\s*1\s*</td>', html):
+            matched = bool(html and re.search(r'<td[^>]*>\s*1\s*</td>', html))
+            if probe is None:
+                probe = {
+                    "stage_num": n,
+                    "url": url,
+                    "fetch_ok": html is not None,
+                    "response_bytes": len(html) if html else 0,
+                    "matched_result_table": matched,
+                }
+                if not matched and html is not None:
+                    # Page fetched fine but we found no results table --
+                    # carry forward stall tracking from the previous run.
+                    prev = prev_scrape_log.get(slug, {}).get("probe") or {}
+                    if (prev.get("stage_num") == n
+                            and prev.get("fetch_ok")
+                            and not prev.get("matched_result_table")
+                            and prev.get("stall_since")):
+                        stall_since = prev["stall_since"]
+                        stall_attempts = prev.get("stall_attempts", 1) + 1
+                    else:
+                        stall_since = now_human
+                        stall_attempts = 1
+                    try:
+                        stall_hours = (
+                            datetime.now(timezone.utc)
+                            - datetime.strptime(stall_since, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+                        ).total_seconds() / 3600
+                    except Exception:
+                        stall_hours = 0
+                    probe["stall_since"]    = stall_since
+                    probe["stall_attempts"] = stall_attempts
+                    probe["stall_hours"]    = round(stall_hours, 1)
+                    probe["possible_parser_drift"] = stall_attempts >= 2 and stall_hours >= 10
+            if matched:
                 completed_nums.append(n)
             elif completed_nums:
                 break  # gap = not yet run
+
+        stages_completed_after = len(completed_nums)
+        scrape_log_races.append({
+            "slug": slug,
+            "name": name,
+            "total_stages": total,
+            "stages_completed_before": stages_completed_before,
+            "stages_completed_after": stages_completed_after,
+            "new_stages_found": stages_completed_after - stages_completed_before,
+            "probe": probe,
+        })
 
         print(f"    Completed: {completed_nums}", flush=True)
 
@@ -1173,6 +1239,39 @@ def main_results_only():
                     race[lk] = f"{rows[0]['flag']} {rows[0]['name']}"
                     race[tk] = rows
                     print(f"      {cls_key}: {rows[0]['name']}", flush=True)
+
+    # ── Write structured scrape log for health-check consumption ─────────────
+    # Plain stdout prints above only live in the (sign-in-required) Actions
+    # job log. This file is what health-check.yml (and anyone without Actions
+    # access) reads to tell "scraper ran and found nothing new because the
+    # stage genuinely hasn't happened" apart from "scraper ran, reported
+    # success, and is silently failing to parse a page that has results."
+    fetch_errors = [
+        r for r in scrape_log_races
+        if r["probe"] and not r["probe"]["fetch_ok"]
+    ]
+    parser_drift = [
+        r for r in scrape_log_races
+        if r["probe"] and r["probe"].get("possible_parser_drift")
+    ]
+    scrape_log = {
+        "run_at":     now_human,
+        "run_at_iso": datetime.now(timezone.utc).isoformat(),
+        "mode":       "results-only",
+        "races":      scrape_log_races,
+        "has_fetch_errors":         bool(fetch_errors),
+        "has_possible_parser_drift": bool(parser_drift),
+    }
+    try:
+        with open("scrape_log.json", "w", encoding="utf-8") as f:
+            json.dump(scrape_log, f, indent=2, ensure_ascii=False)
+        print(f"\n[log] scrape_log.json written ({len(scrape_log_races)} live race(s) probed)", flush=True)
+        if fetch_errors:
+            print(f"  ! fetch errors: {[r['slug'] for r in fetch_errors]}", flush=True)
+        if parser_drift:
+            print(f"  ! POSSIBLE PARSER DRIFT: {[r['slug'] for r in parser_drift]}", flush=True)
+    except Exception as e:
+        print(f"\n[log] WARNING: failed to write scrape_log.json: {e}", flush=True)
 
     # ── Refresh wins for today's stage winners only ───────────────────────────
     if new_winner_slugs:

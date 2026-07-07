@@ -226,7 +226,7 @@ jobs:
           import subprocess, sys
           from datetime import datetime, timezone
 
-          subprocess.run(['git', 'add', 'data.json', 'changelog.json', 'best_teams.json'], check=True)
+          subprocess.run(['git', 'add', 'data.json', 'changelog.json', 'best_teams.json', 'scrape_log.json'], check=True)
           diff = subprocess.run(['git', 'diff', '--staged', '--quiet'])
           if diff.returncode != 0:
               timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
@@ -237,4 +237,4 @@ jobs:
                   subprocess.run(['git', 'push', 'origin', 'main'], check=True)
               print('Pushed to GitHub')
           else:
-              print('No changes to commit')
+              print('No c

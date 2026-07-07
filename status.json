@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-07-07T20:51:55.863051+00:00",
+  "updated_at": "2026-07-07T21:03:47.407714+00:00",
   "source": "ci",
   "overall": "error",
   "errors": [
-    "data.json is 25h old (a live race is running) -- run scraper.py locally"
+    "data.json is 26h old (a live race is running) -- run scraper.py locally"
   ],
   "warnings": [],
   "repairs": [],
@@ -15,7 +15,7 @@
     "rider_profiles": 250,
     "live_races": 2,
     "scraped_at": "2026-07-06T19:33:22.472429+00:00",
-    "data_age_hours": 25.3,
+    "data_age_hours": 25.5,
     "index_html_bytes": 206439,
     "scrape_log_run_at": null
   }

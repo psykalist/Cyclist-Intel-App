@@ -118,7 +118,7 @@ jobs:
           }
 
           if (-not $found) {
-            Write-Error "Could not locate python.exe via py launcher, where.exe, registry, or filesystem search. Install Python 'for all users', or add its folder to this runner's system PATH manually."
+            Write-Error "Could not locate python.exe via py launcher, where.exe, registry, or filesystem search. Install Python 'for all users' (so it's machine-wide, not user-profile-only -- the runner service can't see user profiles), or add its folder to this runner's system PATH manually."
             exit 1
           }
           Write-Host "Found Python at: $found"
@@ -237,7 +237,4 @@ jobs:
               result = subprocess.run(['git', 'push', 'origin', 'main'])
               if result.returncode != 0:
                   subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
-                  subprocess.run(['git', 'push', 'origin', 'main'], check=True)
-              print('Pushed to GitHub')
-          else:
-              print('No changes to commit')
+                  subprocess.run(['git', 'push', 'origi

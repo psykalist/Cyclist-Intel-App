@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-08T13:21:55.779136+00:00",
+  "updated_at": "2026-07-08T18:22:49.986421+00:00",
   "source": "ci",
   "overall": "ok",
   "errors": [],
   "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 3117,
+    "data_size_kb": 3142,
     "data_upcoming": 37,
     "data_recent": 58,
     "data_teams": 33,
-    "rider_profiles": 250,
+    "rider_profiles": 251,
     "live_races": 2,
-    "scraped_at": "2026-07-08T12:15:11.910296+00:00",
-    "data_age_hours": 1.1,
+    "scraped_at": "2026-07-08T18:13:31.388829+00:00",
+    "data_age_hours": 0.2,
     "index_html_bytes": 206439,
-    "scrape_log_run_at": "2026-07-08 14:14 UTC"
+    "scrape_log_run_at": "2026-07-08 20:13 UTC"
   }
 }

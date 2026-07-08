@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-07T21:11:38.603675+00:00",
-  "scraped_at_human": "07 Jul 2026 21:11 UTC",
+  "scraped_at": "2026-07-08T12:15:11.910296+00:00",
+  "scraped_at_human": "08 Jul 2026 12:15 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13,7 +13,7 @@
       "end_date": "2026-07-26",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/tour-de-france-2026",
-      "stages_completed": 3,
+      "stages_completed": 4,
       "stages": [
         {
           "num": 1,
@@ -11904,346 +11904,889 @@
       ]
     },
     {
-      "slug": "sibiu-cycling-tour",
-      "cf_slug": "sibiu-cycling-tour-2026",
-      "name": "Sibiu Cycling Tour",
+      "slug": "tour-of-austria",
+      "cf_slug": "tour-of-austria-2026",
+      "name": "Tour of Austria",
       "year": "2026",
       "category": "2.1",
       "status": "live",
-      "start_date": "2026-07-04",
-      "end_date": "2026-07-07",
-      "total_stages": 4,
-      "official_url": "https://cyclingflash.com/race/sibiu-cycling-tour-2026",
-      "stages_completed": 3,
+      "start_date": "2026-07-08",
+      "end_date": "2026-07-12",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/tour-of-austria-2026",
+      "stages_completed": 0,
       "stages": [
         {
           "num": 1,
           "label": "Stage 1",
-          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-1",
-          "winner": "Matias Gunnar Malmberg",
-          "winner_flag": "🇩🇰",
-          "winner_nat": "DK",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Matias Gunnar Malmberg",
-              "rider_url": "/profile/matias-gunnar-malmberg",
-              "team": "",
-              "nat_code": "DK",
-              "flag": "🇩🇰",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 2,
-              "name": "Danny van Poppel",
-              "rider_url": "/profile/danny-van-poppel",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 3,
-              "name": "Davide Donati",
-              "rider_url": "/profile/davide-donati",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 4,
-              "name": "Zétény Szijártó",
-              "rider_url": "/profile/zeteny-szijarto",
-              "team": "",
-              "nat_code": "HU",
-              "flag": "🇭🇺",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 5,
-              "name": "Riley Pickrell",
-              "rider_url": "/profile/riley-pickrell",
-              "team": "",
-              "nat_code": "CA",
-              "flag": "🇨🇦",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 6,
-              "name": "Benjamin Boos",
-              "rider_url": "/profile/benjamin-boos",
-              "team": "",
-              "nat_code": "DE",
-              "flag": "🇩🇪",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 7,
-              "name": "Simone Buda",
-              "rider_url": "/profile/simone-buda",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 8,
-              "name": "Adam Lewis",
-              "rider_url": "/profile/adam-lewis",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 9,
-              "name": "Oded Kogut",
-              "rider_url": "/profile/oded-kogut",
-              "team": "",
-              "nat_code": "IL",
-              "flag": "🇮🇱",
-              "time_gap": "02:32:02"
-            },
-            {
-              "rank": 10,
-              "name": "Iben Rommelaere",
-              "rider_url": "/profile/iben-rommelaere",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "02:32:02"
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158531/responsive-images/01KS2P7WVMKE9FZ6TKABN2EDNS___heightProfile_1200_428.webp",
-          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158530/responsive-images/01KS2P7P00RRYK5FYWHSCYDQF9___route_1191_800.webp",
-          "date_str": "Saturday 04 July",
-          "start_town": "Sibiu",
-          "finish_town": "Sibiu",
-          "distance_km": 110.8,
-          "elevation_m": 1467,
-          "start_time": "09:45",
-          "stage_type": "hilly",
-          "description": ""
+          "result_url": "/race/tour-of-austria-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 08 July",
+          "start_town": "Graz",
+          "finish_town": "Gamlitz",
+          "distance_km": 188.0,
+          "elevation_m": 2716,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "The 2026 Tour of Austria begins with a varied opening stage from Graz to Gamlitz. Over 188 kilometres and more than 2,700 metres of climbing, the riders immediately face a serious challenge. The rolling route through Styria features several tough climbs and short explosive hills, making it ideal terrain for attackers and punchers. The finale around Gamlitz promises plenty of action, with opportunities for a reduced sprint or a late attack to claim the first leader’s jersey.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153725/responsive-images/01KPT1SZY8SMRZCWV1YQ4DQ9DT___heightProfile_1200_224.webp"
         },
         {
           "num": 2,
           "label": "Stage 2",
-          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-2",
-          "winner": "Lorenzo Mark Finn",
-          "winner_flag": "🇮🇹",
-          "winner_nat": "IT",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Lorenzo Mark Finn",
-              "rider_url": "/profile/lorenzo-mark-finn",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": ""
-            },
-            {
-              "rank": 2,
-              "name": "Byron Munton",
-              "rider_url": "/profile/byron-munton",
-              "team": "",
-              "nat_code": "ZA",
-              "flag": "🇿🇦",
-              "time_gap": ""
-            },
-            {
-              "rank": 3,
-              "name": "Pablo Torres Arias",
-              "rider_url": "/profile/pablo-torres-arias",
-              "team": "",
-              "nat_code": "ES",
-              "flag": "🇪🇸",
-              "time_gap": ""
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158535/responsive-images/01KS2PC7BK2TJCWJ5Q55TYYR8X___heightProfile_1200_428.webp",
-          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158534/responsive-images/01KS2PC1ZH6ZZEPEJCE9DBR5P6___route_1018_800.webp",
-          "date_str": "Sunday 05 July",
-          "start_town": "Sibiu",
-          "finish_town": "Paltinis",
-          "distance_km": 157.3,
-          "elevation_m": 2177,
-          "start_time": "09:45",
-          "stage_type": "hilly",
-          "description": ""
+          "result_url": "/race/tour-of-austria-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 09 July",
+          "start_town": "Bad Kleinkirchheim",
+          "finish_town": "Grossglockner",
+          "distance_km": 188.8,
+          "elevation_m": 2914,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "The second stage of the 2026 Tour of Austria heads straight into the mountains. From Bad Kleinkirchheim to the legendary finish at the Franz Josef Höhe, the riders face a demanding stage of nearly 189 kilometres with more than 2,900 metres of climbing. After a long approach, a brutal final ascent towards the Grossglockner awaits, where the general classification contenders will have to show their true form for the first time. A first major test for the climbers and an immediate opportunity to make a difference in the overall standings.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153728/responsive-images/01KPT1YTPBSVAPFRCJ4SY3G1R6___heightProfile_1200_362.webp"
         },
         {
           "num": 3,
           "label": "Stage 3",
-          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-3",
-          "winner": "Lorenzo Mark Finn",
-          "winner_flag": "🇮🇹",
-          "winner_nat": "IT",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Lorenzo Mark Finn",
-              "rider_url": "/profile/lorenzo-mark-finn",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "03:43:16"
-            },
-            {
-              "rank": 2,
-              "name": "Wout Poels",
-              "rider_url": "/profile/wout-poels",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 13"
-            },
-            {
-              "rank": 3,
-              "name": "Byron Munton",
-              "rider_url": "/profile/byron-munton",
-              "team": "",
-              "nat_code": "ZA",
-              "flag": "🇿🇦",
-              "time_gap": "+ 13"
-            },
-            {
-              "rank": 4,
-              "name": "Mark Donovan",
-              "rider_url": "/profile/mark-donovan",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "+ 20"
-            },
-            {
-              "rank": 5,
-              "name": "Iván Ramiro Sosa",
-              "rider_url": "/profile/ivan-ramiro-sosa",
-              "team": "",
-              "nat_code": "CO",
-              "flag": "🇨🇴",
-              "time_gap": "+ 40"
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158537/responsive-images/01KS2PFJ8XPR3690EE91FA3MRR___heightProfile_1200_428.webp",
-          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158536/responsive-images/01KS2PFD40RRYYVF44PP424XTM___route_1048_800.webp"
+          "result_url": "/race/tour-of-austria-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 10 July",
+          "start_town": "Lienz",
+          "finish_town": "St. Johann/Alpendorf",
+          "distance_km": 188.7,
+          "elevation_m": 2311,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "The third stage of the 2026 Tour of Austria takes the peloton from Lienz to St. Johann Alpendorf. With nearly 189 kilometres and more than 2,300 metres of climbing, the riders once again face a tough Alpine stage. After two demanding climbs in the opening phase, a long and fast middle section follows, but the finale features more challenging hills towards the finish. A stage that offers opportunities for attackers, while the GC contenders will need to stay alert to avoid losing valuable seconds.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153730/responsive-images/01KPT2263E3HVPAXWARZ3BWP6D___heightProfile_1200_222.webp"
         },
         {
           "num": 4,
           "label": "Stage 4",
-          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-4",
-          "winner": "Danny van Poppel",
-          "winner_flag": "🇳🇱",
-          "winner_nat": "NL",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Danny van Poppel",
-              "rider_url": "/profile/danny-van-poppel",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": ""
-            },
-            {
-              "rank": 2,
-              "name": "Davide Donati",
-              "rider_url": "/profile/davide-donati",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": ""
-            },
-            {
-              "rank": 3,
-              "name": "Oded Kogut",
-              "rider_url": "/profile/oded-kogut",
-              "team": "",
-              "nat_code": "IL",
-              "flag": "🇮🇱",
-              "time_gap": ""
-            },
-            {
-              "rank": 4,
-              "name": "Simone Buda",
-              "rider_url": "/profile/simone-buda",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": ""
-            },
-            {
-              "rank": 5,
-              "name": "Márkó Tóth",
-              "rider_url": "/profile/marko-toth",
-              "team": "",
-              "nat_code": "HU",
-              "flag": "🇭🇺",
-              "time_gap": ""
-            }
-          ],
-          "date_str": "Tuesday 07 July",
-          "start_town": "Sibiu",
-          "finish_town": "Sibiu",
-          "distance_km": 181.3,
-          "elevation_m": 1246,
-          "start_time": "15:20",
+          "result_url": "/race/tour-of-austria-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 11 July",
+          "start_town": "Steyr",
+          "finish_town": "Steyr",
+          "distance_km": 170.5,
+          "elevation_m": 2325,
+          "start_time": "",
           "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158541/responsive-images/01KS2PV75WTSRK5E56CYR8T9B8___heightProfile_1200_428.webp"
+          "description": "Stage four of the 2026 Tour of Austria takes place on a hilly course around Steyr. Over 170 kilometres and more than 2,300 metres of climbing, the riders will have little time to recover. The succession of short climbs and technical roads makes this stage ideal for attackers and punchers. In the local finale around Steyr, the race could unfold in many different ways, promising plenty of spectacle and an intense battle for victory.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153732/responsive-images/01KPT2561FJNZEGZQ7Z1KFKSW3___heightProfile_1200_199.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-of-austria-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 12 July",
+          "start_town": "Langenlois, Zöbing",
+          "finish_town": "Wien",
+          "distance_km": 109.0,
+          "elevation_m": 758,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": "The final stage of the 2026 Tour of Austria takes the peloton from Langenlois to Vienna. At 109 kilometres, it is the shortest stage of this edition, but the riders certainly cannot afford to underestimate it. Several punchy climbs in the first half and a tricky hill towards the finale could still have a major impact on the race. Nevertheless, the stage appears likely to end in a battle between the sprinters, who will have one final chance in the Austrian capital to conclude their Tour with a stage victory.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158506/responsive-images/01KS2CVN2K9914WT8DEHXXMTQ8___heightProfile_1200_196.webp"
         }
       ],
-      "last_stage_winner": "Danny van Poppel",
-      "last_stage_winner_flag": "🇳🇱",
-      "last_stage_num": 4,
-      "gc_leader": "🇮🇹 Lorenzo Mark Finn",
-      "gc_top10": [
+      "startlist": [
         {
-          "rank": 1,
-          "name": "Lorenzo Mark Finn",
-          "rider_url": "/profile/lorenzo-mark-finn",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": ""
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "rank": 2,
-          "name": "Byron Munton",
-          "rider_url": "/profile/byron-munton",
-          "team": "",
-          "nat_code": "ZA",
-          "flag": "🇿🇦",
-          "time_gap": ""
+          "name": "Vegard Stake Laengen",
+          "slug": "vegard-stake-laengen",
+          "nat": "no",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "rank": 3,
-          "name": "Mark Donovan",
-          "rider_url": "/profile/mark-donovan",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": ""
+          "name": "António Morgado",
+          "slug": "antonio-morgado",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "rank": 4,
-          "name": "Wout Poels",
-          "rider_url": "/profile/wout-poels",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": ""
+          "name": "Igor Arrieta",
+          "slug": "igor-arrieta-lizarraga",
+          "nat": "es",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "rank": 5,
-          "name": "Iván Ramiro Sosa",
-          "rider_url": "/profile/ivan-ramiro-sosa",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": ""
+          "name": "WIJNGAERT Matteo Vanden",
+          "slug": "matteo-vanden-wijngaert",
+          "nat": "be",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Kevin Vermaerke",
+          "slug": "kevin-vermaerke",
+          "nat": "us",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Vincenzo Albanese",
+          "slug": "vincenzo-albanese",
+          "nat": "it",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Samuele Battistella",
+          "slug": "samuele-battistella",
+          "nat": "it",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Tomos Pattinson",
+          "slug": "tomos-pattinson",
+          "nat": "gb",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Neilson Powless",
+          "slug": "neilson-powless",
+          "nat": "us",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "James Shaw",
+          "slug": "james-shaw",
+          "nat": "gb",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Koen Bouwman",
+          "slug": "koen-bouwman",
+          "nat": "nl",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Paul Double",
+          "slug": "paul-double",
+          "nat": "gb",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Patrick Gamper",
+          "slug": "patrick-gamper",
+          "nat": "at",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Asbjørn Hellemose",
+          "slug": "asbjorn-hellemose",
+          "nat": "dk",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Hamish Mckenzie",
+          "slug": "hamish-mckenzie",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Finlay Pickering",
+          "slug": "finlay-pickering",
+          "nat": "gb",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Francesco Busatto",
+          "slug": "francesco-busatto",
+          "nat": "it",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Michael Gogl",
+          "slug": "michael-gogl",
+          "nat": "at",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "GROSSO Tibor Del",
+          "slug": "tibor-del-grosso",
+          "nat": "nl",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Hugo Houle",
+          "slug": "hugo-houle",
+          "nat": "ca",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Witse Meeussen",
+          "slug": "witse-meeussenn",
+          "nat": "be",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Oscar Riesebeek",
+          "slug": "oscar-riesebeek",
+          "nat": "nl",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "slug": "carlos-rodriguez-cano",
+          "nat": "es",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "PLUS Laurens De",
+          "slug": "laurens-de-plus",
+          "nat": "be",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Bob Jungels",
+          "slug": "bob-jungels",
+          "nat": "lu",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Peter Øxenberg",
+          "slug": "peter-oxenberg-hansen",
+          "nat": "dk",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Andrew August",
+          "slug": "andrew-august",
+          "nat": "us",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Samuel Watson",
+          "slug": "samuel-watson",
+          "nat": "gb",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Héctor Álvarez",
+          "slug": "hector-alvarez-martinez",
+          "nat": "es",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Andrea Bagioli",
+          "slug": "andrea-bagioli",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "HART Tao Geoghegan",
+          "slug": "tao-geoghegan-hart",
+          "nat": "gb",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Lennard Kämna",
+          "slug": "lennard-kamna",
+          "nat": "de",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Patrick Konrad",
+          "slug": "patrick-konrad",
+          "nat": "at",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Loïc Bettendorff",
+          "slug": "loic-bettendorf",
+          "nat": "lu",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Valentin Poschacher",
+          "slug": "valentin-poschacher",
+          "nat": "at",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Filippo Fortin",
+          "slug": "filippo-fortin",
+          "nat": "it",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Richard Riška",
+          "slug": "richard-riska",
+          "nat": "sk",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Jaka Primožič",
+          "slug": "jaka-primozic",
+          "nat": "si",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Riccardo Zoidl",
+          "slug": "riccardo-zoidl",
+          "nat": "at",
+          "team": "Hrinkow Advarics (CT)"
+        },
+        {
+          "name": "Giacomo Ballabio",
+          "slug": "giacomo-ballabio",
+          "nat": "it",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Kilian Feurstein",
+          "slug": "kilian-feurstein",
+          "nat": "at",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Philipp Hofbauer",
+          "slug": "philipp-hofbauer",
+          "nat": "at",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Dominik Röber",
+          "slug": "dominik-rober",
+          "nat": "de",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Tobias Nolde",
+          "slug": "tobias-nolde",
+          "nat": "de",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Emanuel Zangerle",
+          "slug": "emanuel-zangerle",
+          "nat": "at",
+          "team": "Team Vorarlberg (CT)"
+        },
+        {
+          "name": "Nicolas Ginter",
+          "slug": "nicolas-ginter",
+          "nat": "ch",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Paul Viehböck",
+          "slug": "paul-viehbock",
+          "nat": "at",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Jonas Holzknecht",
+          "slug": "jonas-holzknecht",
+          "nat": "at",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Zeno Levi Winter",
+          "slug": "zeno-levi-winter",
+          "nat": "de",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Samuel Novák",
+          "slug": "samuel-novak",
+          "nat": "sk",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Felix Rützler",
+          "slug": "felix-rutzler",
+          "nat": "at",
+          "team": "Tirol KTM Cycling Team (CT)"
+        },
+        {
+          "name": "Lukas Hatz",
+          "slug": "lukas-hatz",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Christoph Holzer",
+          "slug": "christoph-holzer",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Martin Messner",
+          "slug": "martin-messner",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Jakob Sertic",
+          "slug": "jakob-sertic",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Florian Sieber",
+          "slug": "florian-sieber",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Thomas Tichler",
+          "slug": "thomas-tichler",
+          "nat": "at",
+          "team": "WSA KTM Graz (CT)"
+        },
+        {
+          "name": "Gergő Grósz",
+          "slug": "gergo-grosz",
+          "nat": "hu",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Ola Herheim",
+          "slug": "ola-herheim",
+          "nat": "no",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Matthias Erlacher",
+          "slug": "matthias-erlacher",
+          "nat": "at",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Lorenz Krumpl",
+          "slug": "lorenz-krumpl",
+          "nat": "at",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Christian Rush",
+          "slug": "christian-rush",
+          "nat": "nz",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Matic Žumer",
+          "slug": "matic-zumer",
+          "nat": "si",
+          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
+        },
+        {
+          "name": "Paul Buschek",
+          "slug": "paul-buschek",
+          "nat": "at",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Marvin Hammerschmid",
+          "slug": "marvin-hammerschmid",
+          "nat": "at",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Filip Lepka",
+          "slug": "filip-lepka",
+          "nat": "cz",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Maximilian Schmidbauer",
+          "slug": "maximilian-schmidbauer",
+          "nat": "at",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Fabian Steininger",
+          "slug": "fabian-steininger",
+          "nat": "at",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Adrian Stieger",
+          "slug": "adrian-stieger",
+          "nat": "at",
+          "team": "Schwingshandl Intralogistics (CT)"
+        },
+        {
+          "name": "Martin Bárta",
+          "slug": "martin-barta",
+          "nat": "cz",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Tomasz Budziński",
+          "slug": "tomasz-budzinski",
+          "nat": "pl",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Mateusz Gajdulewicz",
+          "slug": "mateusz-gajdulewicz",
+          "nat": "pl",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Alberto Monti",
+          "slug": "alberto-monti",
+          "nat": "cz",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Piotr Pękala",
+          "slug": "piotr-pekala",
+          "nat": "pl",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Šimon Vaníček",
+          "slug": "simon-vanicek",
+          "nat": "cz",
+          "team": "ATT Investments (CT)"
+        },
+        {
+          "name": "Calvin Dik",
+          "slug": "calvin-dik",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "Luis Engelhardt",
+          "slug": "luis-engelhardt",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "GEIßLER Bruno",
+          "slug": "bruno-geissler",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "GLOßNER Tim",
+          "slug": "tim-glossner",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "Eric Meinberg",
+          "slug": "eric-meinberg",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "REIßIG Patrick",
+          "slug": "patrick-reissig",
+          "nat": "de",
+          "team": "Benotti Berthold (CT)"
+        },
+        {
+          "name": "Michael Boroš",
+          "slug": "michael-boros",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Jakub Ťoupalík",
+          "slug": "jakub-toupalik",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Matěj Zahálka",
+          "slug": "matej-zahalka",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Michael Kukrle",
+          "slug": "michael-kukrle",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Václav Ježek",
+          "slug": "vaclav-jezek1",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Adam Bittman",
+          "slug": "adam-bittman",
+          "nat": "cz",
+          "team": "Kasper crypto4me (CT)"
+        },
+        {
+          "name": "Vilmer Ekman",
+          "slug": "ekman-vilmer",
+          "nat": "se",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Simen Evertsen-Hegreberg",
+          "slug": "simen-evertsen-hegreberg",
+          "nat": "no",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Morthen Wang Baksaas",
+          "slug": "morthen-wang-baksaas",
+          "nat": "no",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Peder Dahl Strand",
+          "slug": "peder-dahl-strand",
+          "nat": "no",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Joel Mellby",
+          "slug": "joel-mellby",
+          "nat": "se",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Vilgot Reinhold",
+          "slug": "vilgot-reinhold",
+          "nat": "se",
+          "team": "Lucky Sport Cycling Team (CT)"
+        },
+        {
+          "name": "Andrea Cantoni",
+          "slug": "andrea-cantoni",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Will Harding",
+          "slug": "will-harding",
+          "nat": "gb",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Vittorio Friggi",
+          "slug": "vittorio-friggi",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Mattia Marcozzi",
+          "slug": "mattia-marcozzi",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Francesco Parravano",
+          "slug": "francesco-parravano",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Matteo Spreafico",
+          "slug": "matteo-spreafico",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "AAS Eirik Vang",
+          "slug": "eirik-vang-aas",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Ulrik Bjune",
+          "slug": "ulrik-bjune",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Sander Granberg",
+          "slug": "sander-granberg",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Karl Emil Kjeldsand",
+          "slug": "karl-emil-kjeldsand",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Toralf Rydningen Martinsen",
+          "slug": "toralf-rydningen-martinsen",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Jørgen Sekse",
+          "slug": "jorgen-sekse",
+          "nat": "no",
+          "team": "Team Drali - Repsol (CT)"
+        },
+        {
+          "name": "Johannes Adamietz",
+          "slug": "johannes-adamietz",
+          "nat": "de",
+          "team": "REMBE | rad-net (CT)"
+        },
+        {
+          "name": "Pepe Albrecht",
+          "slug": "pepe-albrecht",
+          "nat": "de",
+          "team": "REMBE | rad-net (CT)"
+        },
+        {
+          "name": "Jermaine Zemke",
+          "slug": "jermaine-zemke",
+          "nat": "de",
+          "team": "REMBE | rad-net (CT)"
+        },
+        {
+          "name": "Mauro Brenner",
+          "slug": "mauro-brenner",
+          "nat": "de",
+          "team": "REMBE | rad-net (CT)"
+        },
+        {
+          "name": "Victor Wedekind",
+          "slug": "victor-wedekind",
+          "nat": "de",
+          "team": "REMBE | rad-net (CT)"
+        },
+        {
+          "name": "Henri Johannes Appelbaum",
+          "slug": "henri-johannes-appelbaum",
+          "nat": "de",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Florian Hochuli",
+          "slug": "florian-hochuli",
+          "nat": "ch",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Alvaro Sagrado",
+          "slug": "alvaro-sagrado",
+          "nat": "es",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Noé Ury",
+          "slug": "noe-ury",
+          "nat": "lu",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Lennart Voege",
+          "slug": "lennart-voege",
+          "nat": "de",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Tim Wafler",
+          "slug": "tim-wafler",
+          "nat": "at",
+          "team": "Team Storck - MRW Bau (CT)"
+        },
+        {
+          "name": "Maciej Banaszak",
+          "slug": "maciej-banaszak",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Konrad Czabok",
+          "slug": "konrad-czabok",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Jakub Kaczmarek",
+          "slug": "jakub-kaczmarek",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Paweł Bernas",
+          "slug": "pawel-bernas",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Patryk Stosz",
+          "slug": "patryk-stosz",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Piotr Maślak",
+          "slug": "piotr-maslak",
+          "nat": "pl",
+          "team": "Voster Team (CT)"
+        },
+        {
+          "name": "Gregor Mühlberger",
+          "slug": "gregor-muhlberger",
+          "nat": "at",
+          "team": "Austria (NAT)"
+        },
+        {
+          "name": "Alexander Hajek",
+          "slug": "alexander-hajek",
+          "nat": "at",
+          "team": "Austria (NAT)"
+        },
+        {
+          "name": "Valentin Hofer",
+          "slug": "valentin-hofer",
+          "nat": "at",
+          "team": "Austria (NAT)"
+        },
+        {
+          "name": "Rainer Kepplinger",
+          "slug": "rainer-kepplinger",
+          "nat": "at",
+          "team": "Austria (NAT)"
+        },
+        {
+          "name": "Sebastian Putz",
+          "slug": "sebastian-putz",
+          "nat": "at",
+          "team": "Austria (NAT)"
+        },
+        {
+          "name": "Paul Verbnjak",
+          "slug": "paul-verbnjak",
+          "nat": "at",
+          "team": "Austria (NAT)"
         }
       ]
     }
@@ -13491,6 +14034,12 @@
           "team": "XDS Astana Team (WT)"
         },
         {
+          "name": "Anton Kuzmin",
+          "slug": "anton-kuzmin",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
           "name": "Henok Mulubrhan",
           "slug": "henok-mulubrhan",
           "nat": "er",
@@ -13503,32 +14052,26 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Alex Tolio",
-          "slug": "alex-tolio",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
+          "name": "BEKKUM Darren Van",
+          "slug": "darren-van-bekkum",
+          "nat": "nl",
+          "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Luca Colnaghi",
-          "slug": "luca-colnaghi",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
+          "name": "Pierre-Henry Basset",
+          "slug": "pierre-henry-basset",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Martin Marcellusi",
-          "slug": "martin-marcellusi",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
+          "name": "Gustav Wang",
+          "slug": "gustav-wang",
+          "nat": "dk",
+          "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Manuele Tarozzi",
-          "slug": "manuele-tarozzi",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Enrico Zanoncello",
-          "slug": "enrico-zanoncello",
+          "name": "Luca Covili",
+          "slug": "luca-covili",
           "nat": "it",
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
@@ -13539,8 +14082,86 @@
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
-          "name": "Joan Bou",
-          "slug": "joan-bou",
+          "name": "Martin Santiago Herreño",
+          "slug": "martin-santiago-herreno",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Marco Manenti",
+          "slug": "marco-manenti1",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alessio Martinelli",
+          "slug": "alessio-martinelli",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Enrico Zanoncello",
+          "slug": "enrico-zanoncello",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Clément Alleno",
+          "slug": "clement-alleno",
+          "nat": "fr",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Josh Burnett",
+          "slug": "josh-burnett",
+          "nat": "nz",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Jambaljamts Sainbayar",
+          "slug": "jambaljamts-sainbayar",
+          "nat": "mn",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Eric Antonio Fagúndez",
+          "slug": "eric-antonio-fagundez",
+          "nat": "uy",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "César Macías",
+          "slug": "cesar-macias-estrada",
+          "nat": "mx",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Merhawi Kudus",
+          "slug": "merhawi-kudus",
+          "nat": "er",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Rodrigo Álvarez",
+          "slug": "rodrigo-alvarez-rogriguez",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Iúri Leitão",
+          "slug": "iuri-leitao",
+          "nat": "pt",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Sergi Darder",
+          "slug": "sergi-darder",
           "nat": "es",
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
@@ -13551,16 +14172,34 @@
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
         {
+          "name": "Javier Ibáñez",
+          "slug": "javier-ibanez-beltran-de-salazar",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Iker Villar",
+          "slug": "iker-villar",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
           "name": "Gorka Sorarrain",
           "slug": "gorka-sorarrain",
           "nat": "es",
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
         {
-          "name": "Jan Castellon",
-          "slug": "jan-castellon",
+          "name": "Alex Díaz",
+          "slug": "alex-diaz-alvarez",
           "nat": "es",
           "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Alexis Renard",
+          "slug": "alexis-renard",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
         },
         {
           "name": "Simon Carr",
@@ -13569,20 +14208,38 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Louis Sutton",
-          "slug": "louis-sutton",
-          "nat": "gb",
-          "team": "Euskaltel - Euskadi (PRT)"
+          "name": "Yaël Joalland",
+          "slug": "yael-joalland",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
         },
         {
-          "name": "Iker Mintegi",
-          "slug": "iker-mintegi-claver",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
+          "name": "Emanuel Buchmann",
+          "slug": "emanuel-buchmann",
+          "nat": "de",
+          "team": "Cofidis (PRT)"
         },
         {
-          "name": "Mikel Bizkarra",
-          "slug": "mikel-bizkarra",
+          "name": "Sylvain Moniquet",
+          "slug": "sylvain-moniquet",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Nicolas Debeaumarché",
+          "slug": "nicolas-debeaumarche",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Paul Ourselin",
+          "slug": "paul-ourselin",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Jon Agirre",
+          "slug": "jon-agirre",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
@@ -13593,21 +14250,51 @@
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Jon Agirre",
-          "slug": "jon-agirre",
+          "name": "Mikel Bizkarra",
+          "slug": "mikel-bizkarra",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Fausto Masnada",
-          "slug": "fausto-masnada",
+          "name": "Iker Mintegi",
+          "slug": "iker-mintegi-claver",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Jokin Murguialday",
+          "slug": "jokin-murguialday-elorza",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Louis Sutton",
+          "slug": "louis-sutton",
+          "nat": "gb",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Christian Bagatin",
+          "slug": "christian-bagatin",
           "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Nicolò Buratti",
-          "slug": "nicolo-buratti",
+          "name": "Cesare Chesini",
+          "slug": "cesare-chesini",
           "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Edoardo Cipollini",
+          "slug": "edoardo-cipollini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Márton Dina",
+          "slug": "marton-dina",
+          "nat": "hu",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
@@ -13617,33 +14304,135 @@
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Matteo Ambrosini",
-          "slug": "matteo-ambrosini",
+          "name": "Lorenzo Masciarelli",
+          "slug": "lorenzo-masciarelli",
           "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Christian Bagatin",
-          "slug": "christian-bagatin",
+          "name": "Lorenzo Nespoli",
+          "slug": "lorenzo-nespoli",
           "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Samuele Zoccarato",
-          "slug": "samuele-zoccarato",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
+          "name": "Tilen Finkšt",
+          "slug": "tilen-finkst",
+          "nat": "si",
+          "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
-          "name": "Alessandro Fancellu",
-          "slug": "alessandro-fancellu",
+          "name": "Tommaso Nencini",
+          "slug": "tommaso-nencini",
           "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Andrea Piras",
+          "slug": "andrea-piras",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Valerio Conti",
+          "slug": "valerio-conti",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Felix James Meo",
+          "slug": "felix-james-meo",
+          "nat": "nz",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Matteo Regnanti",
+          "slug": "matteo-regnanti",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Santiago Umba",
+          "slug": "santiago-umba",
+          "nat": "co",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Fabrizio Crozzolo",
+          "slug": "fabrizio-crozzolo",
+          "nat": "ar",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fernando Tercero",
+          "slug": "fernando-tercero-lopez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Dario Giuliano",
+          "slug": "dario-giuliano",
+          "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Gabriele Bessega",
+          "slug": "gabriele-bessega",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Manuel Peñalver",
+          "slug": "manuel-penalver",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Davide Bais",
+          "slug": "davide-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Adrián Benito",
+          "slug": "adrian-benito-gonzalez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
         },
         {
           "name": "Mathis Avondts",
           "slug": "mathis-avondts",
           "nat": "be",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Bram Danklof",
+          "slug": "bram-danklof",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Stef Koning",
+          "slug": "stef-koning",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Niek Voogt",
+          "slug": "niek-voogt",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Lukas Vries",
+          "slug": "lukas-vries",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Meindert Weulink",
+          "slug": "meindert-weulink",
+          "nat": "nl",
           "team": "Azerion / Villa Valkenburg (CT)"
         },
         {
@@ -13653,10 +14442,88 @@
           "team": "Azerion / Villa Valkenburg (CT)"
         },
         {
+          "name": "Matthew Greenwood",
+          "slug": "matthew-greenwood",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
           "name": "William Heffernan",
           "slug": "william-heffernan",
           "nat": "au",
           "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Noah Blannin",
+          "slug": "noah-blannin",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Max Campbell",
+          "slug": "max-campbell",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Alastair Christie-Johnston",
+          "slug": "alastair-christie-johnston",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Finn Walsh",
+          "slug": "finn-walsh",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Oscar Gallagher",
+          "slug": "oscar-gallagher",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Cormac Mcgeough",
+          "slug": "cormac-mcgeough",
+          "nat": "ie",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Daniel Guld",
+          "slug": "daniel-guld",
+          "nat": "dk",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "HIN Daniel Yon",
+          "slug": "daniel-yon-hin",
+          "nat": "mu",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Matthew Sherwin",
+          "slug": "matthew-sherwin",
+          "nat": "au",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Nikita Kirzhaykin",
+          "slug": "nikita-kirzhaykin",
+          "nat": "ru",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Oliver Scott",
+          "slug": "oliver-scott",
+          "nat": "nz",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Jonty Harris",
+          "slug": "jonty-harris",
+          "nat": "nz",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
         },
         {
           "name": "Mihkel Räim",
@@ -13677,15 +14544,39 @@
           "team": "Quick Pro Team (CT)"
         },
         {
-          "name": "Jaebin Yun",
-          "slug": "jaebin-yun",
-          "nat": "kr",
+          "name": "Wing Chung Ng",
+          "slug": "wing-chung-ng",
+          "nat": "hk",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "David Delgado",
+          "slug": "david-delgado",
+          "nat": "es",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Oskar Küüt",
+          "slug": "oskar-kuut",
+          "nat": "ee",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Pengkai Wang",
+          "slug": "pengkai-wang",
+          "nat": "cn",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Ting Wei Li",
+          "slug": "ting-wei-li",
+          "nat": "tw",
           "team": "Roojai Insurance Winspace (CT)"
         },
         {
-          "name": "Cristian David Pita",
-          "slug": "cristian-david-pita",
-          "nat": "ec",
+          "name": "Jaebin Yun",
+          "slug": "jaebin-yun",
+          "nat": "kr",
           "team": "Roojai Insurance Winspace (CT)"
         },
         {
@@ -13713,16 +14604,10 @@
           "team": "Roojai Insurance Winspace (CT)"
         },
         {
-          "name": "Athit Poulard",
-          "slug": "athit-poulard",
-          "nat": "th",
+          "name": "Cristian David Pita",
+          "slug": "cristian-david-pita",
+          "nat": "ec",
           "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Zhe Yie Kee",
-          "slug": "zhe-yie-kee",
-          "nat": "my",
-          "team": "Terengganu Cycling Team (CT)"
         },
         {
           "name": "ENGELEN Adne Van",
@@ -13731,14 +14616,44 @@
           "team": "Terengganu Cycling Team (CT)"
         },
         {
-          "name": "Zhenghao Fu",
-          "slug": "zhenghao-fu",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
+          "name": "Mathias Bregnhøj",
+          "slug": "mathias-bregnhoj",
+          "nat": "dk",
+          "team": "Terengganu Cycling Team (CT)"
         },
         {
-          "name": "Yangshuo Liu",
-          "slug": "yangshuo-liu",
+          "name": "Zeb Kyffin",
+          "slug": "zeb-kyffin",
+          "nat": "gb",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Pierre Barbier",
+          "slug": "pierre-barbier",
+          "nat": "fr",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Zhe Yie Kee",
+          "slug": "zhe-yie-kee",
+          "nat": "my",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Muhammad Nur Aiman Bin Rosli",
+          "slug": "muhammad-nur-aiman-bin-rosli",
+          "nat": "my",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "James Gardner",
+          "slug": "james-gardner",
+          "nat": "nz",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Boan Li",
+          "slug": "boan-li",
           "nat": "cn",
           "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
@@ -13755,14 +14670,8 @@
           "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
         {
-          "name": "Yihua Fan",
-          "slug": "yihua-fan",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Boan Li",
-          "slug": "boan-li",
+          "name": "Wenxuan Li",
+          "slug": "wenxuan-li1",
           "nat": "cn",
           "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
@@ -13773,33 +14682,21 @@
           "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
         {
-          "name": "Rongqi Zhang",
-          "slug": "rongqi-zhang",
+          "name": "Zeyao Lu",
+          "slug": "zeyao-lu",
           "nat": "cn",
-          "team": "China Anta - Mentech Cycling Team (CT)"
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
         {
-          "name": "ROSSI Lucas De",
-          "slug": "lucas-de-rossi",
-          "nat": "fr",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Jesper Rasch",
-          "slug": "jesper-rasch",
-          "nat": "nl",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Yuheng Li",
-          "slug": "yuheng-li",
+          "name": "Ming Wang",
+          "slug": "ming-wang1",
           "nat": "cn",
-          "team": "China Anta - Mentech Cycling Team (CT)"
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
         },
         {
-          "name": "Juan Manuel Barboza",
-          "slug": "juan-manuel-barboza-nader",
-          "nat": "co",
+          "name": "Chenglu Liu",
+          "slug": "chenglu-liu",
+          "nat": "cn",
           "team": "China Anta - Mentech Cycling Team (CT)"
         },
         {
@@ -13809,10 +14706,58 @@
           "team": "China Anta - Mentech Cycling Team (CT)"
         },
         {
+          "name": "ROSSI Lucas De",
+          "slug": "lucas-de-rossi",
+          "nat": "fr",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
           "name": "Willie Smit",
           "slug": "willie-smit",
           "nat": "za",
           "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Jesper Rasch",
+          "slug": "jesper-rasch",
+          "nat": "nl",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Yusheng Chen",
+          "slug": "yusheng-chen",
+          "nat": "cn",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Rongqi Zhang",
+          "slug": "rongqi-zhang",
+          "nat": "cn",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Kongqing Wei",
+          "slug": "kongqing-wei",
+          "nat": "cn",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Zhengwang Zhang",
+          "slug": "zhengwang-zhang",
+          "nat": "cn",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Jonas Rapp",
+          "slug": "jonas-rapp",
+          "nat": "de",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Benjamin Dyball",
+          "slug": "benjamin-dyball",
+          "nat": "au",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
         },
         {
           "name": "Māris Bogdanovičs",
@@ -13821,9 +14766,21 @@
           "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
         },
         {
-          "name": "Cang Yang",
-          "slug": "cang-yang",
-          "nat": "cn",
+          "name": "Cyrus Monk",
+          "slug": "cyrus-monk",
+          "nat": "au",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Markus Pajur",
+          "slug": "markus-pajur",
+          "nat": "ee",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Eduardo Sepúlveda",
+          "slug": "eduardo-sepulveda",
+          "nat": "ar",
           "team": "Li Ning Star (CT)"
         },
         {
@@ -13833,21 +14790,9 @@
           "team": "Li Ning Star (CT)"
         },
         {
-          "name": "Eduardo Sepúlveda",
-          "slug": "eduardo-sepulveda",
-          "nat": "ar",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Alexander Salby",
-          "slug": "alexander-salby",
-          "nat": "dk",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Raman Tsishkou",
-          "slug": "raman-tsishkou",
-          "nat": "by",
+          "name": "Simon Pellaud",
+          "slug": "simon-pellaud",
+          "nat": "ch",
           "team": "Li Ning Star (CT)"
         },
         {
@@ -13857,10 +14802,76 @@
           "team": "Li Ning Star (CT)"
         },
         {
-          "name": "Simon Pellaud",
-          "slug": "simon-pellaud",
-          "nat": "ch",
+          "name": "Cang Yang",
+          "slug": "cang-yang",
+          "nat": "cn",
           "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Raman Tsishkou",
+          "slug": "raman-tsishkou",
+          "nat": "by",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Alexander Salby",
+          "slug": "alexander-salby",
+          "nat": "dk",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Haijie Hu",
+          "slug": "haijie-hu",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Chenli Zhao",
+          "slug": "chenli-zhao",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Xi Li",
+          "slug": "xi-li",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Ze Zi",
+          "slug": "ze-zi",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Ruibiao Zhang",
+          "slug": "ruibiao-zhang",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Chen Wu",
+          "slug": "chen-wu",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Zidi Chen",
+          "slug": "zidi-chen",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Petr Rikunov",
+          "slug": "petr-rikunov",
+          "nat": "ru",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Jonathan Klever Caicedo",
+          "slug": "jonathan-klever-caicedo",
+          "nat": "ec",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
         },
         {
           "name": "Chaoyi Li",
@@ -13869,9 +14880,15 @@
           "team": "Wheeltop Rotor Chengdu Team (CT)"
         },
         {
-          "name": "Jonathan Klever Caicedo",
-          "slug": "jonathan-klever-caicedo",
-          "nat": "ec",
+          "name": "Junqi Shao",
+          "slug": "junqi-shao",
+          "nat": "cn",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Andrei Stepanov",
+          "slug": "andrei-stepanov",
+          "nat": "ru",
           "team": "Wheeltop Rotor Chengdu Team (CT)"
         },
         {
@@ -13887,26 +14904,14 @@
           "team": "Wheeltop Rotor Chengdu Team (CT)"
         },
         {
-          "name": "Andrei Stepanov",
-          "slug": "andrei-stepanov",
-          "nat": "ru",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Junqi Shao",
-          "slug": "junqi-shao",
-          "nat": "cn",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Petr Rikunov",
-          "slug": "petr-rikunov",
-          "nat": "ru",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
           "name": "Hailin Sun",
           "slug": "hailin-sun",
+          "nat": "cn",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Zhibin Yang",
+          "slug": "zhibin-yang",
           "nat": "cn",
           "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
         },
@@ -13917,9 +14922,27 @@
           "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
         },
         {
-          "name": "Zhibin Yang",
-          "slug": "zhibin-yang",
-          "nat": "cn",
+          "name": "Saeid Safarzadeh",
+          "slug": "saeeid-safarzadeh",
+          "nat": "ir",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Hernán Ricardo Aguirre",
+          "slug": "hernan-aguirre",
+          "nat": "co",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "SHOTORBAN Ali Labib",
+          "slug": "ali-labib-shotorban",
+          "nat": "ir",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "James Forbes",
+          "slug": "james-forbes",
+          "nat": "au",
           "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
         }
       ]
@@ -14578,7 +15601,14 @@
       "end_date": "2026-09-06",
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/gp-industria-artigianato-2026",
-      "startlist": []
+      "startlist": [
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        }
+      ]
     },
     {
       "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
@@ -14960,893 +15990,6 @@
       "startlist": []
     },
     {
-      "slug": "tour-of-austria",
-      "cf_slug": "tour-of-austria-2026",
-      "name": "Tour of Austria",
-      "year": "2026",
-      "category": "2.1",
-      "status": "upcoming",
-      "start_date": "2026-07-08",
-      "end_date": "2026-07-12",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/tour-of-austria-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-of-austria-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 08 July",
-          "start_town": "Graz",
-          "finish_town": "Gamlitz",
-          "distance_km": 188.0,
-          "elevation_m": 2716,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "The 2026 Tour of Austria begins with a varied opening stage from Graz to Gamlitz. Over 188 kilometres and more than 2,700 metres of climbing, the riders immediately face a serious challenge. The rolling route through Styria features several tough climbs and short explosive hills, making it ideal terrain for attackers and punchers. The finale around Gamlitz promises plenty of action, with opportunities for a reduced sprint or a late attack to claim the first leader’s jersey.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153725/responsive-images/01KPT1SZY8SMRZCWV1YQ4DQ9DT___heightProfile_1200_224.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-of-austria-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 09 July",
-          "start_town": "Bad Kleinkirchheim",
-          "finish_town": "Grossglockner",
-          "distance_km": 188.8,
-          "elevation_m": 2914,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "The second stage of the 2026 Tour of Austria heads straight into the mountains. From Bad Kleinkirchheim to the legendary finish at the Franz Josef Höhe, the riders face a demanding stage of nearly 189 kilometres with more than 2,900 metres of climbing. After a long approach, a brutal final ascent towards the Grossglockner awaits, where the general classification contenders will have to show their true form for the first time. A first major test for the climbers and an immediate opportunity to make a difference in the overall standings.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153728/responsive-images/01KPT1YTPBSVAPFRCJ4SY3G1R6___heightProfile_1200_362.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-of-austria-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 10 July",
-          "start_town": "Lienz",
-          "finish_town": "St. Johann/Alpendorf",
-          "distance_km": 188.7,
-          "elevation_m": 2311,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "The third stage of the 2026 Tour of Austria takes the peloton from Lienz to St. Johann Alpendorf. With nearly 189 kilometres and more than 2,300 metres of climbing, the riders once again face a tough Alpine stage. After two demanding climbs in the opening phase, a long and fast middle section follows, but the finale features more challenging hills towards the finish. A stage that offers opportunities for attackers, while the GC contenders will need to stay alert to avoid losing valuable seconds.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153730/responsive-images/01KPT2263E3HVPAXWARZ3BWP6D___heightProfile_1200_222.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-of-austria-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 11 July",
-          "start_town": "Steyr",
-          "finish_town": "Steyr",
-          "distance_km": 170.5,
-          "elevation_m": 2325,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "Stage four of the 2026 Tour of Austria takes place on a hilly course around Steyr. Over 170 kilometres and more than 2,300 metres of climbing, the riders will have little time to recover. The succession of short climbs and technical roads makes this stage ideal for attackers and punchers. In the local finale around Steyr, the race could unfold in many different ways, promising plenty of spectacle and an intense battle for victory.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/153732/responsive-images/01KPT2561FJNZEGZQ7Z1KFKSW3___heightProfile_1200_199.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-of-austria-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 12 July",
-          "start_town": "Langenlois, Zöbing",
-          "finish_town": "Wien",
-          "distance_km": 109.0,
-          "elevation_m": 758,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": "The final stage of the 2026 Tour of Austria takes the peloton from Langenlois to Vienna. At 109 kilometres, it is the shortest stage of this edition, but the riders certainly cannot afford to underestimate it. Several punchy climbs in the first half and a tricky hill towards the finale could still have a major impact on the race. Nevertheless, the stage appears likely to end in a battle between the sprinters, who will have one final chance in the Austrian capital to conclude their Tour with a stage victory.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158506/responsive-images/01KS2CVN2K9914WT8DEHXXMTQ8___heightProfile_1200_196.webp"
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Jan Christen",
-          "slug": "jan-christen",
-          "nat": "ch",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Vegard Stake Laengen",
-          "slug": "vegard-stake-laengen",
-          "nat": "no",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "António Morgado",
-          "slug": "antonio-morgado",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Igor Arrieta",
-          "slug": "igor-arrieta-lizarraga",
-          "nat": "es",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "WIJNGAERT Matteo Vanden",
-          "slug": "matteo-vanden-wijngaert",
-          "nat": "be",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Kevin Vermaerke",
-          "slug": "kevin-vermaerke",
-          "nat": "us",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Vincenzo Albanese",
-          "slug": "vincenzo-albanese",
-          "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Samuele Battistella",
-          "slug": "samuele-battistella",
-          "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Tomos Pattinson",
-          "slug": "tomos-pattinson",
-          "nat": "gb",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Neilson Powless",
-          "slug": "neilson-powless",
-          "nat": "us",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "James Shaw",
-          "slug": "james-shaw",
-          "nat": "gb",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Koen Bouwman",
-          "slug": "koen-bouwman",
-          "nat": "nl",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Paul Double",
-          "slug": "paul-double",
-          "nat": "gb",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Patrick Gamper",
-          "slug": "patrick-gamper",
-          "nat": "at",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Asbjørn Hellemose",
-          "slug": "asbjorn-hellemose",
-          "nat": "dk",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Hamish Mckenzie",
-          "slug": "hamish-mckenzie",
-          "nat": "au",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Finlay Pickering",
-          "slug": "finlay-pickering",
-          "nat": "gb",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Francesco Busatto",
-          "slug": "francesco-busatto",
-          "nat": "it",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Michael Gogl",
-          "slug": "michael-gogl",
-          "nat": "at",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "GROSSO Tibor Del",
-          "slug": "tibor-del-grosso",
-          "nat": "nl",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Hugo Houle",
-          "slug": "hugo-houle",
-          "nat": "ca",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Witse Meeussen",
-          "slug": "witse-meeussenn",
-          "nat": "be",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Oscar Riesebeek",
-          "slug": "oscar-riesebeek",
-          "nat": "nl",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Carlos Rodríguez",
-          "slug": "carlos-rodriguez-cano",
-          "nat": "es",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "PLUS Laurens De",
-          "slug": "laurens-de-plus",
-          "nat": "be",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Bob Jungels",
-          "slug": "bob-jungels",
-          "nat": "lu",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Peter Øxenberg",
-          "slug": "peter-oxenberg-hansen",
-          "nat": "dk",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Andrew August",
-          "slug": "andrew-august",
-          "nat": "us",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Samuel Watson",
-          "slug": "samuel-watson",
-          "nat": "gb",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Héctor Álvarez",
-          "slug": "hector-alvarez-martinez",
-          "nat": "es",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Andrea Bagioli",
-          "slug": "andrea-bagioli",
-          "nat": "it",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "HART Tao Geoghegan",
-          "slug": "tao-geoghegan-hart",
-          "nat": "gb",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Lennard Kämna",
-          "slug": "lennard-kamna",
-          "nat": "de",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Patrick Konrad",
-          "slug": "patrick-konrad",
-          "nat": "at",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Bauke Mollema",
-          "slug": "bauke-mollema",
-          "nat": "nl",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Loïc Bettendorff",
-          "slug": "loic-bettendorf",
-          "nat": "lu",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Valentin Poschacher",
-          "slug": "valentin-poschacher",
-          "nat": "at",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Filippo Fortin",
-          "slug": "filippo-fortin",
-          "nat": "it",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Richard Riška",
-          "slug": "richard-riska",
-          "nat": "sk",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Jaka Primožič",
-          "slug": "jaka-primozic",
-          "nat": "si",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Riccardo Zoidl",
-          "slug": "riccardo-zoidl",
-          "nat": "at",
-          "team": "Hrinkow Advarics (CT)"
-        },
-        {
-          "name": "Giacomo Ballabio",
-          "slug": "giacomo-ballabio",
-          "nat": "it",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Kilian Feurstein",
-          "slug": "kilian-feurstein",
-          "nat": "at",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Philipp Hofbauer",
-          "slug": "philipp-hofbauer",
-          "nat": "at",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Dominik Röber",
-          "slug": "dominik-rober",
-          "nat": "de",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Tobias Nolde",
-          "slug": "tobias-nolde",
-          "nat": "de",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Emanuel Zangerle",
-          "slug": "emanuel-zangerle",
-          "nat": "at",
-          "team": "Team Vorarlberg (CT)"
-        },
-        {
-          "name": "Nicolas Ginter",
-          "slug": "nicolas-ginter",
-          "nat": "ch",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Paul Viehböck",
-          "slug": "paul-viehbock",
-          "nat": "at",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Jonas Holzknecht",
-          "slug": "jonas-holzknecht",
-          "nat": "at",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Zeno Levi Winter",
-          "slug": "zeno-levi-winter",
-          "nat": "de",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Samuel Novák",
-          "slug": "samuel-novak",
-          "nat": "sk",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Felix Rützler",
-          "slug": "felix-rutzler",
-          "nat": "at",
-          "team": "Tirol KTM Cycling Team (CT)"
-        },
-        {
-          "name": "Lukas Hatz",
-          "slug": "lukas-hatz",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Christoph Holzer",
-          "slug": "christoph-holzer",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Martin Messner",
-          "slug": "martin-messner",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Jakob Sertic",
-          "slug": "jakob-sertic",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Florian Sieber",
-          "slug": "florian-sieber",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Thomas Tichler",
-          "slug": "thomas-tichler",
-          "nat": "at",
-          "team": "WSA KTM Graz (CT)"
-        },
-        {
-          "name": "Gergő Grósz",
-          "slug": "gergo-grosz",
-          "nat": "hu",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Ola Herheim",
-          "slug": "ola-herheim",
-          "nat": "no",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Matthias Erlacher",
-          "slug": "matthias-erlacher",
-          "nat": "at",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Lorenz Krumpl",
-          "slug": "lorenz-krumpl",
-          "nat": "at",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Christian Rush",
-          "slug": "christian-rush",
-          "nat": "nz",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Matic Žumer",
-          "slug": "matic-zumer",
-          "nat": "si",
-          "team": "ARBÖ Kärnten Sport Feld am See (CT)"
-        },
-        {
-          "name": "Paul Buschek",
-          "slug": "paul-buschek",
-          "nat": "at",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Marvin Hammerschmid",
-          "slug": "marvin-hammerschmid",
-          "nat": "at",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Filip Lepka",
-          "slug": "filip-lepka",
-          "nat": "cz",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Maximilian Schmidbauer",
-          "slug": "maximilian-schmidbauer",
-          "nat": "at",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Fabian Steininger",
-          "slug": "fabian-steininger",
-          "nat": "at",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Adrian Stieger",
-          "slug": "adrian-stieger",
-          "nat": "at",
-          "team": "Schwingshandl Intralogistics (CT)"
-        },
-        {
-          "name": "Martin Bárta",
-          "slug": "martin-barta",
-          "nat": "cz",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Tomasz Budziński",
-          "slug": "tomasz-budzinski",
-          "nat": "pl",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Mateusz Gajdulewicz",
-          "slug": "mateusz-gajdulewicz",
-          "nat": "pl",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Alberto Monti",
-          "slug": "alberto-monti",
-          "nat": "cz",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Piotr Pękala",
-          "slug": "piotr-pekala",
-          "nat": "pl",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Šimon Vaníček",
-          "slug": "simon-vanicek",
-          "nat": "cz",
-          "team": "ATT Investments (CT)"
-        },
-        {
-          "name": "Calvin Dik",
-          "slug": "calvin-dik",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "Luis Engelhardt",
-          "slug": "luis-engelhardt",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "GEIßLER Bruno",
-          "slug": "bruno-geissler",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "GLOßNER Tim",
-          "slug": "tim-glossner",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "Eric Meinberg",
-          "slug": "eric-meinberg",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "REIßIG Patrick",
-          "slug": "patrick-reissig",
-          "nat": "de",
-          "team": "Benotti Berthold (CT)"
-        },
-        {
-          "name": "Michael Boroš",
-          "slug": "michael-boros",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Jakub Ťoupalík",
-          "slug": "jakub-toupalik",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Matěj Zahálka",
-          "slug": "matej-zahalka",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Michael Kukrle",
-          "slug": "michael-kukrle",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Václav Ježek",
-          "slug": "vaclav-jezek1",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Adam Bittman",
-          "slug": "adam-bittman",
-          "nat": "cz",
-          "team": "Kasper crypto4me (CT)"
-        },
-        {
-          "name": "Vilmer Ekman",
-          "slug": "ekman-vilmer",
-          "nat": "se",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Simen Evertsen-Hegreberg",
-          "slug": "simen-evertsen-hegreberg",
-          "nat": "no",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Morthen Wang Baksaas",
-          "slug": "morthen-wang-baksaas",
-          "nat": "no",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Peder Dahl Strand",
-          "slug": "peder-dahl-strand",
-          "nat": "no",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Joel Mellby",
-          "slug": "joel-mellby",
-          "nat": "se",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Vilgot Reinhold",
-          "slug": "vilgot-reinhold",
-          "nat": "se",
-          "team": "Lucky Sport Cycling Team (CT)"
-        },
-        {
-          "name": "Andrea Cantoni",
-          "slug": "andrea-cantoni",
-          "nat": "it",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "Will Harding",
-          "slug": "will-harding",
-          "nat": "gb",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "Vittorio Friggi",
-          "slug": "vittorio-friggi",
-          "nat": "it",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "Mattia Marcozzi",
-          "slug": "mattia-marcozzi",
-          "nat": "it",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "Francesco Parravano",
-          "slug": "francesco-parravano",
-          "nat": "it",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "Matteo Spreafico",
-          "slug": "matteo-spreafico",
-          "nat": "it",
-          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
-        },
-        {
-          "name": "AAS Eirik Vang",
-          "slug": "eirik-vang-aas",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Ulrik Bjune",
-          "slug": "ulrik-bjune",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Sander Granberg",
-          "slug": "sander-granberg",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Karl Emil Kjeldsand",
-          "slug": "karl-emil-kjeldsand",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Toralf Rydningen Martinsen",
-          "slug": "toralf-rydningen-martinsen",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Jørgen Sekse",
-          "slug": "jorgen-sekse",
-          "nat": "no",
-          "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Johannes Adamietz",
-          "slug": "johannes-adamietz",
-          "nat": "de",
-          "team": "REMBE | rad-net (CT)"
-        },
-        {
-          "name": "Pepe Albrecht",
-          "slug": "pepe-albrecht",
-          "nat": "de",
-          "team": "REMBE | rad-net (CT)"
-        },
-        {
-          "name": "Jermaine Zemke",
-          "slug": "jermaine-zemke",
-          "nat": "de",
-          "team": "REMBE | rad-net (CT)"
-        },
-        {
-          "name": "Mauro Brenner",
-          "slug": "mauro-brenner",
-          "nat": "de",
-          "team": "REMBE | rad-net (CT)"
-        },
-        {
-          "name": "Victor Wedekind",
-          "slug": "victor-wedekind",
-          "nat": "de",
-          "team": "REMBE | rad-net (CT)"
-        },
-        {
-          "name": "Henri Johannes Appelbaum",
-          "slug": "henri-johannes-appelbaum",
-          "nat": "de",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Florian Hochuli",
-          "slug": "florian-hochuli",
-          "nat": "ch",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Alvaro Sagrado",
-          "slug": "alvaro-sagrado",
-          "nat": "es",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Noé Ury",
-          "slug": "noe-ury",
-          "nat": "lu",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Lennart Voege",
-          "slug": "lennart-voege",
-          "nat": "de",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Tim Wafler",
-          "slug": "tim-wafler",
-          "nat": "at",
-          "team": "Team Storck - MRW Bau (CT)"
-        },
-        {
-          "name": "Maciej Banaszak",
-          "slug": "maciej-banaszak",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Konrad Czabok",
-          "slug": "konrad-czabok",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Jakub Kaczmarek",
-          "slug": "jakub-kaczmarek",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Paweł Bernas",
-          "slug": "pawel-bernas",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Patryk Stosz",
-          "slug": "patryk-stosz",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Piotr Maślak",
-          "slug": "piotr-maslak",
-          "nat": "pl",
-          "team": "Voster Team (CT)"
-        },
-        {
-          "name": "Gregor Mühlberger",
-          "slug": "gregor-muhlberger",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        },
-        {
-          "name": "Alexander Hajek",
-          "slug": "alexander-hajek",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        },
-        {
-          "name": "Valentin Hofer",
-          "slug": "valentin-hofer",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        },
-        {
-          "name": "Rainer Kepplinger",
-          "slug": "rainer-kepplinger",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        },
-        {
-          "name": "Sebastian Putz",
-          "slug": "sebastian-putz",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        },
-        {
-          "name": "Paul Verbnjak",
-          "slug": "paul-verbnjak",
-          "nat": "at",
-          "team": "Austria (NAT)"
-        }
-      ]
-    },
-    {
       "slug": "clasica-de-ordizia-ordiziako-klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
@@ -15874,6 +16017,350 @@
     }
   ],
   "recent": [
+    {
+      "slug": "sibiu-cycling-tour",
+      "cf_slug": "sibiu-cycling-tour-2026",
+      "name": "Sibiu Cycling Tour",
+      "year": "2026",
+      "category": "2.1",
+      "status": "recent",
+      "start_date": "2026-07-04",
+      "end_date": "2026-07-07",
+      "total_stages": 4,
+      "official_url": "https://cyclingflash.com/race/sibiu-cycling-tour-2026",
+      "stages_completed": 3,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-1",
+          "winner": "Matias Gunnar Malmberg",
+          "winner_flag": "🇩🇰",
+          "winner_nat": "DK",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Matias Gunnar Malmberg",
+              "rider_url": "/profile/matias-gunnar-malmberg",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 2,
+              "name": "Danny van Poppel",
+              "rider_url": "/profile/danny-van-poppel",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 3,
+              "name": "Davide Donati",
+              "rider_url": "/profile/davide-donati",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 4,
+              "name": "Zétény Szijártó",
+              "rider_url": "/profile/zeteny-szijarto",
+              "team": "",
+              "nat_code": "HU",
+              "flag": "🇭🇺",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 5,
+              "name": "Riley Pickrell",
+              "rider_url": "/profile/riley-pickrell",
+              "team": "",
+              "nat_code": "CA",
+              "flag": "🇨🇦",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 6,
+              "name": "Benjamin Boos",
+              "rider_url": "/profile/benjamin-boos",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 7,
+              "name": "Simone Buda",
+              "rider_url": "/profile/simone-buda",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 8,
+              "name": "Adam Lewis",
+              "rider_url": "/profile/adam-lewis",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 9,
+              "name": "Oded Kogut",
+              "rider_url": "/profile/oded-kogut",
+              "team": "",
+              "nat_code": "IL",
+              "flag": "🇮🇱",
+              "time_gap": "02:32:02"
+            },
+            {
+              "rank": 10,
+              "name": "Iben Rommelaere",
+              "rider_url": "/profile/iben-rommelaere",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "02:32:02"
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158531/responsive-images/01KS2P7WVMKE9FZ6TKABN2EDNS___heightProfile_1200_428.webp",
+          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158530/responsive-images/01KS2P7P00RRYK5FYWHSCYDQF9___route_1191_800.webp",
+          "date_str": "Saturday 04 July",
+          "start_town": "Sibiu",
+          "finish_town": "Sibiu",
+          "distance_km": 110.8,
+          "elevation_m": 1467,
+          "start_time": "09:45",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-2",
+          "winner": "Lorenzo Mark Finn",
+          "winner_flag": "🇮🇹",
+          "winner_nat": "IT",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Lorenzo Mark Finn",
+              "rider_url": "/profile/lorenzo-mark-finn",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": ""
+            },
+            {
+              "rank": 2,
+              "name": "Byron Munton",
+              "rider_url": "/profile/byron-munton",
+              "team": "",
+              "nat_code": "ZA",
+              "flag": "🇿🇦",
+              "time_gap": ""
+            },
+            {
+              "rank": 3,
+              "name": "Pablo Torres Arias",
+              "rider_url": "/profile/pablo-torres-arias",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": ""
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158535/responsive-images/01KS2PC7BK2TJCWJ5Q55TYYR8X___heightProfile_1200_428.webp",
+          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158534/responsive-images/01KS2PC1ZH6ZZEPEJCE9DBR5P6___route_1018_800.webp",
+          "date_str": "Sunday 05 July",
+          "start_town": "Sibiu",
+          "finish_town": "Paltinis",
+          "distance_km": 157.3,
+          "elevation_m": 2177,
+          "start_time": "09:45",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-3",
+          "winner": "Lorenzo Mark Finn",
+          "winner_flag": "🇮🇹",
+          "winner_nat": "IT",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Lorenzo Mark Finn",
+              "rider_url": "/profile/lorenzo-mark-finn",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:43:16"
+            },
+            {
+              "rank": 2,
+              "name": "Wout Poels",
+              "rider_url": "/profile/wout-poels",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 13"
+            },
+            {
+              "rank": 3,
+              "name": "Byron Munton",
+              "rider_url": "/profile/byron-munton",
+              "team": "",
+              "nat_code": "ZA",
+              "flag": "🇿🇦",
+              "time_gap": "+ 13"
+            },
+            {
+              "rank": 4,
+              "name": "Mark Donovan",
+              "rider_url": "/profile/mark-donovan",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 20"
+            },
+            {
+              "rank": 5,
+              "name": "Iván Ramiro Sosa",
+              "rider_url": "/profile/ivan-ramiro-sosa",
+              "team": "",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "+ 40"
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158537/responsive-images/01KS2PFJ8XPR3690EE91FA3MRR___heightProfile_1200_428.webp",
+          "route_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158536/responsive-images/01KS2PFD40RRYYVF44PP424XTM___route_1048_800.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/sibiu-cycling-tour-2026/result/stage-4",
+          "winner": "Danny van Poppel",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Danny van Poppel",
+              "rider_url": "/profile/danny-van-poppel",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": ""
+            },
+            {
+              "rank": 2,
+              "name": "Davide Donati",
+              "rider_url": "/profile/davide-donati",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": ""
+            },
+            {
+              "rank": 3,
+              "name": "Oded Kogut",
+              "rider_url": "/profile/oded-kogut",
+              "team": "",
+              "nat_code": "IL",
+              "flag": "🇮🇱",
+              "time_gap": ""
+            },
+            {
+              "rank": 4,
+              "name": "Simone Buda",
+              "rider_url": "/profile/simone-buda",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": ""
+            },
+            {
+              "rank": 5,
+              "name": "Márkó Tóth",
+              "rider_url": "/profile/marko-toth",
+              "team": "",
+              "nat_code": "HU",
+              "flag": "🇭🇺",
+              "time_gap": ""
+            }
+          ],
+          "date_str": "Tuesday 07 July",
+          "start_town": "Sibiu",
+          "finish_town": "Sibiu",
+          "distance_km": 181.3,
+          "elevation_m": 1246,
+          "start_time": "15:20",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/158541/responsive-images/01KS2PV75WTSRK5E56CYR8T9B8___heightProfile_1200_428.webp"
+        }
+      ],
+      "last_stage_winner": "Danny van Poppel",
+      "last_stage_winner_flag": "🇳🇱",
+      "last_stage_num": 4,
+      "gc_leader": "🇮🇹 Lorenzo Mark Finn",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Lorenzo Mark Finn",
+          "rider_url": "/profile/lorenzo-mark-finn",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": ""
+        },
+        {
+          "rank": 2,
+          "name": "Byron Munton",
+          "rider_url": "/profile/byron-munton",
+          "team": "",
+          "nat_code": "ZA",
+          "flag": "🇿🇦",
+          "time_gap": ""
+        },
+        {
+          "rank": 3,
+          "name": "Mark Donovan",
+          "rider_url": "/profile/mark-donovan",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": ""
+        },
+        {
+          "rank": 4,
+          "name": "Wout Poels",
+          "rider_url": "/profile/wout-poels",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": ""
+        },
+        {
+          "rank": 5,
+          "name": "Iván Ramiro Sosa",
+          "rider_url": "/profile/ivan-ramiro-sosa",
+          "team": "",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": ""
+        }
+      ]
+    },
     {
       "slug": "santos-tour-down-under",
       "cf_slug": "santos-tour-down-under-2026",
@@ -106856,169 +107343,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 25
+      "days_away": 24
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 57
-    },
-    {
-      "name": "GP Industria & Artigianato",
-      "cf_slug": "gp-industria-artigianato-2026",
-      "start_date": "2026-09-06",
-      "days_away": 61
+      "days_away": 56
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 77
+      "days_away": 76
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 82
+      "days_away": 81
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 88
+      "days_away": 87
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 88
+      "days_away": 87
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 90
+      "days_away": 89
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 91
+      "days_away": 90
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 93
+      "days_away": 92
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 95
+      "days_away": 94
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 96
+      "days_away": 95
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 98
+      "days_away": 97
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 99
+      "days_away": 98
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 103
+      "days_away": 102
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 103
+      "days_away": 102
     }
   ]
 }

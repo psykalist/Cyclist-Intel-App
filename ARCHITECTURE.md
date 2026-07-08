@@ -91,7 +91,7 @@ Scrapes all statistics pages from procyclingstats.com (most wins, best climbers,
 
 ### `detect_changes.py`
 
-Diffs old vs new `data.json` and writes notable changes to `changelog.json` (stage wins, GC leader changes). Entries older than 14 days are pruned. Called by CI after every scraper run.
+Diffs old vs new `data.json` and writes notable changes to `changelog.json` (stage wins, GC leader changes, jersey changes, startlist additions). Entries older than 14 days are pruned. Called by CI after every scraper run.
 
 ---
 
@@ -105,13 +105,30 @@ Run every 5 minutes via Windows Task Scheduler.
 |-------|-------------|
 | `.git/index.lock` / `HEAD.lock` present | Delete them |
 | `data.json` too small or invalid JSON | `git checkout HEAD -- data.json` |
+| Specialty coverage below threshold | Applies `specialty_cache.json` entries if available |
+| `index.html` too small / missing `</html>`, `</script>` / JS syntax error (via `node --check`) | Reports only |
 | Local branch behind origin/main | Warn only |
 
 **Usage:**
 ```
 py heal.py          # check + repair
 py heal.py --push   # also commit + push status.json
+py heal.py --status # print current status.json and exit
 ```
+
+> **Known bug (2026-07-08):** `check_git_sync()` references an undefined variable (`r2`) and raises `NameError` on every run, before `write_status()`/`flush_log()`/`--push` ever execute — see `CODE_REVIEW.md` for details and the fix. Until patched, `heal.py` is not actually writing `status.json` or pushing anything locally; the CI-side `health-check.yml` watchdog is currently the only one actually running end-to-end.
+
+---
+
+### `scrape_cyclingoracle.py`
+
+Fetches CyclingOracle's 13-attribute (0–100 scale) rider ratings via their GraphQL API and merges them into `rider_profiles.json` as `co_stats` on each rider. This is the scoring input for `generate_best_teams.py`'s Team Claudius squads — NOT the same thing as PCS "specialties" (those are unnormalised cumulative career points, not comparable). Matches CyclingOracle names to existing PCS slugs via exact + prefix matching; creates a minimal CO-only profile entry when no PCS match is found. Run weekly via `update-co-stats.yml` (Monday 6am UTC).
+
+---
+
+### `generate_best_teams.py`
+
+Builds `best_teams.json` — one AI-opponent squad ("Team Claudius") per race, scored from `co_stats` and picked via an exact 0/1 knapsack (not greedy value/cost-ratio — see the file's docstring for why that matters). Run automatically by `scrape.yml` after every results-only scrape.
 
 ---
 
@@ -129,19 +146,41 @@ Three tasks run automatically while the Cowork app is open:
 
 ## GitHub Actions Workflows
 
-### `scrape.yml` (primary — runs in cloud)
-Runs `--results-only` scrape + `detect_changes.py` and commits `data.json` + `changelog.json`.
+All git-writing workflows share `concurrency: group: uci-calendar-git-write` (cancel-in-progress: false) so they never commit/push to `main` at the same time — added after a 2026-07-02 through 2026-07-05 incident where two racing pushes caused a rejected push + failed rebase retry that silently dropped a freshly-scraped `data.json`. **Exception:** `update-co-stats.yml` is currently missing this — see `CODE_REVIEW.md`.
+
+### `scrape.yml` — "Update UCI Race Data" (primary, runs on self-hosted runner)
+Twice daily. Runs `scraper.py --results-only` then `scraper.py --startlists-only`, strips any women's races that slipped through, runs `detect_changes.py`, regenerates `best_teams.json` via `generate_best_teams.py`, then commits `data.json` + `changelog.json` + `best_teams.json` (+ `scrape_log.json` if present).
 
 **Schedule:** 11am UTC and 5pm UTC daily (12pm and 6pm BST).
 
-**Also installs:** `pywebpush` for push notification delivery.
+**Reachability check:** before scraping, fetches a real cyclingflash.com race page with a full browser-like header set and requires >500 bytes back — this replaced an earlier check that hit a dead legacy endpoint and always looked "unreachable" regardless of actual site status.
 
-**Post-scrape:** strips any women's races that slipped through.
+**`scrape_log.json`:** written by `main_results_only()` in `scraper.py` on every run. Records, per live race, whether the next expected stage page fetched OK and whether a results table was found — lets `health-check.yml` distinguish "stage genuinely hasn't finished yet" from "scraper ran, exited 0, and is silently blind to a page that has results" (`possible_parser_drift`, flagged after 2+ consecutive stalls spanning 10+ hours on the same stage).
 
 **Trigger manually:** GitHub → Actions → "Update UCI Race Data" → Run workflow.
 
-### `health-check.yml` (watchdog)
-Triggered by `heal.py --push` or on a 6-hour schedule. Re-runs the scraper if data is stale or corrupt. Restores `data.json` from git history if invalid.
+### `health-check.yml` — watchdog (runs on `ubuntu-latest`)
+Triggered by: push to `status.json`, `workflow_run` completion of `scrape.yml` or `update-data.yml` (success *or* failure — catches a scrape that ran and found nothing without waiting up to 6h for the next cron tick), a 6-hourly schedule, or manual dispatch (with a `force_scrape` input).
+
+Reads `status.json` + `data.json` age to decide whether to re-run the scraper itself (`--results-only`, since this runs on a GitHub-hosted IP, not the self-hosted runner — cyclingflash.com reachability is checked the same way as `scrape.yml`). Staleness thresholds are **live-race-aware**: 8h stale-trigger / 20h error / 8h warning while `data.json` has any live race, vs. 26h / 168h / 48h off-season (tightened 2026-07-07 after a stage-4 result sat 24.6h old and still read as "fresh" under the old flat thresholds). Also parses `scrape_log.json` — `fetch_ok: false` entries become warnings, `possible_parser_drift` entries become errors naming the race/stage/stall duration.
+
+Restores `data.json` from the last good git commit if it's missing, too small, or invalid JSON. Writes its own `status.json` (source: `"ci"`) and commits it alongside `data.json`/`changelog.json`/`scrape_log.json` if anything changed.
+
+**Notification:** a dedicated step opens/updates a single de-duplicated GitHub Issue titled "Health check failing" (with current errors/warnings + run link) when `overall == "error"`, and auto-closes it with a resolved comment once healthy again. This is the actual "tell me" channel — GitHub emails repo watchers on issue open/comment by default, which is more reliable than depending on the user's personal Actions-failure-email settings. **Known gap:** if the scraper step itself fails, the status-write step (and this notify step's health signal) gets skipped — see `CODE_REVIEW.md`.
+
+The job only fails (red X) in a dedicated final `if: always()` step, deliberately last, so the status.json commit and the GitHub Issue notification always happen first regardless of health.
+
+### `scrape-teams.yml` — "Refresh Team Rosters" (manual, self-hosted)
+Runs `scraper.py --teams-only`. Use after transfer-window roster changes. Split out from the old daily full scrape so a roster refresh doesn't require a ~20 min full run.
+
+### `scrape-rider-profiles.yml` — "Backfill New Rider Profiles" (manual, self-hosted)
+Runs `scrape_rider_profiles.py` in its default mode (new/unseen riders only). Use when a rider is missing from search/rankings/rider modals. Winner palmares for riders already in the file are kept current separately via the `uci-winner-profiles` Cowork scheduled task (`--update-winners`).
+
+### `update-data.yml` — "Full Scrape - Calendar & Teams" (manual, self-hosted)
+The full `scraper.py` (no flags) — calendar discovery, team rosters, rider-profile backfill, and startlists all together (~20 min). Only needed at season start or when the race calendar itself changes (races added/postponed/cancelled) — everything else has its own focused workflow above. Includes pre- and post-scrape validation (reachability, JSON validity, required keys, race-count sanity, >20% shrink check against the pre-scrape copy).
+
+### `update-co-stats.yml` — "Update CyclingOracle Stats" (scheduled, `ubuntu-latest`)
+Runs `scrape_cyclingoracle.py` weekly (Monday 6am UTC) and commits `rider_profiles.json` if `co_stats` coverage changed.
 
 ---
 
@@ -149,150 +188,10 @@ Triggered by `heal.py --push` or on a 6-hour schedule. Re-runs the scraper if da
 
 | File | Purpose |
 |------|---------|
-| `data.json` | Race calendar, results, classifications, teams, startlists (~1.7 MB) |
-| `rider_profiles.json` | All rider profiles — photo, bio, specialty scores, career wins (~4–5 MB) |
+| `data.json` | Race calendar, results, classifications, teams, startlists (~3 MB) |
+| `rider_profiles.json` | All rider profiles — photo, bio, specialty scores, `co_stats`, career wins (~4–5 MB) |
 | `pcs_stats.json` | PCS statistics tables powering the Stats tab |
+| `best_teams.json` | Team Claudius (AI opponent) squad per race, regenerated after every scrape |
 | `changelog.json` | Recent notable changes shown in the app |
-| `index.html` | Entire PWA — HTML + CSS + JS in one file (~3747 lines, current APP_VERSION v65) |
-| `sw.js` | Service worker — network-first for data files, cache-first for static assets |
-| `manifest.json` | PWA manifest — icons, theme colour, install behaviour |
-| `push_subscriptions.json` | Browser push subscription endpoints (not in git if not committed) |
-
----
-
-## App Tabs
-
-| Tab | Data source | Notes |
-|-----|-------------|-------|
-| Live / Upcoming / Recent | `data.json` | Auto-refreshes every 30 min; `silentCheck()` runs on tab visibility too |
-| Teams | `data.json` teams section | Rider rows open modal from `rider_profiles.json`; full-peloton search |
-| Following | `localStorage` + `rider_profiles.json` | Star riders, see live status and last result |
-| Stats | `pcs_stats.json` | Category filter + accordion rows; filters out women's riders by slug |
-| Rankings | `rider_profiles.json` | Spec score × quality multiplier; capped at age ≤35, current roster only |
-| Fantasy | `localStorage` | No backend — teams stored per-race keyed by slug |
-| Help | Static | Inline glossary |
-
-**Rider modal:** lazy-loads `rider_profiles.json` on first open, cached in memory. Shows photo, bio, specialty bars, and career wins for any of the ~1800 profiled riders. Triggered from race results, team rosters, stats tables, rankings, and the Following tab — no external links.
-
-**Fantasy league mechanics:**
-- Squad size: `maxSquad()` — 8 riders for Grand Tours (≥21 stages), 7 for all others
-- Budget: 100 credits; costs scaled `COST_FLOOR=4` to `COST_CEIL=22` via √ of race points
-- Points: stage top-10, GC top-10, jersey holders (Points/KOM/Youth, 15 pts — not if rider also leads GC/Yellow)
-- Team codes: base64-encoded JSON; max 8 riders enforced on import
-- `Team Claudius` (I Claudius): AI opponent loaded from `best_teams.json`, three tiers Easy/Pro/Elite
-- Teams stored in `localStorage` under `fantasy_race_teams` keyed by race slug
-
----
-
-## Push Notifications
-
-Uses the Web Push API with VAPID authentication.
-
-- **VAPID keys:** private key in `scraper.py`, public key in `index.html` — must be a matched pair. Do not regenerate without also clearing all existing browser subscriptions.
-- **Subscription flow:** user clicks 🔔 in app → browser subscribes → saves `push_subscriptions.json` locally → user copies to project folder → commit to repo for CI delivery.
-- **Triggers:** new stage result, race starting tomorrow.
-- **Requires:** `pip install pywebpush` locally. CI installs it automatically.
-- **Note:** Chrome routes subscriptions through FCM (`fcm.googleapis.com`). Corporate/restricted networks may block this.
-
----
-
-## Git Workflow (local + CI conflict avoidance)
-
-CI commits `data.json` at 11am and 5pm UTC. To avoid conflicts on manual pushes:
-
-```bash
-# Always pull before committing
-git stash && git pull --rebase && git stash pop
-py scraper.py --results-only
-git add data.json && git commit -m "results: ..." && git push
-
-# If push is still rejected
-git pull --rebase && git push
-```
-
----
-
-## Race Filtering
-
-**Men's only:** women's races filtered by UCI category (`1.WWT`, `2.WWT`, `1.W`, `2.W`, `1.1W`, `2.1W`) and by name keywords (women, ladies, femmes, dames). Applied in scraper + CI post-scrape.
-
-**Filter chips in app:** All / Grand Tours / Monuments / UWT ⭐ / Pro Series / 1.1 / 2.1 / This Week. Filter bar hides on Fantasy, Stats, Following, Rankings, and Help tabs.
-
-- Grand Tours: `total_stages >= 21` (consistent across Live, Upcoming, and Recent grouping)
-- Monuments: Milano-Sanremo, Ronde van Vlaanderen, Paris-Roubaix, Liège-Bastogne-Liège, Il Lombardia
-- `isMonument` and `isGrandTour` flags set as `data-*` attributes on race cards for CSS/filter use
-
----
-
-## CSS Design Tokens (`:root`)
-
-All colours are CSS custom properties on `:root`. Never use `var(--card)` or `var(--fg)` — these are **not defined** and will render transparent/invisible. Use:
-
-| Variable | Use |
-|----------|-----|
-| `--bg` | Page background (`#0f1117`) |
-| `--surface` | Card / panel background (`#1a1d27`) |
-| `--surface2` | Inset / input background (`#22263a`) |
-| `--border` | Borders and dividers (`#2e334d`) |
-| `--text` | Primary text (`#e8eaf0`) — use instead of `--fg` |
-| `--muted` | Secondary / placeholder text (`#8890b0`) |
-| `--accent` | Orange highlight (`#f4a261`) |
-| `--live` | Red / live indicator (`#e63946`) |
-| `--upcoming` | Blue / future (`#4361ee`) |
-| `--recent` | Green / past (`#2d6a4f`) |
-| `--gold` / `--silver` / `--bronze` | Podium colours |
-
----
-
-## Key localStorage Keys
-
-| Key | Purpose |
-|-----|---------|
-| `uci_following` | Array of followed riders `{slug, name, nat}` |
-| `fantasy_race_teams` | Object keyed by race slug, each a saved team |
-| `fantasy_active_race` | Currently selected race slug |
-| `fantasy_league` | Array of imported friend teams |
-| `fantasy_watchlist` | Array of watchlisted riders |
-| `fantasy_draft` | In-progress team being built |
-| `iclaudius_teams` | Object keyed by race slug: Team Claudius entries |
-| `uci_auto_tier` | Selected I Claudius difficulty (`easy`/`pro`/`elite`) |
-| `uci_subscribers_dirty` | Flag: prompt user to re-export subscribers.json |
-| `uci_wn_dismissed` | APP_VERSION string when user last dismissed the What's New banner |
-
----
-
-## Self-Healing Runbook
-
-### data.json is corrupt
-```bash
-git checkout HEAD -- data.json
-```
-
-### Teams out of date (mid-season transfer)
-```bash
-py scraper.py --teams-only
-git add data.json && git commit -m "data: refresh teams" && git push
-```
-
-### Rider missing from search
-Rider search reads `rider_profiles.json` directly (~1800 riders). If a rider is missing, run:
-```bash
-py scrape_rider_profiles.py        # picks up any new riders
-git add rider_profiles.json && git commit -m "data: rider profiles" && git push
-```
-
-### Startlist missing for upcoming race
-```bash
-py scraper.py --startlists-only
-git add data.json && git commit -m "data: startlists" && git push
-```
-
-### App shows stale data
-1. Hard-refresh: Ctrl+Shift+R
-2. Check GitHub Actions — scraper may have failed
-3. Trigger manually: GitHub → Actions → Run workflow
-
-### Push notifications not working
-- Check `push_subscriptions.json` exists in project folder and is committed
-- Check `pywebpush` is installed: `pip install pywebpush`
-- Corporate networks may block FCM — test on mobile data
+| `scrape_log.json` | Per-race probe outcomes from the last `--results-only` run — consumed by `health-check.yml` to detect silent parser drift |
+| `status.json` | Machine-readable health snap

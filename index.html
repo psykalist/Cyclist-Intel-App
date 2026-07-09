@@ -2365,7 +2365,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v88';
+const APP_VERSION = 'v89';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2963,6 +2963,7 @@ function maxSquad(raceKey) {
 const FANTASY_BUDGET = 100;   // total credits per team
 const COST_FLOOR    = 4;      // cheapest rider
 const COST_CEIL     = 22;     // most expensive rider (sqrt-scaled from race results)
+const TRANSFERS_TOTAL = 3;    // free rider swaps per team per race
 const STAGE_PTS = {1:25,2:12,3:8,4:3,5:3,6:3,7:3,8:3,9:3,10:3};
 const GC_PTS    = {1:50,2:30,3:20,4:8,5:8,6:8,7:8,8:8,9:8,10:8};
 const JERSEY_PTS = 15;
@@ -3059,8 +3060,16 @@ function fantasyLoad(){
   if(!k)return null;
   const team=d[k]||null;
   if(!team||!Array.isArray(team.riders))return team;
+  let dirty=false;
   const {riders,changed}=_freezeMissingCosts(team.riders);
-  if(changed){team.riders=riders;d[k]=team;fantasySaveAll(d);}
+  if(changed){team.riders=riders;dirty=true;}
+  // Teams saved before transfers_total existed have no cap stamped — without
+  // this they'd either silently allow unlimited swaps (undefined comparisons
+  // are always false) or, worse, have no way to fix a squad the cost-freeze
+  // migration above just pushed over budget. Stamp the current default so
+  // older squads immediately get free transfers to self-correct.
+  if(team.transfers_total==null){team.transfers_total=TRANSFERS_TOTAL;team.transfers_used=team.transfers_used||0;dirty=true;}
+  if(dirty){d[k]=team;fantasySaveAll(d);}
   return team;
 }
 function fantasySave(t){const d=fantasyLoadAll(),k=fantasyGetRace();if(k){d[k]=t;fantasySaveAll(d);}}
@@ -3374,6 +3383,7 @@ function renderFantasy(){
   el.querySelectorAll('[data-unpick]').forEach(el=>el.addEventListener('click',()=>fRemovePicked(el.dataset.unpick)));
 
   el.querySelectorAll('[data-doswap]').forEach(el=>el.addEventListener('click',()=>fDoSwap(el.dataset.doswap)));
+  el.querySelectorAll('[data-openswap]').forEach(el=>el.addEventListener('click',()=>fOpenSwap(el.dataset.openswap)));
 }
 
 function flag(nat){return nat?'<img src="https://flagcdn.com/16x12/'+nat.toLowerCase()+'.png" width="16" height="11" style="flex-shrink:0;border-radius:1px">'  :'';}
@@ -3699,7 +3709,7 @@ function fCreateTeam(){
   if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Please enter a valid email address (or leave it blank).');return;}
   const _crk=fantasyGetRace();
   const _craces=[...(appData.live||[]),...(appData.upcoming||[]),...(appData.recent||[])].find(r=>_raceKey(r)===_crk);
-  fantasySave({name,owner,email:email||'',riders:[..._fPicked],_race:_craces?_craces.name:'',created_at:new Date().toISOString(),pin_hash:_pinHash(pin)});
+  fantasySave({name,owner,email:email||'',riders:[..._fPicked],_race:_craces?_craces.name:'',created_at:new Date().toISOString(),pin_hash:_pinHash(pin),transfers_total:TRANSFERS_TOTAL,transfers_used:0});
   draftClear();
   _fPicked=[];
   if(email) _notifySubscribersExportNeeded();
@@ -3715,6 +3725,10 @@ function _notifySubscribersExportNeeded(){
 
 function renderMySquad(team,total,breakdown){
   const totalCost=squadCost(team.riders);
+  const overBudget=totalCost>FANTASY_BUDGET;
+  const transfersTotal=team.transfers_total!=null?team.transfers_total:TRANSFERS_TOTAL;
+  const transfersUsed=team.transfers_used||0;
+  const transfersLeft=Math.max(0,transfersTotal-transfersUsed);
   const rows=team.riders.map(r=>{
     const rpts=breakdown.filter(b=>normName(b.rider)===normName(r.name)).reduce((s,b)=>s+b.pts,0);
     return '<div style="padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px">'
@@ -3722,12 +3736,16 @@ function renderMySquad(team,total,breakdown){
       +'<span style="flex:1;font-size:.88rem;font-weight:600">'+esc(r.name)+'</span>'
       +costBadge(r)
       +(rpts>0?'<span style="font-size:.82rem;font-weight:700;color:var(--gold);min-width:42px;text-align:right">'+rpts+' pts</span>':'<span style="font-size:.78rem;color:var(--muted);min-width:42px;text-align:right">—</span>')
-
+      +'<button data-openswap="'+esc(r.name)+'" title="Swap this rider" style="background:none;border:1px solid var(--border);border-radius:5px;color:var(--muted);font-size:.78rem;padding:3px 7px;cursor:pointer;flex-shrink:0">🔁</button>'
     +'</div>';
   }).join('')
-  +'<div style="padding:8px 16px;font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;border-top:2px solid var(--border)">'
-    +'<span>Squad cost</span><span style="font-weight:700;color:var(--text)">'+totalCost+' / '+FANTASY_BUDGET+' cr</span>'
-  +'</div>';
+  +'<div style="padding:8px 16px;font-size:.78rem;color:'+(overBudget?'var(--live)':'var(--muted)')+';display:flex;justify-content:space-between;border-top:2px solid var(--border)">'
+    +'<span>Squad cost'+(overBudget?' ⚠️ over budget':'')+'</span><span style="font-weight:700">'+totalCost+' / '+FANTASY_BUDGET+' cr</span>'
+  +'</div>'
+  +'<div style="padding:6px 16px 10px;font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between">'
+    +'<span>Transfers</span><span style="font-weight:700;color:var(--text)">'+transfersLeft+' / '+transfersTotal+' remaining</span>'
+  +'</div>'
+  +(overBudget?'<div style="padding:0 16px 12px;font-size:.76rem;color:var(--live)">Over budget — tap 🔁 next to a rider to swap them for a cheaper one.</div>':'');
 
   let bdHtml='';
   if(breakdown.length){
@@ -3776,10 +3794,12 @@ function fDeleteTeam(){
   });
 }
 
-function fDoSwap(inName){
+function fDoSwap(inName,onDone){
   const team=fantasyLoad();if(!team)return;
-  if((team.transfers_used||0)>=team.transfers_total){alert('No transfers remaining!');return;}
+  const transfersTotal=team.transfers_total!=null?team.transfers_total:TRANSFERS_TOTAL;
+  if((team.transfers_used||0)>=transfersTotal){alert('No transfers remaining! You\'ve used '+transfersTotal+'/'+transfersTotal+' for this race.');return;}
   const inR=getAllRiders().find(r=>r.name===inName);if(!inR)return;
+  if(team.riders.some(r=>r.name===inName&&r.name!==_fSwapOut)){alert(inName+' is already on your squad.');return;}
   // Outgoing rider's cost comes from their frozen price on this squad (not
   // today's live price) so a mid-race price swing on the rider you're
   // dropping can't throw off the budget math. Incoming rider gets today's
@@ -3793,8 +3813,72 @@ function fDoSwap(inName){
   fVerifyPin(team,'confirm this transfer',()=>{
     team.riders=team.riders.map(r=>r.name===_fSwapOut?{...inR,cost:inCost}:r);
     team.transfers_used=(team.transfers_used||0)+1;
+    team.transfers_total=transfersTotal;
     fantasySave(team);renderFantasy();
+    if(onDone)onDone();
   });
+}
+
+// ── Swap modal ───────────────────────────────────────────────────────────────
+
+function fOpenSwap(outName){
+  const team=fantasyLoad();if(!team)return;
+  const transfersTotal=team.transfers_total!=null?team.transfers_total:TRANSFERS_TOTAL;
+  const transfersUsed=team.transfers_used||0;
+  if(transfersUsed>=transfersTotal){alert('No transfers remaining! You\'ve used '+transfersUsed+'/'+transfersTotal+' for this race.');return;}
+  _fSwapOut=outName;
+  const box=fModal(
+    '🔁 Swap out '+esc(outName),
+    '<div id="fSwapBudgetLine" style="font-size:.76rem;color:var(--muted);margin-bottom:8px"></div>'
+    +'<input id="fSwapSearch" type="text" placeholder="Search riders…" style="width:100%;padding:8px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:.85rem;margin-bottom:8px;box-sizing:border-box">'
+    +'<div id="fSwapList" style="max-height:320px;overflow-y:auto;border:1px solid var(--border);border-radius:8px"></div>'
+  );
+  const searchEl=box.querySelector('#fSwapSearch');
+  if(searchEl){
+    searchEl.addEventListener('input',()=>fRenderSwapList(searchEl.value,box));
+    searchEl.focus();
+  }
+  fRenderSwapList('',box);
+}
+
+function fRenderSwapList(raw,box){
+  const team=fantasyLoad();if(!team)return;
+  const listEl=box.querySelector('#fSwapList');
+  const budgetLine=box.querySelector('#fSwapBudgetLine');
+  if(!listEl)return;
+  const outRider=team.riders.find(r=>r.name===_fSwapOut);
+  const outCost=riderCostFor(outRider);
+  const spentWithoutOut=squadCost(team.riders)-outCost;
+  const remaining=FANTASY_BUDGET-spentWithoutOut;
+  if(budgetLine)budgetLine.textContent='Dropping '+_fSwapOut+' ('+outCost+' cr) frees up to '+remaining+' cr for a replacement.';
+  const q=(raw||'').trim().toLowerCase();
+  const already=new Set(team.riders.filter(r=>r.name!==_fSwapOut).map(r=>r.name));
+  let all=getRaceRiders().filter(r=>!already.has(r.name)&&r.name!==_fSwapOut);
+  let matches;
+  if(!q){
+    matches=all.filter(r=>!r.restricted);
+  } else {
+    const starts=all.filter(r=>(r.name||'').toLowerCase().startsWith(q));
+    const contains=all.filter(r=>!(r.name||'').toLowerCase().startsWith(q)&&(r.name||'').toLowerCase().includes(q));
+    matches=[...starts,...contains];
+  }
+  if(!matches.length){listEl.innerHTML='<div style="padding:12px;color:var(--muted);font-size:.85rem">No riders found</div>';return;}
+  listEl.innerHTML=matches.map(r=>{
+    const c=riderCost(r.name);
+    const canAfford=c<=remaining;
+    const overBudget=c>remaining;
+    const statusBadge=overBudget?'<span style="font-size:.68rem;font-weight:700;color:#ef4444;background:rgba(239,68,68,.12);border-radius:3px;padding:1px 5px;flex-shrink:0">💰over</span>':'';
+    return '<div '+(canAfford?'data-doswap="'+esc(r.name)+'"':'')+' style="padding:9px 12px;cursor:'+(canAfford?'pointer':'default')+';display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);opacity:'+(canAfford?'1':'.45')+'">'
+      +(r.nat?flag(r.nat):'<span style="width:20px;display:inline-block"></span>')
+      +'<span style="flex:1;font-size:.9rem">'+esc(r.name)+'</span>'
+      +statusBadge
+      +'<span style="font-size:.75rem;color:var(--muted);max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc(r.teamName||'')+'</span>'
+      +costBadge(r)
+    +'</div>';
+  }).join('');
+  listEl.querySelectorAll('[data-doswap]').forEach(node=>node.addEventListener('click',()=>{
+    fDoSwap(node.dataset.doswap,()=>{if(box._close)box._close();});
+  }));
 }
 
 // ── League Table ──────────────────────────────────────────────────────────────
@@ -3909,6 +3993,8 @@ function fModal(title,body,onConfirm,confirmLabel){
   if(cancelBtn) cancelBtn.addEventListener('click',close);
   const okBtn=box.querySelector('#fModalOk');
   if(okBtn) okBtn.addEventListener('click',()=>{if(onConfirm)onConfirm();close();});
+  box._overlay=overlay;
+  box._close=close;
   return box;
 }
 

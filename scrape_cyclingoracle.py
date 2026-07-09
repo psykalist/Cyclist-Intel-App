@@ -148,9 +148,22 @@ def build_co_name_index(riders_json: dict) -> tuple:
     return exact_index, prefix_index
 
 
+# Manual nickname/short-name aliases CyclingOracle uses that don't match PCS's
+# full legal name and can't be resolved by exact or prefix matching (e.g. CO's
+# 'AJ August' vs PCS's 'Andrew August' -> created a duplicate 'aj-august' profile
+# until this was added). Keyed by normalised CO name -> PCS slug.
+NAME_ALIASES = {
+    'aj-august': 'andrew-august',
+}
+
+
 def lookup_rider(co_name: str, exact_index: dict, prefix_index: dict) -> str | None:
     """Return PCS slug for a CyclingOracle name, or None if no confident match."""
     key = normalise(co_name)
+
+    # 0. Manual nickname alias
+    if key in NAME_ALIASES:
+        return NAME_ALIASES[key]
 
     # 1. Exact match
     if key in exact_index:

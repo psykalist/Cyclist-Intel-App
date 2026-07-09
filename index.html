@@ -1998,7 +1998,33 @@ async function openRiderModal(slug) {
 
   // Specialty bars — prefer CyclingOracle co_stats (0–100), fall back to PCS specialties
   const coStats    = (profile || {}).co_stats;
-  const specialties = (profile || {}).specialties || {};
+  const specialtiesRaw = (profile || {}).specialties || {};
+  // Two incompatible PCS specialty formats exist in the data:
+  //  - legacy (rider_profiles.json, scrape_rider_profiles.py): plain numbers keyed
+  //    by short names, e.g. {climber: 208, tt: 98}
+  //  - newer (data.json via backfill_specialties.py/apply_specialties.py): {score,bar}
+  //    objects keyed by PCS URL segments, e.g. {climbers: {score:208,bar:100}, 'time-trial': {...}}
+  // Normalise both onto the canonical PCS_ORDER keys so rendering never sees a raw object.
+  const SPEC_ALIASES = {
+    climber: ['climber', 'climbers'],
+    gc:      ['gc'],
+    oneday:  ['oneday', 'one-day-races'],
+    sprint:  ['sprint'],
+    tt:      ['tt', 'time-trial'],
+    hills:   ['hills'],
+  };
+  const specialties = {};
+  for (const [canonKey, aliases] of Object.entries(SPEC_ALIASES)) {
+    for (const alias of aliases) {
+      const raw = specialtiesRaw[alias];
+      if (raw == null) continue;
+      const isObj = raw !== null && typeof raw === 'object';
+      const score = isObj ? raw.score : raw;
+      if (!Number.isFinite(score)) continue;
+      specialties[canonKey] = { score, bar: isObj && Number.isFinite(raw.bar) ? raw.bar : null };
+      break;
+    }
+  }
   // CyclingOracle layout: grouped by terrain / finish / TT
   const CO_ORDER = [
     { key:'average',      label:'Form',      color:'#e63946' },
@@ -2037,15 +2063,15 @@ async function openRiderModal(slug) {
     }<div style="font-size:.68rem;color:var(--muted);text-align:right;margin-top:4px">CyclingOracle · /100</div></div>`;
   } else if (Object.keys(specialties).length) {
     // PCS fallback
-    const maxSpec = Math.max(1, ...Object.values(specialties).filter(Number.isFinite));
+    const maxSpec = Math.max(1, ...Object.values(specialties).map(s => s.score).filter(Number.isFinite));
     specHTML = `<div class="spec-bars">${PCS_ORDER.map(({key, label, color}) => {
-        const score = specialties[key];
-        if (!score) return '';
-        const bar = Math.round((score / maxSpec) * 100);
+        const entry = specialties[key];
+        if (!entry || !entry.score) return '';
+        const bar = entry.bar != null ? entry.bar : Math.round((entry.score / maxSpec) * 100);
         return `<div class="spec-row">
           <div class="spec-label">${label}</div>
           <div class="spec-track"><div class="spec-fill" style="width:${bar}%;background:${color}"></div></div>
-          <div class="spec-score">${score.toLocaleString()}</div>
+          <div class="spec-score">${entry.score.toLocaleString()}</div>
         </div>`;
       }).join('')
     }</div>`;
@@ -2339,7 +2365,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v87';
+const APP_VERSION = 'v88';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -840,7 +840,7 @@ def scrape_team(slug, cat):
         if slug_m and name_s:
             riders.append({
                 'slug': slug_m.group(1),
-                'name': name_s.group(1),
+                'name': strip_tags(name_s.group(1)),
                 'nat':  flag_m.group(1).lower() if flag_m else '',
                 'age':  age,
             })

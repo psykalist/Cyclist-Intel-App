@@ -2365,7 +2365,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v89';
+const APP_VERSION = 'v90';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -3745,7 +3745,7 @@ function renderMySquad(team,total,breakdown){
   +'<div style="padding:6px 16px 10px;font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between">'
     +'<span>Transfers</span><span style="font-weight:700;color:var(--text)">'+transfersLeft+' / '+transfersTotal+' remaining</span>'
   +'</div>'
-  +(overBudget?'<div style="padding:0 16px 12px;font-size:.76rem;color:var(--live)">Over budget — tap 🔁 next to a rider to swap them for a cheaper one.</div>':'');
+  +(overBudget?'<div style="padding:0 16px 12px;font-size:.76rem;color:var(--live)">Over budget by '+(totalCost-FANTASY_BUDGET)+' cr — swap out a rider costing '+(COST_FLOOR+(totalCost-FANTASY_BUDGET))+'+ cr for a cheaper one. A rider already at the '+COST_FLOOR+' cr floor can\'t be swapped down any further, so it won\'t fix this on its own.</div>':'');
 
   let bdHtml='';
   if(breakdown.length){
@@ -3848,9 +3848,24 @@ function fRenderSwapList(raw,box){
   if(!listEl)return;
   const outRider=team.riders.find(r=>r.name===_fSwapOut);
   const outCost=riderCostFor(outRider);
-  const spentWithoutOut=squadCost(team.riders)-outCost;
+  const totalCost=squadCost(team.riders);
+  const overage=Math.max(0,totalCost-FANTASY_BUDGET);
+  const spentWithoutOut=totalCost-outCost;
   const remaining=FANTASY_BUDGET-spentWithoutOut;
-  if(budgetLine)budgetLine.textContent='Dropping '+_fSwapOut+' ('+outCost+' cr) frees up to '+remaining+' cr for a replacement.';
+  if(budgetLine){
+    if(overage>0&&remaining<COST_FLOOR){
+      // Dropping this rider can't fix the overage on its own -- the cheapest
+      // possible replacement (COST_FLOOR) still leaves the squad over budget.
+      // Point at a rider that actually *can* fix it instead of leaving the
+      // list showing everything as unaffordable with no explanation (the
+      // exact confusion that prompted this).
+      const candidates=team.riders.filter(r=>r.name!==_fSwapOut&&riderCostFor(r)-COST_FLOOR>=overage).sort((a,b)=>riderCostFor(b)-riderCostFor(a));
+      const suggestion=candidates.length?(' Try swapping out <b>'+esc(candidates[0].name)+'</b> ('+riderCostFor(candidates[0])+' cr) instead — close this and tap 🔁 next to them.'):'';
+      budgetLine.innerHTML='<span style="color:var(--live)">Dropping '+esc(_fSwapOut)+' only frees '+remaining+' cr, but the cheapest possible rider costs '+COST_FLOOR+' cr — this swap can\'t close your '+overage+' cr overage on its own.'+suggestion+'</span>';
+    } else {
+      budgetLine.textContent='Dropping '+_fSwapOut+' ('+outCost+' cr) frees up to '+remaining+' cr for a replacement.';
+    }
+  }
   const q=(raw||'').trim().toLowerCase();
   const already=new Set(team.riders.filter(r=>r.name!==_fSwapOut).map(r=>r.name));
   let all=getRaceRiders().filter(r=>!already.has(r.name)&&r.name!==_fSwapOut);

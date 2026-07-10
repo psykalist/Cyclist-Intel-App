@@ -1170,7 +1170,19 @@ def main_results_only():
                     probe["stall_since"]    = stall_since
                     probe["stall_attempts"] = stall_attempts
                     probe["stall_hours"]    = round(stall_hours, 1)
-                    probe["possible_parser_drift"] = stall_attempts >= 2 and stall_hours >= 10
+                    # 2026-07-10: the old 2-attempts/10h threshold false-positived on
+                    # every single stage of the Tour -- scrape.yml only runs at 11am/5pm
+                    # UTC, and stages finish at roughly the same time of day as the
+                    # previous one, so the very next scrape after a stage finishes is
+                    # routinely 16-20h into "stalled" on tomorrow's not-yet-run stage.
+                    # A rest day pushes that gap to ~42-48h between real finishes. Stay
+                    # well above that (5 attempts, 48h) so this only fires once the
+                    # scraper has kept missing a page for the better part of two days
+                    # *after* accounting for the longest normal gap -- genuine parser
+                    # drift, not "the race just hasn't happened yet". The blunter
+                    # data_age_hours staleness check (health-check.yml) still catches a
+                    # scraper that's totally stopped working, on a much shorter fuse.
+                    probe["possible_parser_drift"] = stall_attempts >= 5 and stall_hours >= 48
             if matched:
                 completed_nums.append(n)
             elif completed_nums:

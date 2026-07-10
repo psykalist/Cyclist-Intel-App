@@ -25,6 +25,16 @@ fix_*.py
 # Setup scripts (local only)
 setup-auto-update.ps1
 setup_playwright.bat
+fix-runner-and-autostart.ps1
+install-playwright-mcp.sh
+
+# Backups / scratch / sandbox artifacts — never commit
+backup_*/
+backup_*.zip
+.fuse_hidden*
+_stale_probe.txt
+*.db-wal
+*.db-journal
 
 # Placeholder files created by Windows Explorer path confusion
 App

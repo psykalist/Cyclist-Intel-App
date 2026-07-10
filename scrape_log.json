@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-09 20:45 UTC",
-  "run_at_iso": "2026-07-09T18:46:13.178485+00:00",
+  "run_at": "2026-07-10 15:05 UTC",
+  "run_at_iso": "2026-07-10T13:05:30.672296+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -14,12 +14,12 @@
         "stage_num": 7,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-7",
         "fetch_ok": true,
-        "response_bytes": 308305,
+        "response_bytes": 311451,
         "matched_result_table": false,
         "stall_since": "2026-07-09 20:45 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
-        "possible_parser_drift": false
+        "stall_attempts": 2,
+        "stall_hours": 16.3,
+        "possible_parser_drift": true
       }
     },
     {
@@ -27,21 +27,17 @@
       "name": "Tour of Austria",
       "total_stages": 5,
       "stages_completed_before": 2,
-      "stages_completed_after": 2,
-      "new_stages_found": 0,
+      "stages_completed_after": 3,
+      "new_stages_found": 1,
       "probe": {
         "stage_num": 3,
         "url": "https://cyclingflash.com/race/tour-of-austria-2026/result/stage-3",
         "fetch_ok": true,
-        "response_bytes": 225671,
-        "matched_result_table": false,
-        "stall_since": "2026-07-09 20:45 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
-        "possible_parser_drift": false
+        "response_bytes": 257196,
+        "matched_result_table": true
       }
     }
   ],
   "has_fetch_errors": false,
-  "has_possible_parser_drift": false
+  "has_possible_parser_drift": true
 }

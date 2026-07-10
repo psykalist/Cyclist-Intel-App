@@ -1844,7 +1844,7 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
         <span style="font-size:1.4rem">🏛️</span>
         <div style="flex:1">
           <div style="font-weight:800;font-size:.95rem;color:#a78bfa">Team Claudius</div>
-          <div style="font-size:.72rem;color:var(--muted)">Statistically optimal AI team (CyclingOracle stats)</div>
+          <div style="font-size:.72rem;color:var(--muted)">Statistically optimal AI team</div>
         </div>
       </div>
       ${comparison ? `<div style="font-size:.85rem;margin-bottom:8px">${comparison}</div>` : ''}
@@ -1865,7 +1865,7 @@ async function addIClaudiusToLeague(){
   const raceEntry=bt.races[rk];
   if(!raceEntry||!raceEntry.team){alert("Team Claudius isn't available for this race yet.");return;}
   const team=raceEntry.team;
-  iClaudiusSet(rk,{name:'Team Claudius',owner:'🤖 AI · CyclingOracle picks',riders:team.riders,created_at:new Date().toISOString(),isIClaudius:true,total_cost:team.total_cost});
+  iClaudiusSet(rk,{name:'Team Claudius',owner:'🤖 AI · Data-driven picks',riders:team.riders,created_at:new Date().toISOString(),isIClaudius:true,total_cost:team.total_cost});
   renderFantasy();
 }
 
@@ -1884,7 +1884,7 @@ async function loadAndRenderAutoTeam(raceKey, myTotal) {
       const raceEntry = bt.races[raceKey];
       if (raceEntry && raceEntry.team) {
         const team = raceEntry.team;
-        iClaudiusSet(raceKey, {name:'Team Claudius',owner:'🤖 AI · CyclingOracle picks',riders:team.riders,
+        iClaudiusSet(raceKey, {name:'Team Claudius',owner:'🤖 AI · Data-driven picks',riders:team.riders,
           created_at:new Date().toISOString(),isIClaudius:true,total_cost:team.total_cost});
         renderFantasy();
         return;
@@ -2060,7 +2060,7 @@ async function openRiderModal(slug) {
           <div class="spec-score">${score}</div>
         </div>`;
       }).join('')
-    }<div style="font-size:.68rem;color:var(--muted);text-align:right;margin-top:4px">CyclingOracle · /100</div></div>`;
+    }<div style="font-size:.68rem;color:var(--muted);text-align:right;margin-top:4px">Performance rating · /100</div></div>`;
   } else if (Object.keys(specialties).length) {
     // PCS fallback
     const maxSpec = Math.max(1, ...Object.values(specialties).map(s => s.score).filter(Number.isFinite));
@@ -2365,7 +2365,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v93';
+const APP_VERSION = 'v94';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4063,7 +4063,7 @@ function exportSubscribers(){
 // Categories use CyclingOracle co_stats keys (0–100 scale).
 // Falls back to PCS specialties (rescaled) when co_stats is absent.
 const RANKING_CATS = [
-  { key:'average',      label:'In Form',   icon:'🔥', desc:'Current form — CyclingOracle shape score based on recent results' },
+  { key:'average',      label:'In Form',   icon:'🔥', desc:'Current form — shape score based on recent results' },
   { key:'mountain',     label:'Climbers',  icon:'⛰️', desc:'Mountain climbing ability' },
   { key:'sprint',       label:'Sprinters', icon:'⚡', desc:'Sprint finish ability' },
   { key:'gc',           label:'GC',        icon:'🏆', desc:'Stage race GC ability' },
@@ -4196,12 +4196,12 @@ function renderRankings() {
   }).join('');
 
   const sourceNote = coCount > 100
-    ? `CyclingOracle · ${coCount} riders · age ≤35`
-    : `⚠️ Run <code>py scrape_cyclingoracle.py</code> for live scores · PCS fallback active`;
+    ? `Performance data · ${coCount} riders · age ≤35`
+    : `⚠️ Live scores need a data refresh · fallback stats active`;
 
   el.innerHTML = catBar
     + `<div class="rankings-subtitle">${cat.desc} · ${sourceNote}</div>`
-    + `<div class="rankings-list">${rows || '<p style="padding:20px;color:var(--muted)">No data — run scrape_cyclingoracle.py</p>'}</div>`;
+    + `<div class="rankings-list">${rows || '<p style="padding:20px;color:var(--muted)">No data yet — refresh pending</p>'}</div>`;
 }
 
 
@@ -4231,7 +4231,6 @@ function renderHelp() {
         ['KOM',  'King of the Mountains — awarded to the best climber, earns the polka-dot jersey at the Tour de France.'],
         ['UCI',  'Union Cycliste Internationale — the world governing body for cycling. They issue the official points rankings.'],
         ['WT',   'WorldTour — the top tier of professional road cycling, featuring the biggest teams and races.'],
-        ['PCS',  'ProCyclingStats — the website (procyclingstats.com) used to source rider and race statistics in this app.'],
       ]
     },
     {
@@ -4274,7 +4273,7 @@ function renderHelp() {
         ['Stage Pts', 'Points for stage finishes: 1st=25, 2nd=12, 3rd=8, 4th–10th=3.'],
         ['GC Pts',    'Points for GC standings at the end: 1st=50, 2nd=30, 3rd=20, 4th–10th=8.'],
         ['Jersey Pts','15 points per stage for holding the Points, KOM, or White jersey (not awarded if the rider also leads GC).'],
-        ['I Claudius','The AI opponent — a single statistically-optimal squad picked from CyclingOracle rider stats for this race.'],
+        ['I Claudius','The AI opponent — a single statistically-optimal squad picked from rider performance stats for this race.'],
         ['DNS? badge','This rider isn\'t on the official confirmed startlist for this race yet — you can still pick them (they\'re a teammate of someone who is confirmed), but there\'s a real chance they don\'t actually start, in which case they\'ll score zero.'],
       ]
     },

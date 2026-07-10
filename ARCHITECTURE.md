@@ -148,7 +148,7 @@ Three tasks run automatically while the Cowork app is open:
 
 All git-writing workflows share `concurrency: group: uci-calendar-git-write` (cancel-in-progress: false) so they never commit/push to `main` at the same time — added after a 2026-07-02 through 2026-07-05 incident where two racing pushes caused a rejected push + failed rebase retry that silently dropped a freshly-scraped `data.json`. **Exception:** `update-co-stats.yml` is currently missing this — see `CODE_REVIEW.md`.
 
-### `scrape.yml` — "Update UCI Race Data" (primary, runs on self-hosted runner)
+### `scrape.yml` — "Pull Race Results" (primary, runs on self-hosted runner)
 Twice daily. Runs `scraper.py --results-only` then `scraper.py --startlists-only`, strips any women's races that slipped through, runs `detect_changes.py`, regenerates `best_teams.json` via `generate_best_teams.py`, then commits `data.json` + `changelog.json` + `best_teams.json` (+ `scrape_log.json` if present).
 
 **Schedule:** 11am UTC and 5pm UTC daily (12pm and 6pm BST).
@@ -157,7 +157,7 @@ Twice daily. Runs `scraper.py --results-only` then `scraper.py --startlists-only
 
 **`scrape_log.json`:** written by `main_results_only()` in `scraper.py` on every run. Records, per live race, whether the next expected stage page fetched OK and whether a results table was found — lets `health-check.yml` distinguish "stage genuinely hasn't finished yet" from "scraper ran, exited 0, and is silently blind to a page that has results" (`possible_parser_drift`, flagged after 5+ consecutive stalls spanning 48+ hours on the same stage). Was 2 attempts/10h until 2026-07-10, which false-positived on essentially every stage of a Grand Tour — scrape.yml only runs at 11am/17:00 UTC, and consecutive stages finish around the same time of day, so the very next scrape after one stage finishes is routinely 16-20h into "stalled" on the next stage before it's even happened; a rest day stretches that normal gap to ~42-48h. 48h/5 attempts sits above the longest normal (rest-day) gap. The blunter `data_age_hours` staleness check below still catches a scraper that's stopped working entirely, on a shorter fuse.
 
-**Trigger manually:** GitHub → Actions → "Update UCI Race Data" → Run workflow.
+**Trigger manually:** GitHub → Actions → "Pull Race Results" → Run workflow.
 
 ### `health-check.yml` — watchdog (runs on `ubuntu-latest`)
 Triggered by: push to `status.json`, `workflow_run` completion of `scrape.yml` or `update-data.yml` (success *or* failure — catches a scrape that ran and found nothing without waiting up to 6h for the next cron tick), a 6-hourly schedule, or manual dispatch (with a `force_scrape` input).

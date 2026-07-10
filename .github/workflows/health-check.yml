@@ -17,7 +17,7 @@ on:
   # See scrape_log.json / possible_parser_drift below for what it checks.
   workflow_run:
     workflows:
-      - 'Update UCI Race Data'
+      - 'Pull Race Results'
       - 'Full Scrape - Calendar & Teams (manual)'
     types:
       - completed

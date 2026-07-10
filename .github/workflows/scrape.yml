@@ -1,4 +1,4 @@
-name: Update UCI Race Data
+name: Pull Race Results
 
 # Runs results-only scrape -- fetches ONLY new stage results and classifications
 # for currently live races. Does NOT re-scrape teams, rider profiles, or the

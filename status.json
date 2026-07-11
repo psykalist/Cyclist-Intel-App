@@ -1,22 +1,20 @@
 {
-  "updated_at": "2026-07-11T07:28:21.794891+00:00",
+  "updated_at": "2026-07-11T11:46:44.541268+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "data.json is 13h old (a live race is running) -- consider running scraper.py"
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 3170,
-    "data_upcoming": 37,
+    "data_size_kb": 3181,
+    "data_upcoming": 36,
     "data_recent": 58,
     "data_teams": 33,
-    "rider_profiles": 253,
-    "live_races": 2,
-    "scraped_at": "2026-07-10T18:17:01.571505+00:00",
-    "data_age_hours": 13.2,
+    "rider_profiles": 254,
+    "live_races": 3,
+    "scraped_at": "2026-07-11T11:45:54.483141+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 214581,
-    "scrape_log_run_at": "2026-07-10 20:16 UTC"
+    "scrape_log_run_at": "2026-07-11 13:45 UTC"
   }
 }

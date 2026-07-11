@@ -1,6 +1,34 @@
 {
-  "generated_at": "2026-07-10T18:17:35.685198+00:00",
+  "generated_at": "2026-07-11T11:46:29.337206+00:00",
   "entries": [
+    {
+      "id": "7c95f2c37746",
+      "timestamp": "2026-07-11T11:46:29.330907+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Tour of Magnificent Qinghai: 🇩🇰 Alexander Salby wins"
+    },
+    {
+      "id": "865d9a61e982",
+      "timestamp": "2026-07-11T11:46:29.330907+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Magnificent Qinghai GC: 🇩🇰 Alexander Salby leads"
+    },
+    {
+      "id": "2e867166c015",
+      "timestamp": "2026-07-11T11:46:29.330907+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Magnificent Qinghai Points: 🇩🇰 Alexander Salby leads"
+    },
+    {
+      "id": "6edbb64a64c5",
+      "timestamp": "2026-07-11T11:46:29.330907+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Magnificent Qinghai KOM: 🇪🇪 Markus Pajur leads"
+    },
     {
       "id": "3628c74cbe2f",
       "timestamp": "2026-07-10T16:15:41.210197+00:00",

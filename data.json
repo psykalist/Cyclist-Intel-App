@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-10T18:17:01.571505+00:00",
-  "scraped_at_human": "10 Jul 2026 18:17 UTC",
+  "scraped_at": "2026-07-11T11:45:54.483141+00:00",
+  "scraped_at_human": "11 Jul 2026 11:45 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13710,6 +13710,1363 @@
           "time_gap": "+ 11:44"
         }
       ]
+    },
+    {
+      "slug": "tour-of-magnificent-qinghai",
+      "cf_slug": "tour-of-magnificent-qinghai-2026",
+      "name": "Tour of Magnificent Qinghai",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "live",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-18",
+      "total_stages": 8,
+      "official_url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026",
+      "stages_completed": 1,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-1",
+          "winner": "Alexander Salby",
+          "winner_flag": "🇩🇰",
+          "winner_nat": "DK",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Alexander Salby",
+              "rider_url": "/profile/alexander-salby",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 2,
+              "name": "Iúri Leitão",
+              "rider_url": "/profile/iuri-leitao",
+              "team": "",
+              "nat_code": "PT",
+              "flag": "🇵🇹",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 3,
+              "name": "Pierre Barbier",
+              "rider_url": "/profile/pierre-barbier",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 4,
+              "name": "Alexis Renard",
+              "rider_url": "/profile/alexis-renard",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 5,
+              "name": "Enrico Zanoncello",
+              "rider_url": "/profile/enrico-zanoncello",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 6,
+              "name": "Manuel Penalver Aniorte",
+              "rider_url": "/profile/manuel-penalver-aniorte",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 7,
+              "name": "Marco Manenti",
+              "rider_url": "/profile/marco-manenti",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 8,
+              "name": "Sergi Darder Gari",
+              "rider_url": "/profile/sergi-darder-gari",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 9,
+              "name": "Cesar Macias Estrada",
+              "rider_url": "/profile/cesar-macias-estrada",
+              "team": "",
+              "nat_code": "MX",
+              "flag": "🇲🇽",
+              "time_gap": "02:27:53"
+            },
+            {
+              "rank": 10,
+              "name": "Mathis Avondts",
+              "rider_url": "/profile/mathis-avondts",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "02:27:53"
+            }
+          ],
+          "date_str": "Sunday 05 July",
+          "start_town": "Xining",
+          "finish_town": "Xining",
+          "distance_km": 121.0,
+          "elevation_m": 498,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Monday 06 July",
+          "start_town": "Huangyuan",
+          "finish_town": "Menyuan",
+          "distance_km": 225.0,
+          "elevation_m": 2947,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Tuesday 07 July",
+          "start_town": "Menyuan",
+          "finish_town": "Huzhu",
+          "distance_km": 168.0,
+          "elevation_m": 1722,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 08 July",
+          "start_town": "Huzhu",
+          "finish_town": "Guide",
+          "distance_km": 196.0,
+          "elevation_m": 2822,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": ""
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 09 July",
+          "start_town": "Guide",
+          "finish_town": "Gonghe",
+          "distance_km": 136.0,
+          "elevation_m": 2212,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 10 July",
+          "start_town": "Gonghe",
+          "finish_town": "Gangcha",
+          "distance_km": 233.0,
+          "elevation_m": 1382,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 7,
+          "label": "Stage 7",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-7",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 11 July",
+          "start_town": "Gangcha",
+          "finish_town": "Xihaizhen",
+          "distance_km": 130.0,
+          "elevation_m": 1150,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 8,
+          "label": "Stage 8",
+          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-8",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 12 July",
+          "start_town": "Xihaizhen",
+          "finish_town": "Qinghai Lake",
+          "distance_km": 146.0,
+          "elevation_m": 1060,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": ""
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Cristián Rodríguez",
+          "slug": "cristian-rodriguez",
+          "nat": "es",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Anton Kuzmin",
+          "slug": "anton-kuzmin",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Henok Mulubrhan",
+          "slug": "henok-mulubrhan",
+          "nat": "er",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Haoyu Su",
+          "slug": "haoyu-su",
+          "nat": "cn",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "BEKKUM Darren Van",
+          "slug": "darren-van-bekkum",
+          "nat": "nl",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Pierre-Henry Basset",
+          "slug": "pierre-henry-basset",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Gustav Wang",
+          "slug": "gustav-wang",
+          "nat": "dk",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Luca Covili",
+          "slug": "luca-covili",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Edward Cruz",
+          "slug": "edward-martinez-cruz",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Martin Santiago Herreño",
+          "slug": "martin-santiago-herreno",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Marco Manenti",
+          "slug": "marco-manenti1",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alessio Martinelli",
+          "slug": "alessio-martinelli",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Enrico Zanoncello",
+          "slug": "enrico-zanoncello",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Clément Alleno",
+          "slug": "clement-alleno",
+          "nat": "fr",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Josh Burnett",
+          "slug": "josh-burnett",
+          "nat": "nz",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Jambaljamts Sainbayar",
+          "slug": "jambaljamts-sainbayar",
+          "nat": "mn",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Eric Antonio Fagúndez",
+          "slug": "eric-antonio-fagundez",
+          "nat": "uy",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "César Macías",
+          "slug": "cesar-macias-estrada",
+          "nat": "mx",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Merhawi Kudus",
+          "slug": "merhawi-kudus",
+          "nat": "er",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Rodrigo Álvarez",
+          "slug": "rodrigo-alvarez-rogriguez",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Iúri Leitão",
+          "slug": "iuri-leitao",
+          "nat": "pt",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Sergi Darder",
+          "slug": "sergi-darder",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Samuel Fernández",
+          "slug": "samuel-fernandez-garcia",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Javier Ibáñez",
+          "slug": "javier-ibanez-beltran-de-salazar",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Iker Villar",
+          "slug": "iker-villar",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Fernando Barceló",
+          "slug": "fernando-barcelo",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Jan Castellon",
+          "slug": "jan-castellon",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Alexis Renard",
+          "slug": "alexis-renard",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Simon Carr",
+          "slug": "simon-carr",
+          "nat": "gb",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Yaël Joalland",
+          "slug": "yael-joalland",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Emanuel Buchmann",
+          "slug": "emanuel-buchmann",
+          "nat": "de",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sylvain Moniquet",
+          "slug": "sylvain-moniquet",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Nicolas Debeaumarché",
+          "slug": "nicolas-debeaumarche",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Paul Ourselin",
+          "slug": "paul-ourselin",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Jon Agirre",
+          "slug": "jon-agirre",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Unai Aznar",
+          "slug": "unai-aznar-vijuesca",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Mikel Bizkarra",
+          "slug": "mikel-bizkarra",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Iker Mintegi",
+          "slug": "iker-mintegi-claver",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Louis Sutton",
+          "slug": "louis-sutton",
+          "nat": "gb",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Christian Bagatin",
+          "slug": "christian-bagatin",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Cesare Chesini",
+          "slug": "cesare-chesini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Edoardo Cipollini",
+          "slug": "edoardo-cipollini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Diego Bracalente",
+          "slug": "diego-bracalente",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Marcin Budziński",
+          "slug": "marcin-budzinski",
+          "nat": "pl",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Lorenzo Masciarelli",
+          "slug": "lorenzo-masciarelli",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Lorenzo Nespoli",
+          "slug": "lorenzo-nespoli",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Tilen Finkšt",
+          "slug": "tilen-finkst",
+          "nat": "si",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Tommaso Nencini",
+          "slug": "tommaso-nencini",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Andrea Piras",
+          "slug": "andrea-piras",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Valerio Conti",
+          "slug": "valerio-conti",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Felix James Meo",
+          "slug": "felix-james-meo",
+          "nat": "nz",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Matteo Regnanti",
+          "slug": "matteo-regnanti",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Santiago Umba",
+          "slug": "santiago-umba",
+          "nat": "co",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Fabrizio Crozzolo",
+          "slug": "fabrizio-crozzolo",
+          "nat": "ar",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fernando Tercero",
+          "slug": "fernando-tercero-lopez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Dario Giuliano",
+          "slug": "dario-giuliano",
+          "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Gabriele Bessega",
+          "slug": "gabriele-bessega",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Manuel Peñalver",
+          "slug": "manuel-penalver",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Davide Bais",
+          "slug": "davide-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Adrián Benito",
+          "slug": "adrian-benito-gonzalez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Mathis Avondts",
+          "slug": "mathis-avondts",
+          "nat": "be",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Elmer Brommersma",
+          "slug": "elmer-brommersma",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Maxime Duba",
+          "slug": "maxime-duba",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Niek Voogt",
+          "slug": "niek-voogt",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Lukas Vries",
+          "slug": "lukas-vries",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Meindert Weulink",
+          "slug": "meindert-weulink",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "ZANDEN Otto Van",
+          "slug": "otto-van-zanden",
+          "nat": "nl",
+          "team": "Azerion / Villa Valkenburg (CT)"
+        },
+        {
+          "name": "Matthew Greenwood",
+          "slug": "matthew-greenwood",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "William Heffernan",
+          "slug": "william-heffernan",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Noah Blannin",
+          "slug": "noah-blannin",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Max Campbell",
+          "slug": "max-campbell",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Alastair Christie-Johnston",
+          "slug": "alastair-christie-johnston",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Will Heath",
+          "slug": "will-heath",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Oscar Gallagher",
+          "slug": "oscar-gallagher",
+          "nat": "au",
+          "team": "CCACHE x BODYWRAP (CT)"
+        },
+        {
+          "name": "Cormac Mcgeough",
+          "slug": "cormac-mcgeough",
+          "nat": "ie",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Daniel Guld",
+          "slug": "daniel-guld",
+          "nat": "dk",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "HIN Daniel Yon",
+          "slug": "daniel-yon-hin",
+          "nat": "mu",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Matthew Sherwin",
+          "slug": "matthew-sherwin",
+          "nat": "au",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Nikita Kirzhaykin",
+          "slug": "nikita-kirzhaykin",
+          "nat": "ru",
+          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
+        },
+        {
+          "name": "Mihkel Räim",
+          "slug": "mihkel-raim",
+          "nat": "ee",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Andreas Miltiadis",
+          "slug": "andreas-miltiadis",
+          "nat": "cy",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Riccardo Lucca",
+          "slug": "riccardo-lucca",
+          "nat": "it",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Wing Chung Ng",
+          "slug": "wing-chung-ng",
+          "nat": "hk",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "David Delgado",
+          "slug": "david-delgado",
+          "nat": "es",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Oskar Küüt",
+          "slug": "oskar-kuut",
+          "nat": "ee",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Pengkai Wang",
+          "slug": "pengkai-wang",
+          "nat": "cn",
+          "team": "Quick Pro Team (CT)"
+        },
+        {
+          "name": "Ting Wei Li",
+          "slug": "ting-wei-li",
+          "nat": "tw",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Jaebin Yun",
+          "slug": "jaebin-yun",
+          "nat": "kr",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Tegsh-Bayar Batsaikhan",
+          "slug": "tegsh-bayar-batsaikhan",
+          "nat": "mn",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Temuulen Khadbaatar",
+          "slug": "temuulen-khadbaatar",
+          "nat": "mn",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Maral-Erdene Batmunkh",
+          "slug": "maral-erdene-batmunkh",
+          "nat": "mn",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Carter Bettles",
+          "slug": "carter-bettles",
+          "nat": "au",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "Cristian David Pita",
+          "slug": "cristian-david-pita",
+          "nat": "ec",
+          "team": "Roojai Insurance Winspace (CT)"
+        },
+        {
+          "name": "ENGELEN Adne Van",
+          "slug": "adne-van-engelen",
+          "nat": "nl",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Mathias Bregnhøj",
+          "slug": "mathias-bregnhoj",
+          "nat": "dk",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Zeb Kyffin",
+          "slug": "zeb-kyffin",
+          "nat": "gb",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Pierre Barbier",
+          "slug": "pierre-barbier",
+          "nat": "fr",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Zhe Yie Kee",
+          "slug": "zhe-yie-kee",
+          "nat": "my",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Muhammad Nur Aiman Bin Rosli",
+          "slug": "muhammad-nur-aiman-bin-rosli",
+          "nat": "my",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "James Gardner",
+          "slug": "james-gardner",
+          "nat": "nz",
+          "team": "Terengganu Cycling Team (CT)"
+        },
+        {
+          "name": "Boan Li",
+          "slug": "boan-li",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Kuicheng Wang",
+          "slug": "kuicheng-wang",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Gaoshang Niu",
+          "slug": "gaoshang-niu",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Wenxuan Li",
+          "slug": "wenxuan-li1",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Mingzhe Liu",
+          "slug": "mingzhe-liu",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Zeyao Lu",
+          "slug": "zeyao-lu",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Ming Wang",
+          "slug": "ming-wang1",
+          "nat": "cn",
+          "team": "Bodywrap LTwoo Cycling Team (CT)"
+        },
+        {
+          "name": "Chenglu Liu",
+          "slug": "chenglu-liu",
+          "nat": "cn",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Alexander Konychev",
+          "slug": "alexander-konychev",
+          "nat": "it",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "ROSSI Lucas De",
+          "slug": "lucas-de-rossi",
+          "nat": "fr",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Willie Smit",
+          "slug": "willie-smit",
+          "nat": "za",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Jesper Rasch",
+          "slug": "jesper-rasch",
+          "nat": "nl",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Yusheng Chen",
+          "slug": "yusheng-chen",
+          "nat": "cn",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Rongqi Zhang",
+          "slug": "rongqi-zhang",
+          "nat": "cn",
+          "team": "China Anta - Mentech Cycling Team (CT)"
+        },
+        {
+          "name": "Kongqing Wei",
+          "slug": "kongqing-wei",
+          "nat": "cn",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Zhengwang Zhang",
+          "slug": "zhengwang-zhang",
+          "nat": "cn",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Jonas Rapp",
+          "slug": "jonas-rapp",
+          "nat": "de",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Benjamin Dyball",
+          "slug": "benjamin-dyball",
+          "nat": "au",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Māris Bogdanovičs",
+          "slug": "maris-bogdanovics",
+          "nat": "lv",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Cyrus Monk",
+          "slug": "cyrus-monk",
+          "nat": "au",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Markus Pajur",
+          "slug": "markus-pajur",
+          "nat": "ee",
+          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
+        },
+        {
+          "name": "Eduardo Sepúlveda",
+          "slug": "eduardo-sepulveda",
+          "nat": "ar",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Calum Johnston",
+          "slug": "calum-johnston",
+          "nat": "gb",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Simon Pellaud",
+          "slug": "simon-pellaud",
+          "nat": "ch",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Nils Sinschek",
+          "slug": "nils-sinschek",
+          "nat": "nl",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Cang Yang",
+          "slug": "cang-yang",
+          "nat": "cn",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Raman Tsishkou",
+          "slug": "raman-tsishkou",
+          "nat": "by",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Alexander Salby",
+          "slug": "alexander-salby",
+          "nat": "dk",
+          "team": "Li Ning Star (CT)"
+        },
+        {
+          "name": "Haijie Hu",
+          "slug": "haijie-hu",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Chenli Zhao",
+          "slug": "chenli-zhao",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Xi Li",
+          "slug": "xi-li",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Ze Zi",
+          "slug": "ze-zi",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Ruibiao Zhang",
+          "slug": "ruibiao-zhang",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Chen Wu",
+          "slug": "chen-wu",
+          "nat": "cn",
+          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
+        },
+        {
+          "name": "Petr Rikunov",
+          "slug": "petr-rikunov",
+          "nat": "ru",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Jonathan Klever Caicedo",
+          "slug": "jonathan-klever-caicedo",
+          "nat": "ec",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Chaoyi Li",
+          "slug": "chaoyi-li",
+          "nat": "cn",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Junqi Shao",
+          "slug": "junqi-shao",
+          "nat": "cn",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Andrei Stepanov",
+          "slug": "andrei-stepanov",
+          "nat": "ru",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Bold Iderbold",
+          "slug": "bold-iderbold",
+          "nat": "mn",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Aleksandr Bereznyak",
+          "slug": "aleksandr-bereznyak",
+          "nat": "ru",
+          "team": "Wheeltop Rotor Chengdu Team (CT)"
+        },
+        {
+          "name": "Hailin Sun",
+          "slug": "hailin-sun",
+          "nat": "cn",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Zhibin Yang",
+          "slug": "zhibin-yang",
+          "nat": "cn",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Shourong Guo",
+          "slug": "shourong-guo",
+          "nat": "cn",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Saeid Safarzadeh",
+          "slug": "saeeid-safarzadeh",
+          "nat": "ir",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "Hernán Ricardo Aguirre",
+          "slug": "hernan-aguirre",
+          "nat": "co",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "SHOTORBAN Ali Labib",
+          "slug": "ali-labib-shotorban",
+          "nat": "ir",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        },
+        {
+          "name": "James Forbes",
+          "slug": "james-forbes",
+          "nat": "au",
+          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
+        }
+      ],
+      "last_stage_winner": "Alexander Salby",
+      "last_stage_winner_flag": "🇩🇰",
+      "last_stage_num": 1,
+      "gc_leader": "🇩🇰 Alexander Salby",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Alexander Salby",
+          "rider_url": "/profile/alexander-salby",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "02:27:43"
+        },
+        {
+          "rank": 2,
+          "name": "Iúri Leitão",
+          "rider_url": "/profile/iuri-leitao",
+          "team": "",
+          "nat_code": "PT",
+          "flag": "🇵🇹",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Markus Pajur",
+          "rider_url": "/profile/markus-pajur",
+          "team": "",
+          "nat_code": "EE",
+          "flag": "🇪🇪",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 4,
+          "name": "Pierre Barbier",
+          "rider_url": "/profile/pierre-barbier",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 5,
+          "name": "Tegsh-Bayar Batsaikhan",
+          "rider_url": "/profile/tegsh-bayar-batsaikhan",
+          "team": "",
+          "nat_code": "MN",
+          "flag": "🇲🇳",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 6,
+          "name": "Petr Rikunov",
+          "rider_url": "/profile/petr-rikunov",
+          "team": "",
+          "nat_code": "RU",
+          "flag": "🇷🇺",
+          "time_gap": "+ 07"
+        },
+        {
+          "rank": 7,
+          "name": "Gabriele Bessega",
+          "rider_url": "/profile/gabriele-bessega",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 8,
+          "name": "Calum Johnston",
+          "rider_url": "/profile/calum-johnston",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Henok Mulubrhan",
+          "rider_url": "/profile/henok-mulubrhan",
+          "team": "",
+          "nat_code": "ER",
+          "flag": "🇪🇷",
+          "time_gap": "+ 09"
+        },
+        {
+          "rank": 10,
+          "name": "Alexis Renard",
+          "rider_url": "/profile/alexis-renard",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        }
+      ],
+      "points_leader": "🇩🇰 Alexander Salby",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Alexander Salby",
+          "rider_url": "/profile/alexander-salby",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "16"
+        },
+        {
+          "rank": 2,
+          "name": "Iúri Leitão",
+          "rider_url": "/profile/iuri-leitao",
+          "team": "",
+          "nat_code": "PT",
+          "flag": "🇵🇹",
+          "time_gap": "14"
+        },
+        {
+          "rank": 3,
+          "name": "Pierre Barbier",
+          "rider_url": "/profile/pierre-barbier",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "13"
+        },
+        {
+          "rank": 4,
+          "name": "Alexis Renard",
+          "rider_url": "/profile/alexis-renard",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "12"
+        },
+        {
+          "rank": 5,
+          "name": "Enrico Zanoncello",
+          "rider_url": "/profile/enrico-zanoncello",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "11"
+        },
+        {
+          "rank": 6,
+          "name": "Markus Pajur",
+          "rider_url": "/profile/markus-pajur",
+          "team": "",
+          "nat_code": "EE",
+          "flag": "🇪🇪",
+          "time_gap": "10"
+        },
+        {
+          "rank": 6,
+          "name": "Manuel Penalver Aniorte",
+          "rider_url": "/profile/manuel-penalver-aniorte",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "10"
+        },
+        {
+          "rank": 8,
+          "name": "Marco Manenti",
+          "rider_url": "/profile/marco-manenti",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "9"
+        },
+        {
+          "rank": 9,
+          "name": "Sergi Darder Gari",
+          "rider_url": "/profile/sergi-darder-gari",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "8"
+        },
+        {
+          "rank": 10,
+          "name": "Cesar Macias Estrada",
+          "rider_url": "/profile/cesar-macias-estrada",
+          "team": "",
+          "nat_code": "MX",
+          "flag": "🇲🇽",
+          "time_gap": "7"
+        }
+      ],
+      "kom_leader": "🇪🇪 Markus Pajur",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Markus Pajur",
+          "rider_url": "/profile/markus-pajur",
+          "team": "",
+          "nat_code": "EE",
+          "flag": "🇪🇪",
+          "time_gap": "3"
+        },
+        {
+          "rank": 2,
+          "name": "Nils Sinschek",
+          "rider_url": "/profile/nils-sinschek",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "2"
+        },
+        {
+          "rank": 3,
+          "name": "Tegsh-Bayar Batsaikhan",
+          "rider_url": "/profile/tegsh-bayar-batsaikhan",
+          "team": "",
+          "nat_code": "MN",
+          "flag": "🇲🇳",
+          "time_gap": "1"
+        }
+      ]
     }
   ],
   "upcoming": [
@@ -14796,1053 +16153,6 @@
         }
       ],
       "startlist": []
-    },
-    {
-      "slug": "tour-of-magnificent-qinghai",
-      "cf_slug": "tour-of-magnificent-qinghai-2026",
-      "name": "Tour of Magnificent Qinghai",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-07-11",
-      "end_date": "2026-07-18",
-      "total_stages": 8,
-      "official_url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 05 July",
-          "start_town": "Xining",
-          "finish_town": "Xining",
-          "distance_km": 121.0,
-          "elevation_m": 498,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Monday 06 July",
-          "start_town": "Huangyuan",
-          "finish_town": "Menyuan",
-          "distance_km": 225.0,
-          "elevation_m": 2947,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": ""
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Tuesday 07 July",
-          "start_town": "Menyuan",
-          "finish_town": "Huzhu",
-          "distance_km": 168.0,
-          "elevation_m": 1722,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": ""
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 08 July",
-          "start_town": "Huzhu",
-          "finish_town": "Guide",
-          "distance_km": 196.0,
-          "elevation_m": 2822,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": ""
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 09 July",
-          "start_town": "Guide",
-          "finish_town": "Gonghe",
-          "distance_km": 136.0,
-          "elevation_m": 2212,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": ""
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 10 July",
-          "start_town": "Gonghe",
-          "finish_town": "Gangcha",
-          "distance_km": 233.0,
-          "elevation_m": 1382,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": ""
-        },
-        {
-          "num": 7,
-          "label": "Stage 7",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 11 July",
-          "start_town": "Gangcha",
-          "finish_town": "Xihaizhen",
-          "distance_km": 130.0,
-          "elevation_m": 1150,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": ""
-        },
-        {
-          "num": 8,
-          "label": "Stage 8",
-          "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-8",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 12 July",
-          "start_town": "Xihaizhen",
-          "finish_town": "Qinghai Lake",
-          "distance_km": 146.0,
-          "elevation_m": 1060,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": ""
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Cristián Rodríguez",
-          "slug": "cristian-rodriguez",
-          "nat": "es",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Anton Kuzmin",
-          "slug": "anton-kuzmin",
-          "nat": "kz",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Henok Mulubrhan",
-          "slug": "henok-mulubrhan",
-          "nat": "er",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Haoyu Su",
-          "slug": "haoyu-su",
-          "nat": "cn",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "BEKKUM Darren Van",
-          "slug": "darren-van-bekkum",
-          "nat": "nl",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Pierre-Henry Basset",
-          "slug": "pierre-henry-basset",
-          "nat": "fr",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Gustav Wang",
-          "slug": "gustav-wang",
-          "nat": "dk",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Luca Covili",
-          "slug": "luca-covili",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Edward Cruz",
-          "slug": "edward-martinez-cruz",
-          "nat": "co",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Martin Santiago Herreño",
-          "slug": "martin-santiago-herreno",
-          "nat": "co",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Marco Manenti",
-          "slug": "marco-manenti1",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Alessio Martinelli",
-          "slug": "alessio-martinelli",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Alex Tolio",
-          "slug": "alex-tolio",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Enrico Zanoncello",
-          "slug": "enrico-zanoncello",
-          "nat": "it",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Clément Alleno",
-          "slug": "clement-alleno",
-          "nat": "fr",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Josh Burnett",
-          "slug": "josh-burnett",
-          "nat": "nz",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Jambaljamts Sainbayar",
-          "slug": "jambaljamts-sainbayar",
-          "nat": "mn",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Eric Antonio Fagúndez",
-          "slug": "eric-antonio-fagundez",
-          "nat": "uy",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "César Macías",
-          "slug": "cesar-macias-estrada",
-          "nat": "mx",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Merhawi Kudus",
-          "slug": "merhawi-kudus",
-          "nat": "er",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Rodrigo Álvarez",
-          "slug": "rodrigo-alvarez-rogriguez",
-          "nat": "es",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "Iúri Leitão",
-          "slug": "iuri-leitao",
-          "nat": "pt",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Sergi Darder",
-          "slug": "sergi-darder",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Samuel Fernández",
-          "slug": "samuel-fernandez-garcia",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Javier Ibáñez",
-          "slug": "javier-ibanez-beltran-de-salazar",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Iker Villar",
-          "slug": "iker-villar",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Fernando Barceló",
-          "slug": "fernando-barcelo",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Jan Castellon",
-          "slug": "jan-castellon",
-          "nat": "es",
-          "team": "Caja Rural - Seguros RGA (PRT)"
-        },
-        {
-          "name": "Alexis Renard",
-          "slug": "alexis-renard",
-          "nat": "fr",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Simon Carr",
-          "slug": "simon-carr",
-          "nat": "gb",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Yaël Joalland",
-          "slug": "yael-joalland",
-          "nat": "fr",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Emanuel Buchmann",
-          "slug": "emanuel-buchmann",
-          "nat": "de",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Sylvain Moniquet",
-          "slug": "sylvain-moniquet",
-          "nat": "be",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Nicolas Debeaumarché",
-          "slug": "nicolas-debeaumarche",
-          "nat": "fr",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Paul Ourselin",
-          "slug": "paul-ourselin",
-          "nat": "fr",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Jon Agirre",
-          "slug": "jon-agirre",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Unai Aznar",
-          "slug": "unai-aznar-vijuesca",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Mikel Bizkarra",
-          "slug": "mikel-bizkarra",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Iker Mintegi",
-          "slug": "iker-mintegi-claver",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Louis Sutton",
-          "slug": "louis-sutton",
-          "nat": "gb",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Christian Bagatin",
-          "slug": "christian-bagatin",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Cesare Chesini",
-          "slug": "cesare-chesini",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Edoardo Cipollini",
-          "slug": "edoardo-cipollini",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Diego Bracalente",
-          "slug": "diego-bracalente",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Marcin Budziński",
-          "slug": "marcin-budzinski",
-          "nat": "pl",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Lorenzo Masciarelli",
-          "slug": "lorenzo-masciarelli",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Lorenzo Nespoli",
-          "slug": "lorenzo-nespoli",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Tilen Finkšt",
-          "slug": "tilen-finkst",
-          "nat": "si",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Tommaso Nencini",
-          "slug": "tommaso-nencini",
-          "nat": "it",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Andrea Piras",
-          "slug": "andrea-piras",
-          "nat": "it",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Valerio Conti",
-          "slug": "valerio-conti",
-          "nat": "it",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Felix James Meo",
-          "slug": "felix-james-meo",
-          "nat": "nz",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Matteo Regnanti",
-          "slug": "matteo-regnanti",
-          "nat": "it",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Santiago Umba",
-          "slug": "santiago-umba",
-          "nat": "co",
-          "team": "Solution Tech NIPPO Rali (PRT)"
-        },
-        {
-          "name": "Fabrizio Crozzolo",
-          "slug": "fabrizio-crozzolo",
-          "nat": "ar",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Fernando Tercero",
-          "slug": "fernando-tercero-lopez",
-          "nat": "es",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Dario Giuliano",
-          "slug": "dario-giuliano",
-          "nat": "fr",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Gabriele Bessega",
-          "slug": "gabriele-bessega",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Manuel Peñalver",
-          "slug": "manuel-penalver",
-          "nat": "es",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Davide Bais",
-          "slug": "davide-bais",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Adrián Benito",
-          "slug": "adrian-benito-gonzalez",
-          "nat": "es",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Mathis Avondts",
-          "slug": "mathis-avondts",
-          "nat": "be",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Elmer Brommersma",
-          "slug": "elmer-brommersma",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Maxime Duba",
-          "slug": "maxime-duba",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Niek Voogt",
-          "slug": "niek-voogt",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Lukas Vries",
-          "slug": "lukas-vries",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Meindert Weulink",
-          "slug": "meindert-weulink",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "ZANDEN Otto Van",
-          "slug": "otto-van-zanden",
-          "nat": "nl",
-          "team": "Azerion / Villa Valkenburg (CT)"
-        },
-        {
-          "name": "Matthew Greenwood",
-          "slug": "matthew-greenwood",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "William Heffernan",
-          "slug": "william-heffernan",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Noah Blannin",
-          "slug": "noah-blannin",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Max Campbell",
-          "slug": "max-campbell",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Alastair Christie-Johnston",
-          "slug": "alastair-christie-johnston",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Will Heath",
-          "slug": "will-heath",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Oscar Gallagher",
-          "slug": "oscar-gallagher",
-          "nat": "au",
-          "team": "CCACHE x BODYWRAP (CT)"
-        },
-        {
-          "name": "Cormac Mcgeough",
-          "slug": "cormac-mcgeough",
-          "nat": "ie",
-          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
-        },
-        {
-          "name": "Daniel Guld",
-          "slug": "daniel-guld",
-          "nat": "dk",
-          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
-        },
-        {
-          "name": "HIN Daniel Yon",
-          "slug": "daniel-yon-hin",
-          "nat": "mu",
-          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
-        },
-        {
-          "name": "Matthew Sherwin",
-          "slug": "matthew-sherwin",
-          "nat": "au",
-          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
-        },
-        {
-          "name": "Nikita Kirzhaykin",
-          "slug": "nikita-kirzhaykin",
-          "nat": "ru",
-          "team": "7Eleven Cliqq Roadbike Philippines (CT)"
-        },
-        {
-          "name": "Mihkel Räim",
-          "slug": "mihkel-raim",
-          "nat": "ee",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Andreas Miltiadis",
-          "slug": "andreas-miltiadis",
-          "nat": "cy",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Riccardo Lucca",
-          "slug": "riccardo-lucca",
-          "nat": "it",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Wing Chung Ng",
-          "slug": "wing-chung-ng",
-          "nat": "hk",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "David Delgado",
-          "slug": "david-delgado",
-          "nat": "es",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Oskar Küüt",
-          "slug": "oskar-kuut",
-          "nat": "ee",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Pengkai Wang",
-          "slug": "pengkai-wang",
-          "nat": "cn",
-          "team": "Quick Pro Team (CT)"
-        },
-        {
-          "name": "Ting Wei Li",
-          "slug": "ting-wei-li",
-          "nat": "tw",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Jaebin Yun",
-          "slug": "jaebin-yun",
-          "nat": "kr",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Tegsh-Bayar Batsaikhan",
-          "slug": "tegsh-bayar-batsaikhan",
-          "nat": "mn",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Temuulen Khadbaatar",
-          "slug": "temuulen-khadbaatar",
-          "nat": "mn",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Maral-Erdene Batmunkh",
-          "slug": "maral-erdene-batmunkh",
-          "nat": "mn",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Carter Bettles",
-          "slug": "carter-bettles",
-          "nat": "au",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "Cristian David Pita",
-          "slug": "cristian-david-pita",
-          "nat": "ec",
-          "team": "Roojai Insurance Winspace (CT)"
-        },
-        {
-          "name": "ENGELEN Adne Van",
-          "slug": "adne-van-engelen",
-          "nat": "nl",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Mathias Bregnhøj",
-          "slug": "mathias-bregnhoj",
-          "nat": "dk",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Zeb Kyffin",
-          "slug": "zeb-kyffin",
-          "nat": "gb",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Pierre Barbier",
-          "slug": "pierre-barbier",
-          "nat": "fr",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Zhe Yie Kee",
-          "slug": "zhe-yie-kee",
-          "nat": "my",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Muhammad Nur Aiman Bin Rosli",
-          "slug": "muhammad-nur-aiman-bin-rosli",
-          "nat": "my",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "James Gardner",
-          "slug": "james-gardner",
-          "nat": "nz",
-          "team": "Terengganu Cycling Team (CT)"
-        },
-        {
-          "name": "Boan Li",
-          "slug": "boan-li",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Kuicheng Wang",
-          "slug": "kuicheng-wang",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Gaoshang Niu",
-          "slug": "gaoshang-niu",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Wenxuan Li",
-          "slug": "wenxuan-li1",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Mingzhe Liu",
-          "slug": "mingzhe-liu",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Zeyao Lu",
-          "slug": "zeyao-lu",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Ming Wang",
-          "slug": "ming-wang1",
-          "nat": "cn",
-          "team": "Bodywrap LTwoo Cycling Team (CT)"
-        },
-        {
-          "name": "Chenglu Liu",
-          "slug": "chenglu-liu",
-          "nat": "cn",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Alexander Konychev",
-          "slug": "alexander-konychev",
-          "nat": "it",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "ROSSI Lucas De",
-          "slug": "lucas-de-rossi",
-          "nat": "fr",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Willie Smit",
-          "slug": "willie-smit",
-          "nat": "za",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Jesper Rasch",
-          "slug": "jesper-rasch",
-          "nat": "nl",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Yusheng Chen",
-          "slug": "yusheng-chen",
-          "nat": "cn",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Rongqi Zhang",
-          "slug": "rongqi-zhang",
-          "nat": "cn",
-          "team": "China Anta - Mentech Cycling Team (CT)"
-        },
-        {
-          "name": "Kongqing Wei",
-          "slug": "kongqing-wei",
-          "nat": "cn",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Zhengwang Zhang",
-          "slug": "zhengwang-zhang",
-          "nat": "cn",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Jonas Rapp",
-          "slug": "jonas-rapp",
-          "nat": "de",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Benjamin Dyball",
-          "slug": "benjamin-dyball",
-          "nat": "au",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Māris Bogdanovičs",
-          "slug": "maris-bogdanovics",
-          "nat": "lv",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Cyrus Monk",
-          "slug": "cyrus-monk",
-          "nat": "au",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Markus Pajur",
-          "slug": "markus-pajur",
-          "nat": "ee",
-          "team": "FNIX - SCOM - Hengxiang Cycling Team (CT)"
-        },
-        {
-          "name": "Eduardo Sepúlveda",
-          "slug": "eduardo-sepulveda",
-          "nat": "ar",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Calum Johnston",
-          "slug": "calum-johnston",
-          "nat": "gb",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Simon Pellaud",
-          "slug": "simon-pellaud",
-          "nat": "ch",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Nils Sinschek",
-          "slug": "nils-sinschek",
-          "nat": "nl",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Cang Yang",
-          "slug": "cang-yang",
-          "nat": "cn",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Raman Tsishkou",
-          "slug": "raman-tsishkou",
-          "nat": "by",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Alexander Salby",
-          "slug": "alexander-salby",
-          "nat": "dk",
-          "team": "Li Ning Star (CT)"
-        },
-        {
-          "name": "Haijie Hu",
-          "slug": "haijie-hu",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Chenli Zhao",
-          "slug": "chenli-zhao",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Xi Li",
-          "slug": "xi-li",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Ze Zi",
-          "slug": "ze-zi",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Ruibiao Zhang",
-          "slug": "ruibiao-zhang",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Chen Wu",
-          "slug": "chen-wu",
-          "nat": "cn",
-          "team": "Shenzhen Gineyea - Xidesheng Cycling Team (CT)"
-        },
-        {
-          "name": "Petr Rikunov",
-          "slug": "petr-rikunov",
-          "nat": "ru",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Jonathan Klever Caicedo",
-          "slug": "jonathan-klever-caicedo",
-          "nat": "ec",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Chaoyi Li",
-          "slug": "chaoyi-li",
-          "nat": "cn",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Junqi Shao",
-          "slug": "junqi-shao",
-          "nat": "cn",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Andrei Stepanov",
-          "slug": "andrei-stepanov",
-          "nat": "ru",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Bold Iderbold",
-          "slug": "bold-iderbold",
-          "nat": "mn",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Aleksandr Bereznyak",
-          "slug": "aleksandr-bereznyak",
-          "nat": "ru",
-          "team": "Wheeltop Rotor Chengdu Team (CT)"
-        },
-        {
-          "name": "Hailin Sun",
-          "slug": "hailin-sun",
-          "nat": "cn",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "Zhibin Yang",
-          "slug": "zhibin-yang",
-          "nat": "cn",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "Shourong Guo",
-          "slug": "shourong-guo",
-          "nat": "cn",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "Saeid Safarzadeh",
-          "slug": "saeeid-safarzadeh",
-          "nat": "ir",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "Hernán Ricardo Aguirre",
-          "slug": "hernan-aguirre",
-          "nat": "co",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "SHOTORBAN Ali Labib",
-          "slug": "ali-labib-shotorban",
-          "nat": "ir",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        },
-        {
-          "name": "James Forbes",
-          "slug": "james-forbes",
-          "nat": "au",
-          "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
-        }
-      ]
     },
     {
       "slug": "postnord-tour-of-denmark",
@@ -109315,6 +109625,120 @@
         }
       ],
       "wins_refreshed_at": "2026-07-10T16:15:07.232145+00:00"
+    },
+    "alexander-salby": {
+      "slug": "alexander-salby",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "11-07-2026",
+          "race": "Tour of Magnificent Qinghai - Stage 1",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
+          "date": "19-04-2026",
+          "race": "Tour of Hainan - Stage 5",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
+          "date": "29-03-2026",
+          "race": "Tour of Thailand - Stage 6",
+          "cat": "2.1"
+        },
+        {
+          "year": "2026",
+          "date": "28-03-2026",
+          "race": "Tour of Thailand - Stage 5",
+          "cat": "2.1"
+        },
+        {
+          "year": "2026",
+          "date": "27-01-2026",
+          "race": "Tour of Sharjah - Stage 5",
+          "cat": "2.2"
+        },
+        {
+          "year": "2025",
+          "date": "10-10-2025",
+          "race": "Tour of Taihu Lake - Stage 2",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "19-09-2025",
+          "race": "Tour of Huangshan - Stage 1",
+          "cat": "2.1"
+        },
+        {
+          "year": "2025",
+          "date": "07-09-2025",
+          "race": "Tour of Shanghai - Stage 3",
+          "cat": "2.2"
+        },
+        {
+          "year": "2025",
+          "date": "13-07-2025",
+          "race": "Tour of Magnificent Qinghai - Stage 8",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "08-07-2025",
+          "race": "Tour of Magnificent Qinghai - Stage 3",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "14-06-2025",
+          "race": "Yellow River Estuary (Dongying) Road Cycling Race - Stage 1",
+          "cat": "2.2"
+        },
+        {
+          "year": "2025",
+          "date": "11-04-2025",
+          "race": "Tour of Hainan - Stage 5",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "29-03-2025",
+          "race": "Tour of Thailand",
+          "cat": "2.1"
+        },
+        {
+          "year": "2025",
+          "date": "28-03-2025",
+          "race": "Tour of Thailand - Stage 5",
+          "cat": "2.1"
+        },
+        {
+          "year": "2025",
+          "date": "26-03-2025",
+          "race": "Tour of Thailand - Stage 3",
+          "cat": "2.1"
+        },
+        {
+          "year": "2025",
+          "date": "25-03-2025",
+          "race": "Tour of Thailand - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2024",
+          "date": "09-06-2024",
+          "race": "ZLM Tour - Stage 5",
+          "cat": "2.1"
+        },
+        {
+          "year": "2023",
+          "date": "29-01-2023",
+          "race": "La Tropicale Amissa Bongo - Stage 7",
+          "cat": "2.1"
+        }
+      ],
+      "wins_refreshed_at": "2026-07-11T11:45:54.482978+00:00"
     }
   },
   "startlists_needed": [
@@ -109322,163 +109746,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 63
+      "days_away": 62
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 79
+      "days_away": 78
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 85
+      "days_away": 84
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 85
+      "days_away": 84
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 87
+      "days_away": 86
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 88
+      "days_away": 87
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 90
+      "days_away": 89
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 92
+      "days_away": 91
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 93
+      "days_away": 92
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 95
+      "days_away": 94
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 96
+      "days_away": 95
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 100
+      "days_away": 99
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 100
+      "days_away": 99
     }
   ]
 }

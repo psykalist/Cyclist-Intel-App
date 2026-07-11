@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-11T15:51:37.327257+00:00",
-  "scraped_at_human": "11 Jul 2026 15:51 UTC",
+  "scraped_at": "2026-07-11T17:46:08.112844+00:00",
+  "scraped_at_human": "11 Jul 2026 17:46 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13503,12 +13503,84 @@
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "+ 01:40"
+        },
+        {
+          "rank": 4,
+          "name": "Carlos Rodríguez Cano",
+          "rider_url": "/profile/carlos-rodriguez-cano",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:47"
+        },
+        {
+          "rank": 5,
+          "name": "Paul Double",
+          "rider_url": "/profile/paul-double",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:51"
+        },
+        {
+          "rank": 6,
+          "name": "Andrew August",
+          "rider_url": "/profile/andrew-august",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:51"
+        },
+        {
+          "rank": 7,
+          "name": "James Callum Shaw",
+          "rider_url": "/profile/james-callum-shaw",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 02:31"
+        },
+        {
+          "rank": 8,
+          "name": "Toralf Rydningen Martinsen",
+          "rider_url": "/profile/toralf-rydningen-martinsen",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 03:28"
+        },
+        {
+          "rank": 9,
+          "name": "Finlay Pickering",
+          "rider_url": "/profile/xavier-finlay-pickering",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 03:42"
+        },
+        {
+          "rank": 10,
+          "name": "Asbjørn Hellemose",
+          "rider_url": "/profile/asbjorn-hellemose",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 04:42"
         }
       ],
-      "points_leader": "🇦🇹 Gregor Mühlberger",
+      "points_leader": "🇺🇸 Kevin Vermaerke",
       "points_top10": [
         {
           "rank": 1,
+          "name": "Kevin Vermaerke",
+          "rider_url": "/profile/kevin-vermaerke",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "34"
+        },
+        {
+          "rank": 2,
           "name": "Gregor Mühlberger",
           "rider_url": "/profile/gregor-muhlberger",
           "team": "",
@@ -13517,16 +13589,43 @@
           "time_gap": "30"
         },
         {
-          "rank": 2,
-          "name": "Kevin Vermaerke",
-          "rider_url": "/profile/kevin-vermaerke",
+          "rank": 3,
+          "name": "Bauke Mollema",
+          "rider_url": "/profile/bauke-mollema",
           "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "23"
+        },
+        {
+          "rank": 4,
+          "name": "Andrea Bagioli",
+          "rider_url": "/profile/andrea-bagioli",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
           "time_gap": "22"
         },
         {
-          "rank": 3,
+          "rank": 5,
+          "name": "James Callum Shaw",
+          "rider_url": "/profile/james-callum-shaw",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "20"
+        },
+        {
+          "rank": 6,
+          "name": "Andrew August",
+          "rider_url": "/profile/andrew-august",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "19"
+        },
+        {
+          "rank": 7,
           "name": "Neilson Powless",
           "rider_url": "/profile/neilson-powless",
           "team": "",
@@ -13535,7 +13634,7 @@
           "time_gap": "17"
         },
         {
-          "rank": 4,
+          "rank": 8,
           "name": "Igor Arrieta Lizarraga",
           "rider_url": "/profile/igor-arrieta-lizarraga",
           "team": "",
@@ -13544,49 +13643,13 @@
           "time_gap": "16"
         },
         {
-          "rank": 5,
-          "name": "Bauke Mollema",
-          "rider_url": "/profile/bauke-mollema",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "16"
-        },
-        {
-          "rank": 6,
+          "rank": 9,
           "name": "Hector Alvarez Martinez",
           "rider_url": "/profile/hector-alvarez-martinez",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "13"
-        },
-        {
-          "rank": 7,
-          "name": "James Callum Shaw",
-          "rider_url": "/profile/james-callum-shaw",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "12"
-        },
-        {
-          "rank": 8,
-          "name": "Michael Gogl",
-          "rider_url": "/profile/michael-gogl",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "11"
-        },
-        {
-          "rank": 9,
-          "name": "Carlos Rodríguez Cano",
-          "rider_url": "/profile/carlos-rodriguez-cano",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "10"
+          "time_gap": "16"
         },
         {
           "rank": 10,
@@ -13595,55 +13658,55 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "10"
+          "time_gap": "15"
         }
       ],
-      "kom_leader": "🇦🇹 Gregor Mühlberger",
+      "kom_leader": "🇵🇱 Piotr Pekala",
       "kom_top10": [
         {
           "rank": 1,
-          "name": "Gregor Mühlberger",
-          "rider_url": "/profile/gregor-muhlberger",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "23"
-        },
-        {
-          "rank": 2,
-          "name": "Paul Double",
-          "rider_url": "/profile/paul-double",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "20"
-        },
-        {
-          "rank": 3,
           "name": "Piotr Pekala",
           "rider_url": "/profile/piotr-pekala",
           "team": "",
           "nat_code": "PL",
           "flag": "🇵🇱",
-          "time_gap": "20"
+          "time_gap": "34"
+        },
+        {
+          "rank": 2,
+          "name": "Gregor Mühlberger",
+          "rider_url": "/profile/gregor-muhlberger",
+          "team": "",
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "31"
+        },
+        {
+          "rank": 3,
+          "name": "Paul Double",
+          "rider_url": "/profile/paul-double",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "26"
         },
         {
           "rank": 4,
+          "name": "Kevin Vermaerke",
+          "rider_url": "/profile/kevin-vermaerke",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "18"
+        },
+        {
+          "rank": 5,
           "name": "Tobias Nolde",
           "rider_url": "/profile/tobias-nolde",
           "team": "",
           "nat_code": "DE",
           "flag": "🇩🇪",
           "time_gap": "17"
-        },
-        {
-          "rank": 5,
-          "name": "Kevin Vermaerke",
-          "rider_url": "/profile/kevin-vermaerke",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "14"
         },
         {
           "rank": 6,
@@ -13683,11 +13746,11 @@
         },
         {
           "rank": 10,
-          "name": "Loïc Bettendorff",
-          "rider_url": "/profile/loic-bettendorff",
+          "name": "Richard Riška",
+          "rider_url": "/profile/richard-riska",
           "team": "",
-          "nat_code": "LU",
-          "flag": "🇱🇺",
+          "nat_code": "SK",
+          "flag": "🇸🇰",
           "time_gap": "10"
         }
       ],
@@ -13700,7 +13763,7 @@
           "team": "",
           "nat_code": "US",
           "flag": "🇺🇸",
-          "time_gap": "13:20:16"
+          "time_gap": "17:15:01"
         },
         {
           "rank": 2,
@@ -13709,79 +13772,79 @@
           "team": "",
           "nat_code": "CZ",
           "flag": "🇨🇿",
-          "time_gap": "+ 02:55"
+          "time_gap": "+ 03:34"
         },
         {
           "rank": 3,
-          "name": "Peter Øxenberg Hansen",
-          "rider_url": "/profile/peter-oxenberg-hansen",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 03:32"
-        },
-        {
-          "rank": 4,
           "name": "Alberto Carlo Monti",
           "rider_url": "/profile/alberto-carlo-monti",
           "team": "",
           "nat_code": "CZ",
           "flag": "🇨🇿",
-          "time_gap": "+ 03:40"
+          "time_gap": "+ 04:19"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "name": "Nicolas Ginter",
           "rider_url": "/profile/nicolas-ginter",
           "team": "",
           "nat_code": "CH",
           "flag": "🇨🇭",
-          "time_gap": "+ 04:16"
+          "time_gap": "+ 04:55"
         },
         {
-          "rank": 6,
-          "name": "Richard Riška",
-          "rider_url": "/profile/richard-riska",
-          "team": "",
-          "nat_code": "SK",
-          "flag": "🇸🇰",
-          "time_gap": "+ 05:11"
-        },
-        {
-          "rank": 7,
+          "rank": 5,
           "name": "Hector Alvarez Martinez",
           "rider_url": "/profile/hector-alvarez-martinez",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 05:44"
+          "time_gap": "+ 05:50"
         },
         {
-          "rank": 8,
+          "rank": 6,
           "name": "Samuel Novák",
           "rider_url": "/profile/samuel-novak",
           "team": "",
           "nat_code": "SK",
           "flag": "🇸🇰",
-          "time_gap": "+ 06:10"
+          "time_gap": "+ 06:49"
         },
         {
-          "rank": 9,
-          "name": "Jonas Holzknecht",
-          "rider_url": "/profile/jonas-holzknecht",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "+ 09:55"
-        },
-        {
-          "rank": 10,
+          "rank": 7,
           "name": "Gergő Grósz",
           "rider_url": "/profile/gergo-grosz",
           "team": "",
           "nat_code": "HU",
           "flag": "🇭🇺",
-          "time_gap": "+ 11:44"
+          "time_gap": "+ 13:52"
+        },
+        {
+          "rank": 8,
+          "name": "Jonas Holzknecht",
+          "rider_url": "/profile/jonas-holzknecht",
+          "team": "",
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "+ 16:00"
+        },
+        {
+          "rank": 9,
+          "name": "Jermaine Zemke",
+          "rider_url": "/profile/jermaine-zemke",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 18:07"
+        },
+        {
+          "rank": 10,
+          "name": "Karl Emil Kjeldsand",
+          "rider_url": "/profile/karl-emil-kjeldsand",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 18:50"
         }
       ]
     },

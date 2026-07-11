@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-07-11T15:52:11.731356+00:00",
+  "generated_at": "2026-07-11T17:46:41.237065+00:00",
   "entries": [
+    {
+      "id": "5c656adfc14b",
+      "timestamp": "2026-07-11T17:46:41.230607+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Austria Points: 🇺🇸 Kevin Vermaerke leads"
+    },
+    {
+      "id": "18e2de45a21f",
+      "timestamp": "2026-07-11T17:46:41.230607+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Austria KOM: 🇵🇱 Piotr Pekala leads"
+    },
     {
       "id": "767686d7fd91",
       "timestamp": "2026-07-11T15:52:11.724796+00:00",

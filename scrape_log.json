@@ -1,36 +1,44 @@
 {
-  "run_at": "2026-07-11 17:51 UTC",
-  "run_at_iso": "2026-07-11T15:51:34.211306+00:00",
+  "run_at": "2026-07-11 19:45 UTC",
+  "run_at_iso": "2026-07-11T17:46:08.112260+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-de-france-2026",
       "name": "Tour de France",
       "total_stages": 21,
-      "stages_completed_before": 7,
+      "stages_completed_before": 8,
       "stages_completed_after": 8,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "probe": {
-        "stage_num": 8,
-        "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-8",
+        "stage_num": 9,
+        "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-9",
         "fetch_ok": true,
-        "response_bytes": 729523,
-        "matched_result_table": true
+        "response_bytes": 309680,
+        "matched_result_table": false,
+        "stall_since": "2026-07-11 19:45 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
       }
     },
     {
       "slug": "tour-of-austria-2026",
       "name": "Tour of Austria",
       "total_stages": 5,
-      "stages_completed_before": 3,
+      "stages_completed_before": 4,
       "stages_completed_after": 4,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "probe": {
-        "stage_num": 4,
-        "url": "https://cyclingflash.com/race/tour-of-austria-2026/result/stage-4",
+        "stage_num": 5,
+        "url": "https://cyclingflash.com/race/tour-of-austria-2026/result/stage-5",
         "fetch_ok": true,
-        "response_bytes": 239406,
-        "matched_result_table": true
+        "response_bytes": 221214,
+        "matched_result_table": false,
+        "stall_since": "2026-07-11 19:45 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
       }
     },
     {
@@ -47,8 +55,8 @@
         "response_bytes": 225783,
         "matched_result_table": false,
         "stall_since": "2026-07-11 17:51 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": -0.1,
         "possible_parser_drift": false
       }
     }

@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-07-11T11:46:29.337206+00:00",
+  "generated_at": "2026-07-11T15:52:11.731356+00:00",
   "entries": [
+    {
+      "id": "767686d7fd91",
+      "timestamp": "2026-07-11T15:52:11.724796+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 8 Tour de France: 🇧🇪 Tim Merlier wins"
+    },
+    {
+      "id": "297d2dbd8a15",
+      "timestamp": "2026-07-11T15:52:11.724796+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Tour of Austria: 🇮🇹 Andrea Bagioli wins"
+    },
     {
       "id": "7c95f2c37746",
       "timestamp": "2026-07-11T11:46:29.330907+00:00",

@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-11 13:45 UTC",
-  "run_at_iso": "2026-07-11T11:45:52.985343+00:00",
+  "run_at": "2026-07-11 17:51 UTC",
+  "run_at_iso": "2026-07-11T15:51:34.211306+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,18 +8,14 @@
       "name": "Tour de France",
       "total_stages": 21,
       "stages_completed_before": 7,
-      "stages_completed_after": 7,
-      "new_stages_found": 0,
+      "stages_completed_after": 8,
+      "new_stages_found": 1,
       "probe": {
         "stage_num": 8,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-8",
         "fetch_ok": true,
-        "response_bytes": 307562,
-        "matched_result_table": false,
-        "stall_since": "2026-07-10 20:16 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 15.5,
-        "possible_parser_drift": false
+        "response_bytes": 729523,
+        "matched_result_table": true
       }
     },
     {
@@ -27,33 +23,33 @@
       "name": "Tour of Austria",
       "total_stages": 5,
       "stages_completed_before": 3,
-      "stages_completed_after": 3,
-      "new_stages_found": 0,
+      "stages_completed_after": 4,
+      "new_stages_found": 1,
       "probe": {
         "stage_num": 4,
         "url": "https://cyclingflash.com/race/tour-of-austria-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 225336,
-        "matched_result_table": false,
-        "stall_since": "2026-07-10 18:14 UTC",
-        "stall_attempts": 3,
-        "stall_hours": 17.5,
-        "possible_parser_drift": false
+        "response_bytes": 239406,
+        "matched_result_table": true
       }
     },
     {
       "slug": "tour-of-magnificent-qinghai-2026",
       "name": "Tour of Magnificent Qinghai",
       "total_stages": 8,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "probe": {
-        "stage_num": 1,
-        "url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026/result/stage-1",
+        "stage_num": 2,
+        "url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026/result/stage-2",
         "fetch_ok": true,
-        "response_bytes": 569362,
-        "matched_result_table": true
+        "response_bytes": 225783,
+        "matched_result_table": false,
+        "stall_since": "2026-07-11 17:51 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
       }
     }
   ],

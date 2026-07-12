@@ -1456,6 +1456,17 @@ function slExpected(race) {
 function slStatus(race) {
   const count = (race.startlist||[]).length;
   if (count === 0) return 'none';
+  // Once a race has actually started (or finished) its startlist can't
+  // change anymore -- teams can't add a rider mid-race. slExpected() is
+  // only a rough team-count*riders-per-team guess (e.g. 140 for any 5+
+  // stage race), and smaller/atypical fields (a 22-team race with 6-7
+  // riders each, say) will never hit 95% of that guess even though the
+  // real, final startlist is already fully known. Without this, a live
+  // race could sit at "partial" forever -- see the 2026-07 Tour of Austria
+  // report: 130 confirmed starters, live and on stage 3 of 5, still
+  // showing "partial" against a hardcoded 140 target. Trust reality (the
+  // race is underway/done) over the heuristic.
+  if (race.status === 'live' || race.status === 'recent') return 'complete';
   if (count >= slExpected(race) * 0.95) return 'complete';
   return 'partial';
 }
@@ -2365,7 +2376,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v94';
+const APP_VERSION = 'v95';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

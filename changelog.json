@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-07-12T11:52:43.441602+00:00",
+  "generated_at": "2026-07-12T17:53:04.586896+00:00",
   "entries": [
+    {
+      "id": "97866a3e97b9",
+      "timestamp": "2026-07-12T17:53:04.580274+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 9 Tour de France: 🇳🇱 Mathieu van der Poel wins"
+    },
+    {
+      "id": "e1c780bc4e18",
+      "timestamp": "2026-07-12T17:53:04.580274+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Tour of Austria: 🇬🇧 Samuel Watson wins"
+    },
+    {
+      "id": "d7f8b110d114",
+      "timestamp": "2026-07-12T17:53:04.580274+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Magnificent Qinghai GC: 🇮🇹 Gabriele Bessega leads"
+    },
+    {
+      "id": "728d5ca6de2c",
+      "timestamp": "2026-07-12T17:53:04.580274+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Magnificent Qinghai Points: 🇮🇹 Marco Manenti leads"
+    },
+    {
+      "id": "fd9a255c15a9",
+      "timestamp": "2026-07-12T17:53:04.580274+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Magnificent Qinghai KOM: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
+    },
     {
       "id": "26df1a1cfa5e",
       "timestamp": "2026-07-12T11:52:43.435356+00:00",

@@ -1830,16 +1830,24 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
   const team = icTeam || raceEntry.team;
   if (!team) return '';
 
+  // Team Claudius's actual roster is the one place a rival "squad" was ever
+  // visible pre-reveal (the League Table never shows rider names for anyone).
+  // Lock it the same way, until the race is actually over.
+  const _raceObj = [...(appData.live||[]),...(appData.upcoming||[]),...(appData.recent||[])].find(r=>_raceKey(r)===raceKey);
+  const _complete = raceIsComplete(_raceObj);
+
   const autoScore = computePoints(team.riders.map(r => r.name), icTeam ? icTeam.created_at : null, raceKey).total;
   const diff = myTotal - autoScore;
   let comparison = '';
-  if (myTotal > 0 || autoScore > 0) {
+  if (_complete && (myTotal > 0 || autoScore > 0)) {
     if (diff > 0)      comparison = `<span style="color:var(--live);font-weight:700">You lead by ${diff} pts 🏆</span>`;
     else if (diff < 0) comparison = `<span style="color:#ef4444;font-weight:700">Team Claudius leads by ${Math.abs(diff)} pts</span>`;
     else               comparison = `<span style="color:var(--muted);font-weight:700">Level — ${myTotal} pts each</span>`;
+  } else if (!_complete) {
+    comparison = `<span style="color:var(--muted);font-style:italic">🔒 Locked until the race finishes</span>`;
   }
 
-  const rows = team.riders.map(r => {
+  const rows = _complete ? team.riders.map(r => {
     const rpts = computePoints([r.name], icTeam ? icTeam.created_at : null, raceKey).total;
     const nat  = r.nat ? `<img src="https://flagcdn.com/16x12/${r.nat.toLowerCase()}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px">` : '';
     return `<div style="display:flex;align-items:center;gap:8px;padding:9px 16px;border-bottom:1px solid var(--border)">
@@ -1847,7 +1855,11 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
       <span style="font-size:.75rem;padding:2px 7px;border-radius:10px;background:var(--surface2);color:var(--muted);font-weight:700">${r.cost}cr</span>
       ${rpts > 0 ? `<span style="font-size:.82rem;font-weight:700;color:var(--gold);min-width:40px;text-align:right">${rpts} pts</span>` : '<span style="color:var(--muted);font-size:.78rem;min-width:40px;text-align:right">—</span>'}
     </div>`;
-  }).join('');
+  }).join('') : `<div style="padding:14px 16px;font-size:.82rem;color:var(--muted);text-align:center">🔒 Team Claudius's ${team.riders.length}-rider squad reveals once this race is fully over.</div>`;
+
+  const summaryLine = _complete
+    ? `<span style="font-weight:700;color:var(--text)">${autoScore} pts · ${team.total_cost}cr</span>`
+    : `<span style="font-weight:700;color:var(--muted)">🔒 · ${team.total_cost}cr</span>`;
 
   return `<div id="auto-team-panel" style="max-width:480px;margin:0 auto 24px;background:var(--surface);border-radius:12px;overflow:hidden;border:1px solid #7c3aed55">
     <div style="padding:14px 16px;border-bottom:1px solid var(--border)">
@@ -1863,21 +1875,22 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
     </div>
     <div style="display:flex;justify-content:space-between;padding:8px 16px;background:var(--surface2);font-size:.78rem;color:var(--muted)">
       <span>${esc(raceEntry.name)}</span>
-      <span style="font-weight:700;color:var(--text)">${autoScore} pts · ${team.total_cost}cr</span>
+      ${summaryLine}
     </div>
     ${rows}
   </div>`;
 }
 
-async function addIClaudiusToLeague(){
-  const rk=fantasyGetRace();
+async function addIClaudiusToLeague(silent,raceKey){
+  const rk=raceKey||fantasyGetRace();
   const bt=await loadBestTeams();
-  if(!bt||!bt.races){alert("Team Claudius isn't ready yet — it's built once the full startlist is confirmed.");return;}
+  if(!bt||!bt.races){if(!silent)alert("Team Claudius isn't ready yet — it's built once the full startlist is confirmed.");return false;}
   const raceEntry=bt.races[rk];
-  if(!raceEntry||!raceEntry.team){alert("Team Claudius isn't available for this race yet.");return;}
+  if(!raceEntry||!raceEntry.team){if(!silent)alert("Team Claudius isn't available for this race yet.");return false;}
   const team=raceEntry.team;
   iClaudiusSet(rk,{name:'Team Claudius',owner:'🤖 AI · Data-driven picks',riders:team.riders,created_at:new Date().toISOString(),isIClaudius:true,total_cost:team.total_cost});
-  renderFantasy();
+  if(!silent)renderFantasy();
+  return true;
 }
 
 function removeIClaudius(){
@@ -2376,7 +2389,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v95';
+const APP_VERSION = 'v96';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2971,7 +2984,7 @@ function maxSquad(raceKey) {
   if (stages === 1) return 3;
   return stages >= 21 ? 8 : 7;
 }
-const FANTASY_BUDGET = 100;   // total credits per team
+const FANTASY_BUDGET_DEFAULT = 100;   // credit budget ceiling — full-strength WorldTour fields land here
 const COST_FLOOR    = 4;      // cheapest rider
 const COST_CEIL     = 22;     // most expensive rider (sqrt-scaled from race results)
 const TRANSFERS_TOTAL = 3;    // free rider swaps per team per race
@@ -2994,10 +3007,12 @@ function buildRiderCosts(){
       for(const stage of (race.stages||[])){
         for(const r of (stage.top10||[])) add(r.name,STAGE_PTS[r.rank]||0);
       }
-      const cl=race.classifications||{};
-      for(const r of (cl.gc||[])) add(r.name,GC_PTS[r.rank]||0);
-      for(const key of ['points','mountain','youth']){
-        const lst=cl[key]||[];
+      // Same real-field fix as computePoints() -- see the 2026-07-12 comment
+      // there. race.classifications never existed; costs were previously
+      // built from stage points only.
+      for(const r of (race.gc_top10||[])) add(r.name,GC_PTS[r.rank]||0);
+      for(const key of ['points_top10','kom_top10','youth_top10']){
+        const lst=race[key]||[];
         if(lst[0]) add(lst[0].name,JERSEY_PTS);
       }
     }
@@ -3027,6 +3042,39 @@ function riderCostFor(r){
 }
 function squadCost(riders){ return riders.reduce((s,r)=>s+riderCostFor(r),0); }
 
+// A flat 100cr budget is meaningless in a weak field where every rider sits
+// near COST_FLOOR (e.g. Tour of Qinghai Lake, where the big WorldTour names
+// simply aren't entered) -- there's no real budget decision being made if a
+// full squad of "premium" picks still only costs 30cr. Scale the budget to
+// roughly 1.4x what an average full squad would cost for THIS race's actual
+// confirmed startlist, so allocating your budget stays a meaningful
+// constraint regardless of how strong the field is. Only ever scales DOWN
+// from the default -- a stacked Grand Tour field should land close to the
+// original 100cr anyway, and we don't want to inflate budgets past what
+// players are used to.
+function raceBudget(raceKey){
+  const k=raceKey||fantasyGetRace();
+  const race=[...(appData.live||[]),...(appData.upcoming||[]),...(appData.recent||[])].find(r=>_raceKey(r)===k);
+  const sl=race&&race.startlist&&race.startlist.length?race.startlist:null;
+  if(!sl) return FANTASY_BUDGET_DEFAULT;
+  const costs=sl.map(r=>riderCost(r.name)).filter(Number.isFinite);
+  if(!costs.length) return FANTASY_BUDGET_DEFAULT;
+  const avg=costs.reduce((a,b)=>a+b,0)/costs.length;
+  const squadSize=maxSquad(k);
+  const scaled=Math.round(avg*squadSize*1.4/5)*5;   // round to nearest 5cr
+  return Math.max(COST_FLOOR*squadSize, Math.min(FANTASY_BUDGET_DEFAULT, scaled));
+}
+// Prefers a squad's own frozen budget (stamped at fCreateTeam() time) over
+// the live raceBudget() recompute -- same reasoning as riderCostFor()
+// preferring a rider's frozen .cost: without this, a squad drafted when the
+// field looked weak (low budget) could later get retroactively penalized
+// if new startlist riders push the live-recomputed budget in either
+// direction after the fact.
+function teamBudget(team,raceKey){
+  if(team&&typeof team.budget==='number') return team.budget;
+  return raceBudget(raceKey);
+}
+
 function costColor(c){
   if(c>=18) return '#ef4444';   // red — premium
   if(c>=12) return '#f97316';   // orange — mid-tier
@@ -3042,6 +3090,18 @@ const FANTASY_TEAMS_KEY  = 'fantasy_race_teams';   // {raceKey: team}
 const FANTASY_ACTIVE_KEY = 'fantasy_active_race';  // currently viewed race key
 
 function _raceKey(r){return r?(r.slug||r.name||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''):'';}
+// "recent" alone isn't reliable -- the scraper can flip a race's status to
+// "recent" (purely date-based: end_date < today) in the same run that its
+// final stage results haven't been fetched yet yet (observed: Sibiu Cycling
+// Tour sitting at status:"recent", stages_completed:3 of 4). Cross-check
+// stages_completed against total_stages so "complete" actually means the
+// final results are in, not just that the calendar date has passed.
+function raceIsComplete(race){
+  if(!race) return false;
+  const total=race.total_stages||1;
+  const done=race.stages_completed||0;
+  return race.status==='recent' && done>=total;
+}
 function _autoRace(){
   const races=[...(appData.live||[]),...(appData.upcoming||[])];
   for(const r of races){const k=_raceKey(r);if(k)return k;}
@@ -3080,6 +3140,15 @@ function fantasyLoad(){
   // migration above just pushed over budget. Stamp the current default so
   // older squads immediately get free transfers to self-correct.
   if(team.transfers_total==null){team.transfers_total=TRANSFERS_TOTAL;team.transfers_used=team.transfers_used||0;dirty=true;}
+  // Teams saved before per-race dynamic budgets existed have no frozen
+  // .budget. Unlike the cost-freeze migration above (which has no choice but
+  // to use today's live price), we DO have a safe choice here: freeze at
+  // whichever is bigger, the original flat 100cr default or this squad's own
+  // current cost. That guarantees this migration can never retroactively
+  // push an old squad over budget the way backfilling live rider costs once
+  // did (see the 2026-07 Pogačar incident) -- it only ever grants headroom,
+  // never takes it away.
+  if(team.budget==null){team.budget=Math.max(FANTASY_BUDGET_DEFAULT,squadCost(team.riders));dirty=true;}
   if(dirty){d[k]=team;fantasySaveAll(d);}
   return team;
 }
@@ -3231,23 +3300,111 @@ function computePoints(riderNames,createdAt,raceKey){
         }
       }
     }
-    const cl=race.classifications||{};
-    for(const r of (cl.gc||[])){
+    // 2026-07-12 fix: this used to read race.classifications.{gc,points,
+    // mountain,youth} — a shape that never actually exists in data.json (the
+    // scraper writes gc_top10/points_top10/kom_top10/youth_top10 directly on
+    // the race object, per scraper.py's main_results_only()). That meant GC
+    // and jersey points were dead code in production — only stage points
+    // ever scored, silently, for as long as this app has existed. Read the
+    // real fields instead.
+    const gcTop10=race.gc_top10||[];
+    for(const r of gcTop10){
       if(r.rank>=1&&r.rank<=10&&myNorm.has(normName(r.name))){
         const p=GC_PTS[r.rank]||0;
         if(p>0){pts+=p;breakdown.push({race:race.name,label:'GC',rank:r.rank,pts:p,rider:r.name});}
       }
     }
     // Yellow jersey holder (GC leader) — jersey bonuses don't stack with Yellow
-    const yellowNorm=normName(((cl.gc||[])[0]||{}).name||'');
-    const sp=(cl.points||[])[0];
+    const yellowNorm=normName((gcTop10[0]||{}).name||'');
+    const sp=(race.points_top10||[])[0];
     if(sp&&myNorm.has(normName(sp.name))&&normName(sp.name)!==yellowNorm){pts+=JERSEY_PTS;breakdown.push({race:race.name,label:'Points Jersey 🟢',rank:1,pts:JERSEY_PTS,rider:sp.name});}
-    const km=(cl.mountain||[])[0];
+    const km=(race.kom_top10||[])[0];
     if(km&&myNorm.has(normName(km.name))&&normName(km.name)!==yellowNorm){pts+=JERSEY_PTS;breakdown.push({race:race.name,label:'KOM Jersey 🔴',rank:1,pts:JERSEY_PTS,rider:km.name});}
-    const yu=(cl.youth||[])[0];
+    const yu=(race.youth_top10||[])[0];
     if(yu&&myNorm.has(normName(yu.name))&&normName(yu.name)!==yellowNorm){pts+=JERSEY_PTS;breakdown.push({race:race.name,label:'Youth Jersey ⚪',rank:1,pts:JERSEY_PTS,rider:yu.name});}
   }
   return{total:pts,breakdown};
+}
+
+// ── Grand Tour bonus predictions ──────────────────────────────────────────────
+// Separate from the squad: predict GC 1st/2nd/3rd and the KOM/Points/Youth
+// jersey winners. These riders don't have to be on your drafted squad --
+// correct calls score bonus points on top of your squad total regardless
+// (you CAN put a jersey favourite in your squad too and score both, that's
+// intentional -- rewards nailing the podium/jerseys as its own skill,
+// separate from budget-constrained squad building). Grand Tours only
+// (total_stages>=21, same threshold maxSquad() uses for an 8-rider squad).
+const FANTASY_PREDICTIONS_KEY = 'fantasy_gt_predictions';  // {raceKey: {gc1,gc2,gc3,kom,points,youth,created_at}}
+const PREDICTION_SLOTS = [
+  {key:'gc1',    label:'🥇 GC Winner',     field:'gc_top10',     rank:1, pts:GC_PTS[1]},
+  {key:'gc2',    label:'🥈 GC 2nd',        field:'gc_top10',     rank:2, pts:GC_PTS[2]},
+  {key:'gc3',    label:'🥉 GC 3rd',        field:'gc_top10',     rank:3, pts:GC_PTS[3]},
+  {key:'kom',    label:'🔴 KOM Jersey',    field:'kom_top10',    rank:1, pts:JERSEY_PTS},
+  {key:'points', label:'🟢 Points Jersey', field:'points_top10', rank:1, pts:JERSEY_PTS},
+  {key:'youth',  label:'⚪ Youth Jersey',  field:'youth_top10',  rank:1, pts:JERSEY_PTS},
+];
+function predictionsLoadAll(){try{const s=localStorage.getItem(FANTASY_PREDICTIONS_KEY);if(s)return JSON.parse(s);}catch(e){}return {};}
+function predictionsSaveAll(d){localStorage.setItem(FANTASY_PREDICTIONS_KEY,JSON.stringify(d));}
+function predictionsGet(raceKey){const d=predictionsLoadAll();return (raceKey&&d[raceKey])||null;}
+function predictionsSet(raceKey,obj){
+  if(!raceKey)return;
+  const d=predictionsLoadAll();
+  const prevCreated=(d[raceKey]&&d[raceKey].created_at)||new Date().toISOString();
+  d[raceKey]={...obj,created_at:prevCreated};
+  predictionsSaveAll(d);
+}
+function isGrandTour(race){ return !!race && (race.total_stages||0)>=21; }
+// Predictions can only be set/changed while the race hasn't started yet --
+// once live, the same "startlist must be finalised" logic applies: results
+// are already unfolding, so editing after the fact wouldn't be a prediction.
+function predictionsLocked(race){ return !race || race.status!=='upcoming'; }
+function computePredictionBonus(pred,race){
+  if(!pred||!race) return {total:0,breakdown:[]};
+  let pts=0;const breakdown=[];
+  for(const slot of PREDICTION_SLOTS){
+    const picked=pred[slot.key];
+    if(!picked) continue;
+    const list=race[slot.field]||[];
+    const actual=list.find(r=>r.rank===slot.rank);
+    if(actual&&normName(actual.name)===normName(picked)){
+      pts+=slot.pts;
+      breakdown.push({race:race.name,label:slot.label,rank:slot.rank,pts:slot.pts,rider:picked});
+    }
+  }
+  return {total:pts,breakdown};
+}
+function fSetPrediction(raceKey,slotKey,value){
+  const pred=predictionsGet(raceKey)||{};
+  pred[slotKey]=value||null;
+  predictionsSet(raceKey,pred);
+  renderFantasy();
+}
+function renderPredictionsPanel(raceKey,race){
+  if(!isGrandTour(race)) return '';
+  const locked=predictionsLocked(race);
+  const pred=predictionsGet(raceKey)||{};
+  const riders=getRaceRiders().filter(r=>!r.restricted);
+  const bonus=computePredictionBonus(pred,race);
+  const optsFor=(selected)=>'<option value="">— pick a rider —</option>'
+    +riders.map(r=>'<option value="'+esc(r.name)+'"'+(r.name===selected?' selected':'')+'>'+esc(r.name)+(r.teamName?' — '+esc(r.teamName):'')+'</option>').join('');
+  const rows=PREDICTION_SLOTS.map(slot=>{
+    const val=pred[slot.key]||'';
+    const scored=bonus.breakdown.find(b=>b.label===slot.label);
+    const badge=val
+      ?(scored?'<span style="font-size:.72rem;font-weight:700;color:var(--gold)">+'+scored.pts+' pts ✓</span>':'<span style="font-size:.72rem;color:var(--muted)">not yet</span>')
+      :'';
+    return '<div style="margin-bottom:10px">'
+      +'<label style="font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:4px"><span>'+slot.label+' <span style="opacity:.6">('+slot.pts+' pts)</span></span>'+badge+'</label>'
+      +'<select '+(locked?'disabled':'')+' onchange="fSetPrediction(\''+raceKey+'\',\''+slot.key+'\',this.value)" style="width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:var(--text);font-size:.86rem;'+(locked?'opacity:.6':'')+'">'+optsFor(val)+'</select>'
+    +'</div>';
+  }).join('');
+  return '<details style="background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:14px;overflow:hidden">'
+    +'<summary style="padding:12px 14px;font-size:.82rem;font-weight:700;color:var(--muted);cursor:pointer;letter-spacing:.5px;text-transform:uppercase;list-style:none;display:flex;justify-content:space-between;align-items:center">🔮 Bonus Predictions<span style="color:var(--gold)">'+(bonus.total>0?'+'+bonus.total+' pts':'')+'</span></summary>'
+    +'<div style="padding:4px 14px 14px">'
+      +'<div style="font-size:.76rem;color:var(--muted);margin-bottom:10px">Predict the final GC podium and jersey winners — these riders don\'t need to be on your squad, and score bonus points on top whether or not they are.'+(locked?' <strong>Locked — the race has started, so picks are final.</strong>':'')+'</div>'
+      +rows
+    +'</div>'
+  +'</details>';
 }
 
 const FANTASY_MIN_STAGES_KEY = 'uci_fantasy_min_stages';
@@ -3374,19 +3531,36 @@ function renderFantasy(){
     return;
   }
   const _ark=fantasyGetRace();
-  const{total,breakdown}=computePoints(myTeam.riders.map(r=>r.name),myTeam.created_at,_ark);
+  const{total:squadTotal,breakdown:squadBreakdown}=computePoints(myTeam.riders.map(r=>r.name),myTeam.created_at,_ark);
   const league=leagueLoad();
   const _arl=[...(appData.live||[]),...(appData.upcoming||[]),...(appData.recent||[])].find(r=>_raceKey(r)===_ark);
   const _raceBanner=_arl?'<div style="font-size:.82rem;font-weight:700;color:var(--accent);margin-bottom:12px">🏁 '+esc(_arl.name)+'</div>':'';
+  // GC-podium/jersey predictions are a bonus layer on top of squad points --
+  // only applied to MY OWN total. Predictions are a personal, local-only
+  // pick (not part of a team export code), so there's no equivalent data to
+  // score for imported league teams or Team Claudius.
+  const _predBonus=isGrandTour(_arl)?computePredictionBonus(predictionsGet(_ark),_arl):{total:0,breakdown:[]};
+  const total=squadTotal+_predBonus.total;
+  const breakdown=[...squadBreakdown,..._predBonus.breakdown];
   const _icTeam=iClaudiusGet(_ark);
   const allTeams=[{...myTeam,points:total,isMine:true},...league.map((t,i)=>({...t,points:computePoints((t.riders||[]).map(r=>r.name),t.created_at,_ark).total,leagueIdx:i})),...(_icTeam?[{..._icTeam,points:computePoints((_icTeam.riders||[]).map(r=>r.name),_icTeam.created_at,_ark).total,isIClaudius:true}]:[])];
-  allTeams.sort((a,b)=>b.points-a.points);
+  const _arComplete=raceIsComplete(_arl);
+  if(_arComplete){
+    allTeams.sort((a,b)=>b.points-a.points);
+  } else {
+    // Don't rank/sort by points while the race is live -- position on screen
+    // would itself leak who's currently ahead, defeating the point of
+    // keeping other squads/scores hidden until the race is over. Stable
+    // order instead: your own team first, then everyone else alphabetically.
+    allTeams.sort((a,b)=>((b.isMine?1:0)-(a.isMine?1:0))||(a.name||'').localeCompare(b.name||''));
+  }
   el.innerHTML='<div style="max-width:480px;margin:0 auto;padding:16px">'
     +renderRaceSelector()
+    +renderPredictionsPanel(_ark,_arl)
     +'</div>'
     // Auto-team placeholder (replaced async once best_teams.json loads)
     +'<div id="auto-team-panel" style="max-width:480px;margin:0 auto 24px;padding:20px;text-align:center;color:var(--muted);font-size:.82rem">⏳ Building Team Claudius…</div>'
-    +renderLeagueTable(allTeams)+renderMySquad(myTeam,total,breakdown);
+    +renderLeagueTable(allTeams,_arComplete)+renderMySquad(myTeam,total,breakdown,_ark);
   // Load auto-team async (non-blocking)
   loadAndRenderAutoTeam(_ark, total).catch(()=>{});
   // Wire up delegated events after render
@@ -3446,7 +3620,7 @@ function renderRulesCard(ms){
       // Budget & squad
       +'<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px">'
         +'<div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center">'
-          +'<div style="font-size:1.4rem;font-weight:800;color:var(--accent)">'+FANTASY_BUDGET+'</div>'
+          +'<div style="font-size:1.4rem;font-weight:800;color:var(--accent)">'+raceBudget()+'</div>'
           +'<div style="font-size:.72rem;color:var(--muted);margin-top:2px">CREDIT BUDGET</div>'
         +'</div>'
         +'<div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center">'
@@ -3515,6 +3689,7 @@ function renderFantasySetup(){
   const html = '<div style="max-width:480px;margin:0 auto;padding:16px">'
     +renderRaceSelector()
     +_slBanner
+    +renderPredictionsPanel(_srk,_srl)
     +'<div style="margin-bottom:12px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px">'
       +'<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">'
         +'<span style="font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.6px;text-transform:uppercase">Squad</span>'
@@ -3590,7 +3765,7 @@ function fSearchRiders(q){
   // can't select a 10-point rider" -- squad was simply already full.
   const fullBanner=squadFull?'<div style="padding:9px 12px;font-size:.8rem;font-weight:600;color:var(--upcoming);background:rgba(67,97,238,.12);border-bottom:1px solid var(--border)">Squad full ('+_fPicked.length+'/'+ms+') — remove a rider below to make room.</div>':'';
   const spent=squadCost(_fPicked);
-  const remaining=FANTASY_BUDGET-spent;
+  const remaining=raceBudget()-spent;
   el.innerHTML=fullBanner+matches.map(r=>{
     const c=riderCost(r.name);
     const canAfford=!squadFull&&c<=remaining;
@@ -3618,7 +3793,8 @@ function fPickRider(name){
   if(!r||_fPicked.find(p=>p.name===name))return;
   const cost=riderCost(name);
   const spent=squadCost(_fPicked);
-  if(spent+cost>FANTASY_BUDGET){alert('Not enough budget! '+name+' costs '+cost+' cr but you only have '+(FANTASY_BUDGET-spent)+' cr left.');return;}
+  const budget=raceBudget();
+  if(spent+cost>budget){alert('Not enough budget! '+name+' costs '+cost+' cr but you only have '+(budget-spent)+' cr left.');return;}
   // Freeze this rider's cost at today's price. Their cost can keep moving
   // live (e.g. a Tour stage win bumps it) but this squad's price for them is
   // locked from the moment they're picked -- picking the same rider again for
@@ -3664,7 +3840,6 @@ function renderPickedList(){
   _fUpdateSquadUI();
   if(!_fPicked.length){el.innerHTML='';updateBudgetBar(0);return;}
   const spent=squadCost(_fPicked);
-  const remaining=FANTASY_BUDGET-spent;
   el.innerHTML='<div style="display:flex;flex-direction:column;gap:4px">'
     +_fPicked.map(r=>
       '<div style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:9px 12px;display:flex;align-items:center;gap:8px">'
@@ -3681,15 +3856,16 @@ function renderPickedList(){
 
 function updateBudgetBar(spent){
   const bar=document.getElementById('fBudgetBar');if(!bar)return;
-  const pct=Math.min(100,Math.round(spent/FANTASY_BUDGET*100));
-  const remaining=FANTASY_BUDGET-spent;
+  const budget=raceBudget();
+  const pct=Math.min(100,Math.round(spent/budget*100));
+  const remaining=budget-spent;
   const col=remaining<10?'var(--live)':remaining<25?'#f97316':'var(--upcoming)';
   bar.innerHTML=
     '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">'
       +'<span style="font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.6px;text-transform:uppercase">Budget</span>'
       +'<span style="display:flex;align-items:baseline;gap:6px">'
         +'<span style="font-size:1.6rem;font-weight:800;color:'+col+';line-height:1">'+remaining+'</span>'
-        +'<span style="font-size:.78rem;color:var(--muted)">/ '+FANTASY_BUDGET+' cr remaining</span>'
+        +'<span style="font-size:.78rem;color:var(--muted)">/ '+budget+' cr remaining</span>'
       +'</span>'
     +'</div>'
     +'<div style="height:10px;background:var(--border);border-radius:5px;overflow:hidden">'
@@ -3720,11 +3896,21 @@ function fCreateTeam(){
   if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Please enter a valid email address (or leave it blank).');return;}
   const _crk=fantasyGetRace();
   const _craces=[...(appData.live||[]),...(appData.upcoming||[]),...(appData.recent||[])].find(r=>_raceKey(r)===_crk);
-  fantasySave({name,owner,email:email||'',riders:[..._fPicked],_race:_craces?_craces.name:'',created_at:new Date().toISOString(),pin_hash:_pinHash(pin),transfers_total:TRANSFERS_TOTAL,transfers_used:0});
+  fantasySave({name,owner,email:email||'',riders:[..._fPicked],_race:_craces?_craces.name:'',created_at:new Date().toISOString(),pin_hash:_pinHash(pin),transfers_total:TRANSFERS_TOTAL,transfers_used:0,budget:raceBudget(_crk)});
   draftClear();
   _fPicked=[];
   if(email) _notifySubscribersExportNeeded();
-  renderFantasy();
+  // One-day races (3-rider "pick the podium" squads) always get an AI
+  // benchmark to measure against -- unlike multi-week stage races, there's
+  // no time for a player to remember to click "Challenge Team Claudius"
+  // before the race is over, so do it automatically. Silent: don't alert if
+  // Team Claudius isn't built yet (startlist not confirmed) -- the manual
+  // ⚔️ button still exists as a retry once it is.
+  if(_craces&&_craces.total_stages===1){
+    addIClaudiusToLeague(true,_crk).then(()=>renderFantasy()).catch(()=>renderFantasy());
+  } else {
+    renderFantasy();
+  }
 }
 
 function _notifySubscribersExportNeeded(){
@@ -3734,9 +3920,10 @@ function _notifySubscribersExportNeeded(){
 
 // ── My Squad ─────────────────────────────────────────────────────────────────
 
-function renderMySquad(team,total,breakdown){
+function renderMySquad(team,total,breakdown,raceKey){
   const totalCost=squadCost(team.riders);
-  const overBudget=totalCost>FANTASY_BUDGET;
+  const budget=teamBudget(team,raceKey);
+  const overBudget=totalCost>budget;
   const transfersTotal=team.transfers_total!=null?team.transfers_total:TRANSFERS_TOTAL;
   const transfersUsed=team.transfers_used||0;
   const transfersLeft=Math.max(0,transfersTotal-transfersUsed);
@@ -3751,12 +3938,12 @@ function renderMySquad(team,total,breakdown){
     +'</div>';
   }).join('')
   +'<div style="padding:8px 16px;font-size:.78rem;color:'+(overBudget?'var(--live)':'var(--muted)')+';display:flex;justify-content:space-between;border-top:2px solid var(--border)">'
-    +'<span>Squad cost'+(overBudget?' ⚠️ over budget':'')+'</span><span style="font-weight:700">'+totalCost+' / '+FANTASY_BUDGET+' cr</span>'
+    +'<span>Squad cost'+(overBudget?' ⚠️ over budget':'')+'</span><span style="font-weight:700">'+totalCost+' / '+budget+' cr</span>'
   +'</div>'
   +'<div style="padding:6px 16px 10px;font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between">'
     +'<span>Transfers</span><span style="font-weight:700;color:var(--text)">'+transfersLeft+' / '+transfersTotal+' remaining</span>'
   +'</div>'
-  +(overBudget?'<div style="padding:0 16px 12px;font-size:.76rem;color:var(--live)">Over budget by '+(totalCost-FANTASY_BUDGET)+' cr — swap out a rider costing '+(COST_FLOOR+(totalCost-FANTASY_BUDGET))+'+ cr for a cheaper one. A rider already at the '+COST_FLOOR+' cr floor can\'t be swapped down any further, so it won\'t fix this on its own.</div>':'');
+  +(overBudget?'<div style="padding:0 16px 12px;font-size:.76rem;color:var(--live)">Over budget by '+(totalCost-budget)+' cr — swap out a rider costing '+(COST_FLOOR+(totalCost-budget))+'+ cr for a cheaper one. A rider already at the '+COST_FLOOR+' cr floor can\'t be swapped down any further, so it won\'t fix this on its own.</div>':'');
 
   let bdHtml='';
   if(breakdown.length){
@@ -3820,7 +4007,8 @@ function fDoSwap(inName,onDone){
   const inCost=riderCost(inName);
   const currentCost=squadCost(team.riders);
   const newCost=currentCost-outCost+inCost;
-  if(newCost>FANTASY_BUDGET){alert('Over budget! Swapping in '+inName+' ('+inCost+' cr) would take your squad to '+newCost+' cr — budget is '+FANTASY_BUDGET+' cr.');return;}
+  const _swapBudget=teamBudget(team,fantasyGetRace());
+  if(newCost>_swapBudget){alert('Over budget! Swapping in '+inName+' ('+inCost+' cr) would take your squad to '+newCost+' cr — budget is '+_swapBudget+' cr.');return;}
   fVerifyPin(team,'confirm this transfer',()=>{
     team.riders=team.riders.map(r=>r.name===_fSwapOut?{...inR,cost:inCost}:r);
     team.transfers_used=(team.transfers_used||0)+1;
@@ -3860,9 +4048,10 @@ function fRenderSwapList(raw,box){
   const outRider=team.riders.find(r=>r.name===_fSwapOut);
   const outCost=riderCostFor(outRider);
   const totalCost=squadCost(team.riders);
-  const overage=Math.max(0,totalCost-FANTASY_BUDGET);
+  const _swapBudget=teamBudget(team,fantasyGetRace());
+  const overage=Math.max(0,totalCost-_swapBudget);
   const spentWithoutOut=totalCost-outCost;
-  const remaining=FANTASY_BUDGET-spentWithoutOut;
+  const remaining=_swapBudget-spentWithoutOut;
   if(budgetLine){
     if(overage>0&&remaining<COST_FLOOR){
       // Dropping this rider can't fix the overage on its own -- the cheapest
@@ -3909,35 +4098,43 @@ function fRenderSwapList(raw,box){
 
 // ── League Table ──────────────────────────────────────────────────────────────
 
-function renderLeagueTable(teams){
+function renderLeagueTable(teams,complete){
   const medals=['🥇','🥈','🥉'];
   const single=teams.length===1&&teams[0].isMine;
   const leaderPts=teams.length>0?teams[0].points:0;
   function fmtDate(iso){if(!iso)return'';try{const d=new Date(iso);return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});}catch(e){return'';}}
+  // While the race is live, everyone else's rank and score stay hidden --
+  // only your own row shows real numbers. Prevents mid-race scores (or a
+  // Team Claudius roster) from turning into a copy-the-leader strategy
+  // guide. Once the race is fully over (raceIsComplete()), everything
+  // reveals at once.
+  const lockBanner=complete?'':'<div style="padding:9px 14px;font-size:.76rem;color:var(--muted);background:rgba(255,255,255,.04);border-bottom:1px solid var(--border)">🔒 Other teams\' scores are hidden until this race finishes — yours stays visible below.</div>';
   return '<div style="margin-bottom:16px">'
     +'<div class="group-header">🏆 League Table</div>'
     +'<div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">'
+      +lockBanner
       +teams.map((t,i)=>{
-        const gap=i===0
-          ?'<span style="font-size:.7rem;font-weight:700;color:var(--upcoming);letter-spacing:.5px">LEADER</span>'
-          :'<span style="font-size:.78rem;color:var(--live);font-weight:600">−'+(leaderPts-t.points)+' pts</span>';
-        const created=t.created_at?'<span style="font-size:.7rem;color:var(--muted)"> · From '+fmtDate(t.created_at)+'</span>':'';
         const isIC=t.isIClaudius;
+        const reveal=complete||t.isMine;
+        const gap=!reveal?'':(i===0
+          ?'<span style="font-size:.7rem;font-weight:700;color:var(--upcoming);letter-spacing:.5px">LEADER</span>'
+          :'<span style="font-size:.78rem;color:var(--live);font-weight:600">−'+(leaderPts-t.points)+' pts</span>');
+        const created=t.created_at?'<span style="font-size:.7rem;color:var(--muted)"> · From '+fmtDate(t.created_at)+'</span>':'';
         const canDelete = !t.isMine && !isIC && t.leagueIdx !== undefined;
         const deleteBtn = canDelete
           ? '<button onclick="leagueRemove('+t.leagueIdx+')" style="padding:4px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--muted);font-size:.72rem;cursor:pointer;margin-left:4px" title="Remove from league">✕</button>'
           : '';
+        const posIcon=!reveal?'🔒':(isIC?'🏛️':(medals[i]||(i+1)));
+        const ptsDisplay=reveal?('<div style="font-size:1.2rem;font-weight:800;color:var(--gold)">'+t.points+'</div>'+'<div style="margin-top:1px">'+gap+'</div>')
+          :'<div style="font-size:.78rem;color:var(--muted);font-style:italic">locked</div>';
         return '<div style="padding:12px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;'+(t.isMine?'background:rgba(67,97,238,.1)':isIC?'background:rgba(124,58,237,.07)':'')+'">'
-          +'<span style="font-size:1.1rem;min-width:26px">'+(isIC?'🏛️':(medals[i]||(i+1)))+'</span>'
+          +'<span style="font-size:1.1rem;min-width:26px">'+posIcon+'</span>'
           +'<div style="flex:1;min-width:0">'
             +'<div style="font-weight:600;font-size:.92rem">'+esc(t.name)+(t.isMine?' <span style="font-size:.68rem;background:var(--upcoming);color:#fff;padding:1px 6px;border-radius:10px">YOU</span>':isIC?' <span style="font-size:.68rem;background:#7c3aed;color:#fff;padding:1px 6px;border-radius:10px">AI</span>':'')+' </div>'
             +'<div style="font-size:.76rem;color:var(--muted)">'+esc(t.owner)+created+'</div>'
           +'</div>'
           +'<div style="text-align:right;display:flex;align-items:center;gap:4px">'
-            +'<div>'
-              +'<div style="font-size:1.2rem;font-weight:800;color:var(--gold)">'+t.points+'</div>'
-              +'<div style="margin-top:1px">'+gap+'</div>'
-            +'</div>'
+            +'<div>'+ptsDisplay+'</div>'
             +deleteBtn
           +'</div>'
         +'</div>';
@@ -3973,13 +4170,18 @@ function fDoImport(code){
     if(raw.riders.length>8){
       alert('❌ This team has '+raw.riders.length+' riders — max allowed is 8. Import rejected.');return;
     }
-    // Validate budget using current rider pricing
+    // Validate budget using current rider pricing. Prefer the exported
+    // team's own frozen budget (present on any team exported after this
+    // field existed) over today's live raceBudget() recompute -- otherwise
+    // a perfectly valid team could get rejected on import just because the
+    // race's field/budget has moved since it was drafted.
     const cost=squadCost(raw.riders);
-    if(cost>FANTASY_BUDGET){
-      alert('❌ This team costs '+cost+' credits (budget is '+FANTASY_BUDGET+'). Import rejected.');return;
+    const importBudget=typeof raw.budget==='number'?raw.budget:raceBudget(fantasyGetRace());
+    if(cost>importBudget){
+      alert('❌ This team costs '+cost+' credits (budget is '+importBudget+'). Import rejected.');return;
     }
     const t={name:raw.name||'Imported Team',owner:raw.owner||'',riders:raw.riders,
-      created_at:raw.created_at||new Date().toISOString(),total_cost:cost};
+      created_at:raw.created_at||new Date().toISOString(),total_cost:cost,budget:importBudget};
     leagueAdd(t);
     renderFantasy();
     alert('✅ '+t.name+' added to your league ('+t.riders.length+' riders, '+cost+' credits)');

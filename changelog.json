@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-12T17:53:04.586896+00:00",
+  "generated_at": "2026-07-13T13:13:56.095138+00:00",
   "entries": [
+    {
+      "id": "9c0f24f8ba22",
+      "timestamp": "2026-07-13T13:13:56.088761+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Tour of Magnificent Qinghai: 🇪🇷 Henok Mulubrhan wins"
+    },
+    {
+      "id": "6a294897acf4",
+      "timestamp": "2026-07-13T13:13:56.088761+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Magnificent Qinghai GC: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
+    },
+    {
+      "id": "97bf2a3087f3",
+      "timestamp": "2026-07-13T13:13:56.088761+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Magnificent Qinghai KOM: 🇪🇸 Jon Agirre Egaña leads"
+    },
     {
       "id": "97866a3e97b9",
       "timestamp": "2026-07-12T17:53:04.580274+00:00",

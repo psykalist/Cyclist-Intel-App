@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-13 20:26 UTC",
-  "run_at_iso": "2026-07-13T18:26:38.701592+00:00",
+  "run_at": "2026-07-14 14:06 UTC",
+  "run_at_iso": "2026-07-14T12:06:23.150211+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -14,11 +14,11 @@
         "stage_num": 10,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-10",
         "fetch_ok": true,
-        "response_bytes": 311217,
+        "response_bytes": 314405,
         "matched_result_table": false,
         "stall_since": "2026-07-13 15:12 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 3.2,
+        "stall_attempts": 3,
+        "stall_hours": 20.9,
         "possible_parser_drift": false
       }
     },
@@ -27,18 +27,14 @@
       "name": "Tour of Magnificent Qinghai",
       "total_stages": 8,
       "stages_completed_before": 3,
-      "stages_completed_after": 3,
-      "new_stages_found": 0,
+      "stages_completed_after": 4,
+      "new_stages_found": 1,
       "probe": {
         "stage_num": 4,
         "url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 226958,
-        "matched_result_table": false,
-        "stall_since": "2026-07-13 20:26 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
-        "possible_parser_drift": false
+        "response_bytes": 282073,
+        "matched_result_table": true
       }
     }
   ],

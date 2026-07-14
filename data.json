@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-13T18:26:38.702356+00:00",
-  "scraped_at_human": "13 Jul 2026 18:26 UTC",
+  "scraped_at": "2026-07-14T12:06:24.604153+00:00",
+  "scraped_at_human": "14 Jul 2026 12:06 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -12369,7 +12369,7 @@
       "end_date": "2026-07-18",
       "total_stages": 8,
       "official_url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026",
-      "stages_completed": 3,
+      "stages_completed": 4,
       "stages": [
         {
           "num": 1,
@@ -12636,10 +12636,101 @@
           "num": 4,
           "label": "Stage 4",
           "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Abner Santiago Umba Lopez",
+          "winner_flag": "🇨🇴",
+          "winner_nat": "CO",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Abner Santiago Umba Lopez",
+              "rider_url": "/profile/abner-santiago-umba-lopez",
+              "team": "",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "04:28:31"
+            },
+            {
+              "rank": 2,
+              "name": "Jan Castellon Ribalta",
+              "rider_url": "/profile/jan-castellon-ribalta",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "04:28:31"
+            },
+            {
+              "rank": 3,
+              "name": "Emanuel Buchmann",
+              "rider_url": "/profile/emanuel-buchmann",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "04:28:31"
+            },
+            {
+              "rank": 4,
+              "name": "Alastair Christie-Johnston",
+              "rider_url": "/profile/alastair-christie-johnston",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "+ 12"
+            },
+            {
+              "rank": 5,
+              "name": "Alexander Konychev",
+              "rider_url": "/profile/alexander-konychev",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 6,
+              "name": "Christian Bagatin",
+              "rider_url": "/profile/christian-bagatin",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 7,
+              "name": "Sergi Darder Gari",
+              "rider_url": "/profile/sergi-darder-gari",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 8,
+              "name": "Rodrigo Álvarez Rodriguez",
+              "rider_url": "/profile/rodrigo-alvarez-rodriguez",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 9,
+              "name": "Henok Mulubrhan",
+              "rider_url": "/profile/henok-mulubrhan",
+              "team": "",
+              "nat_code": "ER",
+              "flag": "🇪🇷",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 10,
+              "name": "Alessio Martinelli",
+              "rider_url": "/profile/alessio-martinelli",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 18"
+            }
+          ],
           "date_str": "Wednesday 08 July",
           "start_town": "Huzhu",
           "finish_town": "Guide",
@@ -13614,9 +13705,9 @@
           "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
         }
       ],
-      "last_stage_winner": "Henok Mulubrhan",
-      "last_stage_winner_flag": "🇪🇷",
-      "last_stage_num": 3,
+      "last_stage_winner": "Abner Santiago Umba Lopez",
+      "last_stage_winner_flag": "🇨🇴",
+      "last_stage_num": 4,
       "gc_leader": "🇪🇨 Jonathan Klever Caicedo Cepeda",
       "gc_top10": [
         {
@@ -110286,6 +110377,36 @@
         }
       ],
       "wins_refreshed_at": "2026-07-12T11:52:07.241019+00:00"
+    },
+    "abner-santiago-umba-lopez": {
+      "slug": "abner-santiago-umba-lopez",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "14-07-2026",
+          "race": "Tour of Magnificent Qinghai - Stage 4",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
+          "date": "01-05-2026",
+          "race": "GP Vorarlberg p/b Radhaus Rankweil",
+          "cat": "1.2"
+        },
+        {
+          "year": "2021",
+          "date": "05-08-2021",
+          "race": "Le Tour de Savoie Mont Blanc - Stage 1",
+          "cat": "2.2"
+        },
+        {
+          "year": "2021",
+          "date": "23-07-2021",
+          "race": "17ème Tour Alsace - Stage 3",
+          "cat": "2.2"
+        }
+      ],
+      "wins_refreshed_at": "2026-07-14T12:06:24.604048+00:00"
     }
   },
   "startlists_needed": [
@@ -110293,163 +110414,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 59
+      "days_away": 58
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 60
+      "days_away": 59
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 76
+      "days_away": 75
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 82
+      "days_away": 81
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 82
+      "days_away": 81
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 84
+      "days_away": 83
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 85
+      "days_away": 84
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 87
+      "days_away": 86
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 89
+      "days_away": 88
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 90
+      "days_away": 89
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 92
+      "days_away": 91
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 93
+      "days_away": 92
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 97
+      "days_away": 96
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 97
+      "days_away": 96
     }
   ]
 }

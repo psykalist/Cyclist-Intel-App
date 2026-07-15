@@ -1964,7 +1964,16 @@ async function openRiderModal(slug) {
   }
 
   const name     = (profile || baseInfo || {}).name || slug.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
-  const nat      = ((profile || baseInfo || {}).nat || '').toLowerCase();
+  // Per-field fallback, not whole-object fallback: some riders have a
+  // `profile` (from rider_profiles.json, via scrape_rider_profiles.py's
+  // regex-based "Nationality" line parse) whose .nat is empty because that
+  // parse didn't match on their particular page -- but `baseInfo` (from
+  // data.json's team roster, populated by a more robust flag-alt-text /
+  // JSON-LD path in scraper.py) usually has the correct code. Picking the
+  // whole profile object over baseInfo whenever profile exists at all meant
+  // these riders silently lost their flag even though the right value was
+  // sitting right there in baseInfo.
+  const nat      = ((profile && profile.nat) || (baseInfo && baseInfo.nat) || '').toLowerCase();
   const natName  = (profile || {}).nat_name || nat.toUpperCase();
   const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug);
   const dob        = enrich.dob || (profile || {}).dob;
@@ -2210,6 +2219,7 @@ const STAT_CATS = [
   ['major-tours', 'Major Tours'],
   ['climbs',      'Climbs'],
   ['gear',        'Gear'],
+  ['palmares',    'Palmares'],
 ];
 
 async function loadStats() {
@@ -2232,9 +2242,11 @@ function renderStats() {
   if (!statsData) return;
   const stats = statsData.stats || {};
 
-  // Only show categories that have data
+  // Only show categories that have data -- 'palmares' is always shown since it
+  // comes from a separate file (palmares.json) loaded lazily on demand, not
+  // from pcs_stats.json like every other category here.
   const activeCats = STAT_CATS.filter(([c]) =>
-    Object.values(stats).some(s => s.category === c && s.row_count > 0)
+    c === 'palmares' || Object.values(stats).some(s => s.category === c && s.row_count > 0)
   );
 
   // Fallback if current cat has no data
@@ -2247,6 +2259,12 @@ function renderStats() {
       `<button class="stats-cat-btn${c===statsCurCat?' active':''}" onclick="setStatCat('${c}')">${label}</button>`
     ).join('')
   }</div>`;
+
+  if (statsCurCat === 'palmares') {
+    el.innerHTML = catBar + '<div id="palmares-body">' + renderPalmaresBody() + '</div>';
+    if (!palmaresData) loadPalmaresData();
+    return;
+  }
 
   const entries = Object.entries(stats)
     .filter(([, s]) => s.category === statsCurCat && s.row_count > 0)
@@ -2332,6 +2350,95 @@ function buildStatTable(s) {
   return `<table class="stat-tbl"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
 }
 
+// ── Palmares / History tab ──────────────────────────────────────────────────────
+// Historical winner lists (Grand Tours, Monuments, Major Tours, Championships,
+// Top Classics) sourced from procyclingstats.com and stored in palmares.json.
+// Loaded lazily -- separate fetch from pcs_stats.json so a slow/failed
+// palmares.json load never blocks the rest of the Stats tab, and vice versa.
+let palmaresData = null;
+let palmaresCurRace = null;
+const PALMARES_CAT_ORDER = ['grand-tour', 'monument', 'major-tour', 'championship', 'classic'];
+
+async function loadPalmaresData() {
+  const body = document.getElementById('palmares-body');
+  if (body) body.innerHTML = '<div class="stats-loading">⏳ Loading palmares…</div>';
+  try {
+    const r = await fetch('./palmares.json?t=' + Date.now(), {cache: 'no-cache'});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    palmaresData = await r.json();
+  } catch(e) {
+    if (body) body.innerHTML = `<div class="stats-loading">⚠️ Could not load palmares<br><small>${esc(e.message)}</small></div>`;
+    return;
+  }
+  const races = palmaresData.races || {};
+  if (!palmaresCurRace || !races[palmaresCurRace]) {
+    palmaresCurRace = races['tour-de-france'] ? 'tour-de-france' : Object.keys(races)[0];
+  }
+  if (body) body.innerHTML = renderPalmaresBody();
+}
+
+function renderPalmaresBody() {
+  if (!palmaresData) return '<div class="stats-loading">⏳ Loading palmares…</div>';
+
+  const races = palmaresData.races || {};
+  const catLabels = palmaresData.category_labels || {};
+  const bySlug = Object.entries(races);
+
+  const raceNav = PALMARES_CAT_ORDER.map(cat => {
+    const inCat = bySlug.filter(([, r]) => r.category === cat);
+    if (!inCat.length) return '';
+    const label = catLabels[cat] || cat;
+    const btns = inCat.map(([slug, r]) => {
+      const has = (r.edition_count || 0) > 0;
+      const active = slug === palmaresCurRace;
+      return `<button class="stats-cat-btn${active ? ' active' : ''}"${has ? '' : ' disabled style="opacity:.4;cursor:default"'} onclick="setPalmaresRace('${esc(slug)}')">${esc(r.name)}${has ? '' : ' (soon)'}</button>`;
+    }).join('');
+    return `<div style="margin-bottom:6px"><div style="font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:8px 0 4px">${esc(label)}</div><div class="stats-cat-bar" style="margin:0">${btns}</div></div>`;
+  }).join('');
+
+  const race = races[palmaresCurRace];
+  let tableHtml = '<p style="padding:10px;color:var(--muted)">Select a race above</p>';
+  if (race && (race.editions || []).length) {
+    const rows = race.editions.map(ed => {
+      const podiumCells = [1, 2, 3].map(rank => {
+        const p = (ed.podium || []).find(x => x.rank === rank);
+        if (!p || !p.name) return '<td style="color:var(--muted)">—</td>';
+        const link = p.slug
+          ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:#ffd700;text-decoration:underline">${esc(p.name)}</a>`
+          : esc(p.name);
+        return `<td>${link}</td>`;
+      }).join('');
+      return `<tr><td>${ed.year}</td>${podiumCells}</tr>`;
+    }).join('');
+    tableHtml = `<table class="stat-tbl"><thead><tr><th>Year</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody>${rows}</tbody></table>`;
+  } else if (race) {
+    tableHtml = '<p style="padding:10px;color:var(--muted)">Palmares for this race hasn\'t been backfilled yet</p>';
+  }
+
+  const meta = race
+    ? `<div class="stat-card-meta">${race.edition_count || 0} editions${race.first_edition ? ' · since ' + race.first_edition : ''}</div>`
+    : '';
+  const raceCard = race
+    ? `<div class="stat-card">
+  <div class="stat-card-hdr" style="cursor:default">
+    <div>
+      <div class="stat-card-title">${esc(race.name)}</div>
+      ${meta}
+    </div>
+  </div>
+  <div class="stat-card-body open">${tableHtml}</div>
+</div>`
+    : '';
+
+  return raceNav + raceCard;
+}
+
+function setPalmaresRace(slug) {
+  palmaresCurRace = slug;
+  const body = document.getElementById('palmares-body');
+  if (body) body.innerHTML = renderPalmaresBody();
+}
+
 // ── Data loading ───────────────────────────────────────────────────────────────
 
 let appData = {};
@@ -2389,7 +2496,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v96';
+const APP_VERSION = 'v98';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

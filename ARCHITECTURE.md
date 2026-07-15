@@ -13,6 +13,7 @@ cyclingflash.com ──► scraper.py ──────────────
                                                          │
 procyclingstats.com ─► scrape_rider_profiles.py ──► rider_profiles.json ──────────────────────────►┘
 procyclingstats.com ─► scrape_pcs_stats.py ──────► pcs_stats.json ───────────────────────────────►┘
+procyclingstats.com ─► scrape_palmares.py ───────► palmares.json ────────────────────────────────►┘
 ```
 
 ---
@@ -86,6 +87,24 @@ Builds and maintains `rider_profiles.json` (~4–5 MB, ~1800 riders) with photo,
 Scrapes all statistics pages from procyclingstats.com (most wins, best climbers, sprinters, etc.) and saves to `pcs_stats.json`. Powers the **Stats tab** in the app.
 
 **Usage:** `py scrape_pcs_stats.py` (manual, run monthly or when stats need refreshing)
+
+---
+
+### `scrape_palmares.py` — historical winner lists (Palmares)
+
+Scrapes year-by-year top-3 podiums from each race's `procyclingstats.com/race/{slug}/results/palmares` page and saves to `palmares.json`. Covers the ~29-race PCS taxonomy (Grand Tours, Major Tours, Monuments, Championships, Top Classics). Powers the **Palmares tab** inside the Stats section.
+
+The 3 Grand Tours + 5 Monuments (8 highest-priority races) were hand-backfilled with full all-time history on 2026-07-15 and already live in `palmares.json`; the remaining ~21 races are `"editions": []` placeholders until this script is run.
+
+**Usage:**
+```
+py scrape_palmares.py              # fetch races missing from palmares.json
+py scrape_palmares.py --all        # re-fetch every race, overwrite existing
+py scrape_palmares.py --race giro-d-italia   # fetch/refresh one race only
+py scrape_palmares.py --list       # print the race registry and exit
+```
+
+Must be run locally — PCS blocks CI/cloud IPs, same restriction as `scrape_pcs_stats.py`. Saves incrementally after each race so a crash partway through doesn't lose earlier progress.
 
 ---
 
@@ -191,11 +210,12 @@ Runs `scrape_cyclingoracle.py` weekly (Monday 6am UTC) and commits `rider_profil
 | `data.json` | Race calendar, results, classifications, teams, startlists (~3 MB) |
 | `rider_profiles.json` | All rider profiles — photo, bio, specialty scores, `co_stats`, career wins (~4–5 MB) |
 | `pcs_stats.json` | PCS statistics tables powering the Stats tab |
+| `palmares.json` | Historical winner lists (year-by-year top-3) per race, powering the Palmares tab. 8 priority races (Grand Tours + Monuments) hand-backfilled 2026-07-15; rest via `scrape_palmares.py` |
 | `best_teams.json` | Team Claudius (AI opponent) squad per race, regenerated after every scrape |
 | `changelog.json` | Recent notable changes shown in the app |
 | `scrape_log.json` | Per-race probe outcomes from the last `--results-only` run — consumed by `health-check.yml` to detect silent parser drift |
 | `status.json` | Machine-readable health snapshot, written by `heal.py` (local) or `health-check.yml` (CI) |
-| `index.html` | Entire PWA — HTML + CSS + JS in one file (~4176 lines, current APP_VERSION v87) |
+| `index.html` | Entire PWA — HTML + CSS + JS in one file (current APP_VERSION v98) |
 | `sw.js` | Service worker — network-first for data files, cache-first for static assets |
 | `manifest.json` | PWA manifest — icons, theme colour, install behaviour |
 | `push_subscriptions.json` | Browser push subscription endpoints (not in git if not committed) |

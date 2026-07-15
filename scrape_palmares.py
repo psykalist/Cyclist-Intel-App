@@ -70,10 +70,10 @@ RACES = [
     ("itzulia-basque-country", "Itzulia Basque Country",   "major-tour", 1924),
     ("tour-de-romandie",       "Tour de Romandie",         "major-tour", 1947),
     ("tour-de-suisse",         "Tour de Suisse",           "major-tour", 1933),
-    ("tour-de-l-ain",          "Tour Auvergne-Rhône-Alpes","major-tour", 1982),
+    ("tour-auvergne-rhone-alpes", "Tour Auvergne-Rhône-Alpes","major-tour", 1982),
     # Championships (not yet backfilled)
-    ("world-championship-me-road-race",    "World Championship",    "championship", 1921),
-    ("european-championship-me-road-race", "European Championship", "championship", 2016),
+    ("world-championship",              "World Championship",    "championship", 1921),
+    ("uec-road-european-championships", "European Championship", "championship", 2016),
     # Top Classics (not yet backfilled)
     ("omloop-het-nieuwsblad", "Omloop Het Nieuwsblad", "classic", 1945),
     ("strade-bianche",        "Strade Bianche",         "classic", 2007),
@@ -82,7 +82,7 @@ RACES = [
     ("dwars-door-vlaanderen", "Dwars door Vlaanderen",  "classic", 1945),
     ("eschborn-frankfurt",    "Eschborn-Frankfurt",     "classic", 1962),
     ("amstel-gold-race",      "Amstel Gold Race",       "classic", 1966),
-    ("la-fleche-wallonne",    "La Flèche Wallonne",     "classic", 1936),
+    ("la-fleche-wallone",     "La Flèche Wallonne",     "classic", 1936),
     ("san-sebastian",         "San Sebastián Classic",  "classic", 1981),
     ("bretagne-classic",      "Bretagne Classic",       "classic", 1931),
     ("gp-quebec",             "GP Québec",              "classic", 2010),
@@ -147,39 +147,58 @@ def _rider_link(cell_html):
 def parse_palmares(html):
     """
     Parse a PCS palmares page into a list of {year, podium:[{rank,name,slug}]}.
-    PCS palmares tables are laid out as: Year (link to that edition's GC/result) |
-    Winner (rider link) | 2nd (rider link) | 3rd (rider link) [| more columns we ignore].
-    Mirrors the table-parsing conventions in scrape_pcs_stats.py's parse_stat_table().
+
+    PCS does NOT use a <table> for this page (an earlier version of this
+    parser assumed it did, based on how scrape_pcs_stats.py's other stat
+    pages are laid out — that assumption was wrong and silently returned 0
+    editions for every race). The real markup, confirmed 2026-07 against a
+    saved copy of procyclingstats.com/race/tirreno-adriatico/results/palmares,
+    is a plain list:
+
+        <ul class="palmares">
+          <li><div class="year">Year</div><div class="riders">...header...</div></li>
+          <li>
+            <div class="year"><a href="race/{slug}/{YEAR}/gc">{YEAR}</a></div>
+            <div class="riders"><div style="...">
+              <div class="riderCont"><span class="rnk">1</span><span class="flag xx"></span>
+                <a href="rider/{slug}"><span class="">SURNAME Firstname</span></a><br/></div>
+              <div class="riderCont"><span class="rnk">2</span>...</div>
+              <div class="riderCont"><span class="rnk">3</span>...</div>
+            </div></div>
+          </li>
+          ...
+        </ul>
+
+    The very first <li> is a header row ("Year" / "Winner" / "2nd" / "3rd")
+    with no digits in its year div — it's skipped naturally because the
+    (19|20)\\d{2} year match fails on it.
     """
     editions = []
 
-    tables = re.findall(r'<table[^>]*>(.*?)</table>', html, re.DOTALL)
-    main_table = None
-    for tbl in tables:
-        # The palmares table's first column is a 4-digit year link, not a rank number
-        if re.search(r'href=["\'][^"\']*/(19|20)\d{2}/(gc|result)["\']', tbl):
-            main_table = tbl
-            break
-    if not main_table:
+    ul_m = re.search(r'<ul class="palmares">(.*?)</ul>', html, re.DOTALL)
+    if not ul_m:
         return editions
+    block = ul_m.group(1)
 
-    tbody_m = re.search(r'<tbody[^>]*>(.*?)</tbody>', main_table, re.DOTALL)
-    tbody   = tbody_m.group(1) if tbody_m else main_table
+    for li_m in re.finditer(r'<li>(.*?)</li>', block, re.DOTALL):
+        li = li_m.group(1)
 
-    for tr_m in re.finditer(r'<tr[^>]*>(.*?)</tr>', tbody, re.DOTALL):
-        tr = tr_m.group(1)
-        cells = re.findall(r'<td[^>]*>(.*?)</td>', tr, re.DOTALL)
-        if not cells:
+        year_div_m = re.search(r'<div class="year">(.*?)</div>', li, re.DOTALL)
+        if not year_div_m:
             continue
-
-        year_m = re.search(r'>\s*((?:19|20)\d{2})\s*<', cells[0]) or re.search(r'((?:19|20)\d{2})', strip_tags(cells[0]))
+        year_m = re.search(r'((?:19|20)\d{2})', strip_tags(year_div_m.group(1)))
         if not year_m:
-            continue
+            continue  # header row, or a year cell PCS left blank
         year = int(year_m.group(1))
 
         podium = []
-        for rank, cell in enumerate(cells[1:4], start=1):
-            slug, name = _rider_link(cell)
+        for rc_m in re.finditer(r'<div class="riderCont">(.*?)</div>', li, re.DOTALL):
+            rc = rc_m.group(1)
+            rnk_m = re.search(r'<span class="rnk">(\d+)</span>', rc)
+            if not rnk_m:
+                continue  # shouldn't happen outside the header row, which we already skip
+            rank = int(rnk_m.group(1))
+            slug, name = _rider_link(rc)
             if name:
                 podium.append({"rank": rank, "name": name, "slug": slug})
 

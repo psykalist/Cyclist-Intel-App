@@ -1,13 +1,18 @@
 """
-scrape_palmares.py — backfill historical winner lists (palmares) for the
-remaining ~21 races in palmares.json (Major Tours, Championships, Top
-Classics). The 8 highest-priority races (3 Grand Tours + 5 Monuments) were
-already hand-backfilled with full history and live in palmares.json today —
-this script fills in the rest and can also be used to refresh/re-verify any
-race, including the priority 8, going forward.
+scrape_palmares.py — backfill historical winner lists (palmares) for all ~29
+races in palmares.json (Grand Tours, Major Tours, Monuments, Championships,
+Top Classics).
 
-Must be run locally (or on the self-hosted runner) — PCS blocks CI/cloud IPs,
-same restriction as scrape_pcs_stats.py.
+For each race this fetches the overall/GC podium (top-3) per edition. Stage
+races (Grand Tours + Major Tours) additionally fetch the Points, Mountains
+(KOM), and Young Rider classification podiums, since those are meaningful
+separate competitions in a multi-stage race — one-day races (Monuments,
+Championships, Top Classics) only have the one podium. Each rider entry
+includes their nationality flag code (`nat`), scraped from PCS alongside
+the name.
+
+Must be run locally — PCS blocks CI/cloud IPs, same restriction as
+scrape_pcs_stats.py.
 
 Usage:
     py scrape_palmares.py              # fetch races missing from palmares.json
@@ -95,6 +100,17 @@ DONE_SLUGS = {
     "liege-bastogne-liege", "il-lombardia",
 }
 
+# Stage races have separate Points / Mountains(KOM) / Young Rider
+# classifications worth showing alongside the overall GC podium; one-day
+# races (Monuments, Championships, Top Classics) only have the one podium.
+STAGE_RACE_CATEGORIES = {"grand-tour", "major-tour"}
+
+# PCS's "GC type" filter (procyclingstats.com/race.php?...&gctype=N), found
+# on the <select name="gctype"> in the palmares page's filter form. GC (4)
+# uses the normal pretty URL; the other three require the numeric race ID
+# and the race.php query-string form instead.
+GCTYPE = {"points": 5, "kom": 7, "youth": 6}
+
 CATEGORY_LABELS = {
     "grand-tour": "Grand Tours",
     "major-tour": "Major Tours",
@@ -133,20 +149,47 @@ def fetch(url):
     return None
 
 
-def _rider_link(cell_html):
-    """Extract (slug, name) from a cell containing a rider link."""
-    m = re.search(
-        r'href=["\'](?:https://www\.procyclingstats\.com)?/?rider/([^"\'/?]+)["\'][^>]*>(.*?)</a>',
-        cell_html, re.DOTALL
-    )
-    if m:
-        return m.group(1).strip('/'), strip_tags(m.group(2)).strip()
-    return '', strip_tags(cell_html).strip()
-
-
-def parse_palmares(html):
+def _parse_rider_cont(rc):
     """
-    Parse a PCS palmares page into a list of {year, podium:[{rank,name,slug}]}.
+    Parse one <div class="riderCont">...</div> inner HTML block, e.g.:
+        <span class="rnk">1</span><span class="flag mx"></span>
+        <a href="rider/isaac-del-toro"><span class="">DEL TORO Isaac</span></a><br/>
+
+    Returns (rank, name, slug, nat) or None if this slot has no rider —
+    which legitimately happens for Points/KOM/Young Rider classifications in
+    years before PCS tracked that jersey (the <span class="rnk"> is present
+    but there's no rider link after it). Earlier versions of this parser
+    didn't check for the <a> tag and fell back to stripping tags from the
+    whole cell, which for an empty slot returned the leftover rank digit
+    ("1") as a fake rider name — fixed here by requiring an actual rider
+    link before returning anything.
+    """
+    rnk_m = re.search(r'<span class="rnk">(\d+)</span>', rc)
+    if not rnk_m:
+        return None
+    rank = int(rnk_m.group(1))
+
+    link_m = re.search(
+        r'href=["\'](?:https://www\.procyclingstats\.com)?/?rider/([^"\'/?]+)["\'][^>]*>(.*?)</a>',
+        rc, re.DOTALL
+    )
+    if not link_m:
+        return None  # blank podium slot -- no rider recorded
+
+    slug = link_m.group(1).strip('/')
+    name = strip_tags(link_m.group(2)).strip()
+    if not name:
+        return None
+
+    nat_m = re.search(r'<span class="flag ([a-z]{2,3})"', rc)
+    nat = nat_m.group(1) if nat_m else ''
+
+    return (rank, name, slug, nat)
+
+
+def parse_palmares(html, skip_empty=False):
+    """
+    Parse a PCS palmares page into a list of {year, podium:[{rank,name,slug,nat}]}.
 
     PCS does NOT use a <table> for this page (an earlier version of this
     parser assumed it did, based on how scrape_pcs_stats.py's other stat
@@ -172,6 +215,10 @@ def parse_palmares(html):
     The very first <li> is a header row ("Year" / "Winner" / "2nd" / "3rd")
     with no digits in its year div — it's skipped naturally because the
     (19|20)\\d{2} year match fails on it.
+
+    skip_empty=True drops editions with a fully empty podium (used for the
+    Points/KOM/Young Rider classifications, where many older years genuinely
+    have no data — no point storing an empty entry for every one of them).
     """
     editions = []
 
@@ -193,14 +240,13 @@ def parse_palmares(html):
 
         podium = []
         for rc_m in re.finditer(r'<div class="riderCont">(.*?)</div>', li, re.DOTALL):
-            rc = rc_m.group(1)
-            rnk_m = re.search(r'<span class="rnk">(\d+)</span>', rc)
-            if not rnk_m:
-                continue  # shouldn't happen outside the header row, which we already skip
-            rank = int(rnk_m.group(1))
-            slug, name = _rider_link(rc)
-            if name:
-                podium.append({"rank": rank, "name": name, "slug": slug})
+            parsed = _parse_rider_cont(rc_m.group(1))
+            if parsed:
+                rank, name, slug, nat = parsed
+                podium.append({"rank": rank, "name": name, "slug": slug, "nat": nat})
+
+        if skip_empty and not podium:
+            continue
 
         editions.append({"year": year, "podium": podium})
 
@@ -262,27 +308,51 @@ def main():
             continue
 
         url = f"{PCS}/race/{slug}/results/palmares"
-        print(f"Fetching {name} ({slug}) ...", flush=True)
+        print(f"Fetching {name} ({slug}) — GC ...", flush=True)
         html = fetch(url)
         if html is None:
             print(f"  ✗ Failed to fetch {url}")
             time.sleep(DELAY)
             continue
 
-        editions = parse_palmares(html)
-        if not editions:
-            print(f"  ✗ No editions parsed — PCS may have changed table markup, or this race slug is wrong")
+        gc_editions = parse_palmares(html)
+        if not gc_editions:
+            print(f"  ✗ No editions parsed — PCS may have changed markup, or this race slug is wrong")
             time.sleep(DELAY)
             continue
+        print(f"  ✓ GC: {len(gc_editions)} editions ({gc_editions[-1]['year']}–{gc_editions[0]['year']})")
+
+        is_stage_race = category in STAGE_RACE_CATEGORIES
+        classifications = {"gc": gc_editions}
+
+        if is_stage_race:
+            race_id_m = re.search(r'name=["\']race["\']\s+value=["\'](\d+)["\']', html)
+            race_id = race_id_m.group(1) if race_id_m else None
+            if not race_id:
+                print(f"  ! Could not find internal race ID — skipping Points/KOM/Young Rider for this race")
+                classifications["points"] = classifications["kom"] = classifications["youth"] = []
+            else:
+                for key, gctype in GCTYPE.items():
+                    time.sleep(DELAY)
+                    curl = f"{PCS}/race.php?race={race_id}&p=results&s=palmares&gctype={gctype}"
+                    print(f"  Fetching {key} ...", flush=True)
+                    chtml = fetch(curl)
+                    if not chtml:
+                        print(f"    ✗ Failed to fetch {key}")
+                        classifications[key] = []
+                        continue
+                    eds = parse_palmares(chtml, skip_empty=True)
+                    classifications[key] = eds
+                    print(f"    ✓ {key}: {len(eds)} editions with recorded data")
 
         races_out[slug] = {
             "name": name,
             "category": category,
             "first_edition": first_edition,
-            "editions": editions,
-            "edition_count": len(editions),
+            "is_stage_race": is_stage_race,
+            "classifications": classifications,
+            "edition_count": len(gc_editions),
         }
-        print(f"  ✓ {len(editions)} editions ({editions[-1]['year']}–{editions[0]['year']})")
         save(data)  # save incrementally so partial progress survives a crash
         time.sleep(DELAY)
 

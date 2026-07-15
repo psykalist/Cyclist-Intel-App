@@ -90,11 +90,13 @@ Scrapes all statistics pages from procyclingstats.com (most wins, best climbers,
 
 ---
 
-### `scrape_palmares.py` — historical winner lists (Palmares)
+### `scrape_palmares.py` — historical winner lists (Historical tab)
 
-Scrapes year-by-year top-3 podiums from each race's `procyclingstats.com/race/{slug}/results/palmares` page and saves to `palmares.json`. Covers the ~29-race PCS taxonomy (Grand Tours, Major Tours, Monuments, Championships, Top Classics). Powers the **Palmares tab** inside the Stats section.
+Scrapes year-by-year top-3 podiums from each race's `procyclingstats.com/race/{slug}/results/palmares` page and saves to `palmares.json`. Covers the ~29-race PCS taxonomy (Grand Tours, Major Tours, Monuments, Championships, Top Classics). Powers the **Historical tab** inside the Stats section.
 
-The 3 Grand Tours + 5 Monuments (8 highest-priority races) were hand-backfilled with full all-time history on 2026-07-15 and already live in `palmares.json`; the remaining ~21 races are `"editions": []` placeholders until this script is run.
+The page markup is a `<ul class="palmares">` list, not a `<table>` — an earlier version of this parser assumed a table (matching the pattern used elsewhere by `scrape_pcs_stats.py`) and silently returned 0 editions for every race until this was caught and fixed.
+
+For stage races (Grand Tours + Major Tours) this also fetches the Points, Mountains (KOM), and Young Rider classification podiums — found via PCS's `race.php?race={internal_id}&gctype={5|7|6}` URL, using the numeric race ID scraped off the GC page's filter form (the pretty `/results/palmares` URL ignores a `?gctype=` query param, it only works through this internal form endpoint). One-day races (Monuments, Championships, Top Classics) only have the one podium. Each rider entry also carries their nationality flag code (`nat`), rendered via the app's existing `flag()` helper.
 
 **Usage:**
 ```
@@ -210,7 +212,7 @@ Runs `scrape_cyclingoracle.py` weekly (Monday 6am UTC) and commits `rider_profil
 | `data.json` | Race calendar, results, classifications, teams, startlists (~3 MB) |
 | `rider_profiles.json` | All rider profiles — photo, bio, specialty scores, `co_stats`, career wins (~4–5 MB) |
 | `pcs_stats.json` | PCS statistics tables powering the Stats tab |
-| `palmares.json` | Historical winner lists (year-by-year top-3) per race, powering the Palmares tab. 8 priority races (Grand Tours + Monuments) hand-backfilled 2026-07-15; rest via `scrape_palmares.py` |
+| `palmares.json` | Historical winner lists per race, powering the Historical tab (Stats section). Each race has `classifications: {gc, points, kom, youth}` (stage races only have points/kom/youth — one-day races only have `gc`) with year-by-year top-3 podiums including each rider's `nat` flag code. Populate/refresh via `scrape_palmares.py` |
 | `best_teams.json` | Team Claudius (AI opponent) squad per race, regenerated after every scrape |
 | `changelog.json` | Recent notable changes shown in the app |
 | `scrape_log.json` | Per-race probe outcomes from the last `--results-only` run — consumed by `health-check.yml` to detect silent parser drift |

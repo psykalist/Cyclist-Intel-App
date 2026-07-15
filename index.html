@@ -2219,7 +2219,7 @@ const STAT_CATS = [
   ['major-tours', 'Major Tours'],
   ['climbs',      'Climbs'],
   ['gear',        'Gear'],
-  ['palmares',    'Palmares'],
+  ['palmares',    'Historical'],
 ];
 
 async function loadStats() {
@@ -2357,17 +2357,34 @@ function buildStatTable(s) {
 // palmares.json load never blocks the rest of the Stats tab, and vice versa.
 let palmaresData = null;
 let palmaresCurRace = null;
+let palmaresCurClass = 'gc'; // 'gc' | 'points' | 'kom' | 'youth' -- only relevant for stage races
 const PALMARES_CAT_ORDER = ['grand-tour', 'monument', 'major-tour', 'championship', 'classic'];
+const PALMARES_CLASS_LABELS = {gc: 'GC', points: 'Points', kom: 'KOM', youth: 'Young Rider'};
+
+// scrape_palmares.py's newer runs write races as {classifications:{gc,points,kom,youth}},
+// but a race scraped before that rewrite (or not yet re-run at all) still has the
+// older flat {editions:[...]} shape -- these two helpers read either shape so the
+// UI doesn't go blank for races the user hasn't re-scraped yet.
+function palmaresEditionsFor(race, cls) {
+  if (!race) return [];
+  if (race.classifications) return race.classifications[cls] || [];
+  return cls === 'gc' ? (race.editions || []) : [];
+}
+function palmaresEditionCount(race) {
+  if (!race) return 0;
+  if (race.classifications) return (race.classifications.gc || []).length;
+  return race.edition_count || (race.editions || []).length;
+}
 
 async function loadPalmaresData() {
   const body = document.getElementById('palmares-body');
-  if (body) body.innerHTML = '<div class="stats-loading">⏳ Loading palmares…</div>';
+  if (body) body.innerHTML = renderPalmaresBody();
   try {
     const r = await fetch('./palmares.json?t=' + Date.now(), {cache: 'no-cache'});
     if (!r.ok) throw new Error('HTTP ' + r.status);
     palmaresData = await r.json();
   } catch(e) {
-    if (body) body.innerHTML = `<div class="stats-loading">⚠️ Could not load palmares<br><small>${esc(e.message)}</small></div>`;
+    if (body) body.innerHTML = `<div class="stats-loading">⚠️ Could not load historical results<br><small>${esc(e.message)}</small></div>`;
     return;
   }
   const races = palmaresData.races || {};
@@ -2377,8 +2394,19 @@ async function loadPalmaresData() {
   if (body) body.innerHTML = renderPalmaresBody();
 }
 
+// Black-on-white theme, scoped to just this panel via CSS custom-property
+// overrides (the rest of the app is dark) -- every .stat-card/.stat-tbl/etc.
+// rule already reads these vars, so overriding them on the wrapper is enough
+// without duplicating the underlying CSS. Requested so this section reads
+// like a printed record book rather than matching the app's live-race theme.
+const PALMARES_THEME =
+  '--bg:#ffffff;--surface:#ffffff;--surface2:#f2f2f2;--border:#dddddd;' +
+  '--text:#111111;--muted:#555555;--accent:#0b5fa5;' +
+  '--gold:#b8860b;--silver:#707070;--bronze:#8b5a2b;' +
+  'background:#ffffff;color:#111111;border-radius:10px;padding:12px;';
+
 function renderPalmaresBody() {
-  if (!palmaresData) return '<div class="stats-loading">⏳ Loading palmares…</div>';
+  if (!palmaresData) return `<div style="${PALMARES_THEME}"><div class="stats-loading">⏳ Loading historical results…</div></div>`;
 
   const races = palmaresData.races || {};
   const catLabels = palmaresData.category_labels || {};
@@ -2389,7 +2417,7 @@ function renderPalmaresBody() {
     if (!inCat.length) return '';
     const label = catLabels[cat] || cat;
     const btns = inCat.map(([slug, r]) => {
-      const has = (r.edition_count || 0) > 0;
+      const has = palmaresEditionCount(r) > 0;
       const active = slug === palmaresCurRace;
       return `<button class="stats-cat-btn${active ? ' active' : ''}"${has ? '' : ' disabled style="opacity:.4;cursor:default"'} onclick="setPalmaresRace('${esc(slug)}')">${esc(r.name)}${has ? '' : ' (soon)'}</button>`;
     }).join('');
@@ -2397,32 +2425,50 @@ function renderPalmaresBody() {
   }).join('');
 
   const race = races[palmaresCurRace];
+  const isStageRace = !!(race && race.is_stage_race);
+  const cls = isStageRace ? palmaresCurClass : 'gc';
+
+  const classBar = isStageRace
+    ? `<div class="stats-cat-bar" style="margin:6px 0 10px">${
+        Object.entries(PALMARES_CLASS_LABELS).map(([key, label]) =>
+          `<button class="stats-cat-btn${key === cls ? ' active' : ''}" onclick="setPalmaresClass('${key}')">${label}</button>`
+        ).join('')
+      }</div>`
+    : '';
+
+  const editions = palmaresEditionsFor(race, cls);
+
   let tableHtml = '<p style="padding:10px;color:var(--muted)">Select a race above</p>';
-  if (race && (race.editions || []).length) {
-    const rows = race.editions.map(ed => {
+  if (race && editions.length) {
+    const rows = editions.map(ed => {
       const podiumCells = [1, 2, 3].map(rank => {
         const p = (ed.podium || []).find(x => x.rank === rank);
         if (!p || !p.name) return '<td style="color:var(--muted)">—</td>';
+        const flagHtml = p.nat ? flag(p.nat) : '';
         const link = p.slug
-          ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:#ffd700;text-decoration:underline">${esc(p.name)}</a>`
+          ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:var(--accent);text-decoration:underline">${esc(p.name)}</a>`
           : esc(p.name);
-        return `<td>${link}</td>`;
+        return `<td><span style="display:flex;align-items:center;gap:6px">${flagHtml}${link}</span></td>`;
       }).join('');
       return `<tr><td>${ed.year}</td>${podiumCells}</tr>`;
     }).join('');
     tableHtml = `<table class="stat-tbl"><thead><tr><th>Year</th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody>${rows}</tbody></table>`;
   } else if (race) {
-    tableHtml = '<p style="padding:10px;color:var(--muted)">Palmares for this race hasn\'t been backfilled yet</p>';
+    tableHtml = `<p style="padding:10px;color:var(--muted)">${
+      isStageRace && cls !== 'gc'
+        ? 'No recorded ' + esc(PALMARES_CLASS_LABELS[cls]) + ' data for this race yet'
+        : "Historical results for this race haven't been backfilled yet"
+    }</p>`;
   }
 
   const meta = race
-    ? `<div class="stat-card-meta">${race.edition_count || 0} editions${race.first_edition ? ' · since ' + race.first_edition : ''}</div>`
+    ? `<div class="stat-card-meta">${palmaresEditionCount(race)} editions${race.first_edition ? ' · since ' + race.first_edition : ''}</div>`
     : '';
   const raceCard = race
     ? `<div class="stat-card">
   <div class="stat-card-hdr" style="cursor:default">
     <div>
-      <div class="stat-card-title">${esc(race.name)}</div>
+      <div class="stat-card-title">${esc(race.name)}${isStageRace ? ' — ' + esc(PALMARES_CLASS_LABELS[cls]) : ''}</div>
       ${meta}
     </div>
   </div>
@@ -2430,11 +2476,18 @@ function renderPalmaresBody() {
 </div>`
     : '';
 
-  return raceNav + raceCard;
+  return `<div style="${PALMARES_THEME}">${raceNav}${classBar}${raceCard}</div>`;
 }
 
 function setPalmaresRace(slug) {
   palmaresCurRace = slug;
+  palmaresCurClass = 'gc';
+  const body = document.getElementById('palmares-body');
+  if (body) body.innerHTML = renderPalmaresBody();
+}
+
+function setPalmaresClass(cls) {
+  palmaresCurClass = cls;
   const body = document.getElementById('palmares-body');
   if (body) body.innerHTML = renderPalmaresBody();
 }
@@ -2496,7 +2549,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v98';
+const APP_VERSION = 'v99';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

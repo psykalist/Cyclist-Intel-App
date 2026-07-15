@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-14T17:57:07.119673+00:00",
+  "generated_at": "2026-07-15T12:11:21.399196+00:00",
   "entries": [
+    {
+      "id": "357db6663fbf",
+      "timestamp": "2026-07-15T12:11:21.392794+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Tour of Magnificent Qinghai: 🇮🇹 Christian Bagatin wins"
+    },
+    {
+      "id": "0868c33aa8a5",
+      "timestamp": "2026-07-15T12:11:21.392794+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Magnificent Qinghai Points: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
+    },
+    {
+      "id": "8c94cd601b0e",
+      "timestamp": "2026-07-15T12:11:21.392794+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Magnificent Qinghai KOM: 🇪🇸 Cristian Rodriguez Martin leads"
+    },
     {
       "id": "c6ce869a13d5",
       "timestamp": "2026-07-14T17:57:07.113113+00:00",

@@ -954,16 +954,25 @@ header h1 span { color: var(--accent); }
 .stat-pos { color:var(--muted); font-size:.75rem; min-width:24px; }
 .stats-loading { text-align:center; padding:60px 20px; color:var(--muted); }
 /* Stats tab: force white background + black text on all cards/sections */
-#sec-stats { background:#fff; color:#000; }
-#sec-stats .stat-card { background:#fff; color:#000; }
-#sec-stats .stat-card-title,
-#sec-stats .stat-card-meta,
-#sec-stats .stat-tbl th,
-#sec-stats .stat-tbl td,
-#sec-stats .stat-pos,
-#sec-stats .stats-loading,
-#sec-stats .stats-cat-btn { color:#000; }
-#sec-stats .stats-cat-btn.active { color:#fff; }
+/* Stats tab: ProCyclingStats-style light theme (white bg, black text, navy accents) */
+#sec-stats { background:#fff; color:#000; font-family:tahoma,verdana,arial,sans-serif; }
+#sec-stats .stat-card { background:#fff; color:#000; border:1px solid #dcdcdc; }
+#sec-stats .stat-card-hdr { background:#f0f0f0; }
+#sec-stats .stat-card-hdr > span { color:#888 !important; }
+#sec-stats .stat-card-title { color:#000; }
+#sec-stats .stat-card-meta { color:#666; }
+#sec-stats .stats-loading { color:#666; }
+#sec-stats [style*="--muted"] { color:#777 !important; }
+#sec-stats .stats-cat-btn { background:#fff; color:#000; border:1px solid #ccc; }
+#sec-stats .stats-cat-btn.active { background:#272f3d; color:#fff !important; border-color:#272f3d; }
+#sec-stats .stat-tbl th { background:#f0f0f0; color:#000; border-bottom:1px solid #ccc; }
+#sec-stats .stat-tbl td { color:#000; border-bottom:1px solid #ececec; }
+#sec-stats .stat-tbl tbody tr:nth-child(even) { background:#f7f7f7; }
+#sec-stats .stat-tbl tbody tr:hover { background:#cbdcf2; }
+#sec-stats .stat-pos { color:#888; }
+#sec-stats .stat-tbl td .stat-name { display:inline-flex; align-items:center; gap:6px; }
+#sec-stats .stat-tbl a { color:#000 !important; text-decoration:none !important; }
+#sec-stats .stat-tbl a:hover { color:#1b9be0 !important; text-decoration:underline !important; }
 
 /* ── Rankings tab ─────────────────────────────── */
 .rankings-cat-bar{display:flex;gap:6px;flex-wrap:wrap;padding:12px 12px 6px;position:sticky;top:0;background:var(--bg);z-index:10;border-bottom:1px solid var(--border)}
@@ -2245,6 +2254,9 @@ async function loadStats() {
     el.innerHTML = `<div class="stats-loading">⚠️ Could not load stats<br><small>${esc(e.message)}</small></div>`;
     return;
   }
+  // Load rider profiles so every rider row can show a national flag
+  try { await loadRiderProfiles(); } catch(e) {}
+  buildStatsNatLookup();
   setStatCat(statsCurCat); // auto-opens first card
 }
 
@@ -2319,6 +2331,29 @@ function toggleStat(id) {
   renderStats();
 }
 
+// Slug -> nationality lookup so every rider in the Stats tables gets a flag.
+// Combines current team rosters (appData.teams) with the full rider_profiles.json
+// set, so historical/all-time riders not on a current roster still resolve.
+let statsNatBySlug = null;
+function buildStatsNatLookup() {
+  const m = {};
+  for (const t of (appData.teams || []))
+    for (const r of (t.riders || []))
+      if (r.slug && (r.nat || r.nat_code)) m[r.slug] = (r.nat || r.nat_code);
+  const rp = riderProfilesData || {};
+  for (const slug in rp) {
+    const n = rp[slug] && (rp[slug].nat || rp[slug].nat_code);
+    if (n && !m[slug]) m[slug] = n;
+  }
+  statsNatBySlug = m;
+  return m;
+}
+function natFor(slug) {
+  if (!slug) return '';
+  const m = statsNatBySlug || buildStatsNatLookup();
+  return m[slug] || '';
+}
+
 function buildStatTable(s) {
   const rows = s.rows || [];
   if (!rows.length) return '<p style="padding:10px;color:var(--muted)">No data</p>';
@@ -2339,20 +2374,23 @@ function buildStatTable(s) {
   const trs = filteredRows.slice(0, 50).map(r => {
     const tds = cols.map(c => {
       let v = r[c] ?? '';
-      // Rider names open in-app modal; falls back to PCS link footer inside modal
+      // Rider name columns: prepend a national flag + open in-app modal on click
       if (c === 'name' && r.slug && r.type === 'rider') {
-        return `<td><a href="#" onclick="openRiderModal('${esc(r.slug)}');return false;" style="color:#ffd700;text-decoration:underline">${esc(String(v))}</a></td>`;
+        return `<td><span class="stat-name">${flag(natFor(r.slug))}<a href="#" onclick="openRiderModal('${esc(r.slug)}');return false;">${esc(String(v))}</a></span></td>`;
       }
       if ((c === 'rider1_name' || c === 'rider2_name') && r[c.replace('_name','_slug')]) {
         const slug = r[c.replace('_name','_slug')];
-        return `<td><a href="#" onclick="openRiderModal('${esc(slug)}');return false;" style="color:#ffd700;text-decoration:underline">${esc(String(v))}</a></td>`;
+        return `<td><span class="stat-name">${flag(natFor(slug))}<a href="#" onclick="openRiderModal('${esc(slug)}');return false;">${esc(String(v))}</a></span></td>`;
       }
       if (c === 'rider_name' && r.rider_slug) {
-        return `<td><a href="#" onclick="openRiderModal('${esc(r.rider_slug)}');return false;" style="color:#ffd700;text-decoration:underline">${esc(String(v))}</a></td>`;
+        return `<td><span class="stat-name">${flag(natFor(r.rider_slug))}<a href="#" onclick="openRiderModal('${esc(r.rider_slug)}');return false;">${esc(String(v))}</a></span></td>`;
       }
-      // Reddish for unlinked rider/name columns
+      // Unlinked rider/name columns: still show a flag if a slug can be resolved
       const nameCol = (c === 'name' && r.type === 'rider') || c === 'rider_name' || c === 'rider1_name' || c === 'rider2_name';
-      if (nameCol) return `<td><span style="color:#c0392b">${esc(String(v))}</span></td>`;
+      if (nameCol) {
+        const s2 = r.slug || r.rider_slug || r.rider1_slug || r.rider2_slug || '';
+        return `<td><span class="stat-name">${flag(natFor(s2))}<span>${esc(String(v))}</span></span></td>`;
+      }
       return `<td>${esc(String(v))}</td>`;
     }).join('');
     return `<tr>${tds}</tr>`;
@@ -2444,7 +2482,7 @@ function renderPalmaresBody() {
       const podiumCells = [1, 2, 3].map(rank => {
         const p = (ed.podium || []).find(x => x.rank === rank);
         if (!p || !p.name) return '<td style="color:var(--muted)">—</td>';
-        const flagHtml = p.nat ? flag(p.nat) : '';
+        const flagHtml = flag(p.nat || natFor(p.slug));
         const link = p.slug
           ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:var(--accent);text-decoration:underline">${esc(p.name)}</a>`
           : esc(p.name);
@@ -2549,7 +2587,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v102';
+const APP_VERSION = 'v103';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

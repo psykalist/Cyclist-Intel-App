@@ -953,26 +953,14 @@ header h1 span { color: var(--accent); }
 .stat-tbl tr:last-child td { border-bottom:none; }
 .stat-pos { color:var(--muted); font-size:.75rem; min-width:24px; }
 .stats-loading { text-align:center; padding:60px 20px; color:var(--muted); }
-/* Stats tab: force white background + black text on all cards/sections */
-/* Stats tab: ProCyclingStats-style light theme (white bg, black text, navy accents) */
-#sec-stats { background:#fff; color:#000; font-family:tahoma,verdana,arial,sans-serif; }
-#sec-stats .stat-card { background:#fff; color:#000; border:1px solid #dcdcdc; }
-#sec-stats .stat-card-hdr { background:#f0f0f0; }
-#sec-stats .stat-card-hdr > span { color:#888 !important; }
-#sec-stats .stat-card-title { color:#000; }
-#sec-stats .stat-card-meta { color:#666; }
-#sec-stats .stats-loading { color:#666; }
-#sec-stats [style*="--muted"] { color:#777 !important; }
-#sec-stats .stats-cat-btn { background:#fff; color:#000; border:1px solid #ccc; }
-#sec-stats .stats-cat-btn.active { background:#272f3d; color:#fff !important; border-color:#272f3d; }
-#sec-stats .stat-tbl th { background:#f0f0f0; color:#000; border-bottom:1px solid #ccc; }
-#sec-stats .stat-tbl td { color:#000; border-bottom:1px solid #ececec; }
-#sec-stats .stat-tbl tbody tr:nth-child(even) { background:#f7f7f7; }
-#sec-stats .stat-tbl tbody tr:hover { background:#cbdcf2; }
-#sec-stats .stat-pos { color:#888; }
+/* Stats tab: uses the app theme variables, consistent with the Rankings tab */
+#sec-stats .stats-cat-btn { background:var(--surface); color:var(--text); border-color:var(--border); }
+#sec-stats .stats-cat-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 #sec-stats .stat-tbl td .stat-name { display:inline-flex; align-items:center; gap:6px; }
-#sec-stats .stat-tbl a { color:#000 !important; text-decoration:none !important; }
-#sec-stats .stat-tbl a:hover { color:#1b9be0 !important; text-decoration:underline !important; }
+#sec-stats .stat-tbl td .stat-name > span { color:var(--text); }
+#sec-stats .stat-tbl a { color:var(--accent); text-decoration:none; }
+#sec-stats .stat-tbl a:hover { text-decoration:underline; }
+#sec-stats .stat-tbl tbody tr:hover { background:var(--surface); }
 
 /* ── Rankings tab ─────────────────────────────── */
 .rankings-cat-bar{display:flex;gap:6px;flex-wrap:wrap;padding:12px 12px 6px;position:sticky;top:0;background:var(--bg);z-index:10;border-bottom:1px solid var(--border)}
@@ -2226,7 +2214,7 @@ function closeRiderModal(e) {
 // ── PCS Statistics ─────────────────────────────────────────────────────────────
 
 let statsData   = null;
-let statsCurCat = 'riders';
+let statsCurCat = 'palmares';
 let statsOpenId = null;
 
 const STAT_CATS = [
@@ -2587,7 +2575,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v103';
+const APP_VERSION = 'v104';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-16T15:41:31.654992+00:00",
-  "scraped_at_human": "16 Jul 2026 15:41 UTC",
+  "scraped_at": "2026-07-16T17:59:02.340786+00:00",
+  "scraped_at_human": "16 Jul 2026 17:59 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -12604,6 +12604,15 @@
         },
         {
           "rank": 8,
+          "name": "Lennert Van Eetvelt",
+          "rider_url": "/profile/lennert-van-eetvelt",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 34:24"
+        },
+        {
+          "rank": 9,
           "name": "Mathias Vacek",
           "rider_url": "/profile/mathias-vacek",
           "team": "",
@@ -12612,22 +12621,13 @@
           "time_gap": "+ 48:57"
         },
         {
-          "rank": 9,
-          "name": "Quinn Simmons",
-          "rider_url": "/profile/quinn-simmons",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "+ 01:04:49"
-        },
-        {
           "rank": 10,
-          "name": "Antonio Tiberi",
-          "rider_url": "/profile/antonio-tiberi",
+          "name": "Alex Baudin",
+          "rider_url": "/profile/alex-baudin",
           "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 01:09:10"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:01:24"
         }
       ]
     },

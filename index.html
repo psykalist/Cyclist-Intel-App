@@ -1893,15 +1893,7 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
     comparison = `<span style="color:var(--muted);font-style:italic">🔒 Locked until the race finishes</span>`;
   }
 
-  const rows = _complete ? team.riders.map(r => {
-    const rpts = computePoints([r.name], icTeam ? icTeam.created_at : null, raceKey).total;
-    const nat  = r.nat ? `<img src="https://flagcdn.com/16x12/${r.nat.toLowerCase()}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px">` : '';
-    return `<div style="display:flex;align-items:center;gap:8px;padding:9px 16px;border-bottom:1px solid var(--border)">
-      ${nat}<span style="flex:1;font-size:.88rem;font-weight:600">${esc(r.name)}</span>
-      <span style="font-size:.75rem;padding:2px 7px;border-radius:10px;background:var(--surface2);color:var(--muted);font-weight:700">${r.cost}cr</span>
-      ${rpts > 0 ? `<span style="font-size:.82rem;font-weight:700;color:var(--gold);min-width:40px;text-align:right">${rpts} pts</span>` : '<span style="color:var(--muted);font-size:.78rem;min-width:40px;text-align:right">—</span>'}
-    </div>`;
-  }).join('') : `<div style="padding:14px 16px;font-size:.82rem;color:var(--muted);text-align:center">🔒 Team Claudius's ${team.riders.length}-rider squad reveals once this race is fully over.</div>`;
+  // Competitor rosters stay hidden — only Team Claudius's total score/comparison is shown.
 
   const summaryLine = _complete
     ? `<span style="font-weight:700;color:var(--text)">${autoScore} pts · ${team.total_cost}cr</span>`
@@ -1923,7 +1915,6 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
       <span>${esc(raceEntry.name)}</span>
       ${summaryLine}
     </div>
-    ${rows}
   </div>`;
 }
 
@@ -2613,7 +2604,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v106';
+const APP_VERSION = 'v107';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

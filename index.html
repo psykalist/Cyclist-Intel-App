@@ -2210,6 +2210,7 @@ let statsCurCat = 'riders';
 let statsOpenId = null;
 
 const STAT_CATS = [
+  ['palmares',    'Historical'],
   ['riders',      'Riders'],
   ['grandtours',  'Grand Tours'],
   ['monuments',   'Monuments'],
@@ -2219,7 +2220,6 @@ const STAT_CATS = [
   ['major-tours', 'Major Tours'],
   ['climbs',      'Climbs'],
   ['gear',        'Gear'],
-  ['palmares',    'Historical'],
 ];
 
 async function loadStats() {
@@ -2394,19 +2394,8 @@ async function loadPalmaresData() {
   if (body) body.innerHTML = renderPalmaresBody();
 }
 
-// Black-on-white theme, scoped to just this panel via CSS custom-property
-// overrides (the rest of the app is dark) -- every .stat-card/.stat-tbl/etc.
-// rule already reads these vars, so overriding them on the wrapper is enough
-// without duplicating the underlying CSS. Requested so this section reads
-// like a printed record book rather than matching the app's live-race theme.
-const PALMARES_THEME =
-  '--bg:#ffffff;--surface:#ffffff;--surface2:#f2f2f2;--border:#dddddd;' +
-  '--text:#111111;--muted:#555555;--accent:#0b5fa5;' +
-  '--gold:#b8860b;--silver:#707070;--bronze:#8b5a2b;' +
-  'background:#ffffff;color:#111111;border-radius:10px;padding:12px;';
-
 function renderPalmaresBody() {
-  if (!palmaresData) return `<div style="${PALMARES_THEME}"><div class="stats-loading">⏳ Loading historical results…</div></div>`;
+  if (!palmaresData) return '<div class="stats-loading">⏳ Loading historical results…</div>';
 
   const races = palmaresData.races || {};
   const catLabels = palmaresData.category_labels || {};
@@ -2476,7 +2465,7 @@ function renderPalmaresBody() {
 </div>`
     : '';
 
-  return `<div style="${PALMARES_THEME}">${raceNav}${classBar}${raceCard}</div>`;
+  return raceNav + classBar + raceCard;
 }
 
 function setPalmaresRace(slug) {
@@ -2549,7 +2538,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v99';
+const APP_VERSION = 'v100';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

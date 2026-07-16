@@ -953,6 +953,17 @@ header h1 span { color: var(--accent); }
 .stat-tbl tr:last-child td { border-bottom:none; }
 .stat-pos { color:var(--muted); font-size:.75rem; min-width:24px; }
 .stats-loading { text-align:center; padding:60px 20px; color:var(--muted); }
+/* Stats tab: force white background + black text on all cards/sections */
+#sec-stats { background:#fff; color:#000; }
+#sec-stats .stat-card { background:#fff; color:#000; }
+#sec-stats .stat-card-title,
+#sec-stats .stat-card-meta,
+#sec-stats .stat-tbl th,
+#sec-stats .stat-tbl td,
+#sec-stats .stat-pos,
+#sec-stats .stats-loading,
+#sec-stats .stats-cat-btn { color:#000; }
+#sec-stats .stats-cat-btn.active { color:#fff; }
 
 /* ── Rankings tab ─────────────────────────────── */
 .rankings-cat-bar{display:flex;gap:6px;flex-wrap:wrap;padding:12px 12px 6px;position:sticky;top:0;background:var(--bg);z-index:10;border-bottom:1px solid var(--border)}
@@ -2538,7 +2549,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v100';
+const APP_VERSION = 'v101';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4623,42 +4634,4 @@ function renderHelp() {
         ['Sprinter', 'A powerful rider who wins bunch sprints at the end of flat stages. Usually the fastest over 200–300m.'],
         ['Puncheur', 'A rider suited to short, punchy climbs — strong enough to break away on hills but faster than a pure climber in a sprint.'],
         ['One-Day',  'A specialist in single-day races and Classics. Often strong, durable riders who can handle cobbles and varied terrain.'],
-        ['TT Specialist', 'A rider who excels in time trials — aerodynamic, powerful, and consistent.'],
-      ]
-    },
-    {
-      title: 'Fantasy League',
-      rows: [
-        ['Budget',    'You have 100 credits to spend on your squad. Riders cost between 4 and 22 credits based on their ability.'],
-        ['Squad',     'Your picked team of riders — 8 for Grand Tours, 7 for other stage races, but just 3 for one-day races (Classics, Monuments). One-day races only run 24 hours, so instead of spreading bets across a big squad you pick the 3 riders you think will actually make the podium.'],
-        ['Race Picker','Only shows live and upcoming races, sorted soonest-first, so the list doesn\'t fill up with the whole season\'s past races. A race drops off the list once it finishes — unless you already drafted a squad for it, in which case it stays (marked "finished") so you can still check how it scored. Use the "Min. stages" spinner to filter out one-day races and jump straight to longer tours.'],
-        ['Stage Pts', 'Points for stage finishes: 1st=25, 2nd=12, 3rd=8, 4th–10th=3.'],
-        ['GC Pts',    'Points for GC standings at the end: 1st=50, 2nd=30, 3rd=20, 4th–10th=8.'],
-        ['Jersey Pts','15 points per stage for holding the Points, KOM, or White jersey (not awarded if the rider also leads GC).'],
-        ['I Claudius','The AI opponent — a single statistically-optimal squad picked from rider performance stats for this race.'],
-        ['DNS? badge','This rider isn\'t on the official confirmed startlist for this race yet — you can still pick them (they\'re a teammate of someone who is confirmed), but there\'s a real chance they don\'t actually start, in which case they\'ll score zero.'],
-      ]
-    },
-  ];
-
-  const html = `<div class="help-wrap">
-    <div class="help-note">This app tracks men\'s professional road cycling — UCI WorldTour and Pro Series races. Tap any rider\'s name to open their full profile.</div>
-    ${renderHowToPlay()}
-    ${renderRulesCard()}
-    ${sections.map(sec => `
-    <div class="help-section">
-      <div class="help-section-title">${esc(sec.title)}</div>
-      ${sec.rows.map(([term, def]) => `
-      <div class="help-row">
-        <div class="help-term">${esc(term)}</div>
-        <div class="help-def">${esc(def)}</div>
-      </div>`).join('')}
-    </div>`).join('')}
-  </div>`;
-
-  el.innerHTML = html;
-}
-
-</script>
-</body>
-</html>
+        ['TT Specialist', 'A rider who excels in time trials — aerodynamic, powe

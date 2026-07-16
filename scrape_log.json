@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-15 20:00 UTC",
-  "run_at_iso": "2026-07-15T18:00:42.808628+00:00",
+  "run_at": "2026-07-16 14:15 UTC",
+  "run_at_iso": "2026-07-16T12:15:38.225602+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -17,8 +17,8 @@
         "response_bytes": 316105,
         "matched_result_table": false,
         "stall_since": "2026-07-15 20:00 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.3,
         "possible_parser_drift": false
       }
     },
@@ -36,8 +36,8 @@
         "response_bytes": 233529,
         "matched_result_table": false,
         "stall_since": "2026-07-15 19:22 UTC",
-        "stall_attempts": 2,
-        "stall_hours": -1.4,
+        "stall_attempts": 3,
+        "stall_hours": 16.9,
         "possible_parser_drift": false
       }
     }

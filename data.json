@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-16T12:15:38.226342+00:00",
-  "scraped_at_human": "16 Jul 2026 12:15 UTC",
+  "scraped_at": "2026-07-16T15:41:31.654992+00:00",
+  "scraped_at_human": "16 Jul 2026 15:41 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13,7 +13,7 @@
       "end_date": "2026-07-26",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/tour-de-france-2026",
-      "stages_completed": 11,
+      "stages_completed": 12,
       "stages": [
         {
           "num": 1,
@@ -6021,10 +6021,101 @@
           "num": 12,
           "label": "Stage 12",
           "result_url": "/race/tour-de-france-2026/result/stage-12",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Tim Merlier",
+          "winner_flag": "🇧🇪",
+          "winner_nat": "BE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tim Merlier",
+              "rider_url": "/profile/tim-merlier",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 2,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 3,
+              "name": "Jasper Philipsen",
+              "rider_url": "/profile/jasper-philipsen",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 4,
+              "name": "Biniam Girmay Hailu",
+              "rider_url": "/profile/biniam-girmay-hailu",
+              "team": "",
+              "nat_code": "ER",
+              "flag": "🇪🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 5,
+              "name": "Milan Fretin",
+              "rider_url": "/profile/milan-fretin",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 6,
+              "name": "Anthony Turgis",
+              "rider_url": "/profile/anthony-turgis",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 7,
+              "name": "Max Kanter",
+              "rider_url": "/profile/max-kanter",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 8,
+              "name": "Clement Russo",
+              "rider_url": "/profile/clement-russo",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 9,
+              "name": "Mads Pedersen",
+              "rider_url": "/profile/mads-pedersen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 10,
+              "name": "Huub Artz",
+              "rider_url": "/profile/huub-artz",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:38:53"
+            }
+          ],
           "date_str": "Thursday 16 July",
           "start_town": "Circuit Nevers Magny-Cours",
           "finish_town": "Châlon-sur-Saône",
@@ -12164,9 +12255,9 @@
           ]
         }
       ],
-      "last_stage_winner": "Søren Wærenskjold",
-      "last_stage_winner_flag": "🇳🇴",
-      "last_stage_num": 11,
+      "last_stage_winner": "Tim Merlier",
+      "last_stage_winner_flag": "🇧🇪",
+      "last_stage_num": 12,
       "gc_leader": "🇸🇮 Tadej Pogačar",
       "gc_top10": [
         {
@@ -12176,7 +12267,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "39:25:08"
+          "time_gap": "43:04:01"
         },
         {
           "rank": 2,
@@ -12269,7 +12360,7 @@
           "team": "",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "317"
+          "time_gap": "357"
         },
         {
           "rank": 2,
@@ -12278,7 +12369,7 @@
           "team": "",
           "nat_code": "ER",
           "flag": "🇪🇷",
-          "time_gap": "272"
+          "time_gap": "317"
         },
         {
           "rank": 3,
@@ -12287,7 +12378,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "255"
+          "time_gap": "311"
         },
         {
           "rank": 4,
@@ -12296,7 +12387,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "223"
+          "time_gap": "307"
         },
         {
           "rank": 5,
@@ -12305,7 +12396,7 @@
           "team": "",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "203"
+          "time_gap": "239"
         },
         {
           "rank": 6,
@@ -12314,7 +12405,7 @@
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "160"
+          "time_gap": "210"
         },
         {
           "rank": 7,
@@ -12327,30 +12418,30 @@
         },
         {
           "rank": 8,
+          "name": "Anthony Turgis",
+          "rider_url": "/profile/anthony-turgis",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "129"
+        },
+        {
+          "rank": 9,
+          "name": "Milan Fretin",
+          "rider_url": "/profile/milan-fretin",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "117"
+        },
+        {
+          "rank": 10,
           "name": "Tadej Pogačar",
           "rider_url": "/profile/tadej-pogacar",
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
           "time_gap": "107"
-        },
-        {
-          "rank": 9,
-          "name": "Anthony Turgis",
-          "rider_url": "/profile/anthony-turgis",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "103"
-        },
-        {
-          "rank": 10,
-          "name": "Huub Artz",
-          "rider_url": "/profile/huub-artz",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "89"
         }
       ],
       "kom_leader": "🇸🇮 Tadej Pogačar",
@@ -12455,7 +12546,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "39:29:30"
+          "time_gap": "43:08:23"
         },
         {
           "rank": 2,
@@ -12513,15 +12604,6 @@
         },
         {
           "rank": 8,
-          "name": "Lennert Van Eetvelt",
-          "rider_url": "/profile/lennert-van-eetvelt",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 34:24"
-        },
-        {
-          "rank": 9,
           "name": "Mathias Vacek",
           "rider_url": "/profile/mathias-vacek",
           "team": "",
@@ -12530,13 +12612,22 @@
           "time_gap": "+ 48:57"
         },
         {
-          "rank": 10,
-          "name": "Alex Baudin",
-          "rider_url": "/profile/alex-baudin",
+          "rank": 9,
+          "name": "Quinn Simmons",
+          "rider_url": "/profile/quinn-simmons",
           "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 01:01:24"
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:04:49"
+        },
+        {
+          "rank": 10,
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:09:10"
         }
       ]
     },
@@ -109960,6 +110051,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "16-07-2026",
+          "race": "Tour de France - Stage 12",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "11-07-2026",
           "race": "Tour de France - Stage 8",
           "cat": "2.UWT"
@@ -110529,7 +110626,7 @@
           "cat": "U19"
         }
       ],
-      "wins_refreshed_at": "2026-07-11T15:51:35.792086+00:00"
+      "wins_refreshed_at": "2026-07-16T15:41:31.654895+00:00"
     },
     "alexander-salby": {
       "slug": "alexander-salby",

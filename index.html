@@ -27,7 +27,26 @@
   --gold:     #ffd700;
   --silver:   #c0c0c0;
   --bronze:   #cd7f32;
+  --rider-name: #FFE66D;
   --nav-h:    58px;
+}
+
+/* ── Light (ProCyclingStats-style) theme — toggled via [data-theme=light] ── */
+:root[data-theme="light"] {
+  --bg:       #ffffff;
+  --surface:  #f2f4f7;
+  --surface2: #e7eaf0;
+  --border:   #d3d8e0;
+  --live:     #d1232a;
+  --upcoming: #2b59c3;
+  --recent:   #2d6a4f;
+  --text:     #1a1c22;
+  --muted:    #667085;
+  --accent:   #1b6ec2;
+  --gold:     #c9a227;
+  --silver:   #8a8a8a;
+  --bronze:   #a06a2c;
+  --rider-name: #17407a;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -94,6 +113,18 @@ header h1 span { color: var(--accent); }
   transition: color .2s;
 }
 .refresh-btn:hover { color: var(--text); }
+
+/* ── Theme toggle slider ── */
+.theme-toggle { position:relative; width:50px; height:28px; border-radius:16px;
+  border:1px solid var(--border); background:var(--surface2); cursor:pointer;
+  flex-shrink:0; padding:0; }
+.theme-toggle .ic { position:absolute; top:50%; transform:translateY(-50%);
+  font-size:.72rem; line-height:1; opacity:.55; }
+.theme-toggle .ic.moon { left:6px; }
+.theme-toggle .ic.sun  { right:6px; }
+.theme-toggle .knob { position:absolute; top:2px; left:2px; width:22px; height:22px;
+  border-radius:50%; background:var(--accent); transition:left .2s ease; }
+:root[data-theme="light"] .theme-toggle .knob { left:26px; }
 
 .header-sub { font-size: .78rem; color: var(--muted); position: relative; }
 
@@ -687,10 +718,13 @@ header h1 span { color: var(--accent); }
 .spec-score { font-size: .72rem; color: var(--text); width: 44px; text-align: right; flex-shrink: 0; }
 .rider-name-link {
   cursor: pointer;
+  color: var(--rider-name);
   text-decoration: underline;
-  text-decoration-color: rgba(255,255,255,.25);
+  text-decoration-color: rgba(128,128,128,.35);
   text-underline-offset: 2px;
 }
+/* All rider names share one themeable colour (dark: #FFE66D) */
+.rankings-name, .following-card-name, .classif-leader-name, .startlist-rider { color: var(--rider-name); }
 /* ── Rider modal tabs ── */
 .rider-tabs { display: flex; gap: 4px; margin: 14px 0 0; border-bottom: 1px solid var(--border); }
 .rider-tab {
@@ -957,8 +991,8 @@ header h1 span { color: var(--accent); }
 #sec-stats .stats-cat-btn { background:var(--surface); color:var(--text); border-color:var(--border); }
 #sec-stats .stats-cat-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 #sec-stats .stat-tbl td .stat-name { display:inline-flex; align-items:center; gap:6px; }
-#sec-stats .stat-tbl td .stat-name > span { color:var(--text); }
-#sec-stats .stat-tbl a { color:var(--accent); text-decoration:none; }
+#sec-stats .stat-tbl td .stat-name > span { color:var(--rider-name); }
+#sec-stats .stat-tbl a { color:var(--rider-name); text-decoration:none; }
 #sec-stats .stat-tbl a:hover { text-decoration:underline; }
 #sec-stats .stat-tbl tbody tr:hover { background:var(--surface); }
 
@@ -991,6 +1025,7 @@ header h1 span { color: var(--accent); }
 .help-note{font-size:.75rem;color:var(--muted);background:var(--surface);border-left:3px solid var(--accent);padding:8px 10px;border-radius:0 6px 6px 0;margin:8px 0 4px;line-height:1.5}
 
 </style>
+<script>(function(){try{if(localStorage.getItem('app-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
 </head>
 <body>
 
@@ -1016,6 +1051,7 @@ header h1 span { color: var(--accent); }
     <h1>🚴 Men's <span>UCI Road Calendar</span></h1>
     <div class="header-actions">
       <button id="install-btn" onclick="installPWA()">⬇ Install</button>
+      <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Switch light / dark theme" aria-label="Toggle light or dark theme"><span class="ic moon">🌙</span><span class="ic sun">☀️</span><span class="knob"></span></button>
       <button id="notif-btn" onclick="toggleNotifications()" title="Enable push notifications" style="width:32px;height:32px;border-radius:50%;background:var(--surface2);border:1px solid var(--border);color:var(--muted);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center">🔔</button>
       <button class="refresh-btn" onclick="refreshData()" title="Refresh">↻</button>
     </div>
@@ -2472,7 +2508,7 @@ function renderPalmaresBody() {
         if (!p || !p.name) return '<td style="color:var(--muted)">—</td>';
         const flagHtml = flag(p.nat || natFor(p.slug));
         const link = p.slug
-          ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:var(--accent);text-decoration:underline">${esc(p.name)}</a>`
+          ? `<a href="#" onclick="openRiderModal('${esc(p.slug)}');return false;" style="color:var(--rider-name);text-decoration:underline">${esc(p.name)}</a>`
           : esc(p.name);
         return `<td><span style="display:flex;align-items:center;gap:6px">${flagHtml}${link}</span></td>`;
       }).join('');
@@ -2575,7 +2611,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v104';
+const APP_VERSION = 'v105';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -2590,6 +2626,14 @@ if ('serviceWorker' in navigator) {
 }
 
 loadData();
+
+// ── Theme (dark / light) ──────────────────────────────────────────────────────
+function toggleTheme(){
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (isLight) document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme','light');
+  try { localStorage.setItem('app-theme', isLight ? 'dark' : 'light'); } catch(e){}
+}
 
 // ── Push notifications ────────────────────────────────────────────────────────
 const VAPID_PUBLIC_KEY = 'BMyUGD_KhZarQnuibm7NqUMCiCk_aoYU5-aQNEhnmXwAguGIbRLzD2LcMBAwqzCTJKG3UNRWNjrHn_IPGKvAtWE';

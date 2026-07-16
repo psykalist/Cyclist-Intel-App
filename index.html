@@ -1885,19 +1885,15 @@ function renderAutoTeamPanel(bt, raceKey, myTotal) {
   const autoScore = computePoints(team.riders.map(r => r.name), icTeam ? icTeam.created_at : null, raceKey).total;
   const diff = myTotal - autoScore;
   let comparison = '';
-  if (_complete && (myTotal > 0 || autoScore > 0)) {
+  if (myTotal > 0 || autoScore > 0) {
     if (diff > 0)      comparison = `<span style="color:var(--live);font-weight:700">You lead by ${diff} pts 🏆</span>`;
     else if (diff < 0) comparison = `<span style="color:#ef4444;font-weight:700">Team Claudius leads by ${Math.abs(diff)} pts</span>`;
     else               comparison = `<span style="color:var(--muted);font-weight:700">Level — ${myTotal} pts each</span>`;
-  } else if (!_complete) {
-    comparison = `<span style="color:var(--muted);font-style:italic">🔒 Locked until the race finishes</span>`;
   }
 
   // Competitor rosters stay hidden — only Team Claudius's total score/comparison is shown.
 
-  const summaryLine = _complete
-    ? `<span style="font-weight:700;color:var(--text)">${autoScore} pts · ${team.total_cost}cr</span>`
-    : `<span style="font-weight:700;color:var(--muted)">🔒 · ${team.total_cost}cr</span>`;
+  const summaryLine = `<span style="font-weight:700;color:var(--text)">${autoScore} pts · ${team.total_cost}cr</span>`;
 
   return `<div id="auto-team-panel" style="max-width:480px;margin:0 auto 24px;background:var(--surface);border-radius:12px;overflow:hidden;border:1px solid #7c3aed55">
     <div style="padding:14px 16px;border-bottom:1px solid var(--border)">
@@ -2604,7 +2600,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v107';
+const APP_VERSION = 'v108';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4331,14 +4327,14 @@ function renderLeagueTable(teams,complete){
   // Team Claudius roster) from turning into a copy-the-leader strategy
   // guide. Once the race is fully over (raceIsComplete()), everything
   // reveals at once.
-  const lockBanner=complete?'':'<div style="padding:9px 14px;font-size:.76rem;color:var(--muted);background:rgba(255,255,255,.04);border-bottom:1px solid var(--border)">🔒 Other teams\' scores are hidden until this race finishes — yours stays visible below.</div>';
+  const lockBanner='';
   return '<div style="margin-bottom:16px">'
     +'<div class="group-header">🏆 League Table</div>'
     +'<div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden">'
       +lockBanner
       +teams.map((t,i)=>{
         const isIC=t.isIClaudius;
-        const reveal=complete||t.isMine;
+        const reveal=true;
         const gap=!reveal?'':(i===0
           ?'<span style="font-size:.7rem;font-weight:700;color:var(--upcoming);letter-spacing:.5px">LEADER</span>'
           :'<span style="font-size:.78rem;color:var(--live);font-weight:600">−'+(leaderPts-t.points)+' pts</span>');

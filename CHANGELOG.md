@@ -7,6 +7,17 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v111 — 2026-07-18 — Cancelled stages no longer hide later results; self-correcting stage dates; health check
+Reported symptom: Tour of Magnificent Qinghai showed missing recent results and looked finished while still in Live.
+
+Root causes found and fixed:
+- **Cancelled stage blocked the pipeline (scraper.py).** The stage loop treated a stage with no result table as "not yet run" and `break`-ed. Qinghai stage 6 was **cancelled (weather)**, so the scraper stopped there and never saw stage 7 (which did run). Fix: detect cancellation ("no result available" / "cancelled"), mark the stage cancelled, count it as decided, and keep probing later stages. Cancelled stages now count toward `stages_completed` so a finished race can retire from Live.
+- **Wrong/stale stage dates (scraper.py).** Qinghai stages were cached as 5–12 July (an earlier, pre-reschedule schedule) vs the real 11–18 July, making the race look over with a day left. Added `_derive_stage_dates()` — for one-stage-per-day races it re-derives each stage's date from `start_date`, self-correcting stale dates. Grand tours / rest-day races (window length ≠ stage count, e.g. the Tour) are left untouched. Verified: Qinghai now 11–18 Jul, TdF unchanged.
+- **Health check (health-check.yml + scrape_log).** Added an `overdue` signal: if a missing stage's own calendar date has already passed and it isn't cancelled, it's flagged distinctly ("OVERDUE results…") instead of silently stalling or being mislabeled as parser drift. `scrape_log.json` now also records `cancelled_stages` and `has_overdue_stages`.
+- **App (index.html).** Cancelled stages render a "✖ Cancelled" label instead of a blank/"Result unavailable" row.
+
+Note: a stale `data.json` I committed during the v109 rebase (16 Jul vs CI's 17 Jul) self-heals on CI's next scrape, which — with the cancelled-stage fix — will also finally pick up Qinghai stage 7.
+
 ## v110 — 2026-07-17 — Rebrand to Cyclist Intel App (CIA) + emblem
 - Renamed the app from "Men's UCI Road Calendar" to **Cyclist Intel App** across the on-screen header, `<title>`, apple/PWA app title, and `manifest.json` (`name` + `short_name`).
 - Added an original inline-SVG emblem after the header name — a circular "agency seal" (compass-star + spoked bike wheel) themed via `--accent`/`--surface2`, so it adapts to light/dark. It scales with the header font (`1.5em`).

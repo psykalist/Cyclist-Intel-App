@@ -20,7 +20,7 @@ import sys
 import time
 import os
 import urllib.parse
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timezone, timedelta
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
@@ -1050,6 +1050,50 @@ def refresh_winner_wins(rider_profiles, winner_slugs):
         print(f"    {slug}: {len(wins)} wins", flush=True)
 
 
+def _one_stage_per_day(race):
+    """Return (start_date, end_date) as dates iff the race runs exactly one
+    stage per calendar day (window length == stage count). Grand tours and any
+    race with rest days fail this and are left untouched by date derivation."""
+    sd, ed = race.get("start_date"), race.get("end_date")
+    total  = race.get("total_stages") or len(race.get("stages") or [])
+    if not (sd and ed and total):
+        return None
+    try:
+        d0 = datetime.strptime(sd[:10], "%Y-%m-%d").date()
+        d1 = datetime.strptime(ed[:10], "%Y-%m-%d").date()
+    except Exception:
+        return None
+    if (d1 - d0).days + 1 != total:
+        return None
+    return d0, d1
+
+
+def _stage_expected_date(race, n):
+    """Calendar date stage n should be run, when the race is one-stage-per-day.
+    Used to tell 'stage hasn't happened yet' from 'stage is overdue and its
+    result is silently missing'. Returns None for GTs / rest-day races."""
+    win = _one_stage_per_day(race)
+    if not win:
+        return None
+    return win[0] + timedelta(days=n - 1)
+
+
+def _derive_stage_dates(race):
+    """(Re)derive each stage's date_str from start_date for one-stage-per-day
+    races, so stale/mis-scraped dates self-correct — e.g. a race that was
+    rescheduled after its stage detail pages were first cached (this bit the
+    Tour of Magnificent Qinghai: stages cached as 5-12 Jul when the race
+    actually ran 11-18 Jul). Idempotent; skips GTs / rest-day races."""
+    win = _one_stage_per_day(race)
+    if not win:
+        return
+    d0 = win[0]
+    for s in (race.get("stages") or []):
+        n = s.get("num")
+        if n:
+            s["date_str"] = (d0 + timedelta(days=n - 1)).strftime("%A %d %B")
+
+
 def main_results_only():
     """
     Lightweight daily update: load cache, fix status buckets, fetch only
@@ -1129,23 +1173,58 @@ def main_results_only():
 
         # Find which stages are done (use cache first, probe for new ones)
         completed_nums = []
-        probe = None   # outcome for the first stage we couldn't satisfy from cache
+        cancelled_nums = set()
+        probe = None   # outcome for the first genuine gap we couldn't satisfy
         for n in range(1, total + 1):
             cached = next((s for s in stages if s.get("num") == n), None)
             if cached and cached.get("top10"):
+                completed_nums.append(n)
+                continue
+            if cached and cached.get("cancelled"):
+                # already known cancelled -> decided, no result; keep scanning
+                cancelled_nums.add(n)
                 completed_nums.append(n)
                 continue
             url = f"{BASE_URL}/race/{slug}/result/stage-{n}"
             html = fetch(url)
             time.sleep(DELAY)
             matched = bool(html and re.search(r'<td[^>]*>\s*1\s*</td>', html))
+            cancelled = bool(html and re.search(
+                r'stage was cancelled|no result available|>\s*cancell?ed\s*<',
+                html, re.IGNORECASE))
+            if matched:
+                completed_nums.append(n)
+                continue
+            if cancelled:
+                # Stage decided but with NO result table (e.g. cancelled for
+                # weather). Mark it, count it as done, and -- crucially -- keep
+                # probing later stages instead of stopping. A cancelled mid-race
+                # stage used to look identical to "not yet run", so the loop
+                # broke here and hid every subsequent completed stage (this is
+                # exactly what buried Qinghai stage 7 behind cancelled stage 6).
+                if cached is None:
+                    cached = {"num": n, "label": f"Stage {n}",
+                              "result_url": f"/race/{slug}/result/stage-{n}",
+                              "winner": None, "winner_flag": "", "winner_nat": "",
+                              "top10": []}
+                    stages.append(cached)
+                cached["cancelled"] = True
+                cancelled_nums.add(n)
+                completed_nums.append(n)
+                print(f"      Stage {n}: cancelled (no result)", flush=True)
+                continue
+            # Genuine no-result page: the stage hasn't run yet, OR the scraper is
+            # blind to a results table that should be there.
             if probe is None:
+                expected = _stage_expected_date(race, n)
+                overdue  = bool(expected and expected < datetime.now(timezone.utc).date())
                 probe = {
                     "stage_num": n,
                     "url": url,
                     "fetch_ok": html is not None,
                     "response_bytes": len(html) if html else 0,
                     "matched_result_table": matched,
+                    "overdue": overdue,
                 }
                 if not matched and html is not None:
                     # Page fetched fine but we found no results table --
@@ -1170,23 +1249,17 @@ def main_results_only():
                     probe["stall_since"]    = stall_since
                     probe["stall_attempts"] = stall_attempts
                     probe["stall_hours"]    = round(stall_hours, 1)
-                    # 2026-07-10: the old 2-attempts/10h threshold false-positived on
-                    # every single stage of the Tour -- scrape.yml only runs at 11am/5pm
-                    # UTC, and stages finish at roughly the same time of day as the
-                    # previous one, so the very next scrape after a stage finishes is
-                    # routinely 16-20h into "stalled" on tomorrow's not-yet-run stage.
-                    # A rest day pushes that gap to ~42-48h between real finishes. Stay
-                    # well above that (5 attempts, 48h) so this only fires once the
-                    # scraper has kept missing a page for the better part of two days
-                    # *after* accounting for the longest normal gap -- genuine parser
-                    # drift, not "the race just hasn't happened yet". The blunter
-                    # data_age_hours staleness check (health-check.yml) still catches a
-                    # scraper that's totally stopped working, on a much shorter fuse.
-                    probe["possible_parser_drift"] = stall_attempts >= 5 and stall_hours >= 48
-            if matched:
-                completed_nums.append(n)
-            elif completed_nums:
-                break  # gap = not yet run
+                    # possible_parser_drift: kept missing a page for the better
+                    # part of two days (5 attempts / 48h) beyond the longest
+                    # normal gap between finishes -- genuine drift, not "the race
+                    # just hasn't happened yet". `overdue` is a stronger, faster
+                    # signal: the stage's own calendar date has already passed
+                    # yet its result is still missing (and it isn't cancelled) --
+                    # exactly the class of silent miss the health-check must catch.
+                    probe["possible_parser_drift"] = (
+                        (stall_attempts >= 5 and stall_hours >= 48) or overdue)
+            if completed_nums:
+                break  # gap = not yet run (and not cancelled)
 
         stages_completed_after = len(completed_nums)
         scrape_log_races.append({
@@ -1196,6 +1269,7 @@ def main_results_only():
             "stages_completed_before": stages_completed_before,
             "stages_completed_after": stages_completed_after,
             "new_stages_found": stages_completed_after - stages_completed_before,
+            "cancelled_stages": sorted(cancelled_nums),
             "probe": probe,
         })
 
@@ -1231,9 +1305,14 @@ def main_results_only():
                 print(f"      Stage {n}: no result yet", flush=True)
 
         race["stages"] = sorted(stages, key=lambda s: s.get("num", 0))
-        done = [s for s in race["stages"] if s.get("winner")]
-        if done:
-            last = done[-1]
+        _derive_stage_dates(race)   # self-correct stale/rescheduled stage dates
+        won      = [s for s in race["stages"] if s.get("winner")]
+        # A cancelled stage is "decided" (it just has no result), so it counts
+        # toward completion -- otherwise a weather-cancelled stage would keep a
+        # finished race pinned in the Live section forever.
+        decided  = [s for s in race["stages"] if s.get("winner") or s.get("cancelled")]
+        if won:
+            last = won[-1]
             race["last_stage_winner"]      = last["winner"]
             race["last_stage_winner_flag"] = last.get("winner_flag", "")
             race["last_stage_num"]         = last["num"]
@@ -1243,7 +1322,8 @@ def main_results_only():
             # stale. index.html's renderProgramme() falls back to s.winner
             # per-stage so this wasn't visibly broken, but let's not rely on
             # every reader having that same fallback.
-            race["stages_completed"] = len(done)
+        if decided:
+            race["stages_completed"] = len(decided)
 
         # Update classifications after latest completed stage
         if completed_nums:
@@ -1273,6 +1353,12 @@ def main_results_only():
         r for r in scrape_log_races
         if r["probe"] and r["probe"].get("possible_parser_drift")
     ]
+    # Overdue = the first missing stage's calendar date has already passed but
+    # it has no result and isn't cancelled -> results are silently missing.
+    overdue_races = [
+        r for r in scrape_log_races
+        if r["probe"] and r["probe"].get("overdue")
+    ]
     scrape_log = {
         "run_at":     now_human,
         "run_at_iso": datetime.now(timezone.utc).isoformat(),
@@ -1280,6 +1366,7 @@ def main_results_only():
         "races":      scrape_log_races,
         "has_fetch_errors":         bool(fetch_errors),
         "has_possible_parser_drift": bool(parser_drift),
+        "has_overdue_stages":       bool(overdue_races),
     }
     try:
         with open("scrape_log.json", "w", encoding="utf-8") as f:

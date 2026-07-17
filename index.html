@@ -354,6 +354,8 @@ header h1 span { color: var(--accent); }
 .stage-num { font-size: .78rem; font-weight: 700; color: var(--muted); min-width: 58px; }
 .stage-winner-name { font-size: .92rem; flex: 1; }
 .stage-no-data { font-size: .82rem; color: var(--muted); flex: 1; font-style: italic; }
+.stage-cancelled { font-size: .82rem; color: var(--muted); flex: 1; font-weight: 700; }
+.stage-cancelled::before { content: '✖ '; }
 .ttt-badge { font-size: .65rem; font-weight: 700; letter-spacing: .6px; background: rgba(76,201,240,.18); color: #4cc9f0; border: 1px solid rgba(76,201,240,.35); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
 
 .stage-chevron {
@@ -1454,6 +1456,8 @@ function renderStages(stages, cardId) {
         ? `<span class="rider-name-link" onclick="event.stopPropagation();openRiderModal('${esc(winSlug)}')">${esc(s.winner||'')}</span>`
         : esc(s.winner||'');
       winnerEl = `<span class="stage-winner-name">${prefix}${wName}</span>`;
+    } else if (s.cancelled) {
+      winnerEl = `<span class="stage-cancelled">Cancelled</span>`;
     } else if (laterHasData) {
       winnerEl = `<span class="stage-no-data">Result unavailable</span>`;
     }
@@ -2621,7 +2625,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v110';
+const APP_VERSION = 'v111';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

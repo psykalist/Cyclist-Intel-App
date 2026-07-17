@@ -294,15 +294,32 @@ jobs:
                                        if r.get("probe") and not r["probe"].get("fetch_ok")]
                   drift_races      = [r["slug"] for r in races
                                        if r.get("probe") and r["probe"].get("possible_parser_drift")]
+                  # Overdue = a stage whose own calendar date has already passed
+                  # but has no result and isn't cancelled. This is the class of
+                  # bug that let a weather-cancelled Qinghai stage silently hide
+                  # every later completed stage -- flag it distinctly and fast.
+                  overdue_races    = [r["slug"] for r in races
+                                       if r.get("probe") and r["probe"].get("overdue")]
                   if fetch_err_races:
                       warnings.append(
                           f"scrape_log.json: could not fetch next-stage probe for {fetch_err_races} "
                           f"-- network/HTTP issue, not necessarily a bug"
                       )
+                  for r in races:
+                      p = r.get("probe") or {}
+                      if p.get("overdue"):
+                          errors.append(
+                              f"scrape_log.json: OVERDUE results on {r['slug']} stage "
+                              f"{p['stage_num']} -- that stage's date has already passed but no "
+                              f"result is published and it isn't cancelled ({p.get('response_bytes',0)} "
+                              f"bytes fetched). Source is lagging OR the scraper is blind to a "
+                              f"results table / a cancelled stage is hiding later ones."
+                          )
                   if drift_races:
                       for r in races:
-                          if r["slug"] in drift_races:
-                              p = r["probe"]
+                          p = r.get("probe") or {}
+                          # overdue already reported above with a clearer message
+                          if r["slug"] in drift_races and not p.get("overdue"):
                               errors.append(
                                   f"scrape_log.json: possible PARSER DRIFT on {r['slug']} stage "
                                   f"{p['stage_num']} -- page fetched fine ({p.get('response_bytes',0)} "

@@ -82,9 +82,9 @@ header {
   justify-content: space-between;
 }
 
-header h1 { font-size: 1.1rem; font-weight: 800; display: inline-flex; align-items: center; gap: .45rem; }
+header h1 { font-size: 1.1rem; font-weight: 800; }
 header h1 span { color: var(--accent); }
-.cia-logo { width: 1.5em; height: 1.5em; flex: none; }
+.cia-logo { width: 1.5em; height: 1.5em; margin-left: .4rem; vertical-align: middle; }
 
 .header-actions { display: flex; align-items: center; gap: 8px; }
 
@@ -1051,7 +1051,7 @@ header h1 span { color: var(--accent); }
 
 <header>
   <div class="header-top">
-    <h1>Cyclist <span>Intel App</span><svg class="cia-logo" viewBox="0 0 64 64" role="img" aria-label="Cyclist Intel App emblem"><circle cx="32" cy="32" r="30" fill="var(--surface2)" stroke="var(--accent)" stroke-width="3"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.55"/><path d="M32 9 L36 28 L55 32 L36 36 L32 55 L28 36 L9 32 L28 28 Z" fill="var(--accent)"/><circle cx="32" cy="32" r="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="2.5"/><g stroke="var(--accent)" stroke-width="1.2"><line x1="32" y1="24" x2="32" y2="40"/><line x1="24" y1="32" x2="40" y2="32"/><line x1="26.3" y1="26.3" x2="37.7" y2="37.7"/><line x1="37.7" y1="26.3" x2="26.3" y2="37.7"/></g><circle cx="32" cy="32" r="2.5" fill="var(--accent)"/></svg></h1>
+    <h1><span>C</span>yclist <span>I</span>ntel <span>A</span>pp<svg class="cia-logo" viewBox="0 0 64 64" role="img" aria-label="Cyclist Intel App emblem"><circle cx="32" cy="32" r="30" fill="var(--surface2)" stroke="var(--accent)" stroke-width="3"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.55"/><path d="M32 9 L36 28 L55 32 L36 36 L32 55 L28 36 L9 32 L28 28 Z" fill="var(--accent)"/><circle cx="32" cy="32" r="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="2.5"/><g stroke="var(--accent)" stroke-width="1.2"><line x1="32" y1="24" x2="32" y2="40"/><line x1="24" y1="32" x2="40" y2="32"/><line x1="26.3" y1="26.3" x2="37.7" y2="37.7"/><line x1="37.7" y1="26.3" x2="26.3" y2="37.7"/></g><circle cx="32" cy="32" r="2.5" fill="var(--accent)"/></svg></h1>
     <div class="header-actions">
       <button id="install-btn" onclick="installPWA()">⬇ Install</button>
       <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Switch light / dark theme" aria-label="Toggle light or dark theme"><span class="ic moon">🌙</span><span class="ic sun">☀️</span><span class="knob"></span></button>

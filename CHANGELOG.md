@@ -11,6 +11,8 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 - Renamed the app from "Men's UCI Road Calendar" to **Cyclist Intel App** across the on-screen header, `<title>`, apple/PWA app title, and `manifest.json` (`name` + `short_name`).
 - Added an original inline-SVG emblem after the header name — a circular "agency seal" (compass-star + spoked bike wheel) themed via `--accent`/`--surface2`, so it adapts to light/dark. It scales with the header font (`1.5em`).
 - Note: this is an **original** emblem in the intelligence-agency-seal *style*; it is deliberately NOT the actual US CIA seal (official government insignia — can't reproduce / would imply false affiliation).
+- Header name now renders every word in the same base text colour, with only the **first letter of each word accented** — C, I, A — so the initials read out as CIA.
+- Replaced the UCI rainbow-jersey app icon with a clean **CIA-in-a-circle** icon (orange disc, dark letters, subtle inner ring) — regenerated `favicon.png` (32), `icon-192.png`, and `icon-512.png`.
 
 ## 2026-07-17 — Tooling (no app version) — Git workflow overhaul (fixes the recurring FUSE / lock / corruption failures)
 - **Root cause 1 — FUSE mechanics:** the sandbox reaches `D:\` via a FUSE mount that can't unlink/rename `.git/` files, so any git write in the sandbox left stale `index.lock`/`HEAD.lock` and couldn't finish. The old Python plumbing-commit workaround was worse — it framed git objects with a trailing space instead of a NUL byte and produced corrupt commits.

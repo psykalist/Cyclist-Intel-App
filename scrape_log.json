@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-17 14:03 UTC",
-  "run_at_iso": "2026-07-17T12:03:26.589776+00:00",
+  "run_at": "2026-07-17 19:44 UTC",
+  "run_at_iso": "2026-07-17T17:44:53.223900+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,18 +8,14 @@
       "name": "Tour de France",
       "total_stages": 21,
       "stages_completed_before": 12,
-      "stages_completed_after": 12,
-      "new_stages_found": 0,
+      "stages_completed_after": 13,
+      "new_stages_found": 1,
       "probe": {
         "stage_num": 13,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-13",
         "fetch_ok": true,
-        "response_bytes": 322776,
-        "matched_result_table": false,
-        "stall_since": "2026-07-16 19:58 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.1,
-        "possible_parser_drift": false
+        "response_bytes": 756901,
+        "matched_result_table": true
       }
     },
     {
@@ -36,8 +32,8 @@
         "response_bytes": 233971,
         "matched_result_table": false,
         "stall_since": "2026-07-15 19:22 UTC",
-        "stall_attempts": 6,
-        "stall_hours": 40.7,
+        "stall_attempts": 7,
+        "stall_hours": 46.4,
         "possible_parser_drift": false
       }
     }

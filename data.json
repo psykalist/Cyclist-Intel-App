@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-16T12:15:38.226342+00:00",
-  "scraped_at_human": "16 Jul 2026 12:15 UTC",
+  "scraped_at": "2026-07-17T22:21:13.205438+00:00",
+  "scraped_at_human": "17 Jul 2026 22:21 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13,7 +13,7 @@
       "end_date": "2026-07-26",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/tour-de-france-2026",
-      "stages_completed": 11,
+      "stages_completed": 21,
       "stages": [
         {
           "num": 1,
@@ -6021,10 +6021,101 @@
           "num": 12,
           "label": "Stage 12",
           "result_url": "/race/tour-de-france-2026/result/stage-12",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Tim Merlier",
+          "winner_flag": "🇧🇪",
+          "winner_nat": "BE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tim Merlier",
+              "rider_url": "/profile/tim-merlier",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 2,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 3,
+              "name": "Jasper Philipsen",
+              "rider_url": "/profile/jasper-philipsen",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 4,
+              "name": "Biniam Girmay Hailu",
+              "rider_url": "/profile/biniam-girmay-hailu",
+              "team": "",
+              "nat_code": "ER",
+              "flag": "🇪🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 5,
+              "name": "Milan Fretin",
+              "rider_url": "/profile/milan-fretin",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 6,
+              "name": "Anthony Turgis",
+              "rider_url": "/profile/anthony-turgis",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 7,
+              "name": "Max Kanter",
+              "rider_url": "/profile/max-kanter",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 8,
+              "name": "Clement Russo",
+              "rider_url": "/profile/clement-russo",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 9,
+              "name": "Mads Pedersen",
+              "rider_url": "/profile/mads-pedersen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "03:38:53"
+            },
+            {
+              "rank": 10,
+              "name": "Huub Artz",
+              "rider_url": "/profile/huub-artz",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:38:53"
+            }
+          ],
           "date_str": "Thursday 16 July",
           "start_town": "Circuit Nevers Magny-Cours",
           "finish_town": "Châlon-sur-Saône",
@@ -6566,10 +6657,101 @@
           "num": 13,
           "label": "Stage 13",
           "result_url": "/race/tour-de-france-2026/result/stage-13",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Mauro Schmid",
+          "winner_flag": "🇨🇭",
+          "winner_nat": "CH",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Mauro Schmid",
+              "rider_url": "/profile/mauro-schmid",
+              "team": "",
+              "nat_code": "CH",
+              "flag": "🇨🇭",
+              "time_gap": "04:06:58"
+            },
+            {
+              "rank": 2,
+              "name": "Harold Alfonso Tejada Canacue",
+              "rider_url": "/profile/harold-alfonso-tejada-canacue",
+              "team": "",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "04:06:58"
+            },
+            {
+              "rank": 3,
+              "name": "Tom Pidcock",
+              "rider_url": "/profile/tom-pidcock",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 4,
+              "name": "Maxim Van Gils",
+              "rider_url": "/profile/maxim-van-gils",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 5,
+              "name": "Brandon McNulty",
+              "rider_url": "/profile/brandon-mcnulty",
+              "team": "",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 6,
+              "name": "Kévin Vauquelin",
+              "rider_url": "/profile/kevin-vauquelin",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 7,
+              "name": "Jordan Jegat",
+              "rider_url": "/profile/jordan-jegat",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 8,
+              "name": "Clément Braz Afonso",
+              "rider_url": "/profile/clement-braz-afonso",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 9,
+              "name": "Tim Wellens",
+              "rider_url": "/profile/tim-wellens",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 10,
+              "name": "Luke Plapp",
+              "rider_url": "/profile/luke-plapp",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "+ 11"
+            }
+          ],
           "date_str": "Friday 17 July",
           "start_town": "Dole",
           "finish_town": "Belfort",
@@ -8012,7 +8194,8 @@
               "peloton_time": "17:24",
               "director_time": "17:38"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 15,
@@ -8843,7 +9026,8 @@
               "peloton_time": "17:41",
               "director_time": "17:55"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 16,
@@ -9030,7 +9214,8 @@
               "peloton_time": "13:35",
               "director_time": "17:50"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 17,
@@ -9787,7 +9972,8 @@
               "peloton_time": "17:18",
               "director_time": "17:28"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 18,
@@ -10612,7 +10798,8 @@
               "peloton_time": "17:12",
               "director_time": "17:25"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 19,
@@ -11125,7 +11312,8 @@
               "peloton_time": "17:24",
               "director_time": "17:34"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 20,
@@ -11746,7 +11934,8 @@
               "peloton_time": "16:11",
               "director_time": "16:29"
             }
-          ]
+          ],
+          "cancelled": true
         },
         {
           "num": 21,
@@ -12161,12 +12350,13 @@
               "peloton_time": "19:30",
               "director_time": "19:40"
             }
-          ]
+          ],
+          "cancelled": true
         }
       ],
-      "last_stage_winner": "Søren Wærenskjold",
-      "last_stage_winner_flag": "🇳🇴",
-      "last_stage_num": 11,
+      "last_stage_winner": "Mauro Schmid",
+      "last_stage_winner_flag": "🇨🇭",
+      "last_stage_num": 13,
       "gc_leader": "🇸🇮 Tadej Pogačar",
       "gc_top10": [
         {
@@ -12551,7 +12741,7 @@
       "end_date": "2026-07-18",
       "total_stages": 8,
       "official_url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026",
-      "stages_completed": 5,
+      "stages_completed": 8,
       "stages": [
         {
           "num": 1,
@@ -12652,7 +12842,7 @@
               "time_gap": "02:27:53"
             }
           ],
-          "date_str": "Sunday 05 July",
+          "date_str": "Saturday 11 July",
           "start_town": "Xining",
           "finish_town": "Xining",
           "distance_km": 121.0,
@@ -12697,7 +12887,7 @@
               "time_gap": ""
             }
           ],
-          "date_str": "Monday 06 July",
+          "date_str": "Sunday 12 July",
           "start_town": "Huangyuan",
           "finish_town": "Menyuan",
           "distance_km": 225.0,
@@ -12805,7 +12995,7 @@
               "time_gap": "03:33:08"
             }
           ],
-          "date_str": "Tuesday 07 July",
+          "date_str": "Monday 13 July",
           "start_town": "Menyuan",
           "finish_town": "Huzhu",
           "distance_km": 168.0,
@@ -12913,7 +13103,7 @@
               "time_gap": "+ 18"
             }
           ],
-          "date_str": "Wednesday 08 July",
+          "date_str": "Tuesday 14 July",
           "start_town": "Huzhu",
           "finish_town": "Guide",
           "distance_km": 196.0,
@@ -13021,7 +13211,7 @@
               "time_gap": "+ 01:19"
             }
           ],
-          "date_str": "Thursday 09 July",
+          "date_str": "Wednesday 15 July",
           "start_town": "Guide",
           "finish_town": "Gonghe",
           "distance_km": 136.0,
@@ -13038,24 +13228,116 @@
           "winner_flag": "",
           "winner_nat": "",
           "top10": [],
-          "date_str": "Friday 10 July",
+          "date_str": "Thursday 16 July",
           "start_town": "Gonghe",
           "finish_town": "Gangcha",
           "distance_km": 233.0,
           "elevation_m": 1382,
           "start_time": "",
           "stage_type": "hilly",
-          "description": ""
+          "description": "",
+          "cancelled": true
         },
         {
           "num": 7,
           "label": "Stage 7",
           "result_url": "/race/tour-of-magnificent-qinghai-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 11 July",
+          "winner": "Cesar Macias Estrada",
+          "winner_flag": "🇲🇽",
+          "winner_nat": "MX",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Cesar Macias Estrada",
+              "rider_url": "/profile/cesar-macias-estrada",
+              "team": "",
+              "nat_code": "MX",
+              "flag": "🇲🇽",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 2,
+              "name": "Tommaso Nencini",
+              "rider_url": "/profile/tommaso-nencini",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 3,
+              "name": "Alexander Salby",
+              "rider_url": "/profile/alexander-salby",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 4,
+              "name": "Maxime Duba",
+              "rider_url": "/profile/maxime-duba",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 5,
+              "name": "Manuel Penalver Aniorte",
+              "rider_url": "/profile/manuel-penalver-aniorte",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 6,
+              "name": "Cristian David Pita",
+              "rider_url": "/profile/cristian-david-pita",
+              "team": "",
+              "nat_code": "EC",
+              "flag": "🇪🇨",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 7,
+              "name": "Iúri Leitão",
+              "rider_url": "/profile/iuri-leitao",
+              "team": "",
+              "nat_code": "PT",
+              "flag": "🇵🇹",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 8,
+              "name": "Tilen Finkst",
+              "rider_url": "/profile/tilen-finkst",
+              "team": "",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 9,
+              "name": "Oscar Gallagher",
+              "rider_url": "/profile/oscar-gallagher",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "02:08:57"
+            },
+            {
+              "rank": 10,
+              "name": "Marcin Budzinski",
+              "rider_url": "/profile/marcin-budzinski",
+              "team": "",
+              "nat_code": "PL",
+              "flag": "🇵🇱",
+              "time_gap": "02:08:57"
+            }
+          ],
+          "date_str": "Friday 17 July",
           "start_town": "Gangcha",
           "finish_town": "Xihaizhen",
           "distance_km": 130.0,
@@ -13072,14 +13354,15 @@
           "winner_flag": "",
           "winner_nat": "",
           "top10": [],
-          "date_str": "Sunday 12 July",
+          "date_str": "Saturday 18 July",
           "start_town": "Xihaizhen",
           "finish_town": "Qinghai Lake",
           "distance_km": 146.0,
           "elevation_m": 1060,
           "start_time": "",
           "stage_type": "hilly",
-          "description": ""
+          "description": "",
+          "cancelled": true
         }
       ],
       "startlist": [
@@ -13978,9 +14261,9 @@
           "team": "Qinghai Tianyoude Hotel Cycling Team (CT)"
         }
       ],
-      "last_stage_winner": "Christian Bagatin",
-      "last_stage_winner_flag": "🇮🇹",
-      "last_stage_num": 5,
+      "last_stage_winner": "Cesar Macias Estrada",
+      "last_stage_winner_flag": "🇲🇽",
+      "last_stage_num": 7,
       "gc_leader": "🇪🇨 Jonathan Klever Caicedo Cepeda",
       "gc_top10": [
         {
@@ -79256,6 +79539,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "17-07-2026",
+          "race": "Tour de France - Stage 13",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "29-03-2026",
           "race": "Settimana Internazionale Coppi e Bartali",
           "cat": "2.1"
@@ -79365,7 +79654,8 @@
           "bar": 100
         }
       },
-      "fetched_at": "2026-07-06T19:28:03.068951+00:00"
+      "fetched_at": "2026-07-06T19:28:03.068951+00:00",
+      "wins_refreshed_at": "2026-07-17T22:21:09.612945+00:00"
     },
     "andreas-kron": {
       "slug": "andreas-kron",
@@ -109960,6 +110250,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "16-07-2026",
+          "race": "Tour de France - Stage 12",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "11-07-2026",
           "race": "Tour de France - Stage 8",
           "cat": "2.UWT"
@@ -110529,7 +110825,7 @@
           "cat": "U19"
         }
       ],
-      "wins_refreshed_at": "2026-07-11T15:51:35.792086+00:00"
+      "wins_refreshed_at": "2026-07-17T22:21:11.519224+00:00"
     },
     "alexander-salby": {
       "slug": "alexander-salby",
@@ -110938,6 +111234,24 @@
         }
       ],
       "wins_refreshed_at": "2026-07-15T17:22:50.528803+00:00"
+    },
+    "cesar-macias-estrada": {
+      "slug": "cesar-macias-estrada",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "17-07-2026",
+          "race": "Tour of Magnificent Qinghai - Stage 7",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2024",
+          "date": "07-09-2024",
+          "race": "Giro della Regione Friuli Venezia Giulia - Stage 4",
+          "cat": "2.2"
+        }
+      ],
+      "wins_refreshed_at": "2026-07-17T22:21:13.205385+00:00"
     }
   },
   "startlists_needed": [
@@ -110945,163 +111259,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 9
+      "days_away": 7
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 10
+      "days_away": 8
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 16
+      "days_away": 14
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 31
+      "days_away": 29
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 34
+      "days_away": 32
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 45
+      "days_away": 43
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 48
+      "days_away": 46
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 56
+      "days_away": 54
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 57
+      "days_away": 55
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 59
+      "days_away": 57
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 59
+      "days_away": 57
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 62
+      "days_away": 60
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 62
+      "days_away": 60
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 65
+      "days_away": 63
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 68
+      "days_away": 66
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 73
+      "days_away": 71
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 79
+      "days_away": 77
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 79
+      "days_away": 77
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 81
+      "days_away": 79
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 82
+      "days_away": 80
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 84
+      "days_away": 82
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 86
+      "days_away": 84
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 87
+      "days_away": 85
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 89
+      "days_away": 87
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 90
+      "days_away": 88
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 94
+      "days_away": 92
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 94
+      "days_away": 92
     }
   ]
 }

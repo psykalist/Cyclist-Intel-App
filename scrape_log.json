@@ -1,47 +1,42 @@
 {
-  "run_at": "2026-07-17 19:57 UTC",
-  "run_at_iso": "2026-07-17T17:58:01.000050+00:00",
+  "run_at": "2026-07-18 00:20 UTC",
+  "run_at_iso": "2026-07-17T22:21:07.939792+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-de-france-2026",
       "name": "Tour de France",
       "total_stages": 21,
-      "stages_completed_before": 13,
-      "stages_completed_after": 13,
-      "new_stages_found": 0,
-      "probe": {
-        "stage_num": 14,
-        "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-14",
-        "fetch_ok": true,
-        "response_bytes": 318218,
-        "matched_result_table": false,
-        "stall_since": "2026-07-17 19:57 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
-        "possible_parser_drift": false
-      }
+      "stages_completed_before": 11,
+      "stages_completed_after": 21,
+      "new_stages_found": 10,
+      "cancelled_stages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "probe": null
     },
     {
       "slug": "tour-of-magnificent-qinghai-2026",
       "name": "Tour of Magnificent Qinghai",
       "total_stages": 8,
       "stages_completed_before": 5,
-      "stages_completed_after": 5,
-      "new_stages_found": 0,
-      "probe": {
-        "stage_num": 6,
-        "url": "https://cyclingflash.com/race/tour-of-magnificent-qinghai-2026/result/stage-6",
-        "fetch_ok": true,
-        "response_bytes": 233971,
-        "matched_result_table": false,
-        "stall_since": "2026-07-15 19:22 UTC",
-        "stall_attempts": 8,
-        "stall_hours": 46.6,
-        "possible_parser_drift": false
-      }
+      "stages_completed_after": 8,
+      "new_stages_found": 3,
+      "cancelled_stages": [
+        6,
+        8
+      ],
+      "probe": null
     }
   ],
   "has_fetch_errors": false,
-  "has_possible_parser_drift": false
+  "has_possible_parser_drift": false,
+  "has_overdue_stages": false
 }

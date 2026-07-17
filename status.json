@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T17:46:07.436440+00:00",
+  "updated_at": "2026-07-17T17:59:13.096274+00:00",
   "source": "ci",
   "overall": "ok",
   "errors": [],
@@ -12,9 +12,9 @@
     "data_teams": 33,
     "rider_profiles": 258,
     "live_races": 2,
-    "scraped_at": "2026-07-17T17:44:54.917042+00:00",
+    "scraped_at": "2026-07-17T17:58:01.000624+00:00",
     "data_age_hours": 0.0,
     "index_html_bytes": 238402,
-    "scrape_log_run_at": "2026-07-17 19:44 UTC"
+    "scrape_log_run_at": "2026-07-17 19:57 UTC"
   }
 }

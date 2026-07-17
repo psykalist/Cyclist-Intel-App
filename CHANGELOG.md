@@ -1,8 +1,26 @@
 # Changelog
 
-All notable changes to UCI Road Calendar are documented here.
+All notable changes to UCI Road Calendar are documented here, newest first.
+
+> **This is the dev/session log.** Claude reads it at the start of every session (ordered to by `CLAUDE.md`) and appends a new entry after every change, before the user pushes.
+> Not to be confused with `changelog.json`, which is CI-generated and shown in the app UI.
 
 ---
+
+## v110 — 2026-07-17 — Rebrand to Cyclist Intel App (CIA) + emblem
+- Renamed the app from "Men's UCI Road Calendar" to **Cyclist Intel App** across the on-screen header, `<title>`, apple/PWA app title, and `manifest.json` (`name` + `short_name`).
+- Added an original inline-SVG emblem after the header name — a circular "agency seal" (compass-star + spoked bike wheel) themed via `--accent`/`--surface2`, so it adapts to light/dark. It scales with the header font (`1.5em`).
+- Note: this is an **original** emblem in the intelligence-agency-seal *style*; it is deliberately NOT the actual US CIA seal (official government insignia — can't reproduce / would imply false affiliation).
+
+## 2026-07-17 — Tooling (no app version) — Git workflow overhaul (fixes the recurring FUSE / lock / corruption failures)
+- **Root cause 1 — FUSE mechanics:** the sandbox reaches `D:\` via a FUSE mount that can't unlink/rename `.git/` files, so any git write in the sandbox left stale `index.lock`/`HEAD.lock` and couldn't finish. The old Python plumbing-commit workaround was worse — it framed git objects with a trailing space instead of a NUL byte and produced corrupt commits.
+- **Root cause 2 — data churn:** GitHub Actions rewrites the scraper JSON many times a day; when a local commit also carried those files, every rebase conflicted, and `git-push.sh` only auto-resolved `data.json`.
+- **Fix:** Claude now edits files only and **never runs git in the sandbox** — the user runs `git-push.sh` natively (Git Bash / NTFS, no FUSE). Deleted the plumbing-commit block from `CLAUDE.md` (and stripped 4 stray NUL bytes it had left there). Hardened `git-push.sh` to stage *source only* and auto-resolve *all* CI-owned data files toward origin (`GEN_FILES` list). Fixed stale hardcoded mount paths → session-agnostic globs. Added the "read + append this changelog" rule.
+- **Also:** recovered a live `git-push.sh` rebase that had died on 4 CI data files (took origin's newer scrape, preserved v109).
+- **Ownership rule:** you own source (`index.html`, `*.py`, `*.css`, `manifest.json`, workflows, docs, this file); CI owns the scraper JSON — never hand-edit those, never scrape locally.
+
+## v109 — 2026-07-17 — Drop maternal surname on results
+- Hispanic/Lusophone riders now show a single surname (e.g. `Isaac del Toro Romero` → `Isaac del Toro`) to stop two-line wrapping in the results view.
 
 ## v25 — 2026-06-18
 - Fix: `normName()` now strips Unicode combining marks (NFD decomposition) so accented names like Pogačar, Möbius etc. correctly match across data sources

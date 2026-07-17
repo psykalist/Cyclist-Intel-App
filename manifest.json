@@ -1,6 +1,6 @@
 {
-  "name": "Men's UCI Road Calendar",
-  "short_name": "UCI Road",
+  "name": "Cyclist Intel App",
+  "short_name": "Cyclist Intel",
   "description": "Live men's UCI road race calendar with results, stage winners and classifications",
   "start_url": "./index.html",
   "display": "standalone",

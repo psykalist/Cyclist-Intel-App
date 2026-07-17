@@ -1,6 +1,10 @@
 # CLAUDE.md — Project Instructions
 
-> Read this file at the start of every session. Follow all rules here before making any changes.
+> **START OF EVERY SESSION — do this first, before anything else:**
+> 1. Read this file (`CLAUDE.md`) in full.
+> 2. Read `CHANGELOG.md` (the dev/session log) to see what changed most recently and why.
+>
+> Follow all rules here before making any changes. **After finishing any change, append an entry to `CHANGELOG.md`** (newest first) before telling the user to push — see Rule 5.
 
 ---
 
@@ -77,6 +81,14 @@ Always read the output of every bash command and react to errors or unexpected r
 ### 4. Update these instructions when asked
 
 If the user asks to update the workflow, rules, or project instructions, edit this CLAUDE.md file directly and commit it as part of the same version bump.
+
+### 5. Read CHANGELOG.md at session start, and append after every change
+
+`CHANGELOG.md` is the dev/session log — the running record of what changed and *why*.
+
+- **At the start of every session**, read `CHANGELOG.md` (this is also stated at the top of this file).
+- **After finishing any change**, add a new entry at the **top** of `CHANGELOG.md` (newest first), matching the existing `## vNN — YYYY-MM-DD — short title` format, with a few bullets covering what changed and why. Do this before telling the user to run `git-push.sh`.
+- `CHANGELOG.md` is **source** (you hand-edit it). Do not confuse it with `changelog.json`, which is CI-generated app data — never hand-edit that one.
 
 ---
 

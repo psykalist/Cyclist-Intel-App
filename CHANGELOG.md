@@ -7,6 +7,17 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v113 — 2026-07-18 — Stop result-table rider names wrapping (layout, not name length)
+Even already-short two-token names (`Eduardo Sepulveda`, `Emanuel Buchmann` — the latter German, so no surname rule applies) still wrapped. Cause was layout, not naming: `.top10-table` is `table-layout: auto` with no wrap control, so long team names ("Red Bull - BORA - hansgrohe", "Team Visma | Lease a Bike") claimed width and squeezed the rider column until 16–17 character names broke over two lines.
+
+- `.rider-cell { white-space: nowrap }` — the rider name never breaks, at any width.
+- `.time-cell` also `nowrap` so gaps stay on one line.
+- Added the app's first media query: under 520px the secondary **Team** column (`.team-cell` / `.team-col`) is hidden, giving the name the full row on phones. Team remains visible on desktop.
+
+Two further causes found from a phone screenshot:
+- **Empty Team column reserved width.** Classification tables (GC/Points/KOM) carry no team data at all, but the column was still rendered — an empty column squeezing names onto two lines with visibly free space to its right. `renderTop10()` now only renders Team when at least one row actually has one.
+- **Stage winners were never shortened.** `renderStages()` rendered `s.winner` raw, bypassing `shortName()` entirely — so `Abner Santiago Umba Lopez` still ran over three lines in the Stage Results list while the same rider was correctly shortened in the tables. Now shortened (→ `Abner Umba`), with the full name kept in the `title` tooltip and nat falling back to the top-10 row.
+
 ## v112 — 2026-07-18 — Shorten Hispanic/Lusophone names properly (stop two-line wrapping)
 v109 only dropped the maternal surname, which still left three-token names that wrapped — most South/Central American and Spanish riders carry two given names *and* two surnames.
 

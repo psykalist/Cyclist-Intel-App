@@ -7,6 +7,13 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## 2026-07-18 — Hotfix (scraper) — un-raced stages were being marked "cancelled"
+Regression from the v111 cancelled-stage detection: **every not-yet-raced stage** on the Tour and Qinghai was flagged cancelled (and counted as done, so the Tour showed "21/21 stages").
+
+- **Cause:** the check keyed off the string `"no result available"`, which CyclingFlash shows on *any* stage page without a result — including stages that simply haven't happened yet. Confirmed against TdF stage 16 (races 21 Jul): it contains "No result available" and no cancellation wording at all.
+- **Fix:** only an explicit cancellation sentence counts — `(?:stage|race)\s+(?:was|has been)\s+cancell?ed` (also catches US "canceled"). Verified: Qinghai stage 6 still detected, TdF stage 16 no longer flagged.
+- **Self-heal:** removed the "trust the cached cancelled flag" shortcut — a stage with no result is always re-probed — and added a clean-up pass that strips `cancelled` from any stage not positively confirmed this run, including stages beyond the scan break. So the bad flags already written to `data.json` clear themselves on the next scrape, and `stages_completed` returns to the true count.
+
 ## v113 — 2026-07-18 — Stop result-table rider names wrapping (layout, not name length)
 Even already-short two-token names (`Eduardo Sepulveda`, `Emanuel Buchmann` — the latter German, so no surname rule applies) still wrapped. Cause was layout, not naming: `.top10-table` is `table-layout: auto` with no wrap control, so long team names ("Red Bull - BORA - hansgrohe", "Team Visma | Lease a Bike") claimed width and squeezed the rider column until 16–17 character names broke over two lines.
 

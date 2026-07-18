@@ -1180,17 +1180,19 @@ def main_results_only():
             if cached and cached.get("top10"):
                 completed_nums.append(n)
                 continue
-            if cached and cached.get("cancelled"):
-                # already known cancelled -> decided, no result; keep scanning
-                cancelled_nums.add(n)
-                completed_nums.append(n)
-                continue
+            # NB: deliberately no "trust the cached cancelled flag" shortcut --
+            # a stage with no result is always re-probed so a wrongly-set flag
+            # can be cleared again (see the clean-up pass after this loop).
             url = f"{BASE_URL}/race/{slug}/result/stage-{n}"
             html = fetch(url)
             time.sleep(DELAY)
             matched = bool(html and re.search(r'<td[^>]*>\s*1\s*</td>', html))
+            # Must be an EXPLICIT cancellation sentence from this stage's own info
+            # block. Do NOT key off "no result available" -- that string is shown
+            # for any stage without a result, including ones that simply haven't
+            # been raced yet, which would mark every future stage as cancelled.
             cancelled = bool(html and re.search(
-                r'stage was cancelled|no result available|>\s*cancell?ed\s*<',
+                r'(?:stage|race)\s+(?:was|has been)\s+cancell?ed',
                 html, re.IGNORECASE))
             if matched:
                 completed_nums.append(n)
@@ -1260,6 +1262,16 @@ def main_results_only():
                         (stall_attempts >= 5 and stall_hours >= 48) or overdue)
             if completed_nums:
                 break  # gap = not yet run (and not cancelled)
+
+        # Clear any stale "cancelled" flag: only stages positively confirmed
+        # cancelled by THIS run keep it. Self-heals data written by the earlier
+        # over-broad check, which wrongly flagged not-yet-raced stages (and so
+        # inflated stages_completed to e.g. "21/21" on the Tour). Stages beyond
+        # the break were never probed, so they get cleared too -- a genuinely
+        # cancelled one is re-detected when the loop reaches it.
+        for s in stages:
+            if s.get("cancelled") and s.get("num") not in cancelled_nums:
+                s.pop("cancelled", None)
 
         stages_completed_after = len(completed_nums)
         scrape_log_races.append({

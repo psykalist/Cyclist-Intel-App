@@ -7,6 +7,13 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v114 — 2026-07-18 — Rider flag no longer disappears when drilling into a rider
+The Following list showed a national flag, but opening that rider lost it.
+
+- **Cause:** the Following card reads `f.nat` from the **follow store** (the nat captured in localStorage when you followed the rider), while `openRiderModal()` only looked at `profile.nat` and the team-roster `baseInfo.nat`. When both of those are empty — common for riders not on a loaded team roster, or whose `rider_profiles.json` "Nationality" parse didn't match — the modal rendered no flag at all, so it looked like the flag vanished on drill-down.
+- **Fix:** added two more fallbacks — the follow store, then `_natFromRaceData()`, which scans already-loaded result rows, classification tables and startlists for the rider's flag code. Drill-down from race results keeps the flag too, not just from Following.
+- Measured against live data: **158** rider slugs that previously resolved to no flag now get one (e.g. `raman-tsishkou → by`, `jonathan-klever-caicedo-cepeda → ec`).
+
 ## 2026-07-18 — Hotfix (scraper) — un-raced stages were being marked "cancelled"
 Regression from the v111 cancelled-stage detection: **every not-yet-raced stage** on the Tour and Qinghai was flagged cancelled (and counted as done, so the Tour showed "21/21 stages").
 

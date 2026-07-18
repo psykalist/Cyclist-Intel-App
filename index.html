@@ -2040,6 +2040,26 @@ async function loadPcsEnrichment() {
   return pcsEnrichmentData || {};
 }
 
+// Last-resort nationality lookup: scan already-loaded race data (result rows,
+// classification tables, startlists) for this rider's flag code. The Following
+// list shows a flag from its own stored record, so a rider whose profile and
+// team-roster entry both lack `nat` appeared to *lose* their flag on drill-down.
+function _natFromRaceData(slug) {
+  const slugOf = r => (r.slug || (r.rider_url || '').replace('/profile/', '').replace(/^\/+/, '')).trim();
+  const natOf  = r => r.nat_code || r.nat || '';
+  for (const race of [...(appData.live||[]), ...(appData.upcoming||[]), ...(appData.recent||[])]) {
+    const pools = [race.startlist || []];
+    for (const s of (race.stages || [])) pools.push(s.top10 || []);
+    for (const k of ['gc_top10','points_top10','kom_top10','youth_top10']) pools.push(race[k] || []);
+    for (const pool of pools) {
+      for (const r of pool) {
+        if (slugOf(r) === slug && natOf(r)) return natOf(r);
+      }
+    }
+  }
+  return '';
+}
+
 async function openRiderModal(slug) {
   // Show modal immediately with loading state
   const modal = document.getElementById('riderModal');
@@ -2068,7 +2088,12 @@ async function openRiderModal(slug) {
   // whole profile object over baseInfo whenever profile exists at all meant
   // these riders silently lost their flag even though the right value was
   // sitting right there in baseInfo.
-  const nat      = ((profile && profile.nat) || (baseInfo && baseInfo.nat) || '').toLowerCase();
+  // Follow store keeps the nat captured when the rider was followed, which is
+  // why the Following card had a flag the modal didn't; race data is the final
+  // fallback so drill-down from results keeps the flag too.
+  const followNat = ((followLoad() || []).find(f => f.slug === slug) || {}).nat || '';
+  const nat      = ((profile && profile.nat) || (baseInfo && baseInfo.nat)
+                    || followNat || _natFromRaceData(slug) || '').toLowerCase();
   const natName  = (profile || {}).nat_name || nat.toUpperCase();
   const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug);
   const dob        = enrich.dob || (profile || {}).dob;
@@ -2662,7 +2687,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v113';
+const APP_VERSION = 'v114';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

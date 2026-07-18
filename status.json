@@ -1,20 +1,22 @@
 {
-  "updated_at": "2026-07-18T09:03:04.997422+00:00",
+  "updated_at": "2026-07-18T09:21:39.128313+00:00",
   "source": "ci",
-  "overall": "ok",
+  "overall": "warning",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "scrape_log.json: INCOMPLETE gc_top10 on tour-of-magnificent-qinghai-2026 -- pulled 3 of 10 expected rows."
+  ],
   "repairs": [],
   "data": {
-    "data_size_kb": 3230,
+    "data_size_kb": 3232,
     "data_upcoming": 36,
     "data_recent": 59,
     "data_teams": 33,
     "rider_profiles": 260,
     "live_races": 2,
-    "scraped_at": "2026-07-18T09:01:46.331144+00:00",
+    "scraped_at": "2026-07-18T09:20:21.060415+00:00",
     "data_age_hours": 0.0,
-    "index_html_bytes": 243190,
-    "scrape_log_run_at": "2026-07-18 11:01 UTC"
+    "index_html_bytes": 245597,
+    "scrape_log_run_at": "2026-07-18 11:19 UTC"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-18 11:01 UTC",
-  "run_at_iso": "2026-07-18T09:01:44.655801+00:00",
+  "run_at": "2026-07-18 11:19 UTC",
+  "run_at_iso": "2026-07-18T09:20:19.441016+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -19,25 +19,37 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-18 11:01 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": -1.7,
         "possible_parser_drift": false
-      }
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
     },
     {
       "slug": "tour-of-magnificent-qinghai-2026",
       "name": "Tour of Magnificent Qinghai",
       "total_stages": 8,
-      "stages_completed_before": 6,
+      "stages_completed_before": 7,
       "stages_completed_after": 8,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         6
       ],
-      "probe": null
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": [
+        {
+          "cls": "gc_top10",
+          "rows": 3
+        }
+      ]
     }
   ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
-  "has_overdue_stages": false
+  "has_overdue_stages": false,
+  "has_incomplete_results": true
 }

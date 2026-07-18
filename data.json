@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-18T09:01:46.331144+00:00",
-  "scraped_at_human": "18 Jul 2026 09:01 UTC",
+  "scraped_at": "2026-07-18T09:20:21.060415+00:00",
+  "scraped_at_human": "18 Jul 2026 09:20 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -12858,7 +12858,7 @@
               "team": "",
               "nat_code": "IT",
               "flag": "🇮🇹",
-              "time_gap": ""
+              "time_gap": "05:17:42"
             },
             {
               "rank": 2,
@@ -12867,7 +12867,7 @@
               "team": "",
               "nat_code": "IT",
               "flag": "🇮🇹",
-              "time_gap": ""
+              "time_gap": "05:17:42"
             },
             {
               "rank": 3,
@@ -12876,7 +12876,70 @@
               "team": "",
               "nat_code": "BY",
               "flag": "🇧🇾",
-              "time_gap": ""
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 4,
+              "name": "Petr Rikunov",
+              "rider_url": "/profile/petr-rikunov",
+              "team": "",
+              "nat_code": "RU",
+              "flag": "🇷🇺",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 5,
+              "name": "Fernando Barcelo Aragon",
+              "rider_url": "/profile/fernando-barcelo-aragon",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 6,
+              "name": "Alexis Renard",
+              "rider_url": "/profile/alexis-renard",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 7,
+              "name": "Rodrigo Álvarez Rodriguez",
+              "rider_url": "/profile/rodrigo-alvarez-rodriguez",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 8,
+              "name": "Andrea Piras",
+              "rider_url": "/profile/andrea-piras",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 9,
+              "name": "Merhawi Kudus Ghebremedhin",
+              "rider_url": "/profile/merhawi-kudus-ghebremedhin",
+              "team": "",
+              "nat_code": "ER",
+              "flag": "🇪🇷",
+              "time_gap": "05:17:42"
+            },
+            {
+              "rank": 10,
+              "name": "Alexander Konychev",
+              "rider_url": "/profile/alexander-konychev",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "05:17:42"
             }
           ],
           "date_str": "Sunday 12 July",
@@ -110970,7 +111033,7 @@
           "cat": "2.Pro"
         }
       ],
-      "wins_refreshed_at": "2026-07-12T11:52:07.241019+00:00"
+      "wins_refreshed_at": "2026-07-18T09:20:21.060373+00:00"
     },
     "abner-santiago-umba-lopez": {
       "slug": "abner-santiago-umba-lopez",

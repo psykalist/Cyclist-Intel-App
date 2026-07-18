@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-18T09:21:23.302361+00:00",
+  "generated_at": "2026-07-18T11:47:36.754248+00:00",
   "entries": [
+    {
+      "id": "7024ac6ad3ee",
+      "timestamp": "2026-07-18T11:47:36.747911+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Magnificent Qinghai GC: 🇪🇨 Jonathan Klever Caicedo leads"
+    },
     {
       "id": "beecb763106a",
       "timestamp": "2026-07-18T09:02:49.242790+00:00",

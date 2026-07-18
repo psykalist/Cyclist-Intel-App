@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-18 11:19 UTC",
-  "run_at_iso": "2026-07-18T09:20:19.441016+00:00",
+  "run_at": "2026-07-18 13:46 UTC",
+  "run_at_iso": "2026-07-18T11:46:35.003041+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-18 11:01 UTC",
-        "stall_attempts": 2,
-        "stall_hours": -1.7,
+        "stall_attempts": 3,
+        "stall_hours": 0.8,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -40,16 +40,11 @@
       "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
-      "incomplete_classifications": [
-        {
-          "cls": "gc_top10",
-          "rows": 3
-        }
-      ]
+      "incomplete_classifications": []
     }
   ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": true
+  "has_incomplete_results": false
 }

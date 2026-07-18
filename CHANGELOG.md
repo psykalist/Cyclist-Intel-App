@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v115 — 2026-07-18 — Partial results: re-pull them, and say so in the app
+Qinghai stage 2 held only 3 riders with no times, and the GC classification only 3 — while Points/KOM had a full 10. It read as a finished result rather than a partial one.
+
+- **Root cause (scraper):** a stage was treated as cached the moment it had *any* `top10` rows, so a result scraped while the source was still publishing froze permanently — it was never re-fetched.
+- **Fix:** added `_result_incomplete()` (fewer than `RESULT_EXPECTED_ROWS = 10`, or rows missing times). Incomplete results are re-pulled on later runs until they fill in, and a re-pull that returns *fewer* rows never overwrites what we already hold.
+- **App:** result and classification tables now show a plain note — "Partial data — the results source has published N entries… This updates automatically when more is available." — so a short table reads as the source lagging, not an app bug.
+- **Health check (pulled vs expected):** `scrape_log.json` now records `expected_rows`, `incomplete_results` and `incomplete_classifications`, plus a top-level `has_incomplete_results`; `health-check.yml` warns with the actual shortfall ("pulled 3 of 10 expected rows").
+
 ## v114 — 2026-07-18 — Rider flag no longer disappears when drilling into a rider
 The Following list showed a national flag, but opening that rider lost it.
 

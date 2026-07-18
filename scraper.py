@@ -1050,6 +1050,22 @@ def refresh_winner_wins(rider_profiles, winner_slugs):
         print(f"    {slug}: {len(wins)} wins", flush=True)
 
 
+RESULT_EXPECTED_ROWS = 10   # what a fully-published top-10 should contain
+
+
+def _result_incomplete(rows):
+    """True if a result we already hold looks only partially published: fewer
+    rows than a full top-10, or rows missing their time/gap. Results used to be
+    cached the moment they had ANY rows, so a result scraped while the source
+    was still publishing (e.g. 3 riders, no times) stayed truncated forever."""
+    rows = rows or []
+    if not rows:
+        return False                      # nothing yet != incomplete
+    if len(rows) < RESULT_EXPECTED_ROWS:
+        return True
+    return any(not str(r.get("time_gap") or "").strip() for r in rows)
+
+
 def _one_stage_per_day(race):
     """Return (start_date, end_date) as dates iff the race runs exactly one
     stage per calendar day (window length == stage count). Grand tours and any
@@ -1177,9 +1193,11 @@ def main_results_only():
         probe = None   # outcome for the first genuine gap we couldn't satisfy
         for n in range(1, total + 1):
             cached = next((s for s in stages if s.get("num") == n), None)
-            if cached and cached.get("top10"):
+            if cached and cached.get("top10") and not _result_incomplete(cached.get("top10")):
                 completed_nums.append(n)
                 continue
+            # A partially-published result falls through to be re-fetched below,
+            # so it can fill in once the source publishes the full field.
             # NB: deliberately no "trust the cached cancelled flag" shortcut --
             # a stage with no result is always re-probed so a wrongly-set flag
             # can be cleared again (see the clean-up pass after this loop).
@@ -1274,7 +1292,7 @@ def main_results_only():
                 s.pop("cancelled", None)
 
         stages_completed_after = len(completed_nums)
-        scrape_log_races.append({
+        race_log = {
             "slug": slug,
             "name": name,
             "total_stages": total,
@@ -1283,7 +1301,8 @@ def main_results_only():
             "new_stages_found": stages_completed_after - stages_completed_before,
             "cancelled_stages": sorted(cancelled_nums),
             "probe": probe,
-        })
+        }
+        scrape_log_races.append(race_log)
 
         print(f"    Completed: {completed_nums}", flush=True)
 
@@ -1295,9 +1314,12 @@ def main_results_only():
                              "winner": None, "winner_flag": "", "winner_nat": "", "top10": []}
                 stages.append(stage_obj)
 
-            if stage_obj.get("top10"):
+            existing = stage_obj.get("top10") or []
+            if existing and not _result_incomplete(existing):
                 print(f"      Stage {n}: cached ({stage_obj.get('winner','?')})", flush=True)
                 continue
+            if existing:
+                print(f"      Stage {n}: re-pulling partial result ({len(existing)} rows)", flush=True)
 
             rows, winner, hpi, _ = scrape_stage(slug, n)
             time.sleep(DELAY)
@@ -1305,7 +1327,10 @@ def main_results_only():
                 stage_obj["winner"]           = winner["name"]
                 stage_obj["winner_flag"]      = winner.get("flag", "")
                 stage_obj["winner_nat"]       = winner.get("nat_code", "")
-                stage_obj["top10"]            = rows or []
+                # Never downgrade: a re-pull that returns fewer rows than we
+                # already hold is the source still publishing, not a correction.
+                if len(rows or []) >= len(existing):
+                    stage_obj["top10"] = rows or []
                 if hpi and not stage_obj.get("height_profile_img"):
                     stage_obj["height_profile_img"] = hpi
                 stages_updated += 1
@@ -1351,6 +1376,24 @@ def main_results_only():
                     race[tk] = rows
                     print(f"      {cls_key}: {rows[0]['name']}", flush=True)
 
+        # ── What we pulled vs what we expect (health-check input) ─────────────
+        # Flags results that are published but short of a full field, so a
+        # silently-truncated pull (3 riders, no times) is visible rather than
+        # looking like a finished result.
+        race_log["expected_rows"] = RESULT_EXPECTED_ROWS
+        race_log["incomplete_results"] = [
+            {"stage": s.get("num"), "rows": len(s.get("top10") or []),
+             "missing_times": sum(1 for r in (s.get("top10") or [])
+                                  if not str(r.get("time_gap") or "").strip())}
+            for s in race.get("stages", [])
+            if s.get("top10") and _result_incomplete(s.get("top10"))
+        ]
+        race_log["incomplete_classifications"] = [
+            {"cls": tk, "rows": len(race.get(tk) or [])}
+            for tk in ("gc_top10", "points_top10", "kom_top10")
+            if race.get(tk) and _result_incomplete(race.get(tk))
+        ]
+
     # ── Write structured scrape log for health-check consumption ─────────────
     # Plain stdout prints above only live in the (sign-in-required) Actions
     # job log. This file is what health-check.yml (and anyone without Actions
@@ -1379,6 +1422,9 @@ def main_results_only():
         "has_fetch_errors":         bool(fetch_errors),
         "has_possible_parser_drift": bool(parser_drift),
         "has_overdue_stages":       bool(overdue_races),
+        "has_incomplete_results":   any(r.get("incomplete_results")
+                                        or r.get("incomplete_classifications")
+                                        for r in scrape_log_races),
     }
     try:
         with open("scrape_log.json", "w", encoding="utf-8") as f:

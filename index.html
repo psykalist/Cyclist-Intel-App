@@ -440,6 +440,16 @@ header h1 span { color: var(--accent); }
    short two-word names like "Eduardo Sepulveda" wrapped onto two lines, so the
    secondary Team column is dropped on phone widths to give the name room. */
 .rider-cell { white-space: nowrap; }
+.result-partial {
+  font-size: .76rem;
+  color: var(--muted);
+  background: var(--surface2);
+  border-left: 3px solid var(--upcoming);
+  border-radius: 0;
+  padding: 7px 10px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
 @media (max-width: 520px) {
   .top10-table .team-cell,
   .top10-table .team-col { display: none; }
@@ -1268,15 +1278,25 @@ function applyFilter() { applyFilters(); }
 
 // ── Top-10 table ───────────────────────────────────────────────────────────────
 
+// A fully-published field. Fewer rows, or rows without times, means the source
+// is still publishing. Keep in sync with RESULT_EXPECTED_ROWS in scraper.py.
+const RESULT_EXPECTED_ROWS = 10;
+
 function renderTop10(rows) {
   if (!rows || !rows.length) return '<p class="empty">No results.</p>';
   const isTTT = rows.some(r => r.is_ttt);
+  // Say plainly when the source has only published part of a field, so a short
+  // table (3 riders, no times) reads as "not published yet" and not as a bug.
+  const missingTimes = rows.filter(r => !String(r.time_gap || '').trim()).length;
+  const partialNote = (rows.length < RESULT_EXPECTED_ROWS || missingTimes)
+    ? `<div class="result-partial">Partial data — the results source has published ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}${missingTimes ? (rows.length === missingTimes ? ' without times' : ` (${missingTimes} without times)`) : ''}. This updates automatically when more is available.</div>`
+    : '';
   const riderHeader = isTTT ? 'Team' : 'Rider';
   // Classification tables (GC/Points/KOM) often carry no team at all -- the empty
   // column still reserved width and squeezed rider names onto two lines, so only
   // render Team when at least one row actually has one.
   const showTeam = !isTTT && rows.some(r => (r.team || '').trim());
-  return `<table class="top10-table">
+  return `${partialNote}<table class="top10-table">
     <thead><tr><th>#</th><th>${riderHeader}</th>${showTeam ? '<th class="team-col">Team</th>' : ''}<th>Time</th></tr></thead>
     <tbody>${rows.map(r => {
       const slug = (r.rider_url||'').replace('/profile/','').replace(/^\/+/,'').trim();
@@ -2687,7 +2707,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v114';
+const APP_VERSION = 'v115';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

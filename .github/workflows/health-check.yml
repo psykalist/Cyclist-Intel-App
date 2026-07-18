@@ -305,6 +305,23 @@ jobs:
                           f"scrape_log.json: could not fetch next-stage probe for {fetch_err_races} "
                           f"-- network/HTTP issue, not necessarily a bug"
                       )
+                  # -- Pulled vs expected: a result can be "present" yet
+                  # truncated (3 riders, no times) because it was scraped while
+                  # the source was still publishing. Surface the shortfall.
+                  for r in races:
+                      exp = r.get("expected_rows") or 10
+                      for inc in (r.get("incomplete_results") or []):
+                          warnings.append(
+                              f"scrape_log.json: INCOMPLETE result on {r['slug']} stage "
+                              f"{inc.get('stage')} -- pulled {inc.get('rows')} of {exp} expected rows"
+                              + (f", {inc['missing_times']} without times" if inc.get('missing_times') else "")
+                              + ". Source may still be publishing; scraper will re-pull."
+                          )
+                      for inc in (r.get("incomplete_classifications") or []):
+                          warnings.append(
+                              f"scrape_log.json: INCOMPLETE {inc.get('cls')} on {r['slug']} -- "
+                              f"pulled {inc.get('rows')} of {exp} expected rows."
+                          )
                   for r in races:
                       p = r.get("probe") or {}
                       if p.get("overdue"):

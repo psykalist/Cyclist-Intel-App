@@ -7,13 +7,25 @@ name: Backfill New Rider Profiles (manual)
 # transfer can be backfilled in a couple of minutes without waiting on the
 # full ~20 min calendar/teams/rider-profile run.
 #
-# Run this whenever a rider is missing from search/rankings/rider modals --
-# there's no automatic trigger, someone has to notice and run it. (Winner
-# palmares for riders already in the file are kept current separately, via
-# the `uci-winner-profiles` Cowork scheduled task using --update-winners.)
+# Run this whenever a rider is missing from search/rankings/rider modals.
+# (Winner palmares for riders already in the file are kept current separately,
+# via the `uci-winner-profiles` Cowork scheduled task using --update-winners.)
+#
+# 2026-07-18: added a weekly schedule. It used to be manual-only, so backfill
+# only happened when someone noticed a blank rider modal -- which left ~60% of
+# the roster with no palmares and ~51% with no team history. The script is
+# incremental (it skips slugs already in rider_profiles.json and merges into
+# the existing file), so a weekly run only fetches genuinely new riders and
+# costs ~1.5s each. Riders stored with an error/empty result are NOT retried
+# by the default mode -- use --fix-empty for those.
 
 on:
   workflow_dispatch:
+  schedule:
+    # Mondays 03:30 UTC -- off the 6-hourly health-check marks and the
+    # 11:00/17:00 results scrapes. The uci-calendar-git-write concurrency
+    # group below still serialises it against any overlapping run.
+    - cron: '30 3 * * 1'
 
 # Serializes this workflow against the other scrape/health workflows so they
 # never commit/push to main at the same time -- see the matching note in

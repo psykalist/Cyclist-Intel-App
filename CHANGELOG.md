@@ -7,6 +7,16 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## 2026-07-18 — Rider profile backfill scheduled + coverage health check
+Prompted by "Quinn Simmons has no stats". He actually **does** — 9 palmares back to 2021, 9 seasons of team history, 100 career results, photo and specialties, all rendering correctly on the live site. That report was a stale PWA cache. But it exposed a real gap underneath.
+
+**Audit of the 1104-rider roster:** 60% had no palmares, 51% no team history, 54% no season results, 19% no profile at all, 12% no photo.
+
+- **Cause was operational, not technical.** `scrape_rider_profiles.py` already pulls everything wanted (photo, DOB, nationality, height/weight, specialties, `/statistics/wins` career palmares, team history, season results) and is properly incremental — it loads `rider_profiles.json`, skips slugs already present, merges, and commits. But its workflow was `workflow_dispatch` only, so backfill happened only when someone noticed a blank modal.
+- **Added a weekly schedule** to *Backfill New Rider Profiles* — Mondays 03:30 UTC, clear of the 6-hourly health checks and 11:00/17:00 results scrapes, still inside the `uci-calendar-git-write` concurrency group. At `DELAY=0.5s` × 3 pages/rider the ~700 outstanding riders take roughly 20–30 min.
+- **Added rider-profile coverage to the health check.** `status.json` now carries `rider_roster`, `rider_profiles`, `rider_missing_profile` and `rider_missing_palmares`, and warns above a 15% shortfall. Verified against current data: *"236 of 1104 roster riders (21%) have no profile at all, 755 have no palmares."*
+- Note: default mode does **not** retry riders stored with an error or empty result — `--fix-empty` exists for those.
+
 ## 2026-07-18 — Scraper — procyclingstats GC fallback
 CyclingFlash publishes only a stub GC for some races — verified directly: its Qinghai 2026 GC page contains a single 3-row table with **no times at all**. That's a source limitation, not a parsing bug.
 

@@ -349,6 +349,43 @@ jobs:
           else:
               info["scrape_log_run_at"] = None
 
+          # -- Rider profile coverage --------------------------------------
+          # Photos/palmares/team history come from scrape_rider_profiles.py.
+          # That was manual-only for a long time, so gaps built up silently and
+          # only showed as an empty rider modal (a rider looks like he "has no
+          # data" when really nobody ran the backfill). Report the shortfall.
+          try:
+              roster = set()
+              _d = json.load(open("data.json")) if os.path.exists("data.json") else {}
+              for _t in _d.get("teams", []):
+                  for _r in _t.get("riders", []):
+                      if _r.get("slug"):
+                          roster.add(_r["slug"])
+              for _sec in ("live", "upcoming", "recent"):
+                  for _race in _d.get(_sec, []):
+                      for _r in _race.get("startlist", []):
+                          if _r.get("slug"):
+                              roster.add(_r["slug"])
+              _prof = {}
+              if os.path.exists("rider_profiles.json"):
+                  _prof = json.load(open("rider_profiles.json")).get("riders", {})
+              info["rider_roster"]   = len(roster)
+              info["rider_profiles"] = len(_prof)
+              if roster:
+                  _missing = [s for s in roster if s not in _prof]
+                  _nowins  = [s for s in roster if not (_prof.get(s) or {}).get("wins")]
+                  info["rider_missing_profile"]  = len(_missing)
+                  info["rider_missing_palmares"] = len(_nowins)
+                  _pct = round(100 * len(_missing) / len(roster))
+                  if _pct >= 15:
+                      warnings.append(
+                          f"rider profiles: {len(_missing)} of {len(roster)} roster riders ({_pct}%) have "
+                          f"no profile at all, {len(_nowins)} have no palmares. Run the "
+                          f"'Backfill New Rider Profiles' workflow (it also runs weekly, Mondays 03:30 UTC)."
+                      )
+          except Exception as e:
+              warnings.append(f"rider profile coverage check failed: {e}")
+
           overall = "error" if errors else ("warning" if warnings else "ok")
           status = {
               "updated_at": datetime.now(timezone.utc).isoformat(),

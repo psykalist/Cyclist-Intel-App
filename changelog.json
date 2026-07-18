@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-18T11:47:36.754248+00:00",
+  "generated_at": "2026-07-18T17:48:50.384115+00:00",
   "entries": [
+    {
+      "id": "94af2ba561a6",
+      "timestamp": "2026-07-18T17:48:50.377515+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 14 Tour de France: 🇸🇮 Tadej Pogačar wins"
+    },
+    {
+      "id": "88f7b595710f",
+      "timestamp": "2026-07-18T17:48:50.377515+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Tour de France Youth: 🇫🇷 Paul Seixas leads"
+    },
+    {
+      "id": "d2b7234669df",
+      "timestamp": "2026-07-18T17:48:50.377515+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Magnificent Qinghai Points: 🇪🇷 Henok Mulubrhan leads"
+    },
     {
       "id": "7024ac6ad3ee",
       "timestamp": "2026-07-18T11:47:36.747911+00:00",

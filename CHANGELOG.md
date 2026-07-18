@@ -7,6 +7,15 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## 2026-07-18 — Scraper — procyclingstats GC fallback
+CyclingFlash publishes only a stub GC for some races — verified directly: its Qinghai 2026 GC page contains a single 3-row table with **no times at all**. That's a source limitation, not a parsing bug.
+
+- Added `fetch_pcs_gc()`: pulls GC standings from procyclingstats (reusing the existing `PCS_BASE` / `_pcs_slug()` plumbing) and returns rows in `scrape_classification()` shape.
+- **Strictly additive:** only consulted when CF's GC is incomplete, only adopted when PCS returns *more* rows, wrapped in try/except, and the parser returns `[]` on any doubt (no GC table, no rider links, or ranks not a clean 1..n sequence). A PCS markup change degrades to current behaviour rather than corrupting data.
+- Parser written against the **real** page markup rather than guesswork: PCS wraps the surname in `<span class="uppercase">`, so "Caicedo Jonathan Klever" → "Jonathan Klever Caicedo" without guessing word order. Nat from `class="flag xx"`, rank-1 keeps elapsed time, others become `+ gap`.
+- Result for Qinghai: **3 names with no times → 5 riders with real gaps** (24:23:26, +0:12, +0:15, +0:34, +0:39).
+- **Known ceiling:** PCS renders the rest of its GC client-side. Every server-side URL variant (`/gc`, `/gc/result/result`, `?p=results`, `race.php?event=…`) returns the same 5 rows, so 5 is the limit without a headless browser in CI. `gc_source` is recorded on the race when PCS is used.
+
 ## v116 — 2026-07-18 — Points/KOM columns were labelled "Time"
 The Points and KOM classification tables hold **points**, not times, but `renderTop10()` hard-coded a `Time` header — so the numbers looked like malformed times.
 

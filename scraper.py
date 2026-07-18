@@ -1053,6 +1053,85 @@ def refresh_winner_wins(rider_profiles, winner_slugs):
 RESULT_EXPECTED_ROWS = 10   # what a fully-published top-10 should contain
 
 
+def _flag_emoji(code):
+    """2-letter country code -> regional-indicator emoji (CF rows carry one)."""
+    code = (code or "").strip().upper()
+    if len(code) != 2 or not code.isalpha():
+        return ""
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in code)
+
+
+def fetch_pcs_gc(cf_slug, year):
+    """GC standings from procyclingstats, as a fallback for races where
+    CyclingFlash publishes only a stub GC. Qinghai 2026 served 3 names and NO
+    times at all; PCS serves 5 rows *with* real times, which is what was
+    missing. PCS renders the rest of its GC client-side, so 5 is the ceiling
+    for a urllib scraper -- this is a gap-filler, not a full replacement.
+
+    Returns rows shaped like scrape_classification(), or [] on any doubt.
+    Verified against the live 2026 Qinghai page.
+    """
+    url = f"{PCS_BASE}/race/{_pcs_slug(cf_slug)}/{year}/gc"
+    html = fetch(url)
+    if not html:
+        return []
+
+    # Pick the GC table: the results table whose header carries "Time won/lost".
+    # The stage table uses "Timelag"; points/KOM tables have neither.
+    gc_tbl = None
+    for m in re.finditer(r'<table[^>]*class="[^"]*results[^"]*"[^>]*>[\s\S]*?</table>', html):
+        block = m.group(0)
+        if "Time won/lost" in block and 'href="rider/' in block:
+            gc_tbl = block
+            break
+    if not gc_tbl:
+        return []
+
+    rows = []
+    for rm in re.finditer(r'<tr[^>]*>([\s\S]*?)</tr>', gc_tbl):
+        tr = rm.group(1)
+        a = re.search(r'<a[^>]*href="rider/([^"?]+)"[^>]*>([\s\S]*?)</a>', tr)
+        rank_m = re.search(r'<td[^>]*>\s*(\d+)\s*</td>', tr)
+        if not a or not rank_m:
+            continue
+        slug_r, inner = a.group(1), a.group(2)
+
+        # PCS marks the surname with <span class="uppercase">Surname</span>,
+        # so we don't have to guess word order: "Caicedo Jonathan Klever"
+        # becomes "Jonathan Klever Caicedo".
+        sur_m = re.search(r'<span class="uppercase">([^<]*)</span>', inner)
+        if sur_m:
+            surname = sur_m.group(1).strip()
+            given   = strip_tags(inner.replace(sur_m.group(0), "")).strip()
+            name    = f"{given} {surname}".strip()
+        else:
+            parts = strip_tags(inner).split()
+            name  = " ".join(parts[1:] + [parts[0]]) if len(parts) > 1 else strip_tags(inner)
+
+        nat_m  = re.search(r'class="flag (\w+)"', tr)
+        team_m = re.search(r'href="team/[^"?]+"[^>]*>([\s\S]*?)</a>', tr)
+        time_m = re.search(r'>\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*<', tr)
+
+        rank = int(rank_m.group(1))
+        gap  = time_m.group(1) if time_m else ""
+        nat  = (nat_m.group(1).upper() if nat_m else "")
+        rows.append({
+            "rank":      rank,
+            "name":      re.sub(r"\s+", " ", name).strip(),
+            "rider_url": f"/profile/{slug_r}",
+            "team":      strip_tags(team_m.group(1)).strip() if team_m else "",
+            "nat_code":  nat,
+            "flag":      _flag_emoji(nat),
+            # Row 1 holds elapsed time; the rest are gaps, matching CF's style.
+            "time_gap":  gap if rank == 1 else (f"+ {gap}" if gap else ""),
+        })
+
+    # Ranks must be a sane 1..n sequence, else we mis-read the table.
+    if not rows or [r["rank"] for r in rows] != list(range(1, len(rows) + 1)):
+        return []
+    return rows
+
+
 def _result_incomplete(rows):
     """True if a result we already hold looks only partially published: fewer
     rows than a full top-10, or rows missing their time/gap. Results used to be
@@ -1375,6 +1454,27 @@ def main_results_only():
                     race[lk] = f"{rows[0]['flag']} {rows[0]['name']}"
                     race[tk] = rows
                     print(f"      {cls_key}: {rows[0]['name']}", flush=True)
+
+        # ── GC fallback to procyclingstats ────────────────────────────────────
+        # CyclingFlash publishes only a stub GC for some races (Qinghai 2026:
+        # 3 names, no times at all). Strictly additive: only consulted when CF's
+        # GC is short, only adopted when PCS actually returns MORE rows, and
+        # fetch_pcs_gc() returns [] on any parsing doubt -- so a PCS markup
+        # change degrades to today's behaviour rather than corrupting the data.
+        cf_gc = race.get("gc_top10") or []
+        if _result_incomplete(cf_gc):
+            try:
+                pcs_gc = fetch_pcs_gc(slug, race.get("year") or datetime.now().year)
+                time.sleep(DELAY)
+                if len(pcs_gc) > len(cf_gc):
+                    race["gc_top10"] = pcs_gc
+                    race["gc_leader"] = f"{pcs_gc[0]['flag']} {pcs_gc[0]['name']}".strip()
+                    race["gc_source"] = "procyclingstats"
+                    print(f"      GC: PCS fallback used ({len(pcs_gc)} rows; CF had {len(cf_gc)})", flush=True)
+                else:
+                    print(f"      GC: PCS had {len(pcs_gc)} rows, keeping CF's {len(cf_gc)}", flush=True)
+            except Exception as e:
+                print(f"      GC: PCS fallback failed ({e}) -- keeping CF data", flush=True)
 
         # ── What we pulled vs what we expect (health-check input) ─────────────
         # Flags results that are published but short of a full field, so a

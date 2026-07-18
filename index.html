@@ -1139,10 +1139,28 @@ const DROP_MATERNAL_NATS = new Set(['ES','MX','CO','AR','EC','VE','UY','PT','CL'
 const NAME_PARTICLES = new Set(['de','del','la','las','los','da','das','dos','di','y']);
 function shortName(name, nat) {
   if (!name || !nat || !DROP_MATERNAL_NATS.has(String(nat).toUpperCase())) return name;
-  const p = name.trim().split(/\s+/);
-  if (p.length < 3) return name;                                   // no maternal surname to drop
-  if (NAME_PARTICLES.has(p[p.length - 2].toLowerCase())) return name; // e.g. "... de la Cruz" — leave it
-  return p.slice(0, -1).join(' ');
+  let p = name.trim().split(/\s+/);
+  if (p.length < 3) return name;                                   // nothing to drop
+  const isPart = i => NAME_PARTICLES.has((p[i] || '').toLowerCase());
+
+  // Compound maternal surname, e.g. "Pello Bilbao Lopez de Armentia". A particle
+  // at index >= 3 means given + paternal already precede it, so keep just those
+  // two -> "Pello Bilbao". Guarded on index >= 3 so "Juan Jose de la Cruz"
+  // (particle at 2, where "de la Cruz" IS the surname) is left alone.
+  const firstPart = p.findIndex((_, i) => isPart(i));
+  if (firstPart >= 3) return p.slice(0, 2).join(' ');
+
+  // 1. Drop the maternal (final) surname -- unless the name ends in a particle
+  //    construction like "... de la Cruz", which must stay whole.
+  if (!isPart(p.length - 2)) p = p.slice(0, -1);
+
+  // 2. Still 3+ parts means there's a second given name too
+  //    ("Jonathan Klever Caicedo"). Drop it -> "Jonathan Caicedo". Skipped when
+  //    a particle is involved, so "Isaac del Toro" / "David De La Cruz" survive.
+  if (p.length >= 3 && !isPart(1) && !isPart(p.length - 2)) {
+    p = [p[0], ...p.slice(2)];
+  }
+  return p.join(' ');
 }
 
 function chevron(cls) {
@@ -2625,7 +2643,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v111';
+const APP_VERSION = 'v112';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

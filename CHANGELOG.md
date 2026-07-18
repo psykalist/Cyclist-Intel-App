@@ -7,6 +7,15 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v112 — 2026-07-18 — Shorten Hispanic/Lusophone names properly (stop two-line wrapping)
+v109 only dropped the maternal surname, which still left three-token names that wrapped — most South/Central American and Spanish riders carry two given names *and* two surnames.
+
+- `shortName()` now also drops the **second given name**: `Jonathan Klever Caicedo Cepeda` → `Jonathan Caicedo`, `Abner Santiago Umba Lopez` → `Abner Umba`, `Egan Arley Bernal Gomez` → `Egan Bernal`, `Harold Alfonso Tejada Canacue` → `Harold Tejada`.
+- Handles compound maternal surnames: `Pello Bilbao Lopez de Armentia` → `Pello Bilbao`, guarded on particle index ≥ 3 so `Juan Jose de la Cruz` (where "de la Cruz" *is* the surname) is left whole.
+- Particle names still preserved: `Isaac del Toro`, `David De La Cruz`, `Hugo De La Calle`.
+- Only applies to the Hispanic/Lusophone nationality set — `van der Poel`, `Geoghegan Hart`, and Asian multi-token names (`Wing Chung Ng`, `Muhammad Nur Aiman Bin Rosli`) are untouched.
+- Validated against all 947 rider names in live data: 22 shortened, 0 non-Hispanic names affected.
+
 ## v111 — 2026-07-18 — Cancelled stages no longer hide later results; self-correcting stage dates; health check
 Reported symptom: Tour of Magnificent Qinghai showed missing recent results and looked finished while still in Live.
 

@@ -1282,14 +1282,18 @@ function applyFilter() { applyFilters(); }
 // is still publishing. Keep in sync with RESULT_EXPECTED_ROWS in scraper.py.
 const RESULT_EXPECTED_ROWS = 10;
 
-function renderTop10(rows) {
+// valueLabel: the last column holds a time/gap for stage + GC tables, but
+// POINTS for the Points and KOM classifications -- labelling those "Time" made
+// the numbers look like broken times.
+function renderTop10(rows, valueLabel = 'Time') {
   if (!rows || !rows.length) return '<p class="empty">No results.</p>';
   const isTTT = rows.some(r => r.is_ttt);
   // Say plainly when the source has only published part of a field, so a short
   // table (3 riders, no times) reads as "not published yet" and not as a bug.
+  const lowerLabel = valueLabel.toLowerCase() === 'pts' ? 'points' : 'times';
   const missingTimes = rows.filter(r => !String(r.time_gap || '').trim()).length;
   const partialNote = (rows.length < RESULT_EXPECTED_ROWS || missingTimes)
-    ? `<div class="result-partial">Partial data — the results source has published ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}${missingTimes ? (rows.length === missingTimes ? ' without times' : ` (${missingTimes} without times)`) : ''}. This updates automatically when more is available.</div>`
+    ? `<div class="result-partial">Partial data — the results source has published ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}${missingTimes ? (rows.length === missingTimes ? ` without ${lowerLabel}` : ` (${missingTimes} without ${lowerLabel})`) : ''}. This updates automatically when more is available.</div>`
     : '';
   const riderHeader = isTTT ? 'Team' : 'Rider';
   // Classification tables (GC/Points/KOM) often carry no team at all -- the empty
@@ -1297,7 +1301,7 @@ function renderTop10(rows) {
   // render Team when at least one row actually has one.
   const showTeam = !isTTT && rows.some(r => (r.team || '').trim());
   return `${partialNote}<table class="top10-table">
-    <thead><tr><th>#</th><th>${riderHeader}</th>${showTeam ? '<th class="team-col">Team</th>' : ''}<th>Time</th></tr></thead>
+    <thead><tr><th>#</th><th>${riderHeader}</th>${showTeam ? '<th class="team-col">Team</th>' : ''}<th>${esc(valueLabel)}</th></tr></thead>
     <tbody>${rows.map(r => {
       const slug = (r.rider_url||'').replace('/profile/','').replace(/^\/+/,'').trim();
       const disp = isTTT ? r.name : shortName(r.name, r.nat_code||r.nat||'');
@@ -1318,10 +1322,10 @@ function renderTop10(rows) {
 
 function renderLeaders(race) {
   const defs = [
-    {leaderKey:'gc_leader',     top10Key:'gc_top10',     label:'GC',      badgeCls:'badge-gc'},
-    {leaderKey:'points_leader', top10Key:'points_top10', label:'Points',  badgeCls:'badge-points'},
-    {leaderKey:'kom_leader',    top10Key:'kom_top10',    label:'KOM',     badgeCls:'badge-mountain'},
-    {leaderKey:'youth_leader',  top10Key:'youth_top10',  label:'Youth',   badgeCls:'badge-youth'},
+    {leaderKey:'gc_leader',     top10Key:'gc_top10',     label:'GC',      badgeCls:'badge-gc',       valueLabel:'Time'},
+    {leaderKey:'points_leader', top10Key:'points_top10', label:'Points',  badgeCls:'badge-points',   valueLabel:'Pts'},
+    {leaderKey:'kom_leader',    top10Key:'kom_top10',    label:'KOM',     badgeCls:'badge-mountain', valueLabel:'Pts'},
+    {leaderKey:'youth_leader',  top10Key:'youth_top10',  label:'Youth',   badgeCls:'badge-youth',    valueLabel:'Time'},
   ];
   const rows = defs.filter(d => race[d.leaderKey]).map((d, i) => {
     const uid = `cl-${race._uid||Math.random().toString(36).slice(2)}-${i}`;
@@ -1341,7 +1345,7 @@ function renderLeaders(race) {
         ${leaderNameEl}
         ${hasTop10 ? chevron('classif-chevron') : ''}
       </div>
-      ${hasTop10 ? `<div class="classif-row-body">${renderTop10(top10)}</div>` : ''}
+      ${hasTop10 ? `<div class="classif-row-body">${renderTop10(top10, d.valueLabel || 'Time')}</div>` : ''}
     </div>`;
   }).join('');
   return rows ? `<div class="classif-section"><div class="classif-title">Classifications</div>${rows}</div>` : '';
@@ -2707,7 +2711,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v115';
+const APP_VERSION = 'v116';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

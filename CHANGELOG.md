@@ -7,6 +7,12 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v116 — 2026-07-18 — Points/KOM columns were labelled "Time"
+The Points and KOM classification tables hold **points**, not times, but `renderTop10()` hard-coded a `Time` header — so the numbers looked like malformed times.
+
+- `renderTop10(rows, valueLabel)` now takes the column label; `renderLeaders()` passes `Pts` for Points and KOM, `Time` for GC and Youth.
+- The partial-data note follows suit ("…without points" vs "…without times").
+
 ## v115 — 2026-07-18 — Partial results: re-pull them, and say so in the app
 Qinghai stage 2 held only 3 riders with no times, and the GC classification only 3 — while Points/KOM had a full 10. It read as a finished result rather than a partial one.
 

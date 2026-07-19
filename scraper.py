@@ -512,8 +512,115 @@ def validate_result_rows(rows, context="result", min_riders=3):
     return True, "ok"
 
 
+# ── Non-finishers (abandons / DNS / outside time limit) ───────────────────────
+#
+# CyclingFlash appends the riders who did not complete the stage to the BOTTOM of
+# the same result table, with a status code where the rank number would be:
+#
+#   <tr><td>DNF</td><td><a href="/profile/jonas-vingegaard"><img alt="DK flag">
+#       Jonas Vingegaard</a><a href="/team/...">Team Visma | Lease a Bike</a></td>
+#       ...</tr>
+#
+# parse_result_rows() throws these away at `int(rank_text)`, which is why a rider
+# who abandons simply vanished from the app. Same page, same fetch — no extra
+# requests, we were just discarding the rows.
+NONFINISH_CODES = {
+    "DNF": "Did not finish — abandoned during the stage.",
+    "DNS": "Did not start — withdrew before the stage began.",
+    "OTL": "Outside time limit — finished too far behind and was eliminated.",
+    "DSQ": "Disqualified.",
+    "DQ":  "Disqualified.",
+    "HD":  "Outside time limit (hors délai) — eliminated on time.",
+    "ABD": "Abandoned.",
+    "NR":  "No result recorded.",
+    "DF":  "Finished, but no result was recorded.",
+}
+# Cap: a mass elimination is real (see any snowy Giro stage), but a table with
+# hundreds of "non-finishers" means the parse went wrong, not the race.
+MAX_NONFINISHERS = 60
+
+
+def parse_nonfinishers(html, max_rows=MAX_NONFINISHERS):
+    """
+    Return riders listed on a result page with a status code instead of a rank:
+      [{status, status_label, name, rider_url, team, nat_code, flag}, ...]
+
+    Deliberately conservative — anything unparseable is skipped rather than
+    guessed at, and the whole thing returns [] on any exception so a markup
+    change degrades to "no abandons shown" rather than corrupting a result.
+    """
+    out  = []
+    seen = set()
+    try:
+        for row_m in re.finditer(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL):
+            row_html = row_m.group(1)
+            cells = [m.group(1) for m in re.finditer(r'<td[^>]*>(.*?)</td>', row_html, re.DOTALL)]
+            if len(cells) < 2:
+                continue
+
+            status = strip_tags(cells[0]).strip().upper().rstrip('.')
+            if status not in NONFINISH_CODES:
+                continue
+
+            rider_cell = next((c for c in cells if '/profile/' in c), None)
+            if not rider_cell:
+                continue
+
+            name_m = re.search(
+                r'href=["\'](?:https://cyclingflash\.com)?/profile/([^"\']+)["\'][^>]*>(.*?)</a>',
+                rider_cell, re.DOTALL
+            )
+            if not name_m:
+                continue
+            rider_slug = name_m.group(1).strip()
+            name       = strip_tags(name_m.group(2)).strip()
+            if not name or len(name) > 60 or any(c in name for c in ("<", ">", "\n", "\t")):
+                continue
+            if rider_slug in seen:
+                continue
+            seen.add(rider_slug)
+
+            nat_m    = re.search(r'alt=["\']([A-Z]{2}) flag["\']', rider_cell)
+            nat_code = nat_m.group(1) if nat_m else ""
+
+            # Team. NB: the team link's label is wrapped in inner markup on these
+            # rows, so the `>([^<]+)` shape used by parse_result_rows matches
+            # nothing here — capture the whole anchor body and strip tags.
+            team = ""
+            for c in cells:
+                tm = re.search(
+                    r'href=["\'](?:https://cyclingflash\.com)?/team/[^"\']+["\'][^>]*>(.*?)</a>',
+                    c, re.DOTALL
+                )
+                if tm:
+                    candidate = strip_tags(tm.group(1)).strip()
+                    if candidate:
+                        team = candidate
+                        break
+
+            out.append({
+                "status":       status,
+                "status_label": NONFINISH_CODES[status],
+                "name":         name,
+                "rider_url":    f"/profile/{rider_slug}",
+                "team":         team,
+                "nat_code":     nat_code,
+                "flag":         flag_emoji(nat_code),
+            })
+            if len(out) >= max_rows:
+                break
+    except Exception as e:
+        print(f"        ! non-finisher parse failed ({e}) — skipping", flush=True)
+        return []
+    return out
+
+
 def scrape_stage(slug, stage_num):
-    """Fetch a stage result page and return (top10_list, winner_dict, height_profile_img, route_img) or (None, None, None, None)."""
+    """
+    Fetch a stage result page and return
+    (top10_list, winner_dict, height_profile_img, route_img, non_finishers)
+    or (None, None, None, None, []).
+    """
     if stage_num == 0:
         url = f"{BASE_URL}/race/{slug}/result"
     else:
@@ -521,24 +628,26 @@ def scrape_stage(slug, stage_num):
 
     html = fetch(url)
     if not html:
-        return None, None, None, None
+        return None, None, None, None, []
 
     rows = parse_result_rows(html, max_rows=10)
     if not rows:
         # Try TTT parser (team time trial — teams not riders in result table)
         rows = parse_ttt_rows(html, max_rows=10)
     if not rows:
-        return None, None, None, None
+        return None, None, None, None, []
 
     ok, reason = validate_result_rows(rows, context=f"stage {stage_num}")
     if not ok:
         print(f"        ✗ Stage {stage_num} result failed validation: {reason}", flush=True)
-        return None, None, None, None
+        return None, None, None, None, []
+
+    non_finishers = parse_nonfinishers(html)
 
     height_profile = _cdn_url(html, '___heightProfile')
     route_img      = _cdn_url(html, '___route_')
 
-    return rows, rows[0], height_profile, route_img
+    return rows, rows[0], height_profile, route_img, non_finishers
 
 
 # ── Scrape classification ──────────────────────────────────────────────────────
@@ -1394,13 +1503,19 @@ def main_results_only():
                 stages.append(stage_obj)
 
             existing = stage_obj.get("top10") or []
-            if existing and not _result_incomplete(existing):
+            # A stage scraped before non-finisher support existed has no
+            # "non_finishers" key at all — re-pull it once so abandons backfill
+            # instead of only appearing on stages raced from now on.
+            needs_nonfin = "non_finishers" not in stage_obj
+            if existing and not _result_incomplete(existing) and not needs_nonfin:
                 print(f"      Stage {n}: cached ({stage_obj.get('winner','?')})", flush=True)
                 continue
-            if existing:
+            if existing and needs_nonfin:
+                print(f"      Stage {n}: re-pulling for abandons", flush=True)
+            elif existing:
                 print(f"      Stage {n}: re-pulling partial result ({len(existing)} rows)", flush=True)
 
-            rows, winner, hpi, _ = scrape_stage(slug, n)
+            rows, winner, hpi, _, nonfin = scrape_stage(slug, n)
             time.sleep(DELAY)
             if winner:
                 stage_obj["winner"]           = winner["name"]
@@ -1410,6 +1525,15 @@ def main_results_only():
                 # already hold is the source still publishing, not a correction.
                 if len(rows or []) >= len(existing):
                     stage_obj["top10"] = rows or []
+                # Same rule for abandons — an empty parse (markup drift) must not
+                # erase a list we already hold, but the key is always written so
+                # the backfill re-pull above happens exactly once per stage.
+                if nonfin or "non_finishers" not in stage_obj:
+                    stage_obj["non_finishers"] = nonfin
+                if nonfin:
+                    print(f"        {len(nonfin)} did not finish: "
+                          + ", ".join(f"{r['name']} ({r['status']})" for r in nonfin[:5])
+                          + (" …" if len(nonfin) > 5 else ""), flush=True)
                 if hpi and not stage_obj.get("height_profile_img"):
                     stage_obj["height_profile_img"] = hpi
                 stages_updated += 1
@@ -1775,13 +1899,14 @@ def main():
 
         # ── Single-day race ──────────────────────────────────────────────────
         if total_stages <= 1:
-            rows, winner, height_profile, route_img = scrape_stage(slug, 0)
+            rows, winner, height_profile, route_img, nonfin = scrape_stage(slug, 0)
             time.sleep(DELAY)
             if winner:
                 race_obj["winner"]             = winner["name"]
                 race_obj["winner_flag"]        = winner["flag"]
                 race_obj["winner_nat"]         = winner["nat_code"]
                 race_obj["top10"]              = rows or []
+                race_obj["non_finishers"]      = nonfin
                 race_obj["height_profile_img"] = height_profile
                 race_obj["route_img"]          = route_img
                 win_slug = winner.get("rider_url", "").replace("/profile/", "").strip("/")
@@ -1820,23 +1945,28 @@ def main():
             has_details = n in cached_stages_details
 
             if n in completed_nums:
-                if n in cached_stages_results:
+                # Re-pull a cached stage that predates non-finisher support, so
+                # abandons backfill across the season rather than only appearing
+                # on stages raced after this change.
+                if n in cached_stages_results and "non_finishers" in cached_stages_results[n]:
                     stage_obj = dict(cached_stages_results[n])
                     w = stage_obj.get("winner", "cached")
                     print(f"      Stage {n}: cached ({w})", flush=True)
                 else:
-                    rows, winner, height_profile, route_img = scrape_stage(slug, n)
+                    rows, winner, height_profile, route_img, nonfin = scrape_stage(slug, n)
                     time.sleep(DELAY)
+                    prev = cached_stages_results.get(n) or {}
                     stage_obj = {
                         "num":              n,
                         "label":            f"Stage {n}",
                         "result_url":       f"/race/{slug}/result/stage-{n}",
-                        "winner":           winner["name"] if winner else None,
-                        "winner_flag":      winner["flag"] if winner else "",
-                        "winner_nat":       winner["nat_code"] if winner else "",
-                        "top10":            rows or [],
-                        "height_profile_img": height_profile,
-                        "route_img":        route_img,
+                        "winner":           winner["name"] if winner else prev.get("winner"),
+                        "winner_flag":      winner["flag"] if winner else prev.get("winner_flag", ""),
+                        "winner_nat":       winner["nat_code"] if winner else prev.get("winner_nat", ""),
+                        "top10":            rows or prev.get("top10") or [],
+                        "non_finishers":    nonfin or prev.get("non_finishers") or [],
+                        "height_profile_img": height_profile or prev.get("height_profile_img"),
+                        "route_img":        route_img or prev.get("route_img"),
                     }
                     if winner:
                         win_slug = winner.get("rider_url", "").replace("/profile/", "").strip("/")

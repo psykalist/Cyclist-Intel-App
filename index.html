@@ -450,6 +450,51 @@ header h1 span { color: var(--accent); }
   margin-bottom: 6px;
   line-height: 1.4;
 }
+
+/* ── Abandons / non-finishers panel ──────────────────────────────────────────
+   Sits directly above a result table. Collapsed by default so it never pushes
+   the actual result down the page; the summary line alone answers "who's out?". */
+.dnf-panel { margin-bottom: 8px; }
+.dnf-toggle {
+  display: flex; align-items: center; gap: 7px; width: 100%;
+  font-family: inherit; font-size: .76rem; font-weight: 600; text-align: left;
+  color: var(--live);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--live);
+  border-radius: 4px;
+  padding: 6px 9px;
+  cursor: pointer;
+  line-height: 1.35;
+}
+.dnf-toggle:hover { background: var(--surface); }
+.dnf-toggle .dnf-names {
+  color: var(--muted); font-weight: 400;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1;
+}
+.dnf-toggle .dnf-chev { margin-left: auto; transition: transform .18s ease; flex-shrink: 0; }
+.dnf-panel.open .dnf-toggle .dnf-chev { transform: rotate(180deg); }
+.dnf-body { display: none; padding: 2px 0 0; }
+.dnf-panel.open .dnf-body { display: block; }
+.dnf-item {
+  display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap;
+  padding: 7px 9px;
+  border: 1px solid var(--border); border-top: none;
+  font-size: .8rem;
+}
+.dnf-item:first-child { border-top: 1px solid var(--border); }
+.dnf-code {
+  font-size: .64rem; font-weight: 700; letter-spacing: .04em;
+  color: var(--live); background: rgba(230,57,70,.14);
+  border-radius: 3px; padding: 1px 5px; flex-shrink: 0;
+}
+.dnf-item .dnf-team { color: var(--muted); font-size: .74rem; }
+.dnf-item .dnf-why  { color: var(--muted); font-size: .72rem; flex-basis: 100%; line-height: 1.4; }
+.dnf-note {
+  font-size: .71rem; color: var(--muted); line-height: 1.45;
+  padding: 7px 9px; border: 1px solid var(--border); border-top: none;
+  background: var(--surface2);
+}
 @media (max-width: 520px) {
   .top10-table .team-cell,
   .top10-table .team-col { display: none; }
@@ -1285,6 +1330,78 @@ const RESULT_EXPECTED_ROWS = 10;
 // valueLabel: the last column holds a time/gap for stage + GC tables, but
 // POINTS for the Points and KOM classifications -- labelling those "Time" made
 // the numbers look like broken times.
+// ── Abandons / non-finishers ─────────────────────────────────────────────────
+// A rider who abandons simply disappeared from the app: the result table only
+// holds the top 10, so someone who crashed out mid-stage left no trace at all.
+// CyclingFlash lists them at the foot of the same result page with a status code
+// where the rank would be (DNF/DNS/OTL/...); the scraper now keeps those rows in
+// `non_finishers` and this renders them as a collapsed strip above the result.
+//
+// The source publishes the STATUS, not the reason — it says a rider did not
+// finish, never "broken collarbone". So this explains what the code means and
+// leaves the cause alone rather than inventing an injury.
+const DNF_CODE_LABELS = {
+  DNF: 'Did not finish — abandoned during the stage.',
+  DNS: 'Did not start — withdrew before the stage began.',
+  OTL: 'Outside the time limit — finished too far behind the winner and was eliminated.',
+  HD:  'Outside the time limit (hors délai) — eliminated on time.',
+  DSQ: 'Disqualified.',
+  DQ:  'Disqualified.',
+  ABD: 'Abandoned.',
+  NR:  'No result recorded for this rider.',
+  DF:  'Finished, but no result was recorded.'
+};
+
+function renderNonFinishers(rows, uid) {
+  if (!rows || !rows.length) return '';
+  const n = rows.length;
+  // Summary line: names only, so the collapsed strip already answers the
+  // question most of the time without needing to expand it.
+  const names = rows.slice(0, 3)
+    .map(r => shortName(r.name || '', r.nat_code || r.nat || ''))
+    .filter(Boolean).join(', ');
+  const more = n > 3 ? ` +${n - 3} more` : '';
+  const codesUsed = [...new Set(rows.map(r => (r.status || '').toUpperCase()))].filter(c => DNF_CODE_LABELS[c]);
+
+  const items = rows.map(r => {
+    const code = (r.status || '').toUpperCase();
+    const why  = r.status_label || DNF_CODE_LABELS[code] || '';
+    const slug = (r.rider_url || '').replace('/profile/', '').replace(/^\/+/, '').trim();
+    const disp = shortName(r.name || '', r.nat_code || r.nat || '');
+    const titleAttr = (disp !== (r.name || '')) ? ` title="${esc(r.name || '')}"` : '';
+    const nameEl = slug
+      ? `<span class="rider-name-link"${titleAttr} onclick="event.stopPropagation();openRiderModal('${esc(slug)}')">${esc(disp)}</span>`
+      : `<span${titleAttr}>${esc(disp)}</span>`;
+    return `<div class="dnf-item">
+      <span class="dnf-code">${esc(code || '—')}</span>
+      ${flagImg(r.nat_code || r.nat || '')}${nameEl}
+      ${r.team ? `<span class="dnf-team">${esc(r.team)}</span>` : ''}
+      ${why ? `<span class="dnf-why">${esc(why)}</span>` : ''}
+    </div>`;
+  }).join('');
+
+  const legend = codesUsed.length
+    ? `<div class="dnf-note">${codesUsed.map(c => `<strong>${esc(c)}</strong> — ${esc(DNF_CODE_LABELS[c])}`).join('<br>')}
+       <br>Source publishes the status only, not the cause — an abandon may be a crash, illness or a withdrawal, and the reason isn't recorded here.</div>`
+    : '';
+
+  return `<div class="dnf-panel" id="${uid}">
+    <button type="button" class="dnf-toggle" onclick="event.stopPropagation();toggleDnf('${uid}')" aria-expanded="false">
+      <span>⚠ ${n} ${n === 1 ? 'rider' : 'riders'} out</span>
+      <span class="dnf-names">${esc(names)}${esc(more)}</span>
+      <span class="dnf-chev">▾</span>
+    </button>
+    <div class="dnf-body">${items}${legend}</div>
+  </div>`;
+}
+
+function toggleDnf(uid) {
+  const el = document.getElementById(uid);
+  if (!el) return;
+  el.classList.toggle('open');
+  el.querySelector('.dnf-toggle')?.setAttribute('aria-expanded', el.classList.contains('open') ? 'true' : 'false');
+}
+
 function renderTop10(rows, valueLabel = 'Time') {
   if (!rows || !rows.length) return '<p class="empty">No results.</p>';
   const isTTT = rows.some(r => r.is_ttt);
@@ -1527,7 +1644,10 @@ function renderStages(stages, cardId) {
     const stageInfo = renderStageInfo(s);
     const descEl = s.description ? `<div class="stage-description">${esc(s.description)}</div>` : '';
     const roadbookEl = renderRoadbook(s, uid);
-    const bodyContent = `${renderStageImages(s)}${descEl}${hasResults ? renderTop10(s.top10) : ''}${roadbookEl}`;
+    // Abandons go ABOVE the result table — a rider who crashed out is the news
+    // of the stage, and burying it under the top 10 defeats the point.
+    const dnfEl = hasResults ? renderNonFinishers(s.non_finishers, `dnf-${uid}`) : '';
+    const bodyContent = `${renderStageImages(s)}${descEl}${dnfEl}${hasResults ? renderTop10(s.top10) : ''}${roadbookEl}`;
 
     return `<div class="stage-row" id="${uid}">
       <div class="stage-row-header${clickable?' clickable':''}"${clickable?` onclick="toggleStage('${uid}')"`:''}">
@@ -1643,7 +1763,8 @@ function renderRaceCard(race, status) {
       ? `<span class="rider-name-link" onclick="openRiderModal('${esc(winSlug1d)}')">${esc(winner1d)}</span>`
       : esc(winner1d);
     const w = winner1d ? `<div class="single-winner"><span class="label">Winner</span> ${flagImg(winNat1d)}${winnerName1d}</div>` : '';
-    body = `<div class="race-body-inner">${w}${renderStageImages(stage0.height_profile_img ? stage0 : race)}${renderTop10(top10_1d)}</div>`;
+    const dnf1d = renderNonFinishers(race.non_finishers || stage0.non_finishers, `dnf-1d-${id}`);
+    body = `<div class="race-body-inner">${w}${renderStageImages(stage0.height_profile_img ? stage0 : race)}${dnf1d}${renderTop10(top10_1d)}</div>`;
   } else {
     body = `<div class="race-body-inner">${renderLeaders(race)}${renderProgramme(race, id)}${renderStages(race.stages||[], id)}</div>`;
   }
@@ -2711,7 +2832,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v116';
+const APP_VERSION = 'v117';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

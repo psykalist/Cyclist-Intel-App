@@ -7,6 +7,17 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v117 — 2026-07-19 — Abandons: riders who stop racing no longer just vanish
+Prompted by Jonas Vingegaard abandoning on stage 15 of the Tour today. The app showed nothing at all — he was simply absent from the result, with no indication he'd been in the race and left it.
+
+- **Cause:** `parse_result_rows()` reads the rank cell with `int(rank_text)` and `continue`s on failure. CyclingFlash appends non-finishers to the **bottom of the same result table** with a status code where the rank would be (`<td>DNF</td>`), so every one of those rows was silently discarded. The data was already in the HTML we fetch — we were throwing it away.
+- **Scraper:** added `parse_nonfinishers()` + `NONFINISH_CODES` (DNF/DNS/OTL/DSQ/HD/ABD/NR/DF), and `scrape_stage()` now returns a 5th value stored on each stage as `non_finishers`. **No extra HTTP requests** — it parses the page the scraper already downloads. Defensive throughout: rows that don't yield a clean `/profile/` link are skipped, the whole parse is wrapped in try/except returning `[]`, and `MAX_NONFINISHERS = 60` caps a runaway parse (a mass elimination is real; 200 "non-finishers" is a bug).
+- **Never downgrades:** an empty re-parse (markup drift) cannot erase a list already held. The key is always written on first pull, which is also what makes the backfill terminate.
+- **Backfill:** both stage cache paths now treat a *missing* `non_finishers` key as "re-pull once", so abandons fill in across stages already scraped rather than only appearing on stages raced from now on. The one-day-race path stores them at race level.
+- **App:** `renderNonFinishers()` renders a collapsed strip **above** the result table — `⚠ 3 riders out — Vingegaard, Merlier, Van Asbroeck` — which expands to per-rider status badge, flag, tappable name (opens the rider modal), team, and a plain-English explanation of the code, plus a legend.
+- **Deliberately does not state a reason.** The source publishes the *status*, not the cause — it says a rider did not finish, never "broken collarbone". The panel explains what DNF/DNS/OTL mean and says outright that the cause isn't recorded, rather than inventing an injury. Checked for a better source first: procyclingstats carries the same codes and no reason, and has no per-race dropouts page (`/gc/dropouts` 404s to the final stage).
+- Verified the parser against live markup for TdF stages 13/14/15 — stage 13: 3 DNS, stage 14: 1 DNS + 1 OTL, stage 15: Vingegaard, Merlier, Van Asbroeck all DNF, with teams and flags resolving correctly.
+
 ## 2026-07-18 — Rider profile backfill scheduled + coverage health check
 Prompted by "Quinn Simmons has no stats". He actually **does** — 9 palmares back to 2021, 9 seasons of team history, 100 career results, photo and specialties, all rendering correctly on the live site. That report was a stale PWA cache. But it exposed a real gap underneath.
 

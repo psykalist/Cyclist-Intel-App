@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-07-18 19:47 UTC",
-  "run_at_iso": "2026-07-18T17:47:45.671168+00:00",
+  "run_at": "2026-07-19 13:49 UTC",
+  "run_at_iso": "2026-07-19T11:49:46.164020+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-de-france-2026",
       "name": "Tour de France",
       "total_stages": 21,
-      "stages_completed_before": 13,
+      "stages_completed_before": 14,
       "stages_completed_after": 14,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 15,
@@ -19,25 +19,10 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-18 19:47 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.0,
         "possible_parser_drift": false
       },
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "tour-of-magnificent-qinghai-2026",
-      "name": "Tour of Magnificent Qinghai",
-      "total_stages": 8,
-      "stages_completed_before": 7,
-      "stages_completed_after": 8,
-      "new_stages_found": 1,
-      "cancelled_stages": [
-        6
-      ],
-      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

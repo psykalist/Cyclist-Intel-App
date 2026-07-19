@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-18T17:47:47.585582+00:00",
-  "scraped_at_human": "18 Jul 2026 17:47 UTC",
+  "scraped_at": "2026-07-19T11:49:46.164544+00:00",
+  "scraped_at_human": "19 Jul 2026 11:49 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -12812,14 +12812,2224 @@
           "time_gap": "+ 01:33:14"
         }
       ]
+    }
+  ],
+  "upcoming": [
+    {
+      "slug": "donostia-san-sebastian-klasikoa",
+      "cf_slug": "donostia-san-sebastian-klasikoa-2026",
+      "name": "Donostia San Sebastian Klasikoa",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-01",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/donostia-san-sebastian-klasikoa-2026",
+      "startlist": []
     },
+    {
+      "slug": "tour-de-pologne",
+      "cf_slug": "tour-de-pologne-2026",
+      "name": "Tour de Pologne",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-09",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/tour-de-pologne-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/tour-de-pologne-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Nicolas Vinokurov",
+          "slug": "nicolas-vinokurov",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "SCHUYTENEER Steffen De",
+          "slug": "steffen-de-schuyteneer",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Luka Mezgec",
+          "slug": "luka-mezgec",
+          "nat": "si",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Finn Fisher-Black",
+          "slug": "finn-fisher-black",
+          "nat": "nz",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Wilco Kelderman",
+          "slug": "wilco-kelderman",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Davide Piganzoli",
+          "slug": "davide-piganzoli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "LAVIK Fredrik Dversnes",
+          "slug": "fredrik-dversnes",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Benoît Cosnefroy",
+          "slug": "benoit-cosnefroy",
+          "nat": "fr",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Paul Magnier",
+          "slug": "paul-magnier",
+          "nat": "fr",
+          "team": "Soudal Quick-Step (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "adac-cyclassics",
+      "cf_slug": "adac-cyclassics-2026",
+      "name": "ADAC Cyclassics",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-16",
+      "end_date": "2026-08-16",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/adac-cyclassics-2026",
+      "startlist": []
+    },
+    {
+      "slug": "renewi-tour",
+      "cf_slug": "renewi-tour-2026",
+      "name": "Renewi Tour",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-19",
+      "end_date": "2026-08-23",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/renewi-tour-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/renewi-tour-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/renewi-tour-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/renewi-tour-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/renewi-tour-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/renewi-tour-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Tim Merlier",
+          "slug": "tim-merlier",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Paul Magnier",
+          "slug": "paul-magnier",
+          "nat": "fr",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Luka Mezgec",
+          "slug": "luka-mezgec",
+          "nat": "si",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "BONDT Dries De",
+          "slug": "dries-de-bondt",
+          "nat": "be",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Oliver Naesen",
+          "slug": "oliver-naesen",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "vuelta-a-espana",
+      "cf_slug": "vuelta-a-espana-2026",
+      "name": "Vuelta a España",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-22",
+      "end_date": "2026-09-13",
+      "total_stages": 21,
+      "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 22 August",
+          "start_town": "Monaco",
+          "finish_town": "Monaco",
+          "distance_km": 9.6,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "ITT",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32659/responsive-images/01KCPVBJ6SYQHAQQJVEB9GZD5M___heightProfile_1200_345.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 23 August",
+          "start_town": "Monaco",
+          "finish_town": "Manosque",
+          "distance_km": 215.0,
+          "elevation_m": 3110,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32660/responsive-images/01KCPVCD79CWXXT4WB479P7R3W___heightProfile_1200_490.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Monday 24 August",
+          "start_town": "Gruissan",
+          "finish_town": "Font-Romeu-Odeillo-Via",
+          "distance_km": 166.0,
+          "elevation_m": 2596,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32661/responsive-images/01KCPVE2CYNQJRWD9Q7052R97Y___heightProfile_1200_724.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Tuesday 25 August",
+          "start_town": "Andorra La Vella",
+          "finish_town": "Andorra La Vella",
+          "distance_km": 104.0,
+          "elevation_m": 3009,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32654/responsive-images/01KCPTQD7T951SVVJQMHVEPGCK___heightProfile_821_800.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 26 August",
+          "start_town": "Falset",
+          "finish_town": "Roquetes",
+          "distance_km": 171.0,
+          "elevation_m": 1659,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp"
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 27 August",
+          "start_town": "Alcossebre",
+          "finish_town": "Castellón",
+          "distance_km": 176.0,
+          "elevation_m": 3045,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp"
+        },
+        {
+          "num": 7,
+          "label": "Stage 7",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-7",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 28 August",
+          "start_town": "Vall d'Alba",
+          "finish_town": "Valdelinares",
+          "distance_km": 149.0,
+          "elevation_m": 3572,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32664/responsive-images/01KCPVHBJRN9YFKEG84X35ET9T___heightProfile_1125_800.webp"
+        },
+        {
+          "num": 8,
+          "label": "Stage 8",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-8",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 29 August",
+          "start_town": "Puçol",
+          "finish_town": "Xeraco",
+          "distance_km": 168.0,
+          "elevation_m": 1305,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32671/responsive-images/01KCPVJ4FXBSYY79PHJT027NQP___heightProfile_1200_407.webp"
+        },
+        {
+          "num": 9,
+          "label": "Stage 9",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-9",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 30 August",
+          "start_town": "Villajoyosa",
+          "finish_town": "Alto de Aitana",
+          "distance_km": 187.0,
+          "elevation_m": 5048,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32678/responsive-images/01KCPVW88F57N4BTYG1DEAGVXJ___heightProfile_1200_588.webp"
+        },
+        {
+          "num": 10,
+          "label": "Stage 10",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-10",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Tuesday 01 September",
+          "start_town": "Alcaraz",
+          "finish_town": "Elche de la Sierra",
+          "distance_km": 184.0,
+          "elevation_m": 2670,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp"
+        },
+        {
+          "num": 11,
+          "label": "Stage 11",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-11",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 02 September",
+          "start_town": "Cartagena",
+          "finish_town": "Lorca",
+          "distance_km": 156.0,
+          "elevation_m": 1391,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32680/responsive-images/01KCPVY3K24J45DK4A1TGHR0MA___heightProfile_1200_619.webp"
+        },
+        {
+          "num": 12,
+          "label": "Stage 12",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-12",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 03 September",
+          "start_town": "Vera",
+          "finish_town": "Observatorio Astronómico de Calar Alto",
+          "distance_km": 166.0,
+          "elevation_m": 4460,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32683/responsive-images/01KCPVZ5Y8639S2ZR72XY3DBZ6___heightProfile_1200_741.webp"
+        },
+        {
+          "num": 13,
+          "label": "Stage 13",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-13",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 04 September",
+          "start_town": "Almuñécar",
+          "finish_town": "Loja",
+          "distance_km": 193.0,
+          "elevation_m": 3399,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32686/responsive-images/01KCPW09QJT1PSZQ5EN1ENHWS3___heightProfile_1200_571.webp"
+        },
+        {
+          "num": 14,
+          "label": "Stage 14",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-14",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 05 September",
+          "start_town": "Jaen",
+          "finish_town": "Sierra de la Pandera",
+          "distance_km": 152.0,
+          "elevation_m": 4060,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32687/responsive-images/01KCPW1KGNVZ6R41NSWJGYAEN4___heightProfile_1200_772.webp"
+        },
+        {
+          "num": 15,
+          "label": "Stage 15",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-15",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 06 September",
+          "start_town": "Palma del Rio",
+          "finish_town": "Cordoba",
+          "distance_km": 181.0,
+          "elevation_m": 2853,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32688/responsive-images/01KCPW2KFMY72RSMEWBM3RHN7C___heightProfile_1200_584.webp"
+        },
+        {
+          "num": 16,
+          "label": "Stage 16",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-16",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Tuesday 08 September",
+          "start_town": "Cortegana",
+          "finish_town": "La Rábida - Palos de la Frontera",
+          "distance_km": 186.0,
+          "elevation_m": 2244,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32689/responsive-images/01KCPW3GSKDR3RG0R6J6Z74915___heightProfile_1200_414.webp"
+        },
+        {
+          "num": 17,
+          "label": "Stage 17",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-17",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 09 September",
+          "start_town": "Dos Hermanas",
+          "finish_town": "Sevilla",
+          "distance_km": 189.0,
+          "elevation_m": 956,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp"
+        },
+        {
+          "num": 18,
+          "label": "Stage 18",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-18",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 10 September",
+          "start_town": "El Puerto de Santa",
+          "finish_town": "Jerez de la Frontera",
+          "distance_km": 32.0,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "ITT",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp"
+        },
+        {
+          "num": 19,
+          "label": "Stage 19",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-19",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 11 September",
+          "start_town": "Vélez-Málaga",
+          "finish_town": "Peñas Blancas",
+          "distance_km": 205.0,
+          "elevation_m": 3987,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp"
+        },
+        {
+          "num": 20,
+          "label": "Stage 20",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-20",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 12 September",
+          "start_town": "La Calahorra",
+          "finish_town": "Collado del Alguacil",
+          "distance_km": 187.0,
+          "elevation_m": 5041,
+          "start_time": "",
+          "stage_type": "mountain",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32657/responsive-images/01KCPV1T3V960QHD51660SWS8K___heightProfile_1200_642.webp"
+        },
+        {
+          "num": 21,
+          "label": "Stage 21",
+          "result_url": "/race/vuelta-a-espana-2026/result/stage-21",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 13 September",
+          "start_town": "Granada",
+          "finish_town": "Granada",
+          "distance_km": 99.0,
+          "elevation_m": 1193,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp"
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Hugo Houle",
+          "slug": "hugo-houle",
+          "nat": "ca",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Pau Miquel",
+          "slug": "pau-miquel-delgado",
+          "nat": "es",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Matthew Riccitello",
+          "slug": "matthew-riccitello",
+          "nat": "us",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Felix Gall",
+          "slug": "felix-gall",
+          "nat": "at",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Léo Bisiaux",
+          "slug": "leo-bisiaux",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "DEN BERG Marijn Van",
+          "slug": "marijn-van-den-berg",
+          "nat": "nl",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Guillaume Martin",
+          "slug": "guillaume-martin",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Axel Laurance",
+          "slug": "axel-laurance",
+          "nat": "fr",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "NORSGAARD Mathias Sunekær",
+          "slug": "mathias-norsgaard",
+          "nat": "dk",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Thibau Nys",
+          "slug": "thibau-nys",
+          "nat": "be",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Mattias Skjelmose",
+          "slug": "mattias-skjelmose-jensen",
+          "nat": "dk",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Nairo Quintana",
+          "slug": "nairo-quintana",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Einer Rubio",
+          "slug": "einer-rubio",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Enric Mas",
+          "slug": "enric-mas",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Jan Hirt",
+          "slug": "jan-hirt",
+          "nat": "cz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Luke Tuckwell",
+          "slug": "luke-tuckwell",
+          "nat": "au",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Primož Roglič",
+          "slug": "primoz-roglic",
+          "nat": "si",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Gianni Vermeersch",
+          "slug": "gianni-vermeersch",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Junior Lecerf",
+          "slug": "junior-lecerf",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Filippo Zana",
+          "slug": "filippo-zana",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Steff Cras",
+          "slug": "steff-cras",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Alberto Dainese",
+          "slug": "alberto-dainese",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Ethan Hayter",
+          "slug": "ethan-hayter",
+          "nat": "gb",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Paul Double",
+          "slug": "paul-double",
+          "nat": "gb",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Luke Plapp",
+          "slug": "luke-plapp",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Juan Guillermo Martinez",
+          "slug": "guillermo-juan-martinez",
+          "nat": "co",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Max Poole",
+          "slug": "max-poole",
+          "nat": "gb",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Filippo Fiorelli",
+          "slug": "filippo-fiorelli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Tijmen Graat",
+          "slug": "tijmen-graat",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "AERT Wout Van",
+          "slug": "wout-van-aert",
+          "nat": "be",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Matthew Brennan",
+          "slug": "matthew-brennan",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Jørgen Nordhagen",
+          "slug": "jorgen-nordhagen",
+          "nat": "no",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Steven Kruijswijk",
+          "slug": "steven-kruijswijk",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "João Almeida",
+          "slug": "joao-almeida",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Marc Soler",
+          "slug": "marc-soler",
+          "nat": "es",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Ivo Oliveira",
+          "slug": "ivo-emanuel-alves",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Domen Novak",
+          "slug": "domen-novak",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Magnus Cort",
+          "slug": "magnus-cort-nielsen",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Henok Mulubrhan",
+          "slug": "henok-mulubrhan",
+          "nat": "er",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Harold Tejada",
+          "slug": "harold-tejada",
+          "nat": "co",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Harold Martín López",
+          "slug": "harold-martin-lopez",
+          "nat": "ec",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Clément Champoussin",
+          "slug": "clement-champoussin",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Alberto Bettiol",
+          "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Nicolas Vinokurov",
+          "slug": "nicolas-vinokurov",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Davide Ballerini",
+          "slug": "davide-ballerini",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Bryan Coquard",
+          "slug": "bryan-coquard",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Milan Vader",
+          "slug": "milan-vader",
+          "nat": "nl",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "LA CRUZ David De",
+          "slug": "david-de-la-cruz",
+          "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Jesús Herrada",
+          "slug": "jesus-herrada-lopez",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "José Manuel Díaz",
+          "slug": "jose-manuel-diaz-gallego",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        }
+      ]
+    },
+    {
+      "slug": "bretagne-classic-ouest-france",
+      "cf_slug": "bretagne-classic-ouest-france-2026",
+      "name": "Bretagne Classic - Ouest-France",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-08-30",
+      "end_date": "2026-08-30",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/bretagne-classic-ouest-france-2026",
+      "startlist": []
+    },
+    {
+      "slug": "grand-prix-cycliste-de-quebec",
+      "cf_slug": "grand-prix-cycliste-de-quebec-2026",
+      "name": "Grand Prix Cycliste de Québec",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-09-11",
+      "end_date": "2026-09-11",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-quebec-2026",
+      "startlist": []
+    },
+    {
+      "slug": "grand-prix-cycliste-de-montreal",
+      "cf_slug": "grand-prix-cycliste-de-montreal-2026",
+      "name": "Grand Prix Cycliste de Montréal",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-montreal-2026",
+      "startlist": []
+    },
+    {
+      "slug": "il-lombardia",
+      "cf_slug": "il-lombardia-2026",
+      "name": "Il Lombardia",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
+      "startlist": []
+    },
+    {
+      "slug": "tour-of-guangxi",
+      "cf_slug": "tour-of-guangxi-2026",
+      "name": "Tour of Guangxi",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-18",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "postnord-tour-of-denmark",
+      "cf_slug": "postnord-tour-of-denmark-2026",
+      "name": "PostNord Tour of Denmark",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-07-29",
+      "end_date": "2026-08-02",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 29 July",
+          "start_town": "Aalborg",
+          "finish_town": "Aalborg",
+          "distance_km": 197.6,
+          "elevation_m": 971,
+          "start_time": "15:25",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 30 July",
+          "start_town": "Glyngøre",
+          "finish_town": "Skive",
+          "distance_km": 179.0,
+          "elevation_m": 822,
+          "start_time": "15:40",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 31 July",
+          "start_town": "Fredericia",
+          "finish_town": "Vejle",
+          "distance_km": 202.6,
+          "elevation_m": 2306,
+          "start_time": "14:45",
+          "stage_type": "hilly",
+          "description": ""
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 01 August",
+          "start_town": "Rudkøbing",
+          "finish_town": "Fyn",
+          "distance_km": 177.5,
+          "elevation_m": 875,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 02 August",
+          "start_town": "Køge",
+          "finish_town": "Rødovre",
+          "distance_km": 133.2,
+          "elevation_m": 417,
+          "start_time": "14:30",
+          "stage_type": "flat",
+          "description": ""
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Jakob Söderqvist",
+          "slug": "jakob-soderqvist",
+          "nat": "se",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Milan Menten",
+          "slug": "milan-menten",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Toon Aerts",
+          "slug": "toon-aerts",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Mathieu Kockelmann",
+          "slug": "mathieu-kockelmann",
+          "nat": "lu",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Cole Kessler",
+          "slug": "cole-kessler",
+          "nat": "us",
+          "team": "Modern Adventure Pro Cycling (PRT)"
+        },
+        {
+          "name": "Ezra Caudell",
+          "slug": "ezra-caudell",
+          "nat": "us",
+          "team": "Modern Adventure Pro Cycling (PRT)"
+        },
+        {
+          "name": "Matyáš Kopecký",
+          "slug": "matyas-kopecky",
+          "nat": "cz",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Anders Foldager",
+          "slug": "anders-foldager",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Rasmus Søjberg Pedersen",
+          "slug": "rasmus-sojbergpedersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Casper Pedersen",
+          "slug": "casper-pedersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Christopher Juul-Jensen",
+          "slug": "christopher-juul-jensen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "ANDERSEN Noah Lindholm Møller",
+          "slug": "noah-lindholm-moller-andersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Theodor August Clemmensen",
+          "slug": "theodor-august-clemmensen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Gustav Wang",
+          "slug": "gustav-wang",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Andreas Stokbro",
+          "slug": "andreas-stokbro",
+          "nat": "dk",
+          "team": "Team ColoQuick (CT)"
+        },
+        {
+          "name": "Matias Malmberg",
+          "slug": "matias-malmberg",
+          "nat": "dk",
+          "team": "Swatt Club (CT)"
+        }
+      ]
+    },
+    {
+      "slug": "vuelta-a-burgos",
+      "cf_slug": "vuelta-a-burgos-2026",
+      "name": "Vuelta a Burgos",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-08-04",
+      "end_date": "2026-08-08",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/vuelta-a-burgos-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/vuelta-a-burgos-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/vuelta-a-burgos-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/vuelta-a-burgos-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/vuelta-a-burgos-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/vuelta-a-burgos-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "João Almeida",
+          "slug": "joao-almeida",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Domen Novak",
+          "slug": "domen-novak",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Enric Mas",
+          "slug": "enric-mas",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Clément Champoussin",
+          "slug": "clement-champoussin",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Alberto Bettiol",
+          "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Léo Bisiaux",
+          "slug": "leo-bisiaux",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Felix Gall",
+          "slug": "felix-gall",
+          "nat": "at",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Luke Tuckwell",
+          "slug": "luke-tuckwell",
+          "nat": "au",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "czech-tour",
+      "cf_slug": "czech-tour-2026",
+      "name": "Czech Tour",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-08-13",
+      "end_date": "2026-08-16",
+      "total_stages": 4,
+      "official_url": "https://cyclingflash.com/race/czech-tour-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/czech-tour-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/czech-tour-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/czech-tour-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/czech-tour-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Jan Hirt",
+          "slug": "jan-hirt",
+          "nat": "cz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Mattia Agostinacchio",
+          "slug": "mattia-agostinacchio",
+          "nat": "it",
+          "team": "EF Education - EasyPost (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "arctic-race-of-norway",
+      "cf_slug": "arctic-race-of-norway-2026",
+      "name": "Arctic Race of Norway",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-08-13",
+      "end_date": "2026-08-16",
+      "total_stages": 4,
+      "official_url": "https://cyclingflash.com/race/arctic-race-of-norway-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/arctic-race-of-norway-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 13 August",
+          "start_town": "Evenes",
+          "finish_town": "Myre",
+          "distance_km": 181.7,
+          "elevation_m": 2200,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "The opening stage of the Arctic Race of Norway takes the peloton on a 181.7-kilometre journey from Evenes to Myre. With a total elevation gain of around 2,200 metres, it promises to be a demanding day in the saddle. Several climbs are featured along the route, including Kåringen and Storheia, offering opportunities for attackers and strong climbers to make their move. Despite the hilly terrain, a reduced bunch sprint in Myre remains a realistic outcome.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163089/responsive-images/01KV7RD1R69ZAH17S4NYJ0TCVH___heightProfile_1200_696.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/arctic-race-of-norway-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 14 August",
+          "start_town": "Bø",
+          "finish_town": "Andenes",
+          "distance_km": 179.2,
+          "elevation_m": 1300,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "The second stage of the Arctic Race of Norway covers 179.2 kilometres from Bø to Andenes. With approximately 1,300 metres of elevation gain, it is less demanding than the opening stage, although several short climbs and gravel sections add an extra layer of difficulty. The run-in to Andenes is relatively flat, making it likely that a reduced peloton will battle for victory in a bunch sprint. However, the wind could play a crucial role and significantly influence the outcome of the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163091/responsive-images/01KV7REDWXSJV3FK62NN4F4296___heightProfile_1200_696.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/arctic-race-of-norway-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 15 August",
+          "start_town": "Stokmarknes",
+          "finish_town": "Storheia (Melbu)",
+          "distance_km": 142.5,
+          "elevation_m": 1800,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "At 142.5 kilometres, the third stage of the Arctic Race of Norway is relatively short but highly explosive, featuring 1,800 metres of elevation gain. After tackling the Storvatnet climb twice, the riders face a brutal finale on Storheia, where the final ascent measures 3.5 kilometres at an average gradient of 11.8%. This mountaintop finish is expected to create significant time gaps and offers climbers and general classification contenders an ideal opportunity to make their mark.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163093/responsive-images/01KV7RFKVK5P5W1ABS0PZAYHZD___heightProfile_1200_696.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/arctic-race-of-norway-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 16 August",
+          "start_town": "Sortland",
+          "finish_town": "Narvik",
+          "distance_km": 190.8,
+          "elevation_m": 2400,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "The final stage of the Arctic Race of Norway takes the riders from Sortland to Narvik over a challenging 190.8 kilometres. With an impressive 2,400 metres of elevation gain, it is the toughest stage of the race. Several classified climbs await throughout the day, before the decisive ascent of Narvikfjellet, a steep 2.3-kilometre climb averaging 8.6%. This uphill finish provides the perfect opportunity for the general classification contenders to make one last move and could prove decisive in determining the overall winner of the Arctic Race of Norway.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163096/responsive-images/01KV7RH17ZNG1Z0Z5TPZXNQ5J3___heightProfile_1200_696.webp"
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Cole Kessler",
+          "slug": "cole-kessler",
+          "nat": "us",
+          "team": "Modern Adventure Pro Cycling (PRT)"
+        },
+        {
+          "name": "Toon Aerts",
+          "slug": "toon-aerts",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Mathieu Kockelmann",
+          "slug": "mathieu-kockelmann",
+          "nat": "lu",
+          "team": "Lotto Intermarché (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "lidl-deutschland-tour",
+      "cf_slug": "lidl-deutschland-tour-2026",
+      "name": "Lidl Deutschland Tour",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-08-19",
+      "end_date": "2026-08-23",
+      "total_stages": 4,
+      "official_url": "https://cyclingflash.com/race/lidl-deutschland-tour-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 20 August",
+          "start_town": "Bad Orb",
+          "finish_town": "Schwäbisch Hall",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 21 August",
+          "start_town": "Schwäbisch Hall",
+          "finish_town": "Offenbach an der Queich",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 22 August",
+          "start_town": "",
+          "finish_town": "Bad Dürkheim",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 23 August",
+          "start_town": "",
+          "finish_town": "Heilbronn",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "lloyds-tour-of-britain-men",
+      "cf_slug": "lloyds-tour-of-britain-men-2026",
+      "name": "Lloyds Tour of Britain Men",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-02",
+      "end_date": "2026-09-06",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 02 September",
+          "start_town": "Lincoln",
+          "finish_town": "Lincoln",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 03 September",
+          "start_town": "Boston",
+          "finish_town": "Skegness",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 04 September",
+          "start_town": "Hull",
+          "finish_town": "Beverley",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 05 September",
+          "start_town": "Helmsley",
+          "finish_town": "Leyburn",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 06 September",
+          "start_town": "Earlston",
+          "finish_town": "Earlston",
+          "distance_km": null,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "maryland-cycling-classic",
+      "cf_slug": "maryland-cycling-classic-2026",
+      "name": "Maryland Cycling Classic",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-07",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/maryland-cycling-classic-2026",
+      "startlist": [
+        {
+          "name": "Mattia Agostinacchio",
+          "slug": "mattia-agostinacchio",
+          "nat": "it",
+          "team": "EF Education - EasyPost (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "gp-industria-artigianato",
+      "cf_slug": "gp-industria-artigianato-2026",
+      "name": "GP Industria & Artigianato",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-06",
+      "end_date": "2026-09-06",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gp-industria-artigianato-2026",
+      "startlist": [
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "startlist": []
+    },
+    {
+      "slug": "gp-de-fourmies-la-voix-du-nord",
+      "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
+      "name": "GP de Fourmies / La Voix du Nord",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gp-de-fourmies-la-voix-du-nord-2026",
+      "startlist": []
+    },
+    {
+      "slug": "skoda-tour-de-luxembourg",
+      "cf_slug": "skoda-tour-de-luxembourg-2026",
+      "name": "Skoda Tour de Luxembourg",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-20",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "grand-prix-de-wallonie",
+      "cf_slug": "grand-prix-de-wallonie-2026",
+      "name": "Grand Prix de Wallonie",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
+      "startlist": []
+    },
+    {
+      "slug": "super-8-classic",
+      "cf_slug": "super-8-classic-2026",
+      "name": "SUPER 8 Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-19",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
+      "startlist": []
+    },
+    {
+      "slug": "cro-race",
+      "cf_slug": "cro-race-2026",
+      "name": "CRO Race",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-27",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/cro-race-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/cro-race-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/cro-race-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/cro-race-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/cro-race-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/cro-race-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/cro-race-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "petronas-le-tour-de-langkawi",
+      "cf_slug": "petronas-le-tour-de-langkawi-2026",
+      "name": "Petronas Le Tour de Langkawi",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-04",
+      "total_stages": 7,
+      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 7,
+          "label": "Stage 7",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "sparkassen-munsterland-giro",
+      "cf_slug": "sparkassen-munsterland-giro-2026",
+      "name": "Sparkassen Münsterland Giro",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-03",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/sparkassen-munsterland-giro-2026",
+      "startlist": []
+    },
+    {
+      "slug": "giro-dellemilia",
+      "cf_slug": "giro-dellemilia-2026",
+      "name": "Giro dell'Emilia",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-03",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/giro-dellemilia-2026",
+      "startlist": []
+    },
+    {
+      "slug": "coppa-bernocchi-gp-banco-bpm",
+      "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
+      "name": "Coppa Bernocchi - GP Banco BPM",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-05",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/coppa-bernocchi-gp-banco-bpm-2026",
+      "startlist": []
+    },
+    {
+      "slug": "tre-valli-varesine",
+      "cf_slug": "tre-valli-varesine-2026",
+      "name": "Tre Valli Varesine",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-06",
+      "end_date": "2026-10-06",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/tre-valli-varesine-2026",
+      "startlist": []
+    },
+    {
+      "slug": "gran-piemonte",
+      "cf_slug": "gran-piemonte-2026",
+      "name": "Gran Piemonte",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-08",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gran-piemonte-2026",
+      "startlist": []
+    },
+    {
+      "slug": "paris-tours-elite",
+      "cf_slug": "paris-tours-elite-2026",
+      "name": "Paris - Tours Elite",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-11",
+      "end_date": "2026-10-11",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/paris-tours-elite-2026",
+      "startlist": []
+    },
+    {
+      "slug": "giro-del-veneto",
+      "cf_slug": "giro-del-veneto-2026",
+      "name": "Giro del Veneto",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-14",
+      "end_date": "2026-10-14",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/giro-del-veneto-2026",
+      "startlist": []
+    },
+    {
+      "slug": "utsunomiya-japan-cup-road-race",
+      "cf_slug": "utsunomiya-japan-cup-road-race-2026",
+      "name": "Utsunomiya Japan Cup Road Race",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-18",
+      "end_date": "2026-10-18",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/utsunomiya-japan-cup-road-race-2026",
+      "startlist": []
+    },
+    {
+      "slug": "veneto-classic",
+      "cf_slug": "veneto-classic-2026",
+      "name": "Veneto Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-18",
+      "end_date": "2026-10-18",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
+      "startlist": []
+    },
+    {
+      "slug": "clasica-de-ordizia-ordiziako-klasikoa",
+      "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
+      "name": "Clásica de Ordizia - Ordiziako Klasikoa",
+      "year": "2026",
+      "category": "1.1",
+      "status": "upcoming",
+      "start_date": "2026-07-25",
+      "end_date": "2026-07-25",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/clasica-de-ordizia-ordiziako-klasikoa-2026",
+      "startlist": []
+    },
+    {
+      "slug": "clasica-castilla-y-leon",
+      "cf_slug": "clasica-castilla-y-leon-2026",
+      "name": "Clasica Castilla y Leon",
+      "year": "2026",
+      "category": "1.1",
+      "status": "upcoming",
+      "start_date": "2026-07-26",
+      "end_date": "2026-07-26",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/clasica-castilla-y-leon-2026",
+      "startlist": []
+    }
+  ],
+  "recent": [
     {
       "slug": "tour-of-magnificent-qinghai",
       "cf_slug": "tour-of-magnificent-qinghai-2026",
       "name": "Tour of Magnificent Qinghai",
       "year": "2026",
       "category": "2.Pro",
-      "status": "live",
+      "status": "recent",
       "start_date": "2026-07-11",
       "end_date": "2026-07-18",
       "total_stages": 8,
@@ -14780,2163 +16990,7 @@
         }
       ],
       "gc_source": "procyclingstats"
-    }
-  ],
-  "upcoming": [
-    {
-      "slug": "donostia-san-sebastian-klasikoa",
-      "cf_slug": "donostia-san-sebastian-klasikoa-2026",
-      "name": "Donostia San Sebastian Klasikoa",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-01",
-      "end_date": "2026-08-01",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/donostia-san-sebastian-klasikoa-2026",
-      "startlist": []
     },
-    {
-      "slug": "tour-de-pologne",
-      "cf_slug": "tour-de-pologne-2026",
-      "name": "Tour de Pologne",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-03",
-      "end_date": "2026-08-09",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/tour-de-pologne-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/tour-de-pologne-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Nicolas Vinokurov",
-          "slug": "nicolas-vinokurov",
-          "nat": "kz",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "SCHUYTENEER Steffen De",
-          "slug": "steffen-de-schuyteneer",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Luka Mezgec",
-          "slug": "luka-mezgec",
-          "nat": "si",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Finn Fisher-Black",
-          "slug": "finn-fisher-black",
-          "nat": "nz",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Wilco Kelderman",
-          "slug": "wilco-kelderman",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Davide Piganzoli",
-          "slug": "davide-piganzoli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "LAVIK Fredrik Dversnes",
-          "slug": "fredrik-dversnes",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Benoît Cosnefroy",
-          "slug": "benoit-cosnefroy",
-          "nat": "fr",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Paul Magnier",
-          "slug": "paul-magnier",
-          "nat": "fr",
-          "team": "Soudal Quick-Step (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "adac-cyclassics",
-      "cf_slug": "adac-cyclassics-2026",
-      "name": "ADAC Cyclassics",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-16",
-      "end_date": "2026-08-16",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/adac-cyclassics-2026",
-      "startlist": []
-    },
-    {
-      "slug": "renewi-tour",
-      "cf_slug": "renewi-tour-2026",
-      "name": "Renewi Tour",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-23",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/renewi-tour-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/renewi-tour-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/renewi-tour-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/renewi-tour-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/renewi-tour-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/renewi-tour-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Tim Merlier",
-          "slug": "tim-merlier",
-          "nat": "be",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Paul Magnier",
-          "slug": "paul-magnier",
-          "nat": "fr",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Luka Mezgec",
-          "slug": "luka-mezgec",
-          "nat": "si",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "BONDT Dries De",
-          "slug": "dries-de-bondt",
-          "nat": "be",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Oliver Naesen",
-          "slug": "oliver-naesen",
-          "nat": "be",
-          "team": "Decathlon CMA CGM Team (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "vuelta-a-espana",
-      "cf_slug": "vuelta-a-espana-2026",
-      "name": "Vuelta a España",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-22",
-      "end_date": "2026-09-13",
-      "total_stages": 21,
-      "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 22 August",
-          "start_town": "Monaco",
-          "finish_town": "Monaco",
-          "distance_km": 9.6,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "ITT",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32659/responsive-images/01KCPVBJ6SYQHAQQJVEB9GZD5M___heightProfile_1200_345.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 23 August",
-          "start_town": "Monaco",
-          "finish_town": "Manosque",
-          "distance_km": 215.0,
-          "elevation_m": 3110,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32660/responsive-images/01KCPVCD79CWXXT4WB479P7R3W___heightProfile_1200_490.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Monday 24 August",
-          "start_town": "Gruissan",
-          "finish_town": "Font-Romeu-Odeillo-Via",
-          "distance_km": 166.0,
-          "elevation_m": 2596,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32661/responsive-images/01KCPVE2CYNQJRWD9Q7052R97Y___heightProfile_1200_724.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Tuesday 25 August",
-          "start_town": "Andorra La Vella",
-          "finish_town": "Andorra La Vella",
-          "distance_km": 104.0,
-          "elevation_m": 3009,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32654/responsive-images/01KCPTQD7T951SVVJQMHVEPGCK___heightProfile_821_800.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 26 August",
-          "start_town": "Falset",
-          "finish_town": "Roquetes",
-          "distance_km": 171.0,
-          "elevation_m": 1659,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp"
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 27 August",
-          "start_town": "Alcossebre",
-          "finish_town": "Castellón",
-          "distance_km": 176.0,
-          "elevation_m": 3045,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp"
-        },
-        {
-          "num": 7,
-          "label": "Stage 7",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 28 August",
-          "start_town": "Vall d'Alba",
-          "finish_town": "Valdelinares",
-          "distance_km": 149.0,
-          "elevation_m": 3572,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32664/responsive-images/01KCPVHBJRN9YFKEG84X35ET9T___heightProfile_1125_800.webp"
-        },
-        {
-          "num": 8,
-          "label": "Stage 8",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-8",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 29 August",
-          "start_town": "Puçol",
-          "finish_town": "Xeraco",
-          "distance_km": 168.0,
-          "elevation_m": 1305,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32671/responsive-images/01KCPVJ4FXBSYY79PHJT027NQP___heightProfile_1200_407.webp"
-        },
-        {
-          "num": 9,
-          "label": "Stage 9",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-9",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 30 August",
-          "start_town": "Villajoyosa",
-          "finish_town": "Alto de Aitana",
-          "distance_km": 187.0,
-          "elevation_m": 5048,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32678/responsive-images/01KCPVW88F57N4BTYG1DEAGVXJ___heightProfile_1200_588.webp"
-        },
-        {
-          "num": 10,
-          "label": "Stage 10",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-10",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Tuesday 01 September",
-          "start_town": "Alcaraz",
-          "finish_town": "Elche de la Sierra",
-          "distance_km": 184.0,
-          "elevation_m": 2670,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp"
-        },
-        {
-          "num": 11,
-          "label": "Stage 11",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-11",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 02 September",
-          "start_town": "Cartagena",
-          "finish_town": "Lorca",
-          "distance_km": 156.0,
-          "elevation_m": 1391,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32680/responsive-images/01KCPVY3K24J45DK4A1TGHR0MA___heightProfile_1200_619.webp"
-        },
-        {
-          "num": 12,
-          "label": "Stage 12",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-12",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 03 September",
-          "start_town": "Vera",
-          "finish_town": "Observatorio Astronómico de Calar Alto",
-          "distance_km": 166.0,
-          "elevation_m": 4460,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32683/responsive-images/01KCPVZ5Y8639S2ZR72XY3DBZ6___heightProfile_1200_741.webp"
-        },
-        {
-          "num": 13,
-          "label": "Stage 13",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-13",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 04 September",
-          "start_town": "Almuñécar",
-          "finish_town": "Loja",
-          "distance_km": 193.0,
-          "elevation_m": 3399,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32686/responsive-images/01KCPW09QJT1PSZQ5EN1ENHWS3___heightProfile_1200_571.webp"
-        },
-        {
-          "num": 14,
-          "label": "Stage 14",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-14",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 05 September",
-          "start_town": "Jaen",
-          "finish_town": "Sierra de la Pandera",
-          "distance_km": 152.0,
-          "elevation_m": 4060,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32687/responsive-images/01KCPW1KGNVZ6R41NSWJGYAEN4___heightProfile_1200_772.webp"
-        },
-        {
-          "num": 15,
-          "label": "Stage 15",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-15",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 06 September",
-          "start_town": "Palma del Rio",
-          "finish_town": "Cordoba",
-          "distance_km": 181.0,
-          "elevation_m": 2853,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32688/responsive-images/01KCPW2KFMY72RSMEWBM3RHN7C___heightProfile_1200_584.webp"
-        },
-        {
-          "num": 16,
-          "label": "Stage 16",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-16",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Tuesday 08 September",
-          "start_town": "Cortegana",
-          "finish_town": "La Rábida - Palos de la Frontera",
-          "distance_km": 186.0,
-          "elevation_m": 2244,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32689/responsive-images/01KCPW3GSKDR3RG0R6J6Z74915___heightProfile_1200_414.webp"
-        },
-        {
-          "num": 17,
-          "label": "Stage 17",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-17",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 09 September",
-          "start_town": "Dos Hermanas",
-          "finish_town": "Sevilla",
-          "distance_km": 189.0,
-          "elevation_m": 956,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp"
-        },
-        {
-          "num": 18,
-          "label": "Stage 18",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-18",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 10 September",
-          "start_town": "El Puerto de Santa",
-          "finish_town": "Jerez de la Frontera",
-          "distance_km": 32.0,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "ITT",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp"
-        },
-        {
-          "num": 19,
-          "label": "Stage 19",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-19",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 11 September",
-          "start_town": "Vélez-Málaga",
-          "finish_town": "Peñas Blancas",
-          "distance_km": 205.0,
-          "elevation_m": 3987,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp"
-        },
-        {
-          "num": 20,
-          "label": "Stage 20",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-20",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 12 September",
-          "start_town": "La Calahorra",
-          "finish_town": "Collado del Alguacil",
-          "distance_km": 187.0,
-          "elevation_m": 5041,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32657/responsive-images/01KCPV1T3V960QHD51660SWS8K___heightProfile_1200_642.webp"
-        },
-        {
-          "num": 21,
-          "label": "Stage 21",
-          "result_url": "/race/vuelta-a-espana-2026/result/stage-21",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 13 September",
-          "start_town": "Granada",
-          "finish_town": "Granada",
-          "distance_km": 99.0,
-          "elevation_m": 1193,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp"
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Hugo Houle",
-          "slug": "hugo-houle",
-          "nat": "ca",
-          "team": "Alpecin - Premier Tech (WT)"
-        },
-        {
-          "name": "Pau Miquel",
-          "slug": "pau-miquel-delgado",
-          "nat": "es",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Matthew Riccitello",
-          "slug": "matthew-riccitello",
-          "nat": "us",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Felix Gall",
-          "slug": "felix-gall",
-          "nat": "at",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Léo Bisiaux",
-          "slug": "leo-bisiaux",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "DEN BERG Marijn Van",
-          "slug": "marijn-van-den-berg",
-          "nat": "nl",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Guillaume Martin",
-          "slug": "guillaume-martin",
-          "nat": "fr",
-          "team": "Groupama - FDJ United (WT)"
-        },
-        {
-          "name": "Axel Laurance",
-          "slug": "axel-laurance",
-          "nat": "fr",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "NORSGAARD Mathias Sunekær",
-          "slug": "mathias-norsgaard",
-          "nat": "dk",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Thibau Nys",
-          "slug": "thibau-nys",
-          "nat": "be",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Mattias Skjelmose",
-          "slug": "mattias-skjelmose-jensen",
-          "nat": "dk",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Jarno Widar",
-          "slug": "jarno-widar",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Nairo Quintana",
-          "slug": "nairo-quintana",
-          "nat": "co",
-          "team": "Movistar Team (WT)"
-        },
-        {
-          "name": "Einer Rubio",
-          "slug": "einer-rubio",
-          "nat": "co",
-          "team": "Movistar Team (WT)"
-        },
-        {
-          "name": "Enric Mas",
-          "slug": "enric-mas",
-          "nat": "es",
-          "team": "Movistar Team (WT)"
-        },
-        {
-          "name": "Jan Hirt",
-          "slug": "jan-hirt",
-          "nat": "cz",
-          "team": "NSN Cycling Team (WT)"
-        },
-        {
-          "name": "Luke Tuckwell",
-          "slug": "luke-tuckwell",
-          "nat": "au",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Primož Roglič",
-          "slug": "primoz-roglic",
-          "nat": "si",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Gianni Vermeersch",
-          "slug": "gianni-vermeersch",
-          "nat": "be",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Junior Lecerf",
-          "slug": "junior-lecerf",
-          "nat": "be",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Filippo Zana",
-          "slug": "filippo-zana",
-          "nat": "it",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Steff Cras",
-          "slug": "steff-cras",
-          "nat": "be",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Alberto Dainese",
-          "slug": "alberto-dainese",
-          "nat": "it",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Ethan Hayter",
-          "slug": "ethan-hayter",
-          "nat": "gb",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Paul Double",
-          "slug": "paul-double",
-          "nat": "gb",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Luke Plapp",
-          "slug": "luke-plapp",
-          "nat": "au",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Juan Guillermo Martinez",
-          "slug": "guillermo-juan-martinez",
-          "nat": "co",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "Max Poole",
-          "slug": "max-poole",
-          "nat": "gb",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "Menno Huising",
-          "slug": "menno-huising",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Filippo Fiorelli",
-          "slug": "filippo-fiorelli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Tijmen Graat",
-          "slug": "tijmen-graat",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "AERT Wout Van",
-          "slug": "wout-van-aert",
-          "nat": "be",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Matthew Brennan",
-          "slug": "matthew-brennan",
-          "nat": "gb",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Jørgen Nordhagen",
-          "slug": "jorgen-nordhagen",
-          "nat": "no",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Ben Tulett",
-          "slug": "ben-tulett",
-          "nat": "gb",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Steven Kruijswijk",
-          "slug": "steven-kruijswijk",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "João Almeida",
-          "slug": "joao-almeida",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Marc Soler",
-          "slug": "marc-soler",
-          "nat": "es",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Ivo Oliveira",
-          "slug": "ivo-emanuel-alves",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Domen Novak",
-          "slug": "domen-novak",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Magnus Cort",
-          "slug": "magnus-cort-nielsen",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Henok Mulubrhan",
-          "slug": "henok-mulubrhan",
-          "nat": "er",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Harold Tejada",
-          "slug": "harold-tejada",
-          "nat": "co",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Harold Martín López",
-          "slug": "harold-martin-lopez",
-          "nat": "ec",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Clément Champoussin",
-          "slug": "clement-champoussin",
-          "nat": "fr",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Alberto Bettiol",
-          "slug": "alberto-bettiol",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Nicolas Vinokurov",
-          "slug": "nicolas-vinokurov",
-          "nat": "kz",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Davide Ballerini",
-          "slug": "davide-ballerini",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Bryan Coquard",
-          "slug": "bryan-coquard",
-          "nat": "fr",
-          "team": "Cofidis (PRT)"
-        },
-        {
-          "name": "Milan Vader",
-          "slug": "milan-vader",
-          "nat": "nl",
-          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
-        },
-        {
-          "name": "LA CRUZ David De",
-          "slug": "david-de-la-cruz",
-          "nat": "es",
-          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
-        },
-        {
-          "name": "Jesús Herrada",
-          "slug": "jesus-herrada-lopez",
-          "nat": "es",
-          "team": "Burgos Burpellet BH (PRT)"
-        },
-        {
-          "name": "José Manuel Díaz",
-          "slug": "jose-manuel-diaz-gallego",
-          "nat": "es",
-          "team": "Burgos Burpellet BH (PRT)"
-        }
-      ]
-    },
-    {
-      "slug": "bretagne-classic-ouest-france",
-      "cf_slug": "bretagne-classic-ouest-france-2026",
-      "name": "Bretagne Classic - Ouest-France",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-08-30",
-      "end_date": "2026-08-30",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/bretagne-classic-ouest-france-2026",
-      "startlist": []
-    },
-    {
-      "slug": "grand-prix-cycliste-de-quebec",
-      "cf_slug": "grand-prix-cycliste-de-quebec-2026",
-      "name": "Grand Prix Cycliste de Québec",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-09-11",
-      "end_date": "2026-09-11",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-quebec-2026",
-      "startlist": []
-    },
-    {
-      "slug": "grand-prix-cycliste-de-montreal",
-      "cf_slug": "grand-prix-cycliste-de-montreal-2026",
-      "name": "Grand Prix Cycliste de Montréal",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-09-13",
-      "end_date": "2026-09-13",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-montreal-2026",
-      "startlist": []
-    },
-    {
-      "slug": "il-lombardia",
-      "cf_slug": "il-lombardia-2026",
-      "name": "Il Lombardia",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-10",
-      "end_date": "2026-10-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
-      "startlist": []
-    },
-    {
-      "slug": "tour-of-guangxi",
-      "cf_slug": "tour-of-guangxi-2026",
-      "name": "Tour of Guangxi",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-13",
-      "end_date": "2026-10-18",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "postnord-tour-of-denmark",
-      "cf_slug": "postnord-tour-of-denmark-2026",
-      "name": "PostNord Tour of Denmark",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-07-29",
-      "end_date": "2026-08-02",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 29 July",
-          "start_town": "Aalborg",
-          "finish_town": "Aalborg",
-          "distance_km": 197.6,
-          "elevation_m": 971,
-          "start_time": "15:25",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 30 July",
-          "start_town": "Glyngøre",
-          "finish_town": "Skive",
-          "distance_km": 179.0,
-          "elevation_m": 822,
-          "start_time": "15:40",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 31 July",
-          "start_town": "Fredericia",
-          "finish_town": "Vejle",
-          "distance_km": 202.6,
-          "elevation_m": 2306,
-          "start_time": "14:45",
-          "stage_type": "hilly",
-          "description": ""
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 01 August",
-          "start_town": "Rudkøbing",
-          "finish_town": "Fyn",
-          "distance_km": 177.5,
-          "elevation_m": 875,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 02 August",
-          "start_town": "Køge",
-          "finish_town": "Rødovre",
-          "distance_km": 133.2,
-          "elevation_m": 417,
-          "start_time": "14:30",
-          "stage_type": "flat",
-          "description": ""
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Niklas Behrens",
-          "slug": "niklas-behrens",
-          "nat": "de",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Milan Menten",
-          "slug": "milan-menten",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Toon Aerts",
-          "slug": "toon-aerts",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Mathieu Kockelmann",
-          "slug": "mathieu-kockelmann",
-          "nat": "lu",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Cole Kessler",
-          "slug": "cole-kessler",
-          "nat": "us",
-          "team": "Modern Adventure Pro Cycling (PRT)"
-        },
-        {
-          "name": "Ezra Caudell",
-          "slug": "ezra-caudell",
-          "nat": "us",
-          "team": "Modern Adventure Pro Cycling (PRT)"
-        },
-        {
-          "name": "Andreas Stokbro",
-          "slug": "andreas-stokbro",
-          "nat": "dk",
-          "team": "Team ColoQuick (CT)"
-        }
-      ]
-    },
-    {
-      "slug": "vuelta-a-burgos",
-      "cf_slug": "vuelta-a-burgos-2026",
-      "name": "Vuelta a Burgos",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-08-04",
-      "end_date": "2026-08-08",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/vuelta-a-burgos-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/vuelta-a-burgos-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/vuelta-a-burgos-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/vuelta-a-burgos-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/vuelta-a-burgos-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/vuelta-a-burgos-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "João Almeida",
-          "slug": "joao-almeida",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Domen Novak",
-          "slug": "domen-novak",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Enric Mas",
-          "slug": "enric-mas",
-          "nat": "es",
-          "team": "Movistar Team (WT)"
-        },
-        {
-          "name": "Clément Champoussin",
-          "slug": "clement-champoussin",
-          "nat": "fr",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Alberto Bettiol",
-          "slug": "alberto-bettiol",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Jarno Widar",
-          "slug": "jarno-widar",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Léo Bisiaux",
-          "slug": "leo-bisiaux",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Felix Gall",
-          "slug": "felix-gall",
-          "nat": "at",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
-          "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Luke Tuckwell",
-          "slug": "luke-tuckwell",
-          "nat": "au",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "czech-tour",
-      "cf_slug": "czech-tour-2026",
-      "name": "Czech Tour",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-08-13",
-      "end_date": "2026-08-16",
-      "total_stages": 4,
-      "official_url": "https://cyclingflash.com/race/czech-tour-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/czech-tour-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/czech-tour-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/czech-tour-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/czech-tour-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Jan Hirt",
-          "slug": "jan-hirt",
-          "nat": "cz",
-          "team": "NSN Cycling Team (WT)"
-        },
-        {
-          "name": "Mattia Agostinacchio",
-          "slug": "mattia-agostinacchio",
-          "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "arctic-race-of-norway",
-      "cf_slug": "arctic-race-of-norway-2026",
-      "name": "Arctic Race of Norway",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-08-13",
-      "end_date": "2026-08-16",
-      "total_stages": 4,
-      "official_url": "https://cyclingflash.com/race/arctic-race-of-norway-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/arctic-race-of-norway-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 13 August",
-          "start_town": "Evenes",
-          "finish_town": "Myre",
-          "distance_km": 181.7,
-          "elevation_m": 2200,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "The opening stage of the Arctic Race of Norway takes the peloton on a 181.7-kilometre journey from Evenes to Myre. With a total elevation gain of around 2,200 metres, it promises to be a demanding day in the saddle. Several climbs are featured along the route, including Kåringen and Storheia, offering opportunities for attackers and strong climbers to make their move. Despite the hilly terrain, a reduced bunch sprint in Myre remains a realistic outcome.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163089/responsive-images/01KV7RD1R69ZAH17S4NYJ0TCVH___heightProfile_1200_696.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/arctic-race-of-norway-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 14 August",
-          "start_town": "Bø",
-          "finish_town": "Andenes",
-          "distance_km": 179.2,
-          "elevation_m": 1300,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "The second stage of the Arctic Race of Norway covers 179.2 kilometres from Bø to Andenes. With approximately 1,300 metres of elevation gain, it is less demanding than the opening stage, although several short climbs and gravel sections add an extra layer of difficulty. The run-in to Andenes is relatively flat, making it likely that a reduced peloton will battle for victory in a bunch sprint. However, the wind could play a crucial role and significantly influence the outcome of the race.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163091/responsive-images/01KV7REDWXSJV3FK62NN4F4296___heightProfile_1200_696.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/arctic-race-of-norway-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 15 August",
-          "start_town": "Stokmarknes",
-          "finish_town": "Storheia (Melbu)",
-          "distance_km": 142.5,
-          "elevation_m": 1800,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "At 142.5 kilometres, the third stage of the Arctic Race of Norway is relatively short but highly explosive, featuring 1,800 metres of elevation gain. After tackling the Storvatnet climb twice, the riders face a brutal finale on Storheia, where the final ascent measures 3.5 kilometres at an average gradient of 11.8%. This mountaintop finish is expected to create significant time gaps and offers climbers and general classification contenders an ideal opportunity to make their mark.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163093/responsive-images/01KV7RFKVK5P5W1ABS0PZAYHZD___heightProfile_1200_696.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/arctic-race-of-norway-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 16 August",
-          "start_town": "Sortland",
-          "finish_town": "Narvik",
-          "distance_km": 190.8,
-          "elevation_m": 2400,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "The final stage of the Arctic Race of Norway takes the riders from Sortland to Narvik over a challenging 190.8 kilometres. With an impressive 2,400 metres of elevation gain, it is the toughest stage of the race. Several classified climbs await throughout the day, before the decisive ascent of Narvikfjellet, a steep 2.3-kilometre climb averaging 8.6%. This uphill finish provides the perfect opportunity for the general classification contenders to make one last move and could prove decisive in determining the overall winner of the Arctic Race of Norway.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/163096/responsive-images/01KV7RH17ZNG1Z0Z5TPZXNQ5J3___heightProfile_1200_696.webp"
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Cole Kessler",
-          "slug": "cole-kessler",
-          "nat": "us",
-          "team": "Modern Adventure Pro Cycling (PRT)"
-        },
-        {
-          "name": "Toon Aerts",
-          "slug": "toon-aerts",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Mathieu Kockelmann",
-          "slug": "mathieu-kockelmann",
-          "nat": "lu",
-          "team": "Lotto Intermarché (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "lidl-deutschland-tour",
-      "cf_slug": "lidl-deutschland-tour-2026",
-      "name": "Lidl Deutschland Tour",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-23",
-      "total_stages": 4,
-      "official_url": "https://cyclingflash.com/race/lidl-deutschland-tour-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 20 August",
-          "start_town": "Bad Orb",
-          "finish_town": "Schwäbisch Hall",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 21 August",
-          "start_town": "Schwäbisch Hall",
-          "finish_town": "Offenbach an der Queich",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 22 August",
-          "start_town": "",
-          "finish_town": "Bad Dürkheim",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 23 August",
-          "start_town": "",
-          "finish_town": "Heilbronn",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "lloyds-tour-of-britain-men",
-      "cf_slug": "lloyds-tour-of-britain-men-2026",
-      "name": "Lloyds Tour of Britain Men",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-02",
-      "end_date": "2026-09-06",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Wednesday 02 September",
-          "start_town": "Lincoln",
-          "finish_town": "Lincoln",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 03 September",
-          "start_town": "Boston",
-          "finish_town": "Skegness",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 04 September",
-          "start_town": "Hull",
-          "finish_town": "Beverley",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 05 September",
-          "start_town": "Helmsley",
-          "finish_town": "Leyburn",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 06 September",
-          "start_town": "Earlston",
-          "finish_town": "Earlston",
-          "distance_km": null,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "maryland-cycling-classic",
-      "cf_slug": "maryland-cycling-classic-2026",
-      "name": "Maryland Cycling Classic",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-05",
-      "end_date": "2026-09-07",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/maryland-cycling-classic-2026",
-      "startlist": [
-        {
-          "name": "Mattia Agostinacchio",
-          "slug": "mattia-agostinacchio",
-          "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "gp-industria-artigianato",
-      "cf_slug": "gp-industria-artigianato-2026",
-      "name": "GP Industria & Artigianato",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-06",
-      "end_date": "2026-09-06",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gp-industria-artigianato-2026",
-      "startlist": [
-        {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
-          "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
-      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-10",
-      "end_date": "2026-09-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "startlist": []
-    },
-    {
-      "slug": "gp-de-fourmies-la-voix-du-nord",
-      "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
-      "name": "GP de Fourmies / La Voix du Nord",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-13",
-      "end_date": "2026-09-13",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gp-de-fourmies-la-voix-du-nord-2026",
-      "startlist": []
-    },
-    {
-      "slug": "skoda-tour-de-luxembourg",
-      "cf_slug": "skoda-tour-de-luxembourg-2026",
-      "name": "Skoda Tour de Luxembourg",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-20",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "grand-prix-de-wallonie",
-      "cf_slug": "grand-prix-de-wallonie-2026",
-      "name": "Grand Prix de Wallonie",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-16",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
-      "startlist": []
-    },
-    {
-      "slug": "super-8-classic",
-      "cf_slug": "super-8-classic-2026",
-      "name": "SUPER 8 Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-19",
-      "end_date": "2026-09-19",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
-      "startlist": []
-    },
-    {
-      "slug": "cro-race",
-      "cf_slug": "cro-race-2026",
-      "name": "CRO Race",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-22",
-      "end_date": "2026-09-27",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/cro-race-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/cro-race-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/cro-race-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/cro-race-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/cro-race-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/cro-race-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "petronas-le-tour-de-langkawi",
-      "cf_slug": "petronas-le-tour-de-langkawi-2026",
-      "name": "Petronas Le Tour de Langkawi",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-27",
-      "end_date": "2026-10-04",
-      "total_stages": 7,
-      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 7,
-          "label": "Stage 7",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "sparkassen-munsterland-giro",
-      "cf_slug": "sparkassen-munsterland-giro-2026",
-      "name": "Sparkassen Münsterland Giro",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-03",
-      "end_date": "2026-10-03",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/sparkassen-munsterland-giro-2026",
-      "startlist": []
-    },
-    {
-      "slug": "giro-dellemilia",
-      "cf_slug": "giro-dellemilia-2026",
-      "name": "Giro dell'Emilia",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-03",
-      "end_date": "2026-10-03",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/giro-dellemilia-2026",
-      "startlist": []
-    },
-    {
-      "slug": "coppa-bernocchi-gp-banco-bpm",
-      "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
-      "name": "Coppa Bernocchi - GP Banco BPM",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-05",
-      "end_date": "2026-10-05",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/coppa-bernocchi-gp-banco-bpm-2026",
-      "startlist": []
-    },
-    {
-      "slug": "tre-valli-varesine",
-      "cf_slug": "tre-valli-varesine-2026",
-      "name": "Tre Valli Varesine",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-06",
-      "end_date": "2026-10-06",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/tre-valli-varesine-2026",
-      "startlist": []
-    },
-    {
-      "slug": "gran-piemonte",
-      "cf_slug": "gran-piemonte-2026",
-      "name": "Gran Piemonte",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-08",
-      "end_date": "2026-10-08",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gran-piemonte-2026",
-      "startlist": []
-    },
-    {
-      "slug": "paris-tours-elite",
-      "cf_slug": "paris-tours-elite-2026",
-      "name": "Paris - Tours Elite",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-11",
-      "end_date": "2026-10-11",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/paris-tours-elite-2026",
-      "startlist": []
-    },
-    {
-      "slug": "giro-del-veneto",
-      "cf_slug": "giro-del-veneto-2026",
-      "name": "Giro del Veneto",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-14",
-      "end_date": "2026-10-14",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/giro-del-veneto-2026",
-      "startlist": []
-    },
-    {
-      "slug": "utsunomiya-japan-cup-road-race",
-      "cf_slug": "utsunomiya-japan-cup-road-race-2026",
-      "name": "Utsunomiya Japan Cup Road Race",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-18",
-      "end_date": "2026-10-18",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/utsunomiya-japan-cup-road-race-2026",
-      "startlist": []
-    },
-    {
-      "slug": "veneto-classic",
-      "cf_slug": "veneto-classic-2026",
-      "name": "Veneto Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-18",
-      "end_date": "2026-10-18",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
-      "startlist": []
-    },
-    {
-      "slug": "clasica-de-ordizia-ordiziako-klasikoa",
-      "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
-      "name": "Clásica de Ordizia - Ordiziako Klasikoa",
-      "year": "2026",
-      "category": "1.1",
-      "status": "upcoming",
-      "start_date": "2026-07-25",
-      "end_date": "2026-07-25",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/clasica-de-ordizia-ordiziako-klasikoa-2026",
-      "startlist": []
-    },
-    {
-      "slug": "clasica-castilla-y-leon",
-      "cf_slug": "clasica-castilla-y-leon-2026",
-      "name": "Clasica Castilla y Leon",
-      "year": "2026",
-      "category": "1.1",
-      "status": "upcoming",
-      "start_date": "2026-07-26",
-      "end_date": "2026-07-26",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/clasica-castilla-y-leon-2026",
-      "startlist": []
-    }
-  ],
-  "recent": [
     {
       "slug": "tour-of-austria",
       "cf_slug": "tour-of-austria-2026",
@@ -111646,163 +111700,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 8
+      "days_away": 7
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 55
+      "days_away": 54
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 60
+      "days_away": 59
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 60
+      "days_away": 59
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 63
+      "days_away": 62
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 77
+      "days_away": 76
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 77
+      "days_away": 76
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 79
+      "days_away": 78
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 80
+      "days_away": 79
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 82
+      "days_away": 81
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 84
+      "days_away": 83
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 85
+      "days_away": 84
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 87
+      "days_away": 86
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 88
+      "days_away": 87
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 92
+      "days_away": 91
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 92
+      "days_away": 91
     }
   ]
 }

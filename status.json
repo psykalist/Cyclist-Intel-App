@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-07-20T01:20:03.729172+00:00",
+  "updated_at": "2026-07-20T08:31:54.297822+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 15h old (a live race is running) -- consider running scraper.py",
     "rider profiles: 240 of 1108 roster riders (22%) have no profile at all, 759 have no palmares. Run the 'Backfill New Rider Profiles' workflow (it also runs weekly, Mondays 03:30 UTC)."
   ],
   "repairs": [],
@@ -15,7 +16,7 @@
     "rider_profiles": 2404,
     "live_races": 1,
     "scraped_at": "2026-07-19T17:50:24.851447+00:00",
-    "data_age_hours": 7.5,
+    "data_age_hours": 14.7,
     "index_html_bytes": 252030,
     "scrape_log_run_at": "2026-07-19 19:50 UTC",
     "rider_roster": 1108,

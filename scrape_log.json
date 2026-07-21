@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-21 09:02 UTC",
-  "run_at_iso": "2026-07-21T07:02:49.910423+00:00",
+  "run_at": "2026-07-21 14:20 UTC",
+  "run_at_iso": "2026-07-21T12:20:40.374178+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -15,12 +15,12 @@
         "stage_num": 16,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-16",
         "fetch_ok": true,
-        "response_bytes": 313033,
+        "response_bytes": 315614,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-19 19:50 UTC",
-        "stall_attempts": 4,
-        "stall_hours": 35.2,
+        "stall_attempts": 5,
+        "stall_hours": 40.5,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

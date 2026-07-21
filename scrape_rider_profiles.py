@@ -532,9 +532,27 @@ def main():
             print('Warning: could not load existing profiles: ' + str(e))
 
     # ── Pre-scrape sample check ───────────────────────────────────────────────
+    # rider_profiles.json holds TWO legitimate record shapes, and the check has to
+    # know about both or it fails on healthy data:
+    #
+    #   1. A full profile scraped here — has slug + fetched_at.
+    #   2. A CyclingOracle-only stub written by scrape_cyclingoracle.py for a rider
+    #      with CO stats but no matching procyclingstats profile. It is created as
+    #      {name, nat, co_stats, _co_only: True, team?} and by design carries
+    #      neither slug nor fetched_at, because nothing was ever fetched here.
+    #
+    # Shape 2 is ~18% of the file (433 of 2404), so a random 5-record sample hit one
+    # sooner or later and aborted the whole backfill on data that was never broken.
     def validate_rider(r):
         if not isinstance(r, dict):
             raise ValueError('not a dict')
+        if r.get('_co_only'):
+            # Stub: assert what it IS supposed to have, not what it can't.
+            if not r.get('name'):
+                raise ValueError('CO-only stub missing name')
+            if not isinstance(r.get('co_stats'), dict) or not r['co_stats']:
+                raise ValueError('CO-only stub missing co_stats')
+            return
         if not r.get('slug'):
             raise ValueError('missing slug')
         if 'fetched_at' not in r:

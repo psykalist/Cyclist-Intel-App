@@ -7,6 +7,15 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## 2026-07-19 — Hotfix (scraper) — rider-profile backfill aborted on healthy data
+*Backfill New Rider Profiles* failed its own pre-scrape check: `2/5 sample records failed validation — Sam Brand: missing slug, Tomoya Koyama: missing slug`.
+
+- **The data was fine; the validator was wrong.** `rider_profiles.json` holds two legitimate record shapes. A full profile scraped by `scrape_rider_profiles.py` has `slug` + `fetched_at`. A **CyclingOracle-only stub**, written by `scrape_cyclingoracle.py` for a rider with CO stats but no matching procyclingstats profile, is created as `{name, nat, co_stats, _co_only: True, team?}` and by design has neither field — nothing was ever fetched for it.
+- `validate_rider()` only knew about shape 1. Stubs are **433 of 2404 records (18%)**, so `pre_scrape_check`'s random 5-record sample was odds-on to hit one and abort the entire run. Intermittent by nature — it would have "passed" on some runs purely by luck.
+- **Fix:** `validate_rider()` now branches on `_co_only` and asserts what a stub *is* supposed to carry (non-empty `name` and `co_stats`) rather than what it structurally cannot.
+- Verified against the real 2404-record file: **0 failures across the whole file** (not just a sample), and 0 aborts in 2000 simulated random 5-record draws. Previously ~2 in 3 draws would have failed.
+- **Related gap, not changed here:** default mode skips any slug already present in `existing`, and a CO-only stub occupies the key — so those 433 riders never get a real profile from a normal run. `--fix-empty` does pick them up (they have no `wins`). Left alone deliberately: the stub keys come from CO slugs and aren't guaranteed to resolve on procyclingstats, so auto-enrolling all 433 risks mass error records.
+
 ## v117 — 2026-07-19 — Abandons: riders who stop racing no longer just vanish
 Prompted by Jonas Vingegaard abandoning on stage 15 of the Tour today. The app showed nothing at all — he was simply absent from the result, with no indication he'd been in the race and left it.
 

@@ -15,6 +15,11 @@ Bib (dossard) numbers aren't on CyclingFlash, so a new source was needed — see
 - **Matching:** cyclingoo slugs mostly match the app roster (157/184 by slug). Added a **hand-verified 15-entry alias map** (into `tour_bibs.json` generation, not runtime) for name/slug variants — critically the ones that are *team leaders* (`juan-ayuso`→`juan-ayuso-pesquera`, `egan-arley-bernal`→…`-gomez`, `richard-antonio-carapaz`→`richard-carapaz`, Higuita, Girmay, Del Toro, Waerenskjold). Without these the ⭐ landed on the wrong rider. Final: **172/184 matched**.
 - **Known gap:** the remaining 12 (all 8 of Pinarello Q36.5, plus Izagirre/Cepeda/Nicolau/Oliveira) are absent from the app's team roster entirely, so there's nothing to attach a bib to — a roster-completeness issue for the profile backfill, not a bib one.
 
+Follow-up fixes (same batch), from "no bibs, missing photos, only ages" report:
+- **No bibs anywhere = `tour_bibs.json` never shipped.** It was untracked, and `git-push.sh` used `git add -u` (tracked files only), so the new file 404'd live. Hardened `git-push.sh` to also stage brand-new source files (per-glob `git add -A -- '*.py' '*.html' …` loop; GEN_FILES still reset out; `.gitignore` extended with `*_debug.*` so stray debug files aren't caught). One-time: the file must be `git add`ed on this push.
+- **Missing photos = a timing bug, not missing data.** `rider_photos.json` covers 100% of the roster, but its index loaded fire-and-forget and the Teams tab often rendered before it arrived (showing only the ~26% of riders with an inlined photo) and never re-rendered. Now exposed as `riderPhotosReady` and awaited before `renderTeams`.
+- **Age but no birth date.** Only ~26% of roster riders have a DOB anywhere, and the Teams page only read `r.dob`. `renderRiderRow` now also pulls photo + `dob` from the full rider profile, and teams re-render once `loadRiderProfiles()` finishes in the background — so the profile backfill now actually improves birth dates here.
+
 ## 2026-07-19 — Hotfix (scraper) — rider-profile backfill aborted on healthy data
 *Backfill New Rider Profiles* failed its own pre-scrape check: `2/5 sample records failed validation — Sam Brand: missing slug, Tomoya Koyama: missing slug`.
 

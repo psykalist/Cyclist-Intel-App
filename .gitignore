@@ -15,6 +15,9 @@ push.log
 debug_*.txt
 debug_*.py
 debug_*.html
+*_debug.html
+*_debug.py
+*_debug.txt
 diagnose_*.py
 repair_*.py
 restore_*.py

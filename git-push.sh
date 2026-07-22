@@ -63,6 +63,15 @@ fi
 
 # ── 3. Stage source changes only — keep CI-owned data files out of the commit ─
 git add -u >> "$LOG" 2>&1 || true
+# Also stage brand-NEW source files. `git add -u` only touches already-tracked
+# files, so a new file (e.g. tour_bibs.json, a new .py/.yml) was silently left
+# uncommitted and 404'd on the live site. `git add` honours .gitignore, and the
+# GEN_FILES reset below keeps CI-owned data out regardless.
+# One `git add` per glob: a glob that matches nothing (e.g. *.css — all inline)
+# makes git error and stage NOTHING, so run each independently with `|| true`.
+for pat in '*.py' '*.html' '*.css' '*.js' '*.json' '*.md' '*.yml' '*.yaml' '*.sh'; do
+  git add -A -- "$pat" >> "$LOG" 2>&1 || true
+done
 # unstage + discard any local changes to CI-owned files (CI is the sole writer)
 git reset -q HEAD -- "${GEN_FILES[@]}" 2>/dev/null || true
 git checkout -q -- "${GEN_FILES[@]}" 2>/dev/null || true

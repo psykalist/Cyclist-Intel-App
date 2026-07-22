@@ -1907,14 +1907,18 @@ function renderRiderRow(r, teamId, idx, bib, isLeader) {
   const natImg = r.nat
     ? `<img src="https://flagcdn.com/16x12/${(r.nat).toLowerCase()}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px" loading="lazy">`
     : '';
-  const photoUrl = r.photo || getRiderPhoto(r.slug || '');
+  // Enrich from the full rider profile (birth date + photo), since data.json's
+  // team roster only inlines a photo/dob for ~26% of riders.
+  const prof = (riderProfilesData || {})[r.slug] || (appData.rider_profiles || {})[r.slug] || {};
+  const photoUrl = r.photo || prof.photo || getRiderPhoto(r.slug || '');
   const photo = photoUrl
     ? `<img class="rider-photo" src="${esc(photoUrl)}" alt="${esc(r.name)}" loading="lazy" onerror="this.style.display='none'">`
     : `<div class="rider-photo-ph">🚴</div>`;
 
   let dob = '';
-  if (r.dob) {
-    const d = new Date(r.dob);
+  const dobVal = r.dob || prof.dob;
+  if (dobVal) {
+    const d = new Date(dobVal);
     const age = Math.floor((Date.now() - d) / (365.25 * 86400000));
     dob = `${d.getFullYear()} · ${age} yrs`;
   } else if (r.age) {
@@ -2056,8 +2060,12 @@ let riderProfilesData = null;
 let riderProfilesLoading = false;
 
 // ── Slim photo index (slug→url, loaded on startup) ────────────────────────────
+// rider_photos.json covers ~100% of the roster, but this used to load
+// fire-and-forget: the Teams tab could render before it arrived (showing only
+// the ~26% of riders whose photo is inlined in data.json) and never re-render.
+// Exposed as an awaitable promise so loadData() can wait for it before teams.
 let riderPhotosIndex = {};
-(async () => {
+const riderPhotosReady = (async () => {
   try {
     const r = await fetch('./rider_photos.json');
     if (r.ok) riderPhotosIndex = await r.json();
@@ -2843,8 +2851,11 @@ async function loadData(force=false) {
     renderLive(appData.live || []);
     renderUpcoming(appData.upcoming || []);
     renderRecent(appData.recent || []);
-    await loadTourBibs();                 // slug->bib for the Teams page
+    await Promise.all([loadTourBibs(), riderPhotosReady]);  // bibs + photos ready before teams render
     renderTeams(appData.teams || []);
+    // Full rider profiles add birth dates + more photos; load in the background
+    // and re-render teams once ready so it isn't blocked on the big file.
+    loadRiderProfiles().then(() => renderTeams(appData.teams || [])).catch(() => {});
     buildRiderCosts();
     if (currentTab === 'fantasy') renderFantasy();
     const defaultTab = (appData.live||[]).length ? 'live' : 'upcoming';

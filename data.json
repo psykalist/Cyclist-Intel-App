@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-21T18:10:46.443171+00:00",
-  "scraped_at_human": "21 Jul 2026 18:10 UTC",
+  "scraped_at": "2026-07-22T12:23:07.093689+00:00",
+  "scraped_at_human": "22 Jul 2026 12:23 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -14395,8 +14395,8 @@
           "team": "Lidl - Trek (WT)"
         },
         {
-          "name": "Milan Menten",
-          "slug": "milan-menten",
+          "name": "Toon Aerts",
+          "slug": "toon-aerts",
           "nat": "be",
           "team": "Lotto Intermarché (WT)"
         },
@@ -14407,16 +14407,10 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "Toon Aerts",
-          "slug": "toon-aerts",
+          "name": "Milan Menten",
+          "slug": "milan-menten",
           "nat": "be",
           "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Ezra Caudell",
-          "slug": "ezra-caudell",
-          "nat": "us",
-          "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
           "name": "Cole Kessler",
@@ -14425,10 +14419,88 @@
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
+          "name": "Ezra Caudell",
+          "slug": "ezra-caudell",
+          "nat": "us",
+          "team": "Modern Adventure Pro Cycling (PRT)"
+        },
+        {
+          "name": "Sam Brand",
+          "slug": "sam-brand",
+          "nat": "gb",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Declan Irvine",
+          "slug": "declan-irvine",
+          "nat": "au",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Juan José López",
+          "slug": "juan-jose-lopez-rodriguez",
+          "nat": "es",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Bailey Mcdonald",
+          "slug": "bailey-mcdonald",
+          "nat": "au",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Antonio Polga",
+          "slug": "antonio-polga",
+          "nat": "it",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Umberto Poli",
+          "slug": "umberto-poli",
+          "nat": "it",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
+          "name": "Filippo Ridolfo",
+          "slug": "filippo-ridolfo",
+          "nat": "it",
+          "team": "Team Novo Nordisk (PRT)"
+        },
+        {
           "name": "Matyáš Kopecký",
           "slug": "matyas-kopecky",
           "nat": "cz",
           "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Casper Pedersen",
+          "slug": "casper-pedersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Anders Foldager",
+          "slug": "anders-foldager",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Rasmus Søjberg Pedersen",
+          "slug": "rasmus-sojbergpedersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "Christopher Juul-Jensen",
+          "slug": "christopher-juul-jensen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
+        },
+        {
+          "name": "ANDERSEN Noah Lindholm Møller",
+          "slug": "noah-lindholm-moller-andersen",
+          "nat": "dk",
+          "team": "Denmark (NAT)"
         },
         {
           "name": "Theodor August Clemmensen",
@@ -14443,62 +14515,8 @@
           "team": "Denmark (NAT)"
         },
         {
-          "name": "ANDERSEN Noah Lindholm Møller",
-          "slug": "noah-lindholm-moller-andersen",
-          "nat": "dk",
-          "team": "Denmark (NAT)"
-        },
-        {
-          "name": "Christopher Juul-Jensen",
-          "slug": "christopher-juul-jensen",
-          "nat": "dk",
-          "team": "Denmark (NAT)"
-        },
-        {
-          "name": "Casper Pedersen",
-          "slug": "casper-pedersen",
-          "nat": "dk",
-          "team": "Denmark (NAT)"
-        },
-        {
-          "name": "Rasmus Søjberg Pedersen",
-          "slug": "rasmus-sojbergpedersen",
-          "nat": "dk",
-          "team": "Denmark (NAT)"
-        },
-        {
-          "name": "Anders Foldager",
-          "slug": "anders-foldager",
-          "nat": "dk",
-          "team": "Denmark (NAT)"
-        },
-        {
           "name": "STOKBRO Sylvester Vittinghus",
           "slug": "sylvester-vittinghus-stokbro",
-          "nat": "dk",
-          "team": "AIRTOX - Carl Ras (CT)"
-        },
-        {
-          "name": "NIELSEN Thor Vangsø",
-          "slug": "thor-vangso-nielsen",
-          "nat": "dk",
-          "team": "AIRTOX - Carl Ras (CT)"
-        },
-        {
-          "name": "Pelle Køster Mikkelsen",
-          "slug": "pelle-koster-mikkelsen",
-          "nat": "dk",
-          "team": "AIRTOX - Carl Ras (CT)"
-        },
-        {
-          "name": "Nikolaj Mengel",
-          "slug": "nikolaj-mengel",
-          "nat": "dk",
-          "team": "AIRTOX - Carl Ras (CT)"
-        },
-        {
-          "name": "Alfred Kongstad",
-          "slug": "alfred-kongstad",
           "nat": "dk",
           "team": "AIRTOX - Carl Ras (CT)"
         },
@@ -14509,32 +14527,32 @@
           "team": "AIRTOX - Carl Ras (CT)"
         },
         {
-          "name": "Andreas Aidel Brixen",
-          "slug": "aidel-andreas-brixen",
+          "name": "Alfred Kongstad",
+          "slug": "alfred-kongstad",
           "nat": "dk",
-          "team": "BHS - PL Beton Bornholm (CT)"
+          "team": "AIRTOX - Carl Ras (CT)"
         },
         {
-          "name": "IWERSEN Emil Schandorff",
-          "slug": "emil-schandorff-iwersen",
+          "name": "Nikolaj Mengel",
+          "slug": "nikolaj-mengel",
           "nat": "dk",
-          "team": "BHS - PL Beton Bornholm (CT)"
+          "team": "AIRTOX - Carl Ras (CT)"
         },
         {
-          "name": "Ville Merlöv",
-          "slug": "ville-merlov1",
-          "nat": "se",
-          "team": "BHS - PL Beton Bornholm (CT)"
-        },
-        {
-          "name": "Boas Lysgaard",
-          "slug": "boas-lysgaard",
+          "name": "Pelle Køster Mikkelsen",
+          "slug": "pelle-koster-mikkelsen",
           "nat": "dk",
-          "team": "BHS - PL Beton Bornholm (CT)"
+          "team": "AIRTOX - Carl Ras (CT)"
         },
         {
-          "name": "Asger Røjbek Sørensen",
-          "slug": "asger-rojbek-sorensen",
+          "name": "NIELSEN Thor Vangsø",
+          "slug": "thor-vangso-nielsen",
+          "nat": "dk",
+          "team": "AIRTOX - Carl Ras (CT)"
+        },
+        {
+          "name": "Daniel Stampe",
+          "slug": "daniel-stampe",
           "nat": "dk",
           "team": "BHS - PL Beton Bornholm (CT)"
         },
@@ -14545,8 +14563,32 @@
           "team": "BHS - PL Beton Bornholm (CT)"
         },
         {
-          "name": "Daniel Stampe",
-          "slug": "daniel-stampe",
+          "name": "Asger Røjbek Sørensen",
+          "slug": "asger-rojbek-sorensen",
+          "nat": "dk",
+          "team": "BHS - PL Beton Bornholm (CT)"
+        },
+        {
+          "name": "Boas Lysgaard",
+          "slug": "boas-lysgaard",
+          "nat": "dk",
+          "team": "BHS - PL Beton Bornholm (CT)"
+        },
+        {
+          "name": "Ville Merlöv",
+          "slug": "ville-merlov1",
+          "nat": "se",
+          "team": "BHS - PL Beton Bornholm (CT)"
+        },
+        {
+          "name": "IWERSEN Emil Schandorff",
+          "slug": "emil-schandorff-iwersen",
+          "nat": "dk",
+          "team": "BHS - PL Beton Bornholm (CT)"
+        },
+        {
+          "name": "Andreas Aidel Brixen",
+          "slug": "aidel-andreas-brixen",
           "nat": "dk",
           "team": "BHS - PL Beton Bornholm (CT)"
         },
@@ -14555,6 +14597,42 @@
           "slug": "andreas-stokbro",
           "nat": "dk",
           "team": "Team ColoQuick (CT)"
+        },
+        {
+          "name": "Francesco Carollo",
+          "slug": "francesco-carollo",
+          "nat": "it",
+          "team": "Swatt Club (CT)"
+        },
+        {
+          "name": "Oliver Knudsen",
+          "slug": "oliver-knudsen",
+          "nat": "dk",
+          "team": "Swatt Club (CT)"
+        },
+        {
+          "name": "Mads Andersen",
+          "slug": "mads-andersen",
+          "nat": "dk",
+          "team": "Swatt Club (CT)"
+        },
+        {
+          "name": "Kasper Andersen",
+          "slug": "kasper-andersen1",
+          "nat": "dk",
+          "team": "Swatt Club (CT)"
+        },
+        {
+          "name": "Manuel Oioli",
+          "slug": "manuel-oioli",
+          "nat": "it",
+          "team": "Swatt Club (CT)"
+        },
+        {
+          "name": "Nicolo' Pettiti",
+          "slug": "nicolo-pettiti",
+          "nat": "it",
+          "team": "Swatt Club (CT)"
         },
         {
           "name": "Matias Malmberg",
@@ -112181,163 +112259,163 @@
       "name": "Clásica de Ordizia - Ordiziako Klasikoa",
       "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
       "start_date": "2026-07-25",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Clasica Castilla y Leon",
       "cf_slug": "clasica-castilla-y-leon-2026",
       "start_date": "2026-07-26",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 52
+      "days_away": 51
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 60
+      "days_away": 59
     },
     {
       "name": "CRO Race",
       "cf_slug": "cro-race-2026",
       "start_date": "2026-09-22",
-      "days_away": 63
+      "days_away": 62
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 76
+      "days_away": 75
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 77
+      "days_away": 76
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 79
+      "days_away": 78
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 81
+      "days_away": 80
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 82
+      "days_away": 81
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 84
+      "days_away": 83
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 85
+      "days_away": 84
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 89
+      "days_away": 88
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 89
+      "days_away": 88
     }
   ]
 }

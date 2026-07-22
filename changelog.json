@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-21T18:12:07.568166+00:00",
+  "generated_at": "2026-07-22T12:24:38.966170+00:00",
   "entries": [
+    {
+      "id": "0fadd53544bb",
+      "timestamp": "2026-07-22T12:24:38.958876+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "PostNord Tour of Denmark startlist: Antonio Polga, Bailey Mcdonald, Declan Irvine (+10 more) added"
+    },
     {
       "id": "5ed8f17a3f43",
       "timestamp": "2026-07-21T18:12:07.561732+00:00",
@@ -371,76 +378,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Tour of Austria Youth: 🇪🇸 Hector Alvarez Martinez leads"
-    },
-    {
-      "id": "5e23746a9727",
-      "timestamp": "2026-07-08T12:15:48.169614+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour of Magnificent Qinghai startlist: Adrián Benito, Alastair Christie-Johnston, Alessio Martinelli (+93 more) added"
-    },
-    {
-      "id": "792e4e3d1ab6",
-      "timestamp": "2026-07-08T12:15:48.169614+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist published (1 riders)"
-    },
-    {
-      "id": "c5d84094ff38",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Tour de France: 🇩🇰 Mads Pedersen wins"
-    },
-    {
-      "id": "f4fd1b18d38c",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour de France GC: 🇳🇴 Torstein Træen leads"
-    },
-    {
-      "id": "08e58e943460",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tour de France Points: 🇩🇰 Mads Pedersen leads"
-    },
-    {
-      "id": "03d6c0f3b2cf",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour de France Youth: 🇨🇿 Mathias Vacek leads"
-    },
-    {
-      "id": "71720b37e718",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Sibiu Cycling Tour: 🇳🇱 Danny van Poppel wins"
-    },
-    {
-      "id": "a202a55b364b",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour of Magnificent Qinghai startlist: Iker Mintegi, Jon Agirre, Louis Sutton (+2 more) added"
-    },
-    {
-      "id": "c5b3e6adb8a8",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Maryland Cycling Classic startlist published (1 riders)"
-    },
-    {
-      "id": "f7a4b10ee701",
-      "timestamp": "2026-07-07T21:12:15.172145+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour of Austria startlist: Adam Bittman, Adrian Stieger, António Morgado (+11 more) added"
     }
   ]
 }

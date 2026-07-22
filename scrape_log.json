@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-07-21 20:10 UTC",
-  "run_at_iso": "2026-07-21T18:10:44.600332+00:00",
+  "run_at": "2026-07-22 14:22 UTC",
+  "run_at_iso": "2026-07-22T12:23:07.093152+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-de-france-2026",
       "name": "Tour de France",
       "total_stages": 21,
-      "stages_completed_before": 15,
+      "stages_completed_before": 16,
       "stages_completed_after": 16,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 17,
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-21 20:10 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.2,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

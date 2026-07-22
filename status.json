@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T13:13:56.550280+00:00",
+  "updated_at": "2026-07-22T18:04:35.020010+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
@@ -8,16 +8,16 @@
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 3256,
+    "data_size_kb": 3259,
     "data_upcoming": 36,
     "data_recent": 60,
     "data_teams": 33,
     "rider_profiles": 2404,
     "live_races": 1,
-    "scraped_at": "2026-07-22T12:23:07.093689+00:00",
-    "data_age_hours": 0.8,
-    "index_html_bytes": 252030,
-    "scrape_log_run_at": "2026-07-22 14:22 UTC",
+    "scraped_at": "2026-07-22T18:02:58.868594+00:00",
+    "data_age_hours": 0.0,
+    "index_html_bytes": 255372,
+    "scrape_log_run_at": "2026-07-22 20:02 UTC",
     "rider_roster": 1127,
     "rider_missing_profile": 257,
     "rider_missing_palmares": 778

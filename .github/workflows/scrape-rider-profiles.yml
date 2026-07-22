@@ -21,6 +21,11 @@ name: Backfill New Rider Profiles (manual)
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Extra flag: blank = new riders only; --fix-dob = backfill missing birth dates; --fix-empty = riders with 0 wins; --all = re-fetch everyone.'
+        required: false
+        default: ''
   schedule:
     # Mondays 03:30 UTC -- off the 6-hourly health-check marks and the
     # 11:00/17:00 results scrapes. The uci-calendar-git-write concurrency
@@ -128,7 +133,9 @@ jobs:
 
       - name: Backfill new rider profiles
         shell: cmd
-        run: python scrape_rider_profiles.py
+        # inputs.mode is empty on scheduled runs (default mode); set it in the
+        # "Run workflow" dialog for a one-off e.g. --fix-dob backfill.
+        run: python scrape_rider_profiles.py ${{ github.event.inputs.mode }}
 
       - name: Commit and push if profiles changed
         shell: python

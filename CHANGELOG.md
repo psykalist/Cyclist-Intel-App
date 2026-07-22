@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## 2026-07-19 — Scraper — fix birth-date parsing (was null for 82% of riders)
+"Birth dates are inconsistent — some riders show age, some a birth year." Root cause: the DOB parse was silently broken for **1971 of 2404 profiles (82%)**, so most rows fell back to startlist age.
+
+- **Cause:** procyclingstats moved the birth date out of the `borderbox left w65` info block (which the parser scoped to) into a separate `<ul class="list">` where each field is its own `<div>`: `Date of birth:</div><div>23rd</div><div>December</div><div>1998</div>`. Name/nationality/weight still parsed (still in the old block), so profiles looked healthy apart from `dob: null`.
+- **Fix:** `parse_rider_page()` now extracts the birth date from the full HTML with a markup-resilient regex (day + month-name + year across separate divs). Tested against the live Kaden Groves page → `1998-12-23`; the older single-div format still falls through to the existing `<li>` parser.
+- **Backfill:** added a **`--fix-dob`** mode that re-fetches riders whose stored `dob` is null (skipping CO-only stubs), plus a `mode` input on the *Backfill New Rider Profiles* workflow so it can be triggered from the Actions "Run workflow" dialog. ~1971 riders × 3 pages ≈ 50 min for a one-off run; scheduled runs stay in default mode.
+- The Teams page already reads `dob` from the full profile (v119), so once the backfill runs, birth years populate consistently.
+
 ## v119 — 2026-07-19 — Rider photos: add referrerpolicy=no-referrer (fixes procyclingstats-hosted ones)
 "Some riders have no photo (Kaden Groves had one before)."
 

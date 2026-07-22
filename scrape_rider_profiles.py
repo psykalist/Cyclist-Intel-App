@@ -11,6 +11,7 @@ Output: rider_profiles.json
 Usage:
   py scrape_rider_profiles.py              # fetch only new/unseen riders
   py scrape_rider_profiles.py --fix-empty  # re-fetch riders with 0 wins
+  py scrape_rider_profiles.py --fix-dob    # re-fetch riders missing a birth date
   py scrape_rider_profiles.py --all        # re-fetch everything from scratch
 
 Must run locally — PCS blocks CI server IPs.
@@ -116,6 +117,23 @@ def parse_rider_page(html, slug):
     # Info block: the borderbox left w65 div contains the li items
     block_m = re.search(r'borderbox left w65(.*?)(?:borderbox clear|<h4)', html, re.DOTALL)
     block = block_m.group(1) if block_m else html
+
+    # Date of birth — resilient to PCS markup. As of 2026 the birthdate moved
+    # OUT of the "borderbox left w65" info block into a separate
+    # <ul class="list"> where each field is its own <div>:
+    #   <li><div class="bold mr5">Date of birth:</div><div>23rd</div>
+    #       <div>December</div><div>1998</div>(27)</li>
+    # so the block-scoped <li> scan below missed it (name/nat/weight still parse,
+    # dob came back null for ~74% of riders). Pull it from the full HTML here.
+    dob_m = re.search(
+        r'Date of birth:.*?>\s*(\d{1,2})(?:st|nd|rd|th)?\s*<'
+        r'.*?>\s*([A-Za-z]+)\s*<'
+        r'.*?>\s*((?:19|20)\d{2})\s*<',
+        html, re.DOTALL | re.IGNORECASE)
+    if dob_m:
+        mon = MONTHS.get(dob_m.group(2).lower())
+        if mon:
+            profile['dob'] = f'{int(dob_m.group(3)):04d}-{mon:02d}-{int(dob_m.group(1)):02d}'
 
     li_items = re.findall(r'<li[^>]*>(.*?)</li>', block, re.DOTALL)
     for raw_li in li_items:
@@ -512,6 +530,7 @@ def update_winners():
 
 def main():
     fix_empty  = '--fix-empty' in sys.argv
+    fix_dob    = '--fix-dob' in sys.argv
     fetch_all  = '--all' in sys.argv
     update_win = '--update-winners' in sys.argv
 
@@ -569,6 +588,14 @@ def main():
     elif fix_empty:
         todo = sorted(s for s in all_slugs if not existing.get(s, {}).get('wins'))
         print('--fix-empty: fetching ' + str(len(todo)) + ' riders with 0 wins')
+    elif fix_dob:
+        # Re-fetch riders missing a birth date (the pre-2026 markup left ~74%
+        # with dob:null) plus any brand-new riders. Skip CO-only stubs — they
+        # have no procyclingstats page to parse.
+        todo = sorted(s for s in all_slugs
+                      if not existing.get(s, {}).get('dob')
+                      and not existing.get(s, {}).get('_co_only'))
+        print('--fix-dob: re-fetching ' + str(len(todo)) + ' riders missing a birth date')
     else:
         todo = sorted(s for s in all_slugs if s not in existing)
         print('Fetching ' + str(len(todo)) + ' new riders (skipping ' + str(len(all_slugs)-len(todo)) + ' already done)')

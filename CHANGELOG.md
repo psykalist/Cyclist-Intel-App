@@ -7,6 +7,13 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v119 — 2026-07-19 — Rider photos: add referrerpolicy=no-referrer (fixes procyclingstats-hosted ones)
+"Some riders have no photo (Kaden Groves had one before)."
+
+- **Cause:** rider photos come from two hosts — cyclingflash's DigitalOcean CDN (~683 riders) and procyclingstats (~206). Confirmed by loading each on the live page: **procyclingstats blocks hotlinking** (fails when a referrer is sent, loads with `no-referrer`); the CDN works either way. None of the rider-photo `<img>` tags set `referrerpolicy`, so the ~206 PCS-hosted photos (Kaden Groves among them — his URL is `procyclingstats.com/images/riders/…kaden-groves-2026.jpg`) silently failed on GitHub Pages.
+- **Fix:** added `referrerpolicy="no-referrer"` to every rider-photo `<img>` — Teams roster, rider modal, following card, follow-search results. Verified head-to-head on the live page: PCS images go fail→ok, CDN images stay ok→ok. Also reordered the Teams photo fallback to prefer the curated `rider_photos.json` index over the profile URL.
+- **Not fixed here — birth dates.** Only ~26% of roster riders have a DOB *anywhere* (even fully-scraped profiles often lack it — Kaden Groves' profile has `dob: null`), so most rows show age only. This is a `scrape_rider_profiles.py` DOB-parse coverage gap, not an app bug; the Teams page now reads `dob` from the full profile, so it'll reflect any DOB the scraper does capture. Fixing the parse itself is a separate task.
+
 ## v118 — 2026-07-19 — Tour bib numbers on the Teams page
 Bib (dossard) numbers aren't on CyclingFlash, so a new source was needed — see [source note] below.
 

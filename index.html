@@ -1910,9 +1910,13 @@ function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // Enrich from the full rider profile (birth date + photo), since data.json's
   // team roster only inlines a photo/dob for ~26% of riders.
   const prof = (riderProfilesData || {})[r.slug] || (appData.rider_profiles || {})[r.slug] || {};
-  const photoUrl = r.photo || prof.photo || getRiderPhoto(r.slug || '');
+  // getRiderPhoto (the curated rider_photos.json index) before prof.photo.
+  const photoUrl = r.photo || getRiderPhoto(r.slug || '') || prof.photo;
+  // referrerpolicy=no-referrer is REQUIRED: both photo CDNs (cyclingflash's
+  // DigitalOcean space and procyclingstats) block hotlinking when a referrer is
+  // sent, which was silently breaking every rider photo on GitHub Pages.
   const photo = photoUrl
-    ? `<img class="rider-photo" src="${esc(photoUrl)}" alt="${esc(r.name)}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img class="rider-photo" src="${esc(photoUrl)}" alt="${esc(r.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
     : `<div class="rider-photo-ph">🚴</div>`;
 
   let dob = '';
@@ -2326,7 +2330,7 @@ async function openRiderModal(slug) {
   const height   = (profile || {}).height;
 
   const photoEl = photo
-    ? `<img class="rider-modal-photo" src="${esc(photo)}" alt="${esc(name)}" onerror="this.style.display='none'">`
+    ? `<img class="rider-modal-photo" src="${esc(photo)}" alt="${esc(name)}" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
     : `<div class="rider-modal-photo-ph">🚴</div>`;
 
   let meta = '';
@@ -2887,7 +2891,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v118';
+const APP_VERSION = 'v119';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -3396,7 +3400,7 @@ async function followSearchRiders(q) {
   } else {
     el.innerHTML = matches.slice(0, 40).map(r => {
       const photoEl = r.photo
-        ? `<img class="following-search-photo" src="${esc(r.photo)}" loading="lazy" onerror="this.style.display='none'">`
+        ? `<img class="following-search-photo" src="${esc(r.photo)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
         : `<div class="following-search-photo" style="font-size:1rem;display:flex;align-items:center;justify-content:center">🚴</div>`;
       return `<div class="following-search-row" onclick="followRider('${esc(r.slug)}','${esc(r.name)}','${esc(r.nat)}');document.getElementById('followSearchInput').value='';document.getElementById('followSearchResults').style.display='none'">
         ${photoEl}
@@ -3437,7 +3441,7 @@ async function renderFollowing() {
     const p = cached[f.slug] || {};
     const photoUrl = p.photo || getRiderPhoto(f.slug);
     const photo = photoUrl
-      ? `<img class="following-card-photo" src="${esc(photoUrl)}" loading="lazy" onerror="this.style.display='none'">`
+      ? `<img class="following-card-photo" src="${esc(photoUrl)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
       : `<div class="following-card-photo-ph">🚴</div>`;
     const nat = f.nat || p.nat || '';
     const natFlag = flagImg(nat);

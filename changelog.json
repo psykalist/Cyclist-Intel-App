@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-22T18:04:17.754234+00:00",
+  "generated_at": "2026-07-23T12:21:22.933362+00:00",
   "entries": [
+    {
+      "id": "06fa5a5db96b",
+      "timestamp": "2026-07-23T12:21:22.926219+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "PostNord Tour of Denmark startlist: Conrad Haugsted, Joshua Gudnitz, Lucas Toftemark (+4 more) added"
+    },
     {
       "id": "e2f9d76037bc",
       "timestamp": "2026-07-22T18:04:17.747507+00:00",
@@ -343,48 +350,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Tour of Austria Youth: 🇺🇸 Andrew August leads"
-    },
-    {
-      "id": "e6b7621a72ac",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Tour de France: 🇳🇱 Olav Kooij wins"
-    },
-    {
-      "id": "00290e324c30",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Tour of Austria: 🇦🇹 Gregor Mühlberger wins"
-    },
-    {
-      "id": "705783f594c2",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Austria GC: 🇦🇹 Gregor Mühlberger leads"
-    },
-    {
-      "id": "48de85cca9df",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tour of Austria Points: 🇦🇹 Gregor Mühlberger leads"
-    },
-    {
-      "id": "9b86277abd39",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Austria KOM: 🇩🇪 Tobias Nolde leads"
-    },
-    {
-      "id": "c75d01e152d7",
-      "timestamp": "2026-07-08T18:22:32.700661+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour of Austria Youth: 🇪🇸 Hector Alvarez Martinez leads"
     }
   ]
 }

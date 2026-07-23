@@ -518,6 +518,7 @@ header h1 span { color: var(--accent); }
 .startlist-team-name { font-size:.72rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.4px; margin-top:10px; margin-bottom:2px; grid-column:1/-1; }
 .startlist-rider { font-size:.82rem; color:var(--text); padding:1px 0; display:flex; align-items:center; gap:5px; }
 .startlist-rider .flag-img { width:16px; height:11px; object-fit:cover; border-radius:1px; flex-shrink:0; }
+.startlist-bib { font-size:.66rem; font-weight:700; color:var(--muted); min-width:22px; text-align:right; flex-shrink:0; font-variant-numeric:tabular-nums; }
 .startlist-empty { font-size:.82rem; color:var(--muted); font-style:italic; }
 
 /* ── Single-day winner ── */
@@ -1568,7 +1569,7 @@ function renderProgramme(race, cardId) {
   }).join('');
 
   const pid = `prog-${cardId}`;
-  const slLen = (race.startlist || []).length;
+  const slLen = ridersForRace(race).length;
   const ridersBtn = slLen
     ? `<button class="riders-screen-btn" onclick="event.stopPropagation();openRidersModal('${cardId}')">👥 Riders (${slLen})</button>`
     : '';
@@ -1700,6 +1701,31 @@ function toggleStage(uid) { document.getElementById(uid)?.classList.toggle('open
 let cardIdx = 0;
 const _racesByUid = {};   // race._uid -> race, populated in renderRaceCard
 
+// Rider list for a race, startlist-shaped ([{name,nat,team,slug,bib?}]).
+// Uses the race's own startlist when it has one; otherwise, for the race the
+// Tour-bibs file covers, reconstructs the field from the team rosters. A live
+// Grand Tour drops its startlist array (CyclingFlash removes the startlist page
+// once racing begins), but tour_bibs.json + team rosters still know exactly who
+// is in it — that's the same data the Teams page uses for bibs.
+function ridersForRace(race) {
+  const sl = race.startlist || [];
+  if (sl.length) return sl;
+  if (race && race.slug && tourBibsMeta && race.slug === tourBibsMeta.race_slug
+      && Object.keys(tourBibs).length) {
+    const out = [];
+    for (const team of (appData.teams || [])) {
+      for (const r of (team.riders || [])) {
+        if (tourBibs[r.slug] != null) {
+          out.push({ name: r.name, nat: r.nat, team: team.name, slug: r.slug, bib: tourBibs[r.slug] });
+        }
+      }
+    }
+    out.sort((a, b) => (a.bib ?? 9999) - (b.bib ?? 9999));  // teams appear by lowest bib
+    return out;
+  }
+  return [];
+}
+
 // Shared startlist markup, used by both the inline startlist toggle and the
 // full-screen Riders modal ("both places"). Rider names go through shortName()
 // so the maternal (final) surname is dropped for Hispanic/Lusophone riders,
@@ -1720,19 +1746,20 @@ function startlistTeamsHtml(sl) {
       const flagHtml = r.nat
         ? `<img class="flag-img" src="https://flagcdn.com/16x12/${esc(r.nat.toLowerCase())}.png" alt="${esc(r.nat)}" loading="lazy">`
         : '';
+      const bibHtml = (r.bib != null) ? `<span class="startlist-bib">${esc(String(r.bib))}</span>` : '';
       const disp  = shortName(r.name || '', r.nat || '');
       const title = (disp !== (r.name || '')) ? ` title="${esc(r.name || '')}"` : '';
       const inner = r.slug
         ? `<span class="rider-name-link"${title} onclick="event.stopPropagation();openRiderModal('${esc(r.slug)}')">${esc(disp)}</span>`
         : `<span${title}>${esc(disp)}</span>`;
-      rows += `<div class="startlist-rider">${flagHtml}${inner}</div>`;
+      rows += `<div class="startlist-rider">${bibHtml}${flagHtml}${inner}</div>`;
     }
   }
   return `<div class="startlist-teams">${rows}</div>`;
 }
 
 function renderStartlist(race) {
-  const sl = race.startlist || [];
+  const sl = ridersForRace(race);
   if (!sl.length) return '';
   return `<div class="startlist-toggle" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.querySelector('.sl-chev').textContent=this.nextElementSibling.style.display==='block'?'▲':'▼'">
     <span>👥 Startlist (${sl.length} riders)</span><span class="sl-chev">▼</span>
@@ -1745,7 +1772,7 @@ function renderStartlist(race) {
 function openRidersModal(uid) {
   const race = _racesByUid[uid];
   if (!race) return;
-  const sl = race.startlist || [];
+  const sl = ridersForRace(race);
   const content = document.getElementById('ridersScreenContent');
   content.innerHTML = `
     <div class="riders-screen-head">
@@ -1833,7 +1860,7 @@ function renderRaceCard(race, status) {
     const dnf1d = renderNonFinishers(race.non_finishers || stage0.non_finishers, `dnf-1d-${id}`);
     body = `<div class="race-body-inner">${w}${renderStageImages(stage0.height_profile_img ? stage0 : race)}${dnf1d}${renderTop10(top10_1d)}</div>`;
   } else {
-    body = `<div class="race-body-inner">${renderLeaders(race)}${renderProgramme(race, id)}${renderStages(race.stages||[], id)}</div>`;
+    body = `<div class="race-body-inner">${renderLeaders(race)}${renderProgramme(race, id)}${renderStages(race.stages||[], id)}${renderStartlist(race)}</div>`;
   }
 
   const meta = dateRange(race.start_date, race.end_date);
@@ -2914,6 +2941,11 @@ async function loadData(force=false) {
     renderUpcoming(appData.upcoming || []);
     renderRecent(appData.recent || []);
     await Promise.all([loadTourBibs(), riderPhotosReady]);  // bibs + photos ready before teams render
+    // A live Grand Tour has no startlist array of its own; its Riders list is
+    // reconstructed from tour_bibs.json (loaded just above) + team rosters, so
+    // re-render live now that bibs are in — otherwise the Riders button/count
+    // would be missing on the first paint (renderLive ran before bibs loaded).
+    renderLive(appData.live || []);
     renderTeams(appData.teams || []);
     // Full rider profiles add birth dates + more photos; load in the background
     // and re-render teams once ready so it isn't blocked on the big file.
@@ -2949,7 +2981,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v120';
+const APP_VERSION = 'v121';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

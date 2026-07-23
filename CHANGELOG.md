@@ -7,6 +7,15 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v121 — 2026-07-23 — Riders screen works for the live Tour (reconstruct field from bibs)
+Follow-up to v120: "the Tour de France has not finished, it finishes on Sunday." The v120 Riders button/screen keyed off `race.startlist`, but a **live** Grand Tour has an **empty** startlist array — CyclingFlash drops the startlist page once racing starts (Tour is `status: live`, stage 17/21, `startlist: []`). So the button never appeared on the one race that matters most.
+
+- **New `ridersForRace(race)` source.** Returns the race's own `startlist` when present; otherwise, for the race `tour_bibs.json` covers (`race_slug` match), reconstructs the field from the team rosters — the same slugs+bibs the Teams page already uses. Yields **172 riders** for the live Tour (the 12-rider gap is the known v118 roster-completeness issue), sorted by bib so teams appear with their leader first.
+- **Wired everywhere:** the inline **Startlist** toggle, the **👥 Riders (N)** button count, and the modal all now call `ridersForRace()`. Also added `renderStartlist(race)` to the **live/recent multi-stage** branch (previously only upcoming races got an inline startlist) so the Tour has riders "in both places" — inline *and* the separate screen.
+- **First-paint fix:** `renderLive` runs before `loadTourBibs()`, so the reconstructed count would be 0 on first paint. Added a `renderLive()` re-render right after bibs load.
+- **Bib chips** shown in the startlist/Riders list when known (`.startlist-bib`). Names still go through `shortName()` — e.g. bib 2 "Isaac Del Toro Romero" renders "Isaac Del Toro", maternal surname suppressed.
+- Brace balance 0; main `<script>` passes `node --check`.
+
 ## v120 — 2026-07-23 — Startlist: suppress maternal surnames again + Riders screen
 "The maternal surnames have crept back in… also I want the riders in the tour availed in a separate screen via a button next to the full programme, in both places."
 

@@ -1,25 +1,23 @@
 {
-  "updated_at": "2026-07-22T18:52:03.850349+00:00",
+  "updated_at": "2026-07-23T01:22:41.456554+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "rider profiles: 257 of 1127 roster riders (23%) have no profile at all, 778 have no palmares. Run the 'Backfill New Rider Profiles' workflow (it also runs weekly, Mondays 03:30 UTC)."
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 3259,
     "data_upcoming": 36,
     "data_recent": 60,
     "data_teams": 33,
-    "rider_profiles": 2404,
+    "rider_profiles": 2530,
     "live_races": 1,
     "scraped_at": "2026-07-22T18:02:58.868594+00:00",
-    "data_age_hours": 0.8,
-    "index_html_bytes": 255372,
+    "data_age_hours": 7.3,
+    "index_html_bytes": 255796,
     "scrape_log_run_at": "2026-07-22 20:02 UTC",
     "rider_roster": 1127,
-    "rider_missing_profile": 257,
-    "rider_missing_palmares": 778
+    "rider_missing_profile": 131,
+    "rider_missing_palmares": 763
   }
 }

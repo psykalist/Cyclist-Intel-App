@@ -519,6 +519,9 @@ header h1 span { color: var(--accent); }
 .startlist-rider { font-size:.82rem; color:var(--text); padding:1px 0; display:flex; align-items:center; gap:5px; }
 .startlist-rider .flag-img { width:16px; height:11px; object-fit:cover; border-radius:1px; flex-shrink:0; }
 .startlist-bib { font-size:.66rem; font-weight:700; color:var(--muted); min-width:22px; text-align:right; flex-shrink:0; font-variant-numeric:tabular-nums; }
+.startlist-rider-out { opacity:.55; }
+.startlist-rider-out .rider-name-link { text-decoration:line-through; }
+.startlist-out-tag { font-size:.6rem; font-weight:700; letter-spacing:.3px; color:#f97316; border:1px solid rgba(249,115,22,.4); border-radius:8px; padding:0 5px; margin-left:2px; flex-shrink:0; }
 .startlist-empty { font-size:.82rem; color:var(--muted); font-style:italic; }
 
 /* ── Single-day winner ── */
@@ -1707,9 +1710,27 @@ const _racesByUid = {};   // race._uid -> race, populated in renderRaceCard
 // Grand Tour drops its startlist array (CyclingFlash removes the startlist page
 // once racing begins), but tour_bibs.json + team rosters still know exactly who
 // is in it — that's the same data the Teams page uses for bibs.
+// Preserve a race's field post-race. CyclingFlash serves the startlist only
+// while a race is upcoming, then empties the array once it's live/finished. We
+// cache the last non-empty startlist per slug in localStorage so the riders
+// stay attached to the race afterwards — for every race, not just the Tour.
+function _slCacheKey(slug) { return 'uci_sl_' + slug; }
+function cacheStartlist(race) {
+  try {
+    const sl = race.startlist || [];
+    if (sl.length && race.slug) localStorage.setItem(_slCacheKey(race.slug), JSON.stringify(sl));
+  } catch (e) {}
+}
+function cachedStartlist(slug) {
+  try { const v = localStorage.getItem(_slCacheKey(slug)); return v ? JSON.parse(v) : []; }
+  catch (e) { return []; }
+}
+
 function ridersForRace(race) {
   const sl = race.startlist || [];
-  if (sl.length) return sl;
+  if (sl.length) { cacheStartlist(race); return sl; }   // live source + snapshot it
+  // Tour (or any race tour_bibs.json covers): reconstruct from team rosters +
+  // bibs. Kept live AND post-race so the field — with bib numbers — persists.
   if (race && race.slug && tourBibsMeta && race.slug === tourBibsMeta.race_slug
       && Object.keys(tourBibs).length) {
     const out = [];
@@ -1720,10 +1741,31 @@ function ridersForRace(race) {
         }
       }
     }
-    out.sort((a, b) => (a.bib ?? 9999) - (b.bib ?? 9999));  // teams appear by lowest bib
-    return out;
+    if (out.length) { out.sort((a, b) => (a.bib ?? 9999) - (b.bib ?? 9999)); return out; }
   }
+  // Preserved snapshot from when the race was upcoming.
+  if (race && race.slug) { const c = cachedStartlist(race.slug); if (c.length) return c; }
   return [];
+}
+
+// Riders who left the race, slug -> status code (DNF/DNS/OTL/…), gathered from
+// every stage's non_finishers. Used to strike abandons out of the field.
+function abandonedSlugs(race) {
+  const m = {};
+  for (const s of (race.stages || [])) {
+    for (const nf of (s.non_finishers || [])) {
+      const slug = (nf.rider_url || '').replace('/profile/', '').replace(/^\/+|\/+$/g, '').trim();
+      if (slug) m[slug] = nf.status || 'DNF';
+    }
+  }
+  return m;
+}
+
+// True while the race tour_bibs.json covers is still live. Once the Tour
+// finishes, the Teams tab drops its bib annotations (the bibs stay on the
+// per-race Riders screen, which reads them straight from tour_bibs.json).
+function tourBibsActive() {
+  return !!(tourBibsMeta && (appData.live || []).some(r => r.slug === tourBibsMeta.race_slug));
 }
 
 // Shared startlist markup, used by both the inline startlist toggle and the
@@ -1731,7 +1773,11 @@ function ridersForRace(race) {
 // so the maternal (final) surname is dropped for Hispanic/Lusophone riders,
 // matching the rest of the app — the full name stays as a hover title. Names
 // are clickable (they carry a slug) and open the rider modal.
-function startlistTeamsHtml(sl) {
+function startlistTeamsHtml(sl, abandoned) {
+  abandoned = abandoned || {};
+  const OUT_LABEL = { DNF: 'Abandoned', DNS: 'Did not start', OTL: 'Outside time limit',
+                      DSQ: 'Disqualified', HD: 'Outside time limit', ABD: 'Abandoned',
+                      NR: 'Did not finish', DF: 'Did not finish' };
   const teams = {};
   const teamOrder = [];
   for (const r of sl) {
@@ -1752,7 +1798,9 @@ function startlistTeamsHtml(sl) {
       const inner = r.slug
         ? `<span class="rider-name-link"${title} onclick="event.stopPropagation();openRiderModal('${esc(r.slug)}')">${esc(disp)}</span>`
         : `<span${title}>${esc(disp)}</span>`;
-      rows += `<div class="startlist-rider">${bibHtml}${flagHtml}${inner}</div>`;
+      const out = r.slug ? abandoned[r.slug] : null;
+      const outTag = out ? `<span class="startlist-out-tag" title="${esc(OUT_LABEL[out] || 'Out of the race')}">${esc(out)}</span>` : '';
+      rows += `<div class="startlist-rider${out ? ' startlist-rider-out' : ''}">${bibHtml}${flagHtml}${inner}${outTag}</div>`;
     }
   }
   return `<div class="startlist-teams">${rows}</div>`;
@@ -1761,10 +1809,11 @@ function startlistTeamsHtml(sl) {
 function renderStartlist(race) {
   const sl = ridersForRace(race);
   if (!sl.length) return '';
+  const abandoned = abandonedSlugs(race);
   return `<div class="startlist-toggle" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.querySelector('.sl-chev').textContent=this.nextElementSibling.style.display==='block'?'▲':'▼'">
     <span>👥 Startlist (${sl.length} riders)</span><span class="sl-chev">▼</span>
   </div>
-  <div class="startlist-body" style="display:none">${startlistTeamsHtml(sl)}</div>`;
+  <div class="startlist-body" style="display:none">${startlistTeamsHtml(sl, abandoned)}</div>`;
 }
 
 // Full-screen Riders modal — same riders as the inline startlist, on a
@@ -1773,13 +1822,15 @@ function openRidersModal(uid) {
   const race = _racesByUid[uid];
   if (!race) return;
   const sl = ridersForRace(race);
+  const abandoned = abandonedSlugs(race);
+  const outCount = sl.filter(r => r.slug && abandoned[r.slug]).length;
   const content = document.getElementById('ridersScreenContent');
   content.innerHTML = `
     <div class="riders-screen-head">
       <div class="riders-screen-title">🚴 ${esc(race.name || race.slug || 'Riders')}</div>
-      <div class="riders-screen-sub">${sl.length} riders</div>
+      <div class="riders-screen-sub">${sl.length} riders${outCount ? ` · ${outCount} out` : ''}</div>
     </div>
-    ${sl.length ? startlistTeamsHtml(sl) : '<p class="rider-modal-no-data">Startlist not available yet.</p>'}`;
+    ${sl.length ? startlistTeamsHtml(sl, abandoned) : '<p class="rider-modal-no-data">Startlist not available yet.</p>'}`;
   document.getElementById('ridersScreen').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1984,8 +2035,9 @@ async function loadTourBibs() {
 
 function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // bib/isLeader passed by renderTeamCard; other callers (search) fall back to
-  // a direct lookup so bibs show there too.
-  if (bib == null) bib = tourBibs[r.slug];
+  // a direct lookup so bibs show there too — but only while the Tour is live.
+  // Once it finishes the Teams tab shows a plain roster with no bibs.
+  if (bib == null && tourBibsActive()) bib = tourBibs[r.slug];
   const bibEl = (bib != null)
     ? `<span class="rider-bib${isLeader ? ' leader' : ''}" title="${isLeader ? 'Team leader — lowest bib' : 'Tour bib'}">${bib}</span>`
     : '';
@@ -2042,8 +2094,12 @@ function renderTeamCard(team) {
 
   const riders = team.riders || [];
   // Annotate with Tour bib, then sort: Tour riders first by bib ascending
-  // (lowest = leader), everyone else after in their original order.
-  const annotated = riders.map(r => ({ r, bib: tourBibs[r.slug] }));
+  // (lowest = leader), everyone else after in their original order. Bibs are
+  // only shown while the Tour is live; once it finishes tourBibsActive() is
+  // false, so the Teams tab reverts to a plain roster (no bibs, no leader star,
+  // no "N in Tour" badge). The per-race Riders screen keeps its bibs regardless.
+  const bibsOn = tourBibsActive();
+  const annotated = riders.map(r => ({ r, bib: bibsOn ? tourBibs[r.slug] : undefined }));
   const inTour = annotated.filter(x => x.bib != null);
   const leaderBib = inTour.length ? Math.min(...inTour.map(x => x.bib)) : null;
   annotated.sort((a, b) => {
@@ -2941,11 +2997,14 @@ async function loadData(force=false) {
     renderUpcoming(appData.upcoming || []);
     renderRecent(appData.recent || []);
     await Promise.all([loadTourBibs(), riderPhotosReady]);  // bibs + photos ready before teams render
-    // A live Grand Tour has no startlist array of its own; its Riders list is
-    // reconstructed from tour_bibs.json (loaded just above) + team rosters, so
-    // re-render live now that bibs are in — otherwise the Riders button/count
-    // would be missing on the first paint (renderLive ran before bibs loaded).
+    // A Grand Tour (live or finished) has no startlist array of its own; its
+    // Riders list is reconstructed from tour_bibs.json (loaded just above) +
+    // team rosters, so re-render live and recent now that bibs are in —
+    // otherwise the Riders button/count would be missing on the first paint
+    // (these ran before bibs loaded). Teams tab bib visibility also depends on
+    // tourBibsActive(), which needs the bibs meta loaded.
     renderLive(appData.live || []);
+    renderRecent(appData.recent || []);
     renderTeams(appData.teams || []);
     // Full rider profiles add birth dates + more photos; load in the background
     // and re-render teams once ready so it isn't blocked on the big file.
@@ -2981,7 +3040,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v121';
+const APP_VERSION = 'v122';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -3492,9 +3551,11 @@ async function followSearchRiders(q) {
       const photoEl = r.photo
         ? `<img class="following-search-photo" src="${esc(r.photo)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
         : `<div class="following-search-photo" style="font-size:1rem;display:flex;align-items:center;justify-content:center">🚴</div>`;
+      const disp = shortName(r.name || '', r.nat || '');
+      const title = (disp !== (r.name || '')) ? ` title="${esc(r.name || '')}"` : '';
       return `<div class="following-search-row" onclick="followRider('${esc(r.slug)}','${esc(r.name)}','${esc(r.nat)}');document.getElementById('followSearchInput').value='';document.getElementById('followSearchResults').style.display='none'">
         ${photoEl}
-        ${flagImg(r.nat)}<span style="font-weight:600">${esc(r.name)}</span>
+        ${flagImg(r.nat)}<span style="font-weight:600"${title}>${esc(disp)}</span>
       </div>`;
     }).join('');
   }
@@ -3550,10 +3611,12 @@ async function renderFollowing() {
       const stage = result.stageNum ? ` Stage ${result.stageNum}` : '';
       resultLine = `<div class="following-card-result">${pos}${stage} · ${esc(result.raceName)}</div>`;
     }
+    const fdisp = shortName(f.name || '', nat || '');
+    const ftitle = (fdisp !== (f.name || '')) ? ` title="${esc(f.name || '')}"` : '';
     return `<div class="following-card" onclick="openRiderModal('${esc(f.slug)}')">
       ${photo}
       <div class="following-card-info">
-        <div class="following-card-name">${natFlag}${esc(f.name)}</div>
+        <div class="following-card-name"${ftitle}>${natFlag}${esc(fdisp)}</div>
         ${sub ? `<div class="following-card-sub">${sub}</div>` : ''}
         ${raceLine}${resultLine}
       </div>

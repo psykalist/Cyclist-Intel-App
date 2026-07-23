@@ -7,6 +7,16 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v122 — 2026-07-23 — Post-race persistence, strike-out abandons, Teams-tab bibs retire, follow-name fix
+Batch from "keep the team list with the race post-TDF but drop Teams-tab bibs once it finishes; show riders next to Full Programme for all future races; strike through abandons (Vingegaard, Lipowitz); and Follow shows the maternal surname."
+
+- **Riders lists now persist post-race, for every race (not just the Tour).** CyclingFlash only serves a startlist while a race is *upcoming*, then empties the array once it's live/finished, so a finished race would lose its field. New `cacheStartlist()`/`cachedStartlist()` snapshot each non-empty startlist to `localStorage` (`uci_sl_<slug>`); `ridersForRace()` now resolves in order: live `startlist` → Tour bibs reconstruction → cached snapshot. So the Riders button + inline startlist keep working after any race ends.
+- **Teams-tab bibs retire when the Tour finishes.** Added `tourBibsActive()` (true only while the bib race is in `appData.live`). `renderTeamCard` and the `renderRiderRow` fallback now gate all Tour-bib annotations (bib numbers, ⭐ leader star, "N in Tour" badge, bib sort) on it — so once the Tour moves to Recent the Teams tab reverts to a plain roster. **Bibs stay on the per-race Riders screen** (it reads them straight from `tour_bibs.json`, independent of live status).
+- **Abandons struck through in the Riders screen + startlist.** `abandonedSlugs(race)` collects slug→status from every stage's `non_finishers` (the v117 data); `startlistTeamsHtml` line-throughs those riders, dims them, and appends the status code (DNF/DNS/OTL…) with a plain-English tooltip. The Riders modal header shows "· N out". Verified against live data: 20 abandons incl. `jonas-vingegaard` (DNF) and `florian-lipowitz` (DNF).
+- **Follow a rider no longer shows the maternal surname.** The follow **search results** and **following cards** rendered the raw `name`; both now go through `shortName()` (full name kept as hover title), matching the rest of the app. Stored follow records keep the full name, so notifications/unfollow are unaffected.
+- **First-paint:** re-render live *and* recent after `loadTourBibs()` so the reconstructed Riders count and the Teams-tab bib state are correct on load (both ran before bibs previously).
+- Brace balance 0; main `<script>` passes `node --check`.
+
 ## v121 — 2026-07-23 — Riders screen works for the live Tour (reconstruct field from bibs)
 Follow-up to v120: "the Tour de France has not finished, it finishes on Sunday." The v120 Riders button/screen keyed off `race.startlist`, but a **live** Grand Tour has an **empty** startlist array — CyclingFlash drops the startlist page once racing starts (Tour is `status: live`, stage 17/21, `startlist: []`). So the button never appeared on the one race that matters most.
 

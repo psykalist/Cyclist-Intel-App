@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v120 — 2026-07-23 — Startlist: suppress maternal surnames again + Riders screen
+"The maternal surnames have crept back in… also I want the riders in the tour availed in a separate screen via a button next to the full programme, in both places."
+
+- **Maternal surnames were back in the startlist.** `renderStartlist` rendered `esc(r.name)` — the raw full name — so Hispanic/Lusophone riders showed their maternal (final) surname, unlike everywhere else in the app that already routes names through `shortName()`. Fixed: the per-team markup now goes through a shared `startlistTeamsHtml(sl)` helper that applies `shortName(r.name, r.nat)`, keeps the full name as a hover `title`, and makes each name a clickable `rider-name-link` (startlist entries carry a `slug`) that opens the rider modal.
+- **Riders now available in a separate screen too ("both places").** Added a full-screen **Riders** modal (`#ridersScreen`, reusing the rider-modal overlay styling) that lists the same riders grouped by team via the same shared helper — so both the inline **Startlist** toggle and the new screen show identical, surname-suppressed, clickable names.
+- **Button beside the Full Programme toggle.** `renderProgramme` now wraps the toggle in a `.programme-toggle-row` and, when the race has a startlist, appends a **👥 Riders (N)** button that calls `openRidersModal(uid)`. Races are registered in a new `_racesByUid` map (populated in `renderRaceCard`) so the modal can look up the startlist by card uid.
+- Brace balance verified (diff 0) and the main `<script>` block passes `node --check`.
+
 ## 2026-07-19 — Scraper — fix birth-date parsing (was null for 82% of riders)
 "Birth dates are inconsistent — some riders show age, some a birth year." Root cause: the DOB parse was silently broken for **1971 of 2404 profiles (82%)**, so most rows fell back to startlist age.
 

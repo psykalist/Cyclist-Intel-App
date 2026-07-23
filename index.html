@@ -383,8 +383,15 @@ header h1 span { color: var(--accent); }
 .stage-description { font-size: .82rem; line-height: 1.55; color: var(--text); padding: 8px 12px 12px; border-top: 1px solid var(--border); }
 
 /* ── Race Programme table ── */
+.programme-toggle-row { display: flex; align-items: stretch; gap: 8px; border-bottom: 1px solid var(--border); }
+.programme-toggle-row .programme-toggle { flex: 1; border-bottom: none; }
+.riders-screen-btn { flex-shrink: 0; align-self: center; margin-right: 12px; font-size: .78rem; font-weight: 600; color: var(--accent); background: transparent; border: 1px solid var(--border); border-radius: 12px; padding: 5px 12px; cursor: pointer; white-space: nowrap; }
+.riders-screen-btn:hover { border-color: var(--accent); }
 .programme-toggle { font-size: .8rem; color: var(--muted); cursor: pointer; padding: 6px 12px; display: flex; align-items: center; gap: 6px; user-select: none; border-bottom: 1px solid var(--border); }
 .programme-toggle:hover { color: var(--text); }
+.riders-screen-head { margin-bottom: 6px; }
+.riders-screen-title { font-size: 1.1rem; font-weight: 800; line-height: 1.2; }
+.riders-screen-sub { font-size: .82rem; color: var(--muted); margin-top: 3px; }
 .programme-chev { font-size: .7rem; transition: transform .2s; }
 .programme-body { display: none; overflow-x: auto; }
 .programme-body.open { display: block; }
@@ -1124,6 +1131,13 @@ header h1 span { color: var(--accent); }
   </div>
 </div>
 
+<div class="rider-modal-overlay" id="ridersScreen" onclick="closeRidersModal(event)">
+  <div class="rider-modal">
+    <div class="rider-modal-handle"></div>
+    <div id="ridersScreenContent"></div>
+  </div>
+</div>
+
 <header>
   <div class="header-top">
     <h1><span>C</span>yclist <span>I</span>ntel <span>A</span>pp<svg class="cia-logo" viewBox="0 0 64 64" role="img" aria-label="Cyclist Intel App emblem"><circle cx="32" cy="32" r="30" fill="var(--surface2)" stroke="var(--accent)" stroke-width="3"/><circle cx="32" cy="32" r="25" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.55"/><path d="M32 9 L36 28 L55 32 L36 36 L32 55 L28 36 L9 32 L28 28 Z" fill="var(--accent)"/><circle cx="32" cy="32" r="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="2.5"/><g stroke="var(--accent)" stroke-width="1.2"><line x1="32" y1="24" x2="32" y2="40"/><line x1="24" y1="32" x2="40" y2="32"/><line x1="26.3" y1="26.3" x2="37.7" y2="37.7"/><line x1="37.7" y1="26.3" x2="26.3" y2="37.7"/></g><circle cx="32" cy="32" r="2.5" fill="var(--accent)"/></svg></h1>
@@ -1554,8 +1568,14 @@ function renderProgramme(race, cardId) {
   }).join('');
 
   const pid = `prog-${cardId}`;
-  return `<div class="programme-toggle" onclick="toggleProgramme('${pid}')">
-    📋 Full Programme (${stages.length} stages) <span class="programme-chev" id="${pid}-chev">▼</span>
+  const slLen = (race.startlist || []).length;
+  const ridersBtn = slLen
+    ? `<button class="riders-screen-btn" onclick="event.stopPropagation();openRidersModal('${cardId}')">👥 Riders (${slLen})</button>`
+    : '';
+  return `<div class="programme-toggle-row">
+    <div class="programme-toggle" onclick="toggleProgramme('${pid}')">
+      📋 Full Programme (${stages.length} stages) <span class="programme-chev" id="${pid}-chev">▼</span>
+    </div>${ridersBtn}
   </div>
   <div class="programme-body" id="${pid}">
     <table class="programme-table">
@@ -1678,11 +1698,14 @@ function toggleStage(uid) { document.getElementById(uid)?.classList.toggle('open
 // ── Race card ──────────────────────────────────────────────────────────────────
 
 let cardIdx = 0;
+const _racesByUid = {};   // race._uid -> race, populated in renderRaceCard
 
-function renderStartlist(race) {
-  const sl = race.startlist || [];
-  if (!sl.length) return '';
-  // Group by team
+// Shared startlist markup, used by both the inline startlist toggle and the
+// full-screen Riders modal ("both places"). Rider names go through shortName()
+// so the maternal (final) surname is dropped for Hispanic/Lusophone riders,
+// matching the rest of the app — the full name stays as a hover title. Names
+// are clickable (they carry a slug) and open the rider modal.
+function startlistTeamsHtml(sl) {
   const teams = {};
   const teamOrder = [];
   for (const r of sl) {
@@ -1697,13 +1720,47 @@ function renderStartlist(race) {
       const flagHtml = r.nat
         ? `<img class="flag-img" src="https://flagcdn.com/16x12/${esc(r.nat.toLowerCase())}.png" alt="${esc(r.nat)}" loading="lazy">`
         : '';
-      rows += `<div class="startlist-rider">${flagHtml}${esc(r.name)}</div>`;
+      const disp  = shortName(r.name || '', r.nat || '');
+      const title = (disp !== (r.name || '')) ? ` title="${esc(r.name || '')}"` : '';
+      const inner = r.slug
+        ? `<span class="rider-name-link"${title} onclick="event.stopPropagation();openRiderModal('${esc(r.slug)}')">${esc(disp)}</span>`
+        : `<span${title}>${esc(disp)}</span>`;
+      rows += `<div class="startlist-rider">${flagHtml}${inner}</div>`;
     }
   }
+  return `<div class="startlist-teams">${rows}</div>`;
+}
+
+function renderStartlist(race) {
+  const sl = race.startlist || [];
+  if (!sl.length) return '';
   return `<div class="startlist-toggle" onclick="event.stopPropagation();this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block';this.querySelector('.sl-chev').textContent=this.nextElementSibling.style.display==='block'?'▲':'▼'">
     <span>👥 Startlist (${sl.length} riders)</span><span class="sl-chev">▼</span>
   </div>
-  <div class="startlist-body" style="display:none"><div class="startlist-teams">${rows}</div></div>`;
+  <div class="startlist-body" style="display:none">${startlistTeamsHtml(sl)}</div>`;
+}
+
+// Full-screen Riders modal — same riders as the inline startlist, on a
+// dedicated screen opened from the button beside the Full Programme toggle.
+function openRidersModal(uid) {
+  const race = _racesByUid[uid];
+  if (!race) return;
+  const sl = race.startlist || [];
+  const content = document.getElementById('ridersScreenContent');
+  content.innerHTML = `
+    <div class="riders-screen-head">
+      <div class="riders-screen-title">🚴 ${esc(race.name || race.slug || 'Riders')}</div>
+      <div class="riders-screen-sub">${sl.length} riders</div>
+    </div>
+    ${sl.length ? startlistTeamsHtml(sl) : '<p class="rider-modal-no-data">Startlist not available yet.</p>'}`;
+  document.getElementById('ridersScreen').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeRidersModal(e) {
+  if (!e || e.target === document.getElementById('ridersScreen')) {
+    document.getElementById('ridersScreen').classList.remove('open');
+    document.body.style.overflow = '';
+  }
 }
 
 // ── Startlist completeness helpers ────────────────────────────────────────────
@@ -1735,6 +1792,7 @@ function slStatus(race) {
 function renderRaceCard(race, status) {
   const id = `rc-${cardIdx++}`;
   race._uid = id;
+  _racesByUid[id] = race;   // registry so openRidersModal() can find the startlist
   const total = race.total_stages || 1;
   const done  = race.stages_completed || 0;
   const multi = total > 1;
@@ -2891,7 +2949,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v119';
+const APP_VERSION = 'v120';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

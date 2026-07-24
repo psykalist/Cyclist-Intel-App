@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T18:09:20.764194+00:00",
+  "generated_at": "2026-07-24T12:16:07.578946+00:00",
   "entries": [
     {
       "id": "b470c0107e03",
@@ -308,55 +308,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 3 Tour of Austria: 🇺🇸 Neilson Powless wins"
-    },
-    {
-      "id": "040e23b58ecf",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 6 Tour de France: 🇸🇮 Tadej Pogačar wins"
-    },
-    {
-      "id": "5ea6748fb8b8",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour de France GC: 🇸🇮 Tadej Pogačar leads"
-    },
-    {
-      "id": "af49f0c4f96f",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour de France KOM: 🇸🇮 Tadej Pogačar leads"
-    },
-    {
-      "id": "ed4e1feef453",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour de France Youth: 🇲🇽 Isaac Del Toro Romero leads"
-    },
-    {
-      "id": "ff4e520c598d",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Tour of Austria: 🇦🇹 Gregor Mühlberger wins"
-    },
-    {
-      "id": "a1ab953608b4",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Austria KOM: 🇦🇹 Gregor Mühlberger leads"
-    },
-    {
-      "id": "9670310b326d",
-      "timestamp": "2026-07-09T18:18:51.592075+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour of Austria Youth: 🇺🇸 Andrew August leads"
     }
   ]
 }

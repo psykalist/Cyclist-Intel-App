@@ -2074,17 +2074,37 @@ const EXTRA_TEAMS = [{
   slug: 'q36-5-pro-cycling-team',
   name: 'Q36.5 Pro Cycling Team',
   logo: '', jersey: '', cat: 'Pro',
+  // dob hardcoded (stable facts) because the CI rider_profiles/photo scrape
+  // never covered Q36.5 (it keys off data.json teams) — so age/photo were blank.
+  // photo omitted: no reliable hotlink-safe URL source, and getRiderPhoto (CI)
+  // will fill it in automatically if the scraper ever picks the team up.
   riders: [
-    { slug: 'tom-pidcock',                    name: 'Tom Pidcock',          nat: 'gb' },
-    { slug: 'xabier-mikel-azparren-irurzun',  name: 'Xabier Mikel Azparren', nat: 'es' },
-    { slug: 'chris-harper',                   name: 'Chris Harper',         nat: 'au' },
-    { slug: 'quinten-hermans',                name: 'Quinten Hermans',      nat: 'be' },
-    { slug: 'damien-howson',                  name: 'Damien Howson',        nat: 'au' },
-    { slug: 'xandro-meurisse',                name: 'Xandro Meurisse',      nat: 'be' },
-    { slug: 'brent-van-moer',                 name: 'Brent Van Moer',       nat: 'be' },
-    { slug: 'alfred-wright',                  name: 'Fred Wright',          nat: 'gb' },
+    { slug: 'tom-pidcock',                    name: 'Tom Pidcock',          nat: 'gb', dob: '1999-07-30' },
+    { slug: 'xabier-mikel-azparren-irurzun',  name: 'Xabier Mikel Azparren', nat: 'es', dob: '1999-02-25' },
+    { slug: 'chris-harper',                   name: 'Chris Harper',         nat: 'au', dob: '1994-11-23' },
+    { slug: 'quinten-hermans',                name: 'Quinten Hermans',      nat: 'be', dob: '1995-07-29' },
+    { slug: 'damien-howson',                  name: 'Damien Howson',        nat: 'au', dob: '1992-08-13' },
+    { slug: 'xandro-meurisse',                name: 'Xandro Meurisse',      nat: 'be', dob: '1992-01-31' },
+    { slug: 'brent-van-moer',                 name: 'Brent Van Moer',       nat: 'be', dob: '1998-01-12' },
+    { slug: 'alfred-wright',                  name: 'Fred Wright',          nat: 'gb', dob: '1999-06-13' },
   ],
 }];
+
+// Photo fallback for riders the CI photo scrape never covered (again: Q36.5 was
+// absent from data.json, so rider_photos.json/rider_profiles.json have no image
+// for them). Sourced from procyclingstats (portrait ~160x240; the app already
+// sends referrerpolicy=no-referrer, which PCS requires). Used as the LAST resort
+// in getRiderPhoto()'s callers, AFTER the CI index — so if the scraper ever
+// picks the team up, the fresh CI photo wins and these can be dropped.
+const EXTRA_PHOTOS = {
+  'xabier-mikel-azparren-irurzun': 'https://www.procyclingstats.com/images/riders/vo/dq/xabier-mikel-azparren-irurzun-2026.jpeg',
+  'chris-harper':    'https://www.procyclingstats.com/images/riders/vo/dq/chris-harper-2026.jpeg',
+  'quinten-hermans': 'https://www.procyclingstats.com/images/riders/vo/dq/quinten-hermans-2026.jpeg',
+  'damien-howson':   'https://www.procyclingstats.com/images/riders/vo/dq/damien-howson-2026.jpeg',
+  'xandro-meurisse': 'https://www.procyclingstats.com/images/riders/vo/dq/xandro-meurisse-2026.jpeg',
+  'brent-van-moer':  'https://www.procyclingstats.com/images/riders/vo/dq/brent-van-moer-2026.jpeg',
+  'alfred-wright':   'https://www.procyclingstats.com/images/riders/vo/dq/alfred-wright-2026.jpeg',
+};
 
 // Append any EXTRA_TEAMS not already present in appData.teams (idempotent: keyed
 // on team slug, and skipped if any rider slug already lives on another team).
@@ -2114,7 +2134,7 @@ function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // team roster only inlines a photo/dob for ~26% of riders.
   const prof = (riderProfilesData || {})[r.slug] || (appData.rider_profiles || {})[r.slug] || {};
   // getRiderPhoto (the curated rider_photos.json index) before prof.photo.
-  const photoUrl = r.photo || getRiderPhoto(r.slug || '') || prof.photo;
+  const photoUrl = r.photo || getRiderPhoto(r.slug || '') || prof.photo || EXTRA_PHOTOS[r.slug];
   // referrerpolicy=no-referrer is REQUIRED: both photo CDNs (cyclingflash's
   // DigitalOcean space and procyclingstats) block hotlinking when a referrer is
   // sent, which was silently breaking every rider photo on GitHub Pages.
@@ -2506,7 +2526,7 @@ async function openRiderModal(slug) {
   const nat      = natCode(baseInfo && baseInfo.nat, profiles[slug] && profiles[slug].nat,
                     profile && profile.nat, followNat, _natFromRaceData(slug));
   const natName  = (profile || {}).nat_name || nat.toUpperCase();
-  const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug);
+  const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug) || EXTRA_PHOTOS[slug];
   const dob        = enrich.dob || (profile || {}).dob;
   const birthplace = enrich.birthplace || null;
   const wins     = (profile || {}).wins || [];
@@ -3111,7 +3131,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v124';
+const APP_VERSION = 'v125';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -3664,7 +3684,7 @@ async function renderFollowing() {
 
   const cards = list.map(f => {
     const p = cached[f.slug] || {};
-    const photoUrl = p.photo || getRiderPhoto(f.slug);
+    const photoUrl = p.photo || getRiderPhoto(f.slug) || EXTRA_PHOTOS[f.slug];
     const photo = photoUrl
       ? `<img class="following-card-photo" src="${esc(photoUrl)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
       : `<div class="following-card-photo-ph">🚴</div>`;

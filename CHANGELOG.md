@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v125 — 2026-07-24 — Q36.5 riders get ages + photos (CI never scraped them)
+"The Team section has no photos and age etc for the riders in Q36.5."
+
+- **Cause:** the same missing-team gap as v123 — the CI rider scrapers (`rider_profiles.json`, `rider_photos.json`) key off `data.json`'s teams, and Q36.5 isn't there, so 7 of the 8 riders had `dob: null`, no `photo`, and weren't in the photo index. The Teams tab showed name + flag but no age and the 🚴 placeholder.
+- **Ages:** hardcoded verified birth dates on the `EXTRA_TEAMS` Q36.5 roster (`r.dob`), so the Teams tab and profile modal show "YYYY · NN yrs". Stable facts, cross-checked against Wikipedia/PCS: Pidcock 1999-07-30, Azparren 1999-02-25, Harper 1994-11-23, Hermans 1995-07-29, Howson 1992-08-13, Meurisse 1992-01-31, Van Moer 1998-01-12, Wright 1999-06-13.
+- **Photos:** new `EXTRA_PHOTOS` slug→URL map (procyclingstats portraits, verified to load ~160×240), wired as the **last** fallback in the team row, rider modal, and following card — *after* the CI photo index — so a future scraper run that covers Q36.5 automatically wins and this map can be dropped. Pidcock already had a CI photo, so only the other 7 are listed. PCS images use the existing `referrerpolicy=no-referrer` path.
+- Brace balance 0; main `<script>` passes `node --check`.
+
 ## v124 — 2026-07-24 — Rider flags (full-name nat bug), follow-card team, bib/team sanity check
 "When I follow Pidcock he has no flag and is in Astana; we need a sanity check on teams and bibs — if a team is missing (too few bibs) flag it to me, not in the app."
 

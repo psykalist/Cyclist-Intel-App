@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v123 — 2026-07-24 — Add missing Q36.5 team (Pidcock), fix his bib slug
+"The team that Tom Pidcock is in is not in the teams and not in the bibs. Use the bibs to create the team and fix Tom's profile."
+
+- **Root cause (two bugs).** (1) Pinarello Q36.5 debuts at the 2026 Tour but the scraper never wrote it to `data.json`'s `teams` array — so its 8 riders (bibs 171–178) had no roster anywhere. `ridersForRace()` reconstructs the field by iterating `appData.teams` and matching bib slugs, so the whole Q36.5 block was silently dropped: no team card, ~12-rider gap in the Tour field, and Pidcock's profile modal had no `baseInfo` → showed no team. (2) `tour_bibs.json` keyed Pidcock as `thomas-pidcock`, but his app roster/profile slug is `tom-pidcock`, so even his own bib wouldn't have resolved once the team existed.
+- **Fix 1 — `tour_bibs.json` (source data):** `thomas-pidcock` → `tom-pidcock` (bib 171) so the slug matches the app roster and profile.
+- **Fix 2 — `index.html`:** new `EXTRA_TEAMS` (Q36.5 squad rebuilt from the cyclingoo bib block: Pidcock, Azparren, Harper, Hermans, Howson, Meurisse, Van Moer, Fred Wright) + `mergeExtraTeams()`, called right after `data.json` loads and before any render. Idempotent — skipped if the team slug or any rider slug already exists, so it's a no-op the day the scraper starts emitting Q36.5. This restores the Teams-tab card (ProTeam, 👕 placeholder jersey), reconstructs Q36.5 into the live Tour Riders screen with bibs + leader star, and gives Pidcock his team on the profile modal.
+- Roster verified against PCS/Domestique 2026 Tour team guide. Brace balance 0; main `<script>` passes `node --check`.
+
 ## v122 — 2026-07-23 — Post-race persistence, strike-out abandons, Teams-tab bibs retire, follow-name fix
 Batch from "keep the team list with the race post-TDF but drop Teams-tab bibs once it finishes; show riders next to Full Programme for all future races; strike through abandons (Vingegaard, Lipowitz); and Follow shows the maternal surname."
 

@@ -2033,6 +2033,43 @@ async function loadTourBibs() {
   return tourBibs;
 }
 
+// Some Tour teams are absent from data.json's `teams` array (the scraper only
+// covers UWT + a subset of ProTeams). Pinarello Q36.5 debuts at the 2026 Tour
+// (bibs 171-178 in tour_bibs.json) but has no roster in data.json, so its riders
+// — Pidcock included — never appeared on the Teams tab, never reconstructed into
+// the Tour field (ridersForRace iterates appData.teams), and Pidcock's profile
+// showed no team. We rebuild the missing squad here from the same bib block the
+// rest of the app already trusts. Slugs MUST match tour_bibs.json (tom-pidcock,
+// not thomas-pidcock) so the bib annotations and reconstruction resolve.
+const EXTRA_TEAMS = [{
+  slug: 'q36-5-pro-cycling-team',
+  name: 'Q36.5 Pro Cycling Team',
+  logo: '', jersey: '', cat: 'Pro',
+  riders: [
+    { slug: 'tom-pidcock',                    name: 'Tom Pidcock',          nat: 'gb' },
+    { slug: 'xabier-mikel-azparren-irurzun',  name: 'Xabier Mikel Azparren', nat: 'es' },
+    { slug: 'chris-harper',                   name: 'Chris Harper',         nat: 'au' },
+    { slug: 'quinten-hermans',                name: 'Quinten Hermans',      nat: 'be' },
+    { slug: 'damien-howson',                  name: 'Damien Howson',        nat: 'au' },
+    { slug: 'xandro-meurisse',                name: 'Xandro Meurisse',      nat: 'be' },
+    { slug: 'brent-van-moer',                 name: 'Brent Van Moer',       nat: 'be' },
+    { slug: 'alfred-wright',                  name: 'Fred Wright',          nat: 'gb' },
+  ],
+}];
+
+// Append any EXTRA_TEAMS not already present in appData.teams (idempotent: keyed
+// on team slug, and skipped if any rider slug already lives on another team).
+function mergeExtraTeams() {
+  if (!appData || !Array.isArray(appData.teams)) return;
+  const haveTeam = new Set(appData.teams.map(t => t.slug));
+  const haveRider = new Set(appData.teams.flatMap(t => (t.riders || []).map(r => r.slug)));
+  for (const t of EXTRA_TEAMS) {
+    if (haveTeam.has(t.slug)) continue;
+    if ((t.riders || []).some(r => haveRider.has(r.slug))) continue;
+    appData.teams.push(t);
+  }
+}
+
 function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // bib/isLeader passed by renderTeamCard; other callers (search) fall back to
   // a direct lookup so bibs show there too — but only while the Tour is live.
@@ -2989,6 +3026,7 @@ async function loadData(force=false) {
     const r = await fetch(url, opts);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     appData = await r.json();
+    mergeExtraTeams();   // inject Tour teams missing from data.json (e.g. Q36.5) before any render
     document.getElementById('last-updated').textContent = `Updated ${appData.scraped_at_human || '—'}`;
     renderDataHealth();
     document.getElementById('loading').style.display = 'none';
@@ -3040,7 +3078,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v122';
+const APP_VERSION = 'v123';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

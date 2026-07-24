@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-07-24T12:16:07.578946+00:00",
+  "generated_at": "2026-07-24T18:13:02.105985+00:00",
   "entries": [
+    {
+      "id": "6b83548854f4",
+      "timestamp": "2026-07-24T18:13:02.098976+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 19 Tour de France: 🇸🇮 Tadej Pogačar wins"
+    },
+    {
+      "id": "2a3810876910",
+      "timestamp": "2026-07-24T18:13:02.098976+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour de France KOM: 🇪🇨 Richard Carapaz leads"
+    },
     {
       "id": "b470c0107e03",
       "timestamp": "2026-07-23T18:09:20.756845+00:00",
@@ -294,20 +308,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Tour of Magnificent Qinghai KOM: 🇪🇪 Markus Pajur leads"
-    },
-    {
-      "id": "3628c74cbe2f",
-      "timestamp": "2026-07-10T16:15:41.210197+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 7 Tour de France: 🇧🇪 Tim Merlier wins"
-    },
-    {
-      "id": "27020d5b22e9",
-      "timestamp": "2026-07-10T13:06:07.243742+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Tour of Austria: 🇺🇸 Neilson Powless wins"
     }
   ]
 }

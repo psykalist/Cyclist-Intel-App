@@ -7,6 +7,16 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v124 — 2026-07-24 — Rider flags (full-name nat bug), follow-card team, bib/team sanity check
+"When I follow Pidcock he has no flag and is in Astana; we need a sanity check on teams and bibs — if a team is missing (too few bibs) flag it to me, not in the app."
+
+- **No flag on rider profiles — systemic.** `data.json`'s `rider_profiles` store nationality as a full country NAME ("United Kingdom", "Italy") for **250 of 260** riders, and the modal merges that over the correct 2-letter code from `rider_profiles.json`, so `flagcdn.com/.../united kingdom.png` 404s and no flag shows. New `natCode(...cands)` helper + `_NAT_NAMES` map: returns the first candidate that's already an ISO-2 code or maps from a known country name, skipping unmappable values. `flagImg()` now routes through it, and the modal resolves nat as `baseInfo → rider_profiles code → (mapped) data.json name → follow record → race data`. Fixes flags for every affected rider, not just Pidcock.
+- **"Astana" on Pidcock's profile** was the modal falling back to PCS `team_history` (which lists him at XDS Astana for 2026) because he had no roster; the v123 Q36.5 injection makes `baseInfo` win, so the modal now shows Q36.5. 
+- **Following card:** now awaits `loadRiderProfiles()` before painting (a first visit used to render before the profile cache held the nat, so no flag), resolves nat via `natCode(f.nat, profile.nat, roster nat, race data)`, and picks up the team from the roster (Q36.5 now included) instead of showing nothing/stale.
+- **Fixed 4 more bib slug mismatches in `tour_bibs.json`** (surfaced by the new check): `jefferson-cepeda-hernandez→jefferson-albeiro-cepeda`, `nelson-filipe-oliveira→nelson-oliveira`, `ion-izaguirre→ion-izagirre-insausti`, `joel-nicolau→joel-nicolau-beltran`. With Q36.5 (8) + these (4), the reconstructed Tour field is now the full **184** (was 172).
+- **New dev-only sanity check `check_teams_bibs.py`** (source, NOT wired into the app UI — reports to the terminal, per the request). Groups the Tour bibs into team blocks, checks each resolves to a `data.json` roster, and distinguishes **MISSING TEAM** (whole block absent from data.json — the Q36.5 failure mode) from **SLUG MISMATCH** (block resolves but a rider is keyed wrong) from **HANDLED** (gap already patched by `EXTRA_TEAMS`). Exits non-zero on an unhandled missing team so it can be wired into CI later. Currently exits 0 (clean).
+- Brace balance 0; main `<script>` passes `node --check`; `natCode` unit-checked against the real data values.
+
 ## v123 — 2026-07-24 — Add missing Q36.5 team (Pidcock), fix his bib slug
 "The team that Tom Pidcock is in is not in the teams and not in the bibs. Use the bibs to create the team and fix Tom's profile."
 

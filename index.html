@@ -1219,7 +1219,36 @@ header h1 span { color: var(--accent); }
 // ── Helpers ────────────────────────────────────────────────────────────────────
 
 const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-const flagImg = nat => nat ? `<img src="https://flagcdn.com/16x12/${nat.toLowerCase()}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px" loading="lazy">` : '';
+const flagImg = nat => { const c = natCode(nat); return c ? `<img src="https://flagcdn.com/16x12/${c}.png" width="16" height="11" style="vertical-align:middle;margin-right:4px;border-radius:1px" loading="lazy">` : ''; };
+
+// Full country NAME -> ISO-3166 alpha-2, for flagcdn. data.json's rider_profiles
+// store the nationality as a full name ("United Kingdom", "Italy") for 250/260
+// riders, which override the correct 2-letter codes from rider_profiles.json and
+// make flagcdn 404 (no flag). natCode() takes any number of candidate values and
+// returns the first that's already a 2-letter code or maps from a known name.
+const _NAT_NAMES = {
+  'italy':'it','france':'fr','belgium':'be','spain':'es','united kingdom':'gb',
+  'great britain':'gb','england':'gb','scotland':'gb','wales':'gb','australia':'au',
+  'netherlands':'nl','denmark':'dk','germany':'de','norway':'no','united states':'us',
+  'united states of america':'us','usa':'us','slovenia':'si','switzerland':'ch',
+  'new zealand':'nz','colombia':'co','eritrea':'er','canada':'ca','czech republic':'cz',
+  'czechia':'cz','austria':'at','ecuador':'ec','south africa':'za','portugal':'pt',
+  'mexico':'mx','estonia':'ee','venezuela':'ve','hungary':'hu','israel':'il',
+  'russian federation':'ru','russia':'ru','kazakhstan':'kz','ireland':'ie',
+  'uruguay':'uy','ukraine':'ua','luxembourg':'lu','poland':'pl','slovakia':'sk',
+  'latvia':'lv','lithuania':'lt','japan':'jp','china':'cn','brazil':'br',
+  'argentina':'ar','costa rica':'cr','belarus':'by','croatia':'hr','finland':'fi',
+  'sweden':'se','rwanda':'rw','algeria':'dz','turkey':'tr','greece':'gr',
+};
+function natCode(...cands) {
+  for (const c of cands) {
+    if (!c) continue;
+    const v = String(c).trim().toLowerCase();
+    if (/^[a-z]{2}$/.test(v)) return v;
+    if (_NAT_NAMES[v]) return _NAT_NAMES[v];
+  }
+  return '';
+}
 
 // Hispanic/Lusophone naming convention: given name + paternal surname + maternal
 // surname. TV graphics drop the maternal (final) surname, e.g.
@@ -2470,8 +2499,12 @@ async function openRiderModal(slug) {
   // why the Following card had a flag the modal didn't; race data is the final
   // fallback so drill-down from results keeps the flag too.
   const followNat = ((followLoad() || []).find(f => f.slug === slug) || {}).nat || '';
-  const nat      = ((profile && profile.nat) || (baseInfo && baseInfo.nat)
-                    || followNat || _natFromRaceData(slug) || '').toLowerCase();
+  // natCode() normalises across sources and skips full-country-name values that
+  // aren't valid flag codes (data.json stores "United Kingdom" etc., which used
+  // to win here and kill the flag). Prefer the roster/rider_profiles codes, then
+  // fall back to the (mapped) data.json name, follow record, and race data.
+  const nat      = natCode(baseInfo && baseInfo.nat, profiles[slug] && profiles[slug].nat,
+                    profile && profile.nat, followNat, _natFromRaceData(slug));
   const natName  = (profile || {}).nat_name || nat.toUpperCase();
   const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug);
   const dob        = enrich.dob || (profile || {}).dob;
@@ -3078,7 +3111,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v123';
+const APP_VERSION = 'v124';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -3606,8 +3639,11 @@ async function renderFollowing() {
   const list = followLoad();
   const profiles = appData._followProfiles || {};
 
-  // Try to enrich from already-loaded rider_profiles cache
-  const cached = riderProfilesData || {};
+  // Enrich from rider_profiles (for nat/flag + photo). Await the load if it
+  // hasn't happened yet — otherwise a followed rider paints with no flag on the
+  // first visit because the profile cache (which holds the clean nat code) is
+  // still empty. Uses the in-memory cache when it's already there.
+  const cached = riderProfilesData || await loadRiderProfiles().catch(() => ({}));
 
   const searchBox = `
     <div class="following-add-wrap">
@@ -3632,15 +3668,17 @@ async function renderFollowing() {
     const photo = photoUrl
       ? `<img class="following-card-photo" src="${esc(photoUrl)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
       : `<div class="following-card-photo-ph">🚴</div>`;
-    const nat = f.nat || p.nat || '';
+    // Team name + roster nat from teams data (roster nat is a clean code, a good
+    // flag fallback when the follow record / profile lack one).
+    let sub = '', rosterNat = '';
+    for (const team of (appData.teams || [])) {
+      const rr = (team.riders || []).find(r => r.slug === f.slug);
+      if (rr) { sub = esc(team.name); rosterNat = rr.nat || ''; break; }
+    }
+    const nat = natCode(f.nat, p.nat, rosterNat, _natFromRaceData(f.slug));
     const natFlag = flagImg(nat);
     const liveRace = _followInLive(f.slug);
     const result = _followRiderStatus(f.slug);
-    let sub = '';
-    // Team name from teams data
-    for (const team of (appData.teams || [])) {
-      if ((team.riders || []).some(r => r.slug === f.slug)) { sub = esc(team.name); break; }
-    }
     const raceLine = liveRace
       ? `<div class="following-card-race">🔴 Racing now · ${esc(liveRace)}</div>` : '';
     let resultLine = '';

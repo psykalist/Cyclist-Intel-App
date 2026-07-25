@@ -7,6 +7,13 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v126 — 2026-07-25 — Visible "✕ Exit" button on full-screen popups
+"When there is a popup screen the screens often take up a lot of the screen and it would help if there was a noticeable button to cancel the screen — a button that says exit would be good."
+
+- **Problem:** the two full-height bottom-sheet popups — the rider profile modal (`#riderModal`) and the Riders list screen (`#ridersScreen`) — could only be dismissed by tapping the dark backdrop. On a tall sheet (up to `80vh`) that backdrop is a thin strip, so there was no obvious way to close them; the only affordance was a decorative, non-interactive drag handle.
+- **Fix:** added a prominent **`✕ Exit`** button to the static markup of both sheets, calling `closeRiderModal()` / `closeRidersModal()` with no arg (both already short-circuit `if (!e || ...)` to force-close). New `.modal-exit-btn` CSS: solid red (`#e63329`) pill, `position: sticky; top: 0; float: right` so it stays pinned in the top-right corner while the sheet scrolls, above content (`z-index: 6`). Red chosen over `var(--accent)` because the light theme's accent is a pale orange with poor white-text contrast; red also reads universally as close/cancel.
+- No JS logic changes — reuses existing close handlers. Brace balance 0; main `<script>` passes `node --check`.
+
 ## v125 — 2026-07-24 — Q36.5 riders get ages + photos (CI never scraped them)
 "The Team section has no photos and age etc for the riders in Q36.5."
 

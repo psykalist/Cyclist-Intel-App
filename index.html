@@ -768,6 +768,28 @@ header h1 span { color: var(--accent); }
   border-radius: 2px;
   margin: 0 auto 16px;
 }
+.modal-exit-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: -6px -4px 0 8px;
+  padding: 9px 18px;
+  background: #e63329;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: .92rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,.28);
+}
+.modal-exit-btn:hover { filter: brightness(1.08); }
+.modal-exit-btn:active { transform: translateY(1px); }
 .rider-modal-header {
   display: flex;
   gap: 14px;
@@ -1130,6 +1152,7 @@ header h1 span { color: var(--accent); }
 <!-- Rider profile modal -->
 <div class="rider-modal-overlay" id="riderModal" onclick="closeRiderModal(event)">
   <div class="rider-modal">
+    <button class="modal-exit-btn" onclick="closeRiderModal()" aria-label="Exit">✕ Exit</button>
     <div class="rider-modal-handle"></div>
     <div id="riderModalContent"></div>
   </div>
@@ -1137,6 +1160,7 @@ header h1 span { color: var(--accent); }
 
 <div class="rider-modal-overlay" id="ridersScreen" onclick="closeRidersModal(event)">
   <div class="rider-modal">
+    <button class="modal-exit-btn" onclick="closeRidersModal()" aria-label="Exit">✕ Exit</button>
     <div class="rider-modal-handle"></div>
     <div id="ridersScreenContent"></div>
   </div>
@@ -3131,7 +3155,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v125';
+const APP_VERSION = 'v126';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

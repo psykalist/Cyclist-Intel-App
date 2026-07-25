@@ -7,6 +7,14 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v127 — 2026-07-25 — Exit button uses theme accent; consistent across every panel
+"Same colour and on ALL panels depending on dark/light mode — riders list, on the race itself, riders in the following section."
+
+- **Theme-adaptive colour.** `.modal-exit-btn` was a fixed red; now `background: var(--accent); color: var(--bg)`. This tracks the light/dark theme (blue accent on light, warm orange on dark) and stays high-contrast in both: in light mode it's white text (`--bg #ffffff`) on blue; in dark mode it's near-black text (`--bg #0f1117`) on orange.
+- **Coverage confirmed for the three contexts named.** The rider profile sheet (`#riderModal`) and the Riders list screen (`#ridersScreen`) are the *only* full-screen popups, and both already carry the Exit button (v126). They are exactly what opens from the **riders list**, from tapping a rider **on a race** (startlist/Riders), and from a card in the **Following** section — so all three now show the same accented Exit button.
+- **Smaller dropdown panels made consistent.** The data-health and Update-Scripts dropdown panels keep their corner ✕ (they don't fill the screen), but the ✕ is now accent-coloured, bigger/bolder, with a hover chip — so every closable panel has a visible, theme-matched exit affordance.
+- Brace balance 0; main `<script>` passes `node --check`.
+
 ## v126 — 2026-07-25 — Visible "✕ Exit" button on full-screen popups
 "When there is a popup screen the screens often take up a lot of the screen and it would help if there was a noticeable button to cancel the screen — a button that says exit would be good."
 

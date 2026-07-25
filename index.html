@@ -149,8 +149,11 @@ header h1 span { color: var(--accent); }
 .health-detail-panel .hd-row { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; }
 .health-detail-panel .hd-list { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
 .health-detail-panel .hd-close {
-  position: absolute; top: 8px; right: 10px; cursor: pointer; color: var(--muted); font-size: .9rem;
+  position: absolute; top: 6px; right: 8px; cursor: pointer;
+  color: var(--accent); font-size: 1.05rem; font-weight: 800;
+  line-height: 1; padding: 2px 6px; border-radius: 6px;
 }
+.health-detail-panel .hd-close:hover { background: rgba(var(--accent-rgb),.15); }
 
 .scripts-status-btn { margin-left: 6px; cursor: pointer; opacity: .55; font-size: .82rem; }
 .scripts-status-btn:hover { opacity: 1; }
@@ -778,8 +781,8 @@ header h1 span { color: var(--accent); }
   gap: 6px;
   margin: -6px -4px 0 8px;
   padding: 9px 18px;
-  background: #e63329;
-  color: #fff;
+  background: var(--accent);
+  color: var(--bg);
   border: none;
   border-radius: 999px;
   font-size: .92rem;
@@ -3155,7 +3158,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v126';
+const APP_VERSION = 'v127';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

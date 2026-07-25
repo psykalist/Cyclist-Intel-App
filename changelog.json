@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-24T18:13:02.105985+00:00",
+  "generated_at": "2026-07-25T12:00:09.835678+00:00",
   "entries": [
+    {
+      "id": "6ecd14f71a8d",
+      "timestamp": "2026-07-25T12:00:09.828442+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "CRO Race startlist published (1 riders)"
+    },
     {
       "id": "6b83548854f4",
       "timestamp": "2026-07-24T18:13:02.098976+00:00",
@@ -280,34 +287,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 4 Tour of Austria: 🇮🇹 Andrea Bagioli wins"
-    },
-    {
-      "id": "7c95f2c37746",
-      "timestamp": "2026-07-11T11:46:29.330907+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Tour of Magnificent Qinghai: 🇩🇰 Alexander Salby wins"
-    },
-    {
-      "id": "865d9a61e982",
-      "timestamp": "2026-07-11T11:46:29.330907+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Magnificent Qinghai GC: 🇩🇰 Alexander Salby leads"
-    },
-    {
-      "id": "2e867166c015",
-      "timestamp": "2026-07-11T11:46:29.330907+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tour of Magnificent Qinghai Points: 🇩🇰 Alexander Salby leads"
-    },
-    {
-      "id": "6edbb64a64c5",
-      "timestamp": "2026-07-11T11:46:29.330907+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Magnificent Qinghai KOM: 🇪🇪 Markus Pajur leads"
     }
   ]
 }

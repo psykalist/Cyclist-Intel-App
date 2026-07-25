@@ -1,28 +1,41 @@
 {
-  "run_at": "2026-07-24 20:11 UTC",
-  "run_at_iso": "2026-07-24T18:11:32.274032+00:00",
+  "run_at": "2026-07-25 13:58 UTC",
+  "run_at_iso": "2026-07-25T11:58:25.297843+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-de-france-2026",
       "name": "Tour de France",
       "total_stages": 21,
-      "stages_completed_before": 18,
+      "stages_completed_before": 19,
       "stages_completed_after": 19,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 20,
         "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-20",
         "fetch_ok": true,
-        "response_bytes": 318475,
+        "response_bytes": 322342,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-24 20:11 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 15.8,
         "possible_parser_drift": false
       },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "clasica-de-ordizia-ordiziako-klasikoa-2026",
+      "name": "Clásica de Ordizia - Ordiziako Klasikoa",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

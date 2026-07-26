@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-26T17:55:36.585915+00:00",
-  "scraped_at_human": "26 Jul 2026 17:55 UTC",
+  "scraped_at": "2026-07-26T19:07:27.254140+00:00",
+  "scraped_at_human": "26 Jul 2026 19:07 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13,7 +13,7 @@
       "end_date": "2026-07-26",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/tour-de-france-2026",
-      "stages_completed": 20,
+      "stages_completed": 21,
       "stages": [
         {
           "num": 1,
@@ -12839,10 +12839,101 @@
           "num": 21,
           "label": "Stage 21",
           "result_url": "/race/tour-de-france-2026/result/stage-21",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Mathieu van der Poel",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Mathieu van der Poel",
+              "rider_url": "/profile/mathieu-van-der-poel",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 2,
+              "name": "Jasper Philipsen",
+              "rider_url": "/profile/jasper-philipsen",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 3,
+              "name": "Mads Pedersen",
+              "rider_url": "/profile/mads-pedersen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 4,
+              "name": "Max Kanter",
+              "rider_url": "/profile/max-kanter",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 5,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 6,
+              "name": "Matej Mohorič",
+              "rider_url": "/profile/matej-mohoric",
+              "team": "",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 7,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 8,
+              "name": "Anthony Turgis",
+              "rider_url": "/profile/anthony-turgis",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 9,
+              "name": "Milan Fretin",
+              "rider_url": "/profile/milan-fretin",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "01:58:49"
+            },
+            {
+              "rank": 10,
+              "name": "Clement Russo",
+              "rider_url": "/profile/clement-russo",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "01:58:49"
+            }
+          ],
           "date_str": "Sunday 26 July",
           "start_town": "Thorny",
           "finish_town": "Paris",
@@ -13248,12 +13339,13 @@
               "peloton_time": "19:30",
               "director_time": "19:40"
             }
-          ]
+          ],
+          "non_finishers": []
         }
       ],
-      "last_stage_winner": "Richard Carapaz",
-      "last_stage_winner_flag": "🇪🇨",
-      "last_stage_num": 20,
+      "last_stage_winner": "Mathieu van der Poel",
+      "last_stage_winner_flag": "🇳🇱",
+      "last_stage_num": 21,
       "gc_leader": "🇸🇮 Tadej Pogačar",
       "gc_top10": [
         {
@@ -13263,7 +13355,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "72:53:44"
+          "time_gap": "73:56:26"
         },
         {
           "rank": 2,
@@ -13356,7 +13448,7 @@
           "team": "",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "527"
+          "time_gap": "559"
         },
         {
           "rank": 2,
@@ -13365,7 +13457,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "445"
+          "time_gap": "475"
         },
         {
           "rank": 3,
@@ -13374,7 +13466,7 @@
           "team": "",
           "nat_code": "ER",
           "flag": "🇪🇷",
-          "time_gap": "361"
+          "time_gap": "367"
         },
         {
           "rank": 4,
@@ -13383,7 +13475,7 @@
           "team": "",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "271"
+          "time_gap": "289"
         },
         {
           "rank": 5,
@@ -13392,7 +13484,7 @@
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "230"
+          "time_gap": "246"
         },
         {
           "rank": 6,
@@ -13432,12 +13524,12 @@
         },
         {
           "rank": 10,
-          "name": "Tobias Halland Johannessen",
-          "rider_url": "/profile/tobias-halland-johannessen",
+          "name": "Anthony Turgis",
+          "rider_url": "/profile/anthony-turgis",
           "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "133"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "139"
         }
       ],
       "kom_leader": "🇪🇨 Richard Carapaz",
@@ -13542,7 +13634,7 @@
           "team": "",
           "nat_code": "MX",
           "flag": "🇲🇽",
-          "time_gap": "73:03:26"
+          "time_gap": "74:06:08"
         },
         {
           "rank": 2,
@@ -101772,6 +101864,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "26-07-2026",
+          "race": "Tour de France - Stage 21",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "12-07-2026",
           "race": "Tour de France - Stage 9",
           "cat": "2.UWT"
@@ -104000,7 +104098,7 @@
         }
       },
       "fetched_at": "2026-07-06T19:28:41.510483+00:00",
-      "wins_refreshed_at": "2026-07-20T13:02:44.003141+00:00"
+      "wins_refreshed_at": "2026-07-26T19:07:27.254020+00:00"
     },
     "giulio-pellizzari": {
       "slug": "giulio-pellizzari",

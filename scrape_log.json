@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-26 19:55 UTC",
-  "run_at_iso": "2026-07-26T17:55:34.954269+00:00",
+  "run_at": "2026-07-26 21:06 UTC",
+  "run_at_iso": "2026-07-26T19:07:13.458218+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,10 @@
       "name": "Tour de France",
       "total_stages": 21,
       "stages_completed_before": 20,
-      "stages_completed_after": 20,
-      "new_stages_found": 0,
+      "stages_completed_after": 21,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 21,
-        "url": "https://cyclingflash.com/race/tour-de-france-2026/result/stage-21",
-        "fetch_ok": true,
-        "response_bytes": 313583,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-07-25 19:51 UTC",
-        "stall_attempts": 3,
-        "stall_hours": 22.1,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
@@ -31,9 +20,9 @@
       "slug": "clasica-castilla-y-leon-2026",
       "name": "Clasica Castilla y Leon",
       "total_stages": 1,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": null,
       "expected_rows": 10,

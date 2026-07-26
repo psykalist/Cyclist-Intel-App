@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-26T11:56:34.345591+00:00",
-  "scraped_at_human": "26 Jul 2026 11:56 UTC",
+  "scraped_at": "2026-07-26T17:55:36.585915+00:00",
+  "scraped_at_human": "26 Jul 2026 17:55 UTC",
   "live": [
     {
       "slug": "tour-de-france",
@@ -13639,7 +13639,721 @@
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/clasica-castilla-y-leon-2026",
       "startlist": [],
-      "stages": []
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/clasica-castilla-y-leon-2026/result/stage-1",
+          "winner": "Guillermo Thomas Silva Coussan",
+          "winner_flag": "🇺🇾",
+          "winner_nat": "UY",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Guillermo Thomas Silva Coussan",
+              "rider_url": "/profile/guillermo-thomas-silva-coussan",
+              "team": "",
+              "nat_code": "UY",
+              "flag": "🇺🇾",
+              "time_gap": "04:23:41"
+            },
+            {
+              "rank": 2,
+              "name": "Roger Adria Oliveras",
+              "rider_url": "/profile/roger-adria-oliveras",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "04:23:41"
+            },
+            {
+              "rank": 3,
+              "name": "Christian Scaroni",
+              "rider_url": "/profile/christian-scaroni",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:23:41"
+            },
+            {
+              "rank": 4,
+              "name": "Mathieu Burgaudeau",
+              "rider_url": "/profile/mathieu-burgaudeau",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 03"
+            },
+            {
+              "rank": 5,
+              "name": "Natnael Tesfatsion Ocbit",
+              "rider_url": "/profile/natnael-tesfatsion-ocbit",
+              "team": "",
+              "nat_code": "ER",
+              "flag": "🇪🇷",
+              "time_gap": "+ 05"
+            },
+            {
+              "rank": 6,
+              "name": "Jesus Herrada Lopez",
+              "rider_url": "/profile/jesus-herrada-lopez",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 05"
+            },
+            {
+              "rank": 7,
+              "name": "Baptiste Vadic",
+              "rider_url": "/profile/baptiste-vadic",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 05"
+            },
+            {
+              "rank": 8,
+              "name": "Diego Ulissi",
+              "rider_url": "/profile/diego-ulissi",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 08"
+            },
+            {
+              "rank": 9,
+              "name": "Xabier Berasategi Garmendia",
+              "rider_url": "/profile/xabier-berasategi-garmendia",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 08"
+            },
+            {
+              "rank": 10,
+              "name": "Francisco Muñoz Llana",
+              "rider_url": "/profile/francisco-munoz-llana",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 08"
+            }
+          ],
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Francisco Alves",
+              "rider_url": "/profile/francisco-alves",
+              "team": "Tavfer-Ovos Matinados-Mortágua",
+              "nat_code": "PT",
+              "flag": "🇵🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Davide De Pretto",
+              "rider_url": "/profile/davide-de-pretto",
+              "team": "Team Jayco AlUla",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Lois Dejesus Guisande",
+              "rider_url": "/profile/lois-dejesus-guisande",
+              "team": "Tavfer-Ovos Matinados-Mortágua",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Roei Edinger",
+              "rider_url": "/profile/roei-edinger",
+              "team": "NSN Cycling Team",
+              "nat_code": "IL",
+              "flag": "🇮🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Davide Formolo",
+              "rider_url": "/profile/davide-formolo",
+              "team": "Movistar Team",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Wil Holmes",
+              "rider_url": "/profile/wil-holmes",
+              "team": "Hagens Berman Jayco",
+              "nat_code": "AU",
+              "flag": "🇦🇺"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Diego Lopez Cano",
+              "rider_url": "/profile/diego-lopez-cano",
+              "team": "Tavfer-Ovos Matinados-Mortágua",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Pedro Subtil Joao Tomasio",
+              "rider_url": "/profile/joao-tomasio",
+              "team": "Feirense - Beeceler",
+              "nat_code": "PT",
+              "flag": "🇵🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Pelayo Sanchez Mayo",
+              "rider_url": "/profile/pelayo-sanchez-mayo",
+              "team": "Movistar Team",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Antonio Jesus Soto Guirao",
+              "rider_url": "/profile/antonio-jesus-soto-guirao",
+              "team": "Equipo Kern Pharma",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Ludovico Mellano",
+              "rider_url": "/profile/ludovico-mellano",
+              "team": "XDS Astana Team",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Edgar Nohales Nieto",
+              "rider_url": "/profile/edgar-nohales-nieto",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Daniel Ven Carino",
+              "rider_url": "/profile/daniel-ven-carino",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "PH",
+              "flag": "🇵🇭"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Edson Corbadora",
+              "rider_url": "/profile/edson-corbadora",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "PH",
+              "flag": "🇵🇭"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Ferran Miravalles",
+              "rider_url": "/profile/ferran-miravalles",
+              "team": "Meridian Racing p/b De La Uz",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Ronan Auge",
+              "rider_url": "/profile/ronan-auge",
+              "team": "Unibet Rose Rockets",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jelle Johannink",
+              "rider_url": "/profile/jelle-johannink",
+              "team": "Unibet Rose Rockets",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Ellande Larronde",
+              "rider_url": "/profile/ellande-larronde",
+              "team": "Caja Rural - Seguros RGA",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Antonio Eric Fagundez Lima",
+              "rider_url": "/profile/antonio-eric-fagundez-lima",
+              "team": "Burgos - Burpellet - BH",
+              "nat_code": "UY",
+              "flag": "🇺🇾"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Xavier Conceição Guilherme Mesquita",
+              "rider_url": "/profile/guilherme-mesquita",
+              "team": "Feirense - Beeceler",
+              "nat_code": "PT",
+              "flag": "🇵🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Fábio Marcelo Pinto de Oliveira",
+              "rider_url": "/profile/fabio-marcelo-pinto-de-oliveira",
+              "team": "Feirense - Beeceler",
+              "nat_code": "PT",
+              "flag": "🇵🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Mark Alex Baruelo",
+              "rider_url": "/profile/mark-alex-baruelo",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "PH",
+              "flag": "🇵🇭"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jude Gabriel Francisco",
+              "rider_url": "/profile/jude-gabriel-francisco",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "PH",
+              "flag": "🇵🇭"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Eugenio Sanchez Lopez",
+              "rider_url": "/profile/eugenio-sanchez-lopez",
+              "team": "Victoria Sports Pro Cycling",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Pere Barcelo Ferrer",
+              "rider_url": "/profile/pere-barcelo-ferrer",
+              "team": "Meridian Racing p/b De La Uz",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Pelayo Merino Gonzalez",
+              "rider_url": "/profile/pelayo-merino-gonzalez",
+              "team": "Meridian Racing p/b De La Uz",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            }
+          ],
+          "date_str": "Sunday 26 July"
+        }
+      ],
+      "last_stage_winner": "Guillermo Thomas Silva Coussan",
+      "last_stage_winner_flag": "🇺🇾",
+      "last_stage_num": 1,
+      "stages_completed": 1,
+      "gc_leader": "🇺🇾 Guillermo Thomas Silva Coussan",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Guillermo Thomas Silva Coussan",
+          "rider_url": "/profile/guillermo-thomas-silva-coussan",
+          "team": "",
+          "nat_code": "UY",
+          "flag": "🇺🇾",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 2,
+          "name": "Roger Adria Oliveras",
+          "rider_url": "/profile/roger-adria-oliveras",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 3,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 4,
+          "name": "Mathieu Burgaudeau",
+          "rider_url": "/profile/mathieu-burgaudeau",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 5,
+          "name": "Natnael Tesfatsion Ocbit",
+          "rider_url": "/profile/natnael-tesfatsion-ocbit",
+          "team": "",
+          "nat_code": "ER",
+          "flag": "🇪🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 6,
+          "name": "Jesus Herrada Lopez",
+          "rider_url": "/profile/jesus-herrada-lopez",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 7,
+          "name": "Baptiste Vadic",
+          "rider_url": "/profile/baptiste-vadic",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 8,
+          "name": "Diego Ulissi",
+          "rider_url": "/profile/diego-ulissi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Xabier Berasategi Garmendia",
+          "rider_url": "/profile/xabier-berasategi-garmendia",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 10,
+          "name": "Francisco Muñoz Llana",
+          "rider_url": "/profile/francisco-munoz-llana",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        }
+      ],
+      "points_leader": "🇺🇾 Guillermo Thomas Silva Coussan",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Guillermo Thomas Silva Coussan",
+          "rider_url": "/profile/guillermo-thomas-silva-coussan",
+          "team": "",
+          "nat_code": "UY",
+          "flag": "🇺🇾",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 2,
+          "name": "Roger Adria Oliveras",
+          "rider_url": "/profile/roger-adria-oliveras",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 3,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 4,
+          "name": "Mathieu Burgaudeau",
+          "rider_url": "/profile/mathieu-burgaudeau",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 5,
+          "name": "Natnael Tesfatsion Ocbit",
+          "rider_url": "/profile/natnael-tesfatsion-ocbit",
+          "team": "",
+          "nat_code": "ER",
+          "flag": "🇪🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 6,
+          "name": "Jesus Herrada Lopez",
+          "rider_url": "/profile/jesus-herrada-lopez",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 7,
+          "name": "Baptiste Vadic",
+          "rider_url": "/profile/baptiste-vadic",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 8,
+          "name": "Diego Ulissi",
+          "rider_url": "/profile/diego-ulissi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Xabier Berasategi Garmendia",
+          "rider_url": "/profile/xabier-berasategi-garmendia",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 10,
+          "name": "Francisco Muñoz Llana",
+          "rider_url": "/profile/francisco-munoz-llana",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        }
+      ],
+      "kom_leader": "🇺🇾 Guillermo Thomas Silva Coussan",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Guillermo Thomas Silva Coussan",
+          "rider_url": "/profile/guillermo-thomas-silva-coussan",
+          "team": "",
+          "nat_code": "UY",
+          "flag": "🇺🇾",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 2,
+          "name": "Roger Adria Oliveras",
+          "rider_url": "/profile/roger-adria-oliveras",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 3,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 4,
+          "name": "Mathieu Burgaudeau",
+          "rider_url": "/profile/mathieu-burgaudeau",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 5,
+          "name": "Natnael Tesfatsion Ocbit",
+          "rider_url": "/profile/natnael-tesfatsion-ocbit",
+          "team": "",
+          "nat_code": "ER",
+          "flag": "🇪🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 6,
+          "name": "Jesus Herrada Lopez",
+          "rider_url": "/profile/jesus-herrada-lopez",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 7,
+          "name": "Baptiste Vadic",
+          "rider_url": "/profile/baptiste-vadic",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 8,
+          "name": "Diego Ulissi",
+          "rider_url": "/profile/diego-ulissi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Xabier Berasategi Garmendia",
+          "rider_url": "/profile/xabier-berasategi-garmendia",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 10,
+          "name": "Francisco Muñoz Llana",
+          "rider_url": "/profile/francisco-munoz-llana",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        }
+      ],
+      "youth_leader": "🇺🇾 Guillermo Thomas Silva Coussan",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Guillermo Thomas Silva Coussan",
+          "rider_url": "/profile/guillermo-thomas-silva-coussan",
+          "team": "",
+          "nat_code": "UY",
+          "flag": "🇺🇾",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 2,
+          "name": "Roger Adria Oliveras",
+          "rider_url": "/profile/roger-adria-oliveras",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 3,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:23:41"
+        },
+        {
+          "rank": 4,
+          "name": "Mathieu Burgaudeau",
+          "rider_url": "/profile/mathieu-burgaudeau",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 5,
+          "name": "Natnael Tesfatsion Ocbit",
+          "rider_url": "/profile/natnael-tesfatsion-ocbit",
+          "team": "",
+          "nat_code": "ER",
+          "flag": "🇪🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 6,
+          "name": "Jesus Herrada Lopez",
+          "rider_url": "/profile/jesus-herrada-lopez",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 7,
+          "name": "Baptiste Vadic",
+          "rider_url": "/profile/baptiste-vadic",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 8,
+          "name": "Diego Ulissi",
+          "rider_url": "/profile/diego-ulissi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Xabier Berasategi Garmendia",
+          "rider_url": "/profile/xabier-berasategi-garmendia",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 10,
+          "name": "Francisco Muñoz Llana",
+          "rider_url": "/profile/francisco-munoz-llana",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 08"
+        }
+      ]
     }
   ],
   "upcoming": [
@@ -13780,6 +14494,12 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
+          "name": "Alec Segaert",
+          "slug": "alec-segaert",
+          "nat": "be",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
           "name": "Wilco Kelderman",
           "slug": "wilco-kelderman",
           "nat": "nl",
@@ -13798,9 +14518,9 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Jan Christen",
-          "slug": "jan-christen",
-          "nat": "ch",
+          "name": "Rune Herregodts",
+          "slug": "rune-herregodts",
+          "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -13822,9 +14542,9 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Rune Herregodts",
-          "slug": "rune-herregodts",
-          "nat": "be",
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -13888,8 +14608,8 @@
           "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
-          "name": "Marceli Bogusławski",
-          "slug": "marceli-boguslawski",
+          "name": "Jakub Kaczmarek",
+          "slug": "jakub-kaczmarek",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -13906,8 +14626,8 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Jakub Kaczmarek",
-          "slug": "jakub-kaczmarek",
+          "name": "Marceli Bogusławski",
+          "slug": "marceli-boguslawski",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -13930,12 +14650,6 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Cees Bol",
-          "slug": "cees-bol",
-          "nat": "nl",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
           "name": "Léo Bisiaux",
           "slug": "leo-bisiaux",
           "nat": "fr",
@@ -13945,6 +14659,12 @@
           "name": "Paul Lapeira",
           "slug": "paul-lapeira",
           "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Cees Bol",
+          "slug": "cees-bol",
+          "nat": "nl",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -107135,6 +107855,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "26-07-2026",
+          "race": "Clasica Castilla y Leon",
+          "cat": "1.1"
+        },
+        {
+          "year": "2026",
           "date": "25-07-2026",
           "race": "Clásica de Ordizia - Ordiziako Klasikoa",
           "cat": "1.1"
@@ -107233,7 +107959,7 @@
         }
       },
       "fetched_at": "2026-07-05T18:54:08.383523+00:00",
-      "wins_refreshed_at": "2026-07-25T17:51:43.081492+00:00"
+      "wins_refreshed_at": "2026-07-26T17:55:36.585880+00:00"
     },
     "brieuc-rolland": {
       "slug": "brieuc-rolland",

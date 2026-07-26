@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-07-25T17:53:11.019553+00:00",
+  "generated_at": "2026-07-26T11:58:02.144976+00:00",
   "entries": [
+    {
+      "id": "96279473a0d6",
+      "timestamp": "2026-07-26T11:58:02.138155+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "PostNord Tour of Denmark startlist: AERT Wout Van, ANDERSEN Søren Kragh, Aidan Buttigieg (+94 more) added"
+    },
+    {
+      "id": "30c864e71cb9",
+      "timestamp": "2026-07-26T11:58:02.138155+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a Burgos startlist: Edoardo Zamperini added"
+    },
     {
       "id": "8e6afcc9d426",
       "timestamp": "2026-07-25T17:53:11.012557+00:00",
@@ -308,13 +322,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Tour of Magnificent Qinghai KOM: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
-    },
-    {
-      "id": "26df1a1cfa5e",
-      "timestamp": "2026-07-12T11:52:43.435356+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Tour of Magnificent Qinghai: 🇮🇹 Gabriele Bessega wins"
     }
   ]
 }

@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-07-26T19:08:45.209958+00:00",
+  "generated_at": "2026-07-27T13:34:04.198153+00:00",
   "entries": [
+    {
+      "id": "a554375bcb60",
+      "timestamp": "2026-07-27T13:34:04.191151+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour de Pologne startlist: Jonathan Milan added"
+    },
+    {
+      "id": "60b39f6c16b6",
+      "timestamp": "2026-07-27T13:34:04.191151+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "PostNord Tour of Denmark startlist: Enrico Zanoncello added"
+    },
+    {
+      "id": "49b98d8f7b09",
+      "timestamp": "2026-07-27T13:34:04.191151+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a Burgos startlist: Antoine L'Hote, César Pérez, Davide Toneatti (+14 more) added"
+    },
     {
       "id": "d5c9970e2984",
       "timestamp": "2026-07-26T19:08:45.202794+00:00",
@@ -315,27 +336,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 4 Tour of Magnificent Qinghai: 🇨🇴 Abner Santiago Umba Lopez wins"
-    },
-    {
-      "id": "9c0f24f8ba22",
-      "timestamp": "2026-07-13T13:13:56.088761+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Tour of Magnificent Qinghai: 🇪🇷 Henok Mulubrhan wins"
-    },
-    {
-      "id": "6a294897acf4",
-      "timestamp": "2026-07-13T13:13:56.088761+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Magnificent Qinghai GC: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
-    },
-    {
-      "id": "97bf2a3087f3",
-      "timestamp": "2026-07-13T13:13:56.088761+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Magnificent Qinghai KOM: 🇪🇸 Jon Agirre Egaña leads"
     }
   ]
 }

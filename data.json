@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-27T18:17:48.302464+00:00",
-  "scraped_at_human": "27 Jul 2026 18:17 UTC",
+  "scraped_at": "2026-07-28T12:48:58.060002+00:00",
+  "scraped_at_human": "28 Jul 2026 12:48 UTC",
   "live": [],
   "upcoming": [
     {
@@ -1914,6 +1914,18 @@
           "team": "Team Novo Nordisk (PRT)"
         },
         {
+          "name": "Giovanni Lonardi",
+          "slug": "giovanni-lonardi",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Mirco Maestri",
+          "slug": "mirco-maestri",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
           "name": "Dario Igor Belletta",
           "slug": "dario-igor-belletta",
           "nat": "it",
@@ -1929,18 +1941,6 @@
           "name": "Aidan Buttigieg",
           "slug": "aidan-buttigieg",
           "nat": "mt",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Giovanni Lonardi",
-          "slug": "giovanni-lonardi",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Mirco Maestri",
-          "slug": "mirco-maestri",
-          "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -2378,8 +2378,8 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Nil Gimeno",
-          "slug": "nil-gimeno",
+          "name": "César Pérez",
+          "slug": "cesar-perez-lopez",
           "nat": "es",
           "team": "Equipo Kern Pharma (PRT)"
         },
@@ -2402,20 +2402,20 @@
           "team": "Equipo Kern Pharma (PRT)"
         },
         {
-          "name": "Marc Brustenga",
-          "slug": "marc-brustenga-masague",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "César Pérez",
-          "slug": "cesar-perez-lopez",
+          "name": "Nil Gimeno",
+          "slug": "nil-gimeno",
           "nat": "es",
           "team": "Equipo Kern Pharma (PRT)"
         },
         {
           "name": "Diego Uriarte",
           "slug": "diego-uriarte-belzunegi",
+          "nat": "es",
+          "team": "Equipo Kern Pharma (PRT)"
+        },
+        {
+          "name": "Marc Brustenga",
+          "slug": "marc-brustenga-masague",
           "nat": "es",
           "team": "Equipo Kern Pharma (PRT)"
         },
@@ -2456,12 +2456,6 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Lorenzo Fortunato",
-          "slug": "lorenzo-fortunato",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
           "name": "Clément Champoussin",
           "slug": "clement-champoussin",
           "nat": "fr",
@@ -2470,6 +2464,12 @@
         {
           "name": "Alberto Bettiol",
           "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Lorenzo Fortunato",
+          "slug": "lorenzo-fortunato",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -2522,6 +2522,12 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
+          "name": "Clément Berthet",
+          "slug": "clement-berthet",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
           "name": "Giulio Pellizzari",
           "slug": "giulio-pellizzari",
           "nat": "it",
@@ -2544,6 +2550,12 @@
           "slug": "mikel-landa",
           "nat": "es",
           "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Emilien Jeannière",
+          "slug": "emilien-jeanniere",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
         },
         {
           "name": "Carlos Rodríguez",
@@ -115326,145 +115338,145 @@
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 45
+      "days_away": 44
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 70
+      "days_away": 69
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 73
+      "days_away": 72
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 75
+      "days_away": 74
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 76
+      "days_away": 75
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 78
+      "days_away": 77
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 79
+      "days_away": 78
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 83
+      "days_away": 82
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 83
+      "days_away": 82
     }
   ]
 }

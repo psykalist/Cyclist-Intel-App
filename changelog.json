@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-28T12:49:59.460536+00:00",
+  "generated_at": "2026-07-28T18:07:30.060773+00:00",
   "entries": [
+    {
+      "id": "da12fce54754",
+      "timestamp": "2026-07-28T18:07:30.053728+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour de Pologne startlist: Filip Maciejuk, Kamil Małecki added"
+    },
     {
       "id": "a548bd0306cd",
       "timestamp": "2026-07-28T12:49:59.453778+00:00",
@@ -315,27 +322,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Tour of Magnificent Qinghai KOM: 🇪🇸 Cristian Rodriguez Martin leads"
-    },
-    {
-      "id": "c6ce869a13d5",
-      "timestamp": "2026-07-14T17:57:07.113113+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 10 Tour de France: 🇸🇮 Tadej Pogačar wins"
-    },
-    {
-      "id": "03f551c86887",
-      "timestamp": "2026-07-14T17:57:07.113113+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour de France Youth: 🇪🇸 Juan Ayuso Pesquera leads"
-    },
-    {
-      "id": "46054f37adad",
-      "timestamp": "2026-07-14T17:57:07.113113+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Magnificent Qinghai GC: 🇪🇸 Jan Castellon Ribalta leads"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-28T12:48:58.060002+00:00",
-  "scraped_at_human": "28 Jul 2026 12:48 UTC",
+  "scraped_at": "2026-07-28T18:06:28.651939+00:00",
+  "scraped_at_human": "28 Jul 2026 18:06 UTC",
   "live": [],
   "upcoming": [
     {
@@ -90,6 +90,12 @@
           "slug": "alessandro-romele",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Filip Maciejuk",
+          "slug": "filip-maciejuk",
+          "nat": "pl",
+          "team": "Movistar Team (WT)"
         },
         {
           "name": "SCHUYTENEER Steffen De",
@@ -260,8 +266,14 @@
           "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
-          "name": "Jakub Kaczmarek",
-          "slug": "jakub-kaczmarek",
+          "name": "Kamil Małecki",
+          "slug": "kamil-malecki",
+          "nat": "pl",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Filip Gruszczyński",
+          "slug": "filip-gruszczynski",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -284,14 +296,14 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Patryk Stosz",
-          "slug": "patryk-stosz",
+          "name": "Jakub Kaczmarek",
+          "slug": "jakub-kaczmarek",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
         {
-          "name": "Filip Gruszczyński",
-          "slug": "filip-gruszczynski",
+          "name": "Patryk Stosz",
+          "slug": "patryk-stosz",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -302,26 +314,26 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Léo Bisiaux",
-          "slug": "leo-bisiaux",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
           "name": "Paul Lapeira",
           "slug": "paul-lapeira",
           "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Cees Bol",
-          "slug": "cees-bol",
-          "nat": "nl",
+          "name": "Léo Bisiaux",
+          "slug": "leo-bisiaux",
+          "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
           "name": "Olav Kooij",
           "slug": "olav-kooij",
+          "nat": "nl",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Cees Bol",
+          "slug": "cees-bol",
           "nat": "nl",
           "team": "Decathlon CMA CGM Team (WT)"
         },
@@ -1542,6 +1554,78 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
+          "name": "Pier-André Côté",
+          "slug": "pier-andre-cote",
+          "nat": "ca",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Nick Schultz",
+          "slug": "nick-schultz",
+          "nat": "au",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Riley Sheehan",
+          "slug": "riley-sheehan",
+          "nat": "us",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Dion Smith",
+          "slug": "dion-smith",
+          "nat": "nz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Itamar Einhorn",
+          "slug": "itamar-einhorn",
+          "nat": "il",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "TRICHT Floris Van",
+          "slug": "floris-van-tricht",
+          "nat": "be",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Jens Verbrugghe",
+          "slug": "jens-verbrugghe",
+          "nat": "be",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Dillon Corkery",
+          "slug": "dillon-corkery",
+          "nat": "ie",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Nils Eekhoff",
+          "slug": "nils-eekhoff",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "DER WERFF Thom Van",
+          "slug": "thom-van-der-werff",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "UDEN Casper Van",
+          "slug": "casper-van-uden",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Rick Versloot",
+          "slug": "rick-versloot",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
           "name": "AERT Wout Van",
           "slug": "wout-van-aert",
           "nat": "be",
@@ -1584,82 +1668,46 @@
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
-          "name": "Pier-André Côté",
-          "slug": "pier-andre-cote",
-          "nat": "ca",
-          "team": "NSN Cycling Team (WT)"
+          "name": "Carl-Frederik Bévort",
+          "slug": "carl-frederik-bevort",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Nick Schultz",
-          "slug": "nick-schultz",
-          "nat": "au",
-          "team": "NSN Cycling Team (WT)"
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Riley Sheehan",
-          "slug": "riley-sheehan",
-          "nat": "us",
-          "team": "NSN Cycling Team (WT)"
+          "name": "Storm Ingebrigtsen",
+          "slug": "storm-ingebrigtsen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Dion Smith",
-          "slug": "dion-smith",
-          "nat": "nz",
-          "team": "NSN Cycling Team (WT)"
+          "name": "Alexander Kamp",
+          "slug": "alexander-kamp",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Corbin Strong",
-          "slug": "corbin-strong",
-          "nat": "nz",
-          "team": "NSN Cycling Team (WT)"
+          "name": "LEVY William Blume",
+          "slug": "william-blume-levy",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "TRICHT Floris Van",
-          "slug": "floris-van-tricht",
-          "nat": "be",
-          "team": "NSN Cycling Team (WT)"
+          "name": "Henrik Pedersen",
+          "slug": "henrik-pedersen",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Jens Verbrugghe",
-          "slug": "jens-verbrugghe",
-          "nat": "be",
-          "team": "NSN Cycling Team (WT)"
-        },
-        {
-          "name": "Dillon Corkery",
-          "slug": "dillon-corkery",
-          "nat": "ie",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "Nils Eekhoff",
-          "slug": "nils-eekhoff",
-          "nat": "nl",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "Fabio Jakobsen",
-          "slug": "fabio-jakobsen",
-          "nat": "nl",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "DER WERFF Thom Van",
-          "slug": "thom-van-der-werff",
-          "nat": "nl",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "UDEN Casper Van",
-          "slug": "casper-van-uden",
-          "nat": "nl",
-          "team": "Team Picnic PostNL (WT)"
-        },
-        {
-          "name": "Rick Versloot",
-          "slug": "rick-versloot",
-          "nat": "nl",
-          "team": "Team Picnic PostNL (WT)"
+          "name": "Rasmus Tiller",
+          "slug": "rasmus-tiller",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Marco Manenti",
@@ -1744,48 +1792,6 @@
           "slug": "samuele-zoccarato",
           "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Carl-Frederik Bévort",
-          "slug": "carl-frederik-bevort",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Storm Ingebrigtsen",
-          "slug": "storm-ingebrigtsen",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Alexander Kamp",
-          "slug": "alexander-kamp",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "LEVY William Blume",
-          "slug": "william-blume-levy",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Henrik Pedersen",
-          "slug": "henrik-pedersen",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Rasmus Tiller",
-          "slug": "rasmus-tiller",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Robin Carpenter",
@@ -1914,18 +1920,6 @@
           "team": "Team Novo Nordisk (PRT)"
         },
         {
-          "name": "Giovanni Lonardi",
-          "slug": "giovanni-lonardi",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Mirco Maestri",
-          "slug": "mirco-maestri",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
           "name": "Dario Igor Belletta",
           "slug": "dario-igor-belletta",
           "nat": "it",
@@ -1941,6 +1935,18 @@
           "name": "Aidan Buttigieg",
           "slug": "aidan-buttigieg",
           "nat": "mt",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Giovanni Lonardi",
+          "slug": "giovanni-lonardi",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Mirco Maestri",
+          "slug": "mirco-maestri",
+          "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -2202,8 +2208,8 @@
           "team": "Team ColoQuick (CT)"
         },
         {
-          "name": "Andreas Stokbro",
-          "slug": "andreas-stokbro",
+          "name": "Anders Vos Sørensen",
+          "slug": "anders-vos-sorensen",
           "nat": "dk",
           "team": "Team ColoQuick (CT)"
         },

@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-07-28T18:07:30.060773+00:00",
+  "generated_at": "2026-07-29T12:57:16.640203+00:00",
   "entries": [
+    {
+      "id": "ff9a8793d02b",
+      "timestamp": "2026-07-29T12:57:16.633177+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a Burgos startlist: Alberto Dainese, Andrew August, BOVEN Luca Van (+43 more) added"
+    },
     {
       "id": "da12fce54754",
       "timestamp": "2026-07-28T18:07:30.053728+00:00",
@@ -301,27 +308,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 11 Tour de France: 🇳🇴 Søren Wærenskjold wins"
-    },
-    {
-      "id": "357db6663fbf",
-      "timestamp": "2026-07-15T12:11:21.392794+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Tour of Magnificent Qinghai: 🇮🇹 Christian Bagatin wins"
-    },
-    {
-      "id": "0868c33aa8a5",
-      "timestamp": "2026-07-15T12:11:21.392794+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tour of Magnificent Qinghai Points: 🇪🇨 Jonathan Klever Caicedo Cepeda leads"
-    },
-    {
-      "id": "8c94cd601b0e",
-      "timestamp": "2026-07-15T12:11:21.392794+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Magnificent Qinghai KOM: 🇪🇸 Cristian Rodriguez Martin leads"
     }
   ]
 }

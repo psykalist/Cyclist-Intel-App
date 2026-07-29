@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-29T12:56:12.078620+00:00",
-  "scraped_at_human": "29 Jul 2026 12:56 UTC",
+  "scraped_at": "2026-07-29T18:01:22.570802+00:00",
+  "scraped_at_human": "29 Jul 2026 18:01 UTC",
   "live": [
     {
       "slug": "postnord-tour-of-denmark",
@@ -13,16 +13,107 @@
       "end_date": "2026-08-02",
       "total_stages": 5,
       "official_url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026",
-      "stages_completed": 0,
+      "stages_completed": 1,
       "stages": [
         {
           "num": 1,
           "label": "Stage 1",
           "result_url": "/race/postnord-tour-of-denmark-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Wout van Aert",
+          "winner_flag": "🇧🇪",
+          "winner_nat": "BE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Wout van Aert",
+              "rider_url": "/profile/wout-van-aert",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 2,
+              "name": "Lukas Kubis",
+              "rider_url": "/profile/lukas-kubis",
+              "team": "",
+              "nat_code": "SK",
+              "flag": "🇸🇰",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 3,
+              "name": "Henrik Pedersen",
+              "rider_url": "/profile/breiner-henrik-pedersen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 4,
+              "name": "Tim Torn Teutenberg",
+              "rider_url": "/profile/tim-torn-teutenberg",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 5,
+              "name": "Pier-André Coté",
+              "rider_url": "/profile/pier-andre-cote",
+              "team": "",
+              "nat_code": "CA",
+              "flag": "🇨🇦",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 6,
+              "name": "Christophe Laporte",
+              "rider_url": "/profile/christophe-laporte",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 7,
+              "name": "Tomas Kopecky",
+              "rider_url": "/profile/tomas-kopecky",
+              "team": "",
+              "nat_code": "CZ",
+              "flag": "🇨🇿",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 8,
+              "name": "Søren Kragh Andersen",
+              "rider_url": "/profile/soren-kragh-andersen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:10:49"
+            },
+            {
+              "rank": 9,
+              "name": "Jensen Plowright",
+              "rider_url": "/profile/jensen-plowright",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "+ 17"
+            },
+            {
+              "rank": 10,
+              "name": "Anders Foldager",
+              "rider_url": "/profile/anders-foldager",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 17"
+            }
+          ],
           "date_str": "Wednesday 29 July",
           "start_town": "Aalborg",
           "finish_town": "Aalborg",
@@ -30,7 +121,8 @@
           "elevation_m": 971,
           "start_time": "15:25",
           "stage_type": "flat",
-          "description": ""
+          "description": "",
+          "non_finishers": []
         },
         {
           "num": 2,
@@ -253,9 +345,9 @@
           "team": "NSN Cycling Team (WT)"
         },
         {
-          "name": "Itamar Einhorn",
-          "slug": "itamar-einhorn",
-          "nat": "il",
+          "name": "Kiaan Watts",
+          "slug": "kiaan-watts",
+          "nat": "nz",
           "team": "NSN Cycling Team (WT)"
         },
         {
@@ -883,8 +975,8 @@
           "team": "Team ColoQuick (CT)"
         },
         {
-          "name": "Anders Vos Sørensen",
-          "slug": "anders-vos-sorensen",
+          "name": "Andreas Stokbro",
+          "slug": "andreas-stokbro",
           "nat": "dk",
           "team": "Team ColoQuick (CT)"
         },
@@ -972,7 +1064,10 @@
           "nat": "dk",
           "team": "Denmark (NAT)"
         }
-      ]
+      ],
+      "last_stage_winner": "Wout van Aert",
+      "last_stage_winner_flag": "🇧🇪",
+      "last_stage_num": 1
     }
   ],
   "upcoming": [
@@ -1058,6 +1153,12 @@
         }
       ],
       "startlist": [
+        {
+          "name": "Alberto Bettiol",
+          "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
         {
           "name": "Alessandro Romele",
           "slug": "alessandro-romele",
@@ -1239,8 +1340,8 @@
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
-          "name": "Filip Gruszczyński",
-          "slug": "filip-gruszczynski",
+          "name": "Radosław Frątczak",
+          "slug": "radoslaw-fratczak",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -1275,8 +1376,8 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Radosław Frątczak",
-          "slug": "radoslaw-fratczak",
+          "name": "Filip Gruszczyński",
+          "slug": "filip-gruszczynski",
           "nat": "pl",
           "team": "Poland (NAT)"
         },
@@ -106324,6 +106425,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "29-07-2026",
+          "race": "PostNord Tour of Denmark - Stage 1",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
           "date": "11-06-2026",
           "race": "Tour Auvergne - Rhône-Alpes - Stage 5",
           "cat": "2.UWT"
@@ -107435,7 +107542,8 @@
           "bar": 60
         }
       },
-      "fetched_at": "2026-07-06T19:28:51.549046+00:00"
+      "fetched_at": "2026-07-06T19:28:51.549046+00:00",
+      "wins_refreshed_at": "2026-07-29T18:01:22.570706+00:00"
     },
     "ben-healy": {
       "slug": "ben-healy",

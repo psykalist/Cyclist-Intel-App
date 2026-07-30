@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-07-30T08:01:14.543506+00:00",
+  "updated_at": "2026-07-30T12:26:06.467054+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 14h old (a live race is running) -- consider running scraper.py"
+    "scrape_log.json: INCOMPLETE kom_top10 on postnord-tour-of-denmark-2026 -- pulled 7 of 10 expected rows."
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 3358,
+    "data_size_kb": 3368,
     "data_upcoming": 33,
     "data_recent": 63,
     "data_teams": 33,
     "rider_profiles": 2565,
     "live_races": 1,
-    "scraped_at": "2026-07-29T18:01:22.570802+00:00",
-    "data_age_hours": 14.0,
+    "scraped_at": "2026-07-30T12:24:46.533917+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 271825,
-    "scrape_log_run_at": "2026-07-29 20:01 UTC",
+    "scrape_log_run_at": "2026-07-30 14:24 UTC",
     "rider_roster": 1189,
     "rider_missing_profile": 137,
     "rider_missing_palmares": 816

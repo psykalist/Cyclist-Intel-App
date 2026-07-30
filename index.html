@@ -2146,14 +2146,17 @@ function mergeExtraTeams() {
   }
 }
 
-// CI structurally never discovers 2.1 UCI Europe Tour races: the scraper only
-// reads the WorldTour / ProSeries / Men Elite CyclingFlash calendar pages, so
-// Tour de l'Ain (2.1) never lands in data.json. Injected here the same way as
-// EXTRA_TEAMS. Idempotent by slug -- if CI ever picks it up, the merge skips it.
+// Tour de l'Ain (2.1) was missing because the scraper only read PAGE 1 of the
+// paginated CyclingFlash 'Men Elite' calendar; this race sits on a later page
+// (its category 2.1 is already in UCI_CATS). scraper.py now paginates, so a
+// future CI run will add it to data.json on its own. Kept here as a fallback
+// until that run lands. IMPORTANT: slug/cf_slug MUST match what the scraper
+// produces (CyclingFlash slug is 'tour-de-lain', no hyphen before 'ain') so
+// mergeExtraRaces() dedupes by slug and CI's richer copy wins cleanly.
 const EXTRA_RACES = [
 {
-  "slug": "tour-de-l-ain",
-  "cf_slug": "tour-de-l-ain-2026",
+  "slug": "tour-de-lain",
+  "cf_slug": "tour-de-lain-2026",
   "name": "Tour de l'Ain",
   "year": "2026",
   "category": "2.1",
@@ -3887,7 +3890,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v128';
+const APP_VERSION = 'v129';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

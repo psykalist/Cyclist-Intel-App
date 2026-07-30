@@ -862,30 +862,51 @@ def _slugs_from_html(html):
     return list(seen)
 
 
+MAX_CALENDAR_PAGES = 25   # safety cap; CyclingFlash 'Men Elite' is ~12 pages (2026)
+
+
 def discover_races_from_calendar():
     """
     Scrape the structured CyclingFlash calendar pages for the current year.
     Returns {slug: {'status': 'unknown', 'last_stage': None}}
     — status is resolved later from race dates.
+
+    Each category listing is PAGINATED (.../Men Elite/1, /2, ...). We walk the
+    pages of every category until the listing ends. Two end-of-listing signals,
+    because CyclingFlash behaves differently per category:
+      • 'Men Elite' has ~12 real pages and returns HTTP 404 past the last one
+        (fetch() -> None), so an empty fetch stops us.
+      • 'UCI World Tour' / 'UCI ProSeries' fit on a single page and simply
+        REPEAT that same page for every page number, so we also stop as soon as
+        a page's slug set is identical to the previous page's.
+    The old code read only page 1 of each category, which silently dropped every
+    race on a later page — e.g. Tour de l'Ain (tour-de-lain-2026), a 2.1 that
+    lives on a later 'Men Elite' page. Its category (2.1) is already in UCI_CATS,
+    so once discovered it flows through the normal filters with no further change.
     """
     year = datetime.now().year
-    sources = [
-        f"{BASE_URL}/calendar/road/{year}/UCI%20World%20Tour",
-        f"{BASE_URL}/calendar/road/{year}/UCI%20ProSeries",
-        f"{BASE_URL}/calendar/road/{year}/Men%20Elite",
-    ]
+    categories = ["UCI World Tour", "UCI ProSeries", "Men Elite"]
     found = {}
-    for url in sources:
-        html = fetch(url)
-        time.sleep(DELAY)
-        if not html:
-            print(f"    [calendar] Could not fetch {url}", flush=True)
-            continue
-        slugs = _slugs_from_html(html)
-        new = [s for s in slugs if s not in found]
-        for s in new:
-            found[s] = {"status": "unknown", "last_stage": None}
-        print(f"    [calendar] {url.split('/')[-1]}: {len(slugs)} slugs ({len(new)} new)", flush=True)
+    for cat in categories:
+        cat_enc = urllib.parse.quote(cat)
+        prev_slugs = None
+        for page in range(1, MAX_CALENDAR_PAGES + 1):
+            url = f"{BASE_URL}/calendar/road/{year}/{cat_enc}/{page}"
+            html = fetch(url)
+            time.sleep(DELAY)
+            if not html:
+                break                                  # 404 / fetch fail = past last page
+            slugs = set(_slugs_from_html(html))
+            if not slugs:
+                break
+            if prev_slugs is not None and slugs == prev_slugs:
+                break                                  # same list repeated = single-page category
+            prev_slugs = slugs
+            new = [s for s in slugs if s not in found]
+            for s in new:
+                found[s] = {"status": "unknown", "last_stage": None}
+            print(f"    [calendar] {cat}/{page}: {len(slugs)} slugs ({len(new)} new)", flush=True)
+    print(f"    [calendar] {len(found)} unique men's races discovered", flush=True)
     return found
 
 

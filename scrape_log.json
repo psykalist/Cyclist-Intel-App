@@ -1,35 +1,40 @@
 {
-  "run_at": "2026-07-29 20:01 UTC",
-  "run_at_iso": "2026-07-29T18:01:20.847446+00:00",
+  "run_at": "2026-07-30 14:24 UTC",
+  "run_at_iso": "2026-07-30T12:24:46.533414+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "postnord-tour-of-denmark-2026",
       "name": "PostNord Tour of Denmark",
       "total_stages": 5,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 2,
         "url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026/result/stage-2",
         "fetch_ok": true,
-        "response_bytes": 233667,
+        "response_bytes": 233708,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-29 20:01 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.4,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
-      "incomplete_classifications": []
+      "incomplete_classifications": [
+        {
+          "cls": "kom_top10",
+          "rows": 7
+        }
+      ]
     }
   ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": false
+  "has_incomplete_results": true
 }

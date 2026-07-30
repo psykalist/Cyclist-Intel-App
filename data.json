@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-29T18:01:22.570802+00:00",
-  "scraped_at_human": "29 Jul 2026 18:01 UTC",
+  "scraped_at": "2026-07-30T12:24:46.533917+00:00",
+  "scraped_at_human": "30 Jul 2026 12:24 UTC",
   "live": [
     {
       "slug": "postnord-tour-of-denmark",
@@ -1067,7 +1067,352 @@
       ],
       "last_stage_winner": "Wout van Aert",
       "last_stage_winner_flag": "🇧🇪",
-      "last_stage_num": 1
+      "last_stage_num": 1,
+      "gc_leader": "🇧🇪 Wout van Aert",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Wout van Aert",
+          "rider_url": "/profile/wout-van-aert",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "04:10:39"
+        },
+        {
+          "rank": 2,
+          "name": "Lukas Kubis",
+          "rider_url": "/profile/lukas-kubis",
+          "team": "",
+          "nat_code": "SK",
+          "flag": "🇸🇰",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Henrik Pedersen",
+          "rider_url": "/profile/breiner-henrik-pedersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 4,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 5,
+          "name": "Pier-André Coté",
+          "rider_url": "/profile/pier-andre-cote",
+          "team": "",
+          "nat_code": "CA",
+          "flag": "🇨🇦",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Christophe Laporte",
+          "rider_url": "/profile/christophe-laporte",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Tomas Kopecky",
+          "rider_url": "/profile/tomas-kopecky",
+          "team": "",
+          "nat_code": "CZ",
+          "flag": "🇨🇿",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Søren Kragh Andersen",
+          "rider_url": "/profile/soren-kragh-andersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Matias Gunnar Malmberg",
+          "rider_url": "/profile/matias-gunnar-malmberg",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 22"
+        },
+        {
+          "rank": 10,
+          "name": "Jensen Plowright",
+          "rider_url": "/profile/jensen-plowright",
+          "team": "",
+          "nat_code": "AU",
+          "flag": "🇦🇺",
+          "time_gap": "+ 27"
+        }
+      ],
+      "points_leader": "🇧🇪 Wout van Aert",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Wout van Aert",
+          "rider_url": "/profile/wout-van-aert",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "15"
+        },
+        {
+          "rank": 2,
+          "name": "Lukas Kubis",
+          "rider_url": "/profile/lukas-kubis",
+          "team": "",
+          "nat_code": "SK",
+          "flag": "🇸🇰",
+          "time_gap": "12"
+        },
+        {
+          "rank": 3,
+          "name": "Henrik Pedersen",
+          "rider_url": "/profile/breiner-henrik-pedersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "10"
+        },
+        {
+          "rank": 4,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "9"
+        },
+        {
+          "rank": 5,
+          "name": "Matias Gunnar Malmberg",
+          "rider_url": "/profile/matias-gunnar-malmberg",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "8"
+        },
+        {
+          "rank": 6,
+          "name": "Pier-André Coté",
+          "rider_url": "/profile/pier-andre-cote",
+          "team": "",
+          "nat_code": "CA",
+          "flag": "🇨🇦",
+          "time_gap": "8"
+        },
+        {
+          "rank": 7,
+          "name": "Christophe Laporte",
+          "rider_url": "/profile/christophe-laporte",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "7"
+        },
+        {
+          "rank": 8,
+          "name": "Tomas Kopecky",
+          "rider_url": "/profile/tomas-kopecky",
+          "team": "",
+          "nat_code": "CZ",
+          "flag": "🇨🇿",
+          "time_gap": "6"
+        },
+        {
+          "rank": 9,
+          "name": "Mads Landbo",
+          "rider_url": "/profile/mads-landbo",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "5"
+        },
+        {
+          "rank": 10,
+          "name": "Søren Kragh Andersen",
+          "rider_url": "/profile/soren-kragh-andersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "5"
+        }
+      ],
+      "kom_leader": "🇩🇰 Sebastian Nielsen",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Sebastian Nielsen",
+          "rider_url": "/profile/sebastian-nielsen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "14"
+        },
+        {
+          "rank": 2,
+          "name": "Menno Huising",
+          "rider_url": "/profile/menno-huising",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "12"
+        },
+        {
+          "rank": 3,
+          "name": "Matias Gunnar Malmberg",
+          "rider_url": "/profile/matias-gunnar-malmberg",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "10"
+        },
+        {
+          "rank": 4,
+          "name": "Henrik Pedersen",
+          "rider_url": "/profile/breiner-henrik-pedersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "8"
+        },
+        {
+          "rank": 5,
+          "name": "Rasmus Tiller",
+          "rider_url": "/profile/rasmus-tiller",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "8"
+        },
+        {
+          "rank": 6,
+          "name": "Christophe Laporte",
+          "rider_url": "/profile/christophe-laporte",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "4"
+        },
+        {
+          "rank": 7,
+          "name": "Mads Andersen",
+          "rider_url": "/profile/mads-andersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "4"
+        }
+      ],
+      "youth_leader": "🇩🇰 Henrik Pedersen",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Henrik Pedersen",
+          "rider_url": "/profile/breiner-henrik-pedersen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "04:10:45"
+        },
+        {
+          "rank": 2,
+          "name": "Dario Igor Belletta",
+          "rider_url": "/profile/dario-igor-belletta",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 3,
+          "name": "Santiago Ferraro",
+          "rider_url": "/profile/santiago-ferraro",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 4,
+          "name": "Menno Huising",
+          "rider_url": "/profile/menno-huising",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 5,
+          "name": "Matys Grisel",
+          "rider_url": "/profile/matys-grisel",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 6,
+          "name": "Filippo Turconi",
+          "rider_url": "/profile/filippo-turconi",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 7,
+          "name": "Teodor De Luca",
+          "rider_url": "/profile/teodor-de-luca",
+          "team": "",
+          "nat_code": "SE",
+          "flag": "🇸🇪",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 8,
+          "name": "Sylvester Vittinghus Stokbro",
+          "rider_url": "/profile/sylvester-vittinghus-stokbro",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 9,
+          "name": "Luca Paletti",
+          "rider_url": "/profile/luca-paletti",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 21"
+        },
+        {
+          "rank": 10,
+          "name": "Storm Ingebrigtsen",
+          "rider_url": "/profile/storm-ingebrigtsen",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 21"
+        }
+      ]
     }
   ],
   "upcoming": [
@@ -1178,6 +1523,24 @@
           "team": "Team Jayco AlUla (WT)"
         },
         {
+          "name": "Callum Thornley",
+          "slug": "callum-thornley",
+          "nat": "gb",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Frederik Wandahl",
+          "slug": "frederik-wandahl",
+          "nat": "dk",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Finn Fisher-Black",
+          "slug": "finn-fisher-black",
+          "nat": "nz",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
           "name": "Jordi Meeus",
           "slug": "jordi-meeus",
           "nat": "be",
@@ -1196,28 +1559,58 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Frederik Wandahl",
-          "slug": "frederik-wandahl",
-          "nat": "dk",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Callum Thornley",
-          "slug": "callum-thornley",
-          "nat": "gb",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Finn Fisher-Black",
-          "slug": "finn-fisher-black",
-          "nat": "nz",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
           "name": "Alec Segaert",
           "slug": "alec-segaert",
           "nat": "be",
           "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Frits Biesterbos",
+          "slug": "frits-biesterbos",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Juan Guillermo Martinez",
+          "slug": "guillermo-juan-martinez",
+          "nat": "co",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Timo Roosen",
+          "slug": "timo-roosen",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Henri-François Renard-Haquin",
+          "slug": "henri-francois-renard-haquin",
+          "nat": "fr",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Tim Naberman",
+          "slug": "tim-naberman",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "JONG Timo De",
+          "slug": "timo-de-jong",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Oliver Peace",
+          "slug": "oliver-peace",
+          "nat": "gb",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Filippo Fiorelli",
+          "slug": "filippo-fiorelli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
         },
         {
           "name": "Wilco Kelderman",
@@ -1242,12 +1635,6 @@
           "slug": "fredrik-dversnes",
           "nat": "no",
           "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Mikkel Bjerg",
-          "slug": "mikkel-bjerg",
-          "nat": "dk",
-          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
           "name": "Benoît Cosnefroy",
@@ -1280,10 +1667,22 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
+          "name": "Mikkel Bjerg",
+          "slug": "mikkel-bjerg",
+          "nat": "dk",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
           "name": "Julius Johansen",
           "slug": "julius-johansen",
           "nat": "dk",
           "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jonathan Vervenne",
+          "slug": "jonathan-vervenne",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
         },
         {
           "name": "Ethan Hayter",
@@ -1316,12 +1715,6 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Jonathan Vervenne",
-          "slug": "jonathan-vervenne",
-          "nat": "be",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
           "name": "Paul Magnier",
           "slug": "paul-magnier",
           "nat": "fr",
@@ -1338,12 +1731,6 @@
           "slug": "kamil-malecki",
           "nat": "pl",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
-        },
-        {
-          "name": "Radosław Frątczak",
-          "slug": "radoslaw-fratczak",
-          "nat": "pl",
-          "team": "Poland (NAT)"
         },
         {
           "name": "Norbert Banaszek",
@@ -1382,10 +1769,10 @@
           "team": "Poland (NAT)"
         },
         {
-          "name": "Paul Lapeira",
-          "slug": "paul-lapeira",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
+          "name": "Radosław Frątczak",
+          "slug": "radoslaw-fratczak",
+          "nat": "pl",
+          "team": "Poland (NAT)"
         },
         {
           "name": "Olav Kooij",
@@ -1402,6 +1789,12 @@
         {
           "name": "Léo Bisiaux",
           "slug": "leo-bisiaux",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Paul Lapeira",
+          "slug": "paul-lapeira",
           "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
         },
@@ -115717,145 +116110,145 @@
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 3
+      "days_away": 2
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 21
+      "days_away": 20
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 35
+      "days_away": 34
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 44
+      "days_away": 43
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 49
+      "days_away": 48
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 49
+      "days_away": 48
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 52
+      "days_away": 51
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 60
+      "days_away": 59
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 69
+      "days_away": 68
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 73
+      "days_away": 72
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 76
+      "days_away": 75
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 77
+      "days_away": 76
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 81
+      "days_away": 80
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 81
+      "days_away": 80
     }
   ]
 }

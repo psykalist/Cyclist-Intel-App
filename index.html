@@ -2146,6 +2146,734 @@ function mergeExtraTeams() {
   }
 }
 
+// CI structurally never discovers 2.1 UCI Europe Tour races: the scraper only
+// reads the WorldTour / ProSeries / Men Elite CyclingFlash calendar pages, so
+// Tour de l'Ain (2.1) never lands in data.json. Injected here the same way as
+// EXTRA_TEAMS. Idempotent by slug -- if CI ever picks it up, the merge skips it.
+const EXTRA_RACES = [
+{
+  "slug": "tour-de-l-ain",
+  "cf_slug": "tour-de-l-ain-2026",
+  "name": "Tour de l'Ain",
+  "year": "2026",
+  "category": "2.1",
+  "status": "recent",
+  "start_date": "2026-07-28",
+  "end_date": "2026-07-30",
+  "total_stages": 3,
+  "official_url": "https://www.procyclingstats.com/race/tour-de-l-ain/2026",
+  "stages_completed": 3,
+  "stages": [
+    {
+      "num": 1,
+      "label": "Stage 1",
+      "result_url": "/race/tour-de-l-ain-2026/result/stage-1",
+      "winner": "Noah Hobbs",
+      "winner_flag": "🇬🇧",
+      "winner_nat": "GB",
+      "top10": [
+        {
+          "rank": 1,
+          "name": "Noah Hobbs",
+          "rider_url": "/profile/noah-hobbs",
+          "team": "EF Education - EasyPost",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "3:27:02"
+        },
+        {
+          "rank": 2,
+          "name": "Alberto Dainese",
+          "rider_url": "/profile/alberto-dainese",
+          "team": "Soudal Quick-Step Devo Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 3,
+          "name": "Bohemond Barrillot",
+          "rider_url": "/profile/bohemond-barrillot",
+          "team": "France",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 4,
+          "name": "Matteo Milan",
+          "rider_url": "/profile/matteo-milan",
+          "team": "Groupama - FDJ United",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 5,
+          "name": "Alessio Delle Vedove",
+          "rider_url": "/profile/alessio-delle-vedove",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 6,
+          "name": "Louis Hardouin",
+          "rider_url": "/profile/louis-hardouin",
+          "team": "Van Rysel Roubaix",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 7,
+          "name": "Jason Tesson",
+          "rider_url": "/profile/jason-tesson",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 8,
+          "name": "Mathias Sanlaville",
+          "rider_url": "/profile/mathias-sanlaville",
+          "team": "CIC Pro Cycling Academy",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 9,
+          "name": "Tord Gudmestad",
+          "rider_url": "/profile/tord-gudmestad",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 10,
+          "name": "Remi Lelandais",
+          "rider_url": "/profile/remi-lelandais",
+          "team": "Bourg-en-Bresse Ain Cyclisme",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        }
+      ],
+      "date_str": "Tuesday 28 July",
+      "start_town": "Parc des Oiseaux",
+      "finish_town": "Bourg-en-Bresse",
+      "distance_km": 160.9,
+      "elevation_m": 950,
+      "stage_type": "flat"
+    },
+    {
+      "num": 2,
+      "label": "Stage 2",
+      "result_url": "/race/tour-de-l-ain-2026/result/stage-2",
+      "winner": "Markel Beloki",
+      "winner_flag": "🇪🇸",
+      "winner_nat": "ES",
+      "top10": [
+        {
+          "rank": 1,
+          "name": "Markel Beloki",
+          "rider_url": "/profile/markel-beloki",
+          "team": "EF Education - EasyPost",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "3:52:38"
+        },
+        {
+          "rank": 2,
+          "name": "Noa Isidore",
+          "rider_url": "/profile/noa-isidore",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 0:55"
+        },
+        {
+          "rank": 3,
+          "name": "Nicola Conci",
+          "rider_url": "/profile/nicola-conci",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 4,
+          "name": "Axel Mariault",
+          "rider_url": "/profile/axel-mariault",
+          "team": "CIC Pro Cycling Academy",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 5,
+          "name": "Remi Arsac",
+          "rider_url": "/profile/remi-arsac",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 6,
+          "name": "Jamie Meehan",
+          "rider_url": "/profile/jamie-meehan",
+          "team": "Cofidis",
+          "nat_code": "IE",
+          "flag": "🇮🇪",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 7,
+          "name": "Henrique Ribeiro Bravo",
+          "rider_url": "/profile/henrique-ribeiro-bravo",
+          "team": "Soudal Quick-Step Devo Team",
+          "nat_code": "BR",
+          "flag": "🇧🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 8,
+          "name": "Adam Howell",
+          "rider_url": "/profile/adam-howell",
+          "team": "Bourg-en-Bresse Ain Cyclisme",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 9,
+          "name": "Geoffrey Bouchard",
+          "rider_url": "/profile/geoffrey-bouchard",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 10,
+          "name": "Huw Buck Jones",
+          "rider_url": "/profile/huw-buck-jones",
+          "team": "Bourg-en-Bresse Ain Cyclisme",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "s.t."
+        }
+      ],
+      "date_str": "Wednesday 29 July",
+      "start_town": "Saint-Vulbas",
+      "finish_town": "Lagnieu",
+      "distance_km": 161.9,
+      "elevation_m": 2203,
+      "stage_type": "hilly"
+    },
+    {
+      "num": 3,
+      "label": "Stage 3",
+      "result_url": "/race/tour-de-l-ain-2026/result/stage-3",
+      "winner": "Axel Mariault",
+      "winner_flag": "🇫🇷",
+      "winner_nat": "FR",
+      "top10": [
+        {
+          "rank": 1,
+          "name": "Axel Mariault",
+          "rider_url": "/profile/axel-mariault",
+          "team": "CIC Pro Cycling Academy",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "3:26:32"
+        },
+        {
+          "rank": 2,
+          "name": "Markel Beloki",
+          "rider_url": "/profile/markel-beloki",
+          "team": "EF Education - EasyPost",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 3,
+          "name": "Brieuc Rolland",
+          "rider_url": "/profile/brieuc-rolland",
+          "team": "Groupama - FDJ United",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 4,
+          "name": "Jamie Meehan",
+          "rider_url": "/profile/jamie-meehan",
+          "team": "Cofidis",
+          "nat_code": "IE",
+          "flag": "🇮🇪",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 5,
+          "name": "Remi Arsac",
+          "rider_url": "/profile/remi-arsac",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 6,
+          "name": "Nicola Conci",
+          "rider_url": "/profile/nicola-conci",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 7,
+          "name": "Henrique Ribeiro Bravo",
+          "rider_url": "/profile/henrique-ribeiro-bravo",
+          "team": "Soudal Quick-Step Devo Team",
+          "nat_code": "BR",
+          "flag": "🇧🇷",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 8,
+          "name": "Huw Buck Jones",
+          "rider_url": "/profile/huw-buck-jones",
+          "team": "Bourg-en-Bresse Ain Cyclisme",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 0:06"
+        },
+        {
+          "rank": 9,
+          "name": "Jefferson Alexander Cepeda",
+          "rider_url": "/profile/jefferson-alexander-cepeda",
+          "team": "EF Education - EasyPost",
+          "nat_code": "EC",
+          "flag": "🇪🇨",
+          "time_gap": "s.t."
+        },
+        {
+          "rank": 10,
+          "name": "Thomas Gachignard",
+          "rider_url": "/profile/thomas-gachignard",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 0:57"
+        }
+      ],
+      "date_str": "Thursday 30 July",
+      "start_town": "Oyonnax",
+      "finish_town": "Lélex Monts-Jura",
+      "distance_km": 131.5,
+      "elevation_m": 2985,
+      "stage_type": "mountain"
+    }
+  ],
+  "gc_leader": "🇪🇸 Markel Beloki",
+  "gc_top10": [
+    {
+      "rank": 1,
+      "name": "Markel Beloki",
+      "rider_url": "/profile/markel-beloki",
+      "team": "EF Education - EasyPost",
+      "nat_code": "ES",
+      "flag": "🇪🇸",
+      "time_gap": "10:46:15"
+    },
+    {
+      "rank": 2,
+      "name": "Axel Mariault",
+      "rider_url": "/profile/axel-mariault",
+      "team": "CIC Pro Cycling Academy",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "+ 0:52"
+    },
+    {
+      "rank": 3,
+      "name": "Jamie Meehan",
+      "rider_url": "/profile/jamie-meehan",
+      "team": "Cofidis",
+      "nat_code": "IE",
+      "flag": "🇮🇪",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 4,
+      "name": "Henrique Ribeiro Bravo",
+      "rider_url": "/profile/henrique-ribeiro-bravo",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "BR",
+      "flag": "🇧🇷",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 5,
+      "name": "Remi Arsac",
+      "rider_url": "/profile/remi-arsac",
+      "team": "Decathlon CMA CGM Team",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 6,
+      "name": "Nicola Conci",
+      "rider_url": "/profile/nicola-conci",
+      "team": "XDS Astana Team",
+      "nat_code": "IT",
+      "flag": "🇮🇹",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 7,
+      "name": "Jefferson Alexander Cepeda",
+      "rider_url": "/profile/jefferson-alexander-cepeda",
+      "team": "EF Education - EasyPost",
+      "nat_code": "EC",
+      "flag": "🇪🇨",
+      "time_gap": "+ 1:01"
+    },
+    {
+      "rank": 8,
+      "name": "Huw Buck Jones",
+      "rider_url": "/profile/huw-buck-jones",
+      "team": "Bourg-en-Bresse Ain Cyclisme",
+      "nat_code": "GB",
+      "flag": "🇬🇧",
+      "time_gap": "+ 1:01"
+    },
+    {
+      "rank": 9,
+      "name": "Adam Howell",
+      "rider_url": "/profile/adam-howell",
+      "team": "Bourg-en-Bresse Ain Cyclisme",
+      "nat_code": "GB",
+      "flag": "🇬🇧",
+      "time_gap": "+ 2:17"
+    },
+    {
+      "rank": 10,
+      "name": "Jose Said Cisneros",
+      "rider_url": "/profile/jose-said-cisneros",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "MX",
+      "flag": "🇲🇽",
+      "time_gap": "+ 2:19"
+    }
+  ],
+  "points_leader": "🇪🇸 Markel Beloki",
+  "points_top10": [
+    {
+      "rank": 1,
+      "name": "Markel Beloki",
+      "rider_url": "/profile/markel-beloki",
+      "team": "EF Education - EasyPost",
+      "nat_code": "ES",
+      "flag": "🇪🇸",
+      "time_gap": "45"
+    },
+    {
+      "rank": 2,
+      "name": "Axel Mariault",
+      "rider_url": "/profile/axel-mariault",
+      "team": "CIC Pro Cycling Academy",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "39"
+    },
+    {
+      "rank": 3,
+      "name": "Nicola Conci",
+      "rider_url": "/profile/nicola-conci",
+      "team": "XDS Astana Team",
+      "nat_code": "IT",
+      "flag": "🇮🇹",
+      "time_gap": "26"
+    },
+    {
+      "rank": 4,
+      "name": "Jamie Meehan",
+      "rider_url": "/profile/jamie-meehan",
+      "team": "Cofidis",
+      "nat_code": "IE",
+      "flag": "🇮🇪",
+      "time_gap": "24"
+    },
+    {
+      "rank": 5,
+      "name": "Remi Arsac",
+      "rider_url": "/profile/remi-arsac",
+      "team": "Decathlon CMA CGM Team",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "24"
+    },
+    {
+      "rank": 6,
+      "name": "Noa Isidore",
+      "rider_url": "/profile/noa-isidore",
+      "team": "Decathlon CMA CGM Team",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "20"
+    },
+    {
+      "rank": 7,
+      "name": "Alberto Dainese",
+      "rider_url": "/profile/alberto-dainese",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "IT",
+      "flag": "🇮🇹",
+      "time_gap": "20"
+    },
+    {
+      "rank": 8,
+      "name": "Henrique Ribeiro Bravo",
+      "rider_url": "/profile/henrique-ribeiro-bravo",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "BR",
+      "flag": "🇧🇷",
+      "time_gap": "18"
+    },
+    {
+      "rank": 9,
+      "name": "Brieuc Rolland",
+      "rider_url": "/profile/brieuc-rolland",
+      "team": "Groupama - FDJ United",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "16"
+    },
+    {
+      "rank": 10,
+      "name": "Jason Tesson",
+      "rider_url": "/profile/jason-tesson",
+      "team": "TotalEnergies",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "15"
+    }
+  ],
+  "kom_leader": "🇵🇱 Patryk Goszczurny",
+  "kom_top10": [
+    {
+      "rank": 1,
+      "name": "Patryk Goszczurny",
+      "rider_url": "/profile/patryk-goszczurny",
+      "team": "Team Visma | Lease a Bike Development",
+      "nat_code": "PL",
+      "flag": "🇵🇱",
+      "time_gap": "41"
+    },
+    {
+      "rank": 2,
+      "name": "Eivind Broholt Fougner",
+      "rider_url": "/profile/eivind-broholt-fougner",
+      "team": "Unibet Rose Rockets",
+      "nat_code": "NO",
+      "flag": "🇳🇴",
+      "time_gap": "40"
+    },
+    {
+      "rank": 3,
+      "name": "Henrique Ribeiro Bravo",
+      "rider_url": "/profile/henrique-ribeiro-bravo",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "BR",
+      "flag": "🇧🇷",
+      "time_gap": "25"
+    },
+    {
+      "rank": 4,
+      "name": "Jamie Meehan",
+      "rider_url": "/profile/jamie-meehan",
+      "team": "Cofidis",
+      "nat_code": "IE",
+      "flag": "🇮🇪",
+      "time_gap": "15"
+    },
+    {
+      "rank": 5,
+      "name": "Markel Beloki",
+      "rider_url": "/profile/markel-beloki",
+      "team": "EF Education - EasyPost",
+      "nat_code": "ES",
+      "flag": "🇪🇸",
+      "time_gap": "14"
+    },
+    {
+      "rank": 6,
+      "name": "Johan Jacobs",
+      "rider_url": "/profile/johan-jacobs",
+      "team": "Groupama - FDJ United",
+      "nat_code": "CH",
+      "flag": "🇨🇭",
+      "time_gap": "13"
+    },
+    {
+      "rank": 7,
+      "name": "Maximilien Juillard",
+      "rider_url": "/profile/maximilien-juillard",
+      "team": "Vélo Club Villefranche Beaujolais",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "10"
+    },
+    {
+      "rank": 8,
+      "name": "Gil Gelders",
+      "rider_url": "/profile/gil-gelders",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "BE",
+      "flag": "🇧🇪",
+      "time_gap": "10"
+    },
+    {
+      "rank": 9,
+      "name": "Alexys Brunel",
+      "rider_url": "/profile/alexys-brunel",
+      "team": "TotalEnergies",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "9"
+    },
+    {
+      "rank": 10,
+      "name": "Morne van Niekerk",
+      "rider_url": "/profile/morne-van-niekerk",
+      "team": "St Michel - Preference Home - Auber93",
+      "nat_code": "ZA",
+      "flag": "🇿🇦",
+      "time_gap": "7"
+    }
+  ],
+  "youth_leader": "🇪🇸 Markel Beloki",
+  "youth_top10": [
+    {
+      "rank": 1,
+      "name": "Markel Beloki",
+      "rider_url": "/profile/markel-beloki",
+      "team": "EF Education - EasyPost",
+      "nat_code": "ES",
+      "flag": "🇪🇸",
+      "time_gap": "10:46:15"
+    },
+    {
+      "rank": 2,
+      "name": "Henrique Ribeiro Bravo",
+      "rider_url": "/profile/henrique-ribeiro-bravo",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "BR",
+      "flag": "🇧🇷",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 3,
+      "name": "Remi Arsac",
+      "rider_url": "/profile/remi-arsac",
+      "team": "Decathlon CMA CGM Team",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "+ 0:55"
+    },
+    {
+      "rank": 4,
+      "name": "Huw Buck Jones",
+      "rider_url": "/profile/huw-buck-jones",
+      "team": "Bourg-en-Bresse Ain Cyclisme",
+      "nat_code": "GB",
+      "flag": "🇬🇧",
+      "time_gap": "+ 1:01"
+    },
+    {
+      "rank": 5,
+      "name": "Adam Howell",
+      "rider_url": "/profile/adam-howell",
+      "team": "Bourg-en-Bresse Ain Cyclisme",
+      "nat_code": "GB",
+      "flag": "🇬🇧",
+      "time_gap": "+ 2:17"
+    },
+    {
+      "rank": 6,
+      "name": "Jose Said Cisneros",
+      "rider_url": "/profile/jose-said-cisneros",
+      "team": "Soudal Quick-Step Devo Team",
+      "nat_code": "MX",
+      "flag": "🇲🇽",
+      "time_gap": "+ 2:19"
+    },
+    {
+      "rank": 7,
+      "name": "Tom Lambert Wetzel",
+      "rider_url": "/profile/tom-lambert-wetzel",
+      "team": "Vélo Club Villefranche Beaujolais",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "+ 3:45"
+    },
+    {
+      "rank": 8,
+      "name": "Louis Leidert",
+      "rider_url": "/profile/louis-leidert",
+      "team": "Lidl - Trek Future Racing",
+      "nat_code": "DE",
+      "flag": "🇩🇪",
+      "time_gap": "+ 4:17"
+    },
+    {
+      "rank": 9,
+      "name": "Sven Aleksander Mernik",
+      "rider_url": "/profile/sven-aleksander-mernik",
+      "team": "Team Visma | Lease a Bike Development",
+      "nat_code": "SI",
+      "flag": "🇸🇮",
+      "time_gap": "+ 4:20"
+    },
+    {
+      "rank": 10,
+      "name": "Noa Isidore",
+      "rider_url": "/profile/noa-isidore",
+      "team": "Decathlon CMA CGM Team",
+      "nat_code": "FR",
+      "flag": "🇫🇷",
+      "time_gap": "+ 4:30"
+    }
+  ],
+  "last_stage_winner": "Axel Mariault",
+  "last_stage_winner_flag": "🇫🇷",
+  "last_stage_num": 3
+}
+];
+
+function mergeExtraRaces() {
+  if (!appData) return;
+  appData.live = appData.live || [];
+  appData.upcoming = appData.upcoming || [];
+  appData.recent = appData.recent || [];
+  const have = new Set([...appData.live, ...appData.upcoming, ...appData.recent].map(r => r.slug));
+  for (const r of EXTRA_RACES) {
+    if (have.has(r.slug)) continue;
+    const bucket = r.status === 'live' ? appData.live : r.status === 'upcoming' ? appData.upcoming : appData.recent;
+    bucket.unshift(r);
+  }
+}
+
 function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // bib/isLeader passed by renderTeamCard; other callers (search) fall back to
   // a direct lookup so bibs show there too — but only while the Tour is live.
@@ -3107,6 +3835,7 @@ async function loadData(force=false) {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     appData = await r.json();
     mergeExtraTeams();   // inject Tour teams missing from data.json (e.g. Q36.5) before any render
+    mergeExtraRaces();   // inject Tour de l'Ain (2.1) -- CI never scrapes Europe Tour races
     document.getElementById('last-updated').textContent = `Updated ${appData.scraped_at_human || '—'}`;
     renderDataHealth();
     document.getElementById('loading').style.display = 'none';
@@ -3158,7 +3887,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v127';
+const APP_VERSION = 'v128';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

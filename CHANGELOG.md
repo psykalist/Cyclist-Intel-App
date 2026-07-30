@@ -7,6 +7,15 @@ All notable changes to UCI Road Calendar are documented here, newest first.
 
 ---
 
+## v128 — 2026-07-30 — Add Tour de l'Ain 2026 (2.1) — CI can't discover Europe Tour races
+"Where is the Tour de l'Ain — find it, add it, and get the results."
+
+- **Why it was missing:** `discover_races_from_calendar()` in `scraper.py` only scrapes the CyclingFlash **UCI World Tour**, **UCI ProSeries**, and **Men Elite** calendar pages. Tour de l'Ain is a category **2.1 UCI Europe Tour** race, so it's on none of those pages and CI never writes it into `data.json` — the app had no way to show it.
+- **Fix (same pattern as `EXTRA_TEAMS`/Q36.5):** new `const EXTRA_RACES` holding a full Tour de l'Ain 2026 race object built to the exact `data.json` schema (3 stages with top-10s, `gc_top10`, `points_top10`, `kom_top10`, `youth_top10`, leaders, `last_stage_*`), plus `mergeExtraRaces()` — called right after `mergeExtraTeams()` before any render. Idempotent by slug: if CI ever does pick the race up, the merge skips it (CI wins).
+- **Results (28–30 July, Ain, France).** Stage 1 (Parc des Oiseaux→Bourg-en-Bresse) Noah Hobbs; Stage 2 (Saint-Vulbas→Lagnieu) Markel Beloki solo; Stage 3 (Oyonnax→Lélex Monts-Jura) Axel Mariault. **Final GC: 1. Markel Beloki (EF Education-EasyPost), 2. Axel Mariault +0:52, 3. Jamie Meehan +0:55.** Points: Beloki; KOM: Patryk Goszczurny; Youth: Beloki.
+- **Data sourcing.** Pulled from procyclingstats via the browser (WebFetch timed out). Rider slugs, ISO nat codes, and teams taken authoritatively from the PCS GC-page DOM (name→slug/nat/team maps) rather than the text extract — the text mis-aligned the team column on same-time rows (e.g. Buck Jones/Bouchard, Gudmestad/Lelandais), which the DOM maps corrected. Display names are derived from PCS slugs (firstname-lastname order, so `shortName()` works), which drops diacritics on a few names (Rémi→Remi) — acceptable for an injected race; a future CI pickup would supersede it.
+- Version bumped v127→v128. Brace balance 0; main `<script>` passes `node --check`; `mergeExtraRaces()` verified idempotent and race resolves via `_raceKey` (slug).
+
 ## v127 — 2026-07-25 — Exit button uses theme accent; consistent across every panel
 "Same colour and on ALL panels depending on dark/light mode — riders list, on the race itself, riders in the following section."
 

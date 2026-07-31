@@ -1,8 +1,8 @@
-# UCI Calendar — Architecture & Operations Guide
+# Cyclist Intel App — Architecture & Operations Guide
 
 ## Overview
 
-A Progressive Web App (PWA) showing live UCI men's road race results, upcoming races, team rosters, rider profiles, statistics, and a fantasy league. Data is scraped from **cyclingflash.com** (race results/startlists) and **procyclingstats.com** (rider profiles, specialty scores, career wins), stored in `data.json` and `rider_profiles.json`, and served via **GitHub Pages** at `https://psykalist.github.io/UCI-Calendar/`.
+A Progressive Web App (PWA) showing live UCI men's road race results, upcoming races, team rosters, rider profiles, statistics, and a fantasy league. Data is scraped from **cyclingflash.com** (race results/startlists) and **procyclingstats.com** (rider profiles, specialty scores, career wins), stored in `data.json` and `rider_profiles.json`, and served via **GitHub Pages** at `https://psykalist.github.io/Cyclist-Intel-App/`.
 
 ---
 

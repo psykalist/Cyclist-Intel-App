@@ -1,11 +1,23 @@
 # Changelog
 
-All notable changes to UCI Road Calendar are documented here, newest first.
+All notable changes to Cyclist Intel App are documented here, newest first.
 
 > **This is the dev/session log.** Claude reads it at the start of every session (ordered to by `CLAUDE.md`) and appends a new entry after every change, before the user pushes.
 > Not to be confused with `changelog.json`, which is CI-generated and shown in the app UI.
 
 ---
+
+## v130 — 2026-07-30 — Rename the app to "Cyclist Intel App" across code, docs, CI and repo
+"I want the Cyclist Intel App to be its name from now on in all areas."
+
+- **Scope.** The user-visible UI was already branded "Cyclist Intel App" (title, header, iOS title, manifest). This pass renames every remaining reference to the old "UCI Calendar" product name — but deliberately **not** the cycling term "UCI" (UCI World Tour, `UCI_CATS`, UCI points = the governing body, not the app).
+- **Code / URLs.** `index.html`: download-alert text; `UCI_REPO` → `psykalist/Cyclist-Intel-App`. `sw.js`: header comment, push-notification default title, and cache `uci-calendar-v71` → `cyclist-intel-app-v72` (forces one clean cache refresh). `scraper.py`: both notification-email links → `https://psykalist.github.io/Cyclist-Intel-App` with link text "Cyclist Intel App" (also fixed the wrong `kieransemail.github.io` host → `psykalist`). `scrape_cyclingoracle.py`: User-Agent → `Cyclist-Intel-App-Scraper/1.0`.
+- **Docs.** README, ARCHITECTURE, DOCS, CODE_REVIEW, KNOWN_GAPS, CHANGELOG intro, CLAUDE.md — name + `psykalist.github.io/UCI-Calendar` / `github.com/psykalist/UCI-Calendar` → `.../Cyclist-Intel-App`.
+- **CI (GitHub Actions).** Commit-author `user.name` `"UCI Calendar Bot"` → `"Cyclist Intel App Bot"` in all 6 workflows.
+- **Deliberately left unchanged (data-safety / risk, ~zero branding value):** (1) localStorage keys (`uci_*`, `app-theme`) — the fantasy league & follows are **localStorage-only, no backend/GitHub copy**, so renaming keys would wipe users' saved teams; (2) the Actions concurrency group `uci-calendar-git-write` — the safeguard that serialises CI pushes (a past incident dropped a scraped `data.json` without it); renaming risks it for no visible gain; (3) historical cache-name strings in old `patch_v21*.py` scripts and prior changelog entries. All easy to revisit if wanted.
+- **Local folder stays `UCI Calendar & Results`** (can't rename the working dir); CLAUDE.md and memory note this split identity.
+- **⚠️ Manual step (you):** rename the GitHub repo to **`Cyclist-Intel-App`** in Settings → the live URL becomes `https://psykalist.github.io/Cyclist-Intel-App/` (old `/UCI-Calendar/` links and already-installed PWAs break until re-added). All in-repo references now point at the new URL.
+- Version v129→v130. `index.html` brace balance 0 + `node --check` pass; `scraper.py` / `scrape_cyclingoracle.py` compile; workflow YAML still valid.
 
 ## v129 — 2026-07-30 — Scraper: paginate the CyclingFlash calendar (fixes the real Tour de l'Ain gap)
 "Why was this tour missing? … please add them."
@@ -220,7 +232,7 @@ Root causes found and fixed:
 Note: a stale `data.json` I committed during the v109 rebase (16 Jul vs CI's 17 Jul) self-heals on CI's next scrape, which — with the cancelled-stage fix — will also finally pick up Qinghai stage 7.
 
 ## v110 — 2026-07-17 — Rebrand to Cyclist Intel App (CIA) + emblem
-- Renamed the app from "Men's UCI Road Calendar" to **Cyclist Intel App** across the on-screen header, `<title>`, apple/PWA app title, and `manifest.json` (`name` + `short_name`).
+- Renamed the app from "Men's Cyclist Intel App" to **Cyclist Intel App** across the on-screen header, `<title>`, apple/PWA app title, and `manifest.json` (`name` + `short_name`).
 - Added an original inline-SVG emblem after the header name — a circular "agency seal" (compass-star + spoked bike wheel) themed via `--accent`/`--surface2`, so it adapts to light/dark. It scales with the header font (`1.5em`).
 - Note: this is an **original** emblem in the intelligence-agency-seal *style*; it is deliberately NOT the actual US CIA seal (official government insignia — can't reproduce / would imply false affiliation).
 - Header name now renders every word in the same base text colour, with only the **first letter of each word accented** — C, I, A — so the initials read out as CIA.

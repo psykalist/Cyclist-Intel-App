@@ -58,7 +58,7 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --global user.name  'UCI Calendar Bot'
+          git config --global user.name  'Cyclist Intel App Bot'
           git config --global user.email 'uci-bot@users.noreply.github.com'
 
       - name: Pull latest (avoid stale checkout)

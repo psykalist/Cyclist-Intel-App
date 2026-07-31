@@ -112,7 +112,7 @@ def fetch_page(page: int) -> dict:
         headers={
             'Content-Type': 'application/json',
             'x-api-key': API_KEY,
-            'User-Agent': 'Mozilla/5.0 (compatible; UCI-Calendar-Scraper/1.0)',
+            'User-Agent': 'Mozilla/5.0 (compatible; Cyclist-Intel-App-Scraper/1.0)',
         },
         method='POST',
     )

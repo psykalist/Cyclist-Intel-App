@@ -2415,7 +2415,7 @@ def send_notifications(all_data):
   <h3 style="color:#4361ee;margin-bottom:6px">Startlist (first 20)</h3>
   <table style="border-collapse:collapse;font-size:.9rem;width:100%">{rider_rows}</table>
   <p style="margin-top:20px;font-size:.8rem;color:#8890b0">
-    Open the app: <a href="https://kieransemail.github.io/uci-calendar" style="color:#4361ee">UCI Calendar</a>
+    Open the app: <a href="https://psykalist.github.io/Cyclist-Intel-App" style="color:#4361ee">Cyclist Intel App</a>
   </p>
 </div>"""
         for sub in subscribers:
@@ -2445,7 +2445,7 @@ def send_notifications(all_data):
   <p style="font-size:1.1rem">🏆 <strong>{s.get('winner','')}</strong></p>
   {'<h3 style="color:#4361ee;margin-bottom:6px">GC Top 5</h3><table style="border-collapse:collapse;font-size:.9rem;width:100%">'+gc_rows+'</table>' if gc_rows else ''}
   <p style="margin-top:20px;font-size:.8rem;color:#8890b0">
-    Open the app: <a href="https://kieransemail.github.io/uci-calendar" style="color:#4361ee">UCI Calendar</a>
+    Open the app: <a href="https://psykalist.github.io/Cyclist-Intel-App" style="color:#4361ee">Cyclist Intel App</a>
   </p>
 </div>"""
         for sub in subscribers:

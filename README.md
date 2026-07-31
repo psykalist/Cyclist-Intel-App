@@ -1,8 +1,8 @@
-# Men's UCI Road Calendar
+# Men's Cyclist Intel App
 
 A progressive web app (PWA) showing the live men's UCI road race calendar with stage results, classifications, startlists, and a fantasy league. Hosted on GitHub Pages — no backend required.
 
-**Live app:** https://psykalist.github.io/UCI-Calendar/
+**Live app:** https://psykalist.github.io/Cyclist-Intel-App/
 
 ---
 
@@ -116,7 +116,7 @@ git push
 ```
 
 GitHub Pages deploys within ~1 minute of the push. Check status at:
-`https://github.com/psykalist/UCI-Calendar/actions`
+`https://github.com/psykalist/Cyclist-Intel-App/actions`
 
 ---
 

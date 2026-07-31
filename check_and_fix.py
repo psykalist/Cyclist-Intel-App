@@ -1,5 +1,5 @@
 """
-check_and_fix.py — validates and fixes all UCI Calendar project files.
+check_and_fix.py — validates and fixes all Cyclist Intel App project files.
 Run from project folder: python check_and_fix.py
 """
 import os, sys, json, re, subprocess, tempfile, urllib.request

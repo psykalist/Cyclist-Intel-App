@@ -40,7 +40,7 @@ def read(f, mode="r", enc="utf-8"):
         return None
 
 # ─────────────────────────────────────────────────────────────────────────────
-print("\n━━━ Pre-push check: UCI Calendar ━━━\n")
+print("\n━━━ Pre-push check: Cyclist Intel App ━━━\n")
 
 # ── 1. REQUIRED FILES ────────────────────────────────────────────────────────
 print("[ Files ]")

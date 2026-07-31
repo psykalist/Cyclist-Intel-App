@@ -1,6 +1,6 @@
 # Known Gaps & Limitations
 
-A reference for what's missing from the UCI Calendar app, why, and whether it can be fixed.
+A reference for what's missing from the Cyclist Intel App app, why, and whether it can be fixed.
 
 ---
 

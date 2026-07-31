@@ -164,7 +164,7 @@ jobs:
           # C:\Program Files\Git\.gitconfig and fails with "Permission
           # denied". Local config writes into this repo's own .git/config,
           # which we already have write access to (we just checked it out).
-          git config user.name  'UCI Calendar Bot'
+          git config user.name  'Cyclist Intel App Bot'
           git config user.email 'uci-bot@users.noreply.github.com'
           git pull --rebase origin main || git pull origin main
 

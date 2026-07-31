@@ -1,5 +1,5 @@
-// UCI Calendar 2026 - Service Worker
-const CACHE_NAME = 'uci-calendar-v71';
+// Cyclist Intel App - Service Worker
+const CACHE_NAME = 'cyclist-intel-app-v72';
 const STATIC = ['./manifest.json', './icon-192.png', './icon-512.png'];
 
 // Install: pre-cache only truly static assets (NOT index.html or data.json)
@@ -64,7 +64,7 @@ self.addEventListener('push', event => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch(e) {}
 
-  const title   = data.title  || '🚴 UCI Calendar';
+  const title   = data.title  || '🚴 Cyclist Intel App';
   const options = {
     body  : data.body  || 'New update',
     icon  : './icon-192.png',

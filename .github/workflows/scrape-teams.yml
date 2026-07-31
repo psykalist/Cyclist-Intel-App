@@ -109,7 +109,7 @@ jobs:
       - name: Configure git + pull latest
         shell: cmd
         run: |
-          git config user.name "UCI Calendar Bot"
+          git config user.name "Cyclist Intel App Bot"
           git config user.email "uci-bot@users.noreply.github.com"
           git pull --rebase origin main || git pull origin main
 

@@ -1,5 +1,5 @@
 """
-patch_v21.py — upgrades UCI Calendar to v21.
+patch_v21.py — upgrades Cyclist Intel App to v21.
 
 Changes:
   - Teams are now per-race: pick a race, build your 9, stored under that race

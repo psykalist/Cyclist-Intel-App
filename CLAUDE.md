@@ -10,8 +10,8 @@
 
 ## Project
 
-UCI Calendar & Results — a single-file PWA (`index.html`) deployed on GitHub Pages.
-- **Live URL:** https://psykalist.github.io/UCI-Calendar/
+Cyclist Intel App — a single-file PWA (`index.html`) deployed on GitHub Pages. (The local project folder is still named `UCI Calendar & Results`; the GitHub repo is `psykalist/Cyclist-Intel-App`.)
+- **Live URL:** https://psykalist.github.io/Cyclist-Intel-App/
 - **Project folder:** D:\Claude\Projects\UCI Calendar & Results
 - **Bash mount path:** varies per session — the sandbox mounts the folder under `/sessions/<name>/mnt/UCI Calendar & Results/` where `<name>` changes each session. Find it with:
   ```bash

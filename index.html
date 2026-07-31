@@ -3890,7 +3890,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v129';
+const APP_VERSION = 'v130';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4208,7 +4208,7 @@ setInterval(renderDataHealth, 60 * 1000); // keep the late/next-update badge liv
 // succeeded -- pulled live from GitHub's public REST API (no auth needed for a
 // public repo). Local-only mechanisms (Cowork scheduled tasks) aren't queryable
 // from here, so this only covers the GitHub Actions side.
-const UCI_REPO = 'psykalist/UCI-Calendar';
+const UCI_REPO = 'psykalist/Cyclist-Intel-App';
 const UPDATE_SCRIPTS = [
   {
     file: 'scrape.yml',
@@ -5785,7 +5785,7 @@ function exportSubscribers(){
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
   localStorage.removeItem('uci_subscribers_dirty');
-  alert('✅ Downloaded — save this file to your UCI Calendar folder to enable race alerts.');
+  alert('✅ Downloaded — save this file to your Cyclist Intel App folder to enable race alerts.');
   renderFantasy();
 }
 

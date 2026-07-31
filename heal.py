@@ -1,5 +1,5 @@
 """
-heal.py — UCI Calendar self-healing monitor.
+heal.py — Cyclist Intel App self-healing monitor.
 
 Checks data integrity, clears stale locks, repairs what it can,
 and writes heal.log + status.json so both you and GitHub Actions

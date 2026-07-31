@@ -1,4 +1,4 @@
-# UCI Road Calendar — Full Documentation
+# Cyclist Intel App — Full Documentation
 
 > **Single source of truth.** Replaces README.md, ARCHITECTURE.md, SCRAPE_PROFILES.md, KNOWN_GAPS.md, and CHANGELOG.md.  
 > Last updated: 2026-06-24
@@ -30,7 +30,7 @@
 
 A Progressive Web App (PWA) showing live UCI men's road race results, upcoming races, team rosters, rider profiles, statistics, and a fantasy league. Data is scraped from **cyclingflash.com** (race calendar/results/startlists) and **procyclingstats.com** (rider profiles, specialty scores, career wins). All data is stored in flat JSON files committed to GitHub and served via **GitHub Pages** — no backend required.
 
-**Live app:** https://psykalist.github.io/UCI-Calendar/
+**Live app:** https://psykalist.github.io/Cyclist-Intel-App/
 
 ---
 
@@ -296,7 +296,7 @@ git push
 ```
 
 GitHub Pages deploys within ~1 minute. Check status at:  
-`https://github.com/psykalist/UCI-Calendar/actions`
+`https://github.com/psykalist/Cyclist-Intel-App/actions`
 
 **Version tagging:**
 ```bash

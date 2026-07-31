@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-31 14:50 UTC",
-  "run_at_iso": "2026-07-31T12:51:01.567980+00:00",
+  "run_at": "2026-07-31 20:14 UTC",
+  "run_at_iso": "2026-07-31T18:15:00.388360+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,19 +8,19 @@
       "name": "PostNord Tour of Denmark",
       "total_stages": 5,
       "stages_completed_before": 2,
-      "stages_completed_after": 2,
-      "new_stages_found": 0,
+      "stages_completed_after": 3,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 3,
-        "url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026/result/stage-3",
+        "stage_num": 4,
+        "url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 233914,
+        "response_bytes": 233378,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-07-30 20:09 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.7,
+        "stall_since": "2026-07-31 20:14 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

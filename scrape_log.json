@@ -1,24 +1,48 @@
 {
-  "run_at": "2026-07-31 20:14 UTC",
-  "run_at_iso": "2026-07-31T18:15:00.388360+00:00",
+  "run_at": "2026-08-01 13:56 UTC",
+  "run_at_iso": "2026-08-01T11:56:51.767247+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "postnord-tour-of-denmark-2026",
       "name": "PostNord Tour of Denmark",
       "total_stages": 5,
-      "stages_completed_before": 2,
+      "stages_completed_before": 3,
       "stages_completed_after": 3,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 4,
         "url": "https://cyclingflash.com/race/postnord-tour-of-denmark-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 233378,
+        "response_bytes": 236169,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-07-31 20:14 UTC",
+        "stall_attempts": 2,
+        "stall_hours": 15.7,
+        "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "donostia-san-sebastian-klasikoa-2026",
+      "name": "Donostia San Sebastian Klasikoa",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 0,
+      "new_stages_found": 0,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 1,
+        "url": "https://cyclingflash.com/race/donostia-san-sebastian-klasikoa-2026/result/stage-1",
+        "fetch_ok": true,
+        "response_bytes": 233067,
+        "matched_result_table": false,
+        "overdue": false,
+        "stall_since": "2026-08-01 13:56 UTC",
         "stall_attempts": 1,
         "stall_hours": -2.0,
         "possible_parser_drift": false

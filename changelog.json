@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-07-31T18:16:04.767868+00:00",
+  "generated_at": "2026-08-01T11:57:54.002770+00:00",
   "entries": [
+    {
+      "id": "fa6c4031151d",
+      "timestamp": "2026-08-01T11:57:53.995570+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour de Pologne startlist: Vegard Stake Laengen, Victor Langellotti added"
+    },
+    {
+      "id": "08a827a33d57",
+      "timestamp": "2026-08-01T11:57:53.995570+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a Burgos startlist: Alexis Renard, Dylan Teuns, Jamie Meehan (+8 more) added"
+    },
     {
       "id": "75f9a477bf1b",
       "timestamp": "2026-07-31T18:16:04.760077+00:00",
@@ -364,27 +378,6 @@
       "type": "leader_change",
       "icon": "green",
       "text": "Tour of Magnificent Qinghai Points: 🇪🇷 Henok Mulubrhan leads"
-    },
-    {
-      "id": "7024ac6ad3ee",
-      "timestamp": "2026-07-18T11:47:36.747911+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Magnificent Qinghai GC: 🇪🇨 Jonathan Klever Caicedo leads"
-    },
-    {
-      "id": "beecb763106a",
-      "timestamp": "2026-07-18T09:02:49.242790+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 8 Tour of Magnificent Qinghai: 🇵🇹 Iúri Leitão wins"
-    },
-    {
-      "id": "bb6035b9789e",
-      "timestamp": "2026-07-17T22:22:14.862613+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 7 Tour of Magnificent Qinghai: 🇲🇽 Cesar Macias Estrada wins"
     }
   ]
 }

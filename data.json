@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-07-31T18:15:02.196585+00:00",
-  "scraped_at_human": "31 Jul 2026 18:15 UTC",
+  "scraped_at": "2026-08-01T11:56:51.767665+00:00",
+  "scraped_at_human": "01 Aug 2026 11:56 UTC",
   "live": [
     {
       "slug": "postnord-tour-of-denmark",
@@ -1688,22 +1688,23 @@
           "time_gap": "+ 06:01"
         }
       ]
-    }
-  ],
-  "upcoming": [
+    },
     {
       "slug": "donostia-san-sebastian-klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "name": "Donostia San Sebastian Klasikoa",
       "year": "2026",
       "category": "1.UWT",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-08-01",
       "end_date": "2026-08-01",
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/donostia-san-sebastian-klasikoa-2026",
-      "startlist": []
-    },
+      "startlist": [],
+      "stages": []
+    }
+  ],
+  "upcoming": [
     {
       "slug": "tour-de-pologne",
       "cf_slug": "tour-de-pologne-2026",
@@ -1783,6 +1784,12 @@
           "name": "Alberto Bettiol",
           "slug": "alberto-bettiol",
           "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Victor Langellotti",
+          "slug": "victor-langellotti",
+          "nat": "mc",
           "team": "XDS Astana Team (WT)"
         },
         {
@@ -2092,33 +2099,9 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Benoît Cosnefroy",
-          "slug": "benoit-cosnefroy",
-          "nat": "fr",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
           "name": "João Almeida",
           "slug": "joao-almeida",
           "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Jhonatan Narváez",
-          "slug": "jhonatan-narvaez",
-          "nat": "ec",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Jan Christen",
-          "slug": "jan-christen",
-          "nat": "ch",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Rune Herregodts",
-          "slug": "rune-herregodts",
-          "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -2128,9 +2111,33 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Julius Johansen",
-          "slug": "julius-johansen",
-          "nat": "dk",
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Benoît Cosnefroy",
+          "slug": "benoit-cosnefroy",
+          "nat": "fr",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Rune Herregodts",
+          "slug": "rune-herregodts",
+          "nat": "be",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Vegard Stake Laengen",
+          "slug": "vegard-stake-laengen",
+          "nat": "no",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jhonatan Narváez",
+          "slug": "jhonatan-narvaez",
+          "nat": "ec",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -3934,21 +3941,9 @@
           "team": "TotalEnergies (PRT)"
         },
         {
-          "name": "Carlos Rodríguez",
-          "slug": "carlos-rodriguez-cano",
-          "nat": "es",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
           "name": "Oscar Onley",
           "slug": "oscar-onley",
           "nat": "gb",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
-          "name": "Bob Jungels",
-          "slug": "bob-jungels",
-          "nat": "lu",
           "team": "Netcompany INEOS (WT)"
         },
         {
@@ -3958,9 +3953,33 @@
           "team": "Netcompany INEOS (WT)"
         },
         {
-          "name": "Andrew August",
-          "slug": "andrew-august",
-          "nat": "us",
+          "name": "PLUS Laurens De",
+          "slug": "laurens-de-plus",
+          "nat": "be",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Lucas Hamilton",
+          "slug": "lucas-hamilton",
+          "nat": "au",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Kim Heiduk",
+          "slug": "kim-heiduk",
+          "nat": "de",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Peter Øxenberg",
+          "slug": "peter-oxenberg-hansen",
+          "nat": "dk",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Óscar Rodríguez",
+          "slug": "oscar-rodriguez",
+          "nat": "es",
           "team": "Netcompany INEOS (WT)"
         },
         {
@@ -4045,6 +4064,42 @@
           "name": "Edoardo Zamperini",
           "slug": "edoardo-zamperini",
           "nat": "it",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Valentin Ferron",
+          "slug": "valentin-ferron",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Jamie Meehan",
+          "slug": "jamie-meehan",
+          "nat": "ie",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Alexis Renard",
+          "slug": "alexis-renard",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Louis Rouland",
+          "slug": "louis-rouland",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sergio Samitier",
+          "slug": "sergio-samitier",
+          "nat": "es",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Dylan Teuns",
+          "slug": "dylan-teuns",
+          "nat": "be",
           "team": "Cofidis (PRT)"
         },
         {
@@ -116901,145 +116956,145 @@
       "name": "Donostia San Sebastian Klasikoa",
       "cf_slug": "donostia-san-sebastian-klasikoa-2026",
       "start_date": "2026-08-01",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 30
+      "days_away": 29
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 41
+      "days_away": 40
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 42
+      "days_away": 41
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 44
+      "days_away": 43
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 44
+      "days_away": 43
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 47
+      "days_away": 46
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 47
+      "days_away": 46
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 50
+      "days_away": 49
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 58
+      "days_away": 57
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 67
+      "days_away": 66
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 69
+      "days_away": 68
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 71
+      "days_away": 70
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 72
+      "days_away": 71
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 75
+      "days_away": 74
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 79
+      "days_away": 78
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 79
+      "days_away": 78
     }
   ]
 }

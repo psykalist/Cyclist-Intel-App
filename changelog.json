@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-01T17:54:14.819751+00:00",
+  "generated_at": "2026-08-02T11:56:31.276334+00:00",
   "entries": [
+    {
+      "id": "aefb4e6bfe62",
+      "timestamp": "2026-08-02T11:56:31.268991+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour de Pologne startlist: Andrea Vendrame, Axel Huens, BONDT Dries De (+17 more) added"
+    },
+    {
+      "id": "bd2f96ded045",
+      "timestamp": "2026-08-02T11:56:31.268991+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a Burgos startlist: Baptiste Vadic, Carlos Rodríguez, Darren Rafferty (+25 more) added"
+    },
     {
       "id": "08926f67f20f",
       "timestamp": "2026-08-01T17:54:14.811847+00:00",
@@ -392,13 +406,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 15 Tour de France: 🇧🇪 Remco Evenepoel wins"
-    },
-    {
-      "id": "8a6274d7674f",
-      "timestamp": "2026-07-19T11:51:01.554048+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "PostNord Tour of Denmark startlist: ANDERSEN Noah Lindholm Møller, Anders Foldager, Casper Pedersen (+7 more) added"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-05 14:48 UTC",
-  "run_at_iso": "2026-08-05T12:48:52.837399+00:00",
+  "run_at": "2026-08-05 20:15 UTC",
+  "run_at_iso": "2026-08-05T18:15:29.434744+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,19 +8,19 @@
       "name": "Tour de Pologne",
       "total_stages": 6,
       "stages_completed_before": 2,
-      "stages_completed_after": 2,
-      "new_stages_found": 0,
+      "stages_completed_after": 3,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 3,
-        "url": "https://cyclingflash.com/race/tour-de-pologne-2026/result/stage-3",
+        "stage_num": 4,
+        "url": "https://cyclingflash.com/race/tour-de-pologne-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 243408,
+        "response_bytes": 242953,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-08-04 20:22 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.4,
+        "stall_since": "2026-08-05 20:15 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -28,7 +28,7 @@
       "incomplete_classifications": [
         {
           "cls": "kom_top10",
-          "rows": 3
+          "rows": 5
         }
       ]
     },
@@ -37,29 +37,24 @@
       "name": "Vuelta a Burgos",
       "total_stages": 5,
       "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
+      "stages_completed_after": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 2,
-        "url": "https://cyclingflash.com/race/vuelta-a-burgos-2026/result/stage-2",
+        "stage_num": 3,
+        "url": "https://cyclingflash.com/race/vuelta-a-burgos-2026/result/stage-3",
         "fetch_ok": true,
-        "response_bytes": 236399,
+        "response_bytes": 236613,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-08-04 20:22 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.4,
+        "stall_since": "2026-08-05 20:15 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
-      "incomplete_classifications": [
-        {
-          "cls": "kom_top10",
-          "rows": 8
-        }
-      ]
+      "incomplete_classifications": []
     }
   ],
   "has_fetch_errors": false,

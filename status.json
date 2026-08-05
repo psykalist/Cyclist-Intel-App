@@ -1,24 +1,23 @@
 {
-  "updated_at": "2026-08-05T13:28:24.768266+00:00",
+  "updated_at": "2026-08-05T18:17:00.312228+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "scrape_log.json: INCOMPLETE kom_top10 on tour-de-pologne-2026 -- pulled 3 of 10 expected rows.",
-    "scrape_log.json: INCOMPLETE kom_top10 on vuelta-a-burgos-2026 -- pulled 8 of 10 expected rows."
+    "scrape_log.json: INCOMPLETE kom_top10 on tour-de-pologne-2026 -- pulled 5 of 10 expected rows."
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 3472,
+    "data_size_kb": 3479,
     "data_upcoming": 30,
     "data_recent": 65,
     "data_teams": 33,
     "rider_profiles": 2594,
     "live_races": 2,
-    "scraped_at": "2026-08-05T12:48:52.837948+00:00",
-    "data_age_hours": 0.7,
+    "scraped_at": "2026-08-05T18:15:36.179453+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 291809,
-    "scrape_log_run_at": "2026-08-05 14:48 UTC",
+    "scrape_log_run_at": "2026-08-05 20:15 UTC",
     "rider_roster": 1257,
     "rider_missing_profile": 140,
     "rider_missing_palmares": 861

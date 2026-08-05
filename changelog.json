@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T18:24:19.341305+00:00",
+  "generated_at": "2026-08-05T12:50:00.242792+00:00",
   "entries": [
     {
       "id": "323c03ccc6d1",
@@ -504,13 +504,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 17 Tour de France: 🇧🇪 Jasper Philipsen wins"
-    },
-    {
-      "id": "0fadd53544bb",
-      "timestamp": "2026-07-22T12:24:38.958876+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "PostNord Tour of Denmark startlist: Antonio Polga, Bailey Mcdonald, Declan Irvine (+10 more) added"
     }
   ]
 }

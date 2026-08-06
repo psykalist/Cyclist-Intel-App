@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-05T18:16:43.102651+00:00",
+  "generated_at": "2026-08-06T12:53:03.006246+00:00",
   "entries": [
+    {
+      "id": "8b92c4264f6c",
+      "timestamp": "2026-08-06T12:53:02.998942+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Arctic Race of Norway startlist: Xabier Berasategi added"
+    },
     {
       "id": "e7360837393d",
       "timestamp": "2026-08-05T18:16:43.095483+00:00",
@@ -532,13 +539,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 18 Tour de France: 🇪🇨 Richard Carapaz wins"
-    },
-    {
-      "id": "06fa5a5db96b",
-      "timestamp": "2026-07-23T12:21:22.926219+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "PostNord Tour of Denmark startlist: Conrad Haugsted, Joshua Gudnitz, Lucas Toftemark (+4 more) added"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-05T18:15:36.179453+00:00",
-  "scraped_at_human": "05 Aug 2026 18:15 UTC",
+  "scraped_at": "2026-08-06T12:51:50.594290+00:00",
+  "scraped_at_human": "06 Aug 2026 12:51 UTC",
   "live": [
     {
       "slug": "tour-de-pologne",
@@ -4882,6 +4882,12 @@
         {
           "name": "Gotzon Martín",
           "slug": "gotzon-martin",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Xabier Berasategi",
+          "slug": "xabier-berasategi-garmendia",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
@@ -120097,139 +120103,139 @@
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 25
+      "days_away": 24
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 28
+      "days_away": 27
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 36
+      "days_away": 35
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 42
+      "days_away": 41
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 42
+      "days_away": 41
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 45
+      "days_away": 44
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 53
+      "days_away": 52
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 59
+      "days_away": 58
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 59
+      "days_away": 58
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 61
+      "days_away": 60
     },
     {
       "name": "Tre Valli Varesine",
       "cf_slug": "tre-valli-varesine-2026",
       "start_date": "2026-10-06",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 66
+      "days_away": 65
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 67
+      "days_away": 66
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 69
+      "days_away": 68
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 70
+      "days_away": 69
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 74
+      "days_away": 73
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 74
+      "days_away": 73
     }
   ]
 }

@@ -1639,6 +1639,67 @@ def main_results_only():
             if race.get(tk) and _result_incomplete(race.get(tk))
         ]
 
+    # ── Backfill stage route detail (length / terrain) for upcoming races ────
+    # Only the twice-daily results-only job runs on a schedule, but until now it
+    # fetched *results* only -- per-stage distance, elevation and terrain type
+    # were populated solely by the manual full scrape (scrape_stage_details in
+    # main()). Any race added to the calendar after the last full run therefore
+    # showed blank length/terrain on its upcoming stage cards indefinitely
+    # (only the Vuelta and Arctic Race had detail; Pologne, Renewi, Burgos, etc.
+    # were blank). Backfill it here so every upcoming/live multi-stage race
+    # fills in on the next scheduled run without needing a manual full scrape.
+    #
+    # Idempotent + cheap: only stages still missing distance_km are fetched, so
+    # once a stage's route is captured it is never re-fetched. Far-future races
+    # whose route CyclingFlash hasn't published yet return None and are simply
+    # retried next run. Bounded to races starting within DETAIL_LOOKAHEAD_DAYS
+    # so one run never probes every stage of the whole season.
+    DETAIL_LOOKAHEAD_DAYS = 60
+    details_added = 0
+    for race in d.get("upcoming", []) + d.get("live", []):
+        total = race.get("total_stages", 0) or 0
+        if total <= 1:
+            continue  # one-day races carry no per-stage route breakdown
+        sd = race.get("start_date")
+        if sd:
+            try:
+                if (date.fromisoformat(sd) - today).days > DETAIL_LOOKAHEAD_DAYS:
+                    continue
+            except ValueError:
+                pass
+        slug   = race.get("cf_slug") or f"{race.get('slug','')}-{race.get('year','2026')}"
+        year   = race.get("year", "")
+        stages = race.get("stages") or []
+        by_num = {s.get("num"): s for s in stages}
+        missing = [n for n in range(1, total + 1)
+                   if not (by_num.get(n) or {}).get("distance_km")]
+        if not missing:
+            continue
+        print(f"\n  [detail] {race.get('name', slug)}: fetching route for stages {missing}", flush=True)
+        for n in missing:
+            details = scrape_stage_details(slug, n, year=year)
+            time.sleep(DELAY)
+            if not details or not details.get("distance_km"):
+                continue
+            stage_obj = by_num.get(n)
+            if stage_obj is None:
+                stage_obj = {"num": n, "label": f"Stage {n}",
+                             "result_url": f"/race/{slug}/result/stage-{n}",
+                             "winner": None, "winner_flag": "", "winner_nat": "", "top10": []}
+                stages.append(stage_obj)
+                by_num[n] = stage_obj
+            # Never clobber a height-profile image already captured from the
+            # richer result page with the (sometimes different-crop) stages one.
+            if stage_obj.get("height_profile_img"):
+                details.pop("height_profile_img", None)
+            stage_obj.update(details)
+            details_added += 1
+            print(f"        Stage {n}: {details.get('distance_km','?')}km "
+                  f"{details.get('stage_type','?')}", flush=True)
+        race["stages"] = sorted(stages, key=lambda s: s.get("num", 0))
+    if details_added:
+        print(f"\n  [detail] backfilled route detail on {details_added} stage(s)", flush=True)
+
     # ── Write structured scrape log for health-check consumption ─────────────
     # Plain stdout prints above only live in the (sign-in-required) Actions
     # job log. This file is what health-check.yml (and anyone without Actions

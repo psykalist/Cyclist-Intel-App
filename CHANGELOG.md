@@ -7,6 +7,15 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v131 — 2026-08-07 — Results-only scraper now backfills stage length + terrain for upcoming races
+"On upcoming races there is a lack of detail about the length of stage and terrain. Can you find this and add to the race calendar."
+
+- **Symptom.** Upcoming stage races showed blank stage distance/elevation/terrain on their stage cards. In the last data.json (scraped 31 Jul, results-only), only **Vuelta a España** and **Arctic Race of Norway** had per-stage detail; **Tour de Pologne, Renewi Tour, Vuelta a Burgos, Czech Tour, Lidl Deutschland Tour, Tour of Britain, Tour de Luxembourg, CRO Race, Tour of Guangxi, Le Tour de Langkawi** were all blank (0/N stages with `distance_km`).
+- **Root cause.** Per-stage route detail (`distance_km`, `elevation_m`, `stage_type`, start/finish towns, height-profile img) is produced by `scrape_stage_details()`, which was **only called from the full scrape `main()`**. But the full scrape (`update-data.yml`) is now **manual-only**; the only thing on a schedule is the twice-daily **`--results-only`** job (`scrape.yml`), and `main_results_only()` fetched *results* for live races only — it never fetched route detail for upcoming races. So any race added to the calendar after the last manual full run stayed blank forever. Vuelta/Arctic had detail purely because they were captured during an earlier full run.
+- **Fix (`scraper.py`, `main_results_only()`).** Added a backfill pass after the live-results loop: for every **upcoming + live multi-stage** race starting within `DETAIL_LOOKAHEAD_DAYS = 60`, fetch `scrape_stage_details()` for any stage still missing `distance_km` and merge it in. **Idempotent** — a stage whose route is already captured is never re-fetched; far-future races CyclingFlash hasn't published yet return `None` and are retried next run. Existing `height_profile_img` from the richer result page is never clobbered. This means the routine twice-daily job now fills in length/terrain for the whole upcoming calendar with no manual full scrape needed.
+- **Scope / safety.** Scraper-source change only (I own `scraper.py`); no hand-edit of CI-owned `data.json`. Populates automatically on the next scheduled `--results-only` run (data.json is CI-owned, so it can't be verified locally here — the sandbox can't reach CyclingFlash). Race counts are unchanged by the pass, so the post-write truncation guard is unaffected.
+- Version v130→v131 (APP_VERSION bump per rule 2, though this is a scraper-only change). `scraper.py` compiles; `index.html` brace balance 0.
+
 ## v130 — 2026-07-30 — Rename the app to "Cyclist Intel App" across code, docs, CI and repo
 "I want the Cyclist Intel App to be its name from now on in all areas."
 

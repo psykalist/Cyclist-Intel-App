@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-07T11:40:55.016232+00:00",
+  "generated_at": "2026-08-07T17:42:04.041004+00:00",
   "entries": [
+    {
+      "id": "40d54b81d3af",
+      "timestamp": "2026-08-07T17:42:04.033649+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Tour de Pologne: 🇨🇭 Jan Christen wins"
+    },
+    {
+      "id": "74dc207c8968",
+      "timestamp": "2026-08-07T17:42:04.033649+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Vuelta a Burgos: 🇬🇧 Matthew Brennan wins"
+    },
     {
       "id": "a99c88d2c895",
       "timestamp": "2026-08-07T11:40:55.009109+00:00",

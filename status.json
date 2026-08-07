@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-07T01:55:39.886022+00:00",
+  "updated_at": "2026-08-07T06:55:34.426873+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 13h old (a live race is running) -- consider running scraper.py",
+    "data.json is 18h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: INCOMPLETE kom_top10 on tour-de-pologne-2026 -- pulled 5 of 10 expected rows."
   ],
   "repairs": [],
@@ -16,7 +16,7 @@
     "rider_profiles": 2594,
     "live_races": 2,
     "scraped_at": "2026-08-06T12:51:50.594290+00:00",
-    "data_age_hours": 13.1,
+    "data_age_hours": 18.1,
     "index_html_bytes": 291809,
     "scrape_log_run_at": "2026-08-06 14:51 UTC",
     "rider_roster": 1257,

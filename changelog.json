@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T17:42:04.041004+00:00",
+  "generated_at": "2026-08-08T11:24:41.604645+00:00",
   "entries": [
     {
       "id": "40d54b81d3af",
@@ -602,20 +602,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "CRO Race startlist published (1 riders)"
-    },
-    {
-      "id": "6b83548854f4",
-      "timestamp": "2026-07-24T18:13:02.098976+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 19 Tour de France: 🇸🇮 Tadej Pogačar wins"
-    },
-    {
-      "id": "2a3810876910",
-      "timestamp": "2026-07-24T18:13:02.098976+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour de France KOM: 🇪🇨 Richard Carapaz leads"
     }
   ]
 }

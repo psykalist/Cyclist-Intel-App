@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-07T17:40:49.880186+00:00",
-  "scraped_at_human": "07 Aug 2026 17:40 UTC",
+  "scraped_at": "2026-08-08T11:23:30.186994+00:00",
+  "scraped_at_human": "08 Aug 2026 11:23 UTC",
   "live": [
     {
       "slug": "tour-de-pologne",
@@ -125,7 +125,13 @@
               "flag": "🇫🇷"
             }
           ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168699/responsive-images/1-2___heightProfile_1200_317.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168699/responsive-images/1-2___heightProfile_1200_317.webp",
+          "distance_km": 233.7,
+          "elevation_m": 1692,
+          "stage_type": "hilly",
+          "start_town": "Gdynia",
+          "finish_town": "Koszalin",
+          "description": "A reduced bunch sprint is still the most likely outcome, but the battle for the first leader's jersey and the opening mountain points should make for an exciting finale. The 2026 Tour de Pologne opens with a demanding 234-kilometre stage from Gdynia to Koszalin. Riders face 2,186 metres of climbing , with the only classified climb coming just 6 kilometres from the finish , making life difficult for the pure sprinters. A reduced bunch sprint is still the most likely outcome, but the battle for the first leader's jersey and the opening mountain points should make for an exciting finale."
         },
         {
           "num": 2,
@@ -237,7 +243,13 @@
               "flag": "🇧🇪"
             }
           ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168701/responsive-images/2-2___heightProfile_1200_423.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168701/responsive-images/2-2___heightProfile_1200_423.webp",
+          "distance_km": 149.9,
+          "elevation_m": 510,
+          "stage_type": "flat",
+          "start_town": "Międzyzdroje",
+          "finish_town": "Szczecin",
+          "description": "Sprint teams are expected to keep the race under control, although crosswinds and positioning into Szczecin could still influence the outcome. At 151 kilometres , Stage 2 is much shorter and considerably flatter than the opener. It represents the first clear opportunity for the pure sprinters. Sprint teams are expected to keep the race under control, although crosswinds and positioning into Szczecin could still influence the outcome."
         },
         {
           "num": 3,
@@ -339,7 +351,13 @@
             }
           ],
           "non_finishers": [],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168703/responsive-images/3-1___heightProfile_711_800.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168703/responsive-images/3-1___heightProfile_711_800.webp",
+          "distance_km": 193.3,
+          "elevation_m": 790,
+          "stage_type": "flat",
+          "start_town": "Gorzow Wielkopolski",
+          "finish_town": "Zielona Góra",
+          "description": "Stage 3 covers 193.5 kilometres and brings more climbing back into the race. The rolling profile is ideal terrain for punchy riders and aggressive attacks."
         },
         {
           "num": 4,
@@ -478,7 +496,13 @@
               "flag": "🇩🇪"
             }
           ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168710/responsive-images/4-2___heightProfile_1200_501.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168710/responsive-images/4-2___heightProfile_1200_501.webp",
+          "distance_km": 176.0,
+          "elevation_m": 2180,
+          "stage_type": "hilly",
+          "start_town": "Żagań",
+          "finish_town": "Karpacz",
+          "description": "The overall contenders are expected to battle on the final climb, where significant time gaps could already emerge. Stage 4 is 175.5 kilometres long and finishes with the first summit finish in Karpacz. Two first-category climbs make this one of the key GC stages of the race. The overall contenders are expected to battle on the final climb, where significant time gaps could already emerge."
         },
         {
           "num": 5,
@@ -626,7 +650,13 @@
               "flag": "🇫🇷"
             }
           ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168712/responsive-images/5-2___heightProfile_1200_428.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168712/responsive-images/5-2___heightProfile_1200_428.webp",
+          "distance_km": 218.9,
+          "elevation_m": 1869,
+          "stage_type": "hilly",
+          "start_town": "Opole",
+          "finish_town": "Kocierz",
+          "description": "After almost 220 kilometres of racing, only the strongest riders are expected to remain in contention for the stage win, with the GC likely to change again. At 218.5 kilometres , Stage 5 is one of the longest stages of the race. The route finishes at Kocierz Resort after tackling the Category 1 Przegibek Pass . After almost 220 kilometres of racing, only the strongest riders are expected to remain in contention for the stage win, with the GC likely to change again."
         },
         {
           "num": 6,
@@ -635,7 +665,14 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 126.2,
+          "elevation_m": 2712,
+          "stage_type": "mountain",
+          "start_town": "Bukowina Resort",
+          "finish_town": "Bukowina Tatrzanska",
+          "description": "Date Saturday 08 August Start Bukowina Resort Finish Bukowina Tatrzanska Distance 126.2 km Elevation gain 2712 m Start time 13:00 Expected finish 16:23-16:38 Win chance 1 Christian Scaroni 10.36% 2 Jan Christen 4.97% 3 Diego Ulissi 3.33% 4 Paul Lapeira 2.86% 5 Aleksander Vlasov 2.80% 6 Noa Isidore 2.75% 7 Finn Fisher-Black 2.72% 8 Jonathan Milan 2.49% 9 Paul Magnier 2.26% 10 Jordi Meeus 2.17% Model-based estimate from rider ratings and the stage profile. Although only 126 kilometres long, the queen stage packs 2,850 metres of climbing and six classified climbs through the Tatra Mountains.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168714/responsive-images/6-2___heightProfile_1200_610.webp"
         }
       ],
       "startlist": [
@@ -1929,7 +1966,13 @@
               "flag": "🇪🇸"
             }
           ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167668/responsive-images/perfil_etapa1___heightProfile_1200_453.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167668/responsive-images/perfil_etapa1___heightProfile_1200_453.webp",
+          "distance_km": 165.5,
+          "elevation_m": 1413,
+          "stage_type": "hilly",
+          "start_town": "Gumiel de Izán",
+          "finish_town": "Burgos",
+          "description": "The 2026 Vuelta a Burgos gets underway with a varied opening stage from Gumiel de Izán to Burgos. The rolling terrain features several short climbs that will test the peloton from the very beginning. While a reduced bunch sprint remains a realistic outcome, aggressive riders and puncheurs will also fancy their chances of claiming the first leader's jersey of the race."
         },
         {
           "num": 2,
@@ -2032,7 +2075,13 @@
           ],
           "date_str": "Wednesday 05 August",
           "non_finishers": [],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168647/responsive-images/perfil_etapa2___heightProfile_1200_388.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/168647/responsive-images/perfil_etapa2___heightProfile_1200_388.webp",
+          "distance_km": 177.3,
+          "elevation_m": 2182,
+          "stage_type": "hilly",
+          "start_town": "Arcos de la Llana",
+          "finish_town": "Valle del Sol",
+          "description": "Stage 2 takes the riders through the hilly landscapes of the Burgos province before finishing in Valle del Sol. Several climbs and a demanding finale are expected to make this a selective day. The general classification contenders will need to stay alert, as any successful attack could result in valuable time gaps ahead of the decisive final stages."
         },
         {
           "num": 3,
@@ -3608,7 +3657,13 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 188.3,
+          "stage_type": "flat",
+          "start_town": "Diest",
+          "finish_town": "Diest",
+          "description": "The 21st edition of the Renewi Tour gets underway with a 183-kilometre opening stage around Diest. The rolling roads of the Hageland region feature a series of short climbs and technical sections that are likely to animate the race from the very beginning. While a reduced bunch sprint is a realistic outcome, attackers will also have their opportunities to make an early impression. With the first leader's jersey at stake, the peloton is expected to race aggressively from the start.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170420/responsive-images/Screenshot-2026-07-23-at-11-45-47-2025-06-24_RENEWI_Carte_e%CC%81tape_1---2025-06-24_RENEWI_Carte_etape_1.pdf___heightProfile_1200_483.webp"
         },
         {
           "num": 2,
@@ -3617,7 +3672,13 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 173.9,
+          "stage_type": "flat",
+          "start_town": "Blankenberge",
+          "finish_town": "Ardooie",
+          "description": "Stage 2 covers 169.4 kilometres from the North Sea coast in Blankenberge to Ardooie. On paper, it is the best opportunity for the sprinters, but the exposed roads of West Flanders could produce strong crosswinds and split the peloton into echelons. Riders will need to stay alert throughout the day to avoid losing valuable time. After four local laps in Ardooie, the stage is expected to end in a fast and exciting bunch sprint.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170421/responsive-images/Screenshot-2026-07-23-at-11-47-34-2025-06-24_RENEWI_Carte_e%CC%81tape_2---2025-06-24_RENEWI_Carte_etape_2.pdf___heightProfile_1200_418.webp"
         },
         {
           "num": 3,
@@ -3626,7 +3687,13 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 184.6,
+          "stage_type": "flat",
+          "start_town": "Celles",
+          "finish_town": "Geraardsbergen",
+          "description": "At 181 kilometres, Stage 3 is widely expected to be the decisive stage of this year's Renewi Tour. Starting in Celles, the route heads towards the iconic cycling town of Geraardsbergen, where the riders will tackle famous climbs such as the Muur van Geraardsbergen and the Bosberg. The combination of steep ascents and narrow, technical roads will favour the strongest classics specialists and GC contenders, making this the perfect stage to create significant gaps in the overall standings.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170423/responsive-images/Screenshot-2026-07-23-at-11-49-13-2025-06-24_RENEWI_Carte_e%CC%81tape_3---2025-06-24_RENEWI_Carte_etape_3.pdf___heightProfile_1200_465.webp"
         },
         {
           "num": 4,
@@ -3635,7 +3702,13 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 187.3,
+          "stage_type": "flat",
+          "start_town": "Riemst",
+          "finish_town": "Bilzen",
+          "description": "The fourth stage takes the peloton on a 164-kilometre journey through the rolling landscape of Belgian Limburg. The constantly undulating terrain requires excellent positioning and explosive power throughout the day. Although a sprint finish remains possible, the succession of short climbs and the technical finale could see a reduced group battle for victory. It is another important opportunity for the general classification riders to gain or defend valuable seconds.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170425/responsive-images/Screenshot-2026-07-23-at-11-51-20-2025-06-24_RENEWI_Carte_e%CC%81tape_4---2025-06-24_RENEWI_Carte_etape_4.pdf___heightProfile_1200_446.webp"
         },
         {
           "num": 5,
@@ -3644,7 +3717,13 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 183.6,
+          "stage_type": "flat",
+          "start_town": "Leuven",
+          "finish_town": "Leuven",
+          "description": "The Renewi Tour concludes with a challenging 185-kilometre circuit stage in and around Leuven. The hilly course, well known from previous editions of the race and the 2021 UCI Road World Championships, offers one final chance to shake up the overall classification. A succession of short climbs ensures the racing remains intense until the finish, providing opportunities for attackers and classics specialists alike. Only on the finish line in Leuven will the winner of the 2026 Renewi Tour be crowned.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170428/responsive-images/Screenshot-2026-07-23-at-11-53-27-2025-06-24_RENEWI_Carte_e%CC%81tape_5---2025-06-24_RENEWI_Carte_etape_5.pdf___heightProfile_1200_510.webp"
         }
       ],
       "startlist": [
@@ -4541,7 +4620,14 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 174.0,
+          "elevation_m": 2280,
+          "stage_type": "hilly",
+          "start_town": "Prague",
+          "finish_town": "Karlovy Vary",
+          "description": "The finale into the famous spa town could already create the first gaps in the general classification. A reduced bunch sprint or a late solo attack appears to be the most likely outcome. The 2026 Czech Tour starts with a 174-kilometre stage from Prague to Karlovy Vary. With more than 2,200 metres of climbing, it is far from a flat opener, offering opportunities for attackers and punchy riders. The finale into the famous spa town could already create the first gaps in the general classification. A reduced bunch sprint or a late solo attack appears to be the most likely outcome.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167677/responsive-images/stage-1-profile___heightProfile_1200_713.webp"
         },
         {
           "num": 2,
@@ -4550,7 +4636,14 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 157.2,
+          "elevation_m": 2315,
+          "stage_type": "hilly",
+          "start_town": "Mladá Boleslav",
+          "finish_town": "Ještěd",
+          "description": "The decisive final ascent is expected to bring the favourites to the front. Significant time gaps could already emerge in the battle for the overall victory. tage 2 covers 157 kilometres and finishes on the climb to Ještěd. With over 2,300 metres of elevation gain, it is the first real test for the overall contenders. The decisive final ascent is expected to bring the favourites to the front. Significant time gaps could already emerge in the battle for the overall victory.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167679/responsive-images/stage-2-profile___heightProfile_1200_705.webp"
         },
         {
           "num": 3,
@@ -4559,7 +4652,14 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 177.2,
+          "elevation_m": 2517,
+          "stage_type": "mountain",
+          "start_town": "Pardubice",
+          "finish_town": "Dlouhé",
+          "description": "The stage offers opportunities for aggressive riders and strong climbers. Depending on the race situation, it could further reshape the general classification. At 177 kilometres, Stage 3 is another demanding challenge. The route to Dlouhé includes more than 2,500 metres of climbing, rewarding endurance and climbing ability. The stage offers opportunities for aggressive riders and strong climbers. Depending on the race situation, it could further reshape the general classification.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167681/responsive-images/stage-3-profile___heightProfile_1200_693.webp"
         },
         {
           "num": 4,
@@ -4568,7 +4668,14 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 163.6,
+          "elevation_m": 2207,
+          "stage_type": "hilly",
+          "start_town": "Kroměříž",
+          "finish_town": "Pustevny",
+          "description": "The race leaders will defend their positions, while their rivals go all in for a final attack. Only after this demanding stage will the overall winner be crowned. The final stage offers one last opportunity to make the difference in the 2026 Czech Tour. Its hilly route and repeated climbs promise an exciting finale where the overall standings can still change. The race leaders will defend their positions, while their rivals go all in for a final attack. Only after this demanding stage will the overall winner be crowned.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/167683/responsive-images/stage-4-profile___heightProfile_1200_681.webp"
         }
       ],
       "startlist": [
@@ -5491,7 +5598,7 @@
           "date_str": "Thursday 20 August",
           "start_town": "Bad Orb",
           "finish_town": "Schwäbisch Hall",
-          "distance_km": null,
+          "distance_km": 216.3,
           "elevation_m": null,
           "start_time": "",
           "stage_type": "flat",
@@ -5508,7 +5615,7 @@
           "date_str": "Friday 21 August",
           "start_town": "Schwäbisch Hall",
           "finish_town": "Offenbach an der Queich",
-          "distance_km": null,
+          "distance_km": 196.8,
           "elevation_m": null,
           "start_time": "",
           "stage_type": "flat",
@@ -5523,9 +5630,9 @@
           "winner_nat": "",
           "top10": [],
           "date_str": "Saturday 22 August",
-          "start_town": "",
+          "start_town": "Herxheim bei Landau",
           "finish_town": "Bad Dürkheim",
-          "distance_km": null,
+          "distance_km": 169.7,
           "elevation_m": null,
           "start_time": "",
           "stage_type": "flat",
@@ -5540,9 +5647,9 @@
           "winner_nat": "",
           "top10": [],
           "date_str": "Sunday 23 August",
-          "start_town": "",
+          "start_town": "Heilbronn",
           "finish_town": "Heilbronn",
-          "distance_km": null,
+          "distance_km": 156.2,
           "elevation_m": null,
           "start_time": "",
           "stage_type": "flat",
@@ -5575,10 +5682,10 @@
           "date_str": "Wednesday 02 September",
           "start_town": "Lincoln",
           "finish_town": "Lincoln",
-          "distance_km": null,
-          "elevation_m": null,
+          "distance_km": 182.5,
+          "elevation_m": 1393,
           "start_time": "",
-          "stage_type": "flat",
+          "stage_type": "hilly",
           "description": ""
         },
         {
@@ -5592,8 +5699,8 @@
           "date_str": "Thursday 03 September",
           "start_town": "Boston",
           "finish_town": "Skegness",
-          "distance_km": null,
-          "elevation_m": null,
+          "distance_km": 180.2,
+          "elevation_m": 873,
           "start_time": "",
           "stage_type": "flat",
           "description": ""
@@ -5609,10 +5716,10 @@
           "date_str": "Friday 04 September",
           "start_town": "Hull",
           "finish_town": "Beverley",
-          "distance_km": null,
-          "elevation_m": null,
+          "distance_km": 194.1,
+          "elevation_m": 1612,
           "start_time": "",
-          "stage_type": "flat",
+          "stage_type": "hilly",
           "description": ""
         },
         {
@@ -5626,10 +5733,10 @@
           "date_str": "Saturday 05 September",
           "start_town": "Helmsley",
           "finish_town": "Leyburn",
-          "distance_km": null,
-          "elevation_m": null,
+          "distance_km": 165.8,
+          "elevation_m": 2699,
           "start_time": "",
-          "stage_type": "flat",
+          "stage_type": "mountain",
           "description": ""
         },
         {
@@ -5643,10 +5750,10 @@
           "date_str": "Sunday 06 September",
           "start_town": "Earlston",
           "finish_town": "Earlston",
-          "distance_km": null,
-          "elevation_m": null,
+          "distance_km": 156.1,
+          "elevation_m": 2236,
           "start_time": "",
-          "stage_type": "flat",
+          "stage_type": "hilly",
           "description": ""
         }
       ],
@@ -5738,7 +5845,12 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 157.4,
+          "elevation_m": 2381,
+          "stage_type": "hilly",
+          "start_town": "Luxembourg",
+          "finish_town": "Luxembourg"
         },
         {
           "num": 2,
@@ -5747,7 +5859,12 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 166.8,
+          "elevation_m": 2298,
+          "stage_type": "hilly",
+          "start_town": "Differdange",
+          "finish_town": "Junglinster"
         },
         {
           "num": 3,
@@ -5756,7 +5873,12 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 187.3,
+          "elevation_m": 3272,
+          "stage_type": "mountain",
+          "start_town": "Wiltz",
+          "finish_town": "Diekirch"
         },
         {
           "num": 4,
@@ -5765,7 +5887,12 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 20.4,
+          "elevation_m": 355,
+          "stage_type": "ITT",
+          "start_town": "Ettelbruck",
+          "finish_town": "Ettelbruck"
         },
         {
           "num": 5,
@@ -5774,7 +5901,12 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 177.6,
+          "elevation_m": 3064,
+          "stage_type": "mountain",
+          "start_town": "Mersch",
+          "finish_town": "Luxembourg"
         }
       ],
       "startlist": []
@@ -5902,7 +6034,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 193.0,
+          "stage_type": "flat",
+          "start_town": "Shah Alam",
+          "finish_town": "Kampar"
         },
         {
           "num": 2,
@@ -5911,7 +6047,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 145.6,
+          "stage_type": "flat",
+          "start_town": "Taiping",
+          "finish_town": "Gunung Jerai"
         },
         {
           "num": 3,
@@ -5920,7 +6060,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 189.9,
+          "stage_type": "flat",
+          "start_town": "Sungai Petani",
+          "finish_town": "Kuala Kangsar"
         },
         {
           "num": 4,
@@ -5929,7 +6073,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 140.1,
+          "stage_type": "flat",
+          "start_town": "Tambun",
+          "finish_town": "Cameron Highlands"
         },
         {
           "num": 5,
@@ -5938,7 +6086,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 125.7,
+          "stage_type": "flat",
+          "start_town": "Tapah",
+          "finish_town": "Genting Highlands"
         },
         {
           "num": 6,
@@ -5947,7 +6099,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 121.3,
+          "stage_type": "flat",
+          "start_town": "Pandan Indah",
+          "finish_town": "Rembau"
         },
         {
           "num": 7,
@@ -5956,7 +6112,11 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "distance_km": 159.1,
+          "stage_type": "flat",
+          "start_town": "Melaka",
+          "finish_town": "Batu Pahat"
         }
       ],
       "startlist": []
@@ -120680,133 +120840,133 @@
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 35
+      "days_away": 34
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 59
+      "days_away": 58
     },
     {
       "name": "Gran Piemonte",
       "cf_slug": "gran-piemonte-2026",
       "start_date": "2026-10-08",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Il Lombardia",
       "cf_slug": "il-lombardia-2026",
       "start_date": "2026-10-10",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 67
+      "days_away": 66
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 72
+      "days_away": 71
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 72
+      "days_away": 71
     }
   ]
 }

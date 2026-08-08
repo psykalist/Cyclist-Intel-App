@@ -7,6 +7,17 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v132 — 2026-08-07 — Max route detail for EVERY race: extend backfill to one-day races + whole calendar
+"I want max data for all races from now on, length, terrain etc."
+
+- **Builds on v131.** v131 backfilled per-stage length/terrain for upcoming/live multi-stage races within 60 days. This extends that to give every race the fullest route detail the source offers, on every scheduled run.
+- **One-day races now get length + terrain.** Classics (Milano-Sanremo, Il Lombardia, San Sebastian, etc.) previously had **no** distance/elevation/terrain at all — not even after finishing (`scrape_stage()` only ever pulled results + a profile image, never the route fields). `scrape_stage_details()` gained an optional `url=` param so it can read the race **info page** (`/race/{slug}`) — whose meta description carries the same "Nkm <type> race from X to Y" string — since one-day races have no `/stages/stage-n` page. The backfill now fetches race-level `distance_km` / `elevation_m` / `stage_type` / start+finish towns / description / height-profile img for one-day races in **all** buckets (upcoming, live, recent).
+- **Whole-calendar coverage.** Multi-stage backfill window widened 60 → **240 days** (effectively the entire forward calendar), and now also runs over **recent** (finished) multi-stage races so their stages backfill too. Forward buckets are processed first.
+- **"Terrain" = `stage_type`** (flat / hilly / mountain / ITT, from `classify_stage_type()`) **+ `elevation_m`**, alongside distance, towns, description and the profile image — the maximum the source publishes.
+- **Politeness bounds (so "everything, every run" can't hammer CyclingFlash).** Still fully **idempotent** — only records missing `distance_km` are fetched, so a captured route is never re-fetched and steady state is a handful of newly-published stages per run. Two guards on any one run: `DETAIL_LOOKAHEAD_DAYS = 240` skips absurd far-future/next-season races, and a hard `DETAIL_FETCH_BUDGET = 50` fetches/run caps a big one-time backlog so it trickles in over a few runs (forward races first) instead of a multi-minute run. Finished races bypass the window (they publish once, get captured once).
+- **Scope / safety.** Scraper-source only (`scraper.py`); no hand-edit of CI-owned `data.json` — it repopulates on the next scheduled `--results-only` runs. Race counts unchanged, so the post-write truncation guard is unaffected.
+- Version v131→v132. `scraper.py` compiles; `index.html` brace balance 0.
+
 ## v131 — 2026-08-07 — Results-only scraper now backfills stage length + terrain for upcoming races
 "On upcoming races there is a lack of detail about the length of stage and terrain. Can you find this and add to the race calendar."
 

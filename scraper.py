@@ -671,9 +671,16 @@ def scrape_classification(slug, stage_num, cls_type):
 
 # ── Stage detail scraping ──────────────────────────────────────────────────────
 
-def scrape_stage_details(slug, stage_num, year=None):
-    """Fetch /race/{slug}/stages/stage-{n} and return a details dict, or None."""
-    url = f"{BASE_URL}/race/{slug}/stages/stage-{stage_num}"
+def scrape_stage_details(slug, stage_num, year=None, url=None):
+    """Return a route-detail dict (distance/elevation/terrain/towns), or None.
+
+    Multi-stage races have a per-stage route page at
+    /race/{slug}/stages/stage-{n}. One-day races have no per-stage page -- pass
+    url=f"{BASE_URL}/race/{slug}" (the race info page), whose meta description
+    carries the same "Nkm <type> race from X to Y" string this parser reads.
+    """
+    if url is None:
+        url = f"{BASE_URL}/race/{slug}/stages/stage-{stage_num}"
     html = fetch(url)
     if not html:
         return None
@@ -1639,66 +1646,125 @@ def main_results_only():
             if race.get(tk) and _result_incomplete(race.get(tk))
         ]
 
-    # ── Backfill stage route detail (length / terrain) for upcoming races ────
-    # Only the twice-daily results-only job runs on a schedule, but until now it
-    # fetched *results* only -- per-stage distance, elevation and terrain type
-    # were populated solely by the manual full scrape (scrape_stage_details in
-    # main()). Any race added to the calendar after the last full run therefore
-    # showed blank length/terrain on its upcoming stage cards indefinitely
-    # (only the Vuelta and Arctic Race had detail; Pologne, Renewi, Burgos, etc.
-    # were blank). Backfill it here so every upcoming/live multi-stage race
-    # fills in on the next scheduled run without needing a manual full scrape.
+    # ── Backfill route detail (length / terrain) for EVERY race missing it ───
+    # Only the twice-daily results-only job runs on a schedule, but it used to
+    # fetch *results* only -- distance, elevation and terrain type were
+    # populated solely by the manual full scrape (scrape_stage_details in
+    # main()), and never for one-day races at all. So most upcoming stage races
+    # and every Classic showed blank length/terrain. This pass backfills the
+    # full route detail the source offers, for all buckets, on every run:
+    #   - multi-stage upcoming/live/recent : per-stage detail (/stages/stage-n)
+    #   - one-day upcoming/live/recent     : race-level detail (race info page)
+    # "terrain" = stage_type (flat / hilly / mountain / ITT) + elevation_m; plus
+    # distance_km, start/finish towns, description and the height-profile image.
     #
-    # Idempotent + cheap: only stages still missing distance_km are fetched, so
-    # once a stage's route is captured it is never re-fetched. Far-future races
-    # whose route CyclingFlash hasn't published yet return None and are simply
-    # retried next run. Bounded to races starting within DETAIL_LOOKAHEAD_DAYS
-    # so one run never probes every stage of the whole season.
-    DETAIL_LOOKAHEAD_DAYS = 60
-    details_added = 0
-    for race in d.get("upcoming", []) + d.get("live", []):
-        total = race.get("total_stages", 0) or 0
-        if total <= 1:
-            continue  # one-day races carry no per-stage route breakdown
+    # Idempotent: only records still missing distance_km are fetched, so once a
+    # route is captured it is never re-fetched -- steady state is cheap. Routes
+    # CyclingFlash hasn't published yet return None and are retried next run.
+    # Two bounds keep any single run polite: a DETAIL_LOOKAHEAD_DAYS window on
+    # forward races (finished races are always allowed -- they publish once and
+    # get captured once) and a hard DETAIL_FETCH_BUDGET on fetches per run, so a
+    # big one-time backlog trickles in over a few runs, forward races first.
+    DETAIL_LOOKAHEAD_DAYS = 240
+    DETAIL_FETCH_BUDGET   = 50
+    details_added   = 0
+    detail_fetches  = [0]   # list so the nested helper can mutate it
+
+    def _detail_window_ok(race, allow_past):
+        if allow_past:
+            return True
         sd = race.get("start_date")
-        if sd:
-            try:
-                if (date.fromisoformat(sd) - today).days > DETAIL_LOOKAHEAD_DAYS:
+        if not sd:
+            return True
+        try:
+            return (date.fromisoformat(sd) - today).days <= DETAIL_LOOKAHEAD_DAYS
+        except ValueError:
+            return True
+
+    def _fetch_detail(slug, n, year, url=None):
+        """Budgeted wrapper -> details dict or None (None also when out of budget)."""
+        if detail_fetches[0] >= DETAIL_FETCH_BUDGET:
+            return None
+        detail_fetches[0] += 1
+        det = scrape_stage_details(slug, n, year=year, url=url)
+        time.sleep(DELAY)
+        return det
+
+    ROUTE_KEYS = ("distance_km", "elevation_m", "stage_type", "start_town",
+                  "finish_town", "description", "height_profile_img")
+
+    def _merge_route(target, details):
+        # Never clobber a height-profile image already captured from the richer
+        # result page; only write route fields that actually carry a value.
+        for k in ROUTE_KEYS:
+            v = details.get(k)
+            if v in (None, ""):
+                continue
+            if k == "height_profile_img" and target.get("height_profile_img"):
+                continue
+            target[k] = v
+
+    # 1-2. Multi-stage races (per-stage detail). Forward buckets first so they
+    #      get budget priority; recent last for historical completeness.
+    for allow_past, bucket in ((False, "upcoming"), (False, "live"), (True, "recent")):
+        for race in d.get(bucket, []):
+            if detail_fetches[0] >= DETAIL_FETCH_BUDGET:
+                break
+            total = race.get("total_stages", 0) or 0
+            if total <= 1 or not _detail_window_ok(race, allow_past):
+                continue
+            slug   = race.get("cf_slug") or f"{race.get('slug','')}-{race.get('year','2026')}"
+            year   = race.get("year", "")
+            stages = race.get("stages") or []
+            by_num = {s.get("num"): s for s in stages}
+            missing = [n for n in range(1, total + 1)
+                       if not (by_num.get(n) or {}).get("distance_km")]
+            if not missing:
+                continue
+            for n in missing:
+                details = _fetch_detail(slug, n, year)
+                if not details or not details.get("distance_km"):
                     continue
-            except ValueError:
-                pass
-        slug   = race.get("cf_slug") or f"{race.get('slug','')}-{race.get('year','2026')}"
-        year   = race.get("year", "")
-        stages = race.get("stages") or []
-        by_num = {s.get("num"): s for s in stages}
-        missing = [n for n in range(1, total + 1)
-                   if not (by_num.get(n) or {}).get("distance_km")]
-        if not missing:
-            continue
-        print(f"\n  [detail] {race.get('name', slug)}: fetching route for stages {missing}", flush=True)
-        for n in missing:
-            details = scrape_stage_details(slug, n, year=year)
-            time.sleep(DELAY)
+                stage_obj = by_num.get(n)
+                if stage_obj is None:
+                    stage_obj = {"num": n, "label": f"Stage {n}",
+                                 "result_url": f"/race/{slug}/result/stage-{n}",
+                                 "winner": None, "winner_flag": "",
+                                 "winner_nat": "", "top10": []}
+                    stages.append(stage_obj)
+                    by_num[n] = stage_obj
+                _merge_route(stage_obj, details)
+                details_added += 1
+                print(f"  [detail] {race.get('name', slug)} stage {n}: "
+                      f"{details.get('distance_km','?')}km "
+                      f"{details.get('stage_type','?')}", flush=True)
+            race["stages"] = sorted(stages, key=lambda s: s.get("num", 0))
+
+    # 3. One-day races (race-level detail from the race info page). Recent ones
+    #    are already published, so they're captured once and never re-fetched.
+    for allow_past, bucket in ((False, "upcoming"), (False, "live"), (True, "recent")):
+        for race in d.get(bucket, []):
+            if detail_fetches[0] >= DETAIL_FETCH_BUDGET:
+                break
+            if (race.get("total_stages") or 1) != 1 or race.get("distance_km"):
+                continue
+            if not _detail_window_ok(race, allow_past):
+                continue
+            slug = race.get("cf_slug") or f"{race.get('slug','')}-{race.get('year','2026')}"
+            details = _fetch_detail(slug, 1, race.get("year", ""),
+                                    url=f"{BASE_URL}/race/{slug}")
             if not details or not details.get("distance_km"):
                 continue
-            stage_obj = by_num.get(n)
-            if stage_obj is None:
-                stage_obj = {"num": n, "label": f"Stage {n}",
-                             "result_url": f"/race/{slug}/result/stage-{n}",
-                             "winner": None, "winner_flag": "", "winner_nat": "", "top10": []}
-                stages.append(stage_obj)
-                by_num[n] = stage_obj
-            # Never clobber a height-profile image already captured from the
-            # richer result page with the (sometimes different-crop) stages one.
-            if stage_obj.get("height_profile_img"):
-                details.pop("height_profile_img", None)
-            stage_obj.update(details)
+            _merge_route(race, details)
             details_added += 1
-            print(f"        Stage {n}: {details.get('distance_km','?')}km "
+            print(f"  [detail] {race.get('name', slug)} (one-day): "
+                  f"{details.get('distance_km','?')}km "
                   f"{details.get('stage_type','?')}", flush=True)
-        race["stages"] = sorted(stages, key=lambda s: s.get("num", 0))
-    if details_added:
-        print(f"\n  [detail] backfilled route detail on {details_added} stage(s)", flush=True)
+
+    if details_added or detail_fetches[0]:
+        note = " (budget reached — remainder next run)" if detail_fetches[0] >= DETAIL_FETCH_BUDGET else ""
+        print(f"\n  [detail] backfilled route detail on {details_added} record(s) "
+              f"from {detail_fetches[0]} fetch(es){note}", flush=True)
 
     # ── Write structured scrape log for health-check consumption ─────────────
     # Plain stdout prints above only live in the (sign-in-required) Actions

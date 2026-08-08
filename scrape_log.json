@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-08 13:20 UTC",
-  "run_at_iso": "2026-08-08T11:23:30.186331+00:00",
+  "run_at": "2026-08-08 19:21 UTC",
+  "run_at_iso": "2026-08-08T17:24:46.325100+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,10 @@
       "name": "Tour de Pologne",
       "total_stages": 6,
       "stages_completed_before": 5,
-      "stages_completed_after": 5,
-      "new_stages_found": 0,
+      "stages_completed_after": 6,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 6,
-        "url": "https://cyclingflash.com/race/tour-de-pologne-2026/result/stage-6",
-        "fetch_ok": true,
-        "response_bytes": 242255,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-08-07 19:40 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 15.7,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
@@ -32,21 +21,10 @@
       "name": "Vuelta a Burgos",
       "total_stages": 5,
       "stages_completed_before": 4,
-      "stages_completed_after": 4,
-      "new_stages_found": 0,
+      "stages_completed_after": 5,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 5,
-        "url": "https://cyclingflash.com/race/vuelta-a-burgos-2026/result/stage-5",
-        "fetch_ok": true,
-        "response_bytes": 231923,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-08-07 19:40 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 15.7,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

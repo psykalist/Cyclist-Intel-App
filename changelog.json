@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-08-08T11:24:41.604645+00:00",
+  "generated_at": "2026-08-08T17:26:01.316570+00:00",
   "entries": [
+    {
+      "id": "6b23fcc1bd74",
+      "timestamp": "2026-08-08T17:26:01.308541+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 6 Tour de Pologne: 🇫🇷 Louis Barré wins"
+    },
+    {
+      "id": "6ad89ae52502",
+      "timestamp": "2026-08-08T17:26:01.308541+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour de Pologne GC: 🇮🇹 Christian Scaroni leads"
+    },
+    {
+      "id": "5834cb944671",
+      "timestamp": "2026-08-08T17:26:01.308541+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour de Pologne KOM: 🇮🇹 Walter Calzoni leads"
+    },
+    {
+      "id": "d3ea623d6e78",
+      "timestamp": "2026-08-08T17:26:01.308541+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Vuelta a Burgos: 🇮🇹 Giulio Pellizzari wins"
+    },
+    {
+      "id": "159895a5865f",
+      "timestamp": "2026-08-08T17:26:01.308541+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a Burgos KOM: 🇬🇧 Oscar Onley leads"
+    },
     {
       "id": "40d54b81d3af",
       "timestamp": "2026-08-07T17:42:04.033649+00:00",
@@ -595,13 +630,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Vuelta a Burgos startlist: Afonso Eulálio, Attila Valter, Carlos Rodríguez (+8 more) added"
-    },
-    {
-      "id": "6ecd14f71a8d",
-      "timestamp": "2026-07-25T12:00:09.828442+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "CRO Race startlist published (1 riders)"
     }
   ]
 }

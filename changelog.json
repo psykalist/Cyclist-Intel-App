@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T11:25:17.601972+00:00",
+  "generated_at": "2026-08-09T17:24:36.102037+00:00",
   "entries": [
     {
       "id": "d38334b3cd48",
@@ -581,20 +581,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Tour de Pologne startlist: Alec Segaert added"
-    },
-    {
-      "id": "96279473a0d6",
-      "timestamp": "2026-07-26T11:58:02.138155+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "PostNord Tour of Denmark startlist: AERT Wout Van, ANDERSEN Søren Kragh, Aidan Buttigieg (+94 more) added"
-    },
-    {
-      "id": "30c864e71cb9",
-      "timestamp": "2026-07-26T11:58:02.138155+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a Burgos startlist: Edoardo Zamperini added"
     }
   ]
 }

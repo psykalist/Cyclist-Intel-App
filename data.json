@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-10T17:44:31.930492+00:00",
-  "scraped_at_human": "10 Aug 2026 17:44 UTC",
+  "scraped_at": "2026-08-11T11:39:45.855248+00:00",
+  "scraped_at_human": "11 Aug 2026 11:39 UTC",
   "live": [],
   "upcoming": [
     {
@@ -999,7 +999,110 @@
       "end_date": "2026-10-10",
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
-      "startlist": []
+      "startlist": [
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Antonio Tiberi",
+          "slug": "antonio-tiberi",
+          "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Davide Piganzoli",
+          "slug": "davide-piganzoli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Bruno Armirail",
+          "slug": "bruno-armirail",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Louis Barré",
+          "slug": "louis-barre",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Matteo Jorgenson",
+          "slug": "matteo-jorgenson",
+          "nat": "us",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Domen Novak",
+          "slug": "domen-novak",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Mathys Rondel",
+          "slug": "mathys-rondel",
+          "nat": "fr",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        }
+      ]
     },
     {
       "slug": "tour-of-guangxi",
@@ -1157,9 +1260,9 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Gianmarco Garofoli",
-          "slug": "gianmarco-garofoli",
-          "nat": "it",
+          "name": "Gauthier Servranckx",
+          "slug": "gauthier-servranckx",
+          "nat": "be",
           "team": "Soudal Quick-Step (WT)"
         },
         {
@@ -1990,8 +2093,44 @@
       ],
       "startlist": [
         {
-          "name": "Xabier Berasategi",
-          "slug": "xabier-berasategi-garmendia",
+          "name": "Iker Villar",
+          "slug": "iker-villar",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Joel Nicolau",
+          "slug": "joel-nicolau",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Sebastian Berwick",
+          "slug": "sebastian-berwick",
+          "nat": "au",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Alex Díaz",
+          "slug": "alex-diaz-alvarez",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Joseba López",
+          "slug": "joseba-lopez-cuesta",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Marc Rubirola",
+          "slug": "marc-rubirola",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Jon Agirre",
+          "slug": "jon-agirre",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
@@ -2002,21 +2141,21 @@
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Jon Agirre",
-          "slug": "jon-agirre",
+          "name": "Xabier Berasategi",
+          "slug": "xabier-berasategi-garmendia",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "EETVELT Lennert Van",
-          "slug": "lennert-van-eetvelt",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
         },
         {
           "name": "Mathieu Kockelmann",
           "slug": "mathieu-kockelmann",
           "nat": "lu",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "EETVELT Lennert Van",
+          "slug": "lennert-van-eetvelt",
+          "nat": "be",
           "team": "Lotto Intermarché (WT)"
         },
         {
@@ -2032,9 +2171,27 @@
           "team": "NSN Cycling Team (WT)"
         },
         {
-          "name": "Alessandro Pinarello",
-          "slug": "alessandro-pinarello",
-          "nat": "it",
+          "name": "Oscar Amey",
+          "slug": "oscar-amey",
+          "nat": "gb",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Dion Smith",
+          "slug": "dion-smith",
+          "nat": "nz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Rotem Tene",
+          "slug": "rotem-tene",
+          "nat": "il",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Kiaan Watts",
+          "slug": "kiaan-watts",
+          "nat": "nz",
           "team": "NSN Cycling Team (WT)"
         },
         {
@@ -2050,21 +2207,51 @@
           "team": "Team Drali - Repsol (CT)"
         },
         {
+          "name": "Victor Vercouillie",
+          "slug": "victor-vercouillie",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Michiel Lambrecht",
+          "slug": "michiel-lambrecht",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Elias Maris",
+          "slug": "elias-maris",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Artuur Torney",
+          "slug": "artuur-torney",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Ward Vanhoof",
+          "slug": "ward-vanhoof",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
           "name": "HEMELEN Vincent Van",
           "slug": "vincent-van-hemelen",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
-          "name": "Anders Foldager",
-          "slug": "anders-foldager",
-          "nat": "dk",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
           "name": "Felix Engelhardt",
           "slug": "felix-engelhardt",
           "nat": "de",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Anders Foldager",
+          "slug": "anders-foldager",
+          "nat": "dk",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -2086,26 +2273,26 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Ludovico Crescioli",
-          "slug": "ludovico-crescioli",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
           "name": "Andrea Mifsud",
           "slug": "andrea-mifsud",
           "nat": "mt",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Samuel Leroux",
-          "slug": "samuel-leroux",
-          "nat": "fr",
-          "team": "TotalEnergies (PRT)"
+          "name": "Ludovico Crescioli",
+          "slug": "ludovico-crescioli",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
         },
         {
           "name": "Jason Tesson",
           "slug": "jason-tesson",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Samuel Leroux",
+          "slug": "samuel-leroux",
           "nat": "fr",
           "team": "TotalEnergies (PRT)"
         },
@@ -2122,9 +2309,9 @@
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
-          "name": "Wout Poels",
-          "slug": "wout-poels",
-          "nat": "nl",
+          "name": "Cedrik Bakke Christophersen",
+          "slug": "cedrik-bakke-christophersen",
+          "nat": "no",
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
@@ -2134,16 +2321,10 @@
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
-          "name": "Cedrik Bakke Christophersen",
-          "slug": "cedrik-bakke-christophersen",
-          "nat": "no",
+          "name": "Wout Poels",
+          "slug": "wout-poels",
+          "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
-        },
-        {
-          "name": "Henrik Pedersen",
-          "slug": "henrik-pedersen",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Erlend Blikra",
@@ -2152,14 +2333,20 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Martin Tjøtta",
-          "slug": "martin-tjotta",
-          "nat": "no",
+          "name": "Henrik Pedersen",
+          "slug": "henrik-pedersen",
+          "nat": "dk",
           "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Johannes Kulset",
           "slug": "johannes-kulset",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Martin Tjøtta",
+          "slug": "martin-tjotta",
           "nat": "no",
           "team": "Uno-X Mobility (WT)"
         },
@@ -121765,127 +121952,121 @@
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 6
+      "days_away": 5
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 31
+      "days_away": 30
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 56
-    },
-    {
-      "name": "Il Lombardia",
-      "cf_slug": "il-lombardia-2026",
-      "start_date": "2026-10-10",
-      "days_away": 61
+      "days_away": 55
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 62
+      "days_away": 61
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 65
+      "days_away": 64
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 69
+      "days_away": 68
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 69
+      "days_away": 68
     }
   ]
 }

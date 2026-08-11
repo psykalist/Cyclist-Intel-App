@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-11T11:39:45.855248+00:00",
-  "scraped_at_human": "11 Aug 2026 11:39 UTC",
+  "scraped_at": "2026-08-11T17:50:46.762174+00:00",
+  "scraped_at_human": "11 Aug 2026 17:50 UTC",
   "live": [],
   "upcoming": [
     {
@@ -130,9 +130,9 @@
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Olav Kooij",
-          "slug": "olav-kooij",
-          "nat": "nl",
+          "name": "Oliver Naesen",
+          "slug": "oliver-naesen",
+          "nat": "be",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -142,9 +142,9 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Oliver Naesen",
-          "slug": "oliver-naesen",
-          "nat": "be",
+          "name": "Olav Kooij",
+          "slug": "olav-kooij",
+          "nat": "nl",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -166,21 +166,15 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Paul Magnier",
-          "slug": "paul-magnier",
-          "nat": "fr",
-          "team": "Soudal Quick-Step (WT)"
+          "name": "Luka Mezgec",
+          "slug": "luka-mezgec",
+          "nat": "si",
+          "team": "Team Jayco AlUla (WT)"
         },
         {
           "name": "BONDT Dries De",
           "slug": "dries-de-bondt",
           "nat": "be",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Luka Mezgec",
-          "slug": "luka-mezgec",
-          "nat": "si",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -196,8 +190,8 @@
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
-          "name": "Dylan Groenewegen",
-          "slug": "dylan-groenewegen",
+          "name": "VRIES Hartthijs De",
+          "slug": "hartthijs-de-vries",
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
         },
@@ -208,8 +202,8 @@
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
-          "name": "VRIES Hartthijs De",
-          "slug": "hartthijs-de-vries",
+          "name": "Dylan Groenewegen",
+          "slug": "dylan-groenewegen",
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
         }
@@ -1861,7 +1855,7 @@
         },
         {
           "name": "Milan Kadlec",
-          "slug": "milan-kadlec",
+          "slug": "milan-kadlec1",
           "nat": "cz",
           "team": "Kasper crypto4me (CT)"
         },
@@ -2165,12 +2159,6 @@
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
-          "name": "Ethan Vernon",
-          "slug": "ethan-vernon",
-          "nat": "gb",
-          "team": "NSN Cycling Team (WT)"
-        },
-        {
           "name": "Oscar Amey",
           "slug": "oscar-amey",
           "nat": "gb",
@@ -2195,6 +2183,18 @@
           "team": "NSN Cycling Team (WT)"
         },
         {
+          "name": "Alessandro Pinarello",
+          "slug": "alessandro-pinarello",
+          "nat": "it",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Ethan Vernon",
+          "slug": "ethan-vernon",
+          "nat": "gb",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
           "name": "Fabio Christen",
           "slug": "fabio-christen",
           "nat": "ch",
@@ -2205,12 +2205,6 @@
           "slug": "tobias-risan-nakken",
           "nat": "no",
           "team": "Team Drali - Repsol (CT)"
-        },
-        {
-          "name": "Victor Vercouillie",
-          "slug": "victor-vercouillie",
-          "nat": "be",
-          "team": "Team Flanders - Baloise (PRT)"
         },
         {
           "name": "Michiel Lambrecht",
@@ -2233,6 +2227,12 @@
         {
           "name": "Ward Vanhoof",
           "slug": "ward-vanhoof",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Victor Vercouillie",
+          "slug": "victor-vercouillie",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
@@ -2351,15 +2351,15 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Guillermo Thomas Silva",
-          "slug": "guillermo-thomas-silva-coussan",
-          "nat": "uy",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
           "name": "Nikiforos Arvanitou",
           "slug": "nikiforos-arvanitou",
           "nat": "gr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Guillermo Thomas Silva",
+          "slug": "guillermo-thomas-silva-coussan",
+          "nat": "uy",
           "team": "XDS Astana Team (WT)"
         }
       ]

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-11T17:50:46.762174+00:00",
-  "scraped_at_human": "11 Aug 2026 17:50 UTC",
+  "scraped_at": "2026-08-12T11:41:27.839029+00:00",
+  "scraped_at_human": "12 Aug 2026 11:41 UTC",
   "live": [],
   "upcoming": [
     {
@@ -118,21 +118,27 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
-          "name": "Matej Mohorič",
-          "slug": "matej-mohoric",
-          "nat": "si",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
           "name": "Alessandro Borgo",
           "slug": "alessandro-borgo",
           "nat": "it",
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Oliver Naesen",
-          "slug": "oliver-naesen",
+          "name": "Alec Segaert",
+          "slug": "alec-segaert",
           "nat": "be",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Matej Mohorič",
+          "slug": "matej-mohoric",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Olav Kooij",
+          "slug": "olav-kooij",
+          "nat": "nl",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -142,9 +148,9 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Olav Kooij",
-          "slug": "olav-kooij",
-          "nat": "nl",
+          "name": "Oliver Naesen",
+          "slug": "oliver-naesen",
+          "nat": "be",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -166,15 +172,15 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Luka Mezgec",
-          "slug": "luka-mezgec",
-          "nat": "si",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
           "name": "BONDT Dries De",
           "slug": "dries-de-bondt",
           "nat": "be",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Luka Mezgec",
+          "slug": "luka-mezgec",
+          "nat": "si",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -190,8 +196,8 @@
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
-          "name": "VRIES Hartthijs De",
-          "slug": "hartthijs-de-vries",
+          "name": "Dylan Groenewegen",
+          "slug": "dylan-groenewegen",
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
         },
@@ -202,8 +208,8 @@
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
-          "name": "Dylan Groenewegen",
-          "slug": "dylan-groenewegen",
+          "name": "VRIES Hartthijs De",
+          "slug": "hartthijs-de-vries",
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
         }
@@ -603,10 +609,40 @@
       ],
       "startlist": [
         {
+          "name": "Gal Glivar",
+          "slug": "gal-glivar",
+          "nat": "si",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Luca Vergallito",
+          "slug": "luca-vergallito",
+          "nat": "it",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Oscar Riesebeek",
+          "slug": "oscar-riesebeek",
+          "nat": "nl",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
           "name": "Hugo Houle",
           "slug": "hugo-houle",
           "nat": "ca",
           "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Santiago Buitrago",
+          "slug": "santiago-buitrago-sanchez",
+          "nat": "co",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Roman Ermakov",
+          "slug": "roman-ermakov",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
         },
         {
           "name": "Pau Miquel",
@@ -615,9 +651,9 @@
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Matthew Riccitello",
-          "slug": "matthew-riccitello",
-          "nat": "us",
+          "name": "Léo Bisiaux",
+          "slug": "leo-bisiaux",
+          "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -627,10 +663,16 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Léo Bisiaux",
-          "slug": "leo-bisiaux",
-          "nat": "fr",
+          "name": "Matthew Riccitello",
+          "slug": "matthew-riccitello",
+          "nat": "us",
           "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Richard Carapaz",
+          "slug": "richard-carapaz",
+          "nat": "ec",
+          "team": "EF Education - EasyPost (WT)"
         },
         {
           "name": "DEN BERG Marijn Van",
@@ -639,10 +681,46 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
+          "name": "Clément Berthet",
+          "slug": "clement-berthet",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "David Gaudu",
+          "slug": "david-gaudu",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Rudy Molard",
+          "slug": "rudy-molard",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
           "name": "Guillaume Martin",
           "slug": "guillaume-martin",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "slug": "carlos-rodriguez-cano",
+          "nat": "es",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "PLUS Laurens De",
+          "slug": "laurens-de-plus",
+          "nat": "be",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Oscar Onley",
+          "slug": "oscar-onley",
+          "nat": "gb",
+          "team": "Netcompany INEOS (WT)"
         },
         {
           "name": "Axel Laurance",
@@ -651,8 +729,8 @@
           "team": "Netcompany INEOS (WT)"
         },
         {
-          "name": "NORSGAARD Mathias Sunekær",
-          "slug": "mathias-norsgaard",
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
           "nat": "dk",
           "team": "Lidl - Trek (WT)"
         },
@@ -669,21 +747,45 @@
           "team": "Lidl - Trek (WT)"
         },
         {
+          "name": "NORSGAARD Mathias Sunekær",
+          "slug": "mathias-norsgaard",
+          "nat": "dk",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
           "name": "Jarno Widar",
           "slug": "jarno-widar",
           "nat": "be",
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "Nairo Quintana",
-          "slug": "nairo-quintana",
-          "nat": "co",
+          "name": "Pablo Castrillo",
+          "slug": "pablo-castrillo-zapater",
+          "nat": "es",
           "team": "Movistar Team (WT)"
         },
         {
-          "name": "Einer Rubio",
-          "slug": "einer-rubio",
-          "nat": "co",
+          "name": "PIERNA Raúl García",
+          "slug": "raul-garcia-pierna",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Cian Uijtdebroeks",
+          "slug": "cian-uijtdebroeks",
+          "nat": "be",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Iván Romeo",
+          "slug": "ivan-romeo",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Jorge Arcas",
+          "slug": "jorge-arcas",
+          "nat": "es",
           "team": "Movistar Team (WT)"
         },
         {
@@ -693,10 +795,34 @@
           "team": "Movistar Team (WT)"
         },
         {
+          "name": "Einer Rubio",
+          "slug": "einer-rubio",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Nairo Quintana",
+          "slug": "nairo-quintana",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
           "name": "Jan Hirt",
           "slug": "jan-hirt",
           "nat": "cz",
           "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Alexey Lutsenko",
+          "slug": "aleksey-lutsenko",
+          "nat": "kz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Alexander Hajek",
+          "slug": "alexander-hajek",
+          "nat": "at",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
           "name": "Luke Tuckwell",
@@ -705,9 +831,9 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Primož Roglič",
-          "slug": "primoz-roglic",
-          "nat": "si",
+          "name": "Laurence Pithie",
+          "slug": "laurence-pithie",
+          "nat": "nz",
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
@@ -717,14 +843,20 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Junior Lecerf",
-          "slug": "junior-lecerf",
-          "nat": "be",
+          "name": "Primož Roglič",
+          "slug": "primoz-roglic",
+          "nat": "si",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Mikel Landa",
+          "slug": "mikel-landa",
+          "nat": "es",
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Filippo Zana",
-          "slug": "filippo-zana",
+          "name": "Alberto Dainese",
+          "slug": "alberto-dainese",
           "nat": "it",
           "team": "Soudal Quick-Step (WT)"
         },
@@ -735,9 +867,15 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Alberto Dainese",
-          "slug": "alberto-dainese",
+          "name": "Filippo Zana",
+          "slug": "filippo-zana",
           "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Valentin Paret-Peintre",
+          "slug": "valentin-paret-peintre",
+          "nat": "fr",
           "team": "Soudal Quick-Step (WT)"
         },
         {
@@ -747,22 +885,16 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Paul Double",
-          "slug": "paul-double",
-          "nat": "gb",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
           "name": "Luke Plapp",
           "slug": "luke-plapp",
           "nat": "au",
           "team": "Team Jayco AlUla (WT)"
         },
         {
-          "name": "Juan Guillermo Martinez",
-          "slug": "guillermo-juan-martinez",
-          "nat": "co",
-          "team": "Team Picnic PostNL (WT)"
+          "name": "Paul Double",
+          "slug": "paul-double",
+          "nat": "gb",
+          "team": "Team Jayco AlUla (WT)"
         },
         {
           "name": "Max Poole",
@@ -771,32 +903,14 @@
           "team": "Team Picnic PostNL (WT)"
         },
         {
-          "name": "Menno Huising",
-          "slug": "menno-huising",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
+          "name": "Juan Guillermo Martinez",
+          "slug": "guillermo-juan-martinez",
+          "nat": "co",
+          "team": "Team Picnic PostNL (WT)"
         },
         {
-          "name": "Filippo Fiorelli",
-          "slug": "filippo-fiorelli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Tijmen Graat",
-          "slug": "tijmen-graat",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "AERT Wout Van",
-          "slug": "wout-van-aert",
-          "nat": "be",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Matthew Brennan",
-          "slug": "matthew-brennan",
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
           "nat": "gb",
           "team": "Team Visma | Lease a Bike (WT)"
         },
@@ -807,9 +921,27 @@
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
-          "name": "Ben Tulett",
-          "slug": "ben-tulett",
+          "name": "Matthew Brennan",
+          "slug": "matthew-brennan",
           "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "AERT Wout Van",
+          "slug": "wout-van-aert",
+          "nat": "be",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Tijmen Graat",
+          "slug": "tijmen-graat",
+          "nat": "nl",
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
@@ -819,15 +951,39 @@
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
           "name": "João Almeida",
           "slug": "joao-almeida",
           "nat": "pt",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Marc Soler",
-          "slug": "marc-soler",
+          "name": "Jay Vine",
+          "slug": "jay-vine",
+          "nat": "au",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Pavel Sivakov",
+          "slug": "pavel-sivakov",
+          "nat": "fr",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Pablo Torres",
+          "slug": "pablo-torres-arias",
           "nat": "es",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Kevin Vermaerke",
+          "slug": "kevin-vermaerke",
+          "nat": "us",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -843,9 +999,15 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
+          "name": "Andreas Leknessund",
+          "slug": "andreas-leknessund",
           "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Andreas Kron",
+          "slug": "andreas-kron",
+          "nat": "dk",
           "team": "Uno-X Mobility (WT)"
         },
         {
@@ -855,27 +1017,21 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Henok Mulubrhan",
-          "slug": "henok-mulubrhan",
-          "nat": "er",
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Lorenzo Fortunato",
+          "slug": "lorenzo-fortunato",
+          "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Harold Tejada",
-          "slug": "harold-tejada",
-          "nat": "co",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Harold Martín López",
-          "slug": "harold-martin-lopez",
-          "nat": "ec",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Clément Champoussin",
-          "slug": "clement-champoussin",
-          "nat": "fr",
+          "name": "Cristián Rodríguez",
+          "slug": "cristian-rodriguez",
+          "nat": "es",
           "team": "XDS Astana Team (WT)"
         },
         {
@@ -885,9 +1041,9 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Nicolas Vinokurov",
-          "slug": "nicolas-vinokurov",
-          "nat": "kz",
+          "name": "Victor Langellotti",
+          "slug": "victor-langellotti",
+          "nat": "mc",
           "team": "XDS Astana Team (WT)"
         },
         {
@@ -897,21 +1053,69 @@
           "team": "XDS Astana Team (WT)"
         },
         {
+          "name": "Clément Champoussin",
+          "slug": "clement-champoussin",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Harold Martín López",
+          "slug": "harold-martin-lopez",
+          "nat": "ec",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Harold Tejada",
+          "slug": "harold-tejada",
+          "nat": "co",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Henok Mulubrhan",
+          "slug": "henok-mulubrhan",
+          "nat": "er",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Stefan Küng",
+          "slug": "stefan-kung",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Marco Brenner",
+          "slug": "marco-brenner",
+          "nat": "de",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Emanuel Buchmann",
+          "slug": "emanuel-buchmann",
+          "nat": "de",
+          "team": "Cofidis (PRT)"
+        },
+        {
           "name": "Bryan Coquard",
           "slug": "bryan-coquard",
           "nat": "fr",
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Milan Vader",
-          "slug": "milan-vader",
-          "nat": "nl",
-          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
-        },
-        {
           "name": "LA CRUZ David De",
           "slug": "david-de-la-cruz",
           "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Walter Calzoni",
+          "slug": "walter-calzoni",
+          "nat": "it",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Milan Vader",
+          "slug": "milan-vader",
+          "nat": "nl",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
@@ -925,6 +1129,12 @@
           "slug": "jose-manuel-diaz-gallego",
           "nat": "es",
           "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Iván Cobo",
+          "slug": "ivan-cobo-cayon",
+          "nat": "es",
+          "team": "Equipo Kern Pharma (PRT)"
         }
       ]
     },
@@ -2123,6 +2333,24 @@
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
         {
+          "name": "Louis Sutton",
+          "slug": "louis-sutton",
+          "nat": "gb",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Nicolás Alustiza",
+          "slug": "nicolas-alustiza",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Paul Hennequin",
+          "slug": "paul-hennequin",
+          "nat": "fr",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
           "name": "Jon Agirre",
           "slug": "jon-agirre",
           "nat": "es",
@@ -2139,6 +2367,18 @@
           "slug": "xabier-berasategi-garmendia",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Lionel Taminiaux",
+          "slug": "lionel-taminiaux",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Felix Ørn-Kristoff",
+          "slug": "felix-orn-kristoff",
+          "nat": "no",
+          "team": "Lotto Intermarché (WT)"
         },
         {
           "name": "Mathieu Kockelmann",
@@ -2207,24 +2447,6 @@
           "team": "Team Drali - Repsol (CT)"
         },
         {
-          "name": "Michiel Lambrecht",
-          "slug": "michiel-lambrecht",
-          "nat": "be",
-          "team": "Team Flanders - Baloise (PRT)"
-        },
-        {
-          "name": "Elias Maris",
-          "slug": "elias-maris",
-          "nat": "be",
-          "team": "Team Flanders - Baloise (PRT)"
-        },
-        {
-          "name": "Artuur Torney",
-          "slug": "artuur-torney",
-          "nat": "be",
-          "team": "Team Flanders - Baloise (PRT)"
-        },
-        {
           "name": "Ward Vanhoof",
           "slug": "ward-vanhoof",
           "nat": "be",
@@ -2237,8 +2459,32 @@
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
+          "name": "Artuur Torney",
+          "slug": "artuur-torney",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Noah Vandenbranden",
+          "slug": "noah-vandenbranden",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
           "name": "HEMELEN Vincent Van",
           "slug": "vincent-van-hemelen",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Michiel Lambrecht",
+          "slug": "michiel-lambrecht",
+          "nat": "be",
+          "team": "Team Flanders - Baloise (PRT)"
+        },
+        {
+          "name": "Elias Maris",
+          "slug": "elias-maris",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
@@ -2255,9 +2501,27 @@
           "team": "Team Jayco AlUla (WT)"
         },
         {
-          "name": "UDEN Casper Van",
-          "slug": "casper-van-uden",
-          "nat": "nl",
+          "name": "Dillon Corkery",
+          "slug": "dillon-corkery",
+          "nat": "ie",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Robbe Dhondt",
+          "slug": "robbe-dhondt",
+          "nat": "be",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "PROST Alexy Faure",
+          "slug": "alexy-faure-prost",
+          "nat": "fr",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Bjorn Koerdt",
+          "slug": "bjoern-koerdt",
+          "nat": "gb",
           "team": "Team Picnic PostNL (WT)"
         },
         {
@@ -2267,8 +2531,32 @@
           "team": "Team Picnic PostNL (WT)"
         },
         {
-          "name": "Giovanni Lonardi",
-          "slug": "giovanni-lonardi",
+          "name": "UDEN Casper Van",
+          "slug": "casper-van-uden",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Mirco Maestri",
+          "slug": "mirco-maestri",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Andrea Pietrobon",
+          "slug": "andrea-pietrobon",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Dario Giuliano",
+          "slug": "dario-giuliano",
+          "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Ludovico Crescioli",
+          "slug": "ludovico-crescioli",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
@@ -2279,10 +2567,34 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Ludovico Crescioli",
-          "slug": "ludovico-crescioli",
+          "name": "Giovanni Lonardi",
+          "slug": "giovanni-lonardi",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Thomas Gachignard",
+          "slug": "thomas-gachignard",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Thomas Bonnet",
+          "slug": "thomas-bonnet",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Lorrenzo Manzin",
+          "slug": "lorrenzo-manzin",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Joris Delbove",
+          "slug": "joris-delbove",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
         },
         {
           "name": "Jason Tesson",
@@ -2295,18 +2607,6 @@
           "slug": "samuel-leroux",
           "nat": "fr",
           "team": "TotalEnergies (PRT)"
-        },
-        {
-          "name": "Joris Delbove",
-          "slug": "joris-delbove",
-          "nat": "fr",
-          "team": "TotalEnergies (PRT)"
-        },
-        {
-          "name": "Ronan Augé",
-          "slug": "ronan-auge",
-          "nat": "fr",
-          "team": "Unibet Rose Rockets (PRT)"
         },
         {
           "name": "Cedrik Bakke Christophersen",
@@ -2327,16 +2627,10 @@
           "team": "Unibet Rose Rockets (PRT)"
         },
         {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Henrik Pedersen",
-          "slug": "henrik-pedersen",
-          "nat": "dk",
-          "team": "Uno-X Mobility (WT)"
+          "name": "Ronan Augé",
+          "slug": "ronan-auge",
+          "nat": "fr",
+          "team": "Unibet Rose Rockets (PRT)"
         },
         {
           "name": "Johannes Kulset",
@@ -2351,6 +2645,18 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Henrik Pedersen",
+          "slug": "henrik-pedersen",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
           "name": "Nikiforos Arvanitou",
           "slug": "nikiforos-arvanitou",
           "nat": "gr",
@@ -2361,6 +2667,18 @@
           "slug": "guillermo-thomas-silva-coussan",
           "nat": "uy",
           "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "DE PUTTE Victor Van",
+          "slug": "victor-van-de-putte",
+          "nat": "be",
+          "team": "Lotto - Groupe Wanty (CT)"
+        },
+        {
+          "name": "Halvor Dolven",
+          "slug": "halvor-dolven",
+          "nat": "no",
+          "team": "Lotto - Groupe Wanty (CT)"
         }
       ]
     },
@@ -2712,7 +3030,12 @@
       "end_date": "2026-09-16",
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
-      "startlist": []
+      "startlist": [],
+      "distance_km": 194.8,
+      "elevation_m": 2679,
+      "stage_type": "mountain",
+      "start_town": "Seraing",
+      "finish_town": "Namur"
     },
     {
       "slug": "super-8-classic",
@@ -121952,121 +122275,121 @@
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 8
+      "days_away": 7
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 30
+      "days_away": 29
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 31
+      "days_away": 30
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 36
+      "days_away": 35
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 36
+      "days_away": 35
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 47
+      "days_away": 46
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 53
+      "days_away": 52
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 53
+      "days_away": 52
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 55
+      "days_away": 54
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 61
+      "days_away": 60
     },
     {
       "name": "Tour of Guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "start_date": "2026-10-13",
-      "days_away": 63
+      "days_away": 62
     },
     {
       "name": "Giro del Veneto",
       "cf_slug": "giro-del-veneto-2026",
       "start_date": "2026-10-14",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 68
+      "days_away": 67
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 68
+      "days_away": 67
     }
   ]
 }

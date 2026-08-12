@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-12T11:42:49.465222+00:00",
+  "generated_at": "2026-08-12T17:54:14.150341+00:00",
   "entries": [
+    {
+      "id": "f3a0962904b5",
+      "timestamp": "2026-08-12T17:54:14.143501+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Arctic Race of Norway startlist: AAS Eirik Vang, Aksel Laforce, Alessandro Covi (+43 more) added"
+    },
     {
       "id": "60540627457c",
       "timestamp": "2026-08-12T11:42:49.457830+00:00",
@@ -546,13 +553,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 1 PostNord Tour of Denmark: 🇧🇪 Wout van Aert wins"
-    },
-    {
-      "id": "ff9a8793d02b",
-      "timestamp": "2026-07-29T12:57:16.633177+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a Burgos startlist: Alberto Dainese, Andrew August, BOVEN Luca Van (+43 more) added"
     }
   ]
 }

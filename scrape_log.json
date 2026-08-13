@@ -1,8 +1,57 @@
 {
-  "run_at": "2026-08-12 19:51 UTC",
-  "run_at_iso": "2026-08-12T17:52:54.869868+00:00",
+  "run_at": "2026-08-13 13:40 UTC",
+  "run_at_iso": "2026-08-13T11:41:52.750574+00:00",
   "mode": "results-only",
-  "races": [],
+  "races": [
+    {
+      "slug": "czech-tour-2026",
+      "name": "Czech Tour",
+      "total_stages": 4,
+      "stages_completed_before": 0,
+      "stages_completed_after": 0,
+      "new_stages_found": 0,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 1,
+        "url": "https://cyclingflash.com/race/czech-tour-2026/result/stage-1",
+        "fetch_ok": true,
+        "response_bytes": 231385,
+        "matched_result_table": false,
+        "overdue": false,
+        "stall_since": "2026-08-13 13:40 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "arctic-race-of-norway-2026",
+      "name": "Arctic Race of Norway",
+      "total_stages": 4,
+      "stages_completed_before": 0,
+      "stages_completed_after": 0,
+      "new_stages_found": 0,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 1,
+        "url": "https://cyclingflash.com/race/arctic-race-of-norway-2026/result/stage-1",
+        "fetch_ok": true,
+        "response_bytes": 234487,
+        "matched_result_table": false,
+        "overdue": false,
+        "stall_since": "2026-08-13 13:40 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    }
+  ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

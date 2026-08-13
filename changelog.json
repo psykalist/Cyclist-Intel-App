@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-12T17:54:14.150341+00:00",
+  "generated_at": "2026-08-13T11:43:14.759354+00:00",
   "entries": [
+    {
+      "id": "36b8c75ff009",
+      "timestamp": "2026-08-13T11:43:14.751445+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Renewi Tour startlist: ANDERSEN Søren Kragh, ASBROECK Tom Van, Aaron Gate (+130 more) added"
+    },
     {
       "id": "f3a0962904b5",
       "timestamp": "2026-08-12T17:54:14.143501+00:00",
@@ -546,13 +553,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Tour de Pologne startlist: Filippo Fiorelli, Frits Biesterbos, Henri-François Renard-Haquin (+5 more) added"
-    },
-    {
-      "id": "3f43d58fdcbe",
-      "timestamp": "2026-07-29T18:02:27.393487+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 PostNord Tour of Denmark: 🇧🇪 Wout van Aert wins"
     }
   ]
 }

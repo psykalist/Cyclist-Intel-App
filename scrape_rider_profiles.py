@@ -105,14 +105,13 @@ def parse_rider_page(html, slug):
     """Parse main rider page -> bio dict."""
     profile = {'slug': slug}
 
-    # Photo — PCS now serves relative URLs like "images/riders/vg/dq/slug.jpg"
-    m = re.search(r'src="([^"]*images/riders[^"]*\.(?:jpg|png|webp))"', html)
-    if m:
-        src = m.group(1)
-        if src.startswith('http'):
-            profile['photo'] = src
-        else:
-            profile['photo'] = 'https://www.procyclingstats.com/' + src.lstrip('/')
+    # Photo — DELIBERATELY NOT sourced from PCS. ProCyclingStats image URLs
+    # (images/riders/xx/xx/slug-2026-nN.png) do not render when hotlinked from
+    # our GitHub Pages site, so every PCS-hosted photo showed a blank/placeholder
+    # avatar (this is why ~330 riders, incl. Bob Jungels, had "no photo"). Rider
+    # photos come exclusively from CyclingFlash's CDN via fetch_missing_photos.py
+    # / scraper.scrape_rider_profile(). We leave 'photo' unset here so a profile
+    # backfill can never reintroduce a non-rendering PCS URL into the index.
 
     # Info block: the borderbox left w65 div contains the li items
     block_m = re.search(r'borderbox left w65(.*?)(?:borderbox clear|<h4)', html, re.DOTALL)

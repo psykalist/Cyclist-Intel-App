@@ -7,6 +7,19 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v133 — 2026-08-14 — Fix missing Volta a Portugal + blank rider photos (Bob Jungels et al.)
+"why is the tour of Portugal not on the list… bob jungels has no photo nor have many others"
+
+- **Two unrelated bugs, both diagnosed from the shipped data.**
+
+- **Bug 1 — Volta a Portugal missing from the calendar.** It's a 2.1 (UCI Europe Tour) race, 5–16 Aug 2026, and 2.1 *is* in `UCI_CATS` (other 2.1s like Tour of Austria/Sibiu were present), and CyclingFlash lists it (`volta-a-portugal-em-bicicleta-2026`) — so it wasn't a category filter. Root cause is in `discover_races_from_calendar()`: the paginated "Men Elite" walk did `break` on the **first** empty/failed page fetch. A single transient fetch failure mid-listing therefore silently dropped every race after it, and Portugal sits mid-season. Fix: (a) tolerate up to 2 consecutive empty pages before concluding the listing ended, so one bad page no longer aborts the category; (b) belt-and-braces, added `volta-a-portugal-em-bicicleta-2026` to `ALWAYS_INCLUDE` so it's force-fetched regardless of the walk.
+- **Bug 2 — ~330 riders showed a blank/placeholder avatar** (incl. Bob Jungels and 21/29 of Netcompany INEOS; Visma 24/29, Bora 22/30, Lidl-Trek 21/30). Not a coverage gap — `rider_photos.json` had a URL for **100%** of the 889 roster riders. The split is by host: **555** point at CyclingFlash's CDN (render fine) and **332** point at **ProCyclingStats** (`images/riders/xx/xx/slug-2026-nN.png`), which don't render when hotlinked from GitHub Pages — so the `<img onerror>` hides them and the 🚴 placeholder shows. The bad URLs came from `scrape_rider_profiles.py` (weekly PCS backfill) writing the PCS image src as `photo`; `fetch_missing_photos.py` then skipped those riders because they were "already in the index", so the good CyclingFlash photo never replaced them.
+  - `scrape_rider_profiles.py`: **stop** emitting the PCS image URL as `photo` (photos come only from CyclingFlash now), so backfills can't reintroduce non-rendering URLs.
+  - `fetch_missing_photos.py`: treat a PCS-hosted photo as "missing" so those riders are **re-fetched and overwritten** with a CyclingFlash CDN URL (both the index and the data.json injection).
+  - `build_rider_photos.py`: now **merges** into the existing index instead of overwriting it (so CyclingFlash URLs added by the fill scripts aren't clobbered) and **strips** any PCS URLs on rebuild.
+- **Applying the fixes needs a manual run — a push alone won't show them.** The twice-daily cron is `--results-only` (no calendar discovery, no photos). After pushing: run a full/`--teams-only` scrape (or the `update-data.yml` workflow) to pick up Portugal, and run `python3 fetch_missing_photos.py` to rewrite the 332 photos, then push.
+- **Scope / safety.** Scraper-source only; no hand-edit of CI-owned `data.json` / `rider_photos.json`. Version v132→v133 (APP_VERSION bump per rule 2, though this is a scraper-only change). All edited `.py` files compile.
+
 ## v132 — 2026-08-07 — Max route detail for EVERY race: extend backfill to one-day races + whole calendar
 "I want max data for all races from now on, length, terrain etc."
 

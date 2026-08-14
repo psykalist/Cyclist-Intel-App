@@ -104,6 +104,10 @@ ALWAYS_INCLUDE = {
     "giro-ditalia-2026":          ("Giro d'Italia", "1.UWT"),
     "vuelta-a-espana-2026":       ("Vuelta a España", "1.UWT"),
     "tour-de-suisse-2026":        ("Tour de Suisse", "1.UWT"),
+    # 2.1 (UCI Europe Tour) but big enough to always track. It kept getting
+    # dropped by the calendar-page walk (a transient failed 'Men Elite' page
+    # break early, and Portugal sits mid-season), so force-include it.
+    "volta-a-portugal-em-bicicleta-2026": ("Volta a Portugal", "2.1"),
 }
 
 
@@ -897,15 +901,23 @@ def discover_races_from_calendar():
     for cat in categories:
         cat_enc = urllib.parse.quote(cat)
         prev_slugs = None
+        misses = 0
         for page in range(1, MAX_CALENDAR_PAGES + 1):
             url = f"{BASE_URL}/calendar/road/{year}/{cat_enc}/{page}"
             html = fetch(url)
             time.sleep(DELAY)
-            if not html:
-                break                                  # 404 / fetch fail = past last page
-            slugs = set(_slugs_from_html(html))
+            slugs = set(_slugs_from_html(html)) if html else set()
             if not slugs:
-                break
+                # An empty/failed page is usually past the last page — but it can
+                # also be a transient fetch failure mid-listing. If we break on the
+                # first one, every race on later pages is silently dropped (this is
+                # how Volta a Portugal kept vanishing). Tolerate up to 2 empty pages
+                # in a row before concluding the listing has actually ended.
+                misses += 1
+                if misses >= 2:
+                    break
+                continue
+            misses = 0
             if prev_slugs is not None and slugs == prev_slugs:
                 break                                  # same list repeated = single-page category
             prev_slugs = slugs

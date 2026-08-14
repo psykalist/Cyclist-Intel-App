@@ -20,15 +20,24 @@ PHOTOS_OUT = 'rider_photos.json'
 data    = json.load(open(DATA, encoding='utf-8'))
 photos  = json.load(open(PHOTOS_OUT, encoding='utf-8'))
 
-# Collect slugs that need photos
+def _broken(url):
+    """A PCS-hosted photo URL does not render on our GitHub Pages site, so treat
+    it as missing — we want to replace it with a CyclingFlash CDN photo."""
+    return (not url) or ('procyclingstats.com' in url)
+
+# Collect slugs that need photos. This now also re-fetches riders whose CURRENT
+# photo is a non-rendering PCS URL (the ~330 riders, incl. Bob Jungels, that
+# showed a blank avatar) so they get overwritten with a working CyclingFlash CDN
+# URL — previously we skipped any slug already in the index, so broken PCS URLs
+# were never repaired.
 need = []
 for team in data['teams']:
     for r in team['riders']:
         slug = r.get('slug', '')
-        if slug and not r.get('photo') and slug not in photos:
+        if slug and (_broken(r.get('photo')) or _broken(photos.get(slug))):
             need.append(slug)
 need = list(dict.fromkeys(need))  # deduplicate
-print(f"Riders needing photos: {len(need)}")
+print(f"Riders needing photos (missing or PCS-hosted): {len(need)}")
 
 new_photos = {}
 failed = []
@@ -70,7 +79,7 @@ if new_photos:
     injected = 0
     for team in data['teams']:
         for r in team['riders']:
-            if not r.get('photo') and r.get('slug') in new_photos:
+            if r.get('slug') in new_photos and _broken(r.get('photo')):
                 r['photo'] = new_photos[r['slug']]
                 injected += 1
 

@@ -25,6 +25,15 @@ def _broken(url):
     it as missing — we want to replace it with a CyclingFlash CDN photo."""
     return (not url) or ('procyclingstats.com' in url)
 
+def _renders(url):
+    """A photo URL that actually loads on the site (non-empty, not PCS-hosted)."""
+    return bool(url) and 'procyclingstats.com' not in url
+
+# "Never lose a photo" invariant: record how many working (renderable) photos the
+# index has BEFORE we touch it. The write below refuses to shrink this count, so a
+# bad/partial run can never drop a good photo we already had.
+orig_renderable = sum(1 for u in photos.values() if _renders(u))
+
 # Collect slugs that need photos. This now also re-fetches riders whose CURRENT
 # photo is a non-rendering PCS URL (the ~330 riders, incl. Bob Jungels, that
 # showed a blank avatar) so they get overwritten with a working CyclingFlash CDN
@@ -71,9 +80,21 @@ print(f"Found {len(new_photos)} new photos, {len(failed)} failed/missing")
 if new_photos:
     # Merge into rider_photos.json
     photos.update(new_photos)
+
+    # "Never lose a photo" guard: the merged index must have at least as many
+    # working (renderable) photos as before. photos.update() only adds/replaces,
+    # so this should always hold — but if some future change ever tried to write
+    # a shrunken index, we abort rather than commit a regression.
+    new_renderable = sum(1 for u in photos.values() if _renders(u))
+    if new_renderable < orig_renderable:
+        raise SystemExit(
+            f"ABORT: renderable photo count would drop {orig_renderable} -> "
+            f"{new_renderable}. Refusing to write rider_photos.json (would lose photos)."
+        )
+
     with open(PHOTOS_OUT, 'w', encoding='utf-8') as f:
         json.dump(photos, f, ensure_ascii=False, separators=(',', ':'))
-    print(f"Updated rider_photos.json ({len(photos)} total entries)")
+    print(f"Updated rider_photos.json ({len(photos)} entries, {new_renderable} renderable)")
 
     # Inject into data.json team rider records
     injected = 0

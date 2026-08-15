@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-08-15 17:31 UTC",
-  "run_at_iso": "2026-08-15T15:33:07.452473+00:00",
+  "run_at": "2026-08-15 19:11 UTC",
+  "run_at_iso": "2026-08-15T17:13:39.059067+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "czech-tour-2026",
       "name": "Czech Tour",
       "total_stages": 4,
-      "stages_completed_before": 0,
+      "stages_completed_before": 3,
       "stages_completed_after": 3,
-      "new_stages_found": 3,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 4,
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-15 17:31 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": -0.3,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -31,34 +31,29 @@
       "slug": "arctic-race-of-norway-2026",
       "name": "Arctic Race of Norway",
       "total_stages": 4,
-      "stages_completed_before": 0,
-      "stages_completed_after": 2,
-      "new_stages_found": 2,
+      "stages_completed_before": 2,
+      "stages_completed_after": 3,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 3,
-        "url": "https://cyclingflash.com/race/arctic-race-of-norway-2026/result/stage-3",
+        "stage_num": 4,
+        "url": "https://cyclingflash.com/race/arctic-race-of-norway-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 239650,
+        "response_bytes": 235306,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-08-15 17:31 UTC",
+        "stall_since": "2026-08-15 19:11 UTC",
         "stall_attempts": 1,
         "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
-      "incomplete_classifications": [
-        {
-          "cls": "kom_top10",
-          "rows": 8
-        }
-      ]
+      "incomplete_classifications": []
     }
   ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": true
+  "has_incomplete_results": false
 }

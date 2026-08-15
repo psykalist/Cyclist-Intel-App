@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-08-15T15:34:33.165168+00:00",
+  "generated_at": "2026-08-15T17:14:57.712901+00:00",
   "entries": [
+    {
+      "id": "df0a65fc230f",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Czech Tour Points: 🇺🇸 Andrew August leads"
+    },
+    {
+      "id": "42300efd5c21",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Czech Tour KOM: 🇨🇿 Michal Schuran leads"
+    },
+    {
+      "id": "54f44199782b",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Czech Tour Youth: 🇺🇸 Andrew August leads"
+    },
+    {
+      "id": "1dd76db500f8",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Arctic Race of Norway: 🇺🇾 Guillermo Thomas Silva Coussan wins"
+    },
+    {
+      "id": "0168bf856283",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Arctic Race of Norway GC: 🇺🇾 Guillermo Thomas Silva Coussan leads"
+    },
+    {
+      "id": "bcd826c7ba11",
+      "timestamp": "2026-08-15T17:14:57.705803+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Arctic Race of Norway Youth: 🇺🇾 Guillermo Thomas Silva Coussan leads"
+    },
     {
       "id": "c00b430d88b9",
       "timestamp": "2026-08-15T15:34:33.157460+00:00",

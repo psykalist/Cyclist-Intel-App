@@ -7,7 +7,18 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v136 — 2026-08-15 — Proper Windows auto-start for DEVBOX runner (real root cause)
+Follow-up to v135. v135 assumed a broken Windows *service*, but diagnosis on the box showed the truth: **there is no `svc.cmd` on Windows** (that wrapper is Linux/macOS only), so this runner was never a service — it runs via `run.cmd` in a console. It went offline because (a) after the D:→C: move nobody restarted `run.cmd` from the new path, and (b) the cross-drive copy left the active `bin\` incomplete, so `run.cmd` died with `'Runner.Listener.exe' is not recognized ... error 9009`. The real `bin`/`externals` were in the versioned `bin.2.336.0`/`externals.2.336.0` folders (left over from an auto-update).
+
+- **`fix-runner-and-autostart.ps1` rewritten** to match how the runner actually works on Windows:
+  - **Self-heals `bin`/`externals`** — if `bin\Runner.Listener.exe` is missing, restores from the newest `bin.<version>`/`externals.<version>` (this is the manual fix that brought devbox back).
+  - **Auto-starts via a Scheduled Task** (`GitHubActionsRunner-DEVBOX`, trigger *At startup*, S4U so it runs without a stored password, highest privileges, no execution-time limit, restart-on-failure) instead of the non-existent `svc.cmd`. No more keeping a console window open.
+  - **Refuses to run while `Runner.Listener` is active**, so it can't wipe the checkout of an in-progress CI job. Also keeps the pre-existing checkout cleanup.
+- **How to use:** let the current interactive `run.cmd` job finish, close that window, then run the script once in an **Administrator** PowerShell. Thereafter the runner starts on boot.
+- Version v135→v136. Ops/tooling only; `index.html` brace balance 0.
+
 ## v135 — 2026-08-15 — Fix DEVBOX runner offline after D:\ → C:\ move (blocks all CI)
+> **Correction (see v136):** this entry assumed the Windows runner was a broken *service* fixed via `svc.cmd`. There is no `svc.cmd` on Windows — the runner runs via `run.cmd`, and the move also left `bin\` incomplete. v136 supersedes the runner-repair approach below.
 'devbox' self-hosted runner showed Offline, so the queued "Refresh Rider Photos" job (and every other workflow) had nothing to run on. Root cause: the runner folder was moved `D:\actions-runner` → `C:\actions-runner` on 2026-08-14, but its Windows service was still registered against the old `D:\` path, so it couldn't start.
 
 - **Only one CI-relevant file hardcoded a drive** (`fix-runner-and-autostart.ps1`); the workflows and `git-push.sh` use relative paths, and the runner clones its own `_work` checkout, so the project-folder move doesn't affect the pipeline itself — only the service registration was broken.

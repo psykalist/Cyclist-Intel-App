@@ -7,6 +7,15 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v135 — 2026-08-15 — Fix DEVBOX runner offline after D:\ → C:\ move (blocks all CI)
+'devbox' self-hosted runner showed Offline, so the queued "Refresh Rider Photos" job (and every other workflow) had nothing to run on. Root cause: the runner folder was moved `D:\actions-runner` → `C:\actions-runner` on 2026-08-14, but its Windows service was still registered against the old `D:\` path, so it couldn't start.
+
+- **Only one CI-relevant file hardcoded a drive** (`fix-runner-and-autostart.ps1`); the workflows and `git-push.sh` use relative paths, and the runner clones its own `_work` checkout, so the project-folder move doesn't affect the pipeline itself — only the service registration was broken.
+- **`fix-runner-and-autostart.ps1`:** now **auto-detects** the runner root (checks `C:\actions-runner`, `D:\actions-runner`, etc. for `svc.cmd`) instead of hardcoding `D:\actions-runner`, and **removes the stale service** (`svc.cmd stop` + `uninstall`) before `install` + `start` — otherwise `install` alone can keep the broken D:\-path service. Run it once in an **Administrator** PowerShell on DEVBOX to bring the runner back online; it also sets the service to Automatic (starts on boot).
+- **`CLAUDE.md`:** project folder path corrected `D:\` → `C:\` and annotated with the move.
+- **Concurrency note (not a bug):** the earlier "waiting for Pull Race Results #136" was the deliberate `uci-calendar-git-write` lock doing its job — a scheduled scrape held it. Nothing to change there.
+- Version v134→v135. No app-logic change; `index.html` brace balance 0.
+
 ## v134 — 2026-08-14 — Fix the two things that stopped v133's photo fix from landing
 Follow-up after running v133's photo scrape: it fetched 785 CyclingFlash photos but the fix didn't reach the site. Two causes, both fixed here.
 

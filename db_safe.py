@@ -76,6 +76,23 @@ def safe_json_write(
     required_keys = required_keys or []
 
     prev_size = path.stat().st_size if path.exists() else 0
+
+    # For the shrink guard (step 4) compare like-for-like. This function always
+    # writes COMPACT json (separators=(',',':')), but the existing file may be
+    # PRETTY-printed (indent=2 — e.g. data.json after a full scrape). Comparing
+    # raw bytes would then flag a compact rewrite of identical content as a ~40%
+    # "shrink" and abort a perfectly good write (this is exactly what blocked the
+    # rider-photo injection). So size the previous file by its COMPACT
+    # re-serialization, which reflects actual content, not whitespace.
+    prev_compact_size = prev_size
+    if path.exists():
+        try:
+            prev_compact_size = len(json.dumps(
+                json.loads(path.read_text(encoding='utf-8')),
+                ensure_ascii=False, separators=(',', ':')).encode('utf-8'))
+        except Exception:
+            prev_compact_size = prev_size
+
     backup = path.with_suffix(path.suffix + '.bak')
     tmp    = path.with_suffix(path.suffix + '.tmp')
 
@@ -101,13 +118,13 @@ def safe_json_write(
             if key not in parsed:
                 raise RuntimeError(f'{label}: required key "{key}" missing after write')
 
-        # 4. Size regression
+        # 4. Size regression (compared compact-to-compact, format-agnostic)
         new_size = tmp.stat().st_size
-        if prev_size > 0 and new_size < prev_size * min_ratio:
+        if prev_compact_size > 0 and new_size < prev_compact_size * min_ratio:
             raise RuntimeError(
                 f'{label}: file shrank too much '
-                f'({prev_size//1024} KB → {new_size//1024} KB, '
-                f'ratio={new_size/prev_size:.2f}, min={min_ratio})'
+                f'({prev_compact_size//1024} KB → {new_size//1024} KB compact, '
+                f'ratio={new_size/prev_compact_size:.2f}, min={min_ratio})'
             )
 
         # 5. Atomic replace

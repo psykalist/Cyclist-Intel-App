@@ -7,6 +7,14 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v134 — 2026-08-14 — Fix the two things that stopped v133's photo fix from landing
+Follow-up after running v133's photo scrape: it fetched 785 CyclingFlash photos but the fix didn't reach the site. Two causes, both fixed here.
+
+- **`safe_json_write` shrink guard misfired on data.json (false positive, aborted the write).** `db_safe.safe_json_write()` writes **compact** JSON but compared the new file's byte size against the *existing* file — which is **pretty-printed** (`indent=2`) after a full scrape. Compact-vs-pretty looked like a 41% shrink (3585 KB → 2116 KB, ratio 0.57 < 0.90 min), so it raised "file shrank too much", restored the backup, and `fetch_missing_photos.py` crashed before finishing. Fix: the guard now sizes the previous file by its **compact re-serialization** (content, not whitespace), so a reformatting rewrite passes (ratio ~1.0) while genuine data loss is still caught. Verified on the live data.json: old ratio 0.57 (fail) → new 1.00 (pass).
+- **`git-push.sh` was silently discarding the new photos.** `rider_photos.json` is a **CI-owned data file** (in `git-push.sh`'s `GEN_FILES`), so a local `git-push.sh` keeps origin's version and resets the local file — throwing away the 785 freshly-scraped CyclingFlash URLs. That's why Bob Jungels still resolved to a PCS URL and 206 roster riders stayed broken after the "successful" push. **Photo data must be written by the runner, not a local push:** use the new `fix-photos.yml` ("Refresh Rider Photos") workflow, which commits `rider_photos.json`/`data.json` directly on the self-hosted runner. Do **not** try to land photo changes via `git-push.sh`.
+- **Net effect:** with the shrink guard fixed, `fetch_missing_photos.py` now completes and injects into data.json, and the workflow (not git-push.sh) is the path that actually publishes the photos.
+- Version v133→v134. `db_safe.py` / `fetch_missing_photos.py` compile; `index.html` brace balance 0.
+
 ## v133 — 2026-08-14 — Fix missing Volta a Portugal + blank rider photos (Bob Jungels et al.)
 "why is the tour of Portugal not on the list… bob jungels has no photo nor have many others"
 

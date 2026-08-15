@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-08-15T14:54:39.201230+00:00",
+  "updated_at": "2026-08-15T15:34:52.638765+00:00",
   "source": "ci",
-  "overall": "error",
-  "errors": [
-    "data.json is 51h old (a live race is running) -- run scraper.py locally"
+  "overall": "warning",
+  "errors": [],
+  "warnings": [
+    "scrape_log.json: INCOMPLETE kom_top10 on arctic-race-of-norway-2026 -- pulled 8 of 10 expected rows."
   ],
-  "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 3585,
+    "data_size_kb": 3617,
     "data_upcoming": 28,
     "data_recent": 67,
     "data_teams": 33,
     "rider_profiles": 2624,
     "live_races": 2,
-    "scraped_at": "2026-08-13T11:41:52.751148+00:00",
-    "data_age_hours": 51.2,
+    "scraped_at": "2026-08-15T15:33:13.538049+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 291809,
-    "scrape_log_run_at": "2026-08-13 13:40 UTC",
-    "rider_roster": 1294,
-    "rider_missing_profile": 137,
-    "rider_missing_palmares": 891
+    "scrape_log_run_at": "2026-08-15 17:31 UTC",
+    "rider_roster": 1300,
+    "rider_missing_profile": 139,
+    "rider_missing_palmares": 895
   }
 }

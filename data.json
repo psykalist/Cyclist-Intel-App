@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-15T17:13:40.562672+00:00",
-  "scraped_at_human": "15 Aug 2026 17:13 UTC",
+  "scraped_at": "2026-08-16T11:14:09.611821+00:00",
+  "scraped_at_human": "16 Aug 2026 11:14 UTC",
   "live": [
     {
       "slug": "czech-tour",
@@ -2898,16 +2898,14 @@
           "time_gap": "+ 01:09"
         }
       ]
-    }
-  ],
-  "upcoming": [
+    },
     {
       "slug": "adac-cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "name": "ADAC Cyclassics",
       "year": "2026",
       "category": "1.UWT",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-08-16",
       "end_date": "2026-08-16",
       "total_stages": 1,
@@ -2917,8 +2915,22 @@
       "elevation_m": 1574,
       "stage_type": "hilly",
       "start_town": "Buxtehude",
-      "finish_town": "Hamburg"
-    },
+      "finish_town": "Hamburg",
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/adac-cyclassics-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 16 August"
+        }
+      ]
+    }
+  ],
+  "upcoming": [
     {
       "slug": "renewi-tour",
       "cf_slug": "renewi-tour-2026",
@@ -4299,9 +4311,9 @@
       ],
       "startlist": [
         {
-          "name": "Gal Glivar",
-          "slug": "gal-glivar",
-          "nat": "si",
+          "name": "Luca Vergallito",
+          "slug": "luca-vergallito",
+          "nat": "it",
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
@@ -4311,9 +4323,9 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
-          "name": "Luca Vergallito",
-          "slug": "luca-vergallito",
-          "nat": "it",
+          "name": "Gal Glivar",
+          "slug": "gal-glivar",
+          "nat": "si",
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
@@ -4323,15 +4335,15 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
-          "name": "Santiago Buitrago",
-          "slug": "santiago-buitrago-sanchez",
-          "nat": "co",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
           "name": "Roman Ermakov",
           "slug": "roman-ermakov",
           "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Santiago Buitrago",
+          "slug": "santiago-buitrago-sanchez",
+          "nat": "co",
           "team": "Bahrain - Victorious (WT)"
         },
         {
@@ -4377,14 +4389,14 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Rudy Molard",
-          "slug": "rudy-molard",
+          "name": "Clément Berthet",
+          "slug": "clement-berthet",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
         {
-          "name": "Clément Berthet",
-          "slug": "clement-berthet",
+          "name": "Rudy Molard",
+          "slug": "rudy-molard",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
@@ -4425,15 +4437,15 @@
           "team": "Lidl - Trek (WT)"
         },
         {
-          "name": "Thibau Nys",
-          "slug": "thibau-nys",
-          "nat": "be",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
           "name": "Mattias Skjelmose",
           "slug": "mattias-skjelmose-jensen",
           "nat": "dk",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Thibau Nys",
+          "slug": "thibau-nys",
+          "nat": "be",
           "team": "Lidl - Trek (WT)"
         },
         {
@@ -4593,6 +4605,18 @@
           "team": "Team Picnic PostNL (WT)"
         },
         {
+          "name": "AERT Wout Van",
+          "slug": "wout-van-aert",
+          "nat": "be",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
           "name": "Tijmen Graat",
           "slug": "tijmen-graat",
           "nat": "nl",
@@ -4620,18 +4644,6 @@
           "name": "Matthew Brennan",
           "slug": "matthew-brennan",
           "nat": "gb",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "AERT Wout Van",
-          "slug": "wout-van-aert",
-          "nat": "be",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Menno Huising",
-          "slug": "menno-huising",
-          "nat": "nl",
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
@@ -4689,6 +4701,12 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
+          "name": "Torstein Træen",
+          "slug": "torstein-traeen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
           "name": "Andreas Leknessund",
           "slug": "andreas-leknessund",
           "nat": "no",
@@ -4722,12 +4740,6 @@
           "name": "Cristián Rodríguez",
           "slug": "cristian-rodriguez",
           "nat": "es",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Davide Ballerini",
-          "slug": "davide-ballerini",
-          "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
         {
@@ -125562,109 +125574,109 @@
       "name": "ADAC Cyclassics",
       "cf_slug": "adac-cyclassics-2026",
       "start_date": "2026-08-16",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 27
+      "days_away": 26
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 35
+      "days_away": 34
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 43
+      "days_away": 42
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 49
+      "days_away": 48
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 49
+      "days_away": 48
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 51
+      "days_away": 50
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 57
+      "days_away": 56
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 64
+      "days_away": 63
     },
     {
       "name": "Veneto Classic",
       "cf_slug": "veneto-classic-2026",
       "start_date": "2026-10-18",
-      "days_away": 64
+      "days_away": 63
     }
   ]
 }

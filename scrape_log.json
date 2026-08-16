@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-15 19:11 UTC",
-  "run_at_iso": "2026-08-15T17:13:39.059067+00:00",
+  "run_at": "2026-08-16 13:12 UTC",
+  "run_at_iso": "2026-08-16T11:14:09.611025+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-15 17:31 UTC",
-        "stall_attempts": 2,
-        "stall_hours": -0.3,
+        "stall_attempts": 3,
+        "stall_hours": 17.7,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -31,9 +31,9 @@
       "slug": "arctic-race-of-norway-2026",
       "name": "Arctic Race of Norway",
       "total_stages": 4,
-      "stages_completed_before": 2,
+      "stages_completed_before": 3,
       "stages_completed_after": 3,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 4,
@@ -43,10 +43,23 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-15 19:11 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.0,
         "possible_parser_drift": false
       },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "adac-cyclassics-2026",
+      "name": "ADAC Cyclassics",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

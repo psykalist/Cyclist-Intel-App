@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T17:14:57.712901+00:00",
+  "generated_at": "2026-08-16T11:15:30.154436+00:00",
   "entries": [
     {
       "id": "df0a65fc230f",
@@ -546,48 +546,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Vuelta a Burgos startlist: Baptiste Vadic, Carlos Rodríguez, Darren Rafferty (+25 more) added"
-    },
-    {
-      "id": "08926f67f20f",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 PostNord Tour of Denmark: 🇳🇴 Storm Ingebrigtsen wins"
-    },
-    {
-      "id": "96d1edab2016",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Donostia San Sebastian Klasikoa: 🇧🇪 Remco Evenepoel wins"
-    },
-    {
-      "id": "3d987ab0e35e",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Donostia San Sebastian Klasikoa GC: 🇧🇪 Remco Evenepoel leads"
-    },
-    {
-      "id": "f94237bf6831",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Donostia San Sebastian Klasikoa Points: 🇧🇪 Remco Evenepoel leads"
-    },
-    {
-      "id": "cfcccbf404a5",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Donostia San Sebastian Klasikoa KOM: 🇧🇪 Remco Evenepoel leads"
-    },
-    {
-      "id": "82ea95f54812",
-      "timestamp": "2026-08-01T17:54:14.811847+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Donostia San Sebastian Klasikoa Youth: 🇧🇪 Remco Evenepoel leads"
     }
   ]
 }

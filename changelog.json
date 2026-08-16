@@ -1,6 +1,55 @@
 {
-  "generated_at": "2026-08-16T11:15:30.154436+00:00",
+  "generated_at": "2026-08-16T17:15:12.474893+00:00",
   "entries": [
+    {
+      "id": "f466575b1999",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Czech Tour: 🇮🇹 Alessandro Fancellu wins"
+    },
+    {
+      "id": "267733154302",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Arctic Race of Norway: 🇳🇴 Cedrik Bakke Christophersen wins"
+    },
+    {
+      "id": "c1b977af9f31",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 ADAC Cyclassics: 🇫🇷 Paul Magnier wins"
+    },
+    {
+      "id": "ca15a848ca02",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "ADAC Cyclassics GC: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "cd8bd4956dff",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "ADAC Cyclassics Points: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "605603ff9e65",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "ADAC Cyclassics KOM: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "7adc035ae635",
+      "timestamp": "2026-08-16T17:15:12.467162+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "ADAC Cyclassics Youth: 🇫🇷 Paul Magnier leads"
+    },
     {
       "id": "df0a65fc230f",
       "timestamp": "2026-08-15T17:14:57.705803+00:00",
@@ -532,20 +581,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Tour de Pologne startlist: Alexey Lutsenko, Andreas Kron, Andreas Leknessund (+16 more) added"
-    },
-    {
-      "id": "aefb4e6bfe62",
-      "timestamp": "2026-08-02T11:56:31.268991+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour de Pologne startlist: Andrea Vendrame, Axel Huens, BONDT Dries De (+17 more) added"
-    },
-    {
-      "id": "bd2f96ded045",
-      "timestamp": "2026-08-02T11:56:31.268991+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a Burgos startlist: Baptiste Vadic, Carlos Rodríguez, Darren Rafferty (+25 more) added"
     }
   ]
 }

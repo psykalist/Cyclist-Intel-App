@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-16 13:12 UTC",
-  "run_at_iso": "2026-08-16T11:14:09.611025+00:00",
+  "run_at": "2026-08-16 19:11 UTC",
+  "run_at_iso": "2026-08-16T17:13:47.842951+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,10 @@
       "name": "Czech Tour",
       "total_stages": 4,
       "stages_completed_before": 3,
-      "stages_completed_after": 3,
-      "new_stages_found": 0,
+      "stages_completed_after": 4,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 4,
-        "url": "https://cyclingflash.com/race/czech-tour-2026/result/stage-4",
-        "fetch_ok": true,
-        "response_bytes": 234472,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-08-15 17:31 UTC",
-        "stall_attempts": 3,
-        "stall_hours": 17.7,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
@@ -32,21 +21,10 @@
       "name": "Arctic Race of Norway",
       "total_stages": 4,
       "stages_completed_before": 3,
-      "stages_completed_after": 3,
-      "new_stages_found": 0,
+      "stages_completed_after": 4,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 4,
-        "url": "https://cyclingflash.com/race/arctic-race-of-norway-2026/result/stage-4",
-        "fetch_ok": true,
-        "response_bytes": 235306,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-08-15 19:11 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.0,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
@@ -61,12 +39,31 @@
       "cancelled_stages": [],
       "probe": null,
       "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
+      "incomplete_results": [
+        {
+          "stage": 1,
+          "rows": 10,
+          "missing_times": 10
+        }
+      ],
+      "incomplete_classifications": [
+        {
+          "cls": "gc_top10",
+          "rows": 10
+        },
+        {
+          "cls": "points_top10",
+          "rows": 10
+        },
+        {
+          "cls": "kom_top10",
+          "rows": 10
+        }
+      ]
     }
   ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": false
+  "has_incomplete_results": true
 }

@@ -1,69 +1,10 @@
 {
-  "run_at": "2026-08-16 19:11 UTC",
-  "run_at_iso": "2026-08-16T17:13:47.842951+00:00",
+  "run_at": "2026-08-17 13:17 UTC",
+  "run_at_iso": "2026-08-17T11:19:08.256004+00:00",
   "mode": "results-only",
-  "races": [
-    {
-      "slug": "czech-tour-2026",
-      "name": "Czech Tour",
-      "total_stages": 4,
-      "stages_completed_before": 3,
-      "stages_completed_after": 4,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "arctic-race-of-norway-2026",
-      "name": "Arctic Race of Norway",
-      "total_stages": 4,
-      "stages_completed_before": 3,
-      "stages_completed_after": 4,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "adac-cyclassics-2026",
-      "name": "ADAC Cyclassics",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 1,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [
-        {
-          "stage": 1,
-          "rows": 10,
-          "missing_times": 10
-        }
-      ],
-      "incomplete_classifications": [
-        {
-          "cls": "gc_top10",
-          "rows": 10
-        },
-        {
-          "cls": "points_top10",
-          "rows": 10
-        },
-        {
-          "cls": "kom_top10",
-          "rows": 10
-        }
-      ]
-    }
-  ],
+  "races": [],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": true
+  "has_incomplete_results": false
 }

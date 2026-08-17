@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-16T17:15:12.474893+00:00",
+  "generated_at": "2026-08-17T11:20:25.381732+00:00",
   "entries": [
+    {
+      "id": "ff02e2986110",
+      "timestamp": "2026-08-17T11:20:25.374787+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a España startlist: Alessandro Covi, Asbjørn Hellemose, Christophe Laporte (+11 more) added"
+    },
     {
       "id": "f466575b1999",
       "timestamp": "2026-08-16T17:15:12.467162+00:00",
@@ -567,20 +574,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Andrea Mifsud, Cedrik Bakke Christophersen, HEMELEN Vincent Van (+2 more) added"
-    },
-    {
-      "id": "2938a84c336e",
-      "timestamp": "2026-08-02T17:55:03.200254+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 PostNord Tour of Denmark: 🇩🇰 Rasmus Søjberg Pedersen wins"
-    },
-    {
-      "id": "041bc797036e",
-      "timestamp": "2026-08-02T17:55:03.200254+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour de Pologne startlist: Alexey Lutsenko, Andreas Kron, Andreas Leknessund (+16 more) added"
     }
   ]
 }

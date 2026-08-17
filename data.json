@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-17T11:19:08.256556+00:00",
-  "scraped_at_human": "17 Aug 2026 11:19 UTC",
+  "scraped_at": "2026-08-17T17:18:45.833169+00:00",
+  "scraped_at_human": "17 Aug 2026 17:18 UTC",
   "live": [],
   "upcoming": [
     {
@@ -700,12 +700,6 @@
           "team": "Team Picnic PostNL (WT)"
         },
         {
-          "name": "Per Strand Hagenes",
-          "slug": "per-strand-hagenes",
-          "nat": "no",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
           "name": "Niklas Behrens",
           "slug": "niklas-behrens",
           "nat": "de",
@@ -738,6 +732,12 @@
         {
           "name": "BELLE Loe Van",
           "slug": "loe-van-belle",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
           "nat": "nl",
           "team": "Team Visma | Lease a Bike (WT)"
         },
@@ -1539,6 +1539,48 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
+          "name": "Lars Craps",
+          "slug": "lars-craps",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "BOVEN Luca Van",
+          "slug": "luca-van-boven",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Vito Braet",
+          "slug": "vito-braet",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "SCHUYTENEER Steffen De",
+          "slug": "steffen-de-schuyteneer",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Lorenzo Rota",
+          "slug": "lorenzo-rota",
+          "nat": "it",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "SINTMAARTENSDIJK Roel Van",
+          "slug": "roel-van-sintmaartensdijk",
+          "nat": "nl",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Reuben Thompson",
+          "slug": "reuben-thompson",
+          "nat": "nz",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
           "name": "Enric Mas",
           "slug": "enric-mas",
           "nat": "es",
@@ -1707,15 +1749,51 @@
           "team": "Team Jayco AlUla (WT)"
         },
         {
-          "name": "Max Poole",
-          "slug": "max-poole",
+          "name": "Juan Guillermo Martinez",
+          "slug": "guillermo-juan-martinez",
+          "nat": "co",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Mattia Gaffuri",
+          "slug": "mattia-gaffuri",
+          "nat": "it",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Chris Hamilton",
+          "slug": "chris-hamilton",
+          "nat": "au",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Henri-François Renard-Haquin",
+          "slug": "henri-francois-renard-haquin",
+          "nat": "fr",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "JONG Timo De",
+          "slug": "timo-de-jong",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Gijs Leemreize",
+          "slug": "gijs-leemreize",
+          "nat": "nl",
+          "team": "Team Picnic PostNL (WT)"
+        },
+        {
+          "name": "Oliver Peace",
+          "slug": "oliver-peace",
           "nat": "gb",
           "team": "Team Picnic PostNL (WT)"
         },
         {
-          "name": "Juan Guillermo Martinez",
-          "slug": "guillermo-juan-martinez",
-          "nat": "co",
+          "name": "Timo Roosen",
+          "slug": "timo-roosen",
+          "nat": "nl",
           "team": "Team Picnic PostNL (WT)"
         },
         {
@@ -1857,18 +1935,6 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Harold Martín López",
-          "slug": "harold-martin-lopez",
-          "nat": "ec",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Clément Champoussin",
-          "slug": "clement-champoussin",
-          "nat": "fr",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
           "name": "Cristián Rodríguez",
           "slug": "cristian-rodriguez",
           "nat": "es",
@@ -1884,6 +1950,24 @@
           "name": "Victor Langellotti",
           "slug": "victor-langellotti",
           "nat": "mc",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "BEKKUM Darren Van",
+          "slug": "darren-van-bekkum",
+          "nat": "nl",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Yevgeniy Fedorov",
+          "slug": "yevgeniy-fedorov",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Alessandro Romele",
+          "slug": "alessandro-romele",
+          "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
         {
@@ -1914,6 +1998,36 @@
           "name": "Alexis Renard",
           "slug": "alexis-renard",
           "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Alex Kirsch",
+          "slug": "alex-kirsch",
+          "nat": "lu",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sylvain Moniquet",
+          "slug": "sylvain-moniquet",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Paul Ourselin",
+          "slug": "paul-ourselin",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Louis Rouland",
+          "slug": "louis-rouland",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sergio Samitier",
+          "slug": "sergio-samitier",
+          "nat": "es",
           "team": "Cofidis (PRT)"
         },
         {

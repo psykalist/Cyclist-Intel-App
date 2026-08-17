@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-17T11:20:25.381732+00:00",
+  "generated_at": "2026-08-17T17:20:01.743195+00:00",
   "entries": [
+    {
+      "id": "e74bfceb3a7b",
+      "timestamp": "2026-08-17T17:20:01.735828+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a España startlist: Alessandro Romele, Alex Kirsch, BEKKUM Darren Van (+19 more) added"
+    },
     {
       "id": "ff02e2986110",
       "timestamp": "2026-08-17T11:20:25.374787+00:00",
@@ -553,27 +560,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Nikiforos Arvanitou added"
-    },
-    {
-      "id": "02a819160690",
-      "timestamp": "2026-08-03T13:34:48.000682+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a Burgos startlist: Albert Torres, Callum Scotson, Gianmarco Garofoli (+5 more) added"
-    },
-    {
-      "id": "01f300f52aa6",
-      "timestamp": "2026-08-03T13:34:48.000682+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Czech Tour startlist: Alberto Dainese, Anthony Turgis, BOD Stefan De (+8 more) added"
-    },
-    {
-      "id": "9918691acb39",
-      "timestamp": "2026-08-03T13:34:48.000682+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Arctic Race of Norway startlist: Andrea Mifsud, Cedrik Bakke Christophersen, HEMELEN Vincent Van (+2 more) added"
     }
   ]
 }

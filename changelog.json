@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-17T17:20:01.743195+00:00",
+  "generated_at": "2026-08-18T11:19:46.856845+00:00",
   "entries": [
+    {
+      "id": "eb0767072e10",
+      "timestamp": "2026-08-18T11:19:46.849215+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a España startlist: Arthur Kluckers, Bruno Armirail, Callum Scotson (+27 more) added"
+    },
     {
       "id": "e74bfceb3a7b",
       "timestamp": "2026-08-17T17:20:01.735828+00:00",
@@ -518,48 +525,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Gotzon Martín added"
-    },
-    {
-      "id": "143ad9567e31",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Tour de Pologne: 🇮🇹 Jonathan Milan wins"
-    },
-    {
-      "id": "5a425497ee5b",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour de Pologne GC: 🇮🇹 Jonathan Milan leads"
-    },
-    {
-      "id": "3aa17d026c21",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tour de Pologne Points: 🇮🇹 Jonathan Milan leads"
-    },
-    {
-      "id": "20f098b0f734",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour de Pologne KOM: 🇧🇪 Dries De Bondt leads"
-    },
-    {
-      "id": "22f01f5314ee",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a Burgos startlist: Amanuel Ghebreigzabhier, Bjorn Koerdt, Filippo Baroncini (+7 more) added"
-    },
-    {
-      "id": "033ccc03b4b9",
-      "timestamp": "2026-08-03T18:44:23.114731+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Arctic Race of Norway startlist: Nikiforos Arvanitou added"
     }
   ]
 }

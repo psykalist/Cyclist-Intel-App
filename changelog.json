@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-18T11:19:46.856845+00:00",
+  "generated_at": "2026-08-18T17:21:19.096241+00:00",
   "entries": [
+    {
+      "id": "b66d14b8f3d0",
+      "timestamp": "2026-08-18T17:21:19.089132+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Renewi Tour startlist: Artem Shmidt, Bob Jungels, DEN BERG Marijn Van (+12 more) added"
+    },
+    {
+      "id": "571c89692707",
+      "timestamp": "2026-08-18T17:21:19.089132+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a España startlist: Alastair Mackellar, Bastien Tronchon, Darren Rafferty (+12 more) added"
+    },
     {
       "id": "eb0767072e10",
       "timestamp": "2026-08-18T11:19:46.849215+00:00",
@@ -518,13 +532,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Czech Tour startlist: Adam Bittman, Alan Jousseaume, Alberto Monti (+112 more) added"
-    },
-    {
-      "id": "215ebf5a6df9",
-      "timestamp": "2026-08-04T12:54:54.701210+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Arctic Race of Norway startlist: Gotzon Martín added"
     }
   ]
 }

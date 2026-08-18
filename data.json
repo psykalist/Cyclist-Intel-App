@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-18T11:18:32.443824+00:00",
-  "scraped_at_human": "18 Aug 2026 11:18 UTC",
+  "scraped_at": "2026-08-18T17:20:01.226339+00:00",
+  "scraped_at_human": "18 Aug 2026 17:20 UTC",
   "live": [],
   "upcoming": [
     {
@@ -100,6 +100,12 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
+          "name": "DER HOORN Taco Van",
+          "slug": "taco-van-der-hoorn",
+          "nat": "nl",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
           "name": "Huub Artz",
           "slug": "huub-artz",
           "nat": "nl",
@@ -112,14 +118,14 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "Cedric Beullens",
-          "slug": "cedric-beullens",
-          "nat": "be",
+          "name": "Felix Ørn-Kristoff",
+          "slug": "felix-orn-kristoff",
+          "nat": "no",
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "BUYST Jasper De",
-          "slug": "jasper-de-buyst",
+          "name": "Lionel Taminiaux",
+          "slug": "lionel-taminiaux",
           "nat": "be",
           "team": "Lotto Intermarché (WT)"
         },
@@ -130,15 +136,15 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "Rune Herregodts",
-          "slug": "rune-herregodts",
+          "name": "Florian Vermeersch",
+          "slug": "florian-vermeersch",
           "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Rui Oliveira",
-          "slug": "rui-oliveira",
-          "nat": "pt",
+          "name": "Rune Herregodts",
+          "slug": "rune-herregodts",
+          "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -160,15 +166,15 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Florian Vermeersch",
-          "slug": "florian-vermeersch",
-          "nat": "be",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
           "name": "Julius Johansen",
           "slug": "julius-johansen",
           "nat": "dk",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Rui Oliveira",
+          "slug": "rui-oliveira",
+          "nat": "pt",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -208,9 +214,9 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
-          "name": "Florian Sénéchal",
-          "slug": "florian-senechal",
-          "nat": "fr",
+          "name": "Lennert Belmans",
+          "slug": "lennert-belmans",
+          "nat": "be",
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
@@ -238,15 +244,15 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "LERBERGHE Bert Van",
-          "slug": "bert-van-lerberghe",
-          "nat": "be",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
           "name": "Pepijn Reinderink",
           "slug": "pepijn-reinderink",
           "nat": "nl",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "LERBERGHE Bert Van",
+          "slug": "bert-van-lerberghe",
+          "nat": "be",
           "team": "Soudal Quick-Step (WT)"
         },
         {
@@ -271,6 +277,12 @@
           "name": "Toms Skujiņš",
           "slug": "toms-skujins",
           "nat": "lv",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Otto Vergaerde",
+          "slug": "otto-vergaerde",
+          "nat": "be",
           "team": "Lidl - Trek (WT)"
         },
         {
@@ -400,21 +412,21 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Matthias Schwarzbacher",
-          "slug": "matthias-schwarzbacher",
-          "nat": "sk",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Colby Simmons",
-          "slug": "colby-simmons",
-          "nat": "us",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
           "name": "Michael Valgren",
           "slug": "michael-valgren-andersen",
           "nat": "dk",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "DEN BERG Marijn Van",
+          "slug": "marijn-van-den-berg",
+          "nat": "nl",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Max Walker",
+          "slug": "max-walker",
+          "nat": "gb",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -502,6 +514,12 @@
           "team": "Movistar Team (WT)"
         },
         {
+          "name": "Bob Jungels",
+          "slug": "bob-jungels",
+          "nat": "lu",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
           "name": "Magnus Sheffield",
           "slug": "magnus-sheffield",
           "nat": "us",
@@ -514,9 +532,15 @@
           "team": "Netcompany INEOS (WT)"
         },
         {
-          "name": "Ben Turner",
-          "slug": "ben-turner",
-          "nat": "gb",
+          "name": "Kim Heiduk",
+          "slug": "kim-heiduk",
+          "nat": "de",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Artem Shmidt",
+          "slug": "artem-shmidt",
+          "nat": "us",
           "team": "Netcompany INEOS (WT)"
         },
         {
@@ -610,9 +634,9 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Frederik Wandahl",
-          "slug": "frederik-wandahl",
-          "nat": "dk",
+          "name": "Haimar Etxeberria",
+          "slug": "haimar-etxeberria",
+          "nat": "es",
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
@@ -700,6 +724,12 @@
           "team": "Team Picnic PostNL (WT)"
         },
         {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
           "name": "Niklas Behrens",
           "slug": "niklas-behrens",
           "nat": "de",
@@ -736,12 +766,6 @@
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
-          "name": "Menno Huising",
-          "slug": "menno-huising",
-          "nat": "nl",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
           "name": "Jonas Abrahamsen",
           "slug": "jonas-abrahamsen",
           "nat": "no",
@@ -772,8 +796,8 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Erik Nordsæter Resell",
-          "slug": "erik-nordsaeter-resell",
+          "name": "Jonas Hem Hvideberg",
+          "slug": "jonas-hem-hvideberg",
           "nat": "no",
           "team": "Uno-X Mobility (WT)"
         },
@@ -790,8 +814,8 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Alberto Bettiol",
-          "slug": "alberto-bettiol",
+          "name": "Davide Toneatti",
+          "slug": "davide-toneatti",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -856,15 +880,15 @@
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
-          "name": "Fred Wright",
-          "slug": "alfred-wright",
-          "nat": "gb",
+          "name": "Kamil Małecki",
+          "slug": "kamil-malecki",
+          "nat": "pl",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
-          "name": "Nicolo' Parisini",
-          "slug": "nicolo-parisini",
-          "nat": "it",
+          "name": "Nickolas Zukowsky",
+          "slug": "nickolas-zukowsky",
+          "nat": "ca",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
@@ -910,8 +934,8 @@
           "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
-          "name": "HAUTEGEM Leander Van",
-          "slug": "leander-van-hautegem",
+          "name": "Jules Hesters",
+          "slug": "jules-hesters",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
@@ -922,8 +946,8 @@
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
-          "name": "Jules Hesters",
-          "slug": "jules-hesters",
+          "name": "Siebe Deweirdt",
+          "slug": "siebe-deweirdt",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
@@ -946,8 +970,8 @@
           "team": "Team Flanders - Baloise (PRT)"
         },
         {
-          "name": "Siebe Deweirdt",
-          "slug": "siebe-deweirdt",
+          "name": "HAUTEGEM Leander Van",
+          "slug": "leander-van-hautegem",
           "nat": "be",
           "team": "Team Flanders - Baloise (PRT)"
         },
@@ -1503,12 +1527,6 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "DEN BERG Marijn Van",
-          "slug": "marijn-van-den-berg",
-          "nat": "nl",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
           "name": "Richard Carapaz",
           "slug": "richard-carapaz",
           "nat": "ec",
@@ -1521,8 +1539,56 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
+          "name": "Vincenzo Albanese",
+          "slug": "vincenzo-albanese",
+          "nat": "it",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Markel Beloki",
+          "slug": "markel-beloki",
+          "nat": "es",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Alastair Mackellar",
+          "slug": "alastair-mackellar",
+          "nat": "au",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Darren Rafferty",
+          "slug": "darren-rafferty",
+          "nat": "ie",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Georg Steinhauser",
+          "slug": "georg-steinhauser",
+          "nat": "de",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Juan Felipe Rodriguez",
+          "slug": "juan-felipe-rodriguez",
+          "nat": "co",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
           "name": "Guillaume Martin",
           "slug": "guillaume-martin",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "GAC Olivier Le",
+          "slug": "olivier-le-gac",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Rudy Molard",
+          "slug": "rudy-molard",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
@@ -1533,8 +1599,26 @@
           "team": "Groupama - FDJ United (WT)"
         },
         {
-          "name": "Rudy Molard",
-          "slug": "rudy-molard",
+          "name": "Bastien Tronchon",
+          "slug": "bastien-tronchon",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Enzo Paleni",
+          "slug": "enzo-paleni",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Valentin Madouas",
+          "slug": "valentin-madouas",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Rémy Rochas",
+          "slug": "remy-rochas",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
@@ -1569,8 +1653,8 @@
           "team": "Lidl - Trek (WT)"
         },
         {
-          "name": "NORSGAARD Mathias Sunekær",
-          "slug": "mathias-norsgaard",
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
           "nat": "dk",
           "team": "Lidl - Trek (WT)"
         },
@@ -1581,8 +1665,32 @@
           "team": "Lidl - Trek (WT)"
         },
         {
-          "name": "Mads Pedersen",
-          "slug": "mads-pedersen",
+          "name": "Julien Bernard",
+          "slug": "julien-bernard",
+          "nat": "fr",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Lennard Kämna",
+          "slug": "lennard-kamna",
+          "nat": "de",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Patrick Konrad",
+          "slug": "patrick-konrad",
+          "nat": "at",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Jacopo Mosca",
+          "slug": "jacopo-mosca",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "NORSGAARD Mathias Sunekær",
+          "slug": "mathias-norsgaard",
           "nat": "dk",
           "team": "Lidl - Trek (WT)"
         },

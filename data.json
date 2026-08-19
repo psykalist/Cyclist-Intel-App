@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-19T11:18:47.002974+00:00",
-  "scraped_at_human": "19 Aug 2026 11:18 UTC",
+  "scraped_at": "2026-08-19T17:20:30.149409+00:00",
+  "scraped_at_human": "19 Aug 2026 17:20 UTC",
   "live": [
     {
       "slug": "renewi-tour",
@@ -13,23 +13,115 @@
       "end_date": "2026-08-23",
       "total_stages": 5,
       "official_url": "https://cyclingflash.com/race/renewi-tour-2026",
-      "stages_completed": 0,
+      "stages_completed": 1,
       "stages": [
         {
           "num": 1,
           "label": "Stage 1",
           "result_url": "/race/renewi-tour-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Jonathan Milan",
+          "winner_flag": "🇮🇹",
+          "winner_nat": "IT",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Jonathan Milan",
+              "rider_url": "/profile/jonathan-milan",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 2,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 3,
+              "name": "Tim Merlier",
+              "rider_url": "/profile/tim-merlier",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 4,
+              "name": "Jasper Philipsen",
+              "rider_url": "/profile/jasper-philipsen",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 5,
+              "name": "Sam Bennett",
+              "rider_url": "/profile/sam-bennett",
+              "team": "",
+              "nat_code": "IE",
+              "flag": "🇮🇪",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 6,
+              "name": "Sam Welsford",
+              "rider_url": "/profile/sam-welsford",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 7,
+              "name": "Pavel Bittner",
+              "rider_url": "/profile/pavel-bittner",
+              "team": "",
+              "nat_code": "CZ",
+              "flag": "🇨🇿",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 8,
+              "name": "Dylan Groenewegen",
+              "rider_url": "/profile/dylan-groenewegen",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 9,
+              "name": "Mike Teunissen",
+              "rider_url": "/profile/mike-teunissen",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:04:18"
+            },
+            {
+              "rank": 10,
+              "name": "Arnaud De Lie",
+              "rider_url": "/profile/arnaud-de-lie",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:18"
+            }
+          ],
           "distance_km": 188.3,
           "stage_type": "flat",
           "start_town": "Diest",
           "finish_town": "Diest",
           "description": "The 21st edition of the Renewi Tour gets underway with a 183-kilometre opening stage around Diest. The rolling roads of the Hageland region feature a series of short climbs and technical sections that are likely to animate the race from the very beginning. While a reduced bunch sprint is a realistic outcome, attackers will also have their opportunities to make an early impression. With the first leader's jersey at stake, the peloton is expected to race aggressively from the start.",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170420/responsive-images/Screenshot-2026-07-23-at-11-45-47-2025-06-24_RENEWI_Carte_e%CC%81tape_1---2025-06-24_RENEWI_Carte_etape_1.pdf___heightProfile_1200_483.webp",
-          "date_str": "Wednesday 19 August"
+          "date_str": "Wednesday 19 August",
+          "non_finishers": []
         },
         {
           "num": 2,
@@ -1020,6 +1112,102 @@
           "slug": "abram-stockman",
           "nat": "be",
           "team": "Unibet Rose Rockets (PRT)"
+        }
+      ],
+      "last_stage_winner": "Jonathan Milan",
+      "last_stage_winner_flag": "🇮🇹",
+      "last_stage_num": 1,
+      "gc_leader": "🇮🇹 Jonathan Milan",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Jonathan Milan",
+          "rider_url": "/profile/jonathan-milan",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:04:08"
+        },
+        {
+          "rank": 2,
+          "name": "Olav Kooij",
+          "rider_url": "/profile/olav-kooij",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Dries De Bondt",
+          "rider_url": "/profile/dries-de-bondt",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 4,
+          "name": "Quinten Hermans",
+          "rider_url": "/profile/quinten-hermans",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 05"
+        },
+        {
+          "rank": 5,
+          "name": "Tim Merlier",
+          "rider_url": "/profile/tim-merlier",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 6,
+          "name": "Timo Kielich",
+          "rider_url": "/profile/timo-kielich",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 07"
+        },
+        {
+          "rank": 7,
+          "name": "Lionel Taminiaux",
+          "rider_url": "/profile/lionel-taminiaux",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 8,
+          "name": "Carl-Frederik Bévort",
+          "rider_url": "/profile/carl-frederik-bevort",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 9,
+          "name": "Jasper Philipsen",
+          "rider_url": "/profile/jasper-philipsen",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Sam Bennett",
+          "rider_url": "/profile/sam-bennett",
+          "team": "",
+          "nat_code": "IE",
+          "flag": "🇮🇪",
+          "time_gap": "+ 10"
         }
       ]
     },
@@ -2433,14 +2621,8 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Milan Vader",
-          "slug": "milan-vader",
-          "nat": "nl",
-          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
-        },
-        {
-          "name": "LA CRUZ David De",
-          "slug": "david-de-la-cruz",
+          "name": "Marcel Camprubí",
+          "slug": "marcel-camprubi",
           "nat": "es",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
@@ -2451,8 +2633,8 @@
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
-          "name": "Marcel Camprubí",
-          "slug": "marcel-camprubi",
+          "name": "LA CRUZ David De",
+          "slug": "david-de-la-cruz",
           "nat": "es",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
@@ -2460,6 +2642,12 @@
           "name": "Eddie Dunbar",
           "slug": "edward-irl-dunbar",
           "nat": "ie",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Milan Vader",
+          "slug": "milan-vader",
+          "nat": "nl",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
@@ -101153,6 +101341,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "19-08-2026",
+          "race": "Renewi Tour - Stage 1",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "05-08-2026",
           "race": "Tour de Pologne - Stage 3",
           "cat": "2.UWT"
@@ -101473,7 +101667,7 @@
         }
       },
       "fetched_at": "2026-07-01T19:35:35.970458+00:00",
-      "wins_refreshed_at": "2026-08-05T18:15:34.601832+00:00"
+      "wins_refreshed_at": "2026-08-19T17:20:30.149271+00:00"
     },
     "matteo-milan": {
       "slug": "matteo-milan",

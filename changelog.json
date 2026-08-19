@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-19T11:20:08.250757+00:00",
+  "generated_at": "2026-08-19T17:21:50.079197+00:00",
   "entries": [
+    {
+      "id": "1f0c00c84a26",
+      "timestamp": "2026-08-19T17:21:50.071933+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Renewi Tour: 🇮🇹 Jonathan Milan wins"
+    },
+    {
+      "id": "e1d738ce1cd8",
+      "timestamp": "2026-08-19T17:21:50.071933+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Renewi Tour GC: 🇮🇹 Jonathan Milan leads"
+    },
     {
       "id": "2a092f4a72f5",
       "timestamp": "2026-08-19T11:20:08.244027+00:00",

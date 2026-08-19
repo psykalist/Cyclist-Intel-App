@@ -1,15 +1,14 @@
 {
-  "scraped_at": "2026-08-18T17:20:01.226339+00:00",
-  "scraped_at_human": "18 Aug 2026 17:20 UTC",
-  "live": [],
-  "upcoming": [
+  "scraped_at": "2026-08-19T11:18:47.002974+00:00",
+  "scraped_at_human": "19 Aug 2026 11:18 UTC",
+  "live": [
     {
       "slug": "renewi-tour",
       "cf_slug": "renewi-tour-2026",
       "name": "Renewi Tour",
       "year": "2026",
       "category": "2.UWT",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-08-19",
       "end_date": "2026-08-23",
       "total_stages": 5,
@@ -29,7 +28,8 @@
           "start_town": "Diest",
           "finish_town": "Diest",
           "description": "The 21st edition of the Renewi Tour gets underway with a 183-kilometre opening stage around Diest. The rolling roads of the Hageland region feature a series of short climbs and technical sections that are likely to animate the race from the very beginning. While a reduced bunch sprint is a realistic outcome, attackers will also have their opportunities to make an early impression. With the first leader's jersey at stake, the peloton is expected to race aggressively from the start.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170420/responsive-images/Screenshot-2026-07-23-at-11-45-47-2025-06-24_RENEWI_Carte_e%CC%81tape_1---2025-06-24_RENEWI_Carte_etape_1.pdf___heightProfile_1200_483.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170420/responsive-images/Screenshot-2026-07-23-at-11-45-47-2025-06-24_RENEWI_Carte_e%CC%81tape_1---2025-06-24_RENEWI_Carte_etape_1.pdf___heightProfile_1200_483.webp",
+          "date_str": "Wednesday 19 August"
         },
         {
           "num": 2,
@@ -44,7 +44,8 @@
           "start_town": "Blankenberge",
           "finish_town": "Ardooie",
           "description": "Stage 2 covers 169.4 kilometres from the North Sea coast in Blankenberge to Ardooie. On paper, it is the best opportunity for the sprinters, but the exposed roads of West Flanders could produce strong crosswinds and split the peloton into echelons. Riders will need to stay alert throughout the day to avoid losing valuable time. After four local laps in Ardooie, the stage is expected to end in a fast and exciting bunch sprint.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170421/responsive-images/Screenshot-2026-07-23-at-11-47-34-2025-06-24_RENEWI_Carte_e%CC%81tape_2---2025-06-24_RENEWI_Carte_etape_2.pdf___heightProfile_1200_418.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170421/responsive-images/Screenshot-2026-07-23-at-11-47-34-2025-06-24_RENEWI_Carte_e%CC%81tape_2---2025-06-24_RENEWI_Carte_etape_2.pdf___heightProfile_1200_418.webp",
+          "date_str": "Thursday 20 August"
         },
         {
           "num": 3,
@@ -59,7 +60,8 @@
           "start_town": "Celles",
           "finish_town": "Geraardsbergen",
           "description": "At 181 kilometres, Stage 3 is widely expected to be the decisive stage of this year's Renewi Tour. Starting in Celles, the route heads towards the iconic cycling town of Geraardsbergen, where the riders will tackle famous climbs such as the Muur van Geraardsbergen and the Bosberg. The combination of steep ascents and narrow, technical roads will favour the strongest classics specialists and GC contenders, making this the perfect stage to create significant gaps in the overall standings.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170423/responsive-images/Screenshot-2026-07-23-at-11-49-13-2025-06-24_RENEWI_Carte_e%CC%81tape_3---2025-06-24_RENEWI_Carte_etape_3.pdf___heightProfile_1200_465.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170423/responsive-images/Screenshot-2026-07-23-at-11-49-13-2025-06-24_RENEWI_Carte_e%CC%81tape_3---2025-06-24_RENEWI_Carte_etape_3.pdf___heightProfile_1200_465.webp",
+          "date_str": "Friday 21 August"
         },
         {
           "num": 4,
@@ -74,7 +76,8 @@
           "start_town": "Riemst",
           "finish_town": "Bilzen",
           "description": "The fourth stage takes the peloton on a 164-kilometre journey through the rolling landscape of Belgian Limburg. The constantly undulating terrain requires excellent positioning and explosive power throughout the day. Although a sprint finish remains possible, the succession of short climbs and the technical finale could see a reduced group battle for victory. It is another important opportunity for the general classification riders to gain or defend valuable seconds.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170425/responsive-images/Screenshot-2026-07-23-at-11-51-20-2025-06-24_RENEWI_Carte_e%CC%81tape_4---2025-06-24_RENEWI_Carte_etape_4.pdf___heightProfile_1200_446.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170425/responsive-images/Screenshot-2026-07-23-at-11-51-20-2025-06-24_RENEWI_Carte_e%CC%81tape_4---2025-06-24_RENEWI_Carte_etape_4.pdf___heightProfile_1200_446.webp",
+          "date_str": "Saturday 22 August"
         },
         {
           "num": 5,
@@ -89,7 +92,8 @@
           "start_town": "Leuven",
           "finish_town": "Leuven",
           "description": "The Renewi Tour concludes with a challenging 185-kilometre circuit stage in and around Leuven. The hilly course, well known from previous editions of the race and the 2021 UCI Road World Championships, offers one final chance to shake up the overall classification. A succession of short climbs ensures the racing remains intense until the finish, providing opportunities for attackers and classics specialists alike. Only on the finish line in Leuven will the winner of the 2026 Renewi Tour be crowned.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170428/responsive-images/Screenshot-2026-07-23-at-11-53-27-2025-06-24_RENEWI_Carte_e%CC%81tape_5---2025-06-24_RENEWI_Carte_etape_5.pdf___heightProfile_1200_510.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170428/responsive-images/Screenshot-2026-07-23-at-11-53-27-2025-06-24_RENEWI_Carte_e%CC%81tape_5---2025-06-24_RENEWI_Carte_etape_5.pdf___heightProfile_1200_510.webp",
+          "date_str": "Sunday 23 August"
         }
       ],
       "startlist": [
@@ -1020,6 +1024,92 @@
       ]
     },
     {
+      "slug": "lidl-deutschland-tour",
+      "cf_slug": "lidl-deutschland-tour-2026",
+      "name": "Lidl Deutschland Tour",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "live",
+      "start_date": "2026-08-19",
+      "end_date": "2026-08-23",
+      "total_stages": 4,
+      "official_url": "https://cyclingflash.com/race/lidl-deutschland-tour-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Thursday 20 August",
+          "start_town": "Bad Orb",
+          "finish_town": "Schwäbisch Hall",
+          "distance_km": 216.3,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Friday 21 August",
+          "start_town": "Schwäbisch Hall",
+          "finish_town": "Offenbach an der Queich",
+          "distance_km": 196.8,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Saturday 22 August",
+          "start_town": "Herxheim bei Landau",
+          "finish_town": "Bad Dürkheim",
+          "distance_km": 169.7,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Sunday 23 August",
+          "start_town": "Heilbronn",
+          "finish_town": "Heilbronn",
+          "distance_km": 156.2,
+          "elevation_m": null,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": ""
+        }
+      ],
+      "startlist": []
+    }
+  ],
+  "upcoming": [
+    {
       "slug": "vuelta-a-espana",
       "cf_slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
@@ -1461,9 +1551,15 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
-          "name": "Pau Miquel",
-          "slug": "pau-miquel-delgado",
+          "name": "Pello Bilbao",
+          "slug": "pello-bilbao",
           "nat": "es",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Santiago Buitrago",
+          "slug": "santiago-buitrago-sanchez",
+          "nat": "co",
           "team": "Bahrain - Victorious (WT)"
         },
         {
@@ -1473,9 +1569,33 @@
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Santiago Buitrago",
-          "slug": "santiago-buitrago-sanchez",
-          "nat": "co",
+          "name": "Pau Miquel",
+          "slug": "pau-miquel-delgado",
+          "nat": "es",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Matevž Govekar",
+          "slug": "matevz-govekar",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Jakob Omrzel",
+          "slug": "jakob-omrzel",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Mathijs Paasschens",
+          "slug": "mathijs-paasschens",
+          "nat": "nl",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Attila Valter",
+          "slug": "attila-valter",
+          "nat": "hu",
           "team": "Bahrain - Victorious (WT)"
         },
         {
@@ -1621,12 +1741,6 @@
           "slug": "remy-rochas",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
-        },
-        {
-          "name": "Axel Laurance",
-          "slug": "axel-laurance",
-          "nat": "fr",
-          "team": "Netcompany INEOS (WT)"
         },
         {
           "name": "Carlos Rodríguez",
@@ -1791,15 +1905,51 @@
           "team": "Movistar Team (WT)"
         },
         {
+          "name": "George Bennett",
+          "slug": "george-bennett",
+          "nat": "nz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
           "name": "Jan Hirt",
           "slug": "jan-hirt",
           "nat": "cz",
           "team": "NSN Cycling Team (WT)"
         },
         {
+          "name": "Hugo Hofstetter",
+          "slug": "hugo-hofstetter",
+          "nat": "fr",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Moritz Kretschy",
+          "slug": "moritz-kretschy",
+          "nat": "de",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
           "name": "Alexey Lutsenko",
           "slug": "aleksey-lutsenko",
           "nat": "kz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Pau Martí",
+          "slug": "pau-marti-soriano",
+          "nat": "es",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Nick Schultz",
+          "slug": "nick-schultz",
+          "nat": "au",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "TRICHT Floris Van",
+          "slug": "floris-van-tricht",
+          "nat": "be",
           "team": "NSN Cycling Team (WT)"
         },
         {
@@ -1851,15 +2001,9 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Ethan Hayter",
-          "slug": "ethan-hayter",
-          "nat": "gb",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
-          "name": "Filippo Zana",
-          "slug": "filippo-zana",
-          "nat": "it",
+          "name": "DEN BOSSCHE Fabio Van",
+          "slug": "fabio-van-den-bossche",
+          "nat": "be",
           "team": "Soudal Quick-Step (WT)"
         },
         {
@@ -1871,6 +2015,24 @@
         {
           "name": "Alberto Dainese",
           "slug": "alberto-dainese",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Gianmarco Garofoli",
+          "slug": "gianmarco-garofoli",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Ethan Hayter",
+          "slug": "ethan-hayter",
+          "nat": "gb",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Filippo Zana",
+          "slug": "filippo-zana",
           "nat": "it",
           "team": "Soudal Quick-Step (WT)"
         },
@@ -2289,6 +2451,36 @@
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
+          "name": "Marcel Camprubí",
+          "slug": "marcel-camprubi",
+          "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Eddie Dunbar",
+          "slug": "edward-irl-dunbar",
+          "nat": "ie",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Thomas Gloag",
+          "slug": "thomas-gloag",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Xabier Mikel Azparren",
+          "slug": "xabier-mikel-azparren-irurzun",
+          "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "David González",
+          "slug": "david-gonzalez-lopez",
+          "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
           "name": "Jesús Herrada",
           "slug": "jesus-herrada-lopez",
           "nat": "es",
@@ -2662,90 +2854,6 @@
           "team": "Cofidis (PRT)"
         }
       ]
-    },
-    {
-      "slug": "lidl-deutschland-tour",
-      "cf_slug": "lidl-deutschland-tour-2026",
-      "name": "Lidl Deutschland Tour",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-08-19",
-      "end_date": "2026-08-23",
-      "total_stages": 4,
-      "official_url": "https://cyclingflash.com/race/lidl-deutschland-tour-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Thursday 20 August",
-          "start_town": "Bad Orb",
-          "finish_town": "Schwäbisch Hall",
-          "distance_km": 216.3,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Friday 21 August",
-          "start_town": "Schwäbisch Hall",
-          "finish_town": "Offenbach an der Queich",
-          "distance_km": 196.8,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Saturday 22 August",
-          "start_town": "Herxheim bei Landau",
-          "finish_town": "Bad Dürkheim",
-          "distance_km": 169.7,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/lidl-deutschland-tour-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "date_str": "Sunday 23 August",
-          "start_town": "Heilbronn",
-          "finish_town": "Heilbronn",
-          "distance_km": 156.2,
-          "elevation_m": null,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": ""
-        }
-      ],
-      "startlist": []
     },
     {
       "slug": "lloyds-tour-of-britain-men",
@@ -3425,7 +3533,80 @@
       "end_date": "2026-10-18",
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
-      "startlist": []
+      "startlist": [
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Wout van Aert",
+          "slug": "wout-van-aert",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Jonas Vingegaard",
+          "slug": "jonas-vingegaard",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mathieu van der Poel",
+          "slug": "mathieu-van-der-poel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Isaac Del Toro",
+          "slug": "isaac-del-toro",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Demi Vollering",
+          "slug": "demi-vollering",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Lotte Kopecky",
+          "slug": "lotte-kopecky",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Katarzyna Niewiadoma",
+          "slug": "katarzyna-niewiadoma",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Pauline Ferrand-Prévot",
+          "slug": "pauline-ferrand-prevot",
+          "nat": "",
+          "team": ""
+        }
+      ]
     }
   ],
   "recent": [
@@ -126753,103 +126934,97 @@
       "name": "Lidl Deutschland Tour",
       "cf_slug": "lidl-deutschland-tour-2026",
       "start_date": "2026-08-19",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 24
+      "days_away": 23
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 54
+      "days_away": 53
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 61
-    },
-    {
-      "name": "Veneto Classic",
-      "cf_slug": "veneto-classic-2026",
-      "start_date": "2026-10-18",
-      "days_away": 61
+      "days_away": 60
     }
   ]
 }

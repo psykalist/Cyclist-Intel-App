@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-18T17:21:19.096241+00:00",
+  "generated_at": "2026-08-19T11:20:08.250757+00:00",
   "entries": [
+    {
+      "id": "2a092f4a72f5",
+      "timestamp": "2026-08-19T11:20:08.244027+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Vuelta a España startlist: Attila Valter, DEN BOSSCHE Fabio Van, David González (+15 more) added"
+    },
+    {
+      "id": "5a35651b11d1",
+      "timestamp": "2026-08-19T11:20:08.244027+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Veneto Classic startlist published (12 riders)"
+    },
     {
       "id": "b66d14b8f3d0",
       "timestamp": "2026-08-18T17:21:19.089132+00:00",
@@ -483,55 +497,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Vuelta a Burgos Youth: 🇬🇧 Bjoern Koerdt leads"
-    },
-    {
-      "id": "323c03ccc6d1",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Tour de Pologne: 🇮🇹 Jonathan Milan wins"
-    },
-    {
-      "id": "d3c73a7f3229",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Vuelta a Burgos: 🇬🇧 Matthew Brennan wins"
-    },
-    {
-      "id": "a6106d9c263a",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Vuelta a Burgos GC: 🇬🇧 Matthew Brennan leads"
-    },
-    {
-      "id": "868619666609",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Vuelta a Burgos Points: 🇬🇧 Matthew Brennan leads"
-    },
-    {
-      "id": "1cf0c58de6a9",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a Burgos KOM: 🇬🇧 Matthew Brennan leads"
-    },
-    {
-      "id": "7c485e0d107b",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Vuelta a Burgos Youth: 🇬🇧 Matthew Brennan leads"
-    },
-    {
-      "id": "114d09790533",
-      "timestamp": "2026-08-04T18:24:19.333715+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Czech Tour startlist: Adam Bittman, Alan Jousseaume, Alberto Monti (+112 more) added"
     }
   ]
 }

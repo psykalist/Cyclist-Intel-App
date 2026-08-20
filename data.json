@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-19T17:20:30.149409+00:00",
-  "scraped_at_human": "19 Aug 2026 17:20 UTC",
+  "scraped_at": "2026-08-20T11:20:46.063561+00:00",
+  "scraped_at_human": "20 Aug 2026 11:20 UTC",
   "live": [
     {
       "slug": "renewi-tour",
@@ -1209,6 +1209,192 @@
           "flag": "🇮🇪",
           "time_gap": "+ 10"
         }
+      ],
+      "points_leader": "🇮🇹 Jonathan Milan",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Jonathan Milan",
+          "rider_url": "/profile/jonathan-milan",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "30"
+        },
+        {
+          "rank": 2,
+          "name": "Olav Kooij",
+          "rider_url": "/profile/olav-kooij",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "25"
+        },
+        {
+          "rank": 3,
+          "name": "Tim Merlier",
+          "rider_url": "/profile/tim-merlier",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "22"
+        },
+        {
+          "rank": 4,
+          "name": "Jasper Philipsen",
+          "rider_url": "/profile/jasper-philipsen",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "19"
+        },
+        {
+          "rank": 5,
+          "name": "Sam Bennett",
+          "rider_url": "/profile/sam-bennett",
+          "team": "",
+          "nat_code": "IE",
+          "flag": "🇮🇪",
+          "time_gap": "17"
+        },
+        {
+          "rank": 6,
+          "name": "Sam Welsford",
+          "rider_url": "/profile/sam-welsford",
+          "team": "",
+          "nat_code": "AU",
+          "flag": "🇦🇺",
+          "time_gap": "15"
+        },
+        {
+          "rank": 7,
+          "name": "Pavel Bittner",
+          "rider_url": "/profile/pavel-bittner",
+          "team": "",
+          "nat_code": "CZ",
+          "flag": "🇨🇿",
+          "time_gap": "13"
+        },
+        {
+          "rank": 8,
+          "name": "Dylan Groenewegen",
+          "rider_url": "/profile/dylan-groenewegen",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "12"
+        },
+        {
+          "rank": 9,
+          "name": "Mike Teunissen",
+          "rider_url": "/profile/mike-teunissen",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "11"
+        },
+        {
+          "rank": 10,
+          "name": "Arnaud De Lie",
+          "rider_url": "/profile/arnaud-de-lie",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "10"
+        }
+      ],
+      "youth_leader": "🇧🇪 Vlad Van Mechelen",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Vlad Van Mechelen",
+          "rider_url": "/profile/vlad-van-mechelen",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 2,
+          "name": "Thibaud Gruel",
+          "rider_url": "/profile/thibaud-gruel",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 3,
+          "name": "Alessandro Borgo",
+          "rider_url": "/profile/alessandro-borgo",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 4,
+          "name": "Žak Eržen",
+          "rider_url": "/profile/zak-erzen",
+          "team": "",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 5,
+          "name": "Pietro Mattio",
+          "rider_url": "/profile/pietro-mattio",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 6,
+          "name": "Menno Huising",
+          "rider_url": "/profile/menno-huising",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 7,
+          "name": "Artem Shmidt",
+          "rider_url": "/profile/artem-shmidt",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 8,
+          "name": "Davide Toneatti",
+          "rider_url": "/profile/davide-toneatti",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "04:04:18"
+        },
+        {
+          "rank": 9,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 01:32"
+        },
+        {
+          "rank": 10,
+          "name": "Storm Ingebrigtsen",
+          "rider_url": "/profile/storm-ingebrigtsen",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 01:58"
+        }
       ]
     },
     {
@@ -2195,8 +2381,8 @@
           "team": "Soudal Quick-Step (WT)"
         },
         {
-          "name": "Steff Cras",
-          "slug": "steff-cras",
+          "name": "Mauri Vansevenant",
+          "slug": "mauri-vansevenant",
           "nat": "be",
           "team": "Soudal Quick-Step (WT)"
         },
@@ -127125,100 +127311,94 @@
   },
   "startlists_needed": [
     {
-      "name": "Lidl Deutschland Tour",
-      "cf_slug": "lidl-deutschland-tour-2026",
-      "start_date": "2026-08-19",
-      "days_away": 0
-    },
-    {
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 25
+      "days_away": 24
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 25
+      "days_away": 24
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 28
+      "days_away": 27
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 28
+      "days_away": 27
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 31
+      "days_away": 30
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 45
+      "days_away": 44
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 45
+      "days_away": 44
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 47
+      "days_away": 46
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 53
+      "days_away": 52
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 60
+      "days_away": 59
     }
   ]
 }

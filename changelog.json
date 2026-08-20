@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-19T17:21:50.079197+00:00",
+  "generated_at": "2026-08-20T11:21:59.530752+00:00",
   "entries": [
+    {
+      "id": "a4ef8a384a67",
+      "timestamp": "2026-08-20T11:21:59.523472+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Renewi Tour Points: 🇮🇹 Jonathan Milan leads"
+    },
+    {
+      "id": "24220cbcbc36",
+      "timestamp": "2026-08-20T11:21:59.523472+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Renewi Tour Youth: 🇧🇪 Vlad Van Mechelen leads"
+    },
     {
       "id": "1f0c00c84a26",
       "timestamp": "2026-08-19T17:21:50.071933+00:00",
@@ -469,48 +483,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Xabier Berasategi added"
-    },
-    {
-      "id": "e7360837393d",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Tour de Pologne: 🇮🇹 Jonathan Milan wins"
-    },
-    {
-      "id": "8a8ddd107cfa",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Vuelta a Burgos: 🇬🇧 Oscar Onley wins"
-    },
-    {
-      "id": "be2614e83cc2",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Vuelta a Burgos GC: 🇬🇧 Oscar Onley leads"
-    },
-    {
-      "id": "7cb7c3e0e453",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Vuelta a Burgos Points: 🇬🇧 Oscar Onley leads"
-    },
-    {
-      "id": "d8d051c982be",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a Burgos KOM: 🇪🇸 Rodrigo Álvarez Rodriguez leads"
-    },
-    {
-      "id": "081e17b9a4e6",
-      "timestamp": "2026-08-05T18:16:43.095483+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Vuelta a Burgos Youth: 🇬🇧 Bjoern Koerdt leads"
     }
   ]
 }

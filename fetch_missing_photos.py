@@ -1,114 +1,19 @@
 #!/usr/bin/env python3
 """
-fetch_missing_photos.py — Scrape cyclingflash profile pages to fill missing rider photos.
+fetch_missing_photos.py — RETIRED (Aug 2026).
 
-Fetches photos for every team rider not already in rider_photos.json,
-then updates both rider_photos.json and injects photos into data.json.
+This script scraped CyclingFlash for rider photo *URLs* and stored those URLs in
+rider_photos.json / data.json, so the app hotlinked them at render time. When
+CyclingFlash's CDN stopped allowing hotlinks, every CF-hosted rider went blank.
 
-Run: python3 fetch_missing_photos.py
-Takes ~15-20 min for ~500 riders (1.2s delay between requests).
+Replacement:  fetch_rider_photos_local.py  — downloads the image BYTES once into
+photos/<slug>.<ext> and points the app at the local path, so nothing external
+can ever blank the roster again.
+
+This file is intentionally inert. It exits without touching any data.
 """
-import json, re, time, sys
-sys.path.insert(0, '.')
-from scraper import fetch, BASE_URL
-from db_safe import safe_json_write
+import sys
 
-DATA       = 'data.json'
-PHOTOS_OUT = 'rider_photos.json'
-
-# Load current state
-data    = json.load(open(DATA, encoding='utf-8'))
-photos  = json.load(open(PHOTOS_OUT, encoding='utf-8'))
-
-def _broken(url):
-    """A PCS-hosted photo URL does not render on our GitHub Pages site, so treat
-    it as missing — we want to replace it with a CyclingFlash CDN photo."""
-    return (not url) or ('procyclingstats.com' in url)
-
-def _renders(url):
-    """A photo URL that actually loads on the site (non-empty, not PCS-hosted)."""
-    return bool(url) and 'procyclingstats.com' not in url
-
-# "Never lose a photo" invariant: record how many working (renderable) photos the
-# index has BEFORE we touch it. The write below refuses to shrink this count, so a
-# bad/partial run can never drop a good photo we already had.
-orig_renderable = sum(1 for u in photos.values() if _renders(u))
-
-# Collect slugs that need photos. This now also re-fetches riders whose CURRENT
-# photo is a non-rendering PCS URL (the ~330 riders, incl. Bob Jungels, that
-# showed a blank avatar) so they get overwritten with a working CyclingFlash CDN
-# URL — previously we skipped any slug already in the index, so broken PCS URLs
-# were never repaired.
-need = []
-for team in data['teams']:
-    for r in team['riders']:
-        slug = r.get('slug', '')
-        if slug and (_broken(r.get('photo')) or _broken(photos.get(slug))):
-            need.append(slug)
-need = list(dict.fromkeys(need))  # deduplicate
-print(f"Riders needing photos (missing or PCS-hosted): {len(need)}")
-
-new_photos = {}
-failed = []
-
-for i, slug in enumerate(need, 1):
-    print(f"[{i}/{len(need)}] {slug}", end=' ... ', flush=True)
-    html = fetch(f"{BASE_URL}/profile/{slug}")
-    if not html:
-        print("FAILED")
-        failed.append(slug)
-        continue
-
-    # Extract first CDN photo (not responsive-images variant)
-    m = re.search(
-        r'https://cyclingflash\.ams3\.cdn\.digitaloceanspaces\.com/\d+/[^"\'<\s/]+\.(jpg|jpeg|png|webp)',
-        html, re.IGNORECASE
-    )
-    if m:
-        url = m.group(0)
-        new_photos[slug] = url
-        print(f"✓ {url[-40:]}")
-    else:
-        print("no photo found")
-        failed.append(slug)
-
-    time.sleep(1.0)
-
-print(f"\n{'='*60}")
-print(f"Found {len(new_photos)} new photos, {len(failed)} failed/missing")
-
-if new_photos:
-    # Merge into rider_photos.json
-    photos.update(new_photos)
-
-    # "Never lose a photo" guard: the merged index must have at least as many
-    # working (renderable) photos as before. photos.update() only adds/replaces,
-    # so this should always hold — but if some future change ever tried to write
-    # a shrunken index, we abort rather than commit a regression.
-    new_renderable = sum(1 for u in photos.values() if _renders(u))
-    if new_renderable < orig_renderable:
-        raise SystemExit(
-            f"ABORT: renderable photo count would drop {orig_renderable} -> "
-            f"{new_renderable}. Refusing to write rider_photos.json (would lose photos)."
-        )
-
-    with open(PHOTOS_OUT, 'w', encoding='utf-8') as f:
-        json.dump(photos, f, ensure_ascii=False, separators=(',', ':'))
-    print(f"Updated rider_photos.json ({len(photos)} entries, {new_renderable} renderable)")
-
-    # Inject into data.json team rider records
-    injected = 0
-    for team in data['teams']:
-        for r in team['riders']:
-            if r.get('slug') in new_photos and _broken(r.get('photo')):
-                r['photo'] = new_photos[r['slug']]
-                injected += 1
-
-    safe_json_write(DATA, data,
-                    required_keys=['live', 'upcoming', 'recent', 'scraped_at'],
-                    min_ratio=0.90, label='data.json (photos)')
-    print(f"Injected {injected} photos into data.json")
-    print("\nCommit with:")
-    print('  bash git-push.sh "data: fill missing rider photos"')
-else:
-    print("No new photos found — nothing to write.")
+print(__doc__)
+print("fetch_missing_photos.py is retired — use fetch_rider_photos_local.py. No action taken.")
+sys.exit(0)

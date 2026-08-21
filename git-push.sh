@@ -74,11 +74,13 @@ git add -u >> "$LOG" 2>&1 || true
 for pat in '*.py' '*.html' '*.css' '*.js' '*.json' '*.md' '*.yml' '*.yaml' '*.sh'; do
   git add -A -- "$pat" >> "$LOG" 2>&1 || true
 done
-# Locally-stored rider photos: the source globs above don't match *.jpg/*.png,
-# so stage the photos/ tree explicitly. These are pulled-once assets committed
-# to the repo (see fetch_rider_photos_local.py); rider_photos.json (now a SOURCE
-# file, removed from GEN_FILES) is the index that points at them.
-git add -A -- photos >> "$LOG" 2>&1 || true
+# Locally-stored images: the source globs above don't match *.jpg/*.png/*.webp,
+# so stage the photos/ (rider photos) and profiles/ (stage height-profiles) trees
+# explicitly. Pulled-once assets committed to the repo (see
+# fetch_rider_photos_local.py / fetch_stage_profiles_local.py). Their index files
+# rider_photos.json and stage_profiles.json are SOURCE (not in GEN_FILES) and get
+# staged by the '*.json' glob above.
+git add -A -- photos profiles >> "$LOG" 2>&1 || true
 # unstage + discard any local changes to CI-owned files (CI is the sole writer)
 git reset -q HEAD -- "${GEN_FILES[@]}" 2>/dev/null || true
 git checkout -q -- "${GEN_FILES[@]}" 2>/dev/null || true

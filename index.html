@@ -1556,12 +1556,18 @@ function toggleClassif(uid) { document.getElementById(uid)?.classList.toggle('op
 // ── Stage images (height profile + route map) ───────────────────────────────
 
 function renderStageImages(s) {
-  const hp = s.height_profile_img;
+  // Prefer a locally-stored profile image (stage_profiles.json maps the
+  // CyclingFlash CDN url -> profiles/<name>.webp) — that CDN blocks hotlinks, so
+  // the remote url renders as a broken icon. Fall back to the remote url, and if
+  // even that fails to load, onerror hides the tile instead of showing a broken
+  // image. See fetch_stage_profiles_local.py.
+  const hp = getStageProfile(s.height_profile_img);
   const rt = s.route_img;
   if (!hp && !rt) return '';
+  const hide = "this.closest('.stage-img-tile').style.display='none'";
   return `<div class="stage-images">
-    ${hp ? `<div><img src="${esc(hp)}" alt="Height profile" loading="lazy" referrerpolicy="no-referrer"><div class="stage-img-label">Height profile</div></div>` : ''}
-    ${rt ? `<div><img src="${esc(rt)}" alt="Route map" loading="lazy" referrerpolicy="no-referrer"><div class="stage-img-label">Route map</div></div>` : ''}
+    ${hp ? `<div class="stage-img-tile"><img src="${esc(hp)}" alt="Height profile" loading="lazy" referrerpolicy="no-referrer" onerror="${hide}"><div class="stage-img-label">Height profile</div></div>` : ''}
+    ${rt ? `<div class="stage-img-tile"><img src="${esc(rt)}" alt="Route map" loading="lazy" referrerpolicy="no-referrer" onerror="${hide}"><div class="stage-img-label">Route map</div></div>` : ''}
   </div>`;
 }
 
@@ -3068,6 +3074,24 @@ function getRiderPhoto(slug) {
   return riderPhotosIndex[slug] || (appData && appData.rider_profiles && appData.rider_profiles[slug] && appData.rider_profiles[slug].photo) || null;
 }
 
+// ── Stage height-profile images: CDN url -> local file ────────────────────────
+// stage_profiles.json maps each CyclingFlash CDN height-profile url to a locally
+// stored copy (profiles/<name>.webp). The scraper keeps rewriting the CDN url
+// into data.json, so we resolve through this index at render time rather than
+// storing local paths in data.json (which would be clobbered on the next scrape).
+let stageProfilesIndex = {};
+const stageProfilesReady = (async () => {
+  try {
+    const r = await fetch('./stage_profiles.json');
+    if (r.ok) stageProfilesIndex = await r.json();
+  } catch(e) {}
+})();
+
+function getStageProfile(url) {
+  if (!url) return url;
+  return stageProfilesIndex[url] || url;
+}
+
 // ── Best-teams loader ──────────────────────────────────────────────────────────
 let bestTeamsData = null;
 async function loadBestTeams() {
@@ -3848,7 +3872,7 @@ async function loadData(force=false) {
     renderLive(appData.live || []);
     renderUpcoming(appData.upcoming || []);
     renderRecent(appData.recent || []);
-    await Promise.all([loadTourBibs(), riderPhotosReady]);  // bibs + photos ready before teams render
+    await Promise.all([loadTourBibs(), riderPhotosReady, stageProfilesReady]);  // bibs + photos + stage profiles ready before render
     // A Grand Tour (live or finished) has no startlist array of its own; its
     // Riders list is reconstructed from tour_bibs.json (loaded just above) +
     // team rosters, so re-render live and recent now that bibs are in —
@@ -3892,7 +3916,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v137';
+const APP_VERSION = 'v138';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

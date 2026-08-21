@@ -24,6 +24,9 @@ log() { echo "[$(date '+%H:%M:%S')] $*" | tee -a "$LOG"; }
 
 # Files written by GitHub Actions (auto-scrape / heal / update-data). Never
 # hand-edited. NOTE: manifest.json and .claude/* are SOURCE — keep them OUT.
+# rider_photos.json is ALSO source now (local photo index, photos/<slug>.jpg) —
+# the old CI writers (fetch_missing_photos.py / fix-photos.yml) are retired, so
+# it's committed like source and staged by the '*.json' glob above.
 GEN_FILES=(
   best_teams.json
   changelog.json
@@ -32,7 +35,6 @@ GEN_FILES=(
   palmares.json
   pcs_enrichment.json
   pcs_stats.json
-  rider_photos.json
   rider_profiles.json
   scrape_log.json
   specialty_cache.json
@@ -72,6 +74,11 @@ git add -u >> "$LOG" 2>&1 || true
 for pat in '*.py' '*.html' '*.css' '*.js' '*.json' '*.md' '*.yml' '*.yaml' '*.sh'; do
   git add -A -- "$pat" >> "$LOG" 2>&1 || true
 done
+# Locally-stored rider photos: the source globs above don't match *.jpg/*.png,
+# so stage the photos/ tree explicitly. These are pulled-once assets committed
+# to the repo (see fetch_rider_photos_local.py); rider_photos.json (now a SOURCE
+# file, removed from GEN_FILES) is the index that points at them.
+git add -A -- photos >> "$LOG" 2>&1 || true
 # unstage + discard any local changes to CI-owned files (CI is the sole writer)
 git reset -q HEAD -- "${GEN_FILES[@]}" 2>/dev/null || true
 git checkout -q -- "${GEN_FILES[@]}" 2>/dev/null || true

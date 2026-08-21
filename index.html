@@ -2891,8 +2891,10 @@ function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // Enrich from the full rider profile (birth date + photo), since data.json's
   // team roster only inlines a photo/dob for ~26% of riders.
   const prof = (riderProfilesData || {})[r.slug] || (appData.rider_profiles || {})[r.slug] || {};
-  // getRiderPhoto (the curated rider_photos.json index) before prof.photo.
-  const photoUrl = r.photo || getRiderPhoto(r.slug || '') || prof.photo || EXTRA_PHOTOS[r.slug];
+  // getRiderPhoto (the LOCAL rider_photos.json index, photos/<slug>.jpg) wins
+  // over r.photo: the scraper resets r.photo to a remote URL every run, so the
+  // locally-stored photo must take precedence or it would be overwritten.
+  const photoUrl = getRiderPhoto(r.slug || '') || r.photo || prof.photo || EXTRA_PHOTOS[r.slug];
   // referrerpolicy=no-referrer is REQUIRED: both photo CDNs (cyclingflash's
   // DigitalOcean space and procyclingstats) block hotlinking when a referrer is
   // sent, which was silently breaking every rider photo on GitHub Pages.
@@ -3284,7 +3286,7 @@ async function openRiderModal(slug) {
   const nat      = natCode(baseInfo && baseInfo.nat, profiles[slug] && profiles[slug].nat,
                     profile && profile.nat, followNat, _natFromRaceData(slug));
   const natName  = (profile || {}).nat_name || nat.toUpperCase();
-  const photo    = (profile || {}).photo || (baseInfo || {}).photo || getRiderPhoto(slug) || EXTRA_PHOTOS[slug];
+  const photo    = getRiderPhoto(slug) || (profile || {}).photo || (baseInfo || {}).photo || EXTRA_PHOTOS[slug];
   const dob        = enrich.dob || (profile || {}).dob;
   const birthplace = enrich.birthplace || null;
   const wins     = (profile || {}).wins || [];
@@ -3890,7 +3892,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v136';
+const APP_VERSION = 'v137';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4443,7 +4445,7 @@ async function renderFollowing() {
 
   const cards = list.map(f => {
     const p = cached[f.slug] || {};
-    const photoUrl = p.photo || getRiderPhoto(f.slug) || EXTRA_PHOTOS[f.slug];
+    const photoUrl = getRiderPhoto(f.slug) || p.photo || EXTRA_PHOTOS[f.slug];
     const photo = photoUrl
       ? `<img class="following-card-photo" src="${esc(photoUrl)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
       : `<div class="following-card-photo-ph">🚴</div>`;

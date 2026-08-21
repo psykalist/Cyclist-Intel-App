@@ -1,26 +1,23 @@
 {
-  "updated_at": "2026-08-21T06:21:22.481117+00:00",
+  "updated_at": "2026-08-21T11:21:24.171742+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 13h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: INCOMPLETE result on renewi-tour-2026 stage 2 -- pulled 10 of 10 expected rows, 10 without times. Source may still be publishing; scraper will re-pull.",
-    "scrape_log.json: INCOMPLETE gc_top10 on renewi-tour-2026 -- pulled 3 of 10 expected rows.",
     "scrape_log.json: INCOMPLETE kom_top10 on lidl-deutschland-tour-2026 -- pulled 3 of 10 expected rows."
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 3760,
+    "data_size_kb": 3764,
     "data_upcoming": 25,
     "data_recent": 70,
     "data_teams": 33,
     "rider_profiles": 2655,
     "live_races": 2,
-    "scraped_at": "2026-08-20T17:21:52.358597+00:00",
-    "data_age_hours": 13.0,
+    "scraped_at": "2026-08-21T11:19:48.700927+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 291809,
-    "scrape_log_run_at": "2026-08-20 19:19 UTC",
+    "scrape_log_run_at": "2026-08-21 13:17 UTC",
     "rider_roster": 1303,
     "rider_missing_profile": 109,
     "rider_missing_palmares": 896

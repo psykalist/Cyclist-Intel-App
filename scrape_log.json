@@ -1,61 +1,50 @@
 {
-  "run_at": "2026-08-20 19:19 UTC",
-  "run_at_iso": "2026-08-20T17:21:49.237979+00:00",
+  "run_at": "2026-08-21 13:17 UTC",
+  "run_at_iso": "2026-08-21T11:19:47.013510+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "renewi-tour-2026",
       "name": "Renewi Tour",
       "total_stages": 5,
-      "stages_completed_before": 1,
+      "stages_completed_before": 2,
       "stages_completed_after": 2,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 3,
         "url": "https://cyclingflash.com/race/renewi-tour-2026/result/stage-3",
         "fetch_ok": true,
-        "response_bytes": 243888,
+        "response_bytes": 248102,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-20 19:19 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
-      "incomplete_results": [
-        {
-          "stage": 2,
-          "rows": 10,
-          "missing_times": 10
-        }
-      ],
-      "incomplete_classifications": [
-        {
-          "cls": "gc_top10",
-          "rows": 3
-        }
-      ]
+      "incomplete_results": [],
+      "incomplete_classifications": []
     },
     {
       "slug": "lidl-deutschland-tour-2026",
       "name": "Lidl Deutschland Tour",
       "total_stages": 4,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 2,
         "url": "https://cyclingflash.com/race/lidl-deutschland-tour-2026/result/stage-2",
         "fetch_ok": true,
-        "response_bytes": 242713,
+        "response_bytes": 246927,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-20 19:19 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

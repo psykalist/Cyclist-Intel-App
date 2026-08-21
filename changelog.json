@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-20T17:23:06.054098+00:00",
+  "generated_at": "2026-08-21T11:21:05.587956+00:00",
   "entries": [
+    {
+      "id": "e3ab36f2f45c",
+      "timestamp": "2026-08-21T11:21:05.579842+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Renewi Tour Points: 🇧🇪 Jasper Philipsen leads"
+    },
     {
       "id": "80d0385c65c4",
       "timestamp": "2026-08-20T17:23:06.045955+00:00",

@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-08-22T00:27:26.663093+00:00",
+  "updated_at": "2026-08-22T06:16:54.580159+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 13h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: INCOMPLETE kom_top10 on lidl-deutschland-tour-2026 -- pulled 5 of 10 expected rows."
   ],
   "repairs": [],
@@ -15,7 +16,7 @@
     "rider_profiles": 2655,
     "live_races": 2,
     "scraped_at": "2026-08-21T17:21:55.643849+00:00",
-    "data_age_hours": 7.1,
+    "data_age_hours": 12.9,
     "index_html_bytes": 293297,
     "scrape_log_run_at": "2026-08-21 19:19 UTC",
     "rider_roster": 1303,

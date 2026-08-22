@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-22T11:17:20.706551+00:00",
+  "generated_at": "2026-08-22T17:15:39.991841+00:00",
   "entries": [
+    {
+      "id": "7b4aca60e3ff",
+      "timestamp": "2026-08-22T17:15:39.981663+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Renewi Tour: 🇧🇪 Jasper Philipsen wins"
+    },
+    {
+      "id": "9aac16748f60",
+      "timestamp": "2026-08-22T17:15:39.981663+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Lidl Deutschland Tour: 🇮🇹 Giulio Pellizzari wins"
+    },
+    {
+      "id": "f4ce37a3a4f3",
+      "timestamp": "2026-08-22T17:15:39.981663+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Lidl Deutschland Tour GC: 🇲🇽 Isaac Del Toro Romero leads"
+    },
     {
       "id": "dcfc6097d07a",
       "timestamp": "2026-08-22T11:17:20.699599+00:00",

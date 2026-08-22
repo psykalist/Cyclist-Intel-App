@@ -1790,9 +1790,18 @@ function cachedStartlist(slug) {
 
 function ridersForRace(race) {
   const sl = race.startlist || [];
-  if (sl.length) { cacheStartlist(race); return sl; }   // live source + snapshot it
-  // Tour (or any race tour_bibs.json covers): reconstruct from team rosters +
-  // bibs. Kept live AND post-race so the field — with bib numbers — persists.
+  if (sl.length) cacheStartlist(race);   // snapshot the live source whenever present
+
+  // Tour (or any race tour_bibs.json covers): reconstruct the field from team
+  // rosters + bibs. This runs whether the race is upcoming, live, OR finished —
+  // so dossard numbers show at every stage, including pre-race. We deliberately
+  // prefer this over the scraped `race.startlist`: the startlist uses different
+  // rider slugs than the bib file (which is keyed to roster slugs via
+  // fetch_race_bibs.py's curated aliases), so annotating the startlist directly
+  // would leave ~30 riders — Mas, Landa, Bilbao… — bib-less. The roster
+  // reconstruction bibs everyone the app knows and is identical to the field the
+  // app already shows once racing begins. Falls through to the raw startlist only
+  // if the rosters aren't loaded yet (out.length === 0).
   if (race && race.slug && tourBibsMeta && race.slug === tourBibsMeta.race_slug
       && Object.keys(tourBibs).length) {
     const out = [];
@@ -1805,6 +1814,7 @@ function ridersForRace(race) {
     }
     if (out.length) { out.sort((a, b) => (a.bib ?? 9999) - (b.bib ?? 9999)); return out; }
   }
+  if (sl.length) return sl;              // non-bib race, or rosters not ready: raw startlist
   // Preserved snapshot from when the race was upcoming.
   if (race && race.slug) { const c = cachedStartlist(race.slug); if (c.length) return c; }
   return [];
@@ -3916,7 +3926,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v138';
+const APP_VERSION = 'v139';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

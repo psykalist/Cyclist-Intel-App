@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-21T17:23:11.922251+00:00",
+  "generated_at": "2026-08-22T11:17:20.706551+00:00",
   "entries": [
+    {
+      "id": "dcfc6097d07a",
+      "timestamp": "2026-08-22T11:17:20.699599+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Renewi Tour GC: 🇧🇪 Jenno Berckmoes leads"
+    },
+    {
+      "id": "fff4cd410c6c",
+      "timestamp": "2026-08-22T11:17:20.699599+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Renewi Tour Youth: 🇮🇹 Pietro Mattio leads"
+    },
     {
       "id": "a3a257323561",
       "timestamp": "2026-08-21T17:23:11.914169+00:00",
@@ -476,20 +490,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Vuelta a Burgos KOM: 🇬🇧 Oscar Onley leads"
-    },
-    {
-      "id": "40d54b81d3af",
-      "timestamp": "2026-08-07T17:42:04.033649+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Tour de Pologne: 🇨🇭 Jan Christen wins"
-    },
-    {
-      "id": "74dc207c8968",
-      "timestamp": "2026-08-07T17:42:04.033649+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Vuelta a Burgos: 🇬🇧 Matthew Brennan wins"
     }
   ]
 }

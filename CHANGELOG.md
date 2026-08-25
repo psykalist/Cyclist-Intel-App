@@ -7,6 +7,18 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v140 — 2026-08-25 — Stop one cancelled stage cascading to every later stage (all races)
+Yesterday's Vuelta stage 3 was cancelled and the app then showed **stages 3-21 all cancelled** while the race was still on. Root cause in `scraper.py`: the cancellation check `re.search(r'(?:stage|race)\s+(?:was|has been)\s+cancell?ed', html)` scans the **whole** stage page, so a single race-level "stage 3 was cancelled" note (banner / news blurb / other-stages list) is present on **every** stage's page. The loop then flagged each remaining stage cancelled and never reached its not-yet-run `break`. The existing date guard (`_stage_expected_date`) only covers one-stage-per-day races and returns `None` for grand tours, so the Vuelta had no protection.
+
+- **Fix (general — all races, now and future):** a stage is only accepted as cancelled once **its own date has passed**. A stage dated today or later cannot be a finished/cancelled result, so the banner-bleed is ignored for it.
+- **New helper `_stage_date_from_str(race, stage)`** reads each stage's stored `date_str` (e.g. `Monday 24 August`), so the guard works for **grand tours and rest-day races** too, not just the window-based `_stage_expected_date`. Handles explicit years and Dec→Jan season-boundary races; falls back to `_stage_expected_date`, and stays inert (old behaviour, no regression) when no date is derivable.
+- **Self-healing:** on the next scrape the guard clears the bad flags on stages 4-21 while the genuinely-cancelled stage 3 (past) is kept; the post-loop clean-up removes any stale flags beyond the break. No manual data edit needed — CI regenerates `data.json`.
+- **Verified** with a faithful re-run of the stage loop over the live corrupted state (worst case: cancellation text on every page → only stage 3 stays cancelled; text already gone → nothing cancelled), plus date-parsing, Qinghai-style past-cancellation, and future one-day-race cases. `python -m py_compile scraper.py` clean.
+- Minor trade-off: a stage cancelled **on its own day** shows as "not yet run" until the day passes, then flips to Cancelled — far preferable to a whole-race cascade.
+- Version v139→v140. `scraper.py` (plus this log + APP_VERSION); `index.html` logic unchanged, brace balance 0.
+
+---
+
 ## v136 — 2026-08-15 — Proper Windows auto-start for DEVBOX runner (real root cause)
 Follow-up to v135. v135 assumed a broken Windows *service*, but diagnosis on the box showed the truth: **there is no `svc.cmd` on Windows** (that wrapper is Linux/macOS only), so this runner was never a service — it runs via `run.cmd` in a console. It went offline because (a) after the D:→C: move nobody restarted `run.cmd` from the new path, and (b) the cross-drive copy left the active `bin\` incomplete, so `run.cmd` died with `'Runner.Listener.exe' is not recognized ... error 9009`. The real `bin`/`externals` were in the versioned `bin.2.336.0`/`externals.2.336.0` folders (left over from an auto-update).
 

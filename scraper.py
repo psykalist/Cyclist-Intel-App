@@ -1322,6 +1322,52 @@ def _stage_expected_date(race, n):
     return win[0] + timedelta(days=n - 1)
 
 
+def _stage_date_from_str(race, stage):
+    """Actual calendar date of a stage, read from its own stored date_str
+    (e.g. 'Monday 24 August', '24 August', '24 August 2026'). Unlike
+    _stage_expected_date this works for grand tours and any race with rest
+    days, because it uses the per-stage date the calendar scrape already
+    captured instead of assuming one stage per day. Returns a date, or None."""
+    if not stage:
+        return None
+    m = re.search(r'(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?', stage.get("date_str") or "")
+    if not m:
+        return None
+    day = int(m.group(1))
+    try:
+        month = datetime.strptime(m.group(2)[:3], "%b").month
+    except ValueError:
+        return None
+    if m.group(3):
+        years = [int(m.group(3))]
+    else:
+        # date_str carries no year; use the race's own year(s). Trying both the
+        # start and end year covers a race that straddles a Dec->Jan boundary.
+        years = []
+        for k in ("start_date", "end_date"):
+            v = race.get(k) or ""
+            if v[:4].isdigit():
+                years.append(int(v[:4]))
+        years = years or [datetime.now(timezone.utc).year]
+    best = None
+    for y in years:
+        try:
+            cand = date(y, month, day)
+        except ValueError:
+            continue
+        # Prefer a candidate inside the race window; else keep the first valid.
+        try:
+            sd = datetime.strptime((race.get("start_date") or "")[:10], "%Y-%m-%d").date()
+            ed = datetime.strptime((race.get("end_date") or "")[:10], "%Y-%m-%d").date()
+            if sd <= cand <= ed:
+                return cand
+        except ValueError:
+            pass
+        if best is None:
+            best = cand
+    return best
+
+
 def _derive_stage_dates(race):
     """(Re)derive each stage's date_str from start_date for one-stage-per-day
     races, so stale/mis-scraped dates self-correct — e.g. a race that was
@@ -1440,6 +1486,20 @@ def main_results_only():
             cancelled = bool(html and re.search(
                 r'(?:stage|race)\s+(?:was|has been)\s+cancell?ed',
                 html, re.IGNORECASE))
+            if cancelled:
+                # Cancellation-cascade guard. The regex above scans the WHOLE
+                # page, so a single race-level "stage N was cancelled" note (a
+                # banner, a news blurb, an other-stages list) appears on every
+                # stage's page. Without this, one cancelled stage flagged every
+                # later stage of the race cancelled too -- e.g. Vuelta 2026
+                # stage 3 cancelled -> stages 3-21 all shown cancelled. A stage
+                # dated today or later cannot be a finished/cancelled result
+                # yet, so only trust a cancellation once the stage's own date
+                # has passed. date_str-based, so grand tours are covered (unlike
+                # window-based _stage_expected_date, which skips them).
+                _cdate = _stage_date_from_str(race, cached) or _stage_expected_date(race, n)
+                if _cdate is not None and _cdate >= datetime.now(timezone.utc).date():
+                    cancelled = False
             if matched:
                 completed_nums.append(n)
                 continue

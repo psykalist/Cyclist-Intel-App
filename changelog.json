@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-25T11:22:02.998782+00:00",
+  "generated_at": "2026-08-25T17:25:43.022793+00:00",
   "entries": [
+    {
+      "id": "ff3274f4b8b6",
+      "timestamp": "2026-08-25T17:25:43.015337+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Vuelta a España: 🇸🇮 Tadej Pogačar wins"
+    },
+    {
+      "id": "3108e0b1585c",
+      "timestamp": "2026-08-25T17:25:43.015337+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a España KOM: 🇸🇮 Tadej Pogačar leads"
+    },
+    {
+      "id": "6ae92ccbb8b2",
+      "timestamp": "2026-08-25T17:25:43.015337+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Vuelta a España Youth: 🇬🇧 Oscar Onley leads"
+    },
     {
       "id": "469047f45b0f",
       "timestamp": "2026-08-23T17:15:17.076996+00:00",
@@ -483,20 +504,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Alessandro Pinarello added"
-    },
-    {
-      "id": "4cb886841dc6",
-      "timestamp": "2026-08-11T11:41:00.072531+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Il Lombardia startlist published (17 riders)"
-    },
-    {
-      "id": "ca9211987a41",
-      "timestamp": "2026-08-11T11:41:00.072531+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Arctic Race of Norway startlist: Alex Díaz, Artuur Torney, Dion Smith (+12 more) added"
     }
   ]
 }

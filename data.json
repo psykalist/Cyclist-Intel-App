@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-24T17:24:44.487491+00:00",
-  "scraped_at_human": "24 Aug 2026 17:24 UTC",
+  "scraped_at": "2026-08-25T11:20:49.580627+00:00",
+  "scraped_at_human": "25 Aug 2026 11:20 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 21,
+      "stages_completed": 3,
       "stages": [
         {
           "num": 1,
@@ -280,8 +280,7 @@
           "start_time": "14:49",
           "stage_type": "mountain",
           "description": "The climbing begins almost immediately with the Port d'Envalira. At more than 25 kilometres, it is a long ascent averaging around 5 percent, with steep sections of up to 11 percent along the way. A long descent of roughly 25 kilometres follows the summit, but there is little time to recover. The Collada de Beixalis comes immediately afterwards. This climb is only 6.7 kilometres long, but at an average gradient of 8.5 percent it is considerably steeper. On the toughest sections, the gradient reaches as much as 16 percent. Next comes the Col d'Ordino, offering 9.8 kilometres of climbing at an average gradient of 7.1 percent. At the summit, 25.2 kilometres remain to the finish. Most of that distance is downhill, but the riders are not done yet.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32654/responsive-images/01KCPTQD7T951SVVJQMHVEPGCK___heightProfile_821_800.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32654/responsive-images/01KCPTQD7T951SVVJQMHVEPGCK___heightProfile_821_800.webp"
         },
         {
           "num": 5,
@@ -299,8 +298,7 @@
           "start_time": "13:34",
           "stage_type": "hilly",
           "description": "With around fifty kilometres remaining, the climbing begins again. A 2.9-kilometre rise averaging 5.7 percent is followed by the Alto de Pauls, a 3.5-kilometre climb at an average gradient of 7.2 percent. A fast descent towards the finale follows the summit. Sprinters who lose contact with the peloton on the climb will have around ten kilometres to make their way back. That makes positioning on the ascent especially important: anyone who does not fall too far behind may still be able to contest the stage victory. Date Wednesday 26 August Start Falset Finish Roquetes Distance 173.4 km Elevation gain 1519 m Start time 13:34 Expected finish 17:20-17:42 Win chance 1 Jordi Meeus 13.95% 2 Christophe Laporte 12.00% 3 Wout van Aert 8.56% 4 Mads Pedersen 8.12% 5 Kaden Groves 7.92% 6 Matthew Brennan 4.72% 7 Hugo Hofstetter 3.08% 8 Ben Turner 1.91% 9 Vincenzo Albanese 1.82% 10 Finn Fisher-Black 1.75% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp"
         },
         {
           "num": 6,
@@ -318,8 +316,7 @@
           "start_time": "13:11",
           "stage_type": "mountain",
           "description": "After around forty kilometres of racing, the Puerto de la Serrat begins. At 16.6 kilometres it is a fairly long climb, although its average gradient of 4.4 percent remains relatively modest. Shortly afterwards comes the Col de la Bandereta, which rises for 4.5 kilometres at an average of 6.9 percent. After a descending section, the riders reach the Alto de Desierto de las Palmas after around 120 kilometres. This climb is 7.2 kilometres long at an average gradient of 5.2 percent. Even then, the climbing is not over. After another descent, the same climb is tackled again. This time, however, the ascent is extended by the gravel section known as Tramo de Tierra. There, the riders face 3.1 kilometres at an average gradient of 10.8 percent. A descent then takes them back towards the foot of the Alto de Desierto de las Palmas, after which around ten kilometres remain to the flat finish in Castellón.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp"
         },
         {
           "num": 7,
@@ -337,8 +334,7 @@
           "start_time": "13:40",
           "stage_type": "mountain",
           "description": "The first hundred kilometres take place on flat and rolling roads. The Puerto de Remolcador provides the first serious test, measuring 12.4 kilometres at 4.3 percent. Immediately after the descent comes the Alto de Zucaina, a shorter 5.5-kilometre climb. The course then continues to undulate for a long stretch. With twenty kilometres to go, an uncategorised climb of 3.4 kilometres at 6.6 percent is followed by the Puerto de San Rafael. That ascent is 11.1 kilometres long at an average gradient of 4.3 percent. The final 1.7 kilometres are particularly demanding, averaging 7 percent. After a short descent, the riders face the final climb to Valdelinares. The ascent to the ski resort is 9.8 kilometres long at an average gradient of 5.9 percent, with ramps of up to 13 percent. It gradually becomes less steep towards the summit. Even so, significant time can be won or lost here. The Vuelta has previously finished in Valdelinares on two occasions.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32664/responsive-images/01KCPVHBJRN9YFKEG84X35ET9T___heightProfile_1125_800.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32664/responsive-images/01KCPVHBJRN9YFKEG84X35ET9T___heightProfile_1125_800.webp"
         },
         {
           "num": 8,
@@ -356,8 +352,7 @@
           "start_time": "13:42",
           "stage_type": "hilly",
           "description": "With the riders already close to the finish town, the Puerto de Barx awaits. The first part of the climb is 4.7 kilometres long at an average gradient of 5.6 percent. The road then flattens considerably, bringing the full ascent to 8.6 kilometres at an average of 3.8 percent. When the riders pass through Barx, 26.1 kilometres remain to the finish. First comes a fast descent towards Gandia, followed by a flat finale. The final kilometres are almost completely straight, allowing the sprint teams to organise their lead-out trains to perfection. A bunch sprint therefore appears the most likely scenario in Xeraco. Date Saturday 29 August Start Puçol Finish Xeraco Distance 171.0 km Elevation gain 1180 m Start time 13:42 Expected finish 17:20-17:41 Win chance 1 Jordi Meeus 14.32% 2 Christophe Laporte 11.69% 3 Wout van Aert 8.42% 4 Kaden Groves 8.03% 5 Mads Pedersen 8.00% 6 Matthew Brennan 4.73% 7 Hugo Hofstetter 3.13% 8 Ben Turner 1.92% 9 Vincenzo Albanese 1.84% 10 Bryan Coquard 1.79% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32671/responsive-images/01KCPVJ4FXBSYY79PHJT027NQP___heightProfile_1200_407.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32671/responsive-images/01KCPVJ4FXBSYY79PHJT027NQP___heightProfile_1200_407.webp"
         },
         {
           "num": 9,
@@ -375,8 +370,7 @@
           "start_time": "12:26",
           "stage_type": "mountain",
           "description": "The road rises immediately after the start. The first climb is 3.1 kilometres long at an average gradient of 4.4 percent. Another rolling section follows. This is ideal terrain for breakaway riders to establish a group. An uncategorised climb of 1.7 kilometres at 6.3 percent is followed by the Puerto de Tárbena, measuring 7.2 kilometres at 5.4 percent. Next comes the Coll de Rates, a short 1.5-kilometre climb at 6.2 percent, before the road finally descends in earnest. After 56 kilometres, the riders pass through Orba, but there is little prospect of a quiet middle section. The Puerto de El Miserat follows: 5.2 kilometres at a punishing 10 percent. Later comes the Port de Tollos, with 4 kilometres of climbing at 5.7 percent. The riders are then roughly halfway through the stage, but the hardest work is still to come. After the Port de Tudons and the Port de Benifallim, they face the final climb to the Alto de Aitana. The ascent is 22 kilometres long in total at an average gradient of 5.8 percent.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32678/responsive-images/01KCPVW88F57N4BTYG1DEAGVXJ___heightProfile_1200_588.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32678/responsive-images/01KCPVW88F57N4BTYG1DEAGVXJ___heightProfile_1200_588.webp"
         },
         {
           "num": 10,
@@ -394,8 +388,7 @@
           "start_time": "13:00",
           "stage_type": "mountain",
           "description": "Immediately after the start, the road gradually rises towards the Puerto de las Cruses. The final 3.2 kilometres are slightly more demanding at around 5 percent. A descent then leads towards Riópar and the foot of the Puerto de Peralejo, a 5.2-kilometre climb averaging 4.3 percent. After the summit, the course remains rolling for more than twenty kilometres before descending towards Aýna. Once through the village, another climb begins, measuring 7.7 kilometres at an average of 4 percent. A long, irregular descent follows, with short rises and dips alternating along the way. The course remains undulating throughout the final fifty kilometres. It never becomes truly steep, apart from an uncategorised rise of around 1 kilometre at 8.1 percent. The real finale begins with the Puerto de Socovos, a 9.7-kilometre climb averaging 3.5 percent.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp"
         },
         {
           "num": 11,
@@ -413,8 +406,7 @@
           "start_time": "14:08",
           "stage_type": "hilly",
           "description": "From Cartagena, the peloton stays close to the coast for the first forty kilometres. After Los Alcázares, the race heads inland. Along the way, the riders already face two short climbs: the first is 1.8 kilometres at 5.5 percent, the second 2.4 kilometres at 4.7 percent. After leaving the Costa Cálida, the route crosses the flat roads of Murcia towards Totana. There begins the only official climb of the day: the Alto de Morrion Totana. The ascent is 9.5 kilometres long at an average gradient of 4.2 percent, becoming slightly steeper towards the summit. At the top, 29.5 kilometres remain to the finish. Most of that distance is downhill, although there are a few false-flat sections. The final five kilometres are completely flat. That gives the sprint teams every opportunity to bring their fast men back after the climb, although a strong breakaway rider could take advantage if the peloton hesitates for too long.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32680/responsive-images/01KCPVY3K24J45DK4A1TGHR0MA___heightProfile_1200_619.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32680/responsive-images/01KCPVY3K24J45DK4A1TGHR0MA___heightProfile_1200_619.webp"
         },
         {
           "num": 12,
@@ -432,8 +424,7 @@
           "start_time": "13:07",
           "stage_type": "mountain",
           "description": "The first climb of the day comes early. The Alto del Cabeccio is 8.3 kilometres long at an average gradient of 3.3 percent. The route then continues over rolling terrain to the Alto Cóbdar, a 4.9-kilometre climb at 4.5 percent. Via short descents, the road continues to rise towards the Collado García. That climb is no less than 18.5 kilometres long, although its average gradient is only 2.4 percent. After the summit, located roughly halfway through the stage, comes a long descent. Then the real work of this demanding mountain stage begins. After passing through Velefique, the road climbs for 13.1 kilometres at an average gradient of 7.2 percent. The ascent begins immediately with double-digit ramps before becoming slightly less steep. Until the final kilometre, the gradient mainly fluctuates between 6 and 7 percent.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32683/responsive-images/01KCPVZ5Y8639S2ZR72XY3DBZ6___heightProfile_1200_741.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32683/responsive-images/01KCPVZ5Y8639S2ZR72XY3DBZ6___heightProfile_1200_741.webp"
         },
         {
           "num": 13,
@@ -451,8 +442,7 @@
           "start_time": "12:41",
           "stage_type": "mountain",
           "description": "From Almuñécar, the birthplace of Carlos Rodríguez, the peloton follows the Mediterranean coast towards Salobreña. The route then turns inland and begins to rise towards Guájar-Faragüit. The first serious ascent is the Puerto Los Guájares, which climbs for 14.5 kilometres at an average gradient of 5.3 percent. After the descent comes a short climb to Pinos del Valle. Next is the Puerto Las Albuñuelas, a short but vicious ascent of 2.4 kilometres at 9.2 percent. On the steepest sections, the gradient reaches as much as 15.8 percent. After another climb at modest gradients, the course continues over rolling terrain towards Padul. There begins the Alto de Legionario, a long, gradually rising section. It never becomes truly steep. After around 84 kilometres, the hardest climbing of the day is over.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32686/responsive-images/01KCPW09QJT1PSZQ5EN1ENHWS3___heightProfile_1200_571.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32686/responsive-images/01KCPW09QJT1PSZQ5EN1ENHWS3___heightProfile_1200_571.webp"
         },
         {
           "num": 14,
@@ -470,8 +460,7 @@
           "start_time": "13:33",
           "stage_type": "mountain",
           "description": "Immediately after the start, the road gradually rises towards Mancha Real. The riders then return towards Jaén over rolling roads. After around 69 kilometres, the route begins to climb gently again before the race truly comes to life on the Puerto de los Villares. This climb is 10.4 kilometres long at an average gradient of 5.5 percent. From the summit, the riders could in theory head almost directly towards the finish, but the organisers have another sixty kilometres of racing in store. After a descent and a rolling section comes the Puerto de Locubín, an 8.8-kilometre climb averaging 5 percent. The route then heads towards Valdepeñas de Jaén, where a steep ramp signals the start of the finale. After a short descent, the road continues uphill towards the foot of the final climb to the Sierra de la Pandera. It is 8.4 kilometres long at an average gradient of 7.8 percent, with its steepest kilometre averaging 12 percent among the bare rocks.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32687/responsive-images/01KCPW1KGNVZ6R41NSWJGYAEN4___heightProfile_1200_772.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32687/responsive-images/01KCPW1KGNVZ6R41NSWJGYAEN4___heightProfile_1200_772.webp"
         },
         {
           "num": 15,
@@ -489,8 +478,7 @@
           "start_time": "12:46",
           "stage_type": "mountain",
           "description": "The Vuelta also finished in Córdoba in 2024. On that occasion, a climb in the finale split the peloton significantly. Wout van Aert ultimately proved the strongest and sprinted convincingly to victory. The route is not the same this time, but comparisons with 2024 are inevitable. Once again, there is a climb in the final thirty kilometres: the Puerto Artafi is 5.9 kilometres long at an average gradient of 5.7 percent. The descent does not begin immediately after the summit, as the route first remains on a plateau for several kilometres. The road then descends towards the final eight kilometres. These are completely flat and provide an ideal run-in to Córdoba. Before the climb, the riders mainly encounter the typical Andalusian landscape, with rolling roads between vast olive groves.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32688/responsive-images/01KCPW2KFMY72RSMEWBM3RHN7C___heightProfile_1200_584.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32688/responsive-images/01KCPW2KFMY72RSMEWBM3RHN7C___heightProfile_1200_584.webp"
         },
         {
           "num": 16,
@@ -508,8 +496,7 @@
           "start_time": "13:18",
           "stage_type": "hilly",
           "description": "Cortegana lies at an altitude of around 650 metres, nestled between two mountain ranges. The first forty kilometres therefore take place largely at elevation. The road constantly rises and falls, although none of the climbs is particularly long or steep. That is precisely what makes this ideal terrain for attackers. Several riders will try to get away from the start, and it may take some time before the peloton decides which breakaway is allowed enough room. The battle to form the day’s escape could therefore occupy a substantial part of the stage. After around one hundred kilometres comes the final climb of the day. It is 4.5 kilometres long at an average gradient of 4.5 percent. The race then moves onto the flat roads of Huelva, with hardly any significant elevation changes for the remainder of the stage.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32689/responsive-images/01KCPW3GSKDR3RG0R6J6Z74915___heightProfile_1200_414.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32689/responsive-images/01KCPW3GSKDR3RG0R6J6Z74915___heightProfile_1200_414.webp"
         },
         {
           "num": 17,
@@ -527,8 +514,7 @@
           "start_time": "13:24",
           "stage_type": "flat",
           "description": "Seville also hosted a finish in the Vuelta two editions ago, when it was the flattest stage of the race. The expected sprint between Kaden Groves and Wout van Aert never materialised, as Pavel Bittner surprised the big names and took the victory. Once again, a bunch sprint appears the most logical scenario. The start is in Dos Hermanas, a suburb of Seville. A wide detour to the south and east brings the stage distance to almost 190 kilometres. There are no genuine climbs to speak of. Most of the elevation gain comes on long stretches of false flat. That means the peloton is likely to remain together for much of the day, allowing the sprint teams to maintain control.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp"
         },
         {
           "num": 18,
@@ -546,8 +532,7 @@
           "start_time": "14:07",
           "stage_type": "ITT",
           "description": "A few corners after the start take the riders out of El Puerto de Santa María. They can then shift into a big gear and ride at full speed for a long stretch. At Portal, after 12.7 kilometres, a corner briefly interrupts their momentum. After that, it is time to accelerate again. The route makes a wide arc around the eastern side of Jerez before the riders enter the city from the north. The finish is on the arrow-straight Avenida Andalucía. With so little elevation gain, this looks like a time trial for the true specialists. Jerez de la Frontera also has a rich Vuelta history. Twelve editions ago, the race began here with a team time trial won by Movistar. For the most recent individual time trial in Jerez, we have to go back to 1992, when Jelle Nijdam was fastest and immediately claimed the first leader’s jersey.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp"
         },
         {
           "num": 19,
@@ -565,8 +550,7 @@
           "start_time": "12:07",
           "stage_type": "mountain",
           "description": "Immediately after the descent comes the Puerto de los Empedrados, measuring 7.1 kilometres at an average gradient of 5.8 percent. A short descent follows, then another climb and eventually a long plunge towards Ronda. There, the Puerto Cerro Mojón awaits, a climb no less than fifteen kilometres long but with modest gradients. After a short section at altitude, the riders descend from more than a thousand metres back towards sea level. Having followed the coast between San Pedro de Alcántara and Estepona, the finale begins virtually on the beach. Over nineteen kilometres, the road climbs from sea level to an altitude of 1,270 metres at an average gradient of 6.7 percent, with the first 2.5 kilometres forming the steepest section, reaching up to 12.5 percent. Date Friday 11 September Start Vélez-Málaga Finish Estepona. Alto Peñas Blancas Distance 210.0 km Elevation gain 3781 m Start time 12:07 Expected finish 17:14-17:47 Win chance 1 Tadej Pogačar 77.29% 2 Richard Carapaz 2.07% 3 Felix Gall 2.03% 4 Mattias Skjelmose 1.82% 5 Tobias Halland Johannessen 1.25% 6 Primož Roglič 1.17% 7 Christophe Laporte 0.73% 8 Wout van Aert 0.58% 9 Oscar Onley 0.54% 10 Matthew Riccitello 0.48% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp"
         },
         {
           "num": 20,
@@ -584,8 +568,7 @@
           "start_time": "12:36",
           "stage_type": "mountain",
           "description": "To stay as close as possible to the original route, the organisers, in cooperation with the local authorities, have decided to include the Puerto de El Duque (6.2 km at 7.8%) for the first time in the race’s history. According to the Vuelta organisers, this will ensure that the stage remains roughly as demanding as originally planned. Following the change, the riders will first tackle the Puerto de Blancares (9.3 km at 3.4%), followed by two ascents of the Puerto de El Purche (8.9 km at 7.5%) and one ascent of the Puerto de El Duque, before the final climb to the equally new Collado del Alguacil in the Sierra Nevada. The final climb to the Collado del Alguacil is 18.7 kilometres long at an average gradient of 6.5%, with the second half particularly brutal and featuring long stretches of double-digit gradients. The penultimate stage therefore promises to be the ultimate test for every general classification contender.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32657/responsive-images/01KCPV1T3V960QHD51660SWS8K___heightProfile_1200_642.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32657/responsive-images/01KCPV1T3V960QHD51660SWS8K___heightProfile_1200_642.webp"
         },
         {
           "num": 21,
@@ -603,8 +586,7 @@
           "start_time": "16:20",
           "stage_type": "hilly",
           "description": "Granada provides an atmospheric backdrop for the Vuelta’s finale. Towering above the city is the famous Alhambra, the Moorish palace complex on Sabika Hill. The peloton will regularly have the iconic monument in view during the closing stages. The decision to finish in Granada was also partly prompted by Formula 1 visiting Madrid on the same weekend, leading the Vuelta to avoid the Spanish capital. The opening part of the final stage is relatively straightforward. For around 65 kilometres, the peloton will mainly encounter gently rolling roads. The real finale then begins, with five laps of the local circuit and four ascents of the climb. The climb towards the Alhambra is only one kilometre long, but at an average gradient of 7.3%, it is steep enough to split the peloton on each passage. After four ascents, the final finish of this Vuelta awaits at the foot of the climb. Instead of a flat bunch sprint in Madrid, the race will conclude with a short, explosive finale in Granada, providing a fitting end to the Vuelta a España.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp",
-          "cancelled": true
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp"
         }
       ],
       "startlist": [
@@ -2026,62 +2008,8 @@
         },
         {
           "rank": 4,
-          "name": "Sinuhe Fernandez Rodriguez",
-          "rider_url": "/profile/sinuhe-fernandez-rodriguez",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Koen Bouwman",
-          "rider_url": "/profile/koen-bouwman",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "3"
-        },
-        {
-          "rank": 2,
-          "name": "Diego Uriarte Belzunegi",
-          "rider_url": "/profile/diego-uriarte-belzunegi",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "2"
-        },
-        {
-          "rank": 3,
-          "name": "Ethan Hayter",
-          "rider_url": "/profile/ethan-hayter",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Koen Bouwman",
-          "rider_url": "/profile/koen-bouwman",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "3"
-        },
-        {
-          "rank": 2,
-          "name": "Diego Uriarte Belzunegi",
-          "rider_url": "/profile/diego-uriarte-belzunegi",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "2"
-        },
-        {
-          "rank": 3,
-          "name": "Sinuhe Fernandez Rodriguez",
-          "rider_url": "/profile/sinuhe-fernandez-rodriguez",
+          "name": "Sinue Fernandez",
+          "rider_url": "/profile/sinue-fernandez",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
@@ -129366,91 +129294,91 @@
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 6
+      "days_away": 5
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 42
+      "days_away": 41
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 48
+      "days_away": 47
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 55
+      "days_away": 54
     }
   ]
 }

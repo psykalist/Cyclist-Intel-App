@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:25:57.024519+00:00",
+  "generated_at": "2026-08-25T11:22:02.998782+00:00",
   "entries": [
     {
       "id": "469047f45b0f",
@@ -497,27 +497,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Arctic Race of Norway startlist: Alex Díaz, Artuur Torney, Dion Smith (+12 more) added"
-    },
-    {
-      "id": "bbfe3fc3c607",
-      "timestamp": "2026-08-10T17:45:45.703344+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Renewi Tour startlist: Dylan Groenewegen, Jasper Philipsen, LIE Arnaud De (+3 more) added"
-    },
-    {
-      "id": "d2a128d9b5fa",
-      "timestamp": "2026-08-10T17:45:45.703344+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Czech Tour startlist: Adam Pešek, Alessandro Iacchi, Alessandro Verre (+15 more) added"
-    },
-    {
-      "id": "15a081f13d63",
-      "timestamp": "2026-08-10T17:45:45.703344+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Arctic Race of Norway startlist: Alessandro Pinarello, Anders Foldager, EETVELT Lennert Van (+17 more) added"
     }
   ]
 }

@@ -1,23 +1,21 @@
 {
-  "updated_at": "2026-08-25T12:20:29.584470+00:00",
+  "updated_at": "2026-08-25T17:26:22.114750+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "scrape_log.json: INCOMPLETE kom_top10 on vuelta-a-espana-2026 -- pulled 4 of 10 expected rows."
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 3823,
+    "data_size_kb": 3827,
     "data_upcoming": 24,
     "data_recent": 72,
     "data_teams": 33,
     "rider_profiles": 2659,
     "live_races": 1,
-    "scraped_at": "2026-08-25T11:20:49.580627+00:00",
-    "data_age_hours": 1.0,
+    "scraped_at": "2026-08-25T17:24:32.541114+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 294009,
-    "scrape_log_run_at": "2026-08-25 13:19 UTC",
+    "scrape_log_run_at": "2026-08-25 19:22 UTC",
     "rider_roster": 1303,
     "rider_missing_profile": 105,
     "rider_missing_palmares": 895

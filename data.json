@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-25T17:24:32.541114+00:00",
-  "scraped_at_human": "25 Aug 2026 17:24 UTC",
+  "scraped_at": "2026-08-26T11:22:26.909395+00:00",
+  "scraped_at_human": "26 Aug 2026 11:22 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -2556,10 +2556,76 @@
       "official_url": "https://cyclingflash.com/race/maryland-cycling-classic-2026",
       "startlist": [
         {
-          "name": "Mattia Agostinacchio",
-          "slug": "mattia-agostinacchio",
-          "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Wout van Aert",
+          "slug": "wout-van-aert",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Jonas Vingegaard",
+          "slug": "jonas-vingegaard",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mathieu van der Poel",
+          "slug": "mathieu-van-der-poel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Isaac Del Toro",
+          "slug": "isaac-del-toro",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Demi Vollering",
+          "slug": "demi-vollering",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Lotte Kopecky",
+          "slug": "lotte-kopecky",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Katarzyna Niewiadoma",
+          "slug": "katarzyna-niewiadoma",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Pauline Ferrand-Prévot",
+          "slug": "pauline-ferrand-prevot",
+          "nat": "",
+          "team": ""
         }
       ]
     },
@@ -129446,91 +129512,91 @@
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 8
+      "days_away": 7
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 25
+      "days_away": 24
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 39
+      "days_away": 38
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 41
+      "days_away": 40
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 47
+      "days_away": 46
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 54
+      "days_away": 53
     }
   ]
 }

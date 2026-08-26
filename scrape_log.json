@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-08-25 19:22 UTC",
-  "run_at_iso": "2026-08-25T17:24:30.772080+00:00",
+  "run_at": "2026-08-26 13:20 UTC",
+  "run_at_iso": "2026-08-26T11:22:26.908555+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 2,
+      "stages_completed_before": 3,
       "stages_completed_after": 4,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         3
       ],
@@ -17,12 +17,12 @@
         "stage_num": 5,
         "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-5",
         "fetch_ok": true,
-        "response_bytes": 327809,
+        "response_bytes": 330991,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-25 19:22 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 16.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-26T11:22:26.909395+00:00",
-  "scraped_at_human": "26 Aug 2026 11:22 UTC",
+  "scraped_at": "2026-08-26T18:51:07.042189+00:00",
+  "scraped_at_human": "26 Aug 2026 18:51 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 4,
+      "stages_completed": 5,
       "stages": [
         {
           "num": 1,
@@ -378,10 +378,101 @@
           "num": 5,
           "label": "Stage 5",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Matthew Brennan",
+          "winner_flag": "🇬🇧",
+          "winner_nat": "GB",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Matthew Brennan",
+              "rider_url": "/profile/matthew-brennan",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 2,
+              "name": "Jordi Meeus",
+              "rider_url": "/profile/jordi-meeus",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 3,
+              "name": "Vincenzo Albanese",
+              "rider_url": "/profile/vincenzo-albanese",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 4,
+              "name": "Alessandro Romele",
+              "rider_url": "/profile/alessandro-romele",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 5,
+              "name": "Axel Laurance",
+              "rider_url": "/profile/axel-laurance",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 6,
+              "name": "Christophe Laporte",
+              "rider_url": "/profile/christophe-laporte",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 7,
+              "name": "Alberto Dainese",
+              "rider_url": "/profile/alberto-dainese",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 8,
+              "name": "Vito Braet",
+              "rider_url": "/profile/vito-braet",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 9,
+              "name": "David Gonzalez Lopez",
+              "rider_url": "/profile/david-gonzalez-lopez",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "03:47:02"
+            },
+            {
+              "rank": 10,
+              "name": "Wout van Aert",
+              "rider_url": "/profile/wout-van-aert",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:47:02"
+            }
+          ],
           "date_str": "Wednesday 26 August",
           "start_town": "Falset",
           "finish_town": "Roquetes",
@@ -390,7 +481,27 @@
           "start_time": "13:34",
           "stage_type": "hilly",
           "description": "With around fifty kilometres remaining, the climbing begins again. A 2.9-kilometre rise averaging 5.7 percent is followed by the Alto de Pauls, a 3.5-kilometre climb at an average gradient of 7.2 percent. A fast descent towards the finale follows the summit. Sprinters who lose contact with the peloton on the climb will have around ten kilometres to make their way back. That makes positioning on the ascent especially important: anyone who does not fall too far behind may still be able to contest the stage victory. Date Wednesday 26 August Start Falset Finish Roquetes Distance 173.4 km Elevation gain 1519 m Start time 13:34 Expected finish 17:20-17:42 Win chance 1 Jordi Meeus 13.95% 2 Christophe Laporte 12.00% 3 Wout van Aert 8.56% 4 Mads Pedersen 8.12% 5 Kaden Groves 7.92% 6 Matthew Brennan 4.72% 7 Hugo Hofstetter 3.08% 8 Ben Turner 1.91% 9 Vincenzo Albanese 1.82% 10 Finn Fisher-Black 1.75% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32662/responsive-images/01KCPVF5CZPDJ0X213SFJN6GRA___heightProfile_1200_390.webp",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Roel Van Sintmaartensdijk",
+              "rider_url": "/profile/roel-van-sintmaartensdijk",
+              "team": "Lotto - Intermarché",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Cian Uijtdebroeks",
+              "rider_url": "/profile/cian-uijtdebroeks",
+              "team": "Movistar Team",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            }
+          ]
         },
         {
           "num": 6,
@@ -1787,9 +1898,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Tadej Pogačar",
-      "last_stage_winner_flag": "🇸🇮",
-      "last_stage_num": 4,
+      "last_stage_winner": "Matthew Brennan",
+      "last_stage_winner_flag": "🇬🇧",
+      "last_stage_num": 5,
       "gc_leader": "🇸🇮 Tadej Pogačar",
       "gc_top10": [
         {
@@ -1799,7 +1910,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "07:38:59"
+          "time_gap": "11:26:01"
         },
         {
           "rank": 2,
@@ -1896,24 +2007,60 @@
         },
         {
           "rank": 2,
-          "name": "Ethan Hayter",
-          "rider_url": "/profile/ethan-hayter",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "37"
-        },
-        {
-          "rank": 3,
           "name": "Matthew Brennan",
           "rider_url": "/profile/matthew-brennan",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "30"
+          "time_gap": "60"
+        },
+        {
+          "rank": 3,
+          "name": "Ethan Hayter",
+          "rider_url": "/profile/ethan-hayter",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "57"
         },
         {
           "rank": 4,
+          "name": "Christophe Laporte",
+          "rider_url": "/profile/christophe-laporte",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "52"
+        },
+        {
+          "rank": 5,
+          "name": "Wout van Aert",
+          "rider_url": "/profile/wout-van-aert",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "49"
+        },
+        {
+          "rank": 6,
+          "name": "Pau Miquel Delgado",
+          "rider_url": "/profile/pau-miquel-delgado",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "31"
+        },
+        {
+          "rank": 7,
+          "name": "Axel Laurance",
+          "rider_url": "/profile/axel-laurance",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "28"
+        },
+        {
+          "rank": 8,
           "name": "Léo Bisiaux",
           "rider_url": "/profile/leo-bisiaux",
           "team": "",
@@ -1922,58 +2069,22 @@
           "time_gap": "25"
         },
         {
-          "rank": 5,
-          "name": "Pau Miquel Delgado",
-          "rider_url": "/profile/pau-miquel-delgado",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "25"
-        },
-        {
-          "rank": 6,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 9,
+          "name": "Jordi Meeus",
+          "rider_url": "/profile/jordi-meeus",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "25"
         },
         {
-          "rank": 7,
+          "rank": 10,
           "name": "Joshua Tarling",
           "rider_url": "/profile/joshua-tarling",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
           "time_gap": "25"
-        },
-        {
-          "rank": 8,
-          "name": "Christophe Laporte",
-          "rider_url": "/profile/christophe-laporte",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "24"
-        },
-        {
-          "rank": 9,
-          "name": "Oscar Onley",
-          "rider_url": "/profile/oscar-onley",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "22"
-        },
-        {
-          "rank": 10,
-          "name": "Gregor Mühlberger",
-          "rider_url": "/profile/gregor-muhlberger",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "21"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -1985,7 +2096,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "07:42:44"
+          "time_gap": "11:29:46"
         },
         {
           "rank": 2,
@@ -95410,6 +95521,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "26-08-2026",
+          "race": "Vuelta a España - Stage 5",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "23-08-2026",
           "race": "Vuelta a España - Stage 2",
           "cat": "2.UWT"
@@ -95616,7 +95733,7 @@
         }
       },
       "fetched_at": "2026-07-06T19:27:58.289597+00:00",
-      "wins_refreshed_at": "2026-08-23T17:14:03.884503+00:00"
+      "wins_refreshed_at": "2026-08-26T18:51:07.041956+00:00"
     },
     "sam-welsford": {
       "slug": "sam-welsford",

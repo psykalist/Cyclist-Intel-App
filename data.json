@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-26T18:51:07.042189+00:00",
-  "scraped_at_human": "26 Aug 2026 18:51 UTC",
+  "scraped_at": "2026-08-27T20:53:25.857288+00:00",
+  "scraped_at_human": "27 Aug 2026 20:53 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 5,
+      "stages_completed": 6,
       "stages": [
         {
           "num": 1,
@@ -507,10 +507,101 @@
           "num": 6,
           "label": "Stage 6",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Tadej Pogačar",
+          "winner_flag": "🇸🇮",
+          "winner_nat": "SI",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tadej Pogačar",
+              "rider_url": "/profile/tadej-pogacar",
+              "team": "",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "04:12:40"
+            },
+            {
+              "rank": 2,
+              "name": "Enric Mas Nicolau",
+              "rider_url": "/profile/enric-mas-nicolau",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "04:12:40"
+            },
+            {
+              "rank": 3,
+              "name": "Ramses Debruyne",
+              "rider_url": "/profile/ramses-debruyne",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 46"
+            },
+            {
+              "rank": 4,
+              "name": "Richard Carapaz",
+              "rider_url": "/profile/richard-carapaz",
+              "team": "",
+              "nat_code": "EC",
+              "flag": "🇪🇨",
+              "time_gap": "+ 46"
+            },
+            {
+              "rank": 5,
+              "name": "Harold Alfonso Tejada Canacue",
+              "rider_url": "/profile/harold-alfonso-tejada-canacue",
+              "team": "",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "+ 46"
+            },
+            {
+              "rank": 6,
+              "name": "Felix Gall",
+              "rider_url": "/profile/felix-gall",
+              "team": "",
+              "nat_code": "AT",
+              "flag": "🇦🇹",
+              "time_gap": "+ 46"
+            },
+            {
+              "rank": 7,
+              "name": "Primož Roglič",
+              "rider_url": "/profile/primoz-roglic",
+              "team": "",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "+ 46"
+            },
+            {
+              "rank": 8,
+              "name": "Cristian Rodriguez Martin",
+              "rider_url": "/profile/cristian-rodriguez-martin",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 01:38"
+            },
+            {
+              "rank": 9,
+              "name": "Clément Berthet",
+              "rider_url": "/profile/clement-berthet",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:38"
+            },
+            {
+              "rank": 10,
+              "name": "Mattias Skjelmose",
+              "rider_url": "/profile/mattias-skjelmose-jensen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 01:38"
+            }
+          ],
           "date_str": "Thursday 27 August",
           "start_town": "Alcossebre",
           "finish_town": "Castellón",
@@ -519,7 +610,27 @@
           "start_time": "13:11",
           "stage_type": "mountain",
           "description": "After around forty kilometres of racing, the Puerto de la Serrat begins. At 16.6 kilometres it is a fairly long climb, although its average gradient of 4.4 percent remains relatively modest. Shortly afterwards comes the Col de la Bandereta, which rises for 4.5 kilometres at an average of 6.9 percent. After a descending section, the riders reach the Alto de Desierto de las Palmas after around 120 kilometres. This climb is 7.2 kilometres long at an average gradient of 5.2 percent. Even then, the climbing is not over. After another descent, the same climb is tackled again. This time, however, the ascent is extended by the gravel section known as Tramo de Tierra. There, the riders face 3.1 kilometres at an average gradient of 10.8 percent. A descent then takes them back towards the foot of the Alto de Desierto de las Palmas, after which around ten kilometres remain to the flat finish in Castellón.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32663/responsive-images/01KCPVFXYVJVV3YVJAW1YWQRFY___heightProfile_1200_561.webp",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Joshua Tarling",
+              "rider_url": "/profile/joshua-tarling",
+              "team": "Netcompany INEOS",
+              "nat_code": "GB",
+              "flag": "🇬🇧"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Markel Beloki Fernandez",
+              "rider_url": "/profile/markel-beloki-fernandez",
+              "team": "EF Education - EasyPost",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            }
+          ]
         },
         {
           "num": 7,
@@ -1898,9 +2009,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Matthew Brennan",
-      "last_stage_winner_flag": "🇬🇧",
-      "last_stage_num": 5,
+      "last_stage_winner": "Tadej Pogačar",
+      "last_stage_winner_flag": "🇸🇮",
+      "last_stage_num": 6,
       "gc_leader": "🇸🇮 Tadej Pogačar",
       "gc_top10": [
         {
@@ -1910,88 +2021,88 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "11:26:01"
+          "time_gap": "15:38:27"
         },
         {
           "rank": 2,
-          "name": "Primož Roglič",
-          "rider_url": "/profile/primoz-roglic",
-          "team": "",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "+ 03:21"
-        },
-        {
-          "rank": 3,
           "name": "Enric Mas Nicolau",
           "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 03:32"
+          "time_gap": "+ 03:34"
+        },
+        {
+          "rank": 3,
+          "name": "Primož Roglič",
+          "rider_url": "/profile/primoz-roglic",
+          "team": "",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 04:21"
         },
         {
           "rank": 4,
-          "name": "Sepp Kuss",
-          "rider_url": "/profile/sepp-kuss",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "+ 03:44"
-        },
-        {
-          "rank": 5,
-          "name": "Oscar Onley",
-          "rider_url": "/profile/oscar-onley",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 03:45"
-        },
-        {
-          "rank": 6,
           "name": "Richard Carapaz",
           "rider_url": "/profile/richard-carapaz",
           "team": "",
           "nat_code": "EC",
           "flag": "🇪🇨",
-          "time_gap": "+ 03:50"
+          "time_gap": "+ 04:50"
         },
         {
-          "rank": 7,
+          "rank": 5,
           "name": "Felix Gall",
           "rider_url": "/profile/felix-gall",
           "team": "",
           "nat_code": "AT",
           "flag": "🇦🇹",
-          "time_gap": "+ 03:57"
+          "time_gap": "+ 04:55"
+        },
+        {
+          "rank": 6,
+          "name": "Sepp Kuss",
+          "rider_url": "/profile/sepp-kuss",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 05:36"
+        },
+        {
+          "rank": 7,
+          "name": "Oscar Onley",
+          "rider_url": "/profile/oscar-onley",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 05:37"
         },
         {
           "rank": 8,
+          "name": "Ramses Debruyne",
+          "rider_url": "/profile/ramses-debruyne",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 05:40"
+        },
+        {
+          "rank": 9,
           "name": "Mattias Skjelmose",
           "rider_url": "/profile/mattias-skjelmose-jensen",
           "team": "",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "+ 04:06"
-        },
-        {
-          "rank": 9,
-          "name": "Jarno Widar",
-          "rider_url": "/profile/jarno-widar",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 04:06"
+          "time_gap": "+ 05:58"
         },
         {
           "rank": 10,
-          "name": "Jay Vine",
-          "rider_url": "/profile/jay-vine",
+          "name": "Harold Alfonso Tejada Canacue",
+          "rider_url": "/profile/harold-alfonso-tejada-canacue",
           "team": "",
-          "nat_code": "AU",
-          "flag": "🇦🇺",
-          "time_gap": "+ 04:11"
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "+ 06:30"
         }
       ],
       "points_leader": "🇸🇮 Tadej Pogačar",
@@ -2003,10 +2114,19 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "82"
+          "time_gap": "102"
         },
         {
           "rank": 2,
+          "name": "Wout van Aert",
+          "rider_url": "/profile/wout-van-aert",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "69"
+        },
+        {
+          "rank": 3,
           "name": "Matthew Brennan",
           "rider_url": "/profile/matthew-brennan",
           "team": "",
@@ -2015,7 +2135,7 @@
           "time_gap": "60"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "name": "Ethan Hayter",
           "rider_url": "/profile/ethan-hayter",
           "team": "",
@@ -2024,7 +2144,7 @@
           "time_gap": "57"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "name": "Christophe Laporte",
           "rider_url": "/profile/christophe-laporte",
           "team": "",
@@ -2033,16 +2153,16 @@
           "time_gap": "52"
         },
         {
-          "rank": 5,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 6,
+          "name": "Ramses Debruyne",
+          "rider_url": "/profile/ramses-debruyne",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "49"
+          "time_gap": "36"
         },
         {
-          "rank": 6,
+          "rank": 7,
           "name": "Pau Miquel Delgado",
           "rider_url": "/profile/pau-miquel-delgado",
           "team": "",
@@ -2051,7 +2171,7 @@
           "time_gap": "31"
         },
         {
-          "rank": 7,
+          "rank": 8,
           "name": "Axel Laurance",
           "rider_url": "/profile/axel-laurance",
           "team": "",
@@ -2060,31 +2180,22 @@
           "time_gap": "28"
         },
         {
-          "rank": 8,
-          "name": "Léo Bisiaux",
-          "rider_url": "/profile/leo-bisiaux",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "25"
-        },
-        {
           "rank": 9,
-          "name": "Jordi Meeus",
-          "rider_url": "/profile/jordi-meeus",
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "25"
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "27"
         },
         {
           "rank": 10,
-          "name": "Joshua Tarling",
-          "rider_url": "/profile/joshua-tarling",
+          "name": "Oscar Onley",
+          "rider_url": "/profile/oscar-onley",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "25"
+          "time_gap": "26"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -2096,43 +2207,43 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "11:29:46"
+          "time_gap": "15:44:04"
         },
         {
           "rank": 2,
-          "name": "Jarno Widar",
-          "rider_url": "/profile/jarno-widar",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 21"
-        },
-        {
-          "rank": 3,
           "name": "Ramses Debruyne",
           "rider_url": "/profile/ramses-debruyne",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 59"
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 3,
+          "name": "Jarno Widar",
+          "rider_url": "/profile/jarno-widar",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 02:31"
         },
         {
           "rank": 4,
+          "name": "Jakob Omrzel",
+          "rider_url": "/profile/jakob-omrzel",
+          "team": "",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 07:42"
+        },
+        {
+          "rank": 5,
           "name": "Pablo Torres Arias",
           "rider_url": "/profile/pablo-torres-arias",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 01:42"
-        },
-        {
-          "rank": 5,
-          "name": "Marco Brenner",
-          "rider_url": "/profile/marco-brenner",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 02:17"
+          "time_gap": "+ 08:48"
         },
         {
           "rank": 6,
@@ -2141,43 +2252,43 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 04:59"
+          "time_gap": "+ 09:06"
         },
         {
           "rank": 7,
-          "name": "Ben Tulett",
-          "rider_url": "/profile/ben-tulett",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 04:59"
-        },
-        {
-          "rank": 8,
-          "name": "Jakob Omrzel",
-          "rider_url": "/profile/jakob-omrzel",
-          "team": "",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "+ 05:32"
-        },
-        {
-          "rank": 9,
-          "name": "Jørgen Nordhagen",
-          "rider_url": "/profile/jorgen-nordhagen",
+          "name": "Embret Svestad-Bardseng",
+          "rider_url": "/profile/embret-svestad-bardseng",
           "team": "",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 05:41"
+          "time_gap": "+ 09:17"
         },
         {
-          "rank": 10,
+          "rank": 8,
           "name": "Finlay Pickering",
           "rider_url": "/profile/xavier-finlay-pickering",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "+ 06:09"
+          "time_gap": "+ 10:16"
+        },
+        {
+          "rank": 9,
+          "name": "Matthew Riccitello",
+          "rider_url": "/profile/matthew-riccitello",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 10:34"
+        },
+        {
+          "rank": 10,
+          "name": "Jørgen Nordhagen",
+          "rider_url": "/profile/jorgen-nordhagen",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 14:23"
         }
       ],
       "kom_leader": "🇸🇮 Tadej Pogačar",
@@ -2189,19 +2300,46 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "23"
+          "time_gap": "29"
         },
         {
           "rank": 2,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "14"
+        },
+        {
+          "rank": 3,
           "name": "Lorenzo Fortunato",
           "rider_url": "/profile/lorenzo-fortunato",
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "10"
+          "time_gap": "13"
         },
         {
-          "rank": 3,
+          "rank": 4,
+          "name": "Santiago Buitrago Sanchez",
+          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "team": "",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "11"
+        },
+        {
+          "rank": 5,
+          "name": "Felix Gall",
+          "rider_url": "/profile/felix-gall",
+          "team": "",
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "9"
+        },
+        {
+          "rank": 6,
           "name": "Koen Bouwman",
           "rider_url": "/profile/koen-bouwman",
           "team": "",
@@ -2210,16 +2348,7 @@
           "time_gap": "6"
         },
         {
-          "rank": 4,
-          "name": "Sepp Kuss",
-          "rider_url": "/profile/sepp-kuss",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "6"
-        },
-        {
-          "rank": 5,
+          "rank": 7,
           "name": "Richard Carapaz",
           "rider_url": "/profile/richard-carapaz",
           "team": "",
@@ -2228,7 +2357,16 @@
           "time_gap": "6"
         },
         {
-          "rank": 6,
+          "rank": 8,
+          "name": "Sepp Kuss",
+          "rider_url": "/profile/sepp-kuss",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "6"
+        },
+        {
+          "rank": 9,
           "name": "Paul Double",
           "rider_url": "/profile/paul-double",
           "team": "",
@@ -2237,40 +2375,13 @@
           "time_gap": "6"
         },
         {
-          "rank": 7,
-          "name": "Felix Gall",
-          "rider_url": "/profile/felix-gall",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "5"
-        },
-        {
-          "rank": 8,
-          "name": "Enric Mas Nicolau",
-          "rider_url": "/profile/enric-mas-nicolau",
+          "rank": 10,
+          "name": "Jose Manuel Diaz Gallego",
+          "rider_url": "/profile/jose-manuel-diaz-gallego",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "4"
-        },
-        {
-          "rank": 9,
-          "name": "Oscar Onley",
-          "rider_url": "/profile/oscar-onley",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "4"
-        },
-        {
-          "rank": 10,
-          "name": "Embret Svestad-Bardseng",
-          "rider_url": "/profile/embret-svestad-bardseng",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "4"
+          "time_gap": "5"
         }
       ]
     }
@@ -2753,10 +2864,34 @@
       "official_url": "https://cyclingflash.com/race/gp-industria-artigianato-2026",
       "startlist": [
         {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
+          "name": "Damiano Caruso",
+          "slug": "damiano-caruso",
           "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Mikkel Frølich Honoré",
+          "slug": "mikkel-honore",
+          "nat": "dk",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Toralf Rydningen Martinsen",
+          "slug": "toralf-rydningen-martinsen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Alessandro Fancellu",
+          "slug": "alessandro-fancellu",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "VRIES Hartthijs De",
+          "slug": "hartthijs-de-vries",
+          "nat": "nl",
+          "team": "Unibet Rose Rockets (PRT)"
         }
       ]
     },
@@ -106757,6 +106892,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "27-08-2026",
+          "race": "Vuelta a España - Stage 6",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "25-08-2026",
           "race": "Vuelta a España - Stage 4",
           "cat": "2.UWT"
@@ -107623,7 +107764,7 @@
         }
       },
       "fetched_at": "2026-07-06T19:27:27.951983+00:00",
-      "wins_refreshed_at": "2026-08-25T17:24:32.540961+00:00"
+      "wins_refreshed_at": "2026-08-27T20:53:25.857139+00:00"
     },
     "juan-ayuso-pesquera": {
       "slug": "juan-ayuso-pesquera",
@@ -129629,91 +129770,91 @@
       "name": "Bretagne Classic - Ouest-France",
       "cf_slug": "bretagne-classic-ouest-france-2026",
       "start_date": "2026-08-30",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 21
+      "days_away": 20
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 21
+      "days_away": 20
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 24
+      "days_away": 23
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 38
+      "days_away": 37
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 38
+      "days_away": 37
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 40
+      "days_away": 39
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 46
+      "days_away": 45
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 53
+      "days_away": 52
     }
   ]
 }

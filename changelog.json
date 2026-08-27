@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-26T18:52:26.020356+00:00",
+  "generated_at": "2026-08-27T20:54:38.949401+00:00",
   "entries": [
+    {
+      "id": "c36b237418e7",
+      "timestamp": "2026-08-27T20:54:38.941659+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 6 Vuelta a España: 🇸🇮 Tadej Pogačar wins"
+    },
+    {
+      "id": "bba4d60fd5cd",
+      "timestamp": "2026-08-27T20:54:38.941659+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Alessandro Fancellu, Damiano Caruso, Mikkel Frølich Honoré (+2 more) added"
+    },
     {
       "id": "fa008393e3b9",
       "timestamp": "2026-08-26T18:52:26.012752+00:00",
@@ -483,13 +497,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Giro del Veneto startlist published (12 riders)"
-    },
-    {
-      "id": "36b8c75ff009",
-      "timestamp": "2026-08-13T11:43:14.751445+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Renewi Tour startlist: ANDERSEN Søren Kragh, ASBROECK Tom Van, Aaron Gate (+130 more) added"
     }
   ]
 }

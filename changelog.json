@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-28T01:16:04.325672+00:00",
+  "generated_at": "2026-08-28T21:19:53.889135+00:00",
   "entries": [
+    {
+      "id": "7a4faff1a643",
+      "timestamp": "2026-08-28T21:19:53.882243+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 7 Vuelta a España: 🇳🇴 Andreas Leknessund wins"
+    },
+    {
+      "id": "ba7c22f818f8",
+      "timestamp": "2026-08-28T21:19:53.882243+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Vuelta a España Points: 🇧🇪 Wout van Aert leads"
+    },
     {
       "id": "c36b237418e7",
       "timestamp": "2026-08-27T20:54:38.941659+00:00",

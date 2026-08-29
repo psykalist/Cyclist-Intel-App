@@ -2444,31 +2444,31 @@ async function loadTourBibs() {
   return tourBibs;
 }
 
-// Some Tour teams are absent from data.json's `teams` array (the scraper only
-// covers UWT + a subset of ProTeams). Pinarello Q36.5 debuts at the 2026 Tour
-// (bibs 171-178 in tour_bibs.json) but has no roster in data.json, so its riders
-// — Pidcock included — never appeared on the Teams tab, never reconstructed into
-// the Tour field (ridersForRace iterates appData.teams), and Pidcock's profile
-// showed no team. We rebuild the missing squad here from the same bib block the
-// rest of the app already trusts. Slugs MUST match tour_bibs.json (tom-pidcock,
-// not thomas-pidcock) so the bib annotations and reconstruction resolve.
+// Some grand-tour teams are absent from data.json's `teams` array (the scraper
+// only covers UWT + a subset of ProTeams). Pinarello Q36.5 (a ProTeam wildcard)
+// has no roster in data.json, so its riders never appear on the Teams tab and are
+// never reconstructed into the tour field (ridersForRace iterates appData.teams).
+// We rebuild the missing squad here from the same bib block the rest of the app
+// already trusts. This roster tracks whatever grand tour tour_bibs.json currently
+// covers — presently the 2026 Vuelta (bibs 51-58; the PCS startlist scrape missed
+// this team, so De la Cruz, Dunbar, Gloag, Vader… were bib-less and unreachable).
+// Refresh this roster AND tour_bibs.json together when the covered race changes.
+// Slugs MUST match tour_bibs.json so the bib annotations and reconstruction resolve.
 const EXTRA_TEAMS = [{
   slug: 'q36-5-pro-cycling-team',
-  name: 'Q36.5 Pro Cycling Team',
+  name: 'Pinarello Q36.5 Pro Cycling Team',
   logo: '', jersey: '', cat: 'Pro',
-  // dob hardcoded (stable facts) because the CI rider_profiles/photo scrape
-  // never covered Q36.5 (it keys off data.json teams) — so age/photo were blank.
-  // photo omitted: no reliable hotlink-safe URL source, and getRiderPhoto (CI)
-  // will fill it in automatically if the scraper ever picks the team up.
+  // nat from the race startlist; dob from rider_profiles.json where present
+  // (left blank where the CI profile scrape has no birthdate yet — age just hides).
   riders: [
-    { slug: 'tom-pidcock',                    name: 'Tom Pidcock',          nat: 'gb', dob: '1999-07-30' },
-    { slug: 'xabier-mikel-azparren-irurzun',  name: 'Xabier Mikel Azparren', nat: 'es', dob: '1999-02-25' },
-    { slug: 'chris-harper',                   name: 'Chris Harper',         nat: 'au', dob: '1994-11-23' },
-    { slug: 'quinten-hermans',                name: 'Quinten Hermans',      nat: 'be', dob: '1995-07-29' },
-    { slug: 'damien-howson',                  name: 'Damien Howson',        nat: 'au', dob: '1992-08-13' },
-    { slug: 'xandro-meurisse',                name: 'Xandro Meurisse',      nat: 'be', dob: '1992-01-31' },
-    { slug: 'brent-van-moer',                 name: 'Brent Van Moer',       nat: 'be', dob: '1998-01-12' },
-    { slug: 'alfred-wright',                  name: 'Fred Wright',          nat: 'gb', dob: '1999-06-13' },
+    { slug: 'david-de-la-cruz',               name: 'David de la Cruz', nat: 'es', dob: '1989-05-06' },
+    { slug: 'xabier-mikel-azparren-irurzun',  name: 'Xabier Azparren',  nat: 'es', dob: '1999-02-25' },
+    { slug: 'walter-calzoni',                 name: 'Walter Calzoni',   nat: 'it' },
+    { slug: 'marcel-camprubi',                name: 'Marcel Camprubí',  nat: 'es' },
+    { slug: 'edward-irl-dunbar',              name: 'Eddie Dunbar',     nat: 'ie', dob: '1996-09-01' },
+    { slug: 'thomas-gloag',                   name: 'Thomas Gloag',     nat: 'gb' },
+    { slug: 'david-gonzalez-lopez',           name: 'David González',   nat: 'es', dob: '1996-02-21' },
+    { slug: 'milan-vader',                    name: 'Milan Vader',      nat: 'nl', dob: '1996-02-18' },
   ],
 }];
 
@@ -4265,7 +4265,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v142';
+const APP_VERSION = 'v143';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

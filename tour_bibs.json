@@ -3,8 +3,8 @@
  "race_slug": "vuelta-a-espana",
  "year": 2026,
  "source": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/startlist",
- "updated_at": "2026-08-22",
- "note": "Rider slug -> bib (dossard). Lowest bib in a team = leader. Keyed to app roster slugs (alias/name fallback for source variants).",
+ "updated_at": "2026-08-29",
+ "note": "Rider slug -> bib (dossard). Lowest bib in a team = leader. Keyed to app roster slugs (alias/name fallback for source variants). | 2026-08-29: added Pinarello Q36.5 Pro Cycling Team, bibs 51-58 (source lavuelta.es/en/riders), which PCS startlist scrape had missed.",
  "bibs": {
   "primoz-roglic": 1,
   "finn-fisher-black": 2,
@@ -180,6 +180,14 @@
   "ibon-ruiz-sedano": 225,
   "ivan-ramiro-sosa": 226,
   "diego-uriarte-belzunegi": 227,
-  "mats-wenzel": 228
+  "mats-wenzel": 228,
+  "david-de-la-cruz": 51,
+  "xabier-mikel-azparren-irurzun": 52,
+  "walter-calzoni": 53,
+  "marcel-camprubi": 54,
+  "edward-irl-dunbar": 55,
+  "thomas-gloag": 56,
+  "david-gonzalez-lopez": 57,
+  "milan-vader": 58
  }
 }

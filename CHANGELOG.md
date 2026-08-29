@@ -7,6 +7,25 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v143 — 2026-08-29 — Add Pinarello Q36.5 to the Vuelta (bibs 51–58) — riders were unreachable
+
+**Reported:** entering bibs 54 and 56 in the new Groups tab returned no rider — and the Groups guard (v142) then refused them. Those are real Vuelta riders (Marcel Camprubí, Thomas Gloag), so the miss was in the **data**, not the guard.
+
+**Root cause.** The Vuelta field is reconstructed from `appData.teams[].riders` with bibs attached by roster-slug from `tour_bibs.json` (`ridersForRace()` deliberately bypasses the scraped startlist, whose slugs differ). **Pinarello Q36.5 Pro Cycling Team** (a ProTeam wildcard) is absent from `data.json`'s `teams` array — the scraper only covers UWT + a subset of ProTeams — and its bibs 51–58 were never in `tour_bibs.json`. Net effect: all 8 riders (De la Cruz, Azparren, Calzoni, Camprubí, Dunbar, Gloag, González, Vader) were **completely absent** from the Teams tab, the Vuelta Riders field, and Groups — even though they sit in the raw startlist.
+
+**Fix** (same proven pattern used for Q36.5 at the 2026 Tour):
+- **`tour_bibs.json`:** added bibs 51–58 for the 8 riders, keyed to app roster slugs. Source: the official lavuelta.es startlist. File now carries 183 bibs; `updated_at` bumped.
+- **`index.html` `EXTRA_TEAMS`:** repointed the manual Q36.5 fallback roster from the finished Tour squad (Pidcock et al., bibs 171–178) to the current **Vuelta** squad (bibs 51–58). Nationalities from the race startlist; birthdates from `rider_profiles.json` where present (4 of 8; the rest left blank — the CI profile scrape has no DOB yet, so age simply hides rather than showing a guess). Photos not added (network-blocked here, no reliable hotlink URL; `getRiderPhoto` fills them automatically if the scraper ever picks the team up).
+- The roster comment now says it tracks whichever grand tour `tour_bibs.json` currently covers, and must be refreshed alongside it when the covered race changes.
+
+**Verified:** JS parses (`node --check`), no brace/paren imbalance; a data-layer simulation of `ridersForRace('vuelta-a-espana')` yields a 183-rider field, all bibs unique, with the Q36.5 block resolving 51→De la Cruz … 58→Vader in order; bibs 54 and 56 now resolve, so the Groups guard admits them.
+
+**Known gap (unrelated, pre-existing, NOT changed):** one dossard is still absent from `tour_bibs.json` — **bib 166**, which by elimination is **Juan Felipe Rodríguez** (EF Education-EasyPost: EF has 8 riders but only 161–165, 167, 168 mapped). Left for confirmation against the official startlist before adding.
+
+- Version v142→v143. `tour_bibs.json` + `index.html` (data/roster only; no logic change to the Groups tracker itself).
+
+---
+
 ## v142 — 2026-08-29 — New **Groups** tab: live on-road group tracker
 
 Watch a race on TV and drop bib numbers into ordered groups (leaders, chase, peloton, gruppetto…) to see who's who at a glance. New 🚴 **Groups** tab in the bottom nav.

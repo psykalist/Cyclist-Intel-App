@@ -2321,7 +2321,7 @@ function renderGroups() {
 
   if (!races.length) {
     el.innerHTML = `<div class="grp-wrap"><div class="grp-empty">
-      <div class="grp-empty-icon">\U0001F6B4</div>
+      <div class="grp-empty-icon">🚴</div>
       <h3>Live Group Tracker</h3>
       <p>Drop bib numbers into groups while you watch — leaders, chase, peloton and so on — and see who's who at a glance.</p>
       <p class="grp-empty-sub">No race field is loaded right now. Bib numbers arrive during Grand Tours; other live races show up here as soon as their startlist is in.</p>
@@ -2348,7 +2348,7 @@ function renderGroups() {
   let html = `<div class="grp-wrap">
     <div class="grp-head">
       <div class="grp-title-row">
-        <span class="grp-title">\U0001F6B4 Live Groups</span>
+        <span class="grp-title">🚴 Live Groups</span>
         <button class="grp-reset" onclick="grpReset()" title="Clear this race's groups">↺ Reset</button>
       </div>
       <select class="grp-race-select" onchange="grpSetRace(this.value)">${raceOpts}</select>

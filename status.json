@@ -1,11 +1,9 @@
 {
-  "updated_at": "2026-08-29T11:50:18.800099+00:00",
+  "updated_at": "2026-08-29T15:26:59.181331+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "data.json is 11h old (a live race is running) -- consider running scraper.py"
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 3843,
@@ -14,10 +12,10 @@
     "data_teams": 33,
     "rider_profiles": 2659,
     "live_races": 1,
-    "scraped_at": "2026-08-29T00:49:31.008909+00:00",
-    "data_age_hours": 11.0,
+    "scraped_at": "2026-08-29T15:25:05.849766+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 317036,
-    "scrape_log_run_at": "2026-08-29 02:47 UTC",
+    "scrape_log_run_at": "2026-08-29 17:23 UTC",
     "rider_roster": 1304,
     "rider_missing_profile": 105,
     "rider_missing_palmares": 895

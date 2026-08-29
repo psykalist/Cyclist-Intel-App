@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-29 02:47 UTC",
-  "run_at_iso": "2026-08-29T00:49:31.008167+00:00",
+  "run_at": "2026-08-29 17:23 UTC",
+  "run_at_iso": "2026-08-29T15:25:05.848824+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -17,12 +17,12 @@
         "stage_num": 8,
         "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-8",
         "fetch_ok": true,
-        "response_bytes": 328072,
+        "response_bytes": 339628,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-28 23:16 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 1.5,
+        "stall_attempts": 3,
+        "stall_hours": 16.1,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

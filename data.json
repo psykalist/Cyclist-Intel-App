@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-29T00:49:31.008909+00:00",
-  "scraped_at_human": "29 Aug 2026 00:49 UTC",
+  "scraped_at": "2026-08-29T15:25:05.849766+00:00",
+  "scraped_at_human": "29 Aug 2026 15:25 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -2972,6 +2972,12 @@
           "slug": "toralf-rydningen-martinsen",
           "nat": "no",
           "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Jan Castellon",
+          "slug": "jan-castellon",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
         },
         {
           "name": "Alessandro Fancellu",

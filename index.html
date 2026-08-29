@@ -584,6 +584,77 @@ header h1 span { color: var(--accent); }
 }
 @keyframes ping { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
 
+/* ── Live Group Tracker ── */
+.grp-wrap { padding: 8px 0 24px; }
+.grp-head { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 2px 10px; }
+.grp-title-row { display: flex; align-items: center; justify-content: space-between; }
+.grp-title { font-size: 1.15rem; font-weight: 800; }
+.grp-reset { background: var(--surface2); border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 5px 10px; font-size: .8rem; font-weight: 600; cursor: pointer; }
+.grp-reset:hover { color: var(--live); border-color: var(--live); }
+.grp-race-select { width: 100%; margin-top: 8px; padding: 9px 10px; border-radius: 10px; background: var(--surface); color: var(--text); border: 1px solid var(--border); font-size: .9rem; font-weight: 600; }
+.grp-stat { margin-top: 6px; font-size: .78rem; color: var(--muted); }
+.grp-nobib-note { margin: 4px 2px 0; padding: 8px 10px; border-radius: 10px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: .78rem; line-height: 1.35; }
+
+.grp-quickadd { margin: 12px 0; padding: 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.grp-quickadd-label { font-size: .82rem; color: var(--muted); margin-bottom: 7px; }
+.grp-quickadd-label b, .grp-quickadd-hint b { color: var(--accent); }
+.grp-quickadd-row { display: flex; gap: 8px; }
+.grp-bib-input { flex: 1; padding: 12px 14px; font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; text-align: center; border-radius: 10px; background: var(--bg); color: var(--text); border: 2px solid var(--accent); }
+.grp-bib-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(var(--accent-rgb), .25); }
+.grp-add-btn { padding: 0 20px; border-radius: 10px; background: var(--accent); color: #fff; border: none; font-size: 1rem; font-weight: 800; cursor: pointer; }
+.grp-add-btn:active { transform: scale(.96); }
+.grp-quickadd-hint { margin-top: 8px; font-size: .72rem; color: var(--muted); line-height: 1.35; }
+
+.grp-list { display: flex; flex-direction: column; gap: 10px; }
+.grp-card { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+.grp-card-active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), 0 4px 16px rgba(0,0,0,.18); }
+.grp-card-head { display: flex; align-items: center; gap: 6px; padding: 8px 10px; background: var(--surface2); border-bottom: 1px solid var(--border); }
+.grp-card-active .grp-card-head { background: rgba(var(--accent-rgb), .14); }
+.grp-reorder { display: flex; flex-direction: column; }
+.grp-reorder button { width: 22px; height: 15px; line-height: 1; padding: 0; border: none; background: transparent; color: var(--muted); cursor: pointer; font-size: .62rem; }
+.grp-reorder button:disabled { opacity: .25; cursor: default; }
+.grp-reorder button:not(:disabled):hover { color: var(--accent); }
+.grp-name-input { flex: 1; min-width: 0; background: transparent; border: none; color: var(--text); font-size: .95rem; font-weight: 800; padding: 4px 2px; border-radius: 6px; }
+.grp-name-input:focus { outline: none; background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); }
+.grp-gap-input { width: 62px; background: var(--bg); border: 1px solid var(--border); color: var(--accent); font-size: .78rem; font-weight: 700; text-align: center; padding: 4px 2px; border-radius: 6px; }
+.grp-gap-input:focus { outline: none; border-color: var(--accent); }
+.grp-count { min-width: 24px; text-align: center; font-size: .78rem; font-weight: 800; color: var(--muted); background: var(--bg); border-radius: 20px; padding: 2px 7px; }
+.grp-del { background: transparent; border: none; color: var(--muted); cursor: pointer; font-size: .95rem; padding: 2px 4px; }
+.grp-del:hover { color: var(--live); }
+.grp-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; min-height: 44px; }
+.grp-chips-empty { color: var(--muted); font-size: .76rem; font-style: italic; align-self: center; }
+.grp-chip { display: inline-flex; align-items: center; gap: 5px; padding: 4px 6px 4px 4px; border-radius: 20px; background: var(--bg); border: 1px solid var(--border); font-size: .82rem; cursor: pointer; user-select: none; }
+.grp-chip:hover { border-color: var(--accent); }
+.grp-chip-unk { border-style: dashed; opacity: .8; }
+.grp-bib { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 20px; padding: 0 5px; border-radius: 12px; background: var(--accent); color: #fff; font-size: .72rem; font-weight: 800; }
+.grp-chip-unk .grp-bib { background: var(--muted); }
+.grp-flag { width: 16px; height: 12px; border-radius: 2px; object-fit: cover; }
+.grp-chip-name { font-weight: 600; color: var(--text); }
+.grp-chip-x { color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 2px; }
+.grp-chip-x:hover { color: var(--live); }
+.grp-addgroup { width: 100%; margin-top: 12px; padding: 11px; border-radius: 12px; background: transparent; border: 1.5px dashed var(--border); color: var(--muted); font-size: .9rem; font-weight: 700; cursor: pointer; }
+.grp-addgroup:hover { border-color: var(--accent); color: var(--accent); }
+
+.grp-search { margin-top: 18px; padding: 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.grp-search-label { font-size: .8rem; color: var(--muted); margin-bottom: 7px; }
+.grp-search-label b { color: var(--accent); }
+.grp-search-input { width: 100%; padding: 10px 12px; border-radius: 10px; background: var(--bg); color: var(--text); border: 1px solid var(--border); font-size: .9rem; }
+.grp-search-input:focus { outline: none; border-color: var(--accent); }
+.grp-search-results { display: flex; flex-direction: column; gap: 3px; margin-top: 8px; }
+.grp-search-hit { display: flex; align-items: center; gap: 8px; padding: 7px 8px; border-radius: 8px; background: var(--bg); border: 1px solid var(--border); cursor: pointer; font-size: .84rem; }
+.grp-search-hit:hover { border-color: var(--accent); }
+.grp-hit-name { font-weight: 600; }
+.grp-hit-team { margin-left: auto; color: var(--muted); font-size: .74rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40%; }
+.grp-hit-check { color: var(--recent); font-weight: 800; margin-left: 4px; }
+.grp-hit-in { opacity: .6; }
+.grp-search-none { color: var(--muted); font-size: .78rem; padding: 6px 2px; }
+
+.grp-empty { text-align: center; padding: 48px 20px; color: var(--muted); }
+.grp-empty-icon { font-size: 2.6rem; }
+.grp-empty h3 { color: var(--text); margin: 10px 0 8px; }
+.grp-empty p { font-size: .88rem; line-height: 1.5; max-width: 420px; margin: 0 auto 8px; }
+.grp-empty-sub { font-size: .8rem; opacity: .85; }
+
 /* ── Team cards ── */
 .team-card {
   background: var(--surface);
@@ -1201,6 +1272,7 @@ header h1 span { color: var(--accent); }
   <div id="loading">Loading race data…</div>
 
   <div class="section" id="sec-live"></div>
+  <div class="section" id="sec-groups"></div>
   <div class="section" id="sec-upcoming"></div>
   <div class="section" id="sec-recent"></div>
   <div class="section" id="sec-teams"></div>
@@ -1215,6 +1287,9 @@ header h1 span { color: var(--accent); }
   <button class="nav-btn" id="nav-live" onclick="showSec('live',this)">
     <span class="nav-icon">🔴<span class="live-dot" id="live-dot" style="display:none"></span></span>
     <span>Live</span>
+  </button>
+  <button class="nav-btn" id="nav-groups" onclick="showSec('groups',this)">
+    <span class="nav-icon">🚴</span><span>Groups</span>
   </button>
   <button class="nav-btn" id="nav-upcoming" onclick="showSec('upcoming',this)">
     <span class="nav-icon">📅</span><span>Upcoming</span>
@@ -1345,17 +1420,19 @@ function showSec(name, btn) {
   const isFollowing = name === 'following';
   const isRankings  = name === 'rankings';
   const isHelp      = name === 'help';
-  document.getElementById('filter-bar').style.display = (isFantasy||isStats||isFollowing||isRankings||isHelp) ? 'none' : '';
+  const isGroups    = name === 'groups';
+  document.getElementById('filter-bar').style.display = (isFantasy||isStats||isFollowing||isRankings||isHelp||isGroups) ? 'none' : '';
   // Swap race/team chips
   const isTeams = name === 'teams';
-  document.querySelectorAll('.race-chip').forEach(c => c.style.display = (isTeams||isStats||isFollowing||isRankings||isHelp) ? 'none' : '');
-  document.querySelectorAll('.team-chip').forEach(c => c.style.display = (isTeams&&!isStats&&!isFollowing&&!isRankings&&!isHelp) ? '' : 'none');
-  if (!isFantasy && !isStats && !isFollowing && !isRankings && !isHelp) applyFilter(curFilter);
+  document.querySelectorAll('.race-chip').forEach(c => c.style.display = (isTeams||isStats||isFollowing||isRankings||isHelp||isGroups) ? 'none' : '');
+  document.querySelectorAll('.team-chip').forEach(c => c.style.display = (isTeams&&!isStats&&!isFollowing&&!isRankings&&!isHelp&&!isGroups) ? '' : 'none');
+  if (!isFantasy && !isStats && !isFollowing && !isRankings && !isHelp && !isGroups) applyFilter(curFilter);
   if (isFantasy)   renderFantasy();
   if (isStats)     loadStats();
   if (isFollowing) renderFollowing();
   if (isRankings)  loadRankings();
   if (isHelp)      renderHelp();
+  if (isGroups)    renderGroups();
 }
 
 // ── Filter ─────────────────────────────────────────────────────────────────────
@@ -2089,6 +2166,250 @@ function renderRecent(races) {
     group('📋 Stage Races',      stage.map(r=>renderRaceCard(r,'recent')).join('')) +
     group('🏅 One-Day Classics', oneday.map(r=>renderRaceCard(r,'recent')).join(''));
 }
+
+// ── Live Group Tracker ("Groups" tab) ─────────────────────────────────────────
+// Watch a race on TV and drop bib numbers into ordered on-road groups (leaders,
+// chase, peloton, gruppetto …). Each bib resolves to a rider (name / team / flag)
+// from the same field the Riders screen uses — tour_bibs.json for the current
+// Grand Tour, scraped startlists otherwise. State persists per race in
+// localStorage so it survives a mid-stage reload.
+const GROUPS_LS_KEY = 'uci_live_groups_v1';
+let groupsState = null;      // { activeRace, races: { [slug]: {groups, activeGroupId} } }
+let _grpBibIndex = {};       // "bib" -> {name,nat,team,slug}  for the active race
+let _grpRefocus = false;     // refocus the quick-add input after a re-render
+let _grpGid = 1;
+
+function loadGroupsState() {
+  if (groupsState) return groupsState;
+  try { groupsState = JSON.parse(localStorage.getItem(GROUPS_LS_KEY)); } catch(e) { groupsState = null; }
+  if (!groupsState || typeof groupsState !== 'object') groupsState = { activeRace: null, races: {} };
+  if (!groupsState.races) groupsState.races = {};
+  for (const slug in groupsState.races)
+    for (const g of (groupsState.races[slug].groups || [])) {
+      const n = parseInt(String(g.id).replace(/\D/g, ''), 10);
+      if (n >= _grpGid) _grpGid = n + 1;
+    }
+  return groupsState;
+}
+function saveGroupsState() { try { localStorage.setItem(GROUPS_LS_KEY, JSON.stringify(groupsState)); } catch(e) {} }
+function newGid() { return 'g' + (_grpGid++); }
+
+// Trackable races: live races with any field, plus recent/upcoming races that
+// actually carry bib numbers (only the current Grand Tour, in practice).
+function grpCandidateRaces() {
+  const seen = new Set(), out = [];
+  const consider = (r, bucket, requireBibs) => {
+    if (!r || !r.slug || seen.has(r.slug)) return;
+    const field = ridersForRace(r);
+    if (!field.length) return;
+    const bibs = field.filter(x => x.bib != null).length;
+    if (requireBibs && !bibs) return;
+    seen.add(r.slug);
+    out.push({ slug: r.slug, name: r.name || r.slug, bucket, field: field.length, bibs });
+  };
+  (appData.live     || []).forEach(r => consider(r, 'live',    false));
+  (appData.recent   || []).forEach(r => consider(r, 'recent',  true));
+  (appData.upcoming || []).forEach(r => consider(r, 'upcoming', true));
+  return out;
+}
+function grpRaceObj() {
+  const slug = groupsState.activeRace;
+  if (!slug) return null;
+  return (appData.live||[]).find(r=>r.slug===slug)
+      || (appData.recent||[]).find(r=>r.slug===slug)
+      || (appData.upcoming||[]).find(r=>r.slug===slug) || null;
+}
+function grpBuildBibIndex() {
+  _grpBibIndex = {};
+  const race = grpRaceObj();
+  if (!race) return;
+  for (const r of ridersForRace(race)) if (r.bib != null) _grpBibIndex[String(r.bib)] = r;
+}
+function grpStore() {
+  const slug = groupsState.activeRace;
+  if (!slug) return null;
+  if (!groupsState.races[slug]) {
+    const st = { groups: [
+      { id: newGid(), name: 'Leaders', gap: '', bibs: [] },
+      { id: newGid(), name: 'Peloton', gap: '', bibs: [] },
+    ], activeGroupId: null };
+    st.activeGroupId = st.groups[0].id;
+    groupsState.races[slug] = st;
+  }
+  const st = groupsState.races[slug];
+  if (!st.activeGroupId && st.groups.length) st.activeGroupId = st.groups[0].id;
+  return st;
+}
+
+// ── actions ──────────────────────────────────────────────────────────────────
+function grpSetRace(slug) { groupsState.activeRace = slug || null; saveGroupsState(); grpBuildBibIndex(); renderGroups(); }
+function grpSetActiveGroup(gid) { const st = grpStore(); if (!st) return; st.activeGroupId = gid; saveGroupsState(); renderGroups(); }
+function grpAddGroup() {
+  const st = grpStore(); if (!st) return;
+  const g = { id: newGid(), name: 'Group ' + (st.groups.length + 1), gap: '', bibs: [] };
+  st.groups.push(g); st.activeGroupId = g.id; saveGroupsState(); renderGroups();
+}
+function grpDeleteGroup(gid) {
+  const st = grpStore(); if (!st) return;
+  st.groups = st.groups.filter(g => g.id !== gid);
+  if (st.activeGroupId === gid) st.activeGroupId = st.groups.length ? st.groups[0].id : null;
+  saveGroupsState(); renderGroups();
+}
+function grpMoveGroup(gid, dir) {
+  const st = grpStore(); if (!st) return;
+  const i = st.groups.findIndex(g => g.id === gid), j = i + dir;
+  if (i < 0 || j < 0 || j >= st.groups.length) return;
+  const t = st.groups[i]; st.groups[i] = st.groups[j]; st.groups[j] = t;
+  saveGroupsState(); renderGroups();
+}
+function grpRenameGroup(gid, name) { const st = grpStore(); if (!st) return; const g = st.groups.find(x=>x.id===gid); if (g) { g.name = name; saveGroupsState(); } }
+function grpSetGap(gid, gap)      { const st = grpStore(); if (!st) return; const g = st.groups.find(x=>x.id===gid); if (g) { g.gap  = gap;  saveGroupsState(); } }
+
+// A rider lives in exactly one group: placing a bib removes it from any other.
+function grpPlaceBib(bib, gid) {
+  const st = grpStore(); if (!st) return false;
+  bib = parseInt(String(bib).replace(/\D/g, ''), 10);
+  if (!bib) return false;
+  const target = gid || st.activeGroupId;
+  if (!target) return false;
+  for (const g of st.groups) g.bibs = g.bibs.filter(b => b !== bib);
+  const tg = st.groups.find(g => g.id === target);
+  if (!tg) return false;
+  tg.bibs.push(bib); saveGroupsState(); return true;
+}
+function grpQuickAdd() {
+  const inp = document.getElementById('grp-bib-input'); if (!inp) return;
+  const raw = inp.value.trim(); if (!raw) return;
+  raw.split(/[\s,]+/).filter(Boolean).forEach(tok => grpPlaceBib(tok));  // "34 22 7" adds several
+  inp.value = ''; _grpRefocus = true; renderGroups();
+}
+function grpMoveBibToActive(bib) { const st = grpStore(); if (!st) return; grpPlaceBib(bib, st.activeGroupId); renderGroups(); }
+function grpRemoveBib(bib) { const st = grpStore(); if (!st) return; for (const g of st.groups) g.bibs = g.bibs.filter(b => b !== bib); saveGroupsState(); renderGroups(); }
+function grpReset() {
+  const slug = groupsState.activeRace; if (!slug) return;
+  if (!confirm('Clear all groups and riders for this race?')) return;
+  delete groupsState.races[slug]; saveGroupsState(); renderGroups();
+}
+function grpFieldSearch(q) {
+  const box = document.getElementById('grp-search-results'); if (!box) return;
+  q = (q || '').trim().toLowerCase();
+  if (!q) { box.innerHTML = ''; return; }
+  const race = grpRaceObj(); const field = race ? ridersForRace(race) : [];
+  const placed = new Set(); const st = grpStore();
+  if (st) for (const g of st.groups) for (const b of g.bibs) placed.add(b);
+  const hits = field.filter(r => r.bib != null &&
+      ((r.name || '').toLowerCase().includes(q) || String(r.bib).startsWith(q))).slice(0, 12);
+  box.innerHTML = hits.map(r => {
+    const isIn = placed.has(r.bib), disp = shortName(r.name || '', r.nat || '');
+    return `<div class="grp-search-hit${isIn ? ' grp-hit-in' : ''}" onclick="grpAddFromSearch(${r.bib})">
+      <span class="grp-bib">${r.bib}</span><span class="grp-hit-name">${esc(disp)}</span>
+      <span class="grp-hit-team">${esc(r.team || '')}</span>${isIn ? '<span class="grp-hit-check">✓</span>' : ''}</div>`;
+  }).join('') || '<div class="grp-search-none">No match in this field</div>';
+}
+function grpAddFromSearch(bib) {
+  if (bib == null || isNaN(bib)) return;
+  grpPlaceBib(bib, null);
+  const s = document.getElementById('grp-search-input'); if (s) s.value = '';
+  renderGroups();
+}
+
+// ── render ───────────────────────────────────────────────────────────────────
+function renderGroups() {
+  const el = document.getElementById('sec-groups'); if (!el) return;
+  loadGroupsState();
+  const races = grpCandidateRaces();
+
+  if (!races.length) {
+    el.innerHTML = `<div class="grp-wrap"><div class="grp-empty">
+      <div class="grp-empty-icon">\U0001F6B4</div>
+      <h3>Live Group Tracker</h3>
+      <p>Drop bib numbers into groups while you watch — leaders, chase, peloton and so on — and see who's who at a glance.</p>
+      <p class="grp-empty-sub">No race field is loaded right now. Bib numbers arrive during Grand Tours; other live races show up here as soon as their startlist is in.</p>
+    </div></div>`;
+    return;
+  }
+  if (!groupsState.activeRace || !races.some(r => r.slug === groupsState.activeRace)) {
+    const pick = races.find(r => r.bibs > 0) || races.find(r => r.bucket === 'live') || races[0];
+    groupsState.activeRace = pick.slug; saveGroupsState();
+  }
+  grpBuildBibIndex();
+  const st = grpStore();
+  const cand = races.find(r => r.slug === groupsState.activeRace) || {};
+  const hasBibs = cand.bibs > 0;
+  const placedCount = st.groups.reduce((n, g) => n + g.bibs.length, 0);
+  const activeName = (st.groups.find(g => g.id === st.activeGroupId) || {}).name || '—';
+
+  const raceOpts = races.map(r => {
+    const tag = r.bucket === 'live' ? '\U0001F534 ' : r.bucket === 'recent' ? '✅ ' : '\U0001F4C5 ';
+    const bt = r.bibs > 0 ? ` — ${r.bibs} bibs` : ' — no bibs';
+    return `<option value="${esc(r.slug)}"${r.slug === groupsState.activeRace ? ' selected' : ''}>${tag}${esc(r.name)}${bt}</option>`;
+  }).join('');
+
+  let html = `<div class="grp-wrap">
+    <div class="grp-head">
+      <div class="grp-title-row">
+        <span class="grp-title">\U0001F6B4 Live Groups</span>
+        <button class="grp-reset" onclick="grpReset()" title="Clear this race's groups">↺ Reset</button>
+      </div>
+      <select class="grp-race-select" onchange="grpSetRace(this.value)">${raceOpts}</select>
+      <div class="grp-stat">${placedCount} rider${placedCount === 1 ? '' : 's'} placed${hasBibs ? ` · field of ${cand.bibs}` : ''}</div>
+    </div>`;
+
+  if (!hasBibs)
+    html += `<div class="grp-nobib-note">⚠️ This race has no bib numbers in the app yet (they load during Grand Tours). You can still add numbers below — they just won't show rider names.</div>`;
+
+  html += `<div class="grp-quickadd">
+    <div class="grp-quickadd-label">Add bib to <b>${esc(activeName)}</b></div>
+    <div class="grp-quickadd-row">
+      <input id="grp-bib-input" class="grp-bib-input" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 34"
+             onkeydown="if(event.key==='Enter'){event.preventDefault();grpQuickAdd();}">
+      <button class="grp-add-btn" onclick="grpQuickAdd()">Add</button>
+    </div>
+    <div class="grp-quickadd-hint">Tip: tap a rider in another group to pull them into <b>${esc(activeName)}</b>. Add several at once: “34 22 7”.</div>
+  </div>`;
+
+  html += '<div class="grp-list">';
+  st.groups.forEach((g, gi) => {
+    const active = g.id === st.activeGroupId;
+    const chips = g.bibs.map(b => {
+      const r = _grpBibIndex[String(b)];
+      const disp = r ? shortName(r.name || '', r.nat || '') : null;
+      const flag = r && r.nat ? `<img class="grp-flag" src="https://flagcdn.com/16x12/${esc(r.nat.toLowerCase())}.png" alt="" loading="lazy">` : '';
+      const body = disp ? `${flag}<span class="grp-chip-name">${esc(disp)}</span>` : '';
+      return `<span class="grp-chip${r ? '' : ' grp-chip-unk'}" onclick="event.stopPropagation();grpMoveBibToActive(${b})" title="${r ? esc(r.team || '') + ' — ' : ''}tap to move to the active group">
+        <span class="grp-bib">${b}</span>${body}
+        <span class="grp-chip-x" onclick="event.stopPropagation();grpRemoveBib(${b})" title="Remove">×</span></span>`;
+    }).join('');
+    const emptyMsg = active ? 'Type a bib above, or tap riders in other groups to pull them in' : 'Tap to make active, then add bibs';
+    html += `<div class="grp-card${active ? ' grp-card-active' : ''}" onclick="grpSetActiveGroup('${g.id}')">
+      <div class="grp-card-head">
+        <span class="grp-reorder">
+          <button onclick="event.stopPropagation();grpMoveGroup('${g.id}',-1)" ${gi === 0 ? 'disabled' : ''} title="Move up">▲</button>
+          <button onclick="event.stopPropagation();grpMoveGroup('${g.id}',1)" ${gi === st.groups.length - 1 ? 'disabled' : ''} title="Move down">▼</button>
+        </span>
+        <input class="grp-name-input" value="${esc(g.name)}" onclick="event.stopPropagation()" oninput="grpRenameGroup('${g.id}',this.value)" title="Group name">
+        <input class="grp-gap-input" value="${esc(g.gap || '')}" placeholder="gap" onclick="event.stopPropagation()" oninput="grpSetGap('${g.id}',this.value)" title="Time gap — free text, e.g. +1:20">
+        <span class="grp-count" title="Riders in group">${g.bibs.length}</span>
+        <button class="grp-del" onclick="event.stopPropagation();grpDeleteGroup('${g.id}')" title="Delete group">\U0001F5D1</button>
+      </div>
+      <div class="grp-chips">${chips || `<span class="grp-chips-empty">${emptyMsg}</span>`}</div>
+    </div>`;
+  });
+  html += '</div>';
+  html += `<button class="grp-addgroup" onclick="grpAddGroup()">＋ Add group</button>`;
+
+  if (hasBibs)
+    html += `<div class="grp-search">
+      <div class="grp-search-label">Add by name or number → <b>${esc(activeName)}</b></div>
+      <input id="grp-search-input" class="grp-search-input" type="text" autocomplete="off" placeholder="Search the field…" oninput="grpFieldSearch(this.value)">
+      <div id="grp-search-results" class="grp-search-results"></div>
+    </div>`;
+
+  html += '</div>';
+  el.innerHTML = html;
+  if (_grpRefocus) { const inp = document.getElementById('grp-bib-input'); if (inp) inp.focus(); _grpRefocus = false; }
+}
+
 
 // ── Teams ──────────────────────────────────────────────────────────────────────
 
@@ -3926,7 +4247,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v140';
+const APP_VERSION = 'v141';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -7,6 +7,17 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v144 — 2026-08-29 — Fill the last Vuelta bib gap: Juan Felipe Rodríguez (EF), bib 166
+
+Follow-up to v143's Q36.5 fix. One dossard was still unmapped — **bib 166**, **Juan Felipe Rodríguez** (EF Education-EasyPost) — leaving the field at 183 of 184. Like the Q36.5 riders he's in the race startlist but **not** in his team's scraped `data.json` roster (a late call-up the scraper hasn't caught), so a bib alone wouldn't surface him: the tour-field reconstruction iterates team rosters, and he was in none.
+
+- **`tour_bibs.json`:** added `juan-felipe-rodriguez → 166` (nat CO, dob 2003-11-05 from `rider_profiles.json`). File now 184 bibs.
+- **New `EXTRA_RIDERS` mechanism (`index.html`):** a sibling to `EXTRA_TEAMS`/`EXTRA_RACES` for single riders missing from an *existing* team roster (`EXTRA_TEAMS` only injects whole absent teams). Keyed by the team's `data.json` slug, appended idempotently (skipped if the slug is already present, ignored if the team isn't loaded). Wired via `mergeExtraRiders()` right after `mergeExtraTeams()` in the data-load path. Seeded with Rodríguez → `ef-education-easypost-2026`.
+- **Verified:** JS parses (`node --check`); a full field simulation (data.json teams + `EXTRA_TEAMS` + `EXTRA_RIDERS`) now yields **184 riders, all bibs unique, and a complete 23×8 dossard grid with no gaps**; bib 166 resolves to Rodríguez on EF.
+- Version v143→v144. `tour_bibs.json` + `index.html` (data/roster + one small idempotent merge helper; no change to Groups logic).
+
+---
+
 ## v143 — 2026-08-29 — Add Pinarello Q36.5 to the Vuelta (bibs 51–58) — riders were unreachable
 
 **Reported:** entering bibs 54 and 56 in the new Groups tab returned no rider — and the Groups guard (v142) then refused them. Those are real Vuelta riders (Marcel Camprubí, Thomas Gloag), so the miss was in the **data**, not the guard.

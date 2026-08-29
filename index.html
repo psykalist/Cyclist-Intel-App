@@ -2501,6 +2501,30 @@ function mergeExtraTeams() {
   }
 }
 
+// Single riders missing from an EXISTING data.json team roster (the scraper's
+// team pages lag new signings / late call-ups, so a rider can be in a race
+// startlist yet absent from his team's roster — and the tour-field reconstruction
+// iterates team rosters, so he'd never get a bib or appear). Keyed by the team's
+// data.json slug; appended idempotently (skipped if the rider slug is already
+// there, ignored if the team itself isn't loaded). Slugs MUST match tour_bibs.json.
+// Currently: Juan Felipe Rodríguez (EF Education-EasyPost), the Vuelta's bib 166,
+// absent from EF's scraped roster. Refresh alongside tour_bibs.json.
+const EXTRA_RIDERS = {
+  'ef-education-easypost-2026': [
+    { slug: 'juan-felipe-rodriguez', name: 'Juan Felipe Rodríguez', nat: 'co', dob: '2003-11-05' },
+  ],
+};
+function mergeExtraRiders() {
+  if (!appData || !Array.isArray(appData.teams)) return;
+  for (const team of appData.teams) {
+    const add = EXTRA_RIDERS[team.slug];
+    if (!add) continue;
+    if (!Array.isArray(team.riders)) team.riders = [];
+    const have = new Set(team.riders.map(r => r.slug));
+    for (const r of add) if (!have.has(r.slug)) team.riders.push(r);
+  }
+}
+
 // Tour de l'Ain (2.1) was missing because the scraper only read PAGE 1 of the
 // paginated CyclingFlash 'Men Elite' calendar; this race sits on a later page
 // (its category 2.1 is already in UCI_CATS). scraper.py now paginates, so a
@@ -4213,6 +4237,7 @@ async function loadData(force=false) {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     appData = await r.json();
     mergeExtraTeams();   // inject Tour teams missing from data.json (e.g. Q36.5) before any render
+    mergeExtraRiders();  // inject single riders missing from an existing team roster (e.g. Juan Felipe Rodriguez / EF, Vuelta bib 166)
     mergeExtraRaces();   // inject Tour de l'Ain (2.1) -- CI never scrapes Europe Tour races
     document.getElementById('last-updated').textContent = `Updated ${appData.scraped_at_human || '—'}`;
     renderDataHealth();
@@ -4265,7 +4290,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v143';
+const APP_VERSION = 'v144';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

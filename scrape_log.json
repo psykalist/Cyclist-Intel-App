@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-29 17:23 UTC",
-  "run_at_iso": "2026-08-29T15:25:05.848824+00:00",
+  "run_at": "2026-08-29 21:33 UTC",
+  "run_at_iso": "2026-08-29T19:35:26.485070+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,21 @@
       "name": "Vuelta a España",
       "total_stages": 21,
       "stages_completed_before": 6,
-      "stages_completed_after": 7,
-      "new_stages_found": 1,
+      "stages_completed_after": 8,
+      "new_stages_found": 2,
       "cancelled_stages": [
         3
       ],
       "probe": {
-        "stage_num": 8,
-        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-8",
+        "stage_num": 9,
+        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-9",
         "fetch_ok": true,
-        "response_bytes": 339628,
+        "response_bytes": 330799,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-08-28 23:16 UTC",
-        "stall_attempts": 3,
-        "stall_hours": 16.1,
+        "stall_since": "2026-08-29 21:33 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

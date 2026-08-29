@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-29T15:26:23.332929+00:00",
+  "generated_at": "2026-08-29T19:36:41.373494+00:00",
   "entries": [
+    {
+      "id": "ffde99c9b465",
+      "timestamp": "2026-08-29T19:36:41.365846+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 8 Vuelta a España: 🇫🇷 Bryan Coquard wins"
+    },
+    {
+      "id": "c1dd853f536c",
+      "timestamp": "2026-08-29T19:36:41.365846+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Vuelta a España GC: 🇪🇸 Enric Mas Nicolau leads"
+    },
+    {
+      "id": "e8e8510d8030",
+      "timestamp": "2026-08-29T19:36:41.365846+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a España KOM: 🇳🇴 Andreas Leknessund leads"
+    },
     {
       "id": "10e2f728743b",
       "timestamp": "2026-08-29T15:26:23.326275+00:00",
@@ -378,146 +399,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "ADAC Cyclassics Youth: 🇫🇷 Paul Magnier leads"
-    },
-    {
-      "id": "df0a65fc230f",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Czech Tour Points: 🇺🇸 Andrew August leads"
-    },
-    {
-      "id": "42300efd5c21",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Czech Tour KOM: 🇨🇿 Michal Schuran leads"
-    },
-    {
-      "id": "54f44199782b",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Czech Tour Youth: 🇺🇸 Andrew August leads"
-    },
-    {
-      "id": "1dd76db500f8",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Arctic Race of Norway: 🇺🇾 Guillermo Thomas Silva Coussan wins"
-    },
-    {
-      "id": "0168bf856283",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Arctic Race of Norway GC: 🇺🇾 Guillermo Thomas Silva Coussan leads"
-    },
-    {
-      "id": "bcd826c7ba11",
-      "timestamp": "2026-08-15T17:14:57.705803+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Arctic Race of Norway Youth: 🇺🇾 Guillermo Thomas Silva Coussan leads"
-    },
-    {
-      "id": "c00b430d88b9",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Czech Tour: 🇺🇸 Riley Sheehan wins"
-    },
-    {
-      "id": "0b06337f22bc",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Czech Tour: 🇺🇸 Andrew August wins"
-    },
-    {
-      "id": "2377e72bd2c8",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Czech Tour: 🇺🇸 Andrew August wins"
-    },
-    {
-      "id": "aa68c1f538f0",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Czech Tour GC: 🇺🇸 Andrew August leads"
-    },
-    {
-      "id": "c8f134f6472f",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Arctic Race of Norway: 🇮🇹 Giovanni Lonardi wins"
-    },
-    {
-      "id": "d71c840d2aff",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Arctic Race of Norway: 🇳🇴 Erlend Blikra wins"
-    },
-    {
-      "id": "21044e3d6952",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Arctic Race of Norway GC: 🇮🇹 Giovanni Lonardi leads"
-    },
-    {
-      "id": "3a322f6fbf26",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Arctic Race of Norway Points: 🇮🇹 Giovanni Lonardi leads"
-    },
-    {
-      "id": "0c9dfe8a140d",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Arctic Race of Norway KOM: 🇳🇴 Morthen Wang Baksaas leads"
-    },
-    {
-      "id": "9b4312595f78",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Arctic Race of Norway Youth: 🇸🇪 Teodor De Luca leads"
-    },
-    {
-      "id": "2737781874d3",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Renewi Tour startlist: BELLE Loe Van, Davide Formolo, Dillon Corkery (+5 more) added"
-    },
-    {
-      "id": "31a27bbdf963",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a España startlist: Alexis Renard, Diego Uriarte, Ibon Ruiz (+6 more) added"
-    },
-    {
-      "id": "8fb16e770929",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tour of Guangxi startlist published (6 riders)"
-    },
-    {
-      "id": "9218b3a94327",
-      "timestamp": "2026-08-15T15:34:33.157460+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Giro del Veneto startlist published (12 riders)"
     }
   ]
 }

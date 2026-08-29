@@ -7,6 +7,21 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v142 — 2026-08-29 — New **Groups** tab: live on-road group tracker
+
+Watch a race on TV and drop bib numbers into ordered groups (leaders, chase, peloton, gruppetto…) to see who's who at a glance. New 🚴 **Groups** tab in the bottom nav.
+
+- **Bib → rider resolution** from the same field the Riders screen uses — `tour_bibs.json` for the current Grand Tour (Vuelta live now), scraped startlists otherwise. Shows name / team / flag.
+- **Freeform groups:** create, rename, reorder (▲▼), delete; each has a free-text gap field (e.g. `+1:20`). Seeds with Leaders + Peloton.
+- **Fast entry:** type a bib (or several — `34 22 7`) into the active group; tap any rider chip to pull them into the active group; a rider lives in exactly one group. Name/number search adds from the field.
+- **Unknown bibs are now rejected, not added:** for a race that carries bib numbers, a bib with no matching rider (e.g. `54`, `56` at a race whose field tops out lower) is refused with an inline note listing the offending numbers, instead of creating a nameless chip. Races with **no** bib data (non-GT) still accept plain numbers as markers, as before.
+- **Persists per race** in `localStorage` (`uci_live_groups_v1`) — survives a mid-stage reload. Reset returns to the two default groups.
+- **Bug fix:** several emoji were written with an invalid `\U…` JS escape and rendered as literal text (`U0001F6B4`, `U0001F534`, `U0001F5D1`, `U0001F4C5`) in the nav tab, header, race-status tags and delete button. All replaced with the real characters (🚴 🔴 🗑 📅).
+- **Verified:** JS brace balance 0, `node --check` clean, and logic tests covering known-bib add, unknown-bib rejection + one-shot note, non-GT plain-number path, single-group invariant, reorder/delete, search, and persistence.
+- Version v140→v142 (the intermediate v141 dev build was never pushed). `index.html` only; `scraper.py` unchanged.
+
+---
+
 ## v140 — 2026-08-25 — Stop one cancelled stage cascading to every later stage (all races)
 Yesterday's Vuelta stage 3 was cancelled and the app then showed **stages 3-21 all cancelled** while the race was still on. Root cause in `scraper.py`: the cancellation check `re.search(r'(?:stage|race)\s+(?:was|has been)\s+cancell?ed', html)` scans the **whole** stage page, so a single race-level "stage 3 was cancelled" note (banner / news blurb / other-stages list) is present on **every** stage's page. The loop then flagged each remaining stage cancelled and never reached its not-yet-run `break`. The existing date guard (`_stage_expected_date`) only covers one-stage-per-day races and returns `None` for grand tours, so the Vuelta had no protection.
 

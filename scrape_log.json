@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-08-29 21:33 UTC",
-  "run_at_iso": "2026-08-29T19:35:26.485070+00:00",
+  "run_at": "2026-08-30 17:07 UTC",
+  "run_at_iso": "2026-08-30T15:09:13.457603+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 6,
+      "stages_completed_before": 7,
       "stages_completed_after": 8,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         3
       ],
@@ -17,14 +17,27 @@
         "stage_num": 9,
         "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-9",
         "fetch_ok": true,
-        "response_bytes": 330799,
+        "response_bytes": 337134,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-29 21:33 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 17.6,
         "possible_parser_drift": false
       },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "bretagne-classic-ouest-france-2026",
+      "name": "Bretagne Classic - Ouest-France",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

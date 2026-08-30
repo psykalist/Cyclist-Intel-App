@@ -1,6 +1,55 @@
 {
-  "generated_at": "2026-08-30T15:10:28.461746+00:00",
+  "generated_at": "2026-08-30T19:37:35.270974+00:00",
   "entries": [
+    {
+      "id": "55970ab6fbaa",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 9 Vuelta a España: 🇪🇸 Enric Mas Nicolau wins"
+    },
+    {
+      "id": "29dd669c8038",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a España KOM: 🇨🇴 Santiago Buitrago Sanchez leads"
+    },
+    {
+      "id": "89a9001ae53f",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Bretagne Classic - Ouest-France: 🇪🇸 Alex Aranburu Deba wins"
+    },
+    {
+      "id": "848cd481a18c",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Bretagne Classic - Ouest-France GC: 🇪🇸 Alex Aranburu Deba leads"
+    },
+    {
+      "id": "046dd27d6277",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Bretagne Classic - Ouest-France Points: 🇪🇸 Alex Aranburu Deba leads"
+    },
+    {
+      "id": "4db55c90db3d",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Bretagne Classic - Ouest-France KOM: 🇪🇸 Alex Aranburu Deba leads"
+    },
+    {
+      "id": "b893b33a6643",
+      "timestamp": "2026-08-30T19:37:35.263146+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Bretagne Classic - Ouest-France Youth: 🇪🇸 Alex Aranburu Deba leads"
+    },
     {
       "id": "ffde99c9b465",
       "timestamp": "2026-08-29T19:36:41.365846+00:00",
@@ -350,55 +399,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Vuelta a España startlist: Alessandro Covi, Asbjørn Hellemose, Christophe Laporte (+11 more) added"
-    },
-    {
-      "id": "f466575b1999",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Czech Tour: 🇮🇹 Alessandro Fancellu wins"
-    },
-    {
-      "id": "267733154302",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Arctic Race of Norway: 🇳🇴 Cedrik Bakke Christophersen wins"
-    },
-    {
-      "id": "c1b977af9f31",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 ADAC Cyclassics: 🇫🇷 Paul Magnier wins"
-    },
-    {
-      "id": "ca15a848ca02",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "ADAC Cyclassics GC: 🇫🇷 Paul Magnier leads"
-    },
-    {
-      "id": "cd8bd4956dff",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "ADAC Cyclassics Points: 🇫🇷 Paul Magnier leads"
-    },
-    {
-      "id": "605603ff9e65",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "ADAC Cyclassics KOM: 🇫🇷 Paul Magnier leads"
-    },
-    {
-      "id": "7adc035ae635",
-      "timestamp": "2026-08-16T17:15:12.467162+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "ADAC Cyclassics Youth: 🇫🇷 Paul Magnier leads"
     }
   ]
 }

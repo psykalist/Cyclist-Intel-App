@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-30T19:36:23.079697+00:00",
-  "scraped_at_human": "30 Aug 2026 19:36 UTC",
+  "scraped_at": "2026-08-31T17:48:39.743424+00:00",
+  "scraped_at_human": "31 Aug 2026 17:48 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -2706,767 +2706,6 @@
           "time_gap": "9"
         }
       ]
-    },
-    {
-      "slug": "bretagne-classic-ouest-france",
-      "cf_slug": "bretagne-classic-ouest-france-2026",
-      "name": "Bretagne Classic - Ouest-France",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "live",
-      "start_date": "2026-08-30",
-      "end_date": "2026-08-30",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/bretagne-classic-ouest-france-2026",
-      "startlist": [],
-      "distance_km": 228.3,
-      "elevation_m": 3663,
-      "stage_type": "mountain",
-      "start_town": "Plouay",
-      "finish_town": "Plouay",
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/bretagne-classic-ouest-france-2026/result/stage-1",
-          "winner": "Alex Aranburu Deba",
-          "winner_flag": "🇪🇸",
-          "winner_nat": "ES",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Alex Aranburu Deba",
-              "rider_url": "/profile/alex-aranburu-deba",
-              "team": "",
-              "nat_code": "ES",
-              "flag": "🇪🇸",
-              "time_gap": "05:21:13"
-            },
-            {
-              "rank": 2,
-              "name": "Alexander Kamp Egested",
-              "rider_url": "/profile/alexander-kamp-egested",
-              "team": "",
-              "nat_code": "DK",
-              "flag": "🇩🇰",
-              "time_gap": "+ 04"
-            },
-            {
-              "rank": 3,
-              "name": "Alessandro Borgo",
-              "rider_url": "/profile/alessandro-borgo",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 4,
-              "name": "Emil Herzog",
-              "rider_url": "/profile/emil-herzog",
-              "team": "",
-              "nat_code": "DE",
-              "flag": "🇩🇪",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 5,
-              "name": "Jenno Berckmoes",
-              "rider_url": "/profile/jenno-berckmoes",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 6,
-              "name": "Paul Lapeira",
-              "rider_url": "/profile/paul-lapeira",
-              "team": "",
-              "nat_code": "FR",
-              "flag": "🇫🇷",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 7,
-              "name": "Romain Grégoire",
-              "rider_url": "/profile/romain-gregoire",
-              "team": "",
-              "nat_code": "FR",
-              "flag": "🇫🇷",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 8,
-              "name": "Rick Pluimers",
-              "rider_url": "/profile/rick-pluimers",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 9,
-              "name": "Alexandre Delettre",
-              "rider_url": "/profile/alexandre-delettre",
-              "team": "",
-              "nat_code": "FR",
-              "flag": "🇫🇷",
-              "time_gap": "+ 10"
-            },
-            {
-              "rank": 10,
-              "name": "Andrea Vendrame",
-              "rider_url": "/profile/andrea-vendrame",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 10"
-            }
-          ],
-          "date_str": "Sunday 30 August",
-          "non_finishers": [
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Jasper De Buyst",
-              "rider_url": "/profile/jasper-de-buyst",
-              "team": "Lotto - Intermarché",
-              "nat_code": "BE",
-              "flag": "🇧🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Sébastien Grignard",
-              "rider_url": "/profile/sebastien-grignard",
-              "team": "Lotto - Intermarché",
-              "nat_code": "BE",
-              "flag": "🇧🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Adria Pericas Capdevila",
-              "rider_url": "/profile/adria-pericas-capdevila",
-              "team": "UAE Team Emirates XRG",
-              "nat_code": "ES",
-              "flag": "🇪🇸"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Filippo Fiorelli",
-              "rider_url": "/profile/filippo-fiorelli",
-              "team": "Team Visma | Lease a Bike",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Tord Gudmestad",
-              "rider_url": "/profile/tord-gudmestad",
-              "team": "Decathlon CMA CGM Team",
-              "nat_code": "NO",
-              "flag": "🇳🇴"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Gianluca Pollefliet",
-              "rider_url": "/profile/gianluca-pollefliet",
-              "team": "Decathlon CMA CGM Team",
-              "nat_code": "BE",
-              "flag": "🇧🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Nikias Arndt",
-              "rider_url": "/profile/nikias-arndt",
-              "team": "Bahrain Victorious",
-              "nat_code": "DE",
-              "flag": "🇩🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Kamil Gradek",
-              "rider_url": "/profile/kamil-gradek",
-              "team": "Bahrain Victorious",
-              "nat_code": "PL",
-              "flag": "🇵🇱"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Bob Jungels",
-              "rider_url": "/profile/bob-jungels",
-              "team": "Netcompany INEOS",
-              "nat_code": "LU",
-              "flag": "🇱🇺"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Lennert Belmans",
-              "rider_url": "/profile/lennert-belmans",
-              "team": "Alpecin - Premier Tech",
-              "nat_code": "BE",
-              "flag": "🇧🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Paul Magnier",
-              "rider_url": "/profile/paul-magnier",
-              "team": "Soudal - Quick Step",
-              "nat_code": "FR",
-              "flag": "🇫🇷"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Yves Lampaert",
-              "rider_url": "/profile/yves-lampaert",
-              "team": "Soudal - Quick Step",
-              "nat_code": "BE",
-              "flag": "🇧🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Sven Erik Bystrøm",
-              "rider_url": "/profile/sven-erik-bystrom",
-              "team": "Uno-X Mobility",
-              "nat_code": "NO",
-              "flag": "🇳🇴"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Davide De Pretto",
-              "rider_url": "/profile/davide-de-pretto",
-              "team": "Team Jayco AlUla",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Mauro Schmid",
-              "rider_url": "/profile/mauro-schmid",
-              "team": "Team Jayco AlUla",
-              "nat_code": "CH",
-              "flag": "🇨🇭"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Filippo Conca",
-              "rider_url": "/profile/filippo-conca",
-              "team": "Team Jayco AlUla",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Michael Valgren Andersen",
-              "rider_url": "/profile/michael-valgren-andersen",
-              "team": "EF Education - EasyPost",
-              "nat_code": "DK",
-              "flag": "🇩🇰"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Madis Mihkels",
-              "rider_url": "/profile/madis-mihkels",
-              "team": "EF Education - EasyPost",
-              "nat_code": "EE",
-              "flag": "🇪🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Samuele Battistella",
-              "rider_url": "/profile/samuele-battistella",
-              "team": "EF Education - EasyPost",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Ivan Garcia Cortina",
-              "rider_url": "/profile/ivan-garcia-cortina",
-              "team": "Movistar Team",
-              "nat_code": "ES",
-              "flag": "🇪🇸"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Manlio Moro",
-              "rider_url": "/profile/manlio-moro",
-              "team": "Movistar Team",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "James Knox",
-              "rider_url": "/profile/james-knox",
-              "team": "Team Picnic PostNL",
-              "nat_code": "GB",
-              "flag": "🇬🇧"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Nicolo' Parisini",
-              "rider_url": "/profile/nicolo-parisini",
-              "team": "Pinarello - Q36.5 Pro Cycling Team",
-              "nat_code": "IT",
-              "flag": "🇮🇹"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Petr Kelemen",
-              "rider_url": "/profile/petr-kelemen",
-              "team": "Tudor Pro Cycling Team",
-              "nat_code": "CZ",
-              "flag": "🇨🇿"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Clement Venturini",
-              "rider_url": "/profile/clement-venturini",
-              "team": "Unibet Rose Rockets",
-              "nat_code": "FR",
-              "flag": "🇫🇷"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Txomin Juaristi Arrieta",
-              "rider_url": "/profile/txomin-juaristi-arrieta",
-              "team": "Euskaltel - Euskadi",
-              "nat_code": "ES",
-              "flag": "🇪🇸"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Jokin Murguialday Elorza",
-              "rider_url": "/profile/jokin-murguialday-elorza",
-              "team": "Euskaltel - Euskadi",
-              "nat_code": "ES",
-              "flag": "🇪🇸"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Gari Ugarte Larrea",
-              "rider_url": "/profile/gari-ugarte-larrea",
-              "team": "Euskaltel - Euskadi",
-              "nat_code": "ES",
-              "flag": "🇪🇸"
-            },
-            {
-              "status": "DNS",
-              "status_label": "Did not start — withdrew before the stage began.",
-              "name": "Vegard Stake Laengen",
-              "rider_url": "/profile/vegard-stake-laengen",
-              "team": "UAE Team Emirates XRG",
-              "nat_code": "NO",
-              "flag": "🇳🇴"
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170456/responsive-images/Bretagne-Classic-Profil___heightProfile_1200_637.webp"
-        }
-      ],
-      "last_stage_winner": "Alex Aranburu Deba",
-      "last_stage_winner_flag": "🇪🇸",
-      "last_stage_num": 1,
-      "stages_completed": 1,
-      "gc_leader": "🇪🇸 Alex Aranburu Deba",
-      "gc_top10": [
-        {
-          "rank": 1,
-          "name": "Alex Aranburu Deba",
-          "rider_url": "/profile/alex-aranburu-deba",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "05:21:13"
-        },
-        {
-          "rank": 2,
-          "name": "Alexander Kamp Egested",
-          "rider_url": "/profile/alexander-kamp-egested",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 04"
-        },
-        {
-          "rank": 3,
-          "name": "Alessandro Borgo",
-          "rider_url": "/profile/alessandro-borgo",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 4,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 5,
-          "name": "Jenno Berckmoes",
-          "rider_url": "/profile/jenno-berckmoes",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 6,
-          "name": "Paul Lapeira",
-          "rider_url": "/profile/paul-lapeira",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 7,
-          "name": "Romain Grégoire",
-          "rider_url": "/profile/romain-gregoire",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 8,
-          "name": "Rick Pluimers",
-          "rider_url": "/profile/rick-pluimers",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 9,
-          "name": "Alexandre Delettre",
-          "rider_url": "/profile/alexandre-delettre",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 10,
-          "name": "Andrea Vendrame",
-          "rider_url": "/profile/andrea-vendrame",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        }
-      ],
-      "points_leader": "🇪🇸 Alex Aranburu Deba",
-      "points_top10": [
-        {
-          "rank": 1,
-          "name": "Alex Aranburu Deba",
-          "rider_url": "/profile/alex-aranburu-deba",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "05:21:13"
-        },
-        {
-          "rank": 2,
-          "name": "Alexander Kamp Egested",
-          "rider_url": "/profile/alexander-kamp-egested",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 04"
-        },
-        {
-          "rank": 3,
-          "name": "Alessandro Borgo",
-          "rider_url": "/profile/alessandro-borgo",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 4,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 5,
-          "name": "Jenno Berckmoes",
-          "rider_url": "/profile/jenno-berckmoes",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 6,
-          "name": "Paul Lapeira",
-          "rider_url": "/profile/paul-lapeira",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 7,
-          "name": "Romain Grégoire",
-          "rider_url": "/profile/romain-gregoire",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 8,
-          "name": "Rick Pluimers",
-          "rider_url": "/profile/rick-pluimers",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 9,
-          "name": "Alexandre Delettre",
-          "rider_url": "/profile/alexandre-delettre",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 10,
-          "name": "Andrea Vendrame",
-          "rider_url": "/profile/andrea-vendrame",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        }
-      ],
-      "kom_leader": "🇪🇸 Alex Aranburu Deba",
-      "kom_top10": [
-        {
-          "rank": 1,
-          "name": "Alex Aranburu Deba",
-          "rider_url": "/profile/alex-aranburu-deba",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "05:21:13"
-        },
-        {
-          "rank": 2,
-          "name": "Alexander Kamp Egested",
-          "rider_url": "/profile/alexander-kamp-egested",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 04"
-        },
-        {
-          "rank": 3,
-          "name": "Alessandro Borgo",
-          "rider_url": "/profile/alessandro-borgo",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 4,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 5,
-          "name": "Jenno Berckmoes",
-          "rider_url": "/profile/jenno-berckmoes",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 6,
-          "name": "Paul Lapeira",
-          "rider_url": "/profile/paul-lapeira",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 7,
-          "name": "Romain Grégoire",
-          "rider_url": "/profile/romain-gregoire",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 8,
-          "name": "Rick Pluimers",
-          "rider_url": "/profile/rick-pluimers",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 9,
-          "name": "Alexandre Delettre",
-          "rider_url": "/profile/alexandre-delettre",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 10,
-          "name": "Andrea Vendrame",
-          "rider_url": "/profile/andrea-vendrame",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        }
-      ],
-      "youth_leader": "🇪🇸 Alex Aranburu Deba",
-      "youth_top10": [
-        {
-          "rank": 1,
-          "name": "Alex Aranburu Deba",
-          "rider_url": "/profile/alex-aranburu-deba",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "05:21:13"
-        },
-        {
-          "rank": 2,
-          "name": "Alexander Kamp Egested",
-          "rider_url": "/profile/alexander-kamp-egested",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 04"
-        },
-        {
-          "rank": 3,
-          "name": "Alessandro Borgo",
-          "rider_url": "/profile/alessandro-borgo",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 4,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 5,
-          "name": "Jenno Berckmoes",
-          "rider_url": "/profile/jenno-berckmoes",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 6,
-          "name": "Paul Lapeira",
-          "rider_url": "/profile/paul-lapeira",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 7,
-          "name": "Romain Grégoire",
-          "rider_url": "/profile/romain-gregoire",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 8,
-          "name": "Rick Pluimers",
-          "rider_url": "/profile/rick-pluimers",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 9,
-          "name": "Alexandre Delettre",
-          "rider_url": "/profile/alexandre-delettre",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 10,
-          "name": "Andrea Vendrame",
-          "rider_url": "/profile/andrea-vendrame",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 10"
-        }
-      ]
     }
   ],
   "upcoming": [
@@ -4580,6 +3819,767 @@
     }
   ],
   "recent": [
+    {
+      "slug": "bretagne-classic-ouest-france",
+      "cf_slug": "bretagne-classic-ouest-france-2026",
+      "name": "Bretagne Classic - Ouest-France",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "recent",
+      "start_date": "2026-08-30",
+      "end_date": "2026-08-30",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/bretagne-classic-ouest-france-2026",
+      "startlist": [],
+      "distance_km": 228.3,
+      "elevation_m": 3663,
+      "stage_type": "mountain",
+      "start_town": "Plouay",
+      "finish_town": "Plouay",
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/bretagne-classic-ouest-france-2026/result/stage-1",
+          "winner": "Alex Aranburu Deba",
+          "winner_flag": "🇪🇸",
+          "winner_nat": "ES",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Alex Aranburu Deba",
+              "rider_url": "/profile/alex-aranburu-deba",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "05:21:13"
+            },
+            {
+              "rank": 2,
+              "name": "Alexander Kamp Egested",
+              "rider_url": "/profile/alexander-kamp-egested",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 04"
+            },
+            {
+              "rank": 3,
+              "name": "Alessandro Borgo",
+              "rider_url": "/profile/alessandro-borgo",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 4,
+              "name": "Emil Herzog",
+              "rider_url": "/profile/emil-herzog",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 5,
+              "name": "Jenno Berckmoes",
+              "rider_url": "/profile/jenno-berckmoes",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 6,
+              "name": "Paul Lapeira",
+              "rider_url": "/profile/paul-lapeira",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 7,
+              "name": "Romain Grégoire",
+              "rider_url": "/profile/romain-gregoire",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 8,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 9,
+              "name": "Alexandre Delettre",
+              "rider_url": "/profile/alexandre-delettre",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 10"
+            },
+            {
+              "rank": 10,
+              "name": "Andrea Vendrame",
+              "rider_url": "/profile/andrea-vendrame",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 10"
+            }
+          ],
+          "date_str": "Sunday 30 August",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jasper De Buyst",
+              "rider_url": "/profile/jasper-de-buyst",
+              "team": "Lotto - Intermarché",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Sébastien Grignard",
+              "rider_url": "/profile/sebastien-grignard",
+              "team": "Lotto - Intermarché",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Adria Pericas Capdevila",
+              "rider_url": "/profile/adria-pericas-capdevila",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Filippo Fiorelli",
+              "rider_url": "/profile/filippo-fiorelli",
+              "team": "Team Visma | Lease a Bike",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Tord Gudmestad",
+              "rider_url": "/profile/tord-gudmestad",
+              "team": "Decathlon CMA CGM Team",
+              "nat_code": "NO",
+              "flag": "🇳🇴"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Gianluca Pollefliet",
+              "rider_url": "/profile/gianluca-pollefliet",
+              "team": "Decathlon CMA CGM Team",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Nikias Arndt",
+              "rider_url": "/profile/nikias-arndt",
+              "team": "Bahrain Victorious",
+              "nat_code": "DE",
+              "flag": "🇩🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Kamil Gradek",
+              "rider_url": "/profile/kamil-gradek",
+              "team": "Bahrain Victorious",
+              "nat_code": "PL",
+              "flag": "🇵🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Bob Jungels",
+              "rider_url": "/profile/bob-jungels",
+              "team": "Netcompany INEOS",
+              "nat_code": "LU",
+              "flag": "🇱🇺"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Lennert Belmans",
+              "rider_url": "/profile/lennert-belmans",
+              "team": "Alpecin - Premier Tech",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Paul Magnier",
+              "rider_url": "/profile/paul-magnier",
+              "team": "Soudal - Quick Step",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Yves Lampaert",
+              "rider_url": "/profile/yves-lampaert",
+              "team": "Soudal - Quick Step",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Sven Erik Bystrøm",
+              "rider_url": "/profile/sven-erik-bystrom",
+              "team": "Uno-X Mobility",
+              "nat_code": "NO",
+              "flag": "🇳🇴"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Davide De Pretto",
+              "rider_url": "/profile/davide-de-pretto",
+              "team": "Team Jayco AlUla",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Mauro Schmid",
+              "rider_url": "/profile/mauro-schmid",
+              "team": "Team Jayco AlUla",
+              "nat_code": "CH",
+              "flag": "🇨🇭"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Filippo Conca",
+              "rider_url": "/profile/filippo-conca",
+              "team": "Team Jayco AlUla",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Michael Valgren Andersen",
+              "rider_url": "/profile/michael-valgren-andersen",
+              "team": "EF Education - EasyPost",
+              "nat_code": "DK",
+              "flag": "🇩🇰"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Madis Mihkels",
+              "rider_url": "/profile/madis-mihkels",
+              "team": "EF Education - EasyPost",
+              "nat_code": "EE",
+              "flag": "🇪🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Samuele Battistella",
+              "rider_url": "/profile/samuele-battistella",
+              "team": "EF Education - EasyPost",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Ivan Garcia Cortina",
+              "rider_url": "/profile/ivan-garcia-cortina",
+              "team": "Movistar Team",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Manlio Moro",
+              "rider_url": "/profile/manlio-moro",
+              "team": "Movistar Team",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "James Knox",
+              "rider_url": "/profile/james-knox",
+              "team": "Team Picnic PostNL",
+              "nat_code": "GB",
+              "flag": "🇬🇧"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Nicolo' Parisini",
+              "rider_url": "/profile/nicolo-parisini",
+              "team": "Pinarello - Q36.5 Pro Cycling Team",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Petr Kelemen",
+              "rider_url": "/profile/petr-kelemen",
+              "team": "Tudor Pro Cycling Team",
+              "nat_code": "CZ",
+              "flag": "🇨🇿"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Clement Venturini",
+              "rider_url": "/profile/clement-venturini",
+              "team": "Unibet Rose Rockets",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Txomin Juaristi Arrieta",
+              "rider_url": "/profile/txomin-juaristi-arrieta",
+              "team": "Euskaltel - Euskadi",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jokin Murguialday Elorza",
+              "rider_url": "/profile/jokin-murguialday-elorza",
+              "team": "Euskaltel - Euskadi",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Gari Ugarte Larrea",
+              "rider_url": "/profile/gari-ugarte-larrea",
+              "team": "Euskaltel - Euskadi",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Vegard Stake Laengen",
+              "rider_url": "/profile/vegard-stake-laengen",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "NO",
+              "flag": "🇳🇴"
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/170456/responsive-images/Bretagne-Classic-Profil___heightProfile_1200_637.webp"
+        }
+      ],
+      "last_stage_winner": "Alex Aranburu Deba",
+      "last_stage_winner_flag": "🇪🇸",
+      "last_stage_num": 1,
+      "stages_completed": 1,
+      "gc_leader": "🇪🇸 Alex Aranburu Deba",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Alex Aranburu Deba",
+          "rider_url": "/profile/alex-aranburu-deba",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "05:21:13"
+        },
+        {
+          "rank": 2,
+          "name": "Alexander Kamp Egested",
+          "rider_url": "/profile/alexander-kamp-egested",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Alessandro Borgo",
+          "rider_url": "/profile/alessandro-borgo",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 4,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 5,
+          "name": "Jenno Berckmoes",
+          "rider_url": "/profile/jenno-berckmoes",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Paul Lapeira",
+          "rider_url": "/profile/paul-lapeira",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Romain Grégoire",
+          "rider_url": "/profile/romain-gregoire",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Rick Pluimers",
+          "rider_url": "/profile/rick-pluimers",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Alexandre Delettre",
+          "rider_url": "/profile/alexandre-delettre",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Andrea Vendrame",
+          "rider_url": "/profile/andrea-vendrame",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        }
+      ],
+      "points_leader": "🇪🇸 Alex Aranburu Deba",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Alex Aranburu Deba",
+          "rider_url": "/profile/alex-aranburu-deba",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "05:21:13"
+        },
+        {
+          "rank": 2,
+          "name": "Alexander Kamp Egested",
+          "rider_url": "/profile/alexander-kamp-egested",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Alessandro Borgo",
+          "rider_url": "/profile/alessandro-borgo",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 4,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 5,
+          "name": "Jenno Berckmoes",
+          "rider_url": "/profile/jenno-berckmoes",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Paul Lapeira",
+          "rider_url": "/profile/paul-lapeira",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Romain Grégoire",
+          "rider_url": "/profile/romain-gregoire",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Rick Pluimers",
+          "rider_url": "/profile/rick-pluimers",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Alexandre Delettre",
+          "rider_url": "/profile/alexandre-delettre",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Andrea Vendrame",
+          "rider_url": "/profile/andrea-vendrame",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        }
+      ],
+      "kom_leader": "🇪🇸 Alex Aranburu Deba",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Alex Aranburu Deba",
+          "rider_url": "/profile/alex-aranburu-deba",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "05:21:13"
+        },
+        {
+          "rank": 2,
+          "name": "Alexander Kamp Egested",
+          "rider_url": "/profile/alexander-kamp-egested",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Alessandro Borgo",
+          "rider_url": "/profile/alessandro-borgo",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 4,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 5,
+          "name": "Jenno Berckmoes",
+          "rider_url": "/profile/jenno-berckmoes",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Paul Lapeira",
+          "rider_url": "/profile/paul-lapeira",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Romain Grégoire",
+          "rider_url": "/profile/romain-gregoire",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Rick Pluimers",
+          "rider_url": "/profile/rick-pluimers",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Alexandre Delettre",
+          "rider_url": "/profile/alexandre-delettre",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Andrea Vendrame",
+          "rider_url": "/profile/andrea-vendrame",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        }
+      ],
+      "youth_leader": "🇪🇸 Alex Aranburu Deba",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Alex Aranburu Deba",
+          "rider_url": "/profile/alex-aranburu-deba",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "05:21:13"
+        },
+        {
+          "rank": 2,
+          "name": "Alexander Kamp Egested",
+          "rider_url": "/profile/alexander-kamp-egested",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 3,
+          "name": "Alessandro Borgo",
+          "rider_url": "/profile/alessandro-borgo",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 4,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 5,
+          "name": "Jenno Berckmoes",
+          "rider_url": "/profile/jenno-berckmoes",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Paul Lapeira",
+          "rider_url": "/profile/paul-lapeira",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Romain Grégoire",
+          "rider_url": "/profile/romain-gregoire",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Rick Pluimers",
+          "rider_url": "/profile/rick-pluimers",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Alexandre Delettre",
+          "rider_url": "/profile/alexandre-delettre",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Andrea Vendrame",
+          "rider_url": "/profile/andrea-vendrame",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        }
+      ]
+    },
     {
       "slug": "lidl-deutschland-tour",
       "cf_slug": "lidl-deutschland-tour-2026",
@@ -131068,94 +131068,88 @@
   },
   "startlists_needed": [
     {
-      "name": "Bretagne Classic - Ouest-France",
-      "cf_slug": "bretagne-classic-ouest-france-2026",
-      "start_date": "2026-08-30",
-      "days_away": 0
-    },
-    {
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 3
+      "days_away": 2
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 28
+      "days_away": 27
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 34
+      "days_away": 33
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 36
+      "days_away": 35
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 42
+      "days_away": 41
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 49
+      "days_away": 48
     }
   ]
 }

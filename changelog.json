@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T19:37:35.270974+00:00",
+  "generated_at": "2026-08-31T17:49:51.018012+00:00",
   "entries": [
     {
       "id": "55970ab6fbaa",
@@ -385,20 +385,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Vuelta a España startlist: Arthur Kluckers, Bruno Armirail, Callum Scotson (+27 more) added"
-    },
-    {
-      "id": "e74bfceb3a7b",
-      "timestamp": "2026-08-17T17:20:01.735828+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a España startlist: Alessandro Romele, Alex Kirsch, BEKKUM Darren Van (+19 more) added"
-    },
-    {
-      "id": "ff02e2986110",
-      "timestamp": "2026-08-17T11:20:25.374787+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a España startlist: Alessandro Covi, Asbjørn Hellemose, Christophe Laporte (+11 more) added"
     }
   ]
 }

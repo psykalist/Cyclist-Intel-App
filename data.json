@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-31T17:48:39.743424+00:00",
-  "scraped_at_human": "31 Aug 2026 17:48 UTC",
+  "scraped_at": "2026-08-31T21:43:16.618642+00:00",
+  "scraped_at_human": "31 Aug 2026 21:43 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -3184,6 +3184,12 @@
           "slug": "toralf-rydningen-martinsen",
           "nat": "no",
           "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Luca Paletti",
+          "slug": "luca-paletti",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
           "name": "Jan Castellon",

@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-31 19:46 UTC",
-  "run_at_iso": "2026-08-31T17:48:39.742570+00:00",
+  "run_at": "2026-08-31 23:41 UTC",
+  "run_at_iso": "2026-08-31T21:43:16.617924+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -17,12 +17,12 @@
         "stage_num": 10,
         "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-10",
         "fetch_ok": true,
-        "response_bytes": 337508,
+        "response_bytes": 330792,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-08-30 21:34 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 20.2,
+        "stall_attempts": 3,
+        "stall_hours": 24.1,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

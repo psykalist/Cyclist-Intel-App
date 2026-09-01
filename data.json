@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-31T21:43:16.618642+00:00",
-  "scraped_at_human": "31 Aug 2026 21:43 UTC",
+  "scraped_at": "2026-09-01T15:21:43.034168+00:00",
+  "scraped_at_human": "01 Sep 2026 15:21 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 9,
+      "stages_completed": 10,
       "stages": [
         {
           "num": 1,
@@ -1012,10 +1012,101 @@
           "num": 10,
           "label": "Stage 10",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-10",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Bastien Tronchon",
+          "winner_flag": "🇫🇷",
+          "winner_nat": "FR",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Bastien Tronchon",
+              "rider_url": "/profile/bastien-tronchon",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 2,
+              "name": "Magnus Cort",
+              "rider_url": "/profile/magnus-cort-nielsen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 3,
+              "name": "Thibau Nys",
+              "rider_url": "/profile/thibau-nys",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 4,
+              "name": "Wout van Aert",
+              "rider_url": "/profile/wout-van-aert",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 5,
+              "name": "Alessandro Romele",
+              "rider_url": "/profile/alessandro-romele",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 6,
+              "name": "Xabier Mikel Azparren Iruzun",
+              "rider_url": "/profile/xabier-mikel-azparren-iruzun",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 7,
+              "name": "Finn Fisher-Black",
+              "rider_url": "/profile/finn-fisher-black",
+              "team": "",
+              "nat_code": "NZ",
+              "flag": "🇳🇿",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 8,
+              "name": "Orluis Alberto Aular Sanabria",
+              "rider_url": "/profile/orluis-alberto-aular-sanabria",
+              "team": "",
+              "nat_code": "VE",
+              "flag": "🇻🇪",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 9,
+              "name": "Jordan Labrosse",
+              "rider_url": "/profile/jordan-labrosse",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:41"
+            },
+            {
+              "rank": 10,
+              "name": "Hugo Hofstetter",
+              "rider_url": "/profile/hugo-hofstetter",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:41"
+            }
+          ],
           "date_str": "Tuesday 01 September",
           "start_town": "Alcaraz",
           "finish_town": "Elche de la Sierra",
@@ -1024,7 +1115,8 @@
           "start_time": "13:00",
           "stage_type": "mountain",
           "description": "Immediately after the start, the road gradually rises towards the Puerto de las Cruses. The final 3.2 kilometres are slightly more demanding at around 5 percent. A descent then leads towards Riópar and the foot of the Puerto de Peralejo, a 5.2-kilometre climb averaging 4.3 percent. After the summit, the course remains rolling for more than twenty kilometres before descending towards Aýna. Once through the village, another climb begins, measuring 7.7 kilometres at an average of 4 percent. A long, irregular descent follows, with short rises and dips alternating along the way. The course remains undulating throughout the final fifty kilometres. It never becomes truly steep, apart from an uncategorised rise of around 1 kilometre at 8.1 percent. The real finale begins with the Puerto de Socovos, a 9.7-kilometre climb averaging 3.5 percent.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32679/responsive-images/01KCPVX2TXZFNPP6TP8BD7KE7V___heightProfile_1200_572.webp",
+          "non_finishers": []
         },
         {
           "num": 11,
@@ -2331,9 +2423,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Enric Mas Nicolau",
-      "last_stage_winner_flag": "🇪🇸",
-      "last_stage_num": 9,
+      "last_stage_winner": "Bastien Tronchon",
+      "last_stage_winner_flag": "🇫🇷",
+      "last_stage_num": 10,
       "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
@@ -2343,7 +2435,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "28:34:03"
+          "time_gap": "32:41:44"
         },
         {
           "rank": 2,
@@ -2436,25 +2528,25 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "124"
+          "time_gap": "143"
         },
         {
           "rank": 2,
+          "name": "Alessandro Romele",
+          "rider_url": "/profile/alessandro-romele",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "76"
+        },
+        {
+          "rank": 3,
           "name": "Matthew Brennan",
           "rider_url": "/profile/matthew-brennan",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
           "time_gap": "67"
-        },
-        {
-          "rank": 3,
-          "name": "Alessandro Romele",
-          "rider_url": "/profile/alessandro-romele",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "59"
         },
         {
           "rank": 4,
@@ -2485,6 +2577,24 @@
         },
         {
           "rank": 7,
+          "name": "Bryan Coquard",
+          "rider_url": "/profile/bryan-coquard",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "51"
+        },
+        {
+          "rank": 8,
+          "name": "Bastien Tronchon",
+          "rider_url": "/profile/bastien-tronchon",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "48"
+        },
+        {
+          "rank": 9,
           "name": "Enric Mas Nicolau",
           "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
@@ -2493,31 +2603,13 @@
           "time_gap": "47"
         },
         {
-          "rank": 8,
-          "name": "Bryan Coquard",
-          "rider_url": "/profile/bryan-coquard",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "47"
-        },
-        {
-          "rank": 9,
+          "rank": 10,
           "name": "Jordi Meeus",
           "rider_url": "/profile/jordi-meeus",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "47"
-        },
-        {
-          "rank": 10,
-          "name": "Tobias Halland Johannessen",
-          "rider_url": "/profile/tobias-halland-johannessen",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "45"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -2529,7 +2621,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "28:36:23"
+          "time_gap": "32:44:04"
         },
         {
           "rank": 2,
@@ -2577,40 +2669,40 @@
           "time_gap": "+ 14:34"
         },
         {
-          "rank": 7,
-          "name": "Ramses Debruyne",
-          "rider_url": "/profile/ramses-debruyne",
+          "rank": 1,
+          "name": "Enzo Paleni",
+          "rider_url": "/profile/enzo-paleni",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 14:37"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "3"
         },
         {
-          "rank": 8,
-          "name": "Finlay Pickering",
-          "rider_url": "/profile/xavier-finlay-pickering",
+          "rank": 2,
+          "name": "Fabian Weiss",
+          "rider_url": "/profile/fabian-weiss",
           "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 22:23"
+          "nat_code": "CH",
+          "flag": "🇨🇭",
+          "time_gap": "2"
         },
         {
-          "rank": 9,
-          "name": "Embret Svestad-Bardseng",
-          "rider_url": "/profile/embret-svestad-bardseng",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "+ 25:16"
-        },
-        {
-          "rank": 10,
-          "name": "Raúl García Pierna",
-          "rider_url": "/profile/raul-garcia-pierna",
+          "rank": 3,
+          "name": "Sinuhe Fernandez Rodriguez",
+          "rider_url": "/profile/sinuhe-fernandez-rodriguez",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 33:00"
+          "time_gap": "1"
+        },
+        {
+          "rank": 1,
+          "name": "Fabian Weiss",
+          "rider_url": "/profile/fabian-weiss",
+          "team": "",
+          "nat_code": "CH",
+          "flag": "🇨🇭",
+          "time_gap": "3"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
@@ -3198,6 +3290,48 @@
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
         {
+          "name": "Jon Agirre",
+          "slug": "jon-agirre",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Xabier Berasategi",
+          "slug": "xabier-berasategi-garmendia",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Mikel Bizkarra",
+          "slug": "mikel-bizkarra",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Samuel Fernández",
+          "slug": "samuel-fernandez-heres",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Jonathan Lastra",
+          "slug": "jonathan-lastra",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Gotzon Martín",
+          "slug": "gotzon-martin",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Iker Mintegi",
+          "slug": "iker-mintegi-claver",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
           "name": "Alessandro Fancellu",
           "slug": "alessandro-fancellu",
           "nat": "it",
@@ -3209,7 +3343,13 @@
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
         }
-      ]
+      ],
+      "distance_km": 196.7,
+      "elevation_m": 2288,
+      "stage_type": "hilly",
+      "start_town": "Larciano",
+      "finish_town": "Larciano",
+      "description": "Info Startlist Results Winners 6 Sep Date 197 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 60 Giulio Pellizzari Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 813 Full startlist Win chance 1 Giulio Pellizzari 100.00% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
@@ -131070,6 +131210,30 @@
         }
       ],
       "wins_refreshed_at": "2026-08-30T19:36:21.537109+00:00"
+    },
+    "bastien-tronchon": {
+      "slug": "bastien-tronchon",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "01-09-2026",
+          "race": "Vuelta a España - Stage 10",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2025",
+          "date": "11-05-2025",
+          "race": "Tro-Bro Léon",
+          "cat": "1.Pro"
+        },
+        {
+          "year": "2022",
+          "date": "04-08-2022",
+          "race": "Vuelta a Burgos - Stage 3",
+          "cat": "2.Pro"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-01T15:21:43.034116+00:00"
     }
   },
   "startlists_needed": [
@@ -131077,85 +131241,85 @@
       "name": "Lloyds Tour of Britain Men",
       "cf_slug": "lloyds-tour-of-britain-men-2026",
       "start_date": "2026-09-02",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 27
+      "days_away": 26
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 33
+      "days_away": 32
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 35
+      "days_away": 34
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 41
+      "days_away": 40
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 48
+      "days_away": 47
     }
   ]
 }

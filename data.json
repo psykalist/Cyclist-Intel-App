@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-01T15:21:43.034168+00:00",
-  "scraped_at_human": "01 Sep 2026 15:21 UTC",
+  "scraped_at": "2026-09-01T19:43:01.973452+00:00",
+  "scraped_at_human": "01 Sep 2026 19:43 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -2669,40 +2669,40 @@
           "time_gap": "+ 14:34"
         },
         {
-          "rank": 1,
-          "name": "Enzo Paleni",
-          "rider_url": "/profile/enzo-paleni",
+          "rank": 7,
+          "name": "Ramses Debruyne",
+          "rider_url": "/profile/ramses-debruyne",
           "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "3"
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 21:03"
         },
         {
-          "rank": 2,
-          "name": "Fabian Weiss",
-          "rider_url": "/profile/fabian-weiss",
+          "rank": 8,
+          "name": "Finlay Pickering",
+          "rider_url": "/profile/xavier-finlay-pickering",
           "team": "",
-          "nat_code": "CH",
-          "flag": "🇨🇭",
-          "time_gap": "2"
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 22:23"
         },
         {
-          "rank": 3,
-          "name": "Sinuhe Fernandez Rodriguez",
-          "rider_url": "/profile/sinuhe-fernandez-rodriguez",
+          "rank": 9,
+          "name": "Embret Svestad-Bardseng",
+          "rider_url": "/profile/embret-svestad-bardseng",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 25:41"
+        },
+        {
+          "rank": 10,
+          "name": "Raúl García Pierna",
+          "rider_url": "/profile/raul-garcia-pierna",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Fabian Weiss",
-          "rider_url": "/profile/fabian-weiss",
-          "team": "",
-          "nat_code": "CH",
-          "flag": "🇨🇭",
-          "time_gap": "3"
+          "time_gap": "+ 35:42"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",

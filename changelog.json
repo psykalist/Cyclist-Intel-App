@@ -1,6 +1,69 @@
 {
-  "generated_at": "2026-09-01T19:44:09.382670+00:00",
+  "generated_at": "2026-09-02T14:53:13.113016+00:00",
   "entries": [
+    {
+      "id": "5c8e4f8ae097",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 11 Vuelta a España: 🇬🇧 Ethan Hayter wins"
+    },
+    {
+      "id": "f377b634f634",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Vuelta a España GC: 🇬🇧 Ethan Hayter leads"
+    },
+    {
+      "id": "c8d520f90f1a",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Vuelta a España Points: 🇬🇧 Ethan Hayter leads"
+    },
+    {
+      "id": "e52d2fb5c491",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a España KOM: 🇬🇧 Ethan Hayter leads"
+    },
+    {
+      "id": "2887ed6cc3a8",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Vuelta a España Youth: 🇬🇧 Ethan Hayter leads"
+    },
+    {
+      "id": "e3713b88daf2",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Lloyds Tour of Britain Men: 🇬🇧 Lewis Askey wins"
+    },
+    {
+      "id": "141114389625",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Lloyds Tour of Britain Men GC: 🇬🇧 Lewis Askey leads"
+    },
+    {
+      "id": "d71c10b7df3a",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Lloyds Tour of Britain Men Points: 🇬🇧 Lewis Askey leads"
+    },
+    {
+      "id": "aad5a206711f",
+      "timestamp": "2026-09-02T14:53:13.105563+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Lloyds Tour of Britain Men KOM: 🇨🇿 Michal Schuran leads"
+    },
     {
       "id": "531bec15440e",
       "timestamp": "2026-09-01T15:22:51.127793+00:00",
@@ -371,20 +434,6 @@
       "type": "leader_change",
       "icon": "yellow",
       "text": "Renewi Tour GC: 🇮🇹 Jonathan Milan leads"
-    },
-    {
-      "id": "2a092f4a72f5",
-      "timestamp": "2026-08-19T11:20:08.244027+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a España startlist: Attila Valter, DEN BOSSCHE Fabio Van, David González (+15 more) added"
-    },
-    {
-      "id": "5a35651b11d1",
-      "timestamp": "2026-08-19T11:20:08.244027+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist published (12 riders)"
     }
   ]
 }

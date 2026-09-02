@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-01 21:41 UTC",
-  "run_at_iso": "2026-09-01T19:43:01.972664+00:00",
+  "run_at": "2026-09-02 16:49 UTC",
+  "run_at_iso": "2026-09-02T14:52:01.970556+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,64 @@
       "name": "Vuelta a España",
       "total_stages": 21,
       "stages_completed_before": 9,
-      "stages_completed_after": 10,
-      "new_stages_found": 1,
+      "stages_completed_after": 11,
+      "new_stages_found": 2,
       "cancelled_stages": [
         3
       ],
       "probe": {
-        "stage_num": 11,
-        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-11",
+        "stage_num": 12,
+        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-12",
         "fetch_ok": true,
-        "response_bytes": 330296,
+        "response_bytes": 332842,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-09-01 17:20 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 2.4,
+        "stall_since": "2026-09-02 16:49 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [
+        {
+          "stage": 11,
+          "rows": 5,
+          "missing_times": 0
+        }
+      ],
+      "incomplete_classifications": [
+        {
+          "cls": "gc_top10",
+          "rows": 5
+        },
+        {
+          "cls": "points_top10",
+          "rows": 5
+        },
+        {
+          "cls": "kom_top10",
+          "rows": 5
+        }
+      ]
+    },
+    {
+      "slug": "lloyds-tour-of-britain-men-2026",
+      "name": "Lloyds Tour of Britain Men",
+      "total_stages": 5,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 2,
+        "url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026/result/stage-2",
+        "fetch_ok": true,
+        "response_bytes": 252674,
+        "matched_result_table": false,
+        "overdue": false,
+        "stall_since": "2026-09-02 16:49 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -33,5 +76,5 @@
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": false
+  "has_incomplete_results": true
 }

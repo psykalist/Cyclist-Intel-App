@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-02T14:53:13.113016+00:00",
+  "generated_at": "2026-09-02T19:36:15.680756+00:00",
   "entries": [
+    {
+      "id": "cfa02f37e513",
+      "timestamp": "2026-09-02T19:36:15.673488+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 11 Vuelta a España: 🇬🇧 Matthew Brennan wins"
+    },
+    {
+      "id": "1e75e32bd7a3",
+      "timestamp": "2026-09-02T19:36:15.673488+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Lloyds Tour of Britain Men Youth: 🇬🇧 Elliot Rowe leads"
+    },
+    {
+      "id": "437ab6dafb6a",
+      "timestamp": "2026-09-02T19:36:15.673488+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Alex Baudin, Andrea Vendrame, Antonio Tiberi (+14 more) added"
+    },
     {
       "id": "5c8e4f8ae097",
       "timestamp": "2026-09-02T14:53:13.105563+00:00",
@@ -420,20 +441,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Renewi Tour Youth: 🇧🇪 Vlad Van Mechelen leads"
-    },
-    {
-      "id": "1f0c00c84a26",
-      "timestamp": "2026-08-19T17:21:50.071933+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Renewi Tour: 🇮🇹 Jonathan Milan wins"
-    },
-    {
-      "id": "e1d738ce1cd8",
-      "timestamp": "2026-08-19T17:21:50.071933+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Renewi Tour GC: 🇮🇹 Jonathan Milan leads"
     }
   ]
 }

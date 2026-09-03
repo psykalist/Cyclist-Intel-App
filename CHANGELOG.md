@@ -7,6 +7,22 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v148 — 2026-09-03 — Fix "one rider leads every jersey" (stacked mini-table glitch)
+
+**Symptom.** On live Vuelta 2026, **Wout van Aert** showed as winner of stage 12 **and** leader of GC, Points, KOM *and* Youth — he was only ever the intermediate-sprint leader. (Same failure class as the earlier Ethan Hayter case.)
+
+**Cause.** During a live stage CyclingFlash sometimes serves the stage-result and every classification sub-page (`/result/stage-12/{gc,points,mountain,youth}`) as one page stitched from small ranked widgets (intermediate-sprint points, KOM points…), each restarting at rank 1. `parse_result_rows()` concatenated them into a bogus `1,2,3,1,2,3,…` top-10, so stage 12 and all four jerseys stored the identical widget table with van Aert on top (`time_gap` values were the giveaway: "3","2","1" instead of real times).
+
+**Fix — two layers:**
+- **`scraper.py` `validate_result_rows()`:** now rejects any table whose ranks **decrease** (a widget restart) — a genuine result/classification only ever ascends. Since both stage results and classifications validate through this, no such artefact gets stored again.
+- **`index.html` `sanitizeRaceData()`:** runs on every `data.json` load (both `loadData` and the 30-min `silentCheck`). Drops any classification or stage top-10 with a rank reset (`_ranksBogus`), clears the matching `*_leader`/stage winner, and re-points `last_stage_*` to the last genuinely-decided stage. This cleans copies of `data.json` already published by CI, so the user sees the fix immediately — without it the app would keep showing the bad rows until CI re-scraped.
+
+**Effect.** The Vuelta now shows no bogus jersey leaders and stage 12 as not-yet-decided (headline falls back to stage 11 — Matthew Brennan); real leaders/results return automatically on the next clean scrape. Fantasy scoring also stops awarding the phantom GC/jersey/stage points.
+
+- Version v147→v148. `index.html` + `scraper.py`. No data files hand-edited (CI-owned).
+
+---
+
 ## v147 — 2026-09-03 — Groups: fix Add-bib row overflowing (Add button off-screen)
 
 - **Groups quick-add (`index.html` CSS):** the bib `<input>` had `flex: 1` with no `min-width: 0`, so on narrow screens it refused to shrink below its intrinsic width and pushed the **Add** button off the right edge. Set `flex: 1 1 0; min-width: 0; width: 0` on `.grp-bib-input` so it shrinks to fit, and `flex: 0 0 auto; white-space: nowrap` on `.grp-add-btn` so the button always stays fully visible.

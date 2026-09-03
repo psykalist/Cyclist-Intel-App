@@ -513,6 +513,23 @@ def validate_result_rows(rows, context="result", min_riders=3):
             return False, f"HTML artefact in rider name: {name!r}"
         if len(name) > 60:
             return False, f"suspiciously long rider name: {name!r}"
+    # Rank must ascend. CyclingFlash sometimes serves a page stitched from
+    # several small ranked widgets (intermediate-sprint points, KOM points…),
+    # each restarting at 1 — parse_result_rows() then concatenates them into a
+    # bogus "1,2,3,1,2,3…" table, so the intermediate-sprint winner looks like
+    # he won the stage AND leads every jersey (bit us on Vuelta 2026 stage 12:
+    # Van Aert shown leading GC/Points/KOM/Youth). A rank that DECREASES can
+    # only be such an artefact — a genuine result/classification never does.
+    prev_rank = None
+    for r in rows:
+        try:
+            rk = int(r.get("rank"))
+        except (TypeError, ValueError):
+            continue
+        if prev_rank is not None and rk < prev_rank:
+            return False, (f"rank sequence resets ({rk} after {prev_rank}) — "
+                           "page is stacked mini-tables, not a real result")
+        prev_rank = rk
     return True, "ok"
 
 

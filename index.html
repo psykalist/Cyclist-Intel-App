@@ -4250,6 +4250,57 @@ function setPalmaresClass(cls) {
 
 // ── Data loading ───────────────────────────────────────────────────────────────
 
+// ── Guard against CyclingFlash's stacked mini-table glitch ───────────────────
+// A real result / classification ranks riders 1,2,3,… strictly ascending.
+// During a live stage CF sometimes serves a page stitched from several small
+// ranked widgets (intermediate-sprint points, KOM points…), each restarting at
+// 1. The scraper concatenates them, so the parsed top-10 reads 1,2,3,1,2,3,… —
+// and the intermediate-sprint winner (e.g. Wout van Aert on Vuelta 2026 st.12)
+// ends up looking like he won the stage AND leads GC, Points, KOM and Youth.
+// A rank that DECREASES can only be that artefact, so we discard the table;
+// the next scrape restores the real data once CF posts the official result.
+// (scraper.py's validate_result_rows now rejects these at source too — this is
+// the belt-and-suspenders that also cleans data.json copies already published.)
+function _ranksBogus(rows) {
+  if (!Array.isArray(rows) || rows.length < 2) return false;
+  let prev = null;
+  for (const r of rows) {
+    const n = Number(r && r.rank);
+    if (!Number.isFinite(n)) continue;      // unranked (DNF etc.) — skip
+    if (prev !== null && n < prev) return true;
+    prev = n;
+  }
+  return false;
+}
+function sanitizeRaceData(data) {
+  if (!data) return data;
+  for (const bucket of ['live', 'upcoming', 'recent']) {
+    for (const race of (data[bucket] || [])) {
+      for (const [lk, tk] of [['gc_leader','gc_top10'], ['points_leader','points_top10'],
+                              ['kom_leader','kom_top10'], ['youth_leader','youth_top10']]) {
+        if (_ranksBogus(race[tk])) { delete race[tk]; delete race[lk]; }
+      }
+      for (const st of (race.stages || [])) {
+        if (_ranksBogus(st.top10)) {
+          delete st.top10; delete st.winner; delete st.winner_flag; delete st.winner_nat;
+        }
+      }
+      // Re-point "last stage" to whatever survived (the bogus stage may have been it).
+      const done = (race.stages || []).filter(st => st.winner);
+      if (done.length) {
+        const last = done[done.length - 1];
+        race.last_stage_winner = last.winner;
+        race.last_stage_winner_flag = last.winner_flag || '';
+        race.last_stage_num = last.num;
+        race.stages_completed = done.length;
+      } else {
+        delete race.last_stage_winner; delete race.last_stage_winner_flag;
+      }
+    }
+  }
+  return data;
+}
+
 let appData = {};
 
 async function loadData(force=false) {
@@ -4265,7 +4316,7 @@ async function loadData(force=false) {
     const opts = {cache:'no-store'};
     const r = await fetch(url, opts);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    appData = await r.json();
+    appData = sanitizeRaceData(await r.json());
     mergeExtraTeams();   // inject Tour teams missing from data.json (e.g. Q36.5) before any render
     mergeExtraRiders();  // inject single riders missing from an existing team roster (e.g. Juan Felipe Rodriguez / EF, Vuelta bib 166)
     mergeExtraRaces();   // inject Tour de l'Ain (2.1) -- CI never scrapes Europe Tour races
@@ -4320,7 +4371,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v147';
+const APP_VERSION = 'v148';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {
@@ -4417,7 +4468,7 @@ async function silentCheck() {
       const prevWinners = new Set();
       for(const race of prevLive) for(const s of (race.stages||[])) if(s.winner) prevWinners.add(`${race.slug}-${s.num}`);
 
-      appData = d;
+      appData = sanitizeRaceData(d);
       _lastScrapedAt = d.scraped_at;
       document.getElementById('last-updated').textContent = `Updated ${d.scraped_at_human || '—'}`;
       renderDataHealth();

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-03T14:51:18.408168+00:00",
-  "scraped_at_human": "03 Sep 2026 14:51 UTC",
+  "scraped_at": "2026-09-03T19:31:26.546953+00:00",
+  "scraped_at_human": "03 Sep 2026 19:31 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -2657,97 +2657,97 @@
       "last_stage_winner": "Wout van Aert",
       "last_stage_winner_flag": "🇧🇪",
       "last_stage_num": 12,
-      "gc_leader": "🇧🇪 Wout van Aert",
+      "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
           "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "3"
-        },
-        {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
-        },
-        {
-          "rank": 3,
-          "name": "Pavel Sivakov",
-          "rider_url": "/profile/pavel-sivakov",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "3"
-        },
-        {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
-        },
-        {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "5"
+          "time_gap": "40:31:51"
         },
         {
           "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "name": "Primož Roglič",
+          "rider_url": "/profile/primoz-roglic",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "3"
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 01:45"
         },
         {
           "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "name": "Felix Gall",
+          "rider_url": "/profile/felix-gall",
           "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "+ 02:06"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 4,
+          "name": "Richard Carapaz",
+          "rider_url": "/profile/richard-carapaz",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "20"
+          "nat_code": "EC",
+          "flag": "🇪🇨",
+          "time_gap": "+ 03:53"
+        },
+        {
+          "rank": 5,
+          "name": "Oscar Onley",
+          "rider_url": "/profile/oscar-onley",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 04:29"
+        },
+        {
+          "rank": 6,
+          "name": "Jakob Omrzel",
+          "rider_url": "/profile/jakob-omrzel",
+          "team": "",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 04:59"
+        },
+        {
+          "rank": 7,
+          "name": "Mattias Skjelmose",
+          "rider_url": "/profile/mattias-skjelmose-jensen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 07:42"
+        },
+        {
+          "rank": 8,
+          "name": "Sepp Kuss",
+          "rider_url": "/profile/sepp-kuss",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 07:58"
+        },
+        {
+          "rank": 9,
+          "name": "Gregor Mühlberger",
+          "rider_url": "/profile/gregor-muhlberger",
+          "team": "",
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "+ 08:27"
+        },
+        {
+          "rank": 10,
+          "name": "Harold Alfonso Tejada Canacue",
+          "rider_url": "/profile/harold-alfonso-tejada-canacue",
+          "team": "",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "+ 08:33"
         }
       ],
       "points_leader": "🇧🇪 Wout van Aert",
@@ -2759,274 +2759,274 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "3"
+          "time_gap": "194"
         },
         {
           "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "name": "Matthew Brennan",
+          "rider_url": "/profile/matthew-brennan",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "117"
         },
         {
           "rank": 3,
-          "name": "Pavel Sivakov",
-          "rider_url": "/profile/pavel-sivakov",
+          "name": "Alessandro Romele",
+          "rider_url": "/profile/alessandro-romele",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "96"
+        },
+        {
+          "rank": 4,
+          "name": "Bryan Coquard",
+          "rider_url": "/profile/bryan-coquard",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "1"
+          "time_gap": "94"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 5,
+          "name": "Ethan Hayter",
+          "rider_url": "/profile/ethan-hayter",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "77"
+        },
+        {
+          "rank": 6,
+          "name": "Jordi Meeus",
+          "rider_url": "/profile/jordi-meeus",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "3"
+          "time_gap": "67"
         },
         {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "rank": 7,
+          "name": "Bastien Tronchon",
+          "rider_url": "/profile/bastien-tronchon",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "60"
         },
         {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "rank": 8,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "1"
+          "time_gap": "57"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 9,
+          "name": "Hugo Hofstetter",
+          "rider_url": "/profile/hugo-hofstetter",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "5"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "53"
         },
         {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "rank": 10,
+          "name": "Magnus Cort",
+          "rider_url": "/profile/magnus-cort-nielsen",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "3"
-        },
-        {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "20"
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "53"
         }
       ],
-      "youth_leader": "🇧🇪 Wout van Aert",
+      "youth_leader": "🇬🇧 Oscar Onley",
       "youth_top10": [
         {
           "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "name": "Oscar Onley",
+          "rider_url": "/profile/oscar-onley",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "3"
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "40:36:20"
         },
         {
           "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "name": "Jakob Omrzel",
+          "rider_url": "/profile/jakob-omrzel",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 30"
         },
         {
           "rank": 3,
-          "name": "Pavel Sivakov",
-          "rider_url": "/profile/pavel-sivakov",
+          "name": "Léo Bisiaux",
+          "rider_url": "/profile/leo-bisiaux",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "1"
+          "time_gap": "+ 11:39"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 4,
+          "name": "Matthew Riccitello",
+          "rider_url": "/profile/matthew-riccitello",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 14:56"
+        },
+        {
+          "rank": 5,
+          "name": "Jarno Widar",
+          "rider_url": "/profile/jarno-widar",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "3"
+          "time_gap": "+ 15:52"
         },
         {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "rank": 6,
+          "name": "Juan Felipe Rodriguez Contreras",
+          "rider_url": "/profile/juan-felipe-rodriguez-contreras",
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "2"
+          "time_gap": "+ 21:27"
         },
         {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "rank": 7,
+          "name": "Finlay Pickering",
+          "rider_url": "/profile/xavier-finlay-pickering",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 25:36"
+        },
+        {
+          "rank": 8,
+          "name": "Raúl García Pierna",
+          "rider_url": "/profile/raul-garcia-pierna",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "1"
+          "time_gap": "+ 39:32"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 9,
+          "name": "Embret Svestad-Bardseng",
+          "rider_url": "/profile/embret-svestad-bardseng",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 43:46"
+        },
+        {
+          "rank": 10,
+          "name": "Ramses Debruyne",
+          "rider_url": "/profile/ramses-debruyne",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "5"
-        },
-        {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "3"
-        },
-        {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "20"
+          "time_gap": "+ 45:15"
         }
       ],
-      "kom_leader": "🇧🇪 Wout van Aert",
+      "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
       "kom_top10": [
         {
           "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "3"
-        },
-        {
-          "rank": 2,
           "name": "Santiago Buitrago Sanchez",
           "rider_url": "/profile/santiago-buitrago-sanchez",
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "2"
+          "time_gap": "52"
+        },
+        {
+          "rank": 2,
+          "name": "Wout van Aert",
+          "rider_url": "/profile/wout-van-aert",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "30"
         },
         {
           "rank": 3,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "24"
+        },
+        {
+          "rank": 4,
+          "name": "Alexey Lutsenko",
+          "rider_url": "/profile/alexey-lutsenko",
+          "team": "",
+          "nat_code": "KZ",
+          "flag": "🇰🇿",
+          "time_gap": "21"
+        },
+        {
+          "rank": 5,
+          "name": "Andreas Leknessund",
+          "rider_url": "/profile/andreas-leknessund",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "19"
+        },
+        {
+          "rank": 6,
+          "name": "Lorenzo Fortunato",
+          "rider_url": "/profile/lorenzo-fortunato",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "14"
+        },
+        {
+          "rank": 7,
           "name": "Pavel Sivakov",
           "rider_url": "/profile/pavel-sivakov",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "1"
+          "time_gap": "13"
         },
         {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
+          "rank": 8,
+          "name": "Jakob Omrzel",
+          "rider_url": "/profile/jakob-omrzel",
           "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "3"
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "12"
         },
         {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
+          "rank": 9,
+          "name": "Felix Gall",
+          "rider_url": "/profile/felix-gall",
           "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "2"
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "11"
         },
         {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "rank": 10,
+          "name": "Oscar Onley",
+          "rider_url": "/profile/oscar-onley",
           "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "5"
-        },
-        {
-          "rank": 2,
-          "name": "Santiago Buitrago Sanchez",
-          "rider_url": "/profile/santiago-buitrago-sanchez",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "3"
-        },
-        {
-          "rank": 3,
-          "name": "Pello Bilbao Lopez de Armentia",
-          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "1"
-        },
-        {
-          "rank": 1,
-          "name": "Wout van Aert",
-          "rider_url": "/profile/wout-van-aert",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "20"
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "10"
         }
       ]
     },
@@ -4068,16 +4068,34 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
+          "name": "Filippo Baroncini",
+          "slug": "filippo-baroncini",
+          "nat": "it",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
           "name": "Igor Arrieta",
           "slug": "igor-arrieta-lizarraga",
           "nat": "es",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Lenny Martinez",
-          "slug": "lenny-martinez",
-          "nat": "fr",
-          "team": "Bahrain - Victorious (WT)"
+          "name": "Vegard Stake Laengen",
+          "slug": "vegard-stake-laengen",
+          "nat": "no",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Adrià Pericas",
+          "slug": "adria-pericas-capdevila",
+          "nat": "es",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "António Morgado",
+          "slug": "antonio-morgado",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
           "name": "Antonio Tiberi",
@@ -4086,21 +4104,57 @@
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Damiano Caruso",
-          "slug": "damiano-caruso",
-          "nat": "it",
+          "name": "Kamil Gradek",
+          "slug": "kamil-gradek",
+          "nat": "pl",
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Alex Baudin",
-          "slug": "alex-baudin",
+          "name": "Rainer Kepplinger",
+          "slug": "rainer-kepplinger",
+          "nat": "at",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Lenny Martinez",
+          "slug": "lenny-martinez",
           "nat": "fr",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Fran Miholjević",
+          "slug": "fran-miholjevic",
+          "nat": "hr",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Bálint Feldhoffer",
+          "slug": "balint-feldhoffer",
+          "nat": "hu",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "DER MEULEN Max Van",
+          "slug": "max-van-der-meulen",
+          "nat": "nl",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Samuele Battistella",
+          "slug": "samuele-battistella",
+          "nat": "it",
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Neilson Powless",
-          "slug": "neilson-powless",
-          "nat": "us",
+          "name": "Jefferson Alexander Cepeda",
+          "slug": "jefferson-alexander-cepeda",
+          "nat": "ec",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Joshua Golliker",
+          "slug": "joshua-golliker",
+          "nat": "gb",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -4110,10 +4164,22 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "David Gaudu",
-          "slug": "david-gaudu",
-          "nat": "fr",
-          "team": "Groupama - FDJ United (WT)"
+          "name": "Lukas Nerurkar",
+          "slug": "lukas-nerurkar",
+          "nat": "gb",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Neilson Powless",
+          "slug": "neilson-powless",
+          "nat": "us",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "DER LEE Jardi Christiaan Van",
+          "slug": "jardi-christiaan-van-der-lee",
+          "nat": "nl",
+          "team": "EF Education - EasyPost (WT)"
         },
         {
           "name": "Romain Grégoire",
@@ -4122,9 +4188,117 @@
           "team": "Groupama - FDJ United (WT)"
         },
         {
+          "name": "Kevin Geniets",
+          "slug": "kevin-geniets",
+          "nat": "lu",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Lorenzo Germani",
+          "slug": "lorenzo-germani",
+          "nat": "it",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Baptiste Grégoire",
+          "slug": "baptiste-gregoire",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Maxime Decomble",
+          "slug": "maxime-decomble",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Josh Kench",
+          "slug": "josh-kench",
+          "nat": "nz",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Brieuc Rolland",
+          "slug": "brieuc-rolland",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Natnael Tesfatsion",
+          "slug": "natnael-tesfatsion",
+          "nat": "er",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Jefferson Alveiro Cepeda",
+          "slug": "jefferson-cepeda-hernandez",
+          "nat": "ec",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Juan Pedro López",
+          "slug": "juan-pedro-lopez",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Lorenzo Milesi",
+          "slug": "lorenzo-milesi",
+          "nat": "it",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "GAGLIARDONI Mattia Proietti",
+          "slug": "mattia-proietti-gagliardoni",
+          "nat": "it",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Einer Rubio",
+          "slug": "einer-rubio",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Roger Adrià",
+          "slug": "roger-adria",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Oliver Bleddyn",
+          "slug": "oliver-bleddyn",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Filippo Conca",
+          "slug": "filippo-conca",
+          "nat": "it",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Felix Engelhardt",
+          "slug": "felix-engelhardt",
+          "nat": "de",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "David Gaffney",
+          "slug": "david-gaffney1",
+          "nat": "ie",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
           "name": "Ben O'Connor",
           "slug": "ben-o-connor",
           "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Giacomo Serangeli",
+          "slug": "giacomo-serangeli",
+          "nat": "it",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -4132,6 +4306,42 @@
           "slug": "andrea-vendrame",
           "nat": "it",
           "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Anders Halland Johannessen",
+          "slug": "anders-halland-johannessen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Anthon Charmig",
+          "slug": "anthon-charmig",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Markus Hoelgaard",
+          "slug": "markus-hoelgaard",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "BUGGE Martin Urianstad",
+          "slug": "martin-urianstad",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Johannes Kulset",
+          "slug": "johannes-kulset",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Sakarias Koller Løland",
+          "slug": "sakarias-koller-loland",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Toralf Rydningen Martinsen",
@@ -4146,10 +4356,58 @@
           "team": "XDS Astana Team (WT)"
         },
         {
+          "name": "Alberto Bettiol",
+          "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Sergio Higuita",
+          "slug": "sergio-higuita",
+          "nat": "co",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Davide Ballerini",
+          "slug": "davide-ballerini",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
           "name": "Diego Ulissi",
           "slug": "diego-ulissi",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Simone Velasco",
+          "slug": "simone-velasco",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Nicolas Vinokurov",
+          "slug": "nicolas-vinokurov",
+          "nat": "kz",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Luca Covili",
+          "slug": "luca-covili",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Edward Cruz",
+          "slug": "edward-martinez-cruz",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Martin Santiago Herreño",
+          "slug": "martin-santiago-herreno",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
           "name": "Luca Paletti",
@@ -4158,8 +4416,104 @@
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
+          "name": "Vicente Rojas",
+          "slug": "vicente-rojas",
+          "nat": "cl",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Filippo Turconi",
+          "slug": "filippo-turconi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Daniel Cavia",
+          "slug": "daniel-cavia-sanz",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "LA CALLE Hugo De",
+          "slug": "hugo-de-la-calle-arango",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Eric Antonio Fagúndez",
+          "slug": "eric-antonio-fagundez",
+          "nat": "uy",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "PIERNA Carlos García",
+          "slug": "carlos-garcia-pierna",
+          "nat": "es",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Merhawi Kudus",
+          "slug": "merhawi-kudus",
+          "nat": "er",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Lorenzo Quartucci",
+          "slug": "lorenzo-quartucci",
+          "nat": "it",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Jambaljamts Sainbayar",
+          "slug": "jambaljamts-sainbayar",
+          "nat": "mn",
+          "team": "Burgos Burpellet BH (PRT)"
+        },
+        {
+          "name": "Julen Arriolabengoa",
+          "slug": "julen-arriola-bengoa-beitia",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Sebastian Berwick",
+          "slug": "sebastian-berwick",
+          "nat": "au",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Joan Bou",
+          "slug": "joan-bou",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
           "name": "Jan Castellon",
           "slug": "jan-castellon",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Alex Molenaar",
+          "slug": "alex-molenaar",
+          "nat": "nl",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Stefano Oldani",
+          "slug": "stefano-oldani",
+          "nat": "it",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Gorka Sorarrain",
+          "slug": "gorka-sorarrain",
           "nat": "es",
           "team": "Caja Rural - Seguros RGA (PRT)"
         },
@@ -4206,26 +4560,14 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Samuel Fernández",
-          "slug": "samuel-fernandez-heres",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Jon Agirre",
-          "slug": "jon-agirre",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
           "name": "Xabier Berasategi",
           "slug": "xabier-berasategi-garmendia",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Mikel Bizkarra",
-          "slug": "mikel-bizkarra",
+          "name": "Txomin Juaristi",
+          "slug": "txomin-juaristi",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
@@ -4236,15 +4578,21 @@
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Gotzon Martín",
-          "slug": "gotzon-martin",
+          "name": "Iker Mintegi",
+          "slug": "iker-mintegi-claver",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Iker Mintegi",
-          "slug": "iker-mintegi-claver",
+          "name": "Jokin Murguialday",
+          "slug": "jokin-murguialday-elorza",
           "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Louis Sutton",
+          "slug": "louis-sutton",
+          "nat": "gb",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
@@ -4254,9 +4602,123 @@
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
+          "name": "Luca Cretti",
+          "slug": "luca-cretti",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Diego Bracalente",
+          "slug": "diego-bracalente",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Florian Samuel Kajamini",
+          "slug": "florian-samuel-kajamini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Lorenzo Masciarelli",
+          "slug": "lorenzo-masciarelli",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Alessandro Verre",
+          "slug": "alessandro-verre",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Samuele Zoccarato",
+          "slug": "samuele-zoccarato",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Tom Pidcock",
+          "slug": "tom-pidcock",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Sjoerd Bax",
+          "slug": "sjoerd-bax",
+          "nat": "nl",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Chris Harper",
+          "slug": "chris-harper",
+          "nat": "au",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Quinten Hermans",
+          "slug": "quinten-hermans",
+          "nat": "be",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Nicolò Parisini",
+          "slug": "nicolo-parisini",
+          "nat": "it",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Joseph Pidcock",
+          "slug": "joseph-pidcock",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Matteo Badilatti",
+          "slug": "matteo-badilatti",
+          "nat": "ch",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
           "name": "Domenico Pozzovivo",
           "slug": "domenico-pozzovivo",
           "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Matteo Fabbro",
+          "slug": "matteo-fabbro",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Roberto Carlos González",
+          "slug": "roberto-gonzalez",
+          "nat": "pa",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Ben Granger",
+          "slug": "ben-granger",
+          "nat": "gb",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Samuel Bertolli",
+          "slug": "samuel-bertolli",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Kyrylo Tsarenko",
+          "slug": "kyrylo-tsarenko",
+          "nat": "ua",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Santiago Umba",
+          "slug": "santiago-umba",
+          "nat": "co",
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
@@ -4266,10 +4728,82 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Marc Hirschi",
-          "slug": "marc-hirschi",
-          "nat": "ch",
-          "team": "Tudor Pro Cycling Team (PRT)"
+          "name": "Davide Bais",
+          "slug": "davide-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fabrizio Crozzolo",
+          "slug": "fabrizio-crozzolo",
+          "nat": "ar",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Andrea Mifsud",
+          "slug": "andrea-mifsud",
+          "nat": "mt",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Francisco Muñoz",
+          "slug": "francisco-munoz-llana",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Thomas Pesenti",
+          "slug": "thomas-pesenti",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fernando Tercero",
+          "slug": "fernando-tercero-lopez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Nicolas Breuillard",
+          "slug": "nicolas-breuillard",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Mathieu Burgaudeau",
+          "slug": "mathieu-burgaudeau",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Joris Delbove",
+          "slug": "joris-delbove",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Alexandre Delettre",
+          "slug": "alexandre-delettre",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Thomas Gachignard",
+          "slug": "thomas-gachignard",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Jordan Jegat",
+          "slug": "jordan-jegat",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
+        },
+        {
+          "name": "Mattéo Vercher",
+          "slug": "matheo-vercher",
+          "nat": "fr",
+          "team": "TotalEnergies (PRT)"
         },
         {
           "name": "Michael Storer",
@@ -4278,16 +4812,208 @@
           "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
-          "name": "VRIES Hartthijs De",
-          "slug": "hartthijs-de-vries",
-          "nat": "nl",
-          "team": "Unibet Rose Rockets (PRT)"
+          "name": "Jan Huber",
+          "slug": "jan-huber",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Lennart Jasch",
+          "slug": "lennart-jasch",
+          "nat": "de",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Aivaras Mikutis",
+          "slug": "aivaras-mikutis",
+          "nat": "lt",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Mathys Rondel",
+          "slug": "mathys-rondel",
+          "nat": "fr",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Diego Casagrande",
+          "slug": "diego-casagrande",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Luc Wirtgen",
+          "slug": "luc-wirtgen",
+          "nat": "lu",
+          "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
           "name": "Wout Poels",
           "slug": "wout-poels",
           "nat": "nl",
           "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "VRIES Hartthijs De",
+          "slug": "hartthijs-de-vries",
+          "nat": "nl",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Jelle Johannink",
+          "slug": "jelle-johannink",
+          "nat": "nl",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Sergio Meris",
+          "slug": "sergio-meris",
+          "nat": "it",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Jannis Peter",
+          "slug": "jannis-peter",
+          "nat": "de",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Cedrik Bakke Christophersen",
+          "slug": "cedrik-bakke-christophersen",
+          "nat": "no",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Abram Stockman",
+          "slug": "abram-stockman",
+          "nat": "be",
+          "team": "Unibet Rose Rockets (PRT)"
+        },
+        {
+          "name": "Tommaso Bosio",
+          "slug": "tommaso-bosio",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Andrea Cobalchini",
+          "slug": "andrea-cobalchini",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Giacomo Dentelli",
+          "slug": "giacomo-dentelli",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Thomas Gamba",
+          "slug": "thomas-gamba",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Andrii Ponomar",
+          "slug": "andrii-ponomar",
+          "nat": "ua",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Cristian Remelli",
+          "slug": "cristian-remelli",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Thomas Rossetti",
+          "slug": "thomas-rossetti",
+          "nat": "it",
+          "team": "General Store - Essegibi - F.Lli Curia (CT)"
+        },
+        {
+          "name": "Riccardo Biondani",
+          "slug": "riccardo-biondani",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Carlo Cortesi",
+          "slug": "carlo-cortesi",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "TOTTO Andrea De",
+          "slug": "andrea-de-totto",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Simone Lucca",
+          "slug": "simone-lucca",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Soh Narumi",
+          "slug": "soh-narumi",
+          "nat": "jp",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Francesco Tessari",
+          "slug": "francesco-tessari",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Ivan Troia",
+          "slug": "ivan-troia",
+          "nat": "it",
+          "team": "Gragnano Sporting Club (CT)"
+        },
+        {
+          "name": "Andrea Cantoni",
+          "slug": "andrea-cantoni",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Will Harding",
+          "slug": "will-harding",
+          "nat": "gb",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Matthew Kingston",
+          "slug": "matthew-kingston",
+          "nat": "gb",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Maksim Mishankov",
+          "slug": "maxim-mishankov",
+          "nat": "ru",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Francesco Parravano",
+          "slug": "francesco-parravano",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "Matteo Spreafico",
+          "slug": "matteo-spreafico",
+          "nat": "it",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
+        },
+        {
+          "name": "George Wood",
+          "slug": "george-wood1",
+          "nat": "gb",
+          "team": "Mg.K Vis Costruzioni e Ambiente (CT)"
         }
       ],
       "distance_km": 196.7,

@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-09-03 16:49 UTC",
-  "run_at_iso": "2026-09-03T14:51:14.302380+00:00",
+  "run_at": "2026-09-03 21:29 UTC",
+  "run_at_iso": "2026-09-03T19:31:26.546059+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 10,
+      "stages_completed_before": 11,
       "stages_completed_after": 12,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         3
       ],
@@ -21,8 +21,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-03 16:49 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 2.7,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -33,9 +33,9 @@
       "slug": "lloyds-tour-of-britain-men-2026",
       "name": "Lloyds Tour of Britain Men",
       "total_stages": 5,
-      "stages_completed_before": 1,
+      "stages_completed_before": 2,
       "stages_completed_after": 2,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 3,
@@ -45,8 +45,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-03 16:49 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 2.7,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

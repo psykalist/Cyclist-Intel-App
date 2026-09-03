@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-03T14:52:21.225186+00:00",
+  "generated_at": "2026-09-03T19:32:29.550655+00:00",
   "entries": [
+    {
+      "id": "2ae551a1f889",
+      "timestamp": "2026-09-03T19:32:29.544782+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Abram Stockman, Adrià Pericas, Aivaras Mikutis (+126 more) added"
+    },
     {
       "id": "56c3f82763fc",
       "timestamp": "2026-09-03T14:52:21.219803+00:00",
@@ -413,62 +420,6 @@
       "type": "leader_change",
       "icon": "green",
       "text": "Renewi Tour Points: 🇧🇪 Jasper Philipsen leads"
-    },
-    {
-      "id": "80d0385c65c4",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Renewi Tour: 🇧🇪 Jasper Philipsen wins"
-    },
-    {
-      "id": "30ee736cd521",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Renewi Tour GC: 🇧🇪 Jasper Philipsen leads"
-    },
-    {
-      "id": "ce13c747a9ce",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Lidl Deutschland Tour: 🇫🇷 Louis Barré wins"
-    },
-    {
-      "id": "d22db0c95358",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Lidl Deutschland Tour GC: 🇫🇷 Louis Barré leads"
-    },
-    {
-      "id": "7b23e927d6b4",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Lidl Deutschland Tour Points: 🇲🇽 Isaac Del Toro Romero leads"
-    },
-    {
-      "id": "97411bcb0989",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Lidl Deutschland Tour KOM: 🇩🇪 Miguel Heidemann leads"
-    },
-    {
-      "id": "ae8efb5be6b5",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Lidl Deutschland Tour Youth: 🇲🇽 Isaac Del Toro Romero leads"
-    },
-    {
-      "id": "b95f2f522569",
-      "timestamp": "2026-08-20T17:23:06.045955+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Vuelta a España startlist: Axel Laurance, Ben Turner, Embret Svestad-Bårdseng (+4 more) added"
     }
   ]
 }

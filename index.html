@@ -633,6 +633,9 @@ header h1 span { color: var(--accent); }
 .grp-chip-team { color: var(--muted); font-size: .7rem; font-weight: 500; white-space: nowrap; }
 .grp-chip-x { color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 2px; }
 .grp-chip-x:hover { color: var(--live); }
+.grp-chip[draggable="true"] { cursor: grab; }
+.grp-chip-dragging { opacity: .45; }
+.grp-card-dragover { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
 .grp-addgroup { width: 100%; margin-top: 12px; padding: 11px; border-radius: 12px; background: transparent; border: 1.5px dashed var(--border); color: var(--muted); font-size: .9rem; font-weight: 700; cursor: pointer; }
 .grp-addgroup:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -2330,6 +2333,31 @@ function grpAddFromSearch(bib) {
   renderGroups();
 }
 
+// ── drag & drop between groups (desktop; tap-to-move is the touch fallback) ────
+let _grpDragBib = null;
+function grpDragStart(e, bib) {
+  _grpDragBib = bib;
+  try { e.dataTransfer.setData('text/plain', String(bib)); e.dataTransfer.effectAllowed = 'move'; } catch (_) {}
+  const chip = e.currentTarget; if (chip) chip.classList.add('grp-chip-dragging');
+}
+function grpDragEnd(e) {
+  _grpDragBib = null;
+  const chip = e && e.currentTarget; if (chip) chip.classList.remove('grp-chip-dragging');
+  document.querySelectorAll('.grp-card-dragover').forEach(el => el.classList.remove('grp-card-dragover'));
+}
+function grpDragOver(e) { e.preventDefault(); try { e.dataTransfer.dropEffect = 'move'; } catch (_) {} }
+function grpDragEnter(e) { const c = e.currentTarget; if (c) c.classList.add('grp-card-dragover'); }
+function grpDragLeave(e) { const c = e.currentTarget; if (c && !c.contains(e.relatedTarget)) c.classList.remove('grp-card-dragover'); }
+function grpDrop(e, gid) {
+  e.preventDefault(); e.stopPropagation();
+  let bib = _grpDragBib;
+  if (bib == null) { const d = e.dataTransfer && e.dataTransfer.getData('text/plain'); bib = d ? parseInt(d, 10) : null; }
+  _grpDragBib = null;
+  if (bib == null || isNaN(bib)) return;
+  grpPlaceBib(bib, gid);          // move into the dropped-on group (leaves any other group)
+  renderGroups();
+}
+
 // ── render ───────────────────────────────────────────────────────────────────
 function renderGroups() {
   const el = document.getElementById('sec-groups'); if (!el) return;
@@ -2396,12 +2424,12 @@ function renderGroups() {
       const flag = r && r.nat ? `<img class="grp-flag" src="https://flagcdn.com/16x12/${esc(r.nat.toLowerCase())}.png" alt="" loading="lazy">` : '';
       const team = r && r.team ? `<span class="grp-chip-team">${esc(r.team)}</span>` : '';
       const body = disp ? `${flag}<span class="grp-chip-name">${esc(disp)}</span>${team}` : '';
-      return `<span class="grp-chip${r ? '' : ' grp-chip-unk'}" onclick="event.stopPropagation();grpMoveBibToActive(${b})" title="${r ? esc(r.team || '') + ' — ' : ''}tap to move to the active group">
+      return `<span class="grp-chip${r ? '' : ' grp-chip-unk'}" draggable="true" ondragstart="grpDragStart(event,${b})" ondragend="grpDragEnd(event)" onclick="event.stopPropagation();grpMoveBibToActive(${b})" title="${r ? esc(r.team || '') + ' — ' : ''}drag to another group, or tap to move to the active group">
         <span class="grp-bib">${b}</span>${body}
         <span class="grp-chip-x" onclick="event.stopPropagation();grpRemoveBib(${b})" title="Remove">×</span></span>`;
     }).join('');
     const emptyMsg = active ? 'Type a bib above, or tap riders in other groups to pull them in' : 'Tap to make active, then add bibs';
-    html += `<div class="grp-card${active ? ' grp-card-active' : ''}" onclick="grpSetActiveGroup('${g.id}')">
+    html += `<div class="grp-card${active ? ' grp-card-active' : ''}" onclick="grpSetActiveGroup('${g.id}')" ondragover="grpDragOver(event)" ondragenter="grpDragEnter(event)" ondragleave="grpDragLeave(event)" ondrop="grpDrop(event,'${g.id}')">
       <div class="grp-card-head">
         <span class="grp-reorder">
           <button onclick="event.stopPropagation();grpMoveGroup('${g.id}',-1)" ${gi === 0 ? 'disabled' : ''} title="Move up">▲</button>
@@ -4292,7 +4320,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v145';
+const APP_VERSION = 'v146';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

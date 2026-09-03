@@ -7,6 +7,16 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v146 — 2026-09-03 — Groups: drag & drop riders between groups
+
+- **Groups section (`index.html`):** rider chips are now `draggable` — drag a chip onto any group card to move that rider there (leaves whatever group it was in, same one-rider-one-group rule as tapping). Group cards are drop targets (`grpDrop` → `grpPlaceBib(bib, gid)`).
+- Visual feedback: dragged chip dims (`.grp-chip-dragging`), the hovered target card highlights (`.grp-card-dragover`); `grab` cursor on chips.
+- Tap-to-move (`grpMoveBibToActive`) is unchanged and remains the **touch fallback** — HTML5 drag & drop is desktop/mouse only.
+- Chip tooltip updated to "drag to another group, or tap to move to the active group".
+- Version v145→v146. `index.html` only; no data or persisted Groups-state schema change.
+
+---
+
 ## v145 — 2026-09-03 — Groups: show each rider's team on the chip
 
 - **Groups section (`index.html`):** rider chips in the Live Group Tracker now display the rider's **team name** alongside the bib and short name. Previously the team was only in the hover `title` tooltip; now it's visible inline as a small muted `.grp-chip-team` span (added right after the name in the `renderGroups()` chip template).

@@ -630,6 +630,7 @@ header h1 span { color: var(--accent); }
 .grp-chip-unk .grp-bib { background: var(--muted); }
 .grp-flag { width: 16px; height: 12px; border-radius: 2px; object-fit: cover; }
 .grp-chip-name { font-weight: 600; color: var(--text); }
+.grp-chip-team { color: var(--muted); font-size: .7rem; font-weight: 500; white-space: nowrap; }
 .grp-chip-x { color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 2px; }
 .grp-chip-x:hover { color: var(--live); }
 .grp-addgroup { width: 100%; margin-top: 12px; padding: 11px; border-radius: 12px; background: transparent; border: 1.5px dashed var(--border); color: var(--muted); font-size: .9rem; font-weight: 700; cursor: pointer; }
@@ -2393,7 +2394,8 @@ function renderGroups() {
       const r = _grpBibIndex[String(b)];
       const disp = r ? shortName(r.name || '', r.nat || '') : null;
       const flag = r && r.nat ? `<img class="grp-flag" src="https://flagcdn.com/16x12/${esc(r.nat.toLowerCase())}.png" alt="" loading="lazy">` : '';
-      const body = disp ? `${flag}<span class="grp-chip-name">${esc(disp)}</span>` : '';
+      const team = r && r.team ? `<span class="grp-chip-team">${esc(r.team)}</span>` : '';
+      const body = disp ? `${flag}<span class="grp-chip-name">${esc(disp)}</span>${team}` : '';
       return `<span class="grp-chip${r ? '' : ' grp-chip-unk'}" onclick="event.stopPropagation();grpMoveBibToActive(${b})" title="${r ? esc(r.team || '') + ' — ' : ''}tap to move to the active group">
         <span class="grp-bib">${b}</span>${body}
         <span class="grp-chip-x" onclick="event.stopPropagation();grpRemoveBib(${b})" title="Remove">×</span></span>`;
@@ -4290,7 +4292,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v144';
+const APP_VERSION = 'v145';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

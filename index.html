@@ -599,9 +599,9 @@ header h1 span { color: var(--accent); }
 .grp-quickadd-label { font-size: .82rem; color: var(--muted); margin-bottom: 7px; }
 .grp-quickadd-label b, .grp-quickadd-hint b { color: var(--accent); }
 .grp-quickadd-row { display: flex; gap: 8px; }
-.grp-bib-input { flex: 1; padding: 12px 14px; font-size: 1.25rem; font-weight: 800; letter-spacing: 1px; text-align: center; border-radius: 10px; background: var(--bg); color: var(--text); border: 2px solid var(--accent); }
+.grp-bib-input { flex: 1 1 0; min-width: 0; width: 0; padding: 12px 10px; font-size: 1.15rem; font-weight: 800; letter-spacing: 1px; text-align: center; border-radius: 10px; background: var(--bg); color: var(--text); border: 2px solid var(--accent); }
 .grp-bib-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(var(--accent-rgb), .25); }
-.grp-add-btn { padding: 0 20px; border-radius: 10px; background: var(--accent); color: #fff; border: none; font-size: 1rem; font-weight: 800; cursor: pointer; }
+.grp-add-btn { flex: 0 0 auto; white-space: nowrap; padding: 0 18px; border-radius: 10px; background: var(--accent); color: #fff; border: none; font-size: 1rem; font-weight: 800; cursor: pointer; }
 .grp-add-btn:active { transform: scale(.96); }
 .grp-quickadd-hint { margin-top: 8px; font-size: .72rem; color: var(--muted); line-height: 1.35; }
 
@@ -4320,7 +4320,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v146';
+const APP_VERSION = 'v147';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

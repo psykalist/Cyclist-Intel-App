@@ -7,6 +7,14 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v147 — 2026-09-03 — Groups: fix Add-bib row overflowing (Add button off-screen)
+
+- **Groups quick-add (`index.html` CSS):** the bib `<input>` had `flex: 1` with no `min-width: 0`, so on narrow screens it refused to shrink below its intrinsic width and pushed the **Add** button off the right edge. Set `flex: 1 1 0; min-width: 0; width: 0` on `.grp-bib-input` so it shrinks to fit, and `flex: 0 0 auto; white-space: nowrap` on `.grp-add-btn` so the button always stays fully visible.
+- Also trimmed the input's horizontal padding (14px→10px) and font (1.25rem→1.15rem) so the row fits comfortably.
+- Version v146→v147. `index.html` CSS only.
+
+---
+
 ## v146 — 2026-09-03 — Groups: drag & drop riders between groups
 
 - **Groups section (`index.html`):** rider chips are now `draggable` — drag a chip onto any group card to move that rider there (leaves whatever group it was in, same one-rider-one-group rule as tapping). Group cards are drop targets (`grpDrop` → `grpPlaceBib(bib, gid)`).

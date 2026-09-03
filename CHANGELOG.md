@@ -7,6 +7,15 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v145 — 2026-09-03 — Groups: show each rider's team on the chip
+
+- **Groups section (`index.html`):** rider chips in the Live Group Tracker now display the rider's **team name** alongside the bib and short name. Previously the team was only in the hover `title` tooltip; now it's visible inline as a small muted `.grp-chip-team` span (added right after the name in the `renderGroups()` chip template).
+- **CSS:** added `.grp-chip-team` rule (muted color, .7rem, nowrap) next to `.grp-chip-name`.
+- Only shown when the bib resolves to a known rider with a team (unknown bibs are unaffected).
+- Version v144→v145. `index.html` only; no data or Groups-state logic changed.
+
+---
+
 ## v144 — 2026-08-29 — Fill the last Vuelta bib gap: Juan Felipe Rodríguez (EF), bib 166
 
 Follow-up to v143's Q36.5 fix. One dossard was still unmapped — **bib 166**, **Juan Felipe Rodríguez** (EF Education-EasyPost) — leaving the field at 183 of 184. Like the Q36.5 riders he's in the race startlist but **not** in his team's scraped `data.json` roster (a late call-up the scraper hasn't caught), so a bib alone wouldn't surface him: the tour-field reconstruction iterates team rosters, and he was in none.

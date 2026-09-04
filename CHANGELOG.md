@@ -7,6 +7,16 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v150 — 2026-09-04 — Groups: Bib / Name toggle on the add box
+
+- **Groups quick-add (`index.html`):** added a **# Bib / 🔤 Name** toggle at the top of the add box. **Bib** is the number input (+ Add + 🎤, unchanged); **Name** turns the box into a rider search — type a name and tap the rider to drop them into the active group, for when you know who it is but can't read the dossard.
+- Folded the old standalone "Add by name or number" search at the bottom of the section into this toggle (one place instead of two). Name mode keeps focus after each add so you can add several in a row.
+- The toggle only appears when the race field carries bibs (name→group placement needs a bib to store); non-bib races keep the plain number box. Switching to Name mode stops the mic if it's listening.
+- New `_grpAddMode` state + `grpSetAddMode()`; reuses the existing `grpFieldSearch()`/`grpAddFromSearch()`. `.grp-add-toggle`/`.grp-add-tab` styling added.
+- Version v149→v150. `index.html` only. JS syntax checked (`node --check`).
+
+---
+
 ## v149 — 2026-09-04 — Groups: dictate bib numbers by voice (speech-to-text)
 
 - **Groups quick-add (`index.html`):** new 🎤 mic button beside **Add**. Tap it and say bib numbers ("thirty-four, twenty-two, seven" / "one hundred sixty six") — they're transcribed, converted to digits, and added to the active group. Continuous listening (toggle off with ⏹, button pulses red while live); numbers are added as you speak, hands-free for watching a race.

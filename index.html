@@ -604,6 +604,10 @@ header h1 span { color: var(--accent); }
 .grp-add-btn { flex: 0 0 auto; white-space: nowrap; padding: 0 18px; border-radius: 10px; background: var(--accent); color: #fff; border: none; font-size: 1rem; font-weight: 800; cursor: pointer; }
 .grp-add-btn:active { transform: scale(.96); }
 .grp-quickadd-hint { margin-top: 8px; font-size: .72rem; color: var(--muted); line-height: 1.35; }
+.grp-add-toggle { display: inline-flex; margin-bottom: 9px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.grp-add-tab { padding: 6px 14px; background: var(--bg); color: var(--muted); border: none; font-size: .82rem; font-weight: 700; cursor: pointer; }
+.grp-add-tab + .grp-add-tab { border-left: 1px solid var(--border); }
+.grp-add-tab-on { background: var(--accent); color: #fff; }
 
 .grp-list { display: flex; flex-direction: column; gap: 10px; }
 .grp-card { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
@@ -2186,6 +2190,7 @@ const GROUPS_LS_KEY = 'uci_live_groups_v1';
 let groupsState = null;      // { activeRace, races: { [slug]: {groups, activeGroupId} } }
 let _grpBibIndex = {};       // "bib" -> {name,nat,team,slug}  for the active race
 let _grpRefocus = false;     // refocus the quick-add input after a re-render
+let _grpAddMode = 'bib';     // quick-add input mode: 'bib' (number) or 'name' (search the field)
 let _grpNote = null;         // one-shot note under the quick-add box (e.g. rejected bib)
 let _grpGid = 1;
 
@@ -2314,6 +2319,11 @@ function grpReset() {
   if (!confirm('Clear all groups and riders for this race?')) return;
   delete groupsState.races[slug]; saveGroupsState(); renderGroups();
 }
+function grpSetAddMode(m) {
+  if (_grpAddMode === m) return;
+  if (_grpListening) { _grpListening = false; try { _grpRec && _grpRec.stop(); } catch (_) {} _grpRec = null; } // mic lives in bib mode only
+  _grpAddMode = m; _grpRefocus = true; renderGroups();
+}
 function grpFieldSearch(q) {
   const box = document.getElementById('grp-search-results'); if (!box) return;
   q = (q || '').trim().toLowerCase();
@@ -2334,6 +2344,7 @@ function grpAddFromSearch(bib) {
   if (bib == null || isNaN(bib)) return;
   grpPlaceBib(bib, null);
   const s = document.getElementById('grp-search-input'); if (s) s.value = '';
+  _grpRefocus = true;
   renderGroups();
 }
 
@@ -2480,15 +2491,26 @@ function renderGroups() {
   if (!hasBibs)
     html += `<div class="grp-nobib-note">⚠️ This race has no bib numbers in the app yet (they load during Grand Tours). You can still add numbers below — they just won't show rider names.</div>`;
 
+  const nameMode = hasBibs && _grpAddMode === 'name';   // name search only works when the field carries bibs
   html += `<div class="grp-quickadd">
-    <div class="grp-quickadd-label">Add bib to <b>${esc(activeName)}</b></div>
-    <div class="grp-quickadd-row">
-      <input id="grp-bib-input" class="grp-bib-input" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 34"
-             onkeydown="if(event.key==='Enter'){event.preventDefault();grpQuickAdd();}">
-      <button class="grp-add-btn" onclick="grpQuickAdd()">Add</button>
-      ${_grpSpeechAvail ? `<button class="grp-mic-btn${_grpListening ? ' grp-mic-on' : ''}" onclick="event.preventDefault();grpToggleMic()" title="${_grpListening ? 'Stop listening' : 'Dictate bib numbers'}" aria-label="Dictate bib numbers">${_grpListening ? '\u23F9' : '\uD83C\uDFA4'}</button>` : ''}
-    </div>
-    <div class="grp-quickadd-hint">Tip: tap a rider in another group to pull them into <b>${esc(activeName)}</b>. Add several at once: “34 22 7”.${_grpSpeechAvail ? ' Or tap 🎤 and say the numbers.' : ''}</div>
+    ${hasBibs ? `<div class="grp-add-toggle">
+      <button class="grp-add-tab${!nameMode ? ' grp-add-tab-on' : ''}" onclick="grpSetAddMode('bib')">#\uFE0F\u20E3 Bib</button>
+      <button class="grp-add-tab${nameMode ? ' grp-add-tab-on' : ''}" onclick="grpSetAddMode('name')">\uD83D\uDD24 Name</button>
+    </div>` : ''}
+    <div class="grp-quickadd-label">Add ${nameMode ? 'rider' : 'bib'} to <b>${esc(activeName)}</b></div>
+    ${nameMode ? `
+      <input id="grp-search-input" class="grp-search-input" type="text" autocomplete="off" placeholder="Type a rider's name\u2026" oninput="grpFieldSearch(this.value)">
+      <div id="grp-search-results" class="grp-search-results"></div>
+      <div class="grp-quickadd-hint">Can't see the number? Type the name and tap the rider to drop them into <b>${esc(activeName)}</b>.</div>
+    ` : `
+      <div class="grp-quickadd-row">
+        <input id="grp-bib-input" class="grp-bib-input" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 34"
+               onkeydown="if(event.key==='Enter'){event.preventDefault();grpQuickAdd();}">
+        <button class="grp-add-btn" onclick="grpQuickAdd()">Add</button>
+        ${_grpSpeechAvail ? `<button class="grp-mic-btn${_grpListening ? ' grp-mic-on' : ''}" onclick="event.preventDefault();grpToggleMic()" title="${_grpListening ? 'Stop listening' : 'Dictate bib numbers'}" aria-label="Dictate bib numbers">${_grpListening ? '\u23F9' : '\uD83C\uDFA4'}</button>` : ''}
+      </div>
+      <div class="grp-quickadd-hint">Tip: tap a rider in another group to pull them into <b>${esc(activeName)}</b>. Add several at once: “34 22 7”.${_grpSpeechAvail ? ' Or tap 🎤 and say the numbers.' : ''}</div>
+    `}
     ${_note ? `<div class="grp-note-err">⚠️ ${esc(_note)}</div>` : ''}
   </div>`;
 
@@ -2523,16 +2545,9 @@ function renderGroups() {
   html += '</div>';
   html += `<button class="grp-addgroup" onclick="grpAddGroup()">＋ Add group</button>`;
 
-  if (hasBibs)
-    html += `<div class="grp-search">
-      <div class="grp-search-label">Add by name or number → <b>${esc(activeName)}</b></div>
-      <input id="grp-search-input" class="grp-search-input" type="text" autocomplete="off" placeholder="Search the field…" oninput="grpFieldSearch(this.value)">
-      <div id="grp-search-results" class="grp-search-results"></div>
-    </div>`;
-
   html += '</div>';
   el.innerHTML = html;
-  if (_grpRefocus) { const inp = document.getElementById('grp-bib-input'); if (inp) inp.focus(); _grpRefocus = false; }
+  if (_grpRefocus) { const inp = document.getElementById('grp-bib-input') || document.getElementById('grp-search-input'); if (inp) inp.focus(); _grpRefocus = false; }
 }
 
 
@@ -4448,7 +4463,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v149';
+const APP_VERSION = 'v150';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-03T19:32:29.550655+00:00",
+  "generated_at": "2026-09-04T14:41:22.412265+00:00",
   "entries": [
+    {
+      "id": "d195663059a9",
+      "timestamp": "2026-09-04T14:41:22.406442+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Lloyds Tour of Britain Men: 🇳🇱 Olav Kooij wins"
+    },
+    {
+      "id": "6b9606b496b3",
+      "timestamp": "2026-09-04T14:41:22.406442+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Lloyds Tour of Britain Men Points: 🇧🇪 Tim Merlier leads"
+    },
+    {
+      "id": "59fd742558bc",
+      "timestamp": "2026-09-04T14:41:22.406442+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Alex Baudin, Davide Formolo, Geoffrey Bouchard (+3 more) added"
+    },
     {
       "id": "2ae551a1f889",
       "timestamp": "2026-09-03T19:32:29.544782+00:00",
@@ -413,13 +434,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Lidl Deutschland Tour KOM: 🇩🇪 Ole Theiler leads"
-    },
-    {
-      "id": "e3ab36f2f45c",
-      "timestamp": "2026-08-21T11:21:05.579842+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Renewi Tour Points: 🇧🇪 Jasper Philipsen leads"
     }
   ]
 }

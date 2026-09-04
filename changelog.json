@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-04T14:41:22.412265+00:00",
+  "generated_at": "2026-09-04T19:15:31.565079+00:00",
   "entries": [
+    {
+      "id": "b524df477d58",
+      "timestamp": "2026-09-04T19:15:31.558729+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 13 Vuelta a España: 🇧🇪 Wout van Aert wins"
+    },
     {
       "id": "d195663059a9",
       "timestamp": "2026-09-04T14:41:22.406442+00:00",
@@ -413,27 +420,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Renewi Tour Youth: 🇮🇹 Pietro Mattio leads"
-    },
-    {
-      "id": "a3a257323561",
-      "timestamp": "2026-08-21T17:23:11.914169+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Renewi Tour: 🇧🇪 Jenno Berckmoes wins"
-    },
-    {
-      "id": "72a42019e8d5",
-      "timestamp": "2026-08-21T17:23:11.914169+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Lidl Deutschland Tour: 🇮🇹 Alessio Magagnotti wins"
-    },
-    {
-      "id": "f7d24501b934",
-      "timestamp": "2026-08-21T17:23:11.914169+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Lidl Deutschland Tour KOM: 🇩🇪 Ole Theiler leads"
     }
   ]
 }

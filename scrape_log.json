@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-04 16:38 UTC",
-  "run_at_iso": "2026-09-04T14:40:17.556972+00:00",
+  "run_at": "2026-09-04 21:12 UTC",
+  "run_at_iso": "2026-09-04T19:14:26.752494+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -21,8 +21,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-04 16:38 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 2.6,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -33,9 +33,9 @@
       "slug": "lloyds-tour-of-britain-men-2026",
       "name": "Lloyds Tour of Britain Men",
       "total_stages": 5,
-      "stages_completed_before": 2,
+      "stages_completed_before": 3,
       "stages_completed_after": 3,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 4,
@@ -45,8 +45,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-04 16:38 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 2.6,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

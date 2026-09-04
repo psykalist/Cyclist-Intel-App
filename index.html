@@ -636,6 +636,10 @@ header h1 span { color: var(--accent); }
 .grp-chip[draggable="true"] { cursor: grab; }
 .grp-chip-dragging { opacity: .45; }
 .grp-card-dragover { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
+.grp-mic-btn { flex: 0 0 auto; padding: 0 14px; border-radius: 10px; background: var(--surface); color: var(--text); border: 2px solid var(--border); font-size: 1.1rem; cursor: pointer; }
+.grp-mic-btn:hover { border-color: var(--accent); }
+.grp-mic-on { background: var(--live); color: #fff; border-color: var(--live); animation: grpMicPulse 1.2s ease-in-out infinite; }
+@keyframes grpMicPulse { 0%,100% { opacity: 1; } 50% { opacity: .5; } }
 .grp-addgroup { width: 100%; margin-top: 12px; padding: 11px; border-radius: 12px; background: transparent; border: 1.5px dashed var(--border); color: var(--muted); font-size: .9rem; font-weight: 700; cursor: pointer; }
 .grp-addgroup:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -2358,6 +2362,78 @@ function grpDrop(e, gid) {
   renderGroups();
 }
 
+// ── speech-to-text: dictate bib numbers into the active group ────────────────
+// Uses the browser's built-in SpeechRecognition (no key, on-device). Only wired
+// up where supported (Chrome/Edge desktop + Android; hidden elsewhere). Spoken
+// words come back as language ("thirty-four", "one sixty six"), so we convert
+// them to digits, then feed them through grpQuickAdd() so the same known-bib
+// validation + "not added" note apply as when typing.
+const _grpSpeechAvail = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+let _grpRec = null, _grpListening = false;
+
+function grpParseSpokenNumbers(text) {
+  const small = {zero:0,one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,
+    ten:10,eleven:11,twelve:12,thirteen:13,fourteen:14,fifteen:15,sixteen:16,seventeen:17,
+    eighteen:18,nineteen:19,twenty:20,thirty:30,forty:40,fourty:40,fifty:50,sixty:60,
+    seventy:70,eighty:80,ninety:90};
+  const toks = String(text).toLowerCase().replace(/[-]/g,' ').replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter(Boolean);
+  const out = []; let cur = 0, has = false;
+  const push = () => { if (has) out.push(cur); cur = 0; has = false; };
+  for (const t of toks) {
+    if (/^\d+$/.test(t)) { push(); out.push(parseInt(t,10)); continue; }   // recognizer gave digits
+    if (t === 'and') continue;                                              // filler ("a hundred and six")
+    if (t === 'hundred') { cur = (cur || 1) * 100; has = true; continue; }
+    if (t in small) {
+      const v = small[t];
+      if (!has) { cur = v; has = true; }
+      else if (cur % 100 === 0 && cur >= 100 && v < 100) { cur += v; }       // 100 + "sixty" -> 160
+      else if (cur % 10 === 0 && cur >= 20 && v < 10) { cur += v; }          // "thirty" + "four" -> 34 ; 160 + 6 -> 166
+      else { push(); cur = v; has = true; }
+      continue;
+    }
+    push();   // a non-number word ends the current number
+  }
+  push();
+  return out.filter(n => Number.isFinite(n) && n > 0 && n < 1000);
+}
+
+function grpMicResult(e) {
+  let txt = '';
+  for (let i = e.resultIndex; i < e.results.length; i++)
+    if (e.results[i].isFinal) txt += ' ' + e.results[i][0].transcript;
+  txt = txt.trim(); if (!txt) return;
+  const nums = grpParseSpokenNumbers(txt);
+  if (!nums.length) return;
+  const inp = document.getElementById('grp-bib-input');
+  if (inp) { inp.value = nums.join(' '); grpQuickAdd(); }        // reuse typed-add validation + note
+  else { nums.forEach(n => { if (grpBibKnown(n)) grpPlaceBib(n); }); renderGroups(); }
+}
+
+function grpToggleMic() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return;
+  if (_grpListening) {                     // turn off
+    _grpListening = false;
+    try { _grpRec && _grpRec.stop(); } catch (_) {}
+    _grpRec = null; renderGroups(); return;
+  }
+  let rec;
+  try { rec = new SR(); } catch (_) { return; }
+  rec.lang = 'en-GB'; rec.continuous = true; rec.interimResults = false;
+  rec.onresult = grpMicResult;
+  rec.onerror = ev => {
+    if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') {
+      _grpListening = false; _grpRec = null;
+      _grpNote = 'Microphone blocked \u2014 allow mic access in your browser to dictate bibs.';
+      renderGroups();
+    }
+  };
+  rec.onend = () => { if (_grpListening && _grpRec) { try { _grpRec.start(); } catch (_) {} } }; // browsers stop on a pause; keep going
+  _grpRec = rec; _grpListening = true;
+  try { rec.start(); } catch (_) {}
+  renderGroups();
+}
+
 // ── render ───────────────────────────────────────────────────────────────────
 function renderGroups() {
   const el = document.getElementById('sec-groups'); if (!el) return;
@@ -2410,8 +2486,9 @@ function renderGroups() {
       <input id="grp-bib-input" class="grp-bib-input" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 34"
              onkeydown="if(event.key==='Enter'){event.preventDefault();grpQuickAdd();}">
       <button class="grp-add-btn" onclick="grpQuickAdd()">Add</button>
+      ${_grpSpeechAvail ? `<button class="grp-mic-btn${_grpListening ? ' grp-mic-on' : ''}" onclick="event.preventDefault();grpToggleMic()" title="${_grpListening ? 'Stop listening' : 'Dictate bib numbers'}" aria-label="Dictate bib numbers">${_grpListening ? '\u23F9' : '\uD83C\uDFA4'}</button>` : ''}
     </div>
-    <div class="grp-quickadd-hint">Tip: tap a rider in another group to pull them into <b>${esc(activeName)}</b>. Add several at once: “34 22 7”.</div>
+    <div class="grp-quickadd-hint">Tip: tap a rider in another group to pull them into <b>${esc(activeName)}</b>. Add several at once: “34 22 7”.${_grpSpeechAvail ? ' Or tap 🎤 and say the numbers.' : ''}</div>
     ${_note ? `<div class="grp-note-err">⚠️ ${esc(_note)}</div>` : ''}
   </div>`;
 
@@ -4371,7 +4448,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v148';
+const APP_VERSION = 'v149';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

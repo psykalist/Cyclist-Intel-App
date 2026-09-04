@@ -7,6 +7,16 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v149 — 2026-09-04 — Groups: dictate bib numbers by voice (speech-to-text)
+
+- **Groups quick-add (`index.html`):** new 🎤 mic button beside **Add**. Tap it and say bib numbers ("thirty-four, twenty-two, seven" / "one hundred sixty six") — they're transcribed, converted to digits, and added to the active group. Continuous listening (toggle off with ⏹, button pulses red while live); numbers are added as you speak, hands-free for watching a race.
+- Uses the browser's built-in **SpeechRecognition** — no API key, on-device, free. Feature-detected: the button only renders where supported (Chrome/Edge desktop + Android Chrome); hidden on browsers without it (e.g. most iOS Safari) so there's never a dead button.
+- **`grpParseSpokenNumbers()`** converts spoken words to numbers (units/teens/tens/hundreds composition, digit strings, multiple bibs in one breath); unit-tested against 12 phrasings. Results are fed through the existing `grpQuickAdd()` so the same known-bib validation and "not added" note apply as when typing.
+- Mic-permission-denied shows a friendly note rather than failing silently; recognition auto-restarts if the browser stops it on a pause.
+- Version v148→v149. `index.html` only (JS handlers + one row button + CSS).
+
+---
+
 ## v148 — 2026-09-03 — Fix "one rider leads every jersey" (stacked mini-table glitch)
 
 **Symptom.** On live Vuelta 2026, **Wout van Aert** showed as winner of stage 12 **and** leader of GC, Points, KOM *and* Youth — he was only ever the intermediate-sprint leader. (Same failure class as the earlier Ethan Hayter case.)

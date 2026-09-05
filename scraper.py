@@ -1806,13 +1806,21 @@ def main_results_only():
             year   = race.get("year", "")
             stages = race.get("stages") or []
             by_num = {s.get("num"): s for s in stages}
+            forward = not allow_past   # upcoming/live: keep chasing the profile too
+            # Re-fetch a stage while it still lacks distance, OR (on forward
+            # races) while it still lacks its height-profile image. Profiles are
+            # published later than the distance/route text, so gating only on
+            # distance froze the stage the moment distance arrived and the
+            # profile/course never filled in until after the race (bit us on the
+            # Tour of Britain). Finished races publish once and are captured once.
             missing = [n for n in range(1, total + 1)
-                       if not (by_num.get(n) or {}).get("distance_km")]
+                       if not (by_num.get(n) or {}).get("distance_km")
+                       or (forward and not (by_num.get(n) or {}).get("height_profile_img"))]
             if not missing:
                 continue
             for n in missing:
                 details = _fetch_detail(slug, n, year)
-                if not details or not details.get("distance_km"):
+                if not details or not (details.get("distance_km") or details.get("height_profile_img")):
                     continue
                 stage_obj = by_num.get(n)
                 if stage_obj is None:
@@ -1835,7 +1843,10 @@ def main_results_only():
         for race in d.get(bucket, []):
             if detail_fetches[0] >= DETAIL_FETCH_BUDGET:
                 break
-            if (race.get("total_stages") or 1) != 1 or race.get("distance_km"):
+            if (race.get("total_stages") or 1) != 1:
+                continue
+            # Refetch while missing distance, or (forward races) missing profile.
+            if race.get("distance_km") and (allow_past or race.get("height_profile_img")):
                 continue
             if not _detail_window_ok(race, allow_past):
                 continue

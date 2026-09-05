@@ -51,7 +51,7 @@ The sandbox also has **no push credentials**, so nothing git-writing has to happ
 - **CI owns the scraper/heal data files** — `best_teams.json`, `changelog.json`,
   `data.json`, `letour_stages.json`, `palmares.json`, `pcs_enrichment.json`,
   `pcs_stats.json`, `rider_photos.json`, `rider_profiles.json`, `scrape_log.json`,
-  `specialty_cache.json`, `status.json`. GitHub Actions rewrites these many times a
+  `specialty_cache.json`, `status.json`, `race_registry.json`, `race_bibs.json`. GitHub Actions rewrites these many times a
   day. **Never hand-edit them and never run the scraper locally.** `git-push.sh`
   keeps them out of local commits and always takes origin's version, so local source
   commits and CI data commits touch disjoint files and cannot conflict. If you add a

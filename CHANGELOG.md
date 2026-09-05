@@ -7,6 +7,26 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v151 — 2026-09-04 — Self-learning race database + bibs/profiles for every race
+
+Big one. The app now remembers every race it has seen and reaches out for each edition's data automatically, instead of bibs/profiles being wired up one Grand Tour at a time. Prompted by the Tour of Britain showing no bib numbers and no stage profiles until after it finished.
+
+**1. Stage profiles / course detail before the finish (`scraper.py`).** The route-detail backfill only re-fetched a stage while its `distance_km` was missing — so once distance arrived, a later-published height-profile image was never picked up, and profiles only appeared post-race. Now upcoming/live stages (and one-day races) are re-fetched while the **profile image** is still missing too (bounded by the existing lookahead window + fetch budget). Finished races still publish-once/capture-once.
+
+**2. Race registry — the learning DB (`race_registry.py` → `race_registry.json`).** Upserts every discovered race (name, source slugs, category, per-year dates/stages) into a year-agnostic registry and rolls a "typical" calendar slot forward, so a race's slugs and roughly-when are known before its next edition appears. Hand-set `sources`/`wants_bibs` overrides survive upserts. Seeded from the current calendar (97 races). Runs on every scrape.
+
+**3. Multi-race bibs (`fetch_all_bibs.py` → `race_bibs.json`).** Registry-driven: for every live race and every upcoming race within ~25 days that wants bibs, fetches PCS start-list dossards into a multi-race file keyed by CyclingFlash slug. Reuses `fetch_race_bibs.py`'s proven parse/match code. PCS drops sponsors and the `-men` suffix (`lloyds-tour-of-britain-men` → PCS `tour-of-britain`), so it tries candidate slugs and **learns** the working one back into the registry.
+
+**4. App consumes multi-race bibs (`index.html`).** New `bibsForRace()` reads `race_bibs.json` by `cf_slug` with the legacy `tour_bibs.json` as fallback; `ridersForRace()`, the Groups bib index, and the Teams-tab bib annotations (`activeBibRace()`) now work for **any** bibbed race, not just one Grand Tour. Vuelta behaviour preserved (seeded `race_bibs.json` with its 184 bibs).
+
+**5. CI runs it unprompted (`scrape.yml`, `git-push.sh`).** Two new steps in the twice-daily job — `python race_registry.py` then `python fetch_all_bibs.py` — before the commit step, which now also stages `race_registry.json`/`race_bibs.json`. Both files are CI-owned (added to `git-push.sh` `GEN_FILES`). Startlists already re-fetch until complete within their window (unchanged).
+
+- **Verified:** all Python `py_compile`s; registry upsert unit-tested (typical-date/history/override-preservation); bib fetcher pure logic + full parse→match→write flow tested with a stubbed fetch (60/60); slug candidates resolve the Tour of Britain; app JS `node --check`s; `bibsForRace` resolves Vuelta 184 / ToB-after-CI against real files; `scrape.yml` parses with both new steps.
+- **Note:** `race_registry.json`/`race_bibs.json` are CI-owned, so they populate on the next `scrape.yml` run (or a manual Actions-tab trigger) — the app tolerates their absence (Vuelta keeps working via `tour_bibs.json`). Tour of Britain bibs appear after that run.
+- Version v150→v151. `index.html`, `scraper.py`, new `race_registry.py` + `fetch_all_bibs.py`, `race_registry.json` + `race_bibs.json` (seeded), `.github/workflows/scrape.yml`, `git-push.sh`, docs.
+
+---
+
 ## v150 — 2026-09-04 — Groups: Bib / Name toggle on the add box
 
 - **Groups quick-add (`index.html`):** added a **# Bib / 🔤 Name** toggle at the top of the add box. **Bib** is the number input (+ Add + 🎤, unchanged); **Name** turns the box into a rider search — type a name and tap the rider to drop them into the active group, for when you know who it is but can't read the dossard.

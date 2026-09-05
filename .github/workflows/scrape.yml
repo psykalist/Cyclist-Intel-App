@@ -237,6 +237,23 @@ jobs:
         shell: cmd
         run: python generate_best_teams.py
 
+      # Learn every discovered race into race_registry.json (name, source
+      # slugs, category, this year's dates/stages, typical calendar slot) so
+      # future editions are known before they appear -- the memory that lets
+      # the bib/startlist fetch reach out unprompted.
+      - name: Update race registry (learning DB)
+        if: steps.reachability.outputs.reachable == 'true'
+        shell: cmd
+        run: python race_registry.py
+
+      # Fetch dossard numbers for EVERY live/near race (registry-driven) into
+      # race_bibs.json, not just one Grand Tour. Uses the self-hosted runner's
+      # residential IP so PCS doesn't block it (same rationale as startlists).
+      - name: Fetch bib numbers for near/live races
+        if: steps.reachability.outputs.reachable == 'true'
+        shell: cmd
+        run: python fetch_all_bibs.py
+
       - name: Commit and push if data changed
         shell: python
         run: |
@@ -244,6 +261,9 @@ jobs:
           from datetime import datetime, timezone
 
           files = ['data.json', 'changelog.json', 'best_teams.json']
+          for f in ('race_registry.json', 'race_bibs.json'):
+              if os.path.exists(f):
+                  files.append(f)
           if os.path.exists('scrape_log.json'):
               files.append('scrape_log.json')
           subprocess.run(['git', 'add'] + files, check=True)

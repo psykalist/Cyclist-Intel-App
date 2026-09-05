@@ -20,6 +20,34 @@ procyclingstats.com ─► scrape_palmares.py ───────► palmares.
 
 ## Scripts
 
+### Race registry & multi-race bibs (the "learning" layer, v151)
+
+The app keeps a memory of every race it has seen so it can gather each edition's
+data before being asked:
+
+- **`race_registry.py` → `race_registry.json`** — upserts every race in
+  `data.json` (live+upcoming+recent) into a year-agnostic registry keyed by the
+  app's `slug`: name, source slugs (`sources.cf_slug`/`pcs_slug`/`cyclingoo_slug`),
+  category, per-year `{start,end,stages}` history, a rolled-forward
+  `typical_start_md`/`typical_end_md`/`typical_stages`, and a `wants_bibs` flag.
+  Hand-set `sources`/`wants_bibs` overrides are preserved across upserts. Runs on
+  every scrape, so a race's slugs and calendar slot are known before its next
+  edition is even on the calendar.
+- **`fetch_all_bibs.py` → `race_bibs.json`** — registry-driven. For every live
+  race and every upcoming race starting within ~25 days (and `wants_bibs`),
+  fetches the PCS start-list dossards and writes them keyed by CyclingFlash slug
+  (`race.cf_slug`). Reuses `fetch_race_bibs.py`'s parse/match code. PCS slugs drop
+  sponsors and the `-men` suffix, so it tries candidate slugs and **learns** the
+  working one back into `race_registry.json` (`sources.pcs_slug`).
+- **App:** `bibsForRace(race)` reads `race_bibs.json` (by `cf_slug`) with the
+  legacy single-race `tour_bibs.json` as fallback; `ridersForRace()` and the
+  Teams-tab bib annotations work for *any* bibbed race, not just one Grand Tour.
+- **Both JSON files are CI-owned** (in `git-push.sh`'s `GEN_FILES`) and committed
+  by the twice-daily `scrape.yml` job. Stage profiles/course detail now also
+  backfill for forward races until the profile image publishes (before the
+  finish), not only until distance arrives.
+
+
 ### `scraper.py` — core data scraper
 
 Four modes. Only `--results-only` runs automatically (CI). All others run locally.

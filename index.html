@@ -1892,13 +1892,13 @@ function ridersForRace(race) {
   // reconstruction bibs everyone the app knows and is identical to the field the
   // app already shows once racing begins. Falls through to the raw startlist only
   // if the rosters aren't loaded yet (out.length === 0).
-  if (race && race.slug && tourBibsMeta && race.slug === tourBibsMeta.race_slug
-      && Object.keys(tourBibs).length) {
+  const _bibs = bibsForRace(race);
+  if (race && Object.keys(_bibs).length) {
     const out = [];
     for (const team of (appData.teams || [])) {
       for (const r of (team.riders || [])) {
-        if (tourBibs[r.slug] != null) {
-          out.push({ name: r.name, nat: r.nat, team: team.name, slug: r.slug, bib: tourBibs[r.slug] });
+        if (_bibs[r.slug] != null) {
+          out.push({ name: r.name, nat: r.nat, team: team.name, slug: r.slug, bib: _bibs[r.slug] });
         }
       }
     }
@@ -1927,7 +1927,7 @@ function abandonedSlugs(race) {
 // finishes, the Teams tab drops its bib annotations (the bibs stay on the
 // per-race Riders screen, which reads them straight from tour_bibs.json).
 function tourBibsActive() {
-  return !!(tourBibsMeta && (appData.live || []).some(r => r.slug === tourBibsMeta.race_slug));
+  return !!activeBibRace();
 }
 
 // Shared startlist markup, used by both the inline startlist toggle and the
@@ -2564,6 +2564,40 @@ async function loadTourBibs() {
     if (r.ok) { const j = await r.json(); tourBibs = j.bibs || {}; tourBibsMeta = j; }
   } catch (e) { /* optional */ }
   return tourBibs;
+}
+
+// Multi-race dossards: cf_slug -> { bibs:{slug:bib}, race_slug, name, year }.
+// Written by fetch_all_bibs.py for EVERY live/near race (registry-driven), not
+// just one Grand Tour. tour_bibs.json stays as a legacy single-race fallback.
+let raceBibs = {};
+async function loadRaceBibs() {
+  if (Object.keys(raceBibs).length) return raceBibs;
+  try {
+    const r = await fetch('./race_bibs.json?t=' + Date.now(), { cache: 'no-store' });
+    if (r.ok) { const j = await r.json(); raceBibs = j.races || {}; }
+  } catch (e) { /* optional */ }
+  return raceBibs;
+}
+// The dossard map for one race: multi-race file (keyed by cf_slug) first, then
+// the legacy single-race tour_bibs.json, else {}.
+function bibsForRace(race) {
+  if (!race) return {};
+  const cf = race.cf_slug || (race.slug ? `${race.slug}-${race.year || ''}` : '');
+  const entry = cf && raceBibs[cf];
+  if (entry && entry.bibs && Object.keys(entry.bibs).length) return entry.bibs;
+  if (tourBibsMeta && race.slug === tourBibsMeta.race_slug && Object.keys(tourBibs).length) return tourBibs;
+  return {};
+}
+// The live race the Teams tab annotates against: the live race carrying the most
+// bibs (usually only one bibbed race is live at a time). { race, bibs, name } | null.
+function activeBibRace() {
+  let best = null;
+  for (const race of (appData.live || [])) {
+    const bibs = bibsForRace(race);
+    const n = Object.keys(bibs).length;
+    if (n && (!best || n > best.n)) best = { race, bibs, name: race.name || 'Tour', n };
+  }
+  return best;
 }
 
 // Some grand-tour teams are absent from data.json's `teams` array (the scraper
@@ -3382,7 +3416,7 @@ function renderRiderRow(r, teamId, idx, bib, isLeader) {
   // bib/isLeader passed by renderTeamCard; other callers (search) fall back to
   // a direct lookup so bibs show there too — but only while the Tour is live.
   // Once it finishes the Teams tab shows a plain roster with no bibs.
-  if (bib == null && tourBibsActive()) bib = tourBibs[r.slug];
+  if (bib == null) { const abr = activeBibRace(); if (abr) bib = abr.bibs[r.slug]; }
   const bibEl = (bib != null)
     ? `<span class="rider-bib${isLeader ? ' leader' : ''}" title="${isLeader ? 'Team leader — lowest bib' : 'Tour bib'}">${bib}</span>`
     : '';
@@ -3445,8 +3479,8 @@ function renderTeamCard(team) {
   // only shown while the Tour is live; once it finishes tourBibsActive() is
   // false, so the Teams tab reverts to a plain roster (no bibs, no leader star,
   // no "N in Tour" badge). The per-race Riders screen keeps its bibs regardless.
-  const bibsOn = tourBibsActive();
-  const annotated = riders.map(r => ({ r, bib: bibsOn ? tourBibs[r.slug] : undefined }));
+  const abr = activeBibRace();
+  const annotated = riders.map(r => ({ r, bib: abr ? abr.bibs[r.slug] : undefined }));
   const inTour = annotated.filter(x => x.bib != null);
   const leaderBib = inTour.length ? Math.min(...inTour.map(x => x.bib)) : null;
   annotated.sort((a, b) => {
@@ -3461,7 +3495,7 @@ function renderTeamCard(team) {
     ? `${riders.length} riders (${riders.length - profiledCount} loading...)`
     : `${riders.length} riders`;
   const tourBadge = inTour.length
-    ? `<span class="team-tour-badge" title="Riders in the ${esc(tourBibsMeta?.race || 'Tour')}">🚴 ${inTour.length} in ${esc(tourBibsMeta?.race || 'Tour')}</span>`
+    ? `<span class="team-tour-badge" title="Riders in the ${esc(abr?.name || 'Tour')}">🚴 ${inTour.length} in ${esc(abr?.name || 'Tour')}</span>`
     : '';
 
   return `<div class="team-card ${catCls}${inTour.length ? ' in-tour' : ''}" id="${id}" data-cat="${cat}">
@@ -4419,7 +4453,7 @@ async function loadData(force=false) {
     renderLive(appData.live || []);
     renderUpcoming(appData.upcoming || []);
     renderRecent(appData.recent || []);
-    await Promise.all([loadTourBibs(), riderPhotosReady, stageProfilesReady]);  // bibs + photos + stage profiles ready before render
+    await Promise.all([loadTourBibs(), loadRaceBibs(), riderPhotosReady, stageProfilesReady]);  // bibs (single + multi-race) + photos + stage profiles ready before render
     // A Grand Tour (live or finished) has no startlist array of its own; its
     // Riders list is reconstructed from tour_bibs.json (loaded just above) +
     // team rosters, so re-render live and recent now that bibs are in —
@@ -4463,7 +4497,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v150';
+const APP_VERSION = 'v151';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

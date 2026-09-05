@@ -39,6 +39,8 @@ GEN_FILES=(
   scrape_log.json
   specialty_cache.json
   status.json
+  race_registry.json
+  race_bibs.json
 )
 is_gen() { printf '%s\n' "${GEN_FILES[@]}" | grep -qxF "$1"; }
 

@@ -6,6 +6,12 @@ A reference for what's missing from the Cyclist Intel App app, why, and whether 
 
 ## Data Gaps
 
+### Race registry & bib numbers for every race (v151)
+**What:** `race_registry.json` is a self-learning database of every race the app has ever discovered — name, source slugs (CyclingFlash/PCS/cyclingoo), category, per-year dates/stages, and a rolled-forward "typical" calendar slot. `race_registry.py` upserts it on every scrape, so a race's slots and slugs are known before its next edition appears.
+**Bibs:** `fetch_all_bibs.py` reads the registry and, for **every** live race and every upcoming race starting within ~25 days, fetches its start-list dossards into `race_bibs.json` (keyed by CyclingFlash slug). The app (`bibsForRace()`) shows bibs for any of these races — not just one Grand Tour as the old single `tour_bibs.json` did. PCS drops sponsors and the "-men" suffix, so the fetcher tries candidate slugs and **learns** the one that works back into the registry.
+**Runs:** unprompted, in the twice-daily `scrape.yml` job (or trigger it from the Actions tab). `tour_bibs.json` remains as a legacy single-race fallback.
+
+
 ### Stage distance & elevation showing blank
 **Why:** The scraper fetches these from ProcyclingStats (PCS). PCS returns HTTP 500 on some stage detail pages — this is a server-side error on their end, not a bug in the scraper.  
 **Impact:** Stage cards show "Nonekm" or blank elevation for affected stages.  
@@ -34,7 +40,7 @@ A reference for what's missing from the Cyclist Intel App app, why, and whether 
 ### Stage route map / height profile images missing on some stages
 **Why:** These images are served from CyclingFlash's CDN and are only available once they publish them, typically a few days before each stage.  
 **Impact:** No profile image shown on stage cards.  
-**Fix:** Scraper picks them up automatically once CyclingFlash publishes them.
+**Fix:** Scraper picks them up automatically once CyclingFlash publishes them. As of v151 the route-detail backfill re-fetches upcoming/live stages while the **profile image is still missing**, not only while distance is missing — so profiles/course detail now fill in *before* the race, instead of a stage freezing the moment its distance arrived and the profile only appearing after the finish (the Tour of Britain symptom).
 
 ---
 

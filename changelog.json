@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-04T19:15:31.565079+00:00",
+  "generated_at": "2026-09-05T13:41:02.414072+00:00",
   "entries": [
+    {
+      "id": "e99b954fdc70",
+      "timestamp": "2026-09-05T13:41:02.408549+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Clément Champoussin, Jaime Torres added"
+    },
     {
       "id": "b524df477d58",
       "timestamp": "2026-09-04T19:15:31.558729+00:00",
@@ -406,20 +413,6 @@
       "type": "leader_change",
       "icon": "yellow",
       "text": "Lidl Deutschland Tour GC: 🇲🇽 Isaac Del Toro Romero leads"
-    },
-    {
-      "id": "dcfc6097d07a",
-      "timestamp": "2026-08-22T11:17:20.699599+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Renewi Tour GC: 🇧🇪 Jenno Berckmoes leads"
-    },
-    {
-      "id": "fff4cd410c6c",
-      "timestamp": "2026-08-22T11:17:20.699599+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Renewi Tour Youth: 🇮🇹 Pietro Mattio leads"
     }
   ]
 }

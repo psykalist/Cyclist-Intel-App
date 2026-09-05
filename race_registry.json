@@ -1,0 +1,2430 @@
+{
+ "races": {
+  "4-jours-de-dunkerque": {
+   "slug": "4-jours-de-dunkerque",
+   "name": "4 Jours de Dunkerque",
+   "sources": {
+    "cf_slug": "4-jours-de-dunkerque",
+    "pcs_slug": "4-jours-de-dunkerque",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-20",
+     "end": "2026-05-24",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "4-jours-de-dunkerque-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-20",
+   "typical_end_md": "05-24",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "adac-cyclassics": {
+   "slug": "adac-cyclassics",
+   "name": "ADAC Cyclassics",
+   "sources": {
+    "cf_slug": "adac-cyclassics",
+    "pcs_slug": "adac-cyclassics",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-16",
+     "end": "2026-08-16",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "adac-cyclassics-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-16",
+   "typical_end_md": "08-16",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "alula-tour": {
+   "slug": "alula-tour",
+   "name": "AlUla Tour",
+   "sources": {
+    "cf_slug": "alula-tour",
+    "pcs_slug": "alula-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-01-27",
+     "end": "2026-01-31",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "alula-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "01-27",
+   "typical_end_md": "01-31",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "arctic-race-of-norway": {
+   "slug": "arctic-race-of-norway",
+   "name": "Arctic Race of Norway",
+   "sources": {
+    "cf_slug": "arctic-race-of-norway",
+    "pcs_slug": "arctic-race-of-norway",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-13",
+     "end": "2026-08-16",
+     "stages": 4,
+     "category": "2.Pro",
+     "cf_slug": "arctic-race-of-norway-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-13",
+   "typical_end_md": "08-16",
+   "typical_stages": 4,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "baloise-belgium-tour": {
+   "slug": "baloise-belgium-tour",
+   "name": "Baloise Belgium Tour",
+   "sources": {
+    "cf_slug": "baloise-belgium-tour",
+    "pcs_slug": "baloise-belgium-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-17",
+     "end": "2026-06-21",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "baloise-belgium-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-17",
+   "typical_end_md": "06-21",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "boucles-de-la-mayenne": {
+   "slug": "boucles-de-la-mayenne",
+   "name": "Boucles de la Mayenne",
+   "sources": {
+    "cf_slug": "boucles-de-la-mayenne",
+    "pcs_slug": "boucles-de-la-mayenne",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-28",
+     "end": "2026-05-31",
+     "stages": 3,
+     "category": "2.Pro",
+     "cf_slug": "boucles-de-la-mayenne-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-28",
+   "typical_end_md": "05-31",
+   "typical_stages": 3,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "bredene-koksijde-classic": {
+   "slug": "bredene-koksijde-classic",
+   "name": "Bredene Koksijde Classic",
+   "sources": {
+    "cf_slug": "bredene-koksijde-classic",
+    "pcs_slug": "bredene-koksijde-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-20",
+     "end": "2026-03-20",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "bredene-koksijde-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-20",
+   "typical_end_md": "03-20",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "bretagne-classic-ouest-france": {
+   "slug": "bretagne-classic-ouest-france",
+   "name": "Bretagne Classic - Ouest-France",
+   "sources": {
+    "cf_slug": "bretagne-classic-ouest-france",
+    "pcs_slug": "bretagne-classic-ouest-france",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-30",
+     "end": "2026-08-30",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "bretagne-classic-ouest-france-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-30",
+   "typical_end_md": "08-30",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "brussels-cycling-classic": {
+   "slug": "brussels-cycling-classic",
+   "name": "Brussels Cycling Classic",
+   "sources": {
+    "cf_slug": "brussels-cycling-classic",
+    "pcs_slug": "brussels-cycling-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-07",
+     "end": "2026-06-07",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "brussels-cycling-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-07",
+   "typical_end_md": "06-07",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "circuit-franco-belge": {
+   "slug": "circuit-franco-belge",
+   "name": "Circuit Franco-Belge",
+   "sources": {
+    "cf_slug": "circuit-franco-belge",
+    "pcs_slug": "circuit-franco-belge",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-10",
+     "end": "2026-06-10",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "circuit-franco-belge-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-10",
+   "typical_end_md": "06-10",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "clasica-castilla-y-leon": {
+   "slug": "clasica-castilla-y-leon",
+   "name": "Clasica Castilla y Leon",
+   "sources": {
+    "cf_slug": "clasica-castilla-y-leon",
+    "pcs_slug": "clasica-castilla-y-leon",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-26",
+     "end": "2026-07-26",
+     "stages": 1,
+     "category": "1.1",
+     "cf_slug": "clasica-castilla-y-leon-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-26",
+   "typical_end_md": "07-26",
+   "typical_stages": 1,
+   "category": "1.1",
+   "wants_bibs": false
+  },
+  "clasica-de-almeria": {
+   "slug": "clasica-de-almeria",
+   "name": "Clasica de Almeria",
+   "sources": {
+    "cf_slug": "clasica-de-almeria",
+    "pcs_slug": "clasica-de-almeria",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-15",
+     "end": "2026-02-15",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "clasica-de-almeria-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-15",
+   "typical_end_md": "02-15",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "clasica-de-ordizia-ordiziako-klasikoa": {
+   "slug": "clasica-de-ordizia-ordiziako-klasikoa",
+   "name": "Clásica de Ordizia - Ordiziako Klasikoa",
+   "sources": {
+    "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa",
+    "pcs_slug": "clasica-de-ordizia-ordiziako-klasikoa",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-25",
+     "end": "2026-07-25",
+     "stages": 1,
+     "category": "1.1",
+     "cf_slug": "clasica-de-ordizia-ordiziako-klasikoa-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-25",
+   "typical_end_md": "07-25",
+   "typical_stages": 1,
+   "category": "1.1",
+   "wants_bibs": false
+  },
+  "classique-dunkerque": {
+   "slug": "classique-dunkerque",
+   "name": "Classique Dunkerque",
+   "sources": {
+    "cf_slug": "classique-dunkerque",
+    "pcs_slug": "classique-dunkerque",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-19",
+     "end": "2026-05-19",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "classique-dunkerque-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-19",
+   "typical_end_md": "05-19",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "copenhagen-sprint": {
+   "slug": "copenhagen-sprint",
+   "name": "Copenhagen Sprint",
+   "sources": {
+    "cf_slug": "copenhagen-sprint",
+    "pcs_slug": "copenhagen-sprint",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-14",
+     "end": "2026-06-14",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "copenhagen-sprint-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-14",
+   "typical_end_md": "06-14",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "coppa-bernocchi-gp-banco-bpm": {
+   "slug": "coppa-bernocchi-gp-banco-bpm",
+   "name": "Coppa Bernocchi - GP Banco BPM",
+   "sources": {
+    "cf_slug": "coppa-bernocchi-gp-banco-bpm",
+    "pcs_slug": "coppa-bernocchi-gp-banco-bpm",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-05",
+     "end": "2026-10-05",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-05",
+   "typical_end_md": "10-05",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "cro-race": {
+   "slug": "cro-race",
+   "name": "CRO Race",
+   "sources": {
+    "cf_slug": "cro-race",
+    "pcs_slug": "cro-race",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-22",
+     "end": "2026-09-27",
+     "stages": 6,
+     "category": "2.Pro",
+     "cf_slug": "cro-race-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-22",
+   "typical_end_md": "09-27",
+   "typical_stages": 6,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "czech-tour": {
+   "slug": "czech-tour",
+   "name": "Czech Tour",
+   "sources": {
+    "cf_slug": "czech-tour",
+    "pcs_slug": "czech-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-13",
+     "end": "2026-08-16",
+     "stages": 4,
+     "category": "2.Pro",
+     "cf_slug": "czech-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-13",
+   "typical_end_md": "08-16",
+   "typical_stages": 4,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "danilith-nokere-koerse": {
+   "slug": "danilith-nokere-koerse",
+   "name": "Danilith Nokere Koerse",
+   "sources": {
+    "cf_slug": "danilith-nokere-koerse",
+    "pcs_slug": "danilith-nokere-koerse",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-18",
+     "end": "2026-03-18",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "danilith-nokere-koerse-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-18",
+   "typical_end_md": "03-18",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "de-brabantse-pijl": {
+   "slug": "de-brabantse-pijl",
+   "name": "De Brabantse Pijl",
+   "sources": {
+    "cf_slug": "de-brabantse-pijl",
+    "pcs_slug": "de-brabantse-pijl",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-17",
+     "end": "2026-04-17",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "de-brabantse-pijl-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-17",
+   "typical_end_md": "04-17",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "donostia-san-sebastian-klasikoa": {
+   "slug": "donostia-san-sebastian-klasikoa",
+   "name": "Donostia San Sebastian Klasikoa",
+   "sources": {
+    "cf_slug": "donostia-san-sebastian-klasikoa",
+    "pcs_slug": "donostia-san-sebastian-klasikoa",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-01",
+     "end": "2026-08-01",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "donostia-san-sebastian-klasikoa-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-01",
+   "typical_end_md": "08-01",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "dwars-door-vlaanderen": {
+   "slug": "dwars-door-vlaanderen",
+   "name": "Dwars door Vlaanderen",
+   "sources": {
+    "cf_slug": "dwars-door-vlaanderen",
+    "pcs_slug": "dwars-door-vlaanderen",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-01",
+     "end": "2026-04-01",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "dwars-door-vlaanderen-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-01",
+   "typical_end_md": "04-01",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "e3-saxo-classic": {
+   "slug": "e3-saxo-classic",
+   "name": "E3 Saxo Classic",
+   "sources": {
+    "cf_slug": "e3-saxo-classic",
+    "pcs_slug": "e3-saxo-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-27",
+     "end": "2026-03-27",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "e3-saxo-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-27",
+   "typical_end_md": "03-27",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "eschborn-frankfurt": {
+   "slug": "eschborn-frankfurt",
+   "name": "Eschborn-Frankfurt",
+   "sources": {
+    "cf_slug": "eschborn-frankfurt",
+    "pcs_slug": "eschborn-frankfurt",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-01",
+     "end": "2026-05-01",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "eschborn-frankfurt-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-01",
+   "typical_end_md": "05-01",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "ethias-tour-de-wallonie": {
+   "slug": "ethias-tour-de-wallonie",
+   "name": "Ethias-Tour de Wallonie",
+   "sources": {
+    "cf_slug": "ethias-tour-de-wallonie",
+    "pcs_slug": "ethias-tour-de-wallonie",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-01",
+     "end": "2026-06-05",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "ethias-tour-de-wallonie-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-01",
+   "typical_end_md": "06-05",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "faun-ardeche-classic": {
+   "slug": "faun-ardeche-classic",
+   "name": "Faun-Ardèche Classic",
+   "sources": {
+    "cf_slug": "faun-ardeche-classic",
+    "pcs_slug": "faun-ardeche-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-28",
+     "end": "2026-02-28",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "faun-ardeche-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-28",
+   "typical_end_md": "02-28",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "faun-drome-classic": {
+   "slug": "faun-drome-classic",
+   "name": "Faun Drome Classic",
+   "sources": {
+    "cf_slug": "faun-drome-classic",
+    "pcs_slug": "faun-drome-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-01",
+     "end": "2026-03-01",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "faun-drome-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-01",
+   "typical_end_md": "03-01",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "figueira-champions-classic": {
+   "slug": "figueira-champions-classic",
+   "name": "Figueira Champions Classic",
+   "sources": {
+    "cf_slug": "figueira-champions-classic",
+    "pcs_slug": "figueira-champions-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-14",
+     "end": "2026-02-14",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "figueira-champions-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-14",
+   "typical_end_md": "02-14",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "giro-del-veneto": {
+   "slug": "giro-del-veneto",
+   "name": "Giro del Veneto",
+   "sources": {
+    "cf_slug": "giro-del-veneto",
+    "pcs_slug": "giro-del-veneto",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-14",
+     "end": "2026-10-14",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "giro-del-veneto-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-14",
+   "typical_end_md": "10-14",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "giro-dellemilia": {
+   "slug": "giro-dellemilia",
+   "name": "Giro dell'Emilia",
+   "sources": {
+    "cf_slug": "giro-dellemilia",
+    "pcs_slug": "giro-dellemilia",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-03",
+     "end": "2026-10-03",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "giro-dellemilia-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-03",
+   "typical_end_md": "10-03",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "giro-ditalia": {
+   "slug": "giro-ditalia",
+   "name": "Giro d'Italia",
+   "sources": {
+    "cf_slug": "giro-ditalia",
+    "pcs_slug": "giro-ditalia",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-08",
+     "end": "2026-05-31",
+     "stages": 21,
+     "category": "2.UWT",
+     "cf_slug": "giro-ditalia-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-08",
+   "typical_end_md": "05-31",
+   "typical_stages": 21,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "gp-de-fourmies-la-voix-du-nord": {
+   "slug": "gp-de-fourmies-la-voix-du-nord",
+   "name": "GP de Fourmies / La Voix du Nord",
+   "sources": {
+    "cf_slug": "gp-de-fourmies-la-voix-du-nord",
+    "pcs_slug": "gp-de-fourmies-la-voix-du-nord",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-13",
+     "end": "2026-09-13",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-13",
+   "typical_end_md": "09-13",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "gp-industria-artigianato": {
+   "slug": "gp-industria-artigianato",
+   "name": "GP Industria & Artigianato",
+   "sources": {
+    "cf_slug": "gp-industria-artigianato",
+    "pcs_slug": "gp-industria-artigianato",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-06",
+     "end": "2026-09-06",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "gp-industria-artigianato-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-06",
+   "typical_end_md": "09-06",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "gran-piemonte": {
+   "slug": "gran-piemonte",
+   "name": "Gran Piemonte",
+   "sources": {
+    "cf_slug": "gran-piemonte",
+    "pcs_slug": "gran-piemonte",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-08",
+     "end": "2026-10-08",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "gran-piemonte-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-08",
+   "typical_end_md": "10-08",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "gran-premio-citta-di-peccioli-coppa-sabatini": {
+   "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+   "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
+   "sources": {
+    "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+    "pcs_slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-10",
+     "end": "2026-09-10",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-10",
+   "typical_end_md": "09-10",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "gran-premio-miguel-indurain": {
+   "slug": "gran-premio-miguel-indurain",
+   "name": "Gran Premio Miguel Indurain",
+   "sources": {
+    "cf_slug": "gran-premio-miguel-indurain",
+    "pcs_slug": "gran-premio-miguel-indurain",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-04",
+     "end": "2026-04-04",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "gran-premio-miguel-indurain-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-04",
+   "typical_end_md": "04-04",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "grand-prix-cycliste-de-montreal": {
+   "slug": "grand-prix-cycliste-de-montreal",
+   "name": "Grand Prix Cycliste de Montréal",
+   "sources": {
+    "cf_slug": "grand-prix-cycliste-de-montreal",
+    "pcs_slug": "grand-prix-cycliste-de-montreal",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-13",
+     "end": "2026-09-13",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "grand-prix-cycliste-de-montreal-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-13",
+   "typical_end_md": "09-13",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "grand-prix-cycliste-de-quebec": {
+   "slug": "grand-prix-cycliste-de-quebec",
+   "name": "Grand Prix Cycliste de Québec",
+   "sources": {
+    "cf_slug": "grand-prix-cycliste-de-quebec",
+    "pcs_slug": "grand-prix-cycliste-de-quebec",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-11",
+     "end": "2026-09-11",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "grand-prix-cycliste-de-quebec-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-11",
+   "typical_end_md": "09-11",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "grand-prix-de-denain-porte-du-hainaut": {
+   "slug": "grand-prix-de-denain-porte-du-hainaut",
+   "name": "Grand Prix de Denain - Porte du Hainaut",
+   "sources": {
+    "cf_slug": "grand-prix-de-denain-porte-du-hainaut",
+    "pcs_slug": "grand-prix-de-denain-porte-du-hainaut",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-19",
+     "end": "2026-03-19",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "grand-prix-de-denain-porte-du-hainaut-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-19",
+   "typical_end_md": "03-19",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "grand-prix-de-wallonie": {
+   "slug": "grand-prix-de-wallonie",
+   "name": "Grand Prix de Wallonie",
+   "sources": {
+    "cf_slug": "grand-prix-de-wallonie",
+    "pcs_slug": "grand-prix-de-wallonie",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-16",
+     "end": "2026-09-16",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "grand-prix-de-wallonie-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-16",
+   "typical_end_md": "09-16",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "grand-prix-du-morbihan": {
+   "slug": "grand-prix-du-morbihan",
+   "name": "Grand Prix du Morbihan",
+   "sources": {
+    "cf_slug": "grand-prix-du-morbihan",
+    "pcs_slug": "grand-prix-du-morbihan",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-09",
+     "end": "2026-05-09",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "grand-prix-du-morbihan-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-09",
+   "typical_end_md": "05-09",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "il-lombardia": {
+   "slug": "il-lombardia",
+   "name": "Il Lombardia",
+   "sources": {
+    "cf_slug": "il-lombardia",
+    "pcs_slug": "il-lombardia",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-10",
+     "end": "2026-10-10",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "il-lombardia-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-10",
+   "typical_end_md": "10-10",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "in-flanders-fields": {
+   "slug": "in-flanders-fields",
+   "name": "In Flanders Fields",
+   "sources": {
+    "cf_slug": "in-flanders-fields",
+    "pcs_slug": "in-flanders-fields",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-29",
+     "end": "2026-03-29",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "in-flanders-fields-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-29",
+   "typical_end_md": "03-29",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "itzulia-basque-country": {
+   "slug": "itzulia-basque-country",
+   "name": "Itzulia Basque Country",
+   "sources": {
+    "cf_slug": "itzulia-basque-country",
+    "pcs_slug": "itzulia-basque-country",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-06",
+     "end": "2026-04-11",
+     "stages": 6,
+     "category": "2.UWT",
+     "cf_slug": "itzulia-basque-country-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-06",
+   "typical_end_md": "04-11",
+   "typical_stages": 6,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "kuurne-brussel-kuurne": {
+   "slug": "kuurne-brussel-kuurne",
+   "name": "Kuurne - Brussel - Kuurne",
+   "sources": {
+    "cf_slug": "kuurne-brussel-kuurne",
+    "pcs_slug": "kuurne-brussel-kuurne",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-01",
+     "end": "2026-03-01",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "kuurne-brussel-kuurne-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-01",
+   "typical_end_md": "03-01",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "lidl-deutschland-tour": {
+   "slug": "lidl-deutschland-tour",
+   "name": "Lidl Deutschland Tour",
+   "sources": {
+    "cf_slug": "lidl-deutschland-tour",
+    "pcs_slug": "lidl-deutschland-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-19",
+     "end": "2026-08-23",
+     "stages": 4,
+     "category": "2.Pro",
+     "cf_slug": "lidl-deutschland-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-19",
+   "typical_end_md": "08-23",
+   "typical_stages": 4,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "liege-bastogne-liege": {
+   "slug": "liege-bastogne-liege",
+   "name": "Liège-Bastogne-Liège",
+   "sources": {
+    "cf_slug": "liege-bastogne-liege",
+    "pcs_slug": "liege-bastogne-liege",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-26",
+     "end": "2026-04-26",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "liege-bastogne-liege-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-26",
+   "typical_end_md": "04-26",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "lloyds-tour-of-britain-men": {
+   "slug": "lloyds-tour-of-britain-men",
+   "name": "Lloyds Tour of Britain Men",
+   "sources": {
+    "cf_slug": "lloyds-tour-of-britain-men",
+    "pcs_slug": "tour-of-britain",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-02",
+     "end": "2026-09-06",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "lloyds-tour-of-britain-men-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-02",
+   "typical_end_md": "09-06",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "mapei-cadel-evans-great-ocean-road-race-men": {
+   "slug": "mapei-cadel-evans-great-ocean-road-race-men",
+   "name": "Mapei Cadel Evans Great Ocean Road Race - Men",
+   "sources": {
+    "cf_slug": "mapei-cadel-evans-great-ocean-road-race-men",
+    "pcs_slug": "mapei-cadel-evans-great-ocean-road-race-men",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-01",
+     "end": "2026-02-01",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "mapei-cadel-evans-great-ocean-road-race-men-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-01",
+   "typical_end_md": "02-01",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "maryland-cycling-classic": {
+   "slug": "maryland-cycling-classic",
+   "name": "Maryland Cycling Classic",
+   "sources": {
+    "cf_slug": "maryland-cycling-classic",
+    "pcs_slug": "maryland-cycling-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-05",
+     "end": "2026-09-07",
+     "stages": 1,
+     "category": "2.Pro",
+     "cf_slug": "maryland-cycling-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-05",
+   "typical_end_md": "09-07",
+   "typical_stages": 1,
+   "category": "2.Pro",
+   "wants_bibs": false
+  },
+  "milano-sanremo": {
+   "slug": "milano-sanremo",
+   "name": "Milano-Sanremo",
+   "sources": {
+    "cf_slug": "milano-sanremo",
+    "pcs_slug": "milano-sanremo",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-21",
+     "end": "2026-03-21",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "milano-sanremo-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-21",
+   "typical_end_md": "03-21",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "milano-torino": {
+   "slug": "milano-torino",
+   "name": "Milano - Torino",
+   "sources": {
+    "cf_slug": "milano-torino",
+    "pcs_slug": "milano-torino",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-18",
+     "end": "2026-03-18",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "milano-torino-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-18",
+   "typical_end_md": "03-18",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "muscat-classic": {
+   "slug": "muscat-classic",
+   "name": "Muscat Classic",
+   "sources": {
+    "cf_slug": "muscat-classic",
+    "pcs_slug": "muscat-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-06",
+     "end": "2026-02-06",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "muscat-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-06",
+   "typical_end_md": "02-06",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "omloop-het-nieuwsblad": {
+   "slug": "omloop-het-nieuwsblad",
+   "name": "Omloop Het Nieuwsblad",
+   "sources": {
+    "cf_slug": "omloop-het-nieuwsblad",
+    "pcs_slug": "omloop-het-nieuwsblad",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-28",
+     "end": "2026-02-28",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "omloop-het-nieuwsblad-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-28",
+   "typical_end_md": "02-28",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "paris-nice": {
+   "slug": "paris-nice",
+   "name": "Paris-Nice",
+   "sources": {
+    "cf_slug": "paris-nice",
+    "pcs_slug": "paris-nice",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-08",
+     "end": "2026-03-15",
+     "stages": 8,
+     "category": "2.UWT",
+     "cf_slug": "paris-nice-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-08",
+   "typical_end_md": "03-15",
+   "typical_stages": 8,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "paris-roubaix": {
+   "slug": "paris-roubaix",
+   "name": "Paris-Roubaix",
+   "sources": {
+    "cf_slug": "paris-roubaix",
+    "pcs_slug": "paris-roubaix",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-12",
+     "end": "2026-04-12",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "paris-roubaix-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-12",
+   "typical_end_md": "04-12",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "paris-tours-elite": {
+   "slug": "paris-tours-elite",
+   "name": "Paris - Tours Elite",
+   "sources": {
+    "cf_slug": "paris-tours-elite",
+    "pcs_slug": "paris-tours-elite",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-11",
+     "end": "2026-10-11",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "paris-tours-elite-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-11",
+   "typical_end_md": "10-11",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "petronas-le-tour-de-langkawi": {
+   "slug": "petronas-le-tour-de-langkawi",
+   "name": "Petronas Le Tour de Langkawi",
+   "sources": {
+    "cf_slug": "petronas-le-tour-de-langkawi",
+    "pcs_slug": "petronas-le-tour-de-langkawi",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-27",
+     "end": "2026-10-04",
+     "stages": 7,
+     "category": "2.Pro",
+     "cf_slug": "petronas-le-tour-de-langkawi-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-27",
+   "typical_end_md": "10-04",
+   "typical_stages": 7,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "postnord-tour-of-denmark": {
+   "slug": "postnord-tour-of-denmark",
+   "name": "PostNord Tour of Denmark",
+   "sources": {
+    "cf_slug": "postnord-tour-of-denmark",
+    "pcs_slug": "postnord-tour-of-denmark",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-29",
+     "end": "2026-08-02",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "postnord-tour-of-denmark-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-29",
+   "typical_end_md": "08-02",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "presidential-cycling-tour-of-turkiye": {
+   "slug": "presidential-cycling-tour-of-turkiye",
+   "name": "Presidential Cycling Tour of Turkiye",
+   "sources": {
+    "cf_slug": "presidential-cycling-tour-of-turkiye",
+    "pcs_slug": "presidential-cycling-tour-of-turkiye",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-26",
+     "end": "2026-05-03",
+     "stages": 8,
+     "category": "2.Pro",
+     "cf_slug": "presidential-cycling-tour-of-turkiye-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-26",
+   "typical_end_md": "05-03",
+   "typical_stages": 8,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "region-pays-de-la-loire-tour": {
+   "slug": "region-pays-de-la-loire-tour",
+   "name": "Région Pays de la Loire Tour",
+   "sources": {
+    "cf_slug": "region-pays-de-la-loire-tour",
+    "pcs_slug": "region-pays-de-la-loire-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-07",
+     "end": "2026-04-10",
+     "stages": 4,
+     "category": "2.Pro",
+     "cf_slug": "region-pays-de-la-loire-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-07",
+   "typical_end_md": "04-10",
+   "typical_stages": 4,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "renewi-tour": {
+   "slug": "renewi-tour",
+   "name": "Renewi Tour",
+   "sources": {
+    "cf_slug": "renewi-tour",
+    "pcs_slug": "renewi-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-19",
+     "end": "2026-08-23",
+     "stages": 5,
+     "category": "2.UWT",
+     "cf_slug": "renewi-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-19",
+   "typical_end_md": "08-23",
+   "typical_stages": 5,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "ronde-van-brugge": {
+   "slug": "ronde-van-brugge",
+   "name": "Ronde van Brugge",
+   "sources": {
+    "cf_slug": "ronde-van-brugge",
+    "pcs_slug": "ronde-van-brugge",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-25",
+     "end": "2026-03-25",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "ronde-van-brugge-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-25",
+   "typical_end_md": "03-25",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "ronde-van-vlaanderen": {
+   "slug": "ronde-van-vlaanderen",
+   "name": "Ronde van Vlaanderen",
+   "sources": {
+    "cf_slug": "ronde-van-vlaanderen",
+    "pcs_slug": "ronde-van-vlaanderen",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-05",
+     "end": "2026-04-05",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "ronde-van-vlaanderen-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-05",
+   "typical_end_md": "04-05",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "santos-tour-down-under": {
+   "slug": "santos-tour-down-under",
+   "name": "Santos Tour Down Under",
+   "sources": {
+    "cf_slug": "santos-tour-down-under",
+    "pcs_slug": "santos-tour-down-under",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-01-20",
+     "end": "2026-01-25",
+     "stages": 5,
+     "category": "2.UWT",
+     "cf_slug": "santos-tour-down-under-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "01-20",
+   "typical_end_md": "01-25",
+   "typical_stages": 5,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "scheldeprijs": {
+   "slug": "scheldeprijs",
+   "name": "Scheldeprijs",
+   "sources": {
+    "cf_slug": "scheldeprijs",
+    "pcs_slug": "scheldeprijs",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-08",
+     "end": "2026-04-08",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "scheldeprijs-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-08",
+   "typical_end_md": "04-08",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "sibiu-cycling-tour": {
+   "slug": "sibiu-cycling-tour",
+   "name": "Sibiu Cycling Tour",
+   "sources": {
+    "cf_slug": "sibiu-cycling-tour",
+    "pcs_slug": "sibiu-cycling-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-04",
+     "end": "2026-07-07",
+     "stages": 4,
+     "category": "2.1",
+     "cf_slug": "sibiu-cycling-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-04",
+   "typical_end_md": "07-07",
+   "typical_stages": 4,
+   "category": "2.1",
+   "wants_bibs": true
+  },
+  "skoda-tour-de-luxembourg": {
+   "slug": "skoda-tour-de-luxembourg",
+   "name": "Skoda Tour de Luxembourg",
+   "sources": {
+    "cf_slug": "skoda-tour-de-luxembourg",
+    "pcs_slug": "skoda-tour-de-luxembourg",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-16",
+     "end": "2026-09-20",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "skoda-tour-de-luxembourg-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-16",
+   "typical_end_md": "09-20",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "sparkassen-munsterland-giro": {
+   "slug": "sparkassen-munsterland-giro",
+   "name": "Sparkassen Münsterland Giro",
+   "sources": {
+    "cf_slug": "sparkassen-munsterland-giro",
+    "pcs_slug": "sparkassen-munsterland-giro",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-03",
+     "end": "2026-10-03",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "sparkassen-munsterland-giro-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-03",
+   "typical_end_md": "10-03",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "strade-bianche": {
+   "slug": "strade-bianche",
+   "name": "Strade Bianche",
+   "sources": {
+    "cf_slug": "strade-bianche",
+    "pcs_slug": "strade-bianche",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-07",
+     "end": "2026-03-07",
+     "stages": 1,
+     "category": "1.UWT",
+     "cf_slug": "strade-bianche-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-07",
+   "typical_end_md": "03-07",
+   "typical_stages": 1,
+   "category": "1.UWT",
+   "wants_bibs": true
+  },
+  "super-8-classic": {
+   "slug": "super-8-classic",
+   "name": "SUPER 8 Classic",
+   "sources": {
+    "cf_slug": "super-8-classic",
+    "pcs_slug": "super-8-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-09-19",
+     "end": "2026-09-19",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "super-8-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "09-19",
+   "typical_end_md": "09-19",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "tirreno-adriatico": {
+   "slug": "tirreno-adriatico",
+   "name": "Tirreno-Adriatico",
+   "sources": {
+    "cf_slug": "tirreno-adriatico",
+    "pcs_slug": "tirreno-adriatico",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-09",
+     "end": "2026-03-15",
+     "stages": 7,
+     "category": "2.UWT",
+     "cf_slug": "tirreno-adriatico-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-09",
+   "typical_end_md": "03-15",
+   "typical_stages": 7,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-auvergne-rhone-alpes": {
+   "slug": "tour-auvergne-rhone-alpes",
+   "name": "Tour Auvergne - Rhône-Alpes",
+   "sources": {
+    "cf_slug": "tour-auvergne-rhone-alpes",
+    "pcs_slug": "tour-auvergne-rhone-alpes",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-07",
+     "end": "2026-06-14",
+     "stages": 8,
+     "category": "2.UWT",
+     "cf_slug": "tour-auvergne-rhone-alpes-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-07",
+   "typical_end_md": "06-14",
+   "typical_stages": 8,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-de-france": {
+   "slug": "tour-de-france",
+   "name": "Tour de France",
+   "sources": {
+    "cf_slug": "tour-de-france",
+    "pcs_slug": "tour-de-france",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-04",
+     "end": "2026-07-26",
+     "stages": 21,
+     "category": "2.UWT",
+     "cf_slug": "tour-de-france-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-04",
+   "typical_end_md": "07-26",
+   "typical_stages": 21,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-de-hongrie": {
+   "slug": "tour-de-hongrie",
+   "name": "Tour de Hongrie",
+   "sources": {
+    "cf_slug": "tour-de-hongrie",
+    "pcs_slug": "tour-de-hongrie",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-13",
+     "end": "2026-05-17",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "tour-de-hongrie-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-13",
+   "typical_end_md": "05-17",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tour-de-pologne": {
+   "slug": "tour-de-pologne",
+   "name": "Tour de Pologne",
+   "sources": {
+    "cf_slug": "tour-de-pologne",
+    "pcs_slug": "tour-de-pologne",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-03",
+     "end": "2026-08-09",
+     "stages": 6,
+     "category": "2.UWT",
+     "cf_slug": "tour-de-pologne-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-03",
+   "typical_end_md": "08-09",
+   "typical_stages": 6,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-de-romandie": {
+   "slug": "tour-de-romandie",
+   "name": "Tour de Romandie",
+   "sources": {
+    "cf_slug": "tour-de-romandie",
+    "pcs_slug": "tour-de-romandie",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-28",
+     "end": "2026-05-03",
+     "stages": 6,
+     "category": "2.UWT",
+     "cf_slug": "tour-de-romandie-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-28",
+   "typical_end_md": "05-03",
+   "typical_stages": 6,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-de-suisse": {
+   "slug": "tour-de-suisse",
+   "name": "Tour de Suisse",
+   "sources": {
+    "cf_slug": "tour-de-suisse",
+    "pcs_slug": "tour-de-suisse",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-17",
+     "end": "2026-06-21",
+     "stages": 5,
+     "category": "2.UWT",
+     "cf_slug": "tour-de-suisse-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-17",
+   "typical_end_md": "06-21",
+   "typical_stages": 5,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-of-austria": {
+   "slug": "tour-of-austria",
+   "name": "Tour of Austria",
+   "sources": {
+    "cf_slug": "tour-of-austria",
+    "pcs_slug": "tour-of-austria",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-08",
+     "end": "2026-07-12",
+     "stages": 5,
+     "category": "2.1",
+     "cf_slug": "tour-of-austria-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-08",
+   "typical_end_md": "07-12",
+   "typical_stages": 5,
+   "category": "2.1",
+   "wants_bibs": true
+  },
+  "tour-of-guangxi": {
+   "slug": "tour-of-guangxi",
+   "name": "Tour of Guangxi",
+   "sources": {
+    "cf_slug": "tour-of-guangxi",
+    "pcs_slug": "tour-of-guangxi",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-13",
+     "end": "2026-10-18",
+     "stages": 6,
+     "category": "2.UWT",
+     "cf_slug": "tour-of-guangxi-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-13",
+   "typical_end_md": "10-18",
+   "typical_stages": 6,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "tour-of-hainan": {
+   "slug": "tour-of-hainan",
+   "name": "Tour of Hainan",
+   "sources": {
+    "cf_slug": "tour-of-hainan",
+    "pcs_slug": "tour-of-hainan",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-15",
+     "end": "2026-04-19",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "tour-of-hainan-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-15",
+   "typical_end_md": "04-19",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tour-of-magnificent-qinghai": {
+   "slug": "tour-of-magnificent-qinghai",
+   "name": "Tour of Magnificent Qinghai",
+   "sources": {
+    "cf_slug": "tour-of-magnificent-qinghai",
+    "pcs_slug": "tour-of-magnificent-qinghai",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-07-11",
+     "end": "2026-07-18",
+     "stages": 8,
+     "category": "2.Pro",
+     "cf_slug": "tour-of-magnificent-qinghai-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "07-11",
+   "typical_end_md": "07-18",
+   "typical_stages": 8,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tour-of-oman": {
+   "slug": "tour-of-oman",
+   "name": "Tour of Oman",
+   "sources": {
+    "cf_slug": "tour-of-oman",
+    "pcs_slug": "tour-of-oman",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-07",
+     "end": "2026-02-11",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "tour-of-oman-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-07",
+   "typical_end_md": "02-11",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tour-of-slovenia": {
+   "slug": "tour-of-slovenia",
+   "name": "Tour of Slovenia",
+   "sources": {
+    "cf_slug": "tour-of-slovenia",
+    "pcs_slug": "tour-of-slovenia",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-06-17",
+     "end": "2026-06-21",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "tour-of-slovenia-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "06-17",
+   "typical_end_md": "06-21",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tour-of-the-alps": {
+   "slug": "tour-of-the-alps",
+   "name": "Tour of the Alps",
+   "sources": {
+    "cf_slug": "tour-of-the-alps",
+    "pcs_slug": "tour-of-the-alps",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-04-20",
+     "end": "2026-04-24",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "tour-of-the-alps-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "04-20",
+   "typical_end_md": "04-24",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "tre-valli-varesine": {
+   "slug": "tre-valli-varesine",
+   "name": "Tre Valli Varesine",
+   "sources": {
+    "cf_slug": "tre-valli-varesine",
+    "pcs_slug": "tre-valli-varesine",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-06",
+     "end": "2026-10-06",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "tre-valli-varesine-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-06",
+   "typical_end_md": "10-06",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "tro-bro-leon": {
+   "slug": "tro-bro-leon",
+   "name": "Tro-Bro Léon",
+   "sources": {
+    "cf_slug": "tro-bro-leon",
+    "pcs_slug": "tro-bro-leon",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-05-10",
+     "end": "2026-05-10",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "tro-bro-leon-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "05-10",
+   "typical_end_md": "05-10",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "trofeo-laigueglia": {
+   "slug": "trofeo-laigueglia",
+   "name": "Trofeo Laigueglia",
+   "sources": {
+    "cf_slug": "trofeo-laigueglia",
+    "pcs_slug": "trofeo-laigueglia",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-04",
+     "end": "2026-03-04",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "trofeo-laigueglia-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-04",
+   "typical_end_md": "03-04",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "uae-tour": {
+   "slug": "uae-tour",
+   "name": "UAE Tour",
+   "sources": {
+    "cf_slug": "uae-tour",
+    "pcs_slug": "uae-tour",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-16",
+     "end": "2026-02-22",
+     "stages": 7,
+     "category": "2.UWT",
+     "cf_slug": "uae-tour-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-16",
+   "typical_end_md": "02-22",
+   "typical_stages": 7,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "utsunomiya-japan-cup-road-race": {
+   "slug": "utsunomiya-japan-cup-road-race",
+   "name": "Utsunomiya Japan Cup Road Race",
+   "sources": {
+    "cf_slug": "utsunomiya-japan-cup-road-race",
+    "pcs_slug": "utsunomiya-japan-cup-road-race",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-18",
+     "end": "2026-10-18",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "utsunomiya-japan-cup-road-race-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-18",
+   "typical_end_md": "10-18",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "veneto-classic": {
+   "slug": "veneto-classic",
+   "name": "Veneto Classic",
+   "sources": {
+    "cf_slug": "veneto-classic",
+    "pcs_slug": "veneto-classic",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-10-18",
+     "end": "2026-10-18",
+     "stages": 1,
+     "category": "1.Pro",
+     "cf_slug": "veneto-classic-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "10-18",
+   "typical_end_md": "10-18",
+   "typical_stages": 1,
+   "category": "1.Pro",
+   "wants_bibs": false
+  },
+  "volta-ao-algarve-em-bicicleta": {
+   "slug": "volta-ao-algarve-em-bicicleta",
+   "name": "Volta ao Algarve em Bicicleta",
+   "sources": {
+    "cf_slug": "volta-ao-algarve-em-bicicleta",
+    "pcs_slug": "volta-ao-algarve-em-bicicleta",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-18",
+     "end": "2026-02-22",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "volta-ao-algarve-em-bicicleta-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-18",
+   "typical_end_md": "02-22",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "volta-ciclista-a-catalunya": {
+   "slug": "volta-ciclista-a-catalunya",
+   "name": "Volta Ciclista a Catalunya",
+   "sources": {
+    "cf_slug": "volta-ciclista-a-catalunya",
+    "pcs_slug": "volta-ciclista-a-catalunya",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-03-23",
+     "end": "2026-03-29",
+     "stages": 7,
+     "category": "2.UWT",
+     "cf_slug": "volta-ciclista-a-catalunya-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "03-23",
+   "typical_end_md": "03-29",
+   "typical_stages": 7,
+   "category": "2.UWT",
+   "wants_bibs": true
+  },
+  "volta-comunitat-valenciana": {
+   "slug": "volta-comunitat-valenciana",
+   "name": "Volta Comunitat Valenciana",
+   "sources": {
+    "cf_slug": "volta-comunitat-valenciana",
+    "pcs_slug": "volta-comunitat-valenciana",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-04",
+     "end": "2026-02-08",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "volta-comunitat-valenciana-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-04",
+   "typical_end_md": "02-08",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "vuelta-a-andalucia-ruta-ciclista-del-sol": {
+   "slug": "vuelta-a-andalucia-ruta-ciclista-del-sol",
+   "name": "Vuelta a Andalucia Ruta Ciclista Del Sol",
+   "sources": {
+    "cf_slug": "vuelta-a-andalucia-ruta-ciclista-del-sol",
+    "pcs_slug": "vuelta-a-andalucia-ruta-ciclista-del-sol",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-02-18",
+     "end": "2026-02-22",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "vuelta-a-andalucia-ruta-ciclista-del-sol-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "02-18",
+   "typical_end_md": "02-22",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "vuelta-a-burgos": {
+   "slug": "vuelta-a-burgos",
+   "name": "Vuelta a Burgos",
+   "sources": {
+    "cf_slug": "vuelta-a-burgos",
+    "pcs_slug": "vuelta-a-burgos",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-04",
+     "end": "2026-08-08",
+     "stages": 5,
+     "category": "2.Pro",
+     "cf_slug": "vuelta-a-burgos-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-04",
+   "typical_end_md": "08-08",
+   "typical_stages": 5,
+   "category": "2.Pro",
+   "wants_bibs": true
+  },
+  "vuelta-a-espana": {
+   "slug": "vuelta-a-espana",
+   "name": "Vuelta a España",
+   "sources": {
+    "cf_slug": "vuelta-a-espana",
+    "pcs_slug": "vuelta-a-espana",
+    "cyclingoo_slug": null
+   },
+   "years": {
+    "2026": {
+     "start": "2026-08-22",
+     "end": "2026-09-13",
+     "stages": 21,
+     "category": "2.UWT",
+     "cf_slug": "vuelta-a-espana-2026"
+    }
+   },
+   "last_seen_year": 2026,
+   "first_seen_year": 2026,
+   "typical_start_md": "08-22",
+   "typical_end_md": "09-13",
+   "typical_stages": 21,
+   "category": "2.UWT",
+   "wants_bibs": true
+  }
+ },
+ "updated_at": "2026-09-05"
+}

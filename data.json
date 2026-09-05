@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-04T19:14:28.606652+00:00",
-  "scraped_at_human": "04 Sep 2026 19:14 UTC",
+  "scraped_at": "2026-09-05T13:39:57.016659+00:00",
+  "scraped_at_human": "05 Sep 2026 13:39 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -3546,7 +3546,8 @@
           "elevation_m": 2699,
           "start_time": "",
           "stage_type": "mountain",
-          "description": ""
+          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile. Date Saturday 05 September Start Helmsley Finish Leyburn Distance 165.8 km Elevation gain 2699 m Start time 12:00 Expected finish 15:47-16:34 Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176066/responsive-images/stage-4-height-profile___heightProfile_1200_283.webp"
         },
         {
           "num": 5,
@@ -3563,7 +3564,8 @@
           "elevation_m": 2236,
           "start_time": "",
           "stage_type": "hilly",
-          "description": ""
+          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile. Date Sunday 06 September Start Earlston Finish Earlston Distance 156.1 km Elevation gain 2236 m Start time 12:00 Expected finish 15:35-16:20 Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176067/responsive-images/stage-5-height-profile___heightProfile_1200_283.webp"
         }
       ],
       "startlist": [],
@@ -3942,6 +3944,93 @@
           "time_gap": "+ 04:54"
         }
       ]
+    },
+    {
+      "slug": "maryland-cycling-classic",
+      "cf_slug": "maryland-cycling-classic-2026",
+      "name": "Maryland Cycling Classic",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "live",
+      "start_date": "2026-09-05",
+      "end_date": "2026-09-07",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/maryland-cycling-classic-2026",
+      "startlist": [
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Wout van Aert",
+          "slug": "wout-van-aert",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Jonas Vingegaard",
+          "slug": "jonas-vingegaard",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mathieu van der Poel",
+          "slug": "mathieu-van-der-poel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Isaac Del Toro",
+          "slug": "isaac-del-toro",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Demi Vollering",
+          "slug": "demi-vollering",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Lotte Kopecky",
+          "slug": "lotte-kopecky",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Katarzyna Niewiadoma",
+          "slug": "katarzyna-niewiadoma",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Pauline Ferrand-Prévot",
+          "slug": "pauline-ferrand-prevot",
+          "nat": "",
+          "team": ""
+        }
+      ],
+      "stages": []
     }
   ],
   "upcoming": [
@@ -3961,7 +4050,8 @@
       "elevation_m": 2780,
       "stage_type": "mountain",
       "start_town": "Québec",
-      "finish_town": "Québec"
+      "finish_town": "Québec",
+      "description": "Info Startlist Results Winners 11 Sep Date 206 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 952 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 11 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 18 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 853 23 Ilan Van Wilder Soudal - Quick Step Soudal - Quick Step 847 25 Giulio Ciccone Lidl - Trek Lidl - Trek 846 354 Pavel Sivakov UAE Team Emirates XRG UAE Team Emirates XRG 746 438 Afonso Eulálio Bahrain Victorious Bahrain Victorious 733 679 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 Full startlist Win chance 1 Remco Evenepoel 37.03% 2 Isaac Del Toro Romero 18.49% 3 Paul Seixas 13.59% 4 Juan Ayuso Pesquera 10.02% 5 Giulio Ciccone 8.32% 6 Tom Pidcock 6.74% 7 Ilan Van Wilder 3.33% 8 Tiesj Benoot 1.32% 9 Pavel Sivakov 0.64% 10 Afonso Eulálio 0.45% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "grand-prix-cycliste-de-montreal",
@@ -3979,7 +4069,8 @@
       "elevation_m": 4304,
       "stage_type": "mountain",
       "start_town": "Montréal",
-      "finish_town": "Montréal"
+      "finish_town": "Montréal",
+      "description": "Info Startlist Results Winners 13 Sep Date 214 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 952 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 11 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 23 Ilan Van Wilder Soudal - Quick Step Soudal - Quick Step 847 25 Giulio Ciccone Lidl - Trek Lidl - Trek 846 354 Pavel Sivakov UAE Team Emirates XRG UAE Team Emirates XRG 746 438 Afonso Eulálio Bahrain Victorious Bahrain Victorious 733 679 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 5390 Michael Woods Canada Canada 451 Full startlist Win chance 1 Remco Evenepoel 48.43% 2 Isaac Del Toro Romero 17.35% 3 Paul Seixas 12.86% 4 Juan Ayuso Pesquera 9.01% 5 Giulio Ciccone 7.56% 6 Ilan Van Wilder 2.66% 7 Tiesj Benoot 1.30% 8 Pavel Sivakov 0.56% 9 Afonso Eulálio 0.24% 10 Michael Woods 0.03% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "il-lombardia",
@@ -4205,92 +4296,6 @@
       ]
     },
     {
-      "slug": "maryland-cycling-classic",
-      "cf_slug": "maryland-cycling-classic-2026",
-      "name": "Maryland Cycling Classic",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-05",
-      "end_date": "2026-09-07",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/maryland-cycling-classic-2026",
-      "startlist": [
-        {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Wout van Aert",
-          "slug": "wout-van-aert",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Jonas Vingegaard",
-          "slug": "jonas-vingegaard",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mathieu van der Poel",
-          "slug": "mathieu-van-der-poel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mads Pedersen",
-          "slug": "mads-pedersen",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Isaac Del Toro",
-          "slug": "isaac-del-toro",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Paul Seixas",
-          "slug": "paul-seixas",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Demi Vollering",
-          "slug": "demi-vollering",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Lotte Kopecky",
-          "slug": "lotte-kopecky",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Katarzyna Niewiadoma",
-          "slug": "katarzyna-niewiadoma",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Pauline Ferrand-Prévot",
-          "slug": "pauline-ferrand-prevot",
-          "nat": "",
-          "team": ""
-        }
-      ]
-    },
-    {
       "slug": "gp-industria-artigianato",
       "cf_slug": "gp-industria-artigianato-2026",
       "name": "GP Industria & Artigianato",
@@ -4336,6 +4341,12 @@
           "name": "António Morgado",
           "slug": "antonio-morgado",
           "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jaime Torres",
+          "slug": "jaime-torres",
+          "nat": "es",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -4513,9 +4524,9 @@
           "team": "Movistar Team (WT)"
         },
         {
-          "name": "Oliver Bleddyn",
-          "slug": "oliver-bleddyn",
-          "nat": "au",
+          "name": "Andrea Vendrame",
+          "slug": "andrea-vendrame",
+          "nat": "it",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -4525,21 +4536,9 @@
           "team": "Team Jayco AlUla (WT)"
         },
         {
-          "name": "Felix Engelhardt",
-          "slug": "felix-engelhardt",
-          "nat": "de",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
           "name": "David Gaffney",
           "slug": "david-gaffney1",
           "nat": "ie",
-          "team": "Team Jayco AlUla (WT)"
-        },
-        {
-          "name": "Ben O'Connor",
-          "slug": "ben-o-connor",
-          "nat": "au",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -4549,9 +4548,21 @@
           "team": "Team Jayco AlUla (WT)"
         },
         {
-          "name": "Andrea Vendrame",
-          "slug": "andrea-vendrame",
-          "nat": "it",
+          "name": "Oliver Bleddyn",
+          "slug": "oliver-bleddyn",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Ben O'Connor",
+          "slug": "ben-o-connor",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Felix Engelhardt",
+          "slug": "felix-engelhardt",
+          "nat": "de",
           "team": "Team Jayco AlUla (WT)"
         },
         {
@@ -4597,8 +4608,8 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
-          "name": "Christian Scaroni",
-          "slug": "christian-scaroni",
+          "name": "Davide Ballerini",
+          "slug": "davide-ballerini",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -4609,26 +4620,26 @@
           "team": "XDS Astana Team (WT)"
         },
         {
+          "name": "Clément Champoussin",
+          "slug": "clement-champoussin",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
           "name": "Sergio Higuita",
           "slug": "sergio-higuita",
           "nat": "co",
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Davide Ballerini",
-          "slug": "davide-ballerini",
+          "name": "Christian Scaroni",
+          "slug": "christian-scaroni",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
         {
           "name": "Diego Ulissi",
           "slug": "diego-ulissi",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
-          "name": "Simone Velasco",
-          "slug": "simone-velasco",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -4981,8 +4992,8 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Davide Bais",
-          "slug": "davide-bais",
+          "name": "Mattia Bais",
+          "slug": "mattia-bais",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
@@ -5014,12 +5025,6 @@
           "name": "Fernando Tercero",
           "slug": "fernando-tercero-lopez",
           "nat": "es",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Mattia Bais",
-          "slug": "mattia-bais",
-          "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -5292,7 +5297,7 @@
       "stage_type": "hilly",
       "start_town": "Larciano",
       "finish_town": "Larciano",
-      "description": "Info Startlist Results Winners 6 Sep Date 197 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 60 Giulio Pellizzari Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 813 Full startlist Win chance 1 Giulio Pellizzari 100.00% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 6 Sep Date 197 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 18 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 853 26 Romain Grégoire Groupama - FDJ United Groupama - FDJ United 845 34 Christian Scaroni XDS Astana Team XDS Astana Team 837 36 Lenny Martinez Bahrain Victorious Bahrain Victorious 834 40 Alex Aranburu Deba Cofidis Cofidis 828 42 Ion Izagirre Insausti Cofidis Cofidis 826 60 Antonio Tiberi Bahrain Victorious Bahrain Victorious 813 79 Diego Ulissi XDS Astana Team XDS Astana Team 804 82 Alexandre Delettre TotalEnergies TotalEnergies 803 94 Andrea Vendrame Team Jayco AlUla Team Jayco AlUla 799 Full startlist Win chance 1 Christian Scaroni 12.15% 2 Romain Grégoire 9.39% 3 Alex Aranburu Deba 8.17% 4 Tom Pidcock 7.63% 5 Lenny Martinez 4.35% 6 Alexandre Delettre 3.15% 7 Jordan Jegat 2.66% 8 Diego Ulissi 2.35% 9 Ion Izagirre Insausti 2.32% 10 Jan Christen 2.32% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
@@ -5345,7 +5350,9 @@
           "elevation_m": 2381,
           "stage_type": "hilly",
           "start_town": "Luxembourg",
-          "finish_town": "Luxembourg"
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 1 Luxembourg - Luxembourg (157.4km) The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race. The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176476/responsive-images/stage-1-height-profile___heightProfile_1131_800.webp"
         },
         {
           "num": 2,
@@ -5359,7 +5366,9 @@
           "elevation_m": 2298,
           "stage_type": "hilly",
           "start_town": "Differdange",
-          "finish_town": "Junglinster"
+          "finish_town": "Junglinster",
+          "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp"
         },
         {
           "num": 3,
@@ -5369,11 +5378,13 @@
           "winner_flag": "",
           "winner_nat": "",
           "top10": [],
-          "distance_km": 187.3,
+          "distance_km": 179.6,
           "elevation_m": 3272,
           "stage_type": "mountain",
           "start_town": "Wiltz",
-          "finish_town": "Diekirch"
+          "finish_town": "Diekirch",
+          "description": "Info Startlist Stages Results Winners Stage 3 Wiltz - Diekirch (179.6km) Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race. Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176480/responsive-images/stage-3-height-profile___heightProfile_1131_800.webp"
         },
         {
           "num": 4,
@@ -5387,7 +5398,9 @@
           "elevation_m": 355,
           "stage_type": "ITT",
           "start_town": "Ettelbruck",
-          "finish_town": "Ettelbruck"
+          "finish_town": "Ettelbruck",
+          "description": "Info Startlist Stages Results Winners Stage 4 Ettelbruck - Ettelbruck (20.4km) Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role. Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176481/responsive-images/stage-4-height-profile___heightProfile_1131_800.webp"
         },
         {
           "num": 5,
@@ -5401,7 +5414,9 @@
           "elevation_m": 3064,
           "stage_type": "mountain",
           "start_town": "Mersch",
-          "finish_town": "Luxembourg"
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp"
         }
       ],
       "startlist": []
@@ -5422,7 +5437,8 @@
       "elevation_m": 2679,
       "stage_type": "mountain",
       "start_town": "Seraing",
-      "finish_town": "Namur"
+      "finish_town": "Namur",
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 122 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 792 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "super-8-classic",
@@ -5436,10 +5452,11 @@
       "total_stages": 1,
       "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
       "startlist": [],
-      "distance_km": 198.6,
+      "distance_km": 199.4,
       "stage_type": "flat",
       "start_town": "Brakel",
-      "finish_town": "Haacht"
+      "finish_town": "Haacht",
+      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 149 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 786 180 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 182 Tim Merlier Soudal - Quick Step Soudal - Quick Step 777 283 Davide Ballerini XDS Astana Team XDS Astana Team 757 285 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 757 464 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 730 536 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 721 679 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3037 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 44.49% 2 Tim Merlier 26.95% 3 Matteo Trentin 9.66% 4 Biniam Girmay Hailu 9.49% 5 Davide Ballerini 4.19% 6 Filippo Baroncini 2.01% 7 Florian Sénéchal 1.44% 8 Tiesj Benoot 1.42% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "cro-race",
@@ -5578,7 +5595,8 @@
           "distance_km": 193.0,
           "stage_type": "flat",
           "start_town": "Shah Alam",
-          "finish_town": "Kampar"
+          "finish_town": "Kampar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176660/responsive-images/stage-1-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 2,
@@ -5591,7 +5609,8 @@
           "distance_km": 145.6,
           "stage_type": "flat",
           "start_town": "Taiping",
-          "finish_town": "Gunung Jerai"
+          "finish_town": "Gunung Jerai",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176663/responsive-images/stage-2-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 3,
@@ -5604,7 +5623,8 @@
           "distance_km": 189.9,
           "stage_type": "flat",
           "start_town": "Sungai Petani",
-          "finish_town": "Kuala Kangsar"
+          "finish_town": "Kuala Kangsar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176665/responsive-images/stage-3-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 4,
@@ -5614,10 +5634,11 @@
           "winner_flag": "",
           "winner_nat": "",
           "top10": [],
-          "distance_km": 140.1,
+          "distance_km": 142.3,
           "stage_type": "flat",
           "start_town": "Tambun",
-          "finish_town": "Cameron Highlands"
+          "finish_town": "Cameron Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176667/responsive-images/stage-4-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 5,
@@ -5630,7 +5651,8 @@
           "distance_km": 125.7,
           "stage_type": "flat",
           "start_town": "Tapah",
-          "finish_town": "Genting Highlands"
+          "finish_town": "Genting Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176668/responsive-images/stage-5-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 6,
@@ -5643,7 +5665,8 @@
           "distance_km": 121.3,
           "stage_type": "flat",
           "start_town": "Pandan Indah",
-          "finish_town": "Rembau"
+          "finish_town": "Rembau",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176671/responsive-images/stage-6-height-profile___heightProfile_1200_767.webp"
         },
         {
           "num": 7,
@@ -5656,7 +5679,8 @@
           "distance_km": 159.1,
           "stage_type": "flat",
           "start_town": "Melaka",
-          "finish_town": "Batu Pahat"
+          "finish_town": "Batu Pahat",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176673/responsive-images/stage-7-height-profile___heightProfile_1200_767.webp"
         }
       ],
       "startlist": []
@@ -133282,79 +133306,79 @@
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 6
+      "days_away": 5
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 31
+      "days_away": 30
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 37
+      "days_away": 36
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 44
+      "days_away": 43
     }
   ]
 }

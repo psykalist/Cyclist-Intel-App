@@ -1,6 +1,34 @@
 {
-  "generated_at": "2026-09-05T13:41:02.414072+00:00",
+  "generated_at": "2026-09-05T18:43:13.392202+00:00",
   "entries": [
+    {
+      "id": "722d544e8b74",
+      "timestamp": "2026-09-05T18:43:13.383250+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 14 Vuelta a España: 🇩🇪 Marco Brenner wins"
+    },
+    {
+      "id": "2a19273b0a80",
+      "timestamp": "2026-09-05T18:43:13.383250+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Lloyds Tour of Britain Men: 🇳🇱 Cees Bol wins"
+    },
+    {
+      "id": "8f0d2c81ddec",
+      "timestamp": "2026-09-05T18:43:13.383250+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Lloyds Tour of Britain Men GC: 🇧🇪 Tim Wellens leads"
+    },
+    {
+      "id": "546fdc31a81e",
+      "timestamp": "2026-09-05T18:43:13.383250+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "GP Industria & Artigianato startlist: Diego Nembrini, Gotzon Martín, Jon Agirre (+3 more) added"
+    },
     {
       "id": "e99b954fdc70",
       "timestamp": "2026-09-05T13:41:02.408549+00:00",
@@ -392,27 +420,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Vuelta a España Youth: 🇬🇧 Joshua Tarling leads"
-    },
-    {
-      "id": "7b4aca60e3ff",
-      "timestamp": "2026-08-22T17:15:39.981663+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Renewi Tour: 🇧🇪 Jasper Philipsen wins"
-    },
-    {
-      "id": "9aac16748f60",
-      "timestamp": "2026-08-22T17:15:39.981663+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Lidl Deutschland Tour: 🇮🇹 Giulio Pellizzari wins"
-    },
-    {
-      "id": "f4ce37a3a4f3",
-      "timestamp": "2026-08-22T17:15:39.981663+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Lidl Deutschland Tour GC: 🇲🇽 Isaac Del Toro Romero leads"
     }
   ]
 }

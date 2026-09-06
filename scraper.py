@@ -1620,6 +1620,22 @@ def main_results_only():
                 stages.append(stage_obj)
 
             existing = stage_obj.get("top10") or []
+            # A cached result that fails validation is a parse artefact:
+            # CyclingFlash sometimes stitches several mini-tables (intermediate
+            # sprint / KOM points) into one, so parse_result_rows() returns a
+            # "1,2,3,1,2,3..." block whose ranks reset. That block has a full 10
+            # rows with time gaps, so _result_incomplete() calls it complete and
+            # it is frozen forever -- this is what pinned Van Aert as the Vuelta
+            # 2026 stage-12 winner. Drop it (and its bogus winner) so the stage
+            # is re-fetched and corrected once the source serves a clean table.
+            if existing and not validate_result_rows(existing)[0]:
+                print(f"      Stage {n}: cached result failed validation -- "
+                      f"discarding parse artefact and re-fetching", flush=True)
+                existing = []
+                stage_obj["top10"] = []
+                stage_obj["winner"] = None
+                stage_obj["winner_flag"] = ""
+                stage_obj["winner_nat"] = ""
             # A stage scraped before non-finisher support existed has no
             # "non_finishers" key at all — re-pull it once so abandons backfill
             # instead of only appearing on stages raced from now on.
@@ -2196,14 +2212,25 @@ def main():
                 # Re-pull a cached stage that predates non-finisher support, so
                 # abandons backfill across the season rather than only appearing
                 # on stages raced after this change.
-                if n in cached_stages_results and "non_finishers" in cached_stages_results[n]:
+                prev = cached_stages_results.get(n) or {}
+                # A cached result that fails validation is a parse artefact
+                # (stitched mini-tables with resetting ranks -- what showed Van
+                # Aert as the Vuelta 2026 stage-12 winner). Never trust it: drop
+                # it so the stage is re-fetched and corrected once the source
+                # serves a clean table.
+                prev_bad = bool(prev.get("top10")) and not validate_result_rows(prev["top10"])[0]
+                if prev_bad:
+                    print(f"      Stage {n}: cached result failed validation -- "
+                          f"re-fetching (parse artefact)", flush=True)
+                    prev = {}
+                if (not prev_bad and n in cached_stages_results
+                        and "non_finishers" in cached_stages_results[n]):
                     stage_obj = dict(cached_stages_results[n])
                     w = stage_obj.get("winner", "cached")
                     print(f"      Stage {n}: cached ({w})", flush=True)
                 else:
                     rows, winner, height_profile, route_img, nonfin = scrape_stage(slug, n)
                     time.sleep(DELAY)
-                    prev = cached_stages_results.get(n) or {}
                     stage_obj = {
                         "num":              n,
                         "label":            f"Stage {n}",

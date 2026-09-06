@@ -7,6 +7,18 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v152 — 2026-09-06 — Merge Live/Upcoming/Recent nav + fix frozen bad stage results
+
+**1. One "Races" nav tab (`index.html`).** The bottom bar had ten buttons; Live, Upcoming and Recent are now a single 🏁 **Races** button with a segmented Live / Upcoming / Recent sub-nav underneath the header, freeing space in the bottom bar (ten → eight buttons). The three `sec-live`/`sec-upcoming`/`sec-recent` sections and their render code are unchanged — only `showSec()` was reworked to (a) resolve the owning nav button (the three race sub-tabs share `nav-races`, every other tab keeps its own `nav-<name>`) and (b) show + highlight the sub-nav on race tabs. New `showRaces()` opens the Races tab on whichever bucket has content (Live → Upcoming → Recent), or stays on the current sub-tab. The live-dot indicator moved onto the Races button (same `id`, still toggled by `renderLive`). The on-load default-tab call still works (it passes a now-absent button element, which the reworked `showSec` ignores).
+
+**2. Frozen bad stage results now self-heal (`scraper.py`).** The Vuelta 2026 stage-12 winner showed as Wout van Aert (a duplicate of stage 13); the real winner is Jakob Omrzel. Root cause: CyclingFlash briefly served stage 12 as stitched mini-tables (intermediate-sprint/KOM widgets), so `parse_result_rows()` produced a bogus "1,2,3,1,2,3…" block with resetting ranks. `validate_result_rows()` (added earlier) rejects that at scrape time, but the garbage had already been cached with a full 10 rows + time gaps, so `_result_incomplete()` judged it "complete" and it was frozen forever — never re-scraped or re-validated. Fix: both stage loops (`main_results_only()` and `main()`) now run `validate_result_rows()` on the **cached** result too; a cached result that fails validation is discarded (winner + top10 cleared) and re-fetched, and the "never downgrade" fallback no longer preserves the artefact. Since CyclingFlash now serves a clean stage-12 table, the next scrape corrects it to Omrzel. Valid cached results (e.g. stages 11, 13) are untouched.
+
+- **Verified:** app JS `node --check` (both inline blocks) + brace/paren balance 0; `showSec`/`showRaces` exercised under a DOM mock (nav-races active + correct sub-chip on race tabs, sub-nav hidden on other tabs, `showRaces` picks the populated bucket); `scraper.py` `py_compile`; `validate_result_rows` confirmed to reject the live stage-12 rows (rank reset) while passing stages 11 & 13; stage-12 ground truth cross-checked against CyclingFlash and race reports (Omrzel, Bahrain-Victorious, Calar Alto).
+- **Note:** `data.json` is CI-owned, so the live stage-12 correction lands on the next `scrape.yml` run after this push (or a manual Actions trigger), not from the source push itself.
+- Version v151→v152. `index.html`, `scraper.py`.
+
+---
+
 ## v151 — 2026-09-04 — Self-learning race database + bibs/profiles for every race
 
 Big one. The app now remembers every race it has seen and reaches out for each edition's data automatically, instead of bibs/profiles being wired up one Grand Tour at a time. Prompted by the Tour of Britain showing no bib numbers and no stage profiles until after it finished.

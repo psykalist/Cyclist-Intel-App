@@ -173,6 +173,39 @@ header h1 span { color: var(--accent); }
 .script-meta a { color: var(--upcoming); text-decoration: none; }
 
 /* ── Filter bar ── */
+.races-subnav {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px 4px;
+  background: var(--surface);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.races-subnav::-webkit-scrollbar { display: none; }
+.subnav-chip {
+  flex: 1 1 0;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.subnav-chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.subnav-chip .sub-ic { font-size: 1rem; }
 .filter-bar {
   display: flex;
   gap: 6px;
@@ -1270,6 +1303,12 @@ header h1 span { color: var(--accent); }
   </div>
 </header>
 
+<div class="races-subnav" id="races-subnav" style="display:none">
+  <button class="subnav-chip" id="subnav-live" onclick="showSec('live')"><span class="sub-ic">🔴</span>Live</button>
+  <button class="subnav-chip" id="subnav-upcoming" onclick="showSec('upcoming')"><span class="sub-ic">📅</span>Upcoming</button>
+  <button class="subnav-chip" id="subnav-recent" onclick="showSec('recent')"><span class="sub-ic">✅</span>Recent</button>
+</div>
+
 <div class="filter-bar" id="filter-bar">
   <span class="filter-chip active" onclick="setFilter('ALL',this)">All</span>
   <span class="filter-chip race-chip" onclick="setFilter('GRANDTOURS',this)">Grand Tours</span>
@@ -1297,18 +1336,12 @@ header h1 span { color: var(--accent); }
 </main>
 
 <nav class="bottom-nav">
-  <button class="nav-btn" id="nav-live" onclick="showSec('live',this)">
-    <span class="nav-icon">🔴<span class="live-dot" id="live-dot" style="display:none"></span></span>
-    <span>Live</span>
+  <button class="nav-btn" id="nav-races" onclick="showRaces()">
+    <span class="nav-icon">🏁<span class="live-dot" id="live-dot" style="display:none"></span></span>
+    <span>Races</span>
   </button>
   <button class="nav-btn" id="nav-groups" onclick="showSec('groups',this)">
     <span class="nav-icon">🚴</span><span>Groups</span>
-  </button>
-  <button class="nav-btn" id="nav-upcoming" onclick="showSec('upcoming',this)">
-    <span class="nav-icon">📅</span><span>Upcoming</span>
-  </button>
-  <button class="nav-btn" id="nav-recent" onclick="showSec('recent',this)">
-    <span class="nav-icon">✅</span><span>Recent</span>
   </button>
   <button class="nav-btn" id="nav-teams" onclick="showSec('teams',this)">
     <span class="nav-icon">👕</span><span>Teams</span>
@@ -1420,12 +1453,35 @@ function daysUntil(iso) {
 // ── Tab switching ──────────────────────────────────────────────────────────────
 
 let currentTab = 'live';
+const RACE_SUBTABS = ['live', 'upcoming', 'recent'];
+
+// Live / Upcoming / Recent now share ONE "Races" nav button with a segmented
+// sub-nav, to free up space in the bottom bar.
+function showRaces() {
+  let target = currentTab;
+  if (!RACE_SUBTABS.includes(target)) {
+    const d = (typeof appData !== 'undefined' && appData) ? appData : {};
+    target = (d.live && d.live.length) ? 'live'
+           : (d.upcoming && d.upcoming.length) ? 'upcoming'
+           : 'recent';
+  }
+  showSec(target);
+}
 
 function showSec(name, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('sec-' + name).classList.add('active');
-  btn.classList.add('active');
+  // The three race sub-tabs share one "Races" nav button; every other tab owns
+  // its own nav-<name> button.
+  const isRaceSub = RACE_SUBTABS.includes(name);
+  const navBtn = document.getElementById(isRaceSub ? 'nav-races' : ('nav-' + name));
+  if (navBtn) navBtn.classList.add('active');
+  // Segmented Live/Upcoming/Recent control: only on race tabs; highlight active.
+  const subnav = document.getElementById('races-subnav');
+  if (subnav) subnav.style.display = isRaceSub ? '' : 'none';
+  document.querySelectorAll('#races-subnav .subnav-chip').forEach(c =>
+    c.classList.toggle('active', c.id === ('subnav-' + name)));
   currentTab = name;
   // Hide filter bars on non-race tabs
   const isFantasy   = name === 'fantasy';
@@ -4497,7 +4553,7 @@ window.addEventListener('appinstalled', () => {
   document.getElementById('install-btn').style.display = 'none';
 });
 
-const APP_VERSION = 'v151';
+const APP_VERSION = 'v152';
 document.getElementById('app-version').textContent = APP_VERSION;
 
 if ('serviceWorker' in navigator) {

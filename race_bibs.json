@@ -6,7 +6,7 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-05",
+   "fetched_at": "2026-09-06",
    "matched": 77,
    "parsed": 114,
    "bibs": {
@@ -95,7 +95,7 @@
    "name": "Lloyds Tour of Britain Men",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-of-britain/2026/startlist",
-   "fetched_at": "2026-09-05",
+   "fetched_at": "2026-09-06",
    "matched": 60,
    "parsed": 106,
    "bibs": {
@@ -167,7 +167,7 @@
    "name": "Vuelta a España",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/startlist",
-   "fetched_at": "2026-09-05",
+   "fetched_at": "2026-09-06",
    "matched": 175,
    "parsed": 183,
    "bibs": {
@@ -349,5 +349,5 @@
    }
   }
  },
- "generated_at": "2026-09-05"
+ "generated_at": "2026-09-06"
 }

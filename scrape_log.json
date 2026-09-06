@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-09-05 20:40 UTC",
-  "run_at_iso": "2026-09-05T18:42:07.337417+00:00",
+  "run_at": "2026-09-06 15:50 UTC",
+  "run_at_iso": "2026-09-06T13:53:10.229113+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 12,
+      "stages_completed_before": 13,
       "stages_completed_after": 14,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         3
       ],
@@ -21,8 +21,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-05 20:40 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 17.2,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -33,22 +33,11 @@
       "slug": "lloyds-tour-of-britain-men-2026",
       "name": "Lloyds Tour of Britain Men",
       "total_stages": 5,
-      "stages_completed_before": 3,
-      "stages_completed_after": 4,
+      "stages_completed_before": 4,
+      "stages_completed_after": 5,
       "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 5,
-        "url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026/result/stage-5",
-        "fetch_ok": true,
-        "response_bytes": 248504,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-09-05 20:40 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
-        "possible_parser_drift": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
@@ -69,10 +58,23 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-05 15:37 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 3.1,
+        "stall_attempts": 3,
+        "stall_hours": 22.2,
         "possible_parser_drift": false
       },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "gp-industria-artigianato-2026",
+      "name": "GP Industria & Artigianato",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

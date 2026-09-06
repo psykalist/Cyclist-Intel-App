@@ -7,6 +7,17 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v153 — 2026-09-06 — Detect cancelled one-day races (Maryland Cycling Classic)
+
+The Maryland Cycling Classic 2026 was cancelled, but the app showed it as a live one-day race with no results. Root cause: `main()` already skips races whose name starts with `CANCELLED:` (CyclingFlash's prefix), but that prefix lives in the page `<title>` and a header status badge — **not** in the `og:title` that `parse_race_info()` reads for the name, which stays clean ("Maryland Cycling Classic"). So the skip never fired and the race was scraped as a normal live event; its result page has no table (nothing to fetch), leaving an empty live card.
+
+- **Fix (`scraper.py`).** `parse_race_info()` now reads the page `<title>` and sets `info["cancelled"]` when it starts with "CANCELLED"/"CANCELED". `main()`'s skip honours that flag in addition to the name-prefix check, so a cancelled race is dropped from the feed even when only its `<title>`/badge is marked. Narrow by design (anchored `re.match` on the title start) so a race that merely mentions a cancellation elsewhere is unaffected — no cascade risk (single race, not a stage loop).
+- **Verified:** `py_compile`; `parse_race_info` unit-tested — "CANCELLED: Maryland Cycling Classic 2026" and "Canceled: …" → `cancelled=True`, normal titles ("… Men Elite", "Tour de France 2026") → `False`; Maryland's cancellation cross-checked on CyclingFlash (page title `CANCELLED: Maryland Cycling Classic 2026`, "canceled again in 2026" news item).
+- **Note:** the cancelled-race skip lives in the **full** scrape (`main()` → `update-data.yml`), which is **manual-dispatch only** on the self-hosted runner — so Maryland clears from the feed on the next full-scrape run (Actions → *update-data* → Run workflow), not from the twice-daily results-only cron. (The v152 Vuelta stage-12 self-heal is in the results-only path and lands on the next `scrape.yml` cron at 11:00/17:00 UTC.)
+- Version v152→v153. `index.html` (version only), `scraper.py`.
+
+---
+
 ## v152 — 2026-09-06 — Merge Live/Upcoming/Recent nav + fix frozen bad stage results
 
 **1. One "Races" nav tab (`index.html`).** The bottom bar had ten buttons; Live, Upcoming and Recent are now a single 🏁 **Races** button with a segmented Live / Upcoming / Recent sub-nav underneath the header, freeing space in the bottom bar (ten → eight buttons). The three `sec-live`/`sec-upcoming`/`sec-recent` sections and their render code are unchanged — only `showSec()` was reworked to (a) resolve the owning nav button (the three race sub-tabs share `nav-races`, every other tab keeps its own `nav-<name>`) and (b) show + highlight the sub-nav on race tabs. New `showRaces()` opens the Races tab on whichever bucket has content (Live → Upcoming → Recent), or stays on the current sub-tab. The live-dot indicator moved onto the Races button (same `id`, still toggled by `renderLive`). The on-load default-tab call still works (it passes a now-absent button element, which the reworked `showSec` ignores).

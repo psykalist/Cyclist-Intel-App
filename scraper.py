@@ -337,6 +337,15 @@ def parse_race_info(slug, html, debug=False):
         name = re.sub(r'\s+20\d\d\s+(Men|Women)\s+.*$', '', raw).strip()
         info["name"] = name
 
+    # Cancellation flag. CyclingFlash prefixes a cancelled race's page <title>
+    # with "CANCELLED:" and shows a "Cancelled" status badge, but the og:title
+    # used for the name above stays clean -- so the name-prefix skip in main()
+    # alone misses cancelled races (e.g. Maryland Cycling Classic 2026). Flag it
+    # from the <title> so main() can skip it.
+    _title_m = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
+    _title_txt = strip_tags(_title_m.group(1)).strip() if _title_m else ""
+    info["cancelled"] = bool(re.match(r'cancell?ed\b', _title_txt, re.IGNORECASE))
+
     # Dates — Method 1: JSON-LD SportsEvent block (most reliable).
     # CyclingFlash embeds a <script type="application/ld+json"> with clean ISO dates.
     # The HTML date cells use <span> tags which break plain regex.
@@ -2109,8 +2118,12 @@ def main():
             print("    [skip] Could not parse race name", flush=True)
             continue
 
-        # Skip cancelled races (CyclingFlash prefixes name with "CANCELLED:")
-        if info["name"].upper().startswith("CANCELLED"):
+        # Skip cancelled races. CyclingFlash marks these with a "CANCELLED:"
+        # prefix, but usually only in the page <title> / a header badge -- NOT in
+        # the og:title the name comes from -- so also honour the cancelled flag
+        # parse_race_info() sets from the <title> (e.g. Maryland Cycling Classic
+        # 2026, whose og:title name stays clean).
+        if info["name"].upper().startswith("CANCELLED") or info.get("cancelled"):
             print(f"    [skip] Cancelled race", flush=True)
             continue
 

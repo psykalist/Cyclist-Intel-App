@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-07 18:13 UTC",
-  "run_at_iso": "2026-09-07T16:14:54.792700+00:00",
+  "run_at": "2026-09-07 22:16 UTC",
+  "run_at_iso": "2026-09-07T20:18:18.051099+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -21,8 +21,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-06 20:44 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 19.5,
+        "stall_attempts": 3,
+        "stall_hours": 23.5,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -45,8 +45,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-05 15:37 UTC",
-        "stall_attempts": 5,
-        "stall_hours": 48.6,
+        "stall_attempts": 6,
+        "stall_hours": 52.7,
         "possible_parser_drift": true
       },
       "expected_rows": 10,

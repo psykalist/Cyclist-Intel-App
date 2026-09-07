@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-07T10:49:41.825190+00:00",
+  "updated_at": "2026-09-07T16:16:49.845112+00:00",
   "source": "ci",
-  "overall": "warning",
-  "errors": [],
-  "warnings": [
-    "data.json is 16h old (a live race is running) -- consider running scraper.py"
+  "overall": "error",
+  "errors": [
+    "scrape_log.json: possible PARSER DRIFT on maryland-cycling-classic-2026 stage 1 -- page fetched fine (186716 bytes) but no results table matched for 5 consecutive runs over 48.6h (since 2026-09-05 15:37 UTC). Site markup may have changed."
   ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 4004,
     "data_upcoming": 20,
-    "data_recent": 73,
+    "data_recent": 75,
     "data_teams": 33,
     "rider_profiles": 2689,
-    "live_races": 4,
-    "scraped_at": "2026-09-06T18:46:20.955385+00:00",
-    "data_age_hours": 16.1,
+    "live_races": 2,
+    "scraped_at": "2026-09-07T16:14:54.793492+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-06 20:44 UTC",
+    "scrape_log_run_at": "2026-09-07 18:13 UTC",
     "rider_roster": 1346,
     "rider_missing_profile": 101,
     "rider_missing_palmares": 922

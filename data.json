@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-06T18:46:20.955385+00:00",
-  "scraped_at_human": "06 Sep 2026 18:46 UTC",
+  "scraped_at": "2026-09-07T16:14:54.793492+00:00",
+  "scraped_at_human": "07 Sep 2026 16:14 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -3417,1023 +3417,6 @@
       ]
     },
     {
-      "slug": "lloyds-tour-of-britain-men",
-      "cf_slug": "lloyds-tour-of-britain-men-2026",
-      "name": "Lloyds Tour of Britain Men",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "live",
-      "start_date": "2026-09-02",
-      "end_date": "2026-09-06",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026",
-      "stages_completed": 5,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-1",
-          "winner": "Lewis Askey",
-          "winner_flag": "🇬🇧",
-          "winner_nat": "GB",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Lewis Askey",
-              "rider_url": "/profile/lewis-askey",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "04:02:44"
-            },
-            {
-              "rank": 2,
-              "name": "Filippo Ganna",
-              "rider_url": "/profile/filippo-ganna",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 02"
-            },
-            {
-              "rank": 3,
-              "name": "Tim Wellens",
-              "rider_url": "/profile/tim-wellens",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 02"
-            },
-            {
-              "rank": 4,
-              "name": "Jasper Stuyven",
-              "rider_url": "/profile/jasper-stuyven",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 09"
-            },
-            {
-              "rank": 5,
-              "name": "Daan Hoole",
-              "rider_url": "/profile/daan-hoole",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 09"
-            },
-            {
-              "rank": 6,
-              "name": "Matteo Trentin",
-              "rider_url": "/profile/matteo-trentin",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 09"
-            },
-            {
-              "rank": 7,
-              "name": "Florian Vermeersch",
-              "rider_url": "/profile/florian-vermeersch",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 11"
-            },
-            {
-              "rank": 8,
-              "name": "Elliot Rowe",
-              "rider_url": "/profile/elliot-rowe",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "+ 19"
-            },
-            {
-              "rank": 9,
-              "name": "Rick Pluimers",
-              "rider_url": "/profile/rick-pluimers",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 19"
-            },
-            {
-              "rank": 10,
-              "name": "Paul Wright",
-              "rider_url": "/profile/paul-wright",
-              "team": "",
-              "nat_code": "NZ",
-              "flag": "🇳🇿",
-              "time_gap": "+ 26"
-            }
-          ],
-          "date_str": "Wednesday 02 September",
-          "start_town": "Lincoln",
-          "finish_town": "Lincoln",
-          "distance_km": 182.5,
-          "elevation_m": 1393,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "non_finishers": [],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176063/responsive-images/stage-1-height-profile___heightProfile_1200_283.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-2",
-          "winner": "Tim Merlier",
-          "winner_flag": "🇧🇪",
-          "winner_nat": "BE",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Tim Merlier",
-              "rider_url": "/profile/tim-merlier",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 2,
-              "name": "Olav Kooij",
-              "rider_url": "/profile/olav-kooij",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 3,
-              "name": "Sam Bennett",
-              "rider_url": "/profile/sam-bennett",
-              "team": "",
-              "nat_code": "IE",
-              "flag": "🇮🇪",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 4,
-              "name": "Matteo Moschetti",
-              "rider_url": "/profile/matteo-moschetti",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 5,
-              "name": "Ethan Vernon",
-              "rider_url": "/profile/ethan-vernon",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 6,
-              "name": "Riley Pickrell",
-              "rider_url": "/profile/riley-pickrell",
-              "team": "",
-              "nat_code": "CA",
-              "flag": "🇨🇦",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 7,
-              "name": "Rick Pluimers",
-              "rider_url": "/profile/rick-pluimers",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 8,
-              "name": "Matteo Trentin",
-              "rider_url": "/profile/matteo-trentin",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 9,
-              "name": "Jake Stewart",
-              "rider_url": "/profile/jake-stewart",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "03:53:55"
-            },
-            {
-              "rank": 10,
-              "name": "Brody Mcdonald",
-              "rider_url": "/profile/brody-mcdonald",
-              "team": "",
-              "nat_code": "US",
-              "flag": "🇺🇸",
-              "time_gap": "03:53:55"
-            }
-          ],
-          "date_str": "Thursday 03 September",
-          "start_town": "Boston",
-          "finish_town": "Skegness",
-          "distance_km": 180.2,
-          "elevation_m": 873,
-          "start_time": "",
-          "stage_type": "flat",
-          "description": "",
-          "non_finishers": [
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Vilmer Ekman",
-              "rider_url": "/profile/vilmer-ekman",
-              "team": "Lucky Sport Cycling Team",
-              "nat_code": "SE",
-              "flag": "🇸🇪"
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176064/responsive-images/stage-2-height-profile___heightProfile_1200_290.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-3",
-          "winner": "Olav Kooij",
-          "winner_flag": "🇳🇱",
-          "winner_nat": "NL",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Olav Kooij",
-              "rider_url": "/profile/olav-kooij",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 2,
-              "name": "Tim Merlier",
-              "rider_url": "/profile/tim-merlier",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 3,
-              "name": "Axel Källberg",
-              "rider_url": "/profile/axel-kallberg",
-              "team": "",
-              "nat_code": "FI",
-              "flag": "🇫🇮",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 4,
-              "name": "Timothy Dupont",
-              "rider_url": "/profile/timothy-dupont",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 5,
-              "name": "Matteo Moschetti",
-              "rider_url": "/profile/matteo-moschetti",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 6,
-              "name": "Arne Santy",
-              "rider_url": "/profile/arne-santy",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 7,
-              "name": "Ethan Vernon",
-              "rider_url": "/profile/ethan-vernon",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 8,
-              "name": "Boas Lysgaard",
-              "rider_url": "/profile/boas-lysgaard",
-              "team": "",
-              "nat_code": "DK",
-              "flag": "🇩🇰",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 9,
-              "name": "Axel Bouquet",
-              "rider_url": "/profile/axel-bouquet",
-              "team": "",
-              "nat_code": "FR",
-              "flag": "🇫🇷",
-              "time_gap": "04:04:32"
-            },
-            {
-              "rank": 10,
-              "name": "Brody Mcdonald",
-              "rider_url": "/profile/brody-mcdonald",
-              "team": "",
-              "nat_code": "US",
-              "flag": "🇺🇸",
-              "time_gap": "04:04:32"
-            }
-          ],
-          "date_str": "Friday 04 September",
-          "start_town": "Hull",
-          "finish_town": "Beverley",
-          "distance_km": 194.1,
-          "elevation_m": 1612,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "",
-          "non_finishers": [
-            {
-              "status": "DNS",
-              "status_label": "Did not start — withdrew before the stage began.",
-              "name": "Yannis Voisard",
-              "rider_url": "/profile/yannis-voisard",
-              "team": "Tudor Pro Cycling Team",
-              "nat_code": "CH",
-              "flag": "🇨🇭"
-            }
-          ],
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176065/responsive-images/stage-3-height-profile___heightProfile_1200_283.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-4",
-          "winner": "Cees Bol",
-          "winner_flag": "🇳🇱",
-          "winner_nat": "NL",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Cees Bol",
-              "rider_url": "/profile/cees-bol",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "04:00:39"
-            },
-            {
-              "rank": 2,
-              "name": "Tim Wellens",
-              "rider_url": "/profile/tim-wellens",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 03"
-            },
-            {
-              "rank": 3,
-              "name": "Fabio Christen",
-              "rider_url": "/profile/fabio-christen",
-              "team": "",
-              "nat_code": "CH",
-              "flag": "🇨🇭",
-              "time_gap": "+ 21"
-            },
-            {
-              "rank": 4,
-              "name": "Filippo Ganna",
-              "rider_url": "/profile/filippo-ganna",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 5,
-              "name": "Lewis Askey",
-              "rider_url": "/profile/lewis-askey",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 6,
-              "name": "Rick Pluimers",
-              "rider_url": "/profile/rick-pluimers",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 7,
-              "name": "Axel Källberg",
-              "rider_url": "/profile/axel-kallberg",
-              "team": "",
-              "nat_code": "FI",
-              "flag": "🇫🇮",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 8,
-              "name": "Matteo Trentin",
-              "rider_url": "/profile/matteo-trentin",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 9,
-              "name": "Elliot Rowe",
-              "rider_url": "/profile/elliot-rowe",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "+ 30"
-            },
-            {
-              "rank": 10,
-              "name": "Jasper Stuyven",
-              "rider_url": "/profile/jasper-stuyven",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 30"
-            }
-          ],
-          "date_str": "Saturday 05 September",
-          "start_town": "Helmsley",
-          "finish_town": "Leyburn",
-          "distance_km": 165.8,
-          "elevation_m": 2699,
-          "start_time": "",
-          "stage_type": "mountain",
-          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile. Date Saturday 05 September Start Helmsley Finish Leyburn Distance 165.8 km Elevation gain 2699 m Start time 12:00 Expected finish 15:47-16:34 Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176066/responsive-images/stage-4-height-profile___heightProfile_1200_283.webp",
-          "non_finishers": [
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Cian Keogh",
-              "rider_url": "/profile/cian-keogh",
-              "team": "APS Pro Cycling by Team Cadence Cyclery",
-              "nat_code": "IE",
-              "flag": "🇮🇪"
-            }
-          ]
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-5",
-          "winner": "Nils Politt",
-          "winner_flag": "🇩🇪",
-          "winner_nat": "DE",
-          "top10": [
-            {
-              "rank": 1,
-              "name": "Nils Politt",
-              "rider_url": "/profile/nils-politt",
-              "team": "",
-              "nat_code": "DE",
-              "flag": "🇩🇪",
-              "time_gap": "03:33:28"
-            },
-            {
-              "rank": 2,
-              "name": "Florian Vermeersch",
-              "rider_url": "/profile/florian-vermeersch",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 12"
-            },
-            {
-              "rank": 3,
-              "name": "Filippo Ganna",
-              "rider_url": "/profile/filippo-ganna",
-              "team": "",
-              "nat_code": "IT",
-              "flag": "🇮🇹",
-              "time_gap": "+ 18"
-            },
-            {
-              "rank": 4,
-              "name": "Benoît Cosnefroy",
-              "rider_url": "/profile/benoit-cosnefroy",
-              "team": "",
-              "nat_code": "FR",
-              "flag": "🇫🇷",
-              "time_gap": "+ 18"
-            },
-            {
-              "rank": 5,
-              "name": "Marcus Sander Hansen",
-              "rider_url": "/profile/marcus-sander-hansen",
-              "team": "",
-              "nat_code": "DK",
-              "flag": "🇩🇰",
-              "time_gap": "+ 18"
-            },
-            {
-              "rank": 6,
-              "name": "Ben Wiggins",
-              "rider_url": "/profile/ben-wiggins",
-              "team": "",
-              "nat_code": "GB",
-              "flag": "🇬🇧",
-              "time_gap": "+ 18"
-            },
-            {
-              "rank": 7,
-              "name": "Mikkel Bjerg",
-              "rider_url": "/profile/mikkel-bjerg",
-              "team": "",
-              "nat_code": "DK",
-              "flag": "🇩🇰",
-              "time_gap": "+ 18"
-            },
-            {
-              "rank": 8,
-              "name": "Tim Wellens",
-              "rider_url": "/profile/tim-wellens",
-              "team": "",
-              "nat_code": "BE",
-              "flag": "🇧🇪",
-              "time_gap": "+ 21"
-            },
-            {
-              "rank": 9,
-              "name": "Rick Pluimers",
-              "rider_url": "/profile/rick-pluimers",
-              "team": "",
-              "nat_code": "NL",
-              "flag": "🇳🇱",
-              "time_gap": "+ 40"
-            },
-            {
-              "rank": 10,
-              "name": "Artem Shmidt",
-              "rider_url": "/profile/artem-shmidt",
-              "team": "",
-              "nat_code": "US",
-              "flag": "🇺🇸",
-              "time_gap": "+ 40"
-            }
-          ],
-          "date_str": "Sunday 06 September",
-          "start_town": "Earlston",
-          "finish_town": "Earlston",
-          "distance_km": 156.1,
-          "elevation_m": 2236,
-          "start_time": "",
-          "stage_type": "hilly",
-          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile. Date Sunday 06 September Start Earlston Finish Earlston Distance 156.1 km Elevation gain 2236 m Start time 12:00 Expected finish 15:35-16:20 Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176067/responsive-images/stage-5-height-profile___heightProfile_1200_283.webp",
-          "non_finishers": [
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Andrew Lydic",
-              "rider_url": "/profile/andrew-lydic",
-              "team": "APS Pro Cycling by Team Cadence Cyclery",
-              "nat_code": "US",
-              "flag": "🇺🇸"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Kim Alexander Heiduk",
-              "rider_url": "/profile/kim-alexander-heiduk",
-              "team": "Netcompany INEOS",
-              "nat_code": "DE",
-              "flag": "🇩🇪"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Erik Fetter",
-              "rider_url": "/profile/erik-fetter",
-              "team": "Team United Shipping",
-              "nat_code": "HU",
-              "flag": "🇭🇺"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Matt Walls",
-              "rider_url": "/profile/matt-walls",
-              "team": "Team Storck - MRW Bau",
-              "nat_code": "GB",
-              "flag": "🇬🇧"
-            },
-            {
-              "status": "DNF",
-              "status_label": "Did not finish — abandoned during the stage.",
-              "name": "Jakob Neumann",
-              "rider_url": "/profile/jakob-neumann",
-              "team": "Team Storck - MRW Bau",
-              "nat_code": "DE",
-              "flag": "🇩🇪"
-            }
-          ]
-        }
-      ],
-      "startlist": [],
-      "last_stage_winner": "Nils Politt",
-      "last_stage_winner_flag": "🇩🇪",
-      "last_stage_num": 5,
-      "gc_leader": "🇧🇪 Tim Wellens",
-      "gc_top10": [
-        {
-          "rank": 1,
-          "name": "Tim Wellens",
-          "rider_url": "/profile/tim-wellens",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "19:35:32"
-        },
-        {
-          "rank": 2,
-          "name": "Lewis Askey",
-          "rider_url": "/profile/lewis-askey",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 42"
-        },
-        {
-          "rank": 3,
-          "name": "Jasper Stuyven",
-          "rider_url": "/profile/jasper-stuyven",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 01:03"
-        },
-        {
-          "rank": 4,
-          "name": "Daan Hoole",
-          "rider_url": "/profile/daan-hoole",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 01:03"
-        },
-        {
-          "rank": 5,
-          "name": "Rick Pluimers",
-          "rider_url": "/profile/rick-pluimers",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 01:15"
-        },
-        {
-          "rank": 6,
-          "name": "Elliot Rowe",
-          "rider_url": "/profile/elliot-rowe",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 01:15"
-        },
-        {
-          "rank": 7,
-          "name": "Filippo Ganna",
-          "rider_url": "/profile/filippo-ganna",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 02:03"
-        },
-        {
-          "rank": 8,
-          "name": "Florian Vermeersch",
-          "rider_url": "/profile/florian-vermeersch",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 03:02"
-        },
-        {
-          "rank": 9,
-          "name": "Mark Donovan",
-          "rider_url": "/profile/mark-donovan",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 03:04"
-        },
-        {
-          "rank": 10,
-          "name": "Ben Wiggins",
-          "rider_url": "/profile/ben-wiggins",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 05:17"
-        }
-      ],
-      "points_leader": "🇮🇹 Filippo Ganna",
-      "points_top10": [
-        {
-          "rank": 1,
-          "name": "Filippo Ganna",
-          "rider_url": "/profile/filippo-ganna",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "59"
-        },
-        {
-          "rank": 2,
-          "name": "Lewis Askey",
-          "rider_url": "/profile/lewis-askey",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "46"
-        },
-        {
-          "rank": 3,
-          "name": "Tim Wellens",
-          "rider_url": "/profile/tim-wellens",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "44"
-        },
-        {
-          "rank": 4,
-          "name": "Olav Kooij",
-          "rider_url": "/profile/olav-kooij",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "43"
-        },
-        {
-          "rank": 5,
-          "name": "Tim Merlier",
-          "rider_url": "/profile/tim-merlier",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "43"
-        },
-        {
-          "rank": 6,
-          "name": "Cees Bol",
-          "rider_url": "/profile/cees-bol",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "32"
-        },
-        {
-          "rank": 7,
-          "name": "Nils Politt",
-          "rider_url": "/profile/nils-politt",
-          "team": "",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "30"
-        },
-        {
-          "rank": 8,
-          "name": "Matteo Trentin",
-          "rider_url": "/profile/matteo-trentin",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "26"
-        },
-        {
-          "rank": 9,
-          "name": "Florian Vermeersch",
-          "rider_url": "/profile/florian-vermeersch",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "25"
-        },
-        {
-          "rank": 10,
-          "name": "Axel Källberg",
-          "rider_url": "/profile/axel-kallberg",
-          "team": "",
-          "nat_code": "FI",
-          "flag": "🇫🇮",
-          "time_gap": "23"
-        }
-      ],
-      "kom_leader": "🇨🇿 Michal Schuran",
-      "kom_top10": [
-        {
-          "rank": 1,
-          "name": "Michal Schuran",
-          "rider_url": "/profile/michal-schuran",
-          "team": "",
-          "nat_code": "CZ",
-          "flag": "🇨🇿",
-          "time_gap": "37"
-        },
-        {
-          "rank": 2,
-          "name": "Xandro Meurisse",
-          "rider_url": "/profile/xandro-meurisse",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "21"
-        },
-        {
-          "rank": 3,
-          "name": "Ian Lopez De San Roman",
-          "rider_url": "/profile/ian-lopez-de-san-roman",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "19"
-        },
-        {
-          "rank": 4,
-          "name": "Tim Wellens",
-          "rider_url": "/profile/tim-wellens",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "17"
-        },
-        {
-          "rank": 5,
-          "name": "Cees Bol",
-          "rider_url": "/profile/cees-bol",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "17"
-        },
-        {
-          "rank": 6,
-          "name": "Brem Deman",
-          "rider_url": "/profile/brem-deman",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "17"
-        },
-        {
-          "rank": 7,
-          "name": "Jonah Killy",
-          "rider_url": "/profile/jonah-killy",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "15"
-        },
-        {
-          "rank": 8,
-          "name": "Ben Swift",
-          "rider_url": "/profile/ben-swift",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "14"
-        },
-        {
-          "rank": 9,
-          "name": "Mikkel Bjerg",
-          "rider_url": "/profile/mikkel-bjerg",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "11"
-        },
-        {
-          "rank": 10,
-          "name": "Benoît Cosnefroy",
-          "rider_url": "/profile/benoit-cosnefroy",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "9"
-        }
-      ],
-      "youth_leader": "🇬🇧 Elliot Rowe",
-      "youth_top10": [
-        {
-          "rank": 1,
-          "name": "Elliot Rowe",
-          "rider_url": "/profile/elliot-rowe",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "19:36:47"
-        },
-        {
-          "rank": 2,
-          "name": "Ben Wiggins",
-          "rider_url": "/profile/ben-wiggins",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 04:02"
-        },
-        {
-          "rank": 3,
-          "name": "Jacob Bush",
-          "rider_url": "/profile/jacob-bush",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 10:46"
-        },
-        {
-          "rank": 4,
-          "name": "Tomás Pridal",
-          "rider_url": "/profile/tomas-pridal",
-          "team": "",
-          "nat_code": "CZ",
-          "flag": "🇨🇿",
-          "time_gap": "+ 15:48"
-        },
-        {
-          "rank": 5,
-          "name": "Samuel Florez Garces",
-          "rider_url": "/profile/samuel-florez",
-          "team": "",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "+ 19:10"
-        },
-        {
-          "rank": 6,
-          "name": "Axel Bouquet",
-          "rider_url": "/profile/axel-bouquet",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 19:54"
-        },
-        {
-          "rank": 7,
-          "name": "Teodor De Luca",
-          "rider_url": "/profile/teodor-de-luca",
-          "team": "",
-          "nat_code": "SE",
-          "flag": "🇸🇪",
-          "time_gap": "+ 21:39"
-        },
-        {
-          "rank": 8,
-          "name": "William Smith",
-          "rider_url": "/profile/thomas-william-smith",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 27:05"
-        },
-        {
-          "rank": 9,
-          "name": "Sebastian Bjerregaard Vestergaard",
-          "rider_url": "/profile/sebastian-bjerregaard-vestergaard",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 28:15"
-        },
-        {
-          "rank": 10,
-          "name": "Frank Aron Ragilo",
-          "rider_url": "/profile/frank-aron-ragilo",
-          "team": "",
-          "nat_code": "EE",
-          "flag": "🇪🇪",
-          "time_gap": "+ 28:54"
-        }
-      ]
-    },
-    {
       "slug": "maryland-cycling-classic",
       "cf_slug": "maryland-cycling-classic-2026",
       "name": "Maryland Cycling Classic",
@@ -4519,14 +3502,946 @@
         }
       ],
       "stages": []
+    }
+  ],
+  "upcoming": [
+    {
+      "slug": "grand-prix-cycliste-de-quebec",
+      "cf_slug": "grand-prix-cycliste-de-quebec-2026",
+      "name": "Grand Prix Cycliste de Québec",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-09-11",
+      "end_date": "2026-09-11",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-quebec-2026",
+      "startlist": [],
+      "distance_km": 205.4,
+      "elevation_m": 2446,
+      "stage_type": "hilly",
+      "start_town": "Québec",
+      "finish_town": "Québec",
+      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 11 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 13 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 20 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 848 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Paul Seixas Quinn Simmons Louis Barré Giulio Ciccone Paul Lapeira Maxim Van Gils Win chance 1 Remco Evenepoel 68.76% 2 Isaac Del Toro Romero 7.90% 3 Paul Seixas 4.94% 4 Giulio Ciccone 3.08% 5 Juan Ayuso Pesquera 2.58% 6 Tom Pidcock 1.77% 7 Matteo Jorgenson 1.72% 8 Quinn Simmons 1.24% 9 Ilan Van Wilder 1.13% 10 Mauro Schmid 0.98% Model-based estimate from rider ratings and the stage profile."
     },
+    {
+      "slug": "grand-prix-cycliste-de-montreal",
+      "cf_slug": "grand-prix-cycliste-de-montreal-2026",
+      "name": "Grand Prix Cycliste de Montréal",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-montreal-2026",
+      "startlist": [],
+      "distance_km": 215.3,
+      "elevation_m": 3550,
+      "stage_type": "mountain",
+      "start_town": "Montréal",
+      "finish_town": "Montréal",
+      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 11 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 20 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 848 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 26 Matteo Jorgenson Team Visma | Lease a Bike Team Visma | Lease a Bike 843 Full startlist Win chance 1 Remco Evenepoel 69.79% 2 Isaac Del Toro Romero 7.87% 3 Paul Seixas 5.11% 4 Giulio Ciccone 3.20% 5 Juan Ayuso Pesquera 2.98% 6 Matteo Jorgenson 1.84% 7 Ilan Van Wilder 1.26% 8 Quinn Simmons 1.03% 9 Brandon McNulty 0.98% 10 Mauro Schmid 0.89% Model-based estimate from rider ratings and the stage profile."
+    },
+    {
+      "slug": "il-lombardia",
+      "cf_slug": "il-lombardia-2026",
+      "name": "Il Lombardia",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
+      "startlist": [
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Antonio Tiberi",
+          "slug": "antonio-tiberi",
+          "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Davide Piganzoli",
+          "slug": "davide-piganzoli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Bruno Armirail",
+          "slug": "bruno-armirail",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Louis Barré",
+          "slug": "louis-barre",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Matteo Jorgenson",
+          "slug": "matteo-jorgenson",
+          "nat": "us",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Domen Novak",
+          "slug": "domen-novak",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Mathys Rondel",
+          "slug": "mathys-rondel",
+          "nat": "fr",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        }
+      ]
+    },
+    {
+      "slug": "tour-of-guangxi",
+      "cf_slug": "tour-of-guangxi-2026",
+      "name": "Tour of Guangxi",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-18",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Baptiste Veistroffer",
+          "slug": "baptiste-veistroffer",
+          "nat": "fr",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Filippo Fiorelli",
+          "slug": "filippo-fiorelli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Milan Fretin",
+          "slug": "milan-fretin",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        }
+      ]
+    },
+    {
+      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "startlist": []
+    },
+    {
+      "slug": "gp-de-fourmies-la-voix-du-nord",
+      "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
+      "name": "GP de Fourmies / La Voix du Nord",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gp-de-fourmies-la-voix-du-nord-2026",
+      "startlist": []
+    },
+    {
+      "slug": "skoda-tour-de-luxembourg",
+      "cf_slug": "skoda-tour-de-luxembourg-2026",
+      "name": "Skoda Tour de Luxembourg",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-20",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 157.4,
+          "elevation_m": 2381,
+          "stage_type": "hilly",
+          "start_town": "Luxembourg",
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 1 Luxembourg - Luxembourg (157.4km) The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race. The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176476/responsive-images/stage-1-height-profile___heightProfile_1131_800.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 166.8,
+          "elevation_m": 2298,
+          "stage_type": "hilly",
+          "start_town": "Differdange",
+          "finish_town": "Junglinster",
+          "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 179.6,
+          "elevation_m": 3272,
+          "stage_type": "mountain",
+          "start_town": "Wiltz",
+          "finish_town": "Diekirch",
+          "description": "Info Startlist Stages Results Winners Stage 3 Wiltz - Diekirch (179.6km) Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race. Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176480/responsive-images/stage-3-height-profile___heightProfile_1131_800.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 20.4,
+          "elevation_m": 355,
+          "stage_type": "ITT",
+          "start_town": "Ettelbruck",
+          "finish_town": "Ettelbruck",
+          "description": "Info Startlist Stages Results Winners Stage 4 Ettelbruck - Ettelbruck (20.4km) Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role. Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176481/responsive-images/stage-4-height-profile___heightProfile_1131_800.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 177.6,
+          "elevation_m": 3064,
+          "stage_type": "mountain",
+          "start_town": "Mersch",
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp"
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "grand-prix-de-wallonie",
+      "cf_slug": "grand-prix-de-wallonie-2026",
+      "name": "Grand Prix de Wallonie",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
+      "startlist": [],
+      "distance_km": 194.8,
+      "elevation_m": 2679,
+      "stage_type": "mountain",
+      "start_town": "Seraing",
+      "finish_town": "Namur",
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 92 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 800 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
+    },
+    {
+      "slug": "super-8-classic",
+      "cf_slug": "super-8-classic-2026",
+      "name": "SUPER 8 Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-19",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
+      "startlist": [],
+      "distance_km": 199.4,
+      "stage_type": "flat",
+      "start_town": "Brakel",
+      "finish_town": "Haacht",
+      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 151 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 183 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 193 Tim Merlier Soudal - Quick Step Soudal - Quick Step 774 286 Davide Ballerini XDS Astana Team XDS Astana Team 757 314 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 417 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 492 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 691 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3095 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.70% 2 Tim Merlier 25.20% 3 Biniam Girmay Hailu 9.75% 4 Matteo Trentin 9.18% 5 Davide Ballerini 4.25% 6 Florian Sénéchal 2.25% 7 Filippo Baroncini 1.86% 8 Tiesj Benoot 1.45% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile."
+    },
+    {
+      "slug": "cro-race",
+      "cf_slug": "cro-race-2026",
+      "name": "CRO Race",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-27",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/cro-race-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/cro-race-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 171.8,
+          "elevation_m": 2338,
+          "stage_type": "hilly",
+          "start_town": "Split",
+          "finish_town": "Seget",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176681/responsive-images/stage-1-height-profile___heightProfile_1200_249.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/cro-race-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 114.5,
+          "elevation_m": 1090,
+          "stage_type": "hilly",
+          "start_town": "Biograd na Moru",
+          "finish_town": "Novalja",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176690/responsive-images/stage-2-height-profile___heightProfile_1200_274.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/cro-race-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 174.5,
+          "elevation_m": 3300,
+          "stage_type": "mountain",
+          "start_town": "Krk",
+          "finish_town": "Labin",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176692/responsive-images/stage-3-height-profile___heightProfile_1200_244.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/cro-race-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 160.0,
+          "elevation_m": 2470,
+          "stage_type": "hilly",
+          "start_town": "Pula",
+          "finish_town": "Rijeka",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176695/responsive-images/stage-4-height-profile___heightProfile_1200_285.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/cro-race-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 164.5,
+          "elevation_m": 2345,
+          "stage_type": "hilly",
+          "start_town": "Karlovac",
+          "finish_town": "Sveta Nedelja",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176697/responsive-images/stage-5-height-profile___heightProfile_1200_243.webp"
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/cro-race-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 159.5,
+          "elevation_m": 635,
+          "stage_type": "flat",
+          "start_town": "Samobor",
+          "finish_town": "Zagreb",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176699/responsive-images/stage-6-height-profile___heightProfile_1200_268.webp"
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Ivo Oliveira",
+          "slug": "ivo-emanuel-alves",
+          "nat": "pt",
+          "team": "UAE Team Emirates - XRG (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "petronas-le-tour-de-langkawi",
+      "cf_slug": "petronas-le-tour-de-langkawi-2026",
+      "name": "Petronas Le Tour de Langkawi",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "upcoming",
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-04",
+      "total_stages": 7,
+      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 193.0,
+          "stage_type": "flat",
+          "start_town": "Shah Alam",
+          "finish_town": "Kampar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176660/responsive-images/stage-1-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 145.6,
+          "stage_type": "flat",
+          "start_town": "Taiping",
+          "finish_town": "Gunung Jerai",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176663/responsive-images/stage-2-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 189.9,
+          "stage_type": "flat",
+          "start_town": "Sungai Petani",
+          "finish_town": "Kuala Kangsar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176665/responsive-images/stage-3-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 142.3,
+          "stage_type": "flat",
+          "start_town": "Tambun",
+          "finish_town": "Cameron Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176667/responsive-images/stage-4-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 125.7,
+          "stage_type": "flat",
+          "start_town": "Tapah",
+          "finish_town": "Genting Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176668/responsive-images/stage-5-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 121.3,
+          "stage_type": "flat",
+          "start_town": "Pandan Indah",
+          "finish_town": "Rembau",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176671/responsive-images/stage-6-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 7,
+          "label": "Stage 7",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 159.1,
+          "stage_type": "flat",
+          "start_town": "Melaka",
+          "finish_town": "Batu Pahat",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176673/responsive-images/stage-7-height-profile___heightProfile_1200_767.webp"
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "sparkassen-munsterland-giro",
+      "cf_slug": "sparkassen-munsterland-giro-2026",
+      "name": "Sparkassen Münsterland Giro",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-03",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/sparkassen-munsterland-giro-2026",
+      "startlist": [],
+      "distance_km": 199.5,
+      "stage_type": "flat",
+      "start_town": "Borken",
+      "finish_town": "Münster"
+    },
+    {
+      "slug": "giro-dellemilia",
+      "cf_slug": "giro-dellemilia-2026",
+      "name": "Giro dell'Emilia",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-03",
+      "end_date": "2026-10-03",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/giro-dellemilia-2026",
+      "startlist": []
+    },
+    {
+      "slug": "coppa-bernocchi-gp-banco-bpm",
+      "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
+      "name": "Coppa Bernocchi - GP Banco BPM",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-05",
+      "end_date": "2026-10-05",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/coppa-bernocchi-gp-banco-bpm-2026",
+      "startlist": []
+    },
+    {
+      "slug": "tre-valli-varesine",
+      "cf_slug": "tre-valli-varesine-2026",
+      "name": "Tre Valli Varesine",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-06",
+      "end_date": "2026-10-06",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/tre-valli-varesine-2026",
+      "startlist": [
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "gran-piemonte",
+      "cf_slug": "gran-piemonte-2026",
+      "name": "Gran Piemonte",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-08",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gran-piemonte-2026",
+      "startlist": [
+        {
+          "name": "Alberto Bettiol",
+          "slug": "alberto-bettiol",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        }
+      ]
+    },
+    {
+      "slug": "paris-tours-elite",
+      "cf_slug": "paris-tours-elite-2026",
+      "name": "Paris - Tours Elite",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-11",
+      "end_date": "2026-10-11",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/paris-tours-elite-2026",
+      "startlist": []
+    },
+    {
+      "slug": "giro-del-veneto",
+      "cf_slug": "giro-del-veneto-2026",
+      "name": "Giro del Veneto",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-14",
+      "end_date": "2026-10-14",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/giro-del-veneto-2026",
+      "startlist": [
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Wout van Aert",
+          "slug": "wout-van-aert",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Jonas Vingegaard",
+          "slug": "jonas-vingegaard",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mathieu van der Poel",
+          "slug": "mathieu-van-der-poel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Isaac Del Toro",
+          "slug": "isaac-del-toro",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Demi Vollering",
+          "slug": "demi-vollering",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Lotte Kopecky",
+          "slug": "lotte-kopecky",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Katarzyna Niewiadoma",
+          "slug": "katarzyna-niewiadoma",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Pauline Ferrand-Prévot",
+          "slug": "pauline-ferrand-prevot",
+          "nat": "",
+          "team": ""
+        }
+      ]
+    },
+    {
+      "slug": "utsunomiya-japan-cup-road-race",
+      "cf_slug": "utsunomiya-japan-cup-road-race-2026",
+      "name": "Utsunomiya Japan Cup Road Race",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-18",
+      "end_date": "2026-10-18",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/utsunomiya-japan-cup-road-race-2026",
+      "startlist": []
+    },
+    {
+      "slug": "veneto-classic",
+      "cf_slug": "veneto-classic-2026",
+      "name": "Veneto Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "upcoming",
+      "start_date": "2026-10-18",
+      "end_date": "2026-10-18",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
+      "startlist": [
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Wout van Aert",
+          "slug": "wout-van-aert",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Jonas Vingegaard",
+          "slug": "jonas-vingegaard",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mathieu van der Poel",
+          "slug": "mathieu-van-der-poel",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Mads Pedersen",
+          "slug": "mads-pedersen",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Isaac Del Toro",
+          "slug": "isaac-del-toro",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Demi Vollering",
+          "slug": "demi-vollering",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Lotte Kopecky",
+          "slug": "lotte-kopecky",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Katarzyna Niewiadoma",
+          "slug": "katarzyna-niewiadoma",
+          "nat": "",
+          "team": ""
+        },
+        {
+          "name": "Pauline Ferrand-Prévot",
+          "slug": "pauline-ferrand-prevot",
+          "nat": "",
+          "team": ""
+        }
+      ]
+    }
+  ],
+  "recent": [
     {
       "slug": "gp-industria-artigianato",
       "cf_slug": "gp-industria-artigianato-2026",
       "name": "GP Industria & Artigianato",
       "year": "2026",
       "category": "1.Pro",
-      "status": "live",
+      "status": "recent",
       "start_date": "2026-09-06",
       "end_date": "2026-09-06",
       "total_stages": 1,
@@ -6527,939 +6442,1024 @@
           "time_gap": "+ 40"
         }
       ]
-    }
-  ],
-  "upcoming": [
-    {
-      "slug": "grand-prix-cycliste-de-quebec",
-      "cf_slug": "grand-prix-cycliste-de-quebec-2026",
-      "name": "Grand Prix Cycliste de Québec",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-09-11",
-      "end_date": "2026-09-11",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-quebec-2026",
-      "startlist": [],
-      "distance_km": 206.0,
-      "elevation_m": 2780,
-      "stage_type": "mountain",
-      "start_town": "Québec",
-      "finish_town": "Québec",
-      "description": "Info Startlist Results Winners 11 Sep Date 206 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 10 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 16 Quinn Simmons Lidl - Trek Lidl - Trek 854 18 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 852 22 Giulio Ciccone Lidl - Trek Lidl - Trek 846 24 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 25 Matteo Jorgenson Team Visma | Lease a Bike Team Visma | Lease a Bike 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Paul Seixas Quinn Simmons Louis Barré Giulio Ciccone Paul Lapeira Maxim Van Gils Win chance 1 Remco Evenepoel 50.20% 2 Isaac Del Toro Romero 9.52% 3 Paul Seixas 6.71% 4 Quinn Simmons 5.11% 5 Juan Ayuso Pesquera 5.01% 6 Giulio Ciccone 4.66% 7 Tom Pidcock 4.11% 8 Maxim Van Gils 3.41% 9 Paul Lapeira 2.88% 10 Matteo Jorgenson 2.80% Model-based estimate from rider ratings and the stage profile."
     },
     {
-      "slug": "grand-prix-cycliste-de-montreal",
-      "cf_slug": "grand-prix-cycliste-de-montreal-2026",
-      "name": "Grand Prix Cycliste de Montréal",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-09-13",
-      "end_date": "2026-09-13",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-cycliste-de-montreal-2026",
-      "startlist": [],
-      "distance_km": 214.4,
-      "elevation_m": 4304,
-      "stage_type": "mountain",
-      "start_town": "Montréal",
-      "finish_town": "Montréal",
-      "description": "Info Startlist Results Winners 13 Sep Date 214 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 3 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 10 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 860 22 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Ilan Van Wilder Soudal - Quick Step Soudal - Quick Step 842 364 Pavel Sivakov UAE Team Emirates XRG UAE Team Emirates XRG 746 447 Afonso Eulálio Bahrain Victorious Bahrain Victorious 733 695 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 5405 Michael Woods Canada Canada 451 Full startlist Win chance 1 Remco Evenepoel 48.54% 2 Isaac Del Toro Romero 17.33% 3 Paul Seixas 12.85% 4 Juan Ayuso Pesquera 8.98% 5 Giulio Ciccone 7.55% 6 Ilan Van Wilder 2.62% 7 Tiesj Benoot 1.30% 8 Pavel Sivakov 0.55% 9 Afonso Eulálio 0.24% 10 Michael Woods 0.03% Model-based estimate from rider ratings and the stage profile."
-    },
-    {
-      "slug": "il-lombardia",
-      "cf_slug": "il-lombardia-2026",
-      "name": "Il Lombardia",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-10",
-      "end_date": "2026-10-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
-      "startlist": [
-        {
-          "name": "Jarno Widar",
-          "slug": "jarno-widar",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Tiesj Benoot",
-          "slug": "tiesj-benoot",
-          "nat": "be",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Paul Seixas",
-          "slug": "paul-seixas",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Antonio Tiberi",
-          "slug": "antonio-tiberi",
-          "nat": "it",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Bauke Mollema",
-          "slug": "bauke-mollema",
-          "nat": "nl",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
-          "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "be",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Ben Tulett",
-          "slug": "ben-tulett",
-          "nat": "gb",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Davide Piganzoli",
-          "slug": "davide-piganzoli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Bruno Armirail",
-          "slug": "bruno-armirail",
-          "nat": "fr",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Louis Barré",
-          "slug": "louis-barre",
-          "nat": "fr",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Matteo Jorgenson",
-          "slug": "matteo-jorgenson",
-          "nat": "us",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Domen Novak",
-          "slug": "domen-novak",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Jan Christen",
-          "slug": "jan-christen",
-          "nat": "ch",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Mathys Rondel",
-          "slug": "mathys-rondel",
-          "nat": "fr",
-          "team": "Tudor Pro Cycling Team (PRT)"
-        }
-      ]
-    },
-    {
-      "slug": "tour-of-guangxi",
-      "cf_slug": "tour-of-guangxi-2026",
-      "name": "Tour of Guangxi",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-13",
-      "end_date": "2026-10-18",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Baptiste Veistroffer",
-          "slug": "baptiste-veistroffer",
-          "nat": "fr",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Filippo Fiorelli",
-          "slug": "filippo-fiorelli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Tiesj Benoot",
-          "slug": "tiesj-benoot",
-          "nat": "be",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Milan Fretin",
-          "slug": "milan-fretin",
-          "nat": "be",
-          "team": "Cofidis (PRT)"
-        }
-      ]
-    },
-    {
-      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
-      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-10",
-      "end_date": "2026-09-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "startlist": []
-    },
-    {
-      "slug": "gp-de-fourmies-la-voix-du-nord",
-      "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
-      "name": "GP de Fourmies / La Voix du Nord",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-13",
-      "end_date": "2026-09-13",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gp-de-fourmies-la-voix-du-nord-2026",
-      "startlist": []
-    },
-    {
-      "slug": "skoda-tour-de-luxembourg",
-      "cf_slug": "skoda-tour-de-luxembourg-2026",
-      "name": "Skoda Tour de Luxembourg",
+      "slug": "lloyds-tour-of-britain-men",
+      "cf_slug": "lloyds-tour-of-britain-men-2026",
+      "name": "Lloyds Tour of Britain Men",
       "year": "2026",
       "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-20",
+      "status": "recent",
+      "start_date": "2026-09-02",
+      "end_date": "2026-09-06",
       "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
-      "stages_completed": 0,
+      "official_url": "https://cyclingflash.com/race/lloyds-tour-of-britain-men-2026",
+      "stages_completed": 5,
       "stages": [
         {
           "num": 1,
           "label": "Stage 1",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 157.4,
-          "elevation_m": 2381,
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-1",
+          "winner": "Lewis Askey",
+          "winner_flag": "🇬🇧",
+          "winner_nat": "GB",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Lewis Askey",
+              "rider_url": "/profile/lewis-askey",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "04:02:44"
+            },
+            {
+              "rank": 2,
+              "name": "Filippo Ganna",
+              "rider_url": "/profile/filippo-ganna",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 3,
+              "name": "Tim Wellens",
+              "rider_url": "/profile/tim-wellens",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 02"
+            },
+            {
+              "rank": 4,
+              "name": "Jasper Stuyven",
+              "rider_url": "/profile/jasper-stuyven",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 09"
+            },
+            {
+              "rank": 5,
+              "name": "Daan Hoole",
+              "rider_url": "/profile/daan-hoole",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 09"
+            },
+            {
+              "rank": 6,
+              "name": "Matteo Trentin",
+              "rider_url": "/profile/matteo-trentin",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 09"
+            },
+            {
+              "rank": 7,
+              "name": "Florian Vermeersch",
+              "rider_url": "/profile/florian-vermeersch",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 11"
+            },
+            {
+              "rank": 8,
+              "name": "Elliot Rowe",
+              "rider_url": "/profile/elliot-rowe",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 19"
+            },
+            {
+              "rank": 9,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 19"
+            },
+            {
+              "rank": 10,
+              "name": "Paul Wright",
+              "rider_url": "/profile/paul-wright",
+              "team": "",
+              "nat_code": "NZ",
+              "flag": "🇳🇿",
+              "time_gap": "+ 26"
+            }
+          ],
+          "date_str": "Wednesday 02 September",
+          "start_town": "Lincoln",
+          "finish_town": "Lincoln",
+          "distance_km": 182.5,
+          "elevation_m": 1393,
+          "start_time": "",
           "stage_type": "hilly",
-          "start_town": "Luxembourg",
-          "finish_town": "Luxembourg",
-          "description": "Info Startlist Stages Results Winners Stage 1 Luxembourg - Luxembourg (157.4km) The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race. The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176476/responsive-images/stage-1-height-profile___heightProfile_1131_800.webp"
+          "description": "",
+          "non_finishers": [],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176063/responsive-images/stage-1-height-profile___heightProfile_1200_283.webp"
         },
         {
           "num": 2,
           "label": "Stage 2",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 166.8,
-          "elevation_m": 2298,
-          "stage_type": "hilly",
-          "start_town": "Differdange",
-          "finish_town": "Junglinster",
-          "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp"
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-2",
+          "winner": "Tim Merlier",
+          "winner_flag": "🇧🇪",
+          "winner_nat": "BE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tim Merlier",
+              "rider_url": "/profile/tim-merlier",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 2,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 3,
+              "name": "Sam Bennett",
+              "rider_url": "/profile/sam-bennett",
+              "team": "",
+              "nat_code": "IE",
+              "flag": "🇮🇪",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 4,
+              "name": "Matteo Moschetti",
+              "rider_url": "/profile/matteo-moschetti",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 5,
+              "name": "Ethan Vernon",
+              "rider_url": "/profile/ethan-vernon",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 6,
+              "name": "Riley Pickrell",
+              "rider_url": "/profile/riley-pickrell",
+              "team": "",
+              "nat_code": "CA",
+              "flag": "🇨🇦",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 7,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 8,
+              "name": "Matteo Trentin",
+              "rider_url": "/profile/matteo-trentin",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 9,
+              "name": "Jake Stewart",
+              "rider_url": "/profile/jake-stewart",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "03:53:55"
+            },
+            {
+              "rank": 10,
+              "name": "Brody Mcdonald",
+              "rider_url": "/profile/brody-mcdonald",
+              "team": "",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "03:53:55"
+            }
+          ],
+          "date_str": "Thursday 03 September",
+          "start_town": "Boston",
+          "finish_town": "Skegness",
+          "distance_km": 180.2,
+          "elevation_m": 873,
+          "start_time": "",
+          "stage_type": "flat",
+          "description": "",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Vilmer Ekman",
+              "rider_url": "/profile/vilmer-ekman",
+              "team": "Lucky Sport Cycling Team",
+              "nat_code": "SE",
+              "flag": "🇸🇪"
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176064/responsive-images/stage-2-height-profile___heightProfile_1200_290.webp"
         },
         {
           "num": 3,
           "label": "Stage 3",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 179.6,
-          "elevation_m": 3272,
-          "stage_type": "mountain",
-          "start_town": "Wiltz",
-          "finish_town": "Diekirch",
-          "description": "Info Startlist Stages Results Winners Stage 3 Wiltz - Diekirch (179.6km) Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race. Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176480/responsive-images/stage-3-height-profile___heightProfile_1131_800.webp"
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-3",
+          "winner": "Olav Kooij",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Olav Kooij",
+              "rider_url": "/profile/olav-kooij",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 2,
+              "name": "Tim Merlier",
+              "rider_url": "/profile/tim-merlier",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 3,
+              "name": "Axel Källberg",
+              "rider_url": "/profile/axel-kallberg",
+              "team": "",
+              "nat_code": "FI",
+              "flag": "🇫🇮",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 4,
+              "name": "Timothy Dupont",
+              "rider_url": "/profile/timothy-dupont",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 5,
+              "name": "Matteo Moschetti",
+              "rider_url": "/profile/matteo-moschetti",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 6,
+              "name": "Arne Santy",
+              "rider_url": "/profile/arne-santy",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 7,
+              "name": "Ethan Vernon",
+              "rider_url": "/profile/ethan-vernon",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 8,
+              "name": "Boas Lysgaard",
+              "rider_url": "/profile/boas-lysgaard",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 9,
+              "name": "Axel Bouquet",
+              "rider_url": "/profile/axel-bouquet",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:04:32"
+            },
+            {
+              "rank": 10,
+              "name": "Brody Mcdonald",
+              "rider_url": "/profile/brody-mcdonald",
+              "team": "",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "04:04:32"
+            }
+          ],
+          "date_str": "Friday 04 September",
+          "start_town": "Hull",
+          "finish_town": "Beverley",
+          "distance_km": 194.1,
+          "elevation_m": 1612,
+          "start_time": "",
+          "stage_type": "hilly",
+          "description": "",
+          "non_finishers": [
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Yannis Voisard",
+              "rider_url": "/profile/yannis-voisard",
+              "team": "Tudor Pro Cycling Team",
+              "nat_code": "CH",
+              "flag": "🇨🇭"
+            }
+          ],
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176065/responsive-images/stage-3-height-profile___heightProfile_1200_283.webp"
         },
         {
           "num": 4,
           "label": "Stage 4",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 20.4,
-          "elevation_m": 355,
-          "stage_type": "ITT",
-          "start_town": "Ettelbruck",
-          "finish_town": "Ettelbruck",
-          "description": "Info Startlist Stages Results Winners Stage 4 Ettelbruck - Ettelbruck (20.4km) Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role. Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176481/responsive-images/stage-4-height-profile___heightProfile_1131_800.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 177.6,
-          "elevation_m": 3064,
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-4",
+          "winner": "Cees Bol",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Cees Bol",
+              "rider_url": "/profile/cees-bol",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:00:39"
+            },
+            {
+              "rank": 2,
+              "name": "Tim Wellens",
+              "rider_url": "/profile/tim-wellens",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 03"
+            },
+            {
+              "rank": 3,
+              "name": "Fabio Christen",
+              "rider_url": "/profile/fabio-christen",
+              "team": "",
+              "nat_code": "CH",
+              "flag": "🇨🇭",
+              "time_gap": "+ 21"
+            },
+            {
+              "rank": 4,
+              "name": "Filippo Ganna",
+              "rider_url": "/profile/filippo-ganna",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 5,
+              "name": "Lewis Askey",
+              "rider_url": "/profile/lewis-askey",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 6,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 7,
+              "name": "Axel Källberg",
+              "rider_url": "/profile/axel-kallberg",
+              "team": "",
+              "nat_code": "FI",
+              "flag": "🇫🇮",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 8,
+              "name": "Matteo Trentin",
+              "rider_url": "/profile/matteo-trentin",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 9,
+              "name": "Elliot Rowe",
+              "rider_url": "/profile/elliot-rowe",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 10,
+              "name": "Jasper Stuyven",
+              "rider_url": "/profile/jasper-stuyven",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 30"
+            }
+          ],
+          "date_str": "Saturday 05 September",
+          "start_town": "Helmsley",
+          "finish_town": "Leyburn",
+          "distance_km": 165.8,
+          "elevation_m": 2699,
+          "start_time": "",
           "stage_type": "mountain",
-          "start_town": "Mersch",
-          "finish_town": "Luxembourg",
-          "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp"
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "grand-prix-de-wallonie",
-      "cf_slug": "grand-prix-de-wallonie-2026",
-      "name": "Grand Prix de Wallonie",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-16",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
-      "startlist": [],
-      "distance_km": 194.8,
-      "elevation_m": 2679,
-      "stage_type": "mountain",
-      "start_town": "Seraing",
-      "finish_town": "Namur",
-      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 113 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 795 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
-    },
-    {
-      "slug": "super-8-classic",
-      "cf_slug": "super-8-classic-2026",
-      "name": "SUPER 8 Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-19",
-      "end_date": "2026-09-19",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
-      "startlist": [],
-      "distance_km": 199.4,
-      "stage_type": "flat",
-      "start_town": "Brakel",
-      "finish_town": "Haacht",
-      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 153 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 786 183 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 215 Tim Merlier Soudal - Quick Step Soudal - Quick Step 769 289 Davide Ballerini XDS Astana Team XDS Astana Team 757 290 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 757 456 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 732 464 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 731 695 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3089 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 46.88% 2 Tim Merlier 21.90% 3 Matteo Trentin 11.14% 4 Biniam Girmay Hailu 9.98% 5 Davide Ballerini 4.35% 6 Filippo Baroncini 2.09% 7 Florian Sénéchal 1.82% 8 Tiesj Benoot 1.48% 9 Taco van der Hoorn 0.36% Model-based estimate from rider ratings and the stage profile."
-    },
-    {
-      "slug": "cro-race",
-      "cf_slug": "cro-race-2026",
-      "name": "CRO Race",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-22",
-      "end_date": "2026-09-27",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/cro-race-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 171.8,
-          "elevation_m": 2338,
-          "stage_type": "hilly",
-          "start_town": "Split",
-          "finish_town": "Seget",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176681/responsive-images/stage-1-height-profile___heightProfile_1200_249.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/cro-race-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 114.5,
-          "elevation_m": 1090,
-          "stage_type": "hilly",
-          "start_town": "Biograd na Moru",
-          "finish_town": "Novalja",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176690/responsive-images/stage-2-height-profile___heightProfile_1200_274.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/cro-race-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 174.5,
-          "elevation_m": 3300,
-          "stage_type": "mountain",
-          "start_town": "Krk",
-          "finish_town": "Labin",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176692/responsive-images/stage-3-height-profile___heightProfile_1200_244.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/cro-race-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 160.0,
-          "elevation_m": 2470,
-          "stage_type": "hilly",
-          "start_town": "Pula",
-          "finish_town": "Rijeka",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176695/responsive-images/stage-4-height-profile___heightProfile_1200_285.webp"
+          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile. Date Saturday 05 September Start Helmsley Finish Leyburn Distance 165.8 km Elevation gain 2699 m Start time 12:00 Expected finish 15:47-16:34 Win chance 1 Olav Kooij 41.72% 2 Tim Merlier 18.39% 3 Filippo Ganna 4.79% 4 Ethan Vernon 4.62% 5 Lewis Askey 3.60% 6 Rick Pluimers 3.03% 7 Benoît Cosnefroy 2.40% 8 Sam Welsford 2.00% 9 Jasper Stuyven 1.85% 10 Matteo Trentin 1.61% Model-based estimate from rider ratings and the stage profile.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176066/responsive-images/stage-4-height-profile___heightProfile_1200_283.webp",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Cian Keogh",
+              "rider_url": "/profile/cian-keogh",
+              "team": "APS Pro Cycling by Team Cadence Cyclery",
+              "nat_code": "IE",
+              "flag": "🇮🇪"
+            }
+          ]
         },
         {
           "num": 5,
           "label": "Stage 5",
-          "result_url": "/race/cro-race-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 164.5,
-          "elevation_m": 2345,
+          "result_url": "/race/lloyds-tour-of-britain-men-2026/result/stage-5",
+          "winner": "Nils Politt",
+          "winner_flag": "🇩🇪",
+          "winner_nat": "DE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Nils Politt",
+              "rider_url": "/profile/nils-politt",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:33:28"
+            },
+            {
+              "rank": 2,
+              "name": "Florian Vermeersch",
+              "rider_url": "/profile/florian-vermeersch",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 12"
+            },
+            {
+              "rank": 3,
+              "name": "Filippo Ganna",
+              "rider_url": "/profile/filippo-ganna",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 4,
+              "name": "Benoît Cosnefroy",
+              "rider_url": "/profile/benoit-cosnefroy",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 5,
+              "name": "Marcus Sander Hansen",
+              "rider_url": "/profile/marcus-sander-hansen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 6,
+              "name": "Ben Wiggins",
+              "rider_url": "/profile/ben-wiggins",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 7,
+              "name": "Mikkel Bjerg",
+              "rider_url": "/profile/mikkel-bjerg",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 18"
+            },
+            {
+              "rank": 8,
+              "name": "Tim Wellens",
+              "rider_url": "/profile/tim-wellens",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 21"
+            },
+            {
+              "rank": 9,
+              "name": "Rick Pluimers",
+              "rider_url": "/profile/rick-pluimers",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 40"
+            },
+            {
+              "rank": 10,
+              "name": "Artem Shmidt",
+              "rider_url": "/profile/artem-shmidt",
+              "team": "",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "+ 40"
+            }
+          ],
+          "date_str": "Sunday 06 September",
+          "start_town": "Earlston",
+          "finish_town": "Earlston",
+          "distance_km": 156.1,
+          "elevation_m": 2236,
+          "start_time": "",
           "stage_type": "hilly",
-          "start_town": "Karlovac",
-          "finish_town": "Sveta Nedelja",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176697/responsive-images/stage-5-height-profile___heightProfile_1200_243.webp"
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/cro-race-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 159.5,
-          "elevation_m": 635,
-          "stage_type": "flat",
-          "start_town": "Samobor",
-          "finish_town": "Zagreb",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176699/responsive-images/stage-6-height-profile___heightProfile_1200_268.webp"
+          "description": "Info Startlist Stages Results Winners Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile. Date Sunday 06 September Start Earlston Finish Earlston Distance 156.1 km Elevation gain 2236 m Start time 12:00 Expected finish 15:35-16:20 Win chance 1 Olav Kooij 30.82% 2 Tim Merlier 13.93% 3 Filippo Ganna 6.48% 4 Ethan Vernon 4.68% 5 Rick Pluimers 4.45% 6 Lewis Askey 4.18% 7 Benoît Cosnefroy 3.72% 8 Jasper Stuyven 3.34% 9 Matteo Trentin 2.58% 10 Cees Bol 1.95% Model-based estimate from rider ratings and the stage profile.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176067/responsive-images/stage-5-height-profile___heightProfile_1200_283.webp",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Andrew Lydic",
+              "rider_url": "/profile/andrew-lydic",
+              "team": "APS Pro Cycling by Team Cadence Cyclery",
+              "nat_code": "US",
+              "flag": "🇺🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Kim Alexander Heiduk",
+              "rider_url": "/profile/kim-alexander-heiduk",
+              "team": "Netcompany INEOS",
+              "nat_code": "DE",
+              "flag": "🇩🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Erik Fetter",
+              "rider_url": "/profile/erik-fetter",
+              "team": "Team United Shipping",
+              "nat_code": "HU",
+              "flag": "🇭🇺"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Matt Walls",
+              "rider_url": "/profile/matt-walls",
+              "team": "Team Storck - MRW Bau",
+              "nat_code": "GB",
+              "flag": "🇬🇧"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jakob Neumann",
+              "rider_url": "/profile/jakob-neumann",
+              "team": "Team Storck - MRW Bau",
+              "nat_code": "DE",
+              "flag": "🇩🇪"
+            }
+          ]
         }
       ],
-      "startlist": [
-        {
-          "name": "Ivo Oliveira",
-          "slug": "ivo-emanuel-alves",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "petronas-le-tour-de-langkawi",
-      "cf_slug": "petronas-le-tour-de-langkawi-2026",
-      "name": "Petronas Le Tour de Langkawi",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-27",
-      "end_date": "2026-10-04",
-      "total_stages": 7,
-      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 193.0,
-          "stage_type": "flat",
-          "start_town": "Shah Alam",
-          "finish_town": "Kampar",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176660/responsive-images/stage-1-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 145.6,
-          "stage_type": "flat",
-          "start_town": "Taiping",
-          "finish_town": "Gunung Jerai",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176663/responsive-images/stage-2-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 189.9,
-          "stage_type": "flat",
-          "start_town": "Sungai Petani",
-          "finish_town": "Kuala Kangsar",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176665/responsive-images/stage-3-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 142.3,
-          "stage_type": "flat",
-          "start_town": "Tambun",
-          "finish_town": "Cameron Highlands",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176667/responsive-images/stage-4-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 125.7,
-          "stage_type": "flat",
-          "start_town": "Tapah",
-          "finish_town": "Genting Highlands",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176668/responsive-images/stage-5-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 121.3,
-          "stage_type": "flat",
-          "start_town": "Pandan Indah",
-          "finish_town": "Rembau",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176671/responsive-images/stage-6-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 7,
-          "label": "Stage 7",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 159.1,
-          "stage_type": "flat",
-          "start_town": "Melaka",
-          "finish_town": "Batu Pahat",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176673/responsive-images/stage-7-height-profile___heightProfile_1200_767.webp"
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "sparkassen-munsterland-giro",
-      "cf_slug": "sparkassen-munsterland-giro-2026",
-      "name": "Sparkassen Münsterland Giro",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-03",
-      "end_date": "2026-10-03",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/sparkassen-munsterland-giro-2026",
       "startlist": [],
-      "distance_km": 199.5,
-      "stage_type": "flat",
-      "start_town": "Borken",
-      "finish_town": "Münster"
-    },
-    {
-      "slug": "giro-dellemilia",
-      "cf_slug": "giro-dellemilia-2026",
-      "name": "Giro dell'Emilia",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-03",
-      "end_date": "2026-10-03",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/giro-dellemilia-2026",
-      "startlist": []
-    },
-    {
-      "slug": "coppa-bernocchi-gp-banco-bpm",
-      "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
-      "name": "Coppa Bernocchi - GP Banco BPM",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-05",
-      "end_date": "2026-10-05",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/coppa-bernocchi-gp-banco-bpm-2026",
-      "startlist": []
-    },
-    {
-      "slug": "tre-valli-varesine",
-      "cf_slug": "tre-valli-varesine-2026",
-      "name": "Tre Valli Varesine",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-06",
-      "end_date": "2026-10-06",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/tre-valli-varesine-2026",
-      "startlist": [
+      "last_stage_winner": "Nils Politt",
+      "last_stage_winner_flag": "🇩🇪",
+      "last_stage_num": 5,
+      "gc_leader": "🇧🇪 Tim Wellens",
+      "gc_top10": [
         {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
-          "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
+          "rank": 1,
+          "name": "Tim Wellens",
+          "rider_url": "/profile/tim-wellens",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "19:35:32"
+        },
+        {
+          "rank": 2,
+          "name": "Lewis Askey",
+          "rider_url": "/profile/lewis-askey",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 42"
+        },
+        {
+          "rank": 3,
+          "name": "Jasper Stuyven",
+          "rider_url": "/profile/jasper-stuyven",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:03"
+        },
+        {
+          "rank": 4,
+          "name": "Daan Hoole",
+          "rider_url": "/profile/daan-hoole",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 01:03"
+        },
+        {
+          "rank": 5,
+          "name": "Rick Pluimers",
+          "rider_url": "/profile/rick-pluimers",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 01:15"
+        },
+        {
+          "rank": 6,
+          "name": "Elliot Rowe",
+          "rider_url": "/profile/elliot-rowe",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:15"
+        },
+        {
+          "rank": 7,
+          "name": "Filippo Ganna",
+          "rider_url": "/profile/filippo-ganna",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 02:03"
+        },
+        {
+          "rank": 8,
+          "name": "Florian Vermeersch",
+          "rider_url": "/profile/florian-vermeersch",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 03:02"
+        },
+        {
+          "rank": 9,
+          "name": "Mark Donovan",
+          "rider_url": "/profile/mark-donovan",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 03:04"
+        },
+        {
+          "rank": 10,
+          "name": "Ben Wiggins",
+          "rider_url": "/profile/ben-wiggins",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 05:17"
+        }
+      ],
+      "points_leader": "🇮🇹 Filippo Ganna",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Filippo Ganna",
+          "rider_url": "/profile/filippo-ganna",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "59"
+        },
+        {
+          "rank": 2,
+          "name": "Lewis Askey",
+          "rider_url": "/profile/lewis-askey",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "46"
+        },
+        {
+          "rank": 3,
+          "name": "Tim Wellens",
+          "rider_url": "/profile/tim-wellens",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "44"
+        },
+        {
+          "rank": 4,
+          "name": "Olav Kooij",
+          "rider_url": "/profile/olav-kooij",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "43"
+        },
+        {
+          "rank": 5,
+          "name": "Tim Merlier",
+          "rider_url": "/profile/tim-merlier",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "43"
+        },
+        {
+          "rank": 6,
+          "name": "Cees Bol",
+          "rider_url": "/profile/cees-bol",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "32"
+        },
+        {
+          "rank": 7,
+          "name": "Nils Politt",
+          "rider_url": "/profile/nils-politt",
+          "team": "",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "30"
+        },
+        {
+          "rank": 8,
+          "name": "Matteo Trentin",
+          "rider_url": "/profile/matteo-trentin",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "26"
+        },
+        {
+          "rank": 9,
+          "name": "Florian Vermeersch",
+          "rider_url": "/profile/florian-vermeersch",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "25"
+        },
+        {
+          "rank": 10,
+          "name": "Axel Källberg",
+          "rider_url": "/profile/axel-kallberg",
+          "team": "",
+          "nat_code": "FI",
+          "flag": "🇫🇮",
+          "time_gap": "23"
+        }
+      ],
+      "kom_leader": "🇨🇿 Michal Schuran",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Michal Schuran",
+          "rider_url": "/profile/michal-schuran",
+          "team": "",
+          "nat_code": "CZ",
+          "flag": "🇨🇿",
+          "time_gap": "37"
+        },
+        {
+          "rank": 2,
+          "name": "Xandro Meurisse",
+          "rider_url": "/profile/xandro-meurisse",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "21"
+        },
+        {
+          "rank": 3,
+          "name": "Ian Lopez De San Roman",
+          "rider_url": "/profile/ian-lopez-de-san-roman",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "19"
+        },
+        {
+          "rank": 4,
+          "name": "Tim Wellens",
+          "rider_url": "/profile/tim-wellens",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "17"
+        },
+        {
+          "rank": 5,
+          "name": "Cees Bol",
+          "rider_url": "/profile/cees-bol",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "17"
+        },
+        {
+          "rank": 6,
+          "name": "Brem Deman",
+          "rider_url": "/profile/brem-deman",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "17"
+        },
+        {
+          "rank": 7,
+          "name": "Jonah Killy",
+          "rider_url": "/profile/jonah-killy",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "15"
+        },
+        {
+          "rank": 8,
+          "name": "Ben Swift",
+          "rider_url": "/profile/ben-swift",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "14"
+        },
+        {
+          "rank": 9,
+          "name": "Mikkel Bjerg",
+          "rider_url": "/profile/mikkel-bjerg",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "11"
+        },
+        {
+          "rank": 10,
+          "name": "Benoît Cosnefroy",
+          "rider_url": "/profile/benoit-cosnefroy",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "9"
+        }
+      ],
+      "youth_leader": "🇬🇧 Elliot Rowe",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Elliot Rowe",
+          "rider_url": "/profile/elliot-rowe",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "19:36:47"
+        },
+        {
+          "rank": 2,
+          "name": "Ben Wiggins",
+          "rider_url": "/profile/ben-wiggins",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 04:02"
+        },
+        {
+          "rank": 3,
+          "name": "Jacob Bush",
+          "rider_url": "/profile/jacob-bush",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 10:46"
+        },
+        {
+          "rank": 4,
+          "name": "Tomás Pridal",
+          "rider_url": "/profile/tomas-pridal",
+          "team": "",
+          "nat_code": "CZ",
+          "flag": "🇨🇿",
+          "time_gap": "+ 15:48"
+        },
+        {
+          "rank": 5,
+          "name": "Samuel Florez Garces",
+          "rider_url": "/profile/samuel-florez",
+          "team": "",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "+ 19:10"
+        },
+        {
+          "rank": 6,
+          "name": "Axel Bouquet",
+          "rider_url": "/profile/axel-bouquet",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 19:54"
+        },
+        {
+          "rank": 7,
+          "name": "Teodor De Luca",
+          "rider_url": "/profile/teodor-de-luca",
+          "team": "",
+          "nat_code": "SE",
+          "flag": "🇸🇪",
+          "time_gap": "+ 21:39"
+        },
+        {
+          "rank": 8,
+          "name": "William Smith",
+          "rider_url": "/profile/thomas-william-smith",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 27:05"
+        },
+        {
+          "rank": 9,
+          "name": "Sebastian Bjerregaard Vestergaard",
+          "rider_url": "/profile/sebastian-bjerregaard-vestergaard",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 28:15"
+        },
+        {
+          "rank": 10,
+          "name": "Frank Aron Ragilo",
+          "rider_url": "/profile/frank-aron-ragilo",
+          "team": "",
+          "nat_code": "EE",
+          "flag": "🇪🇪",
+          "time_gap": "+ 28:54"
         }
       ]
     },
-    {
-      "slug": "gran-piemonte",
-      "cf_slug": "gran-piemonte-2026",
-      "name": "Gran Piemonte",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-08",
-      "end_date": "2026-10-08",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gran-piemonte-2026",
-      "startlist": [
-        {
-          "name": "Alberto Bettiol",
-          "slug": "alberto-bettiol",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        }
-      ]
-    },
-    {
-      "slug": "paris-tours-elite",
-      "cf_slug": "paris-tours-elite-2026",
-      "name": "Paris - Tours Elite",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-11",
-      "end_date": "2026-10-11",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/paris-tours-elite-2026",
-      "startlist": []
-    },
-    {
-      "slug": "giro-del-veneto",
-      "cf_slug": "giro-del-veneto-2026",
-      "name": "Giro del Veneto",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-14",
-      "end_date": "2026-10-14",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/giro-del-veneto-2026",
-      "startlist": [
-        {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Wout van Aert",
-          "slug": "wout-van-aert",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Jonas Vingegaard",
-          "slug": "jonas-vingegaard",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mathieu van der Poel",
-          "slug": "mathieu-van-der-poel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mads Pedersen",
-          "slug": "mads-pedersen",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Isaac Del Toro",
-          "slug": "isaac-del-toro",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Paul Seixas",
-          "slug": "paul-seixas",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Demi Vollering",
-          "slug": "demi-vollering",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Lotte Kopecky",
-          "slug": "lotte-kopecky",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Katarzyna Niewiadoma",
-          "slug": "katarzyna-niewiadoma",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Pauline Ferrand-Prévot",
-          "slug": "pauline-ferrand-prevot",
-          "nat": "",
-          "team": ""
-        }
-      ]
-    },
-    {
-      "slug": "utsunomiya-japan-cup-road-race",
-      "cf_slug": "utsunomiya-japan-cup-road-race-2026",
-      "name": "Utsunomiya Japan Cup Road Race",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-18",
-      "end_date": "2026-10-18",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/utsunomiya-japan-cup-road-race-2026",
-      "startlist": []
-    },
-    {
-      "slug": "veneto-classic",
-      "cf_slug": "veneto-classic-2026",
-      "name": "Veneto Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-10-18",
-      "end_date": "2026-10-18",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
-      "startlist": [
-        {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Wout van Aert",
-          "slug": "wout-van-aert",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Jonas Vingegaard",
-          "slug": "jonas-vingegaard",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mathieu van der Poel",
-          "slug": "mathieu-van-der-poel",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Mads Pedersen",
-          "slug": "mads-pedersen",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Isaac Del Toro",
-          "slug": "isaac-del-toro",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Paul Seixas",
-          "slug": "paul-seixas",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Demi Vollering",
-          "slug": "demi-vollering",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Lotte Kopecky",
-          "slug": "lotte-kopecky",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Katarzyna Niewiadoma",
-          "slug": "katarzyna-niewiadoma",
-          "nat": "",
-          "team": ""
-        },
-        {
-          "name": "Pauline Ferrand-Prévot",
-          "slug": "pauline-ferrand-prevot",
-          "nat": "",
-          "team": ""
-        }
-      ]
-    }
-  ],
-  "recent": [
     {
       "slug": "bretagne-classic-ouest-france",
       "cf_slug": "bretagne-classic-ouest-france-2026",
@@ -134934,79 +134934,79 @@
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 21
+      "days_away": 20
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 27
+      "days_away": 26
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 27
+      "days_away": 26
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 29
+      "days_away": 28
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 35
+      "days_away": 34
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 42
+      "days_away": 41
     }
   ]
 }

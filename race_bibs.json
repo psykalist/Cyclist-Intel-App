@@ -6,9 +6,9 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-06",
-   "matched": 77,
-   "parsed": 114,
+   "fetched_at": "2026-09-07",
+   "matched": 76,
+   "parsed": 112,
    "bibs": {
     "joseph-blackmore": 2,
     "marco-frigo": 3,
@@ -17,7 +17,6 @@
     "nicholas-schultz": 7,
     "benoit-cosnefroy": 32,
     "ivo-emanuel-oliveira-alves": 34,
-    "florian-vermeersch": 37,
     "camille-charret": 41,
     "valentin-ferron": 42,
     "clement-izquierdo": 43,
@@ -167,7 +166,7 @@
    "name": "Vuelta a España",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/startlist",
-   "fetched_at": "2026-09-06",
+   "fetched_at": "2026-09-07",
    "matched": 175,
    "parsed": 183,
    "bibs": {
@@ -349,5 +348,5 @@
    }
   }
  },
- "generated_at": "2026-09-06"
+ "generated_at": "2026-09-07"
 }

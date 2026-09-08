@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-07 22:16 UTC",
-  "run_at_iso": "2026-09-07T20:18:18.051099+00:00",
+  "run_at": "2026-09-08 16:49 UTC",
+  "run_at_iso": "2026-09-08T14:51:37.819579+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,54 +8,49 @@
       "name": "Vuelta a España",
       "total_stages": 21,
       "stages_completed_before": 14,
-      "stages_completed_after": 15,
-      "new_stages_found": 1,
+      "stages_completed_after": 16,
+      "new_stages_found": 2,
       "cancelled_stages": [
         3
       ],
       "probe": {
-        "stage_num": 16,
-        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-16",
+        "stage_num": 17,
+        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-17",
         "fetch_ok": true,
-        "response_bytes": 330547,
+        "response_bytes": 328692,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-09-06 20:44 UTC",
-        "stall_attempts": 3,
-        "stall_hours": 23.5,
+        "stall_since": "2026-09-08 16:49 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "maryland-cycling-classic-2026",
-      "name": "Maryland Cycling Classic",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 0,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": {
-        "stage_num": 1,
-        "url": "https://cyclingflash.com/race/maryland-cycling-classic-2026/result/stage-1",
-        "fetch_ok": true,
-        "response_bytes": 186716,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-09-05 15:37 UTC",
-        "stall_attempts": 6,
-        "stall_hours": 52.7,
-        "possible_parser_drift": true
-      },
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
+      "incomplete_results": [
+        {
+          "stage": 16,
+          "rows": 5,
+          "missing_times": 0
+        }
+      ],
+      "incomplete_classifications": [
+        {
+          "cls": "gc_top10",
+          "rows": 5
+        },
+        {
+          "cls": "points_top10",
+          "rows": 5
+        },
+        {
+          "cls": "kom_top10",
+          "rows": 5
+        }
+      ]
     }
   ],
   "has_fetch_errors": false,
-  "has_possible_parser_drift": true,
+  "has_possible_parser_drift": false,
   "has_overdue_stages": false,
-  "has_incomplete_results": false
+  "has_incomplete_results": true
 }

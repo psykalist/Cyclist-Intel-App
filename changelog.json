@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-09-07T20:19:18.163261+00:00",
+  "generated_at": "2026-09-08T14:52:40.626117+00:00",
   "entries": [
+    {
+      "id": "4e9e3c5b6508",
+      "timestamp": "2026-09-08T14:52:40.620416+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 16 Vuelta a España: 🇺🇸 Kevin Vermaerke wins"
+    },
+    {
+      "id": "786b5cf54e82",
+      "timestamp": "2026-09-08T14:52:40.620416+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Vuelta a España GC: 🇺🇸 Kevin Vermaerke leads"
+    },
+    {
+      "id": "b1a9e4f010e3",
+      "timestamp": "2026-09-08T14:52:40.620416+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Vuelta a España Points: 🇺🇸 Kevin Vermaerke leads"
+    },
+    {
+      "id": "cbffbda66863",
+      "timestamp": "2026-09-08T14:52:40.620416+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Vuelta a España KOM: 🇺🇸 Kevin Vermaerke leads"
+    },
+    {
+      "id": "54f5161c9f04",
+      "timestamp": "2026-09-08T14:52:40.620416+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Vuelta a España Youth: 🇺🇸 Kevin Vermaerke leads"
+    },
     {
       "id": "39b68f092f3b",
       "timestamp": "2026-09-06T18:47:22.853862+00:00",

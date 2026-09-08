@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-08T14:52:40.626117+00:00",
+  "generated_at": "2026-09-08T19:42:49.673984+00:00",
   "entries": [
+    {
+      "id": "7a28a29cb47b",
+      "timestamp": "2026-09-08T19:42:49.668044+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 16 Vuelta a España: 🇬🇧 Matthew Brennan wins"
+    },
     {
       "id": "4e9e3c5b6508",
       "timestamp": "2026-09-08T14:52:40.620416+00:00",
@@ -434,27 +441,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Maryland Cycling Classic startlist: Demi Vollering, Isaac Del Toro, Jonas Vingegaard (+9 more) added"
-    },
-    {
-      "id": "ff3274f4b8b6",
-      "timestamp": "2026-08-25T17:25:43.015337+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Vuelta a España: 🇸🇮 Tadej Pogačar wins"
-    },
-    {
-      "id": "3108e0b1585c",
-      "timestamp": "2026-08-25T17:25:43.015337+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a España KOM: 🇸🇮 Tadej Pogačar leads"
-    },
-    {
-      "id": "6ae92ccbb8b2",
-      "timestamp": "2026-08-25T17:25:43.015337+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Vuelta a España Youth: 🇬🇧 Oscar Onley leads"
     }
   ]
 }

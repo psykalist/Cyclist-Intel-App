@@ -1,26 +1,21 @@
 {
-  "updated_at": "2026-09-08T15:26:38.717256+00:00",
+  "updated_at": "2026-09-08T19:44:33.523560+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "scrape_log.json: INCOMPLETE result on vuelta-a-espana-2026 stage 16 -- pulled 5 of 10 expected rows. Source may still be publishing; scraper will re-pull.",
-    "scrape_log.json: INCOMPLETE gc_top10 on vuelta-a-espana-2026 -- pulled 5 of 10 expected rows.",
-    "scrape_log.json: INCOMPLETE points_top10 on vuelta-a-espana-2026 -- pulled 5 of 10 expected rows.",
-    "scrape_log.json: INCOMPLETE kom_top10 on vuelta-a-espana-2026 -- pulled 5 of 10 expected rows."
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 4001,
+    "data_size_kb": 4008,
     "data_upcoming": 20,
     "data_recent": 76,
     "data_teams": 33,
     "rider_profiles": 2689,
     "live_races": 1,
-    "scraped_at": "2026-09-08T14:51:39.386706+00:00",
-    "data_age_hours": 0.6,
+    "scraped_at": "2026-09-08T19:41:49.295973+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-08 16:49 UTC",
+    "scrape_log_run_at": "2026-09-08 21:40 UTC",
     "rider_roster": 1346,
     "rider_missing_profile": 101,
     "rider_missing_palmares": 922

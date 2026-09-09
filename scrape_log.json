@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-08 21:40 UTC",
-  "run_at_iso": "2026-09-08T19:41:47.685984+00:00",
+  "run_at": "2026-09-09 16:55 UTC",
+  "run_at_iso": "2026-09-09T14:57:32.593994+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -17,12 +17,12 @@
         "stage_num": 17,
         "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-17",
         "fetch_ok": true,
-        "response_bytes": 328692,
+        "response_bytes": 328759,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-08 16:49 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 2.9,
+        "stall_attempts": 3,
+        "stall_hours": 22.1,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-09T14:58:32.946972+00:00",
+  "generated_at": "2026-09-09T19:36:22.017756+00:00",
   "entries": [
+    {
+      "id": "4043edd5d3a1",
+      "timestamp": "2026-09-09T19:36:22.012360+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 17 Vuelta a España: 🇬🇧 Matthew Brennan wins"
+    },
     {
       "id": "7a28a29cb47b",
       "timestamp": "2026-09-08T19:42:49.668044+00:00",
@@ -427,13 +434,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Alessandro Fancellu, Damiano Caruso, Mikkel Frølich Honoré (+2 more) added"
-    },
-    {
-      "id": "fa008393e3b9",
-      "timestamp": "2026-08-26T18:52:26.012752+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Vuelta a España: 🇬🇧 Matthew Brennan wins"
     }
   ]
 }

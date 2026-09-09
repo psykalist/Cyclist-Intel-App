@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-09T14:57:32.594748+00:00",
-  "scraped_at_human": "09 Sep 2026 14:57 UTC",
+  "scraped_at": "2026-09-09T19:35:21.713719+00:00",
+  "scraped_at_human": "09 Sep 2026 19:35 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 16,
+      "stages_completed": 17,
       "stages": [
         {
           "num": 1,
@@ -1949,10 +1949,101 @@
           "num": 17,
           "label": "Stage 17",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-17",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Matthew Brennan",
+          "winner_flag": "🇬🇧",
+          "winner_nat": "GB",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Matthew Brennan",
+              "rider_url": "/profile/matthew-brennan",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 2,
+              "name": "Jordi Meeus",
+              "rider_url": "/profile/jordi-meeus",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 3,
+              "name": "Magnus Cort",
+              "rider_url": "/profile/magnus-cort-nielsen",
+              "team": "",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 4,
+              "name": "Alessandro Romele",
+              "rider_url": "/profile/alessandro-romele",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 5,
+              "name": "Steffen De Schuyteneer",
+              "rider_url": "/profile/steffen-de-schuyteneer",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 6,
+              "name": "Axel Laurance",
+              "rider_url": "/profile/axel-laurance",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 7,
+              "name": "Pau Miquel Delgado",
+              "rider_url": "/profile/pau-miquel-delgado",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 8,
+              "name": "Cesar Macias Estrada",
+              "rider_url": "/profile/cesar-macias-estrada",
+              "team": "",
+              "nat_code": "MX",
+              "flag": "🇲🇽",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 9,
+              "name": "Hugo Hofstetter",
+              "rider_url": "/profile/hugo-hofstetter",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:15"
+            },
+            {
+              "rank": 10,
+              "name": "Bryan Coquard",
+              "rider_url": "/profile/bryan-coquard",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "04:07:15"
+            }
+          ],
           "date_str": "Wednesday 09 September",
           "start_town": "Dos Hermanas",
           "finish_town": "Sevilla",
@@ -1961,7 +2052,8 @@
           "start_time": "13:24",
           "stage_type": "flat",
           "description": "Seville also hosted a finish in the Vuelta two editions ago, when it was the flattest stage of the race. The expected sprint between Kaden Groves and Wout van Aert never materialised, as Pavel Bittner surprised the big names and took the victory. Once again, a bunch sprint appears the most logical scenario. The start is in Dos Hermanas, a suburb of Seville. A wide detour to the south and east brings the stage distance to almost 190 kilometres. There are no genuine climbs to speak of. Most of the elevation gain comes on long stretches of false flat. That means the peloton is likely to remain together for much of the day, allowing the sprint teams to maintain control.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32690/responsive-images/01KCPW4BG78R5K0BMJR9NSP480___heightProfile_1200_385.webp",
+          "non_finishers": []
         },
         {
           "num": 18,
@@ -3144,7 +3236,7 @@
       ],
       "last_stage_winner": "Matthew Brennan",
       "last_stage_winner_flag": "🇬🇧",
-      "last_stage_num": 16,
+      "last_stage_num": 17,
       "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
@@ -3154,7 +3246,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "56:02:29"
+          "time_gap": "60:09:44"
         },
         {
           "rank": 2,
@@ -3256,7 +3348,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "189"
+          "time_gap": "239"
         },
         {
           "rank": 3,
@@ -3265,7 +3357,7 @@
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "153"
+          "time_gap": "171"
         },
         {
           "rank": 4,
@@ -3274,7 +3366,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "119"
+          "time_gap": "126"
         },
         {
           "rank": 5,
@@ -3283,10 +3375,19 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "86"
+          "time_gap": "116"
         },
         {
           "rank": 6,
+          "name": "Magnus Cort",
+          "rider_url": "/profile/magnus-cort-nielsen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "90"
+        },
+        {
+          "rank": 7,
           "name": "Kevin Vermaerke",
           "rider_url": "/profile/kevin-vermaerke",
           "team": "",
@@ -3295,7 +3396,7 @@
           "time_gap": "83"
         },
         {
-          "rank": 7,
+          "rank": 8,
           "name": "Andreas Leknessund",
           "rider_url": "/profile/andreas-leknessund",
           "team": "",
@@ -3304,7 +3405,7 @@
           "time_gap": "79"
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "Ramses Debruyne",
           "rider_url": "/profile/ramses-debruyne",
           "team": "",
@@ -3313,22 +3414,13 @@
           "time_gap": "78"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "Ethan Hayter",
           "rider_url": "/profile/ethan-hayter",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
           "time_gap": "77"
-        },
-        {
-          "rank": 10,
-          "name": "Bastien Tronchon",
-          "rider_url": "/profile/bastien-tronchon",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "73"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -3340,7 +3432,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "56:08:13"
+          "time_gap": "60:15:28"
         },
         {
           "rank": 2,
@@ -3394,19 +3486,10 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 38:57"
+          "time_gap": "+ 39:45"
         },
         {
           "rank": 8,
-          "name": "Jarno Widar",
-          "rider_url": "/profile/jarno-widar",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 43:42"
-        },
-        {
-          "rank": 9,
           "name": "Embret Svestad-Bardseng",
           "rider_url": "/profile/embret-svestad-bardseng",
           "team": "",
@@ -3415,13 +3498,22 @@
           "time_gap": "+ 43:46"
         },
         {
+          "rank": 9,
+          "name": "Jarno Widar",
+          "rider_url": "/profile/jarno-widar",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 45:28"
+        },
+        {
           "rank": 10,
           "name": "Valentin Paret-Peintre",
           "rider_url": "/profile/valentin-paret-peintre",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 01:13:15"
+          "time_gap": "+ 01:14:10"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
@@ -3537,7 +3629,7 @@
       "stage_type": "hilly",
       "start_town": "Québec",
       "finish_town": "Québec",
-      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Paul Seixas Quinn Simmons Louis Barré Jenno Berckmoes Paul Lapeira Maxim Van Gils Win chance 1 Remco Evenepoel 59.97% 2 Isaac Del Toro Romero 9.50% 3 Paul Seixas 4.44% 4 Tom Pidcock 2.50% 5 Giulio Ciccone 2.43% 6 Juan Ayuso Pesquera 1.93% 7 Matteo Jorgenson 1.30% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Jhonnatan Manuel Narváez Paul Seixas Louis Barré Paul Lapeira Quinn Simmons Maxim Van Gils Win chance 1 Remco Evenepoel 59.97% 2 Isaac Del Toro Romero 9.50% 3 Paul Seixas 4.44% 4 Tom Pidcock 2.50% 5 Giulio Ciccone 2.43% 6 Juan Ayuso Pesquera 1.93% 7 Matteo Jorgenson 1.30% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "grand-prix-cycliste-de-montreal",
@@ -3556,7 +3648,7 @@
       "stage_type": "mountain",
       "start_town": "Montréal",
       "finish_town": "Montréal",
-      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Win chance 1 Remco Evenepoel 59.95% 2 Isaac Del Toro Romero 9.35% 3 Paul Seixas 4.53% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Brandon McNulty Tom Pidcock Quinn Simmons Juan Ayuso Pesquera Matteo Jorgenson Jhonnatan Manuel Narváez Mauro Schmid Win chance 1 Remco Evenepoel 59.95% 2 Isaac Del Toro Romero 9.35% 3 Paul Seixas 4.53% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "il-lombardia",
@@ -3938,7 +4030,7 @@
       "stage_type": "flat",
       "start_town": "Brakel",
       "finish_town": "Haacht",
-      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3081 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.56% 2 Tim Merlier 25.30% 3 Biniam Girmay Hailu 9.77% 4 Matteo Trentin 9.16% 5 Davide Ballerini 4.25% 6 Florian Sénéchal 2.25% 7 Filippo Baroncini 1.85% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3080 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.53% 2 Tim Merlier 25.33% 3 Biniam Girmay Hailu 9.76% 4 Matteo Trentin 9.15% 5 Davide Ballerini 4.24% 6 Florian Sénéchal 2.24% 7 Filippo Baroncini 1.87% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "cro-race",
@@ -100471,6 +100563,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "09-09-2026",
+          "race": "Vuelta a España - Stage 17",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
           "date": "08-09-2026",
           "race": "Vuelta a España - Stage 16",
           "cat": "2.UWT"
@@ -100695,7 +100793,7 @@
         }
       },
       "fetched_at": "2026-07-06T19:27:58.289597+00:00",
-      "wins_refreshed_at": "2026-09-08T19:41:49.295723+00:00"
+      "wins_refreshed_at": "2026-09-09T19:35:21.713478+00:00"
     },
     "sam-welsford": {
       "slug": "sam-welsford",

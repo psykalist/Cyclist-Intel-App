@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-10T14:44:03.114135+00:00",
-  "scraped_at_human": "10 Sep 2026 14:44 UTC",
+  "scraped_at": "2026-09-10T19:22:47.323469+00:00",
+  "scraped_at_human": "10 Sep 2026 19:22 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 17,
+      "stages_completed": 18,
       "stages": [
         {
           "num": 1,
@@ -2059,10 +2059,101 @@
           "num": 18,
           "label": "Stage 18",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-18",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Stefan Küng",
+          "winner_flag": "🇨🇭",
+          "winner_nat": "CH",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Stefan Küng",
+              "rider_url": "/profile/stefan-kung",
+              "team": "",
+              "nat_code": "CH",
+              "flag": "🇨🇭",
+              "time_gap": "35:22"
+            },
+            {
+              "rank": 2,
+              "name": "Callum Thornley",
+              "rider_url": "/profile/callum-thornley",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 03"
+            },
+            {
+              "rank": 3,
+              "name": "João Almeida",
+              "rider_url": "/profile/joao-almeida",
+              "team": "",
+              "nat_code": "PT",
+              "flag": "🇵🇹",
+              "time_gap": "+ 09"
+            },
+            {
+              "rank": 4,
+              "name": "Primož Roglič",
+              "rider_url": "/profile/primoz-roglic",
+              "team": "",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "+ 19"
+            },
+            {
+              "rank": 5,
+              "name": "Wout van Aert",
+              "rider_url": "/profile/wout-van-aert",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 20"
+            },
+            {
+              "rank": 6,
+              "name": "Finn Fisher-Black",
+              "rider_url": "/profile/finn-fisher-black",
+              "team": "",
+              "nat_code": "NZ",
+              "flag": "🇳🇿",
+              "time_gap": "+ 21"
+            },
+            {
+              "rank": 7,
+              "name": "Bruno Armirail",
+              "rider_url": "/profile/bruno-armirail",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 26"
+            },
+            {
+              "rank": 8,
+              "name": "Ivo Emanuel Oliveira Alves",
+              "rider_url": "/profile/ivo-emanuel-oliveira-alves",
+              "team": "",
+              "nat_code": "PT",
+              "flag": "🇵🇹",
+              "time_gap": "+ 30"
+            },
+            {
+              "rank": 9,
+              "name": "Ethan Hayter",
+              "rider_url": "/profile/ethan-hayter",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 32"
+            },
+            {
+              "rank": 10,
+              "name": "Xabier Mikel Azparren Iruzun",
+              "rider_url": "/profile/xabier-mikel-azparren-iruzun",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 33"
+            }
+          ],
           "date_str": "Thursday 10 September",
           "start_town": "El Puerto de Santa",
           "finish_town": "Jerez de la Frontera",
@@ -2071,7 +2162,18 @@
           "start_time": "14:07",
           "stage_type": "ITT",
           "description": "A few corners after the start take the riders out of El Puerto de Santa María. They can then shift into a big gear and ride at full speed for a long stretch. At Portal, after 12.7 kilometres, a corner briefly interrupts their momentum. After that, it is time to accelerate again. The route makes a wide arc around the eastern side of Jerez before the riders enter the city from the north. The finish is on the arrow-straight Avenida Andalucía. With so little elevation gain, this looks like a time trial for the true specialists. Jerez de la Frontera also has a rich Vuelta history. Twelve editions ago, the race began here with a team time trial won by Movistar. For the most recent individual time trial in Jerez, we have to go back to 1992, when Jelle Nijdam was fastest and immediately claimed the first leader’s jersey.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32655/responsive-images/01KCPTR81ZADYHV5V9C108GYTY___heightProfile_1200_460.webp",
+          "non_finishers": [
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Alexis Renard",
+              "rider_url": "/profile/alexis-renard",
+              "team": "Cofidis",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            }
+          ]
         },
         {
           "num": 19,
@@ -3234,9 +3336,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Matthew Brennan",
-      "last_stage_winner_flag": "🇬🇧",
-      "last_stage_num": 17,
+      "last_stage_winner": "Stefan Küng",
+      "last_stage_winner_flag": "🇨🇭",
+      "last_stage_num": 18,
       "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
@@ -3246,25 +3348,25 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "60:09:44"
+          "time_gap": "60:45:58"
         },
         {
           "rank": 2,
-          "name": "Felix Gall",
-          "rider_url": "/profile/felix-gall",
-          "team": "",
-          "nat_code": "AT",
-          "flag": "🇦🇹",
-          "time_gap": "+ 02:06"
-        },
-        {
-          "rank": 3,
           "name": "Primož Roglič",
           "rider_url": "/profile/primoz-roglic",
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "+ 02:10"
+          "time_gap": "+ 01:37"
+        },
+        {
+          "rank": 3,
+          "name": "Felix Gall",
+          "rider_url": "/profile/felix-gall",
+          "team": "",
+          "nat_code": "AT",
+          "flag": "🇦🇹",
+          "time_gap": "+ 03:01"
         },
         {
           "rank": 4,
@@ -3273,7 +3375,7 @@
           "team": "",
           "nat_code": "EC",
           "flag": "🇪🇨",
-          "time_gap": "+ 04:24"
+          "time_gap": "+ 05:17"
         },
         {
           "rank": 5,
@@ -3282,7 +3384,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "+ 05:44"
+          "time_gap": "+ 06:03"
         },
         {
           "rank": 6,
@@ -3291,43 +3393,43 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "+ 06:14"
+          "time_gap": "+ 07:00"
         },
         {
           "rank": 7,
-          "name": "Mattias Skjelmose",
-          "rider_url": "/profile/mattias-skjelmose-jensen",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 06:49"
-        },
-        {
-          "rank": 8,
-          "name": "Cristian Rodriguez Martin",
-          "rider_url": "/profile/cristian-rodriguez-martin",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "+ 07:01"
-        },
-        {
-          "rank": 9,
           "name": "Clément Berthet",
           "rider_url": "/profile/clement-berthet",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 07:19"
+          "time_gap": "+ 07:47"
+        },
+        {
+          "rank": 8,
+          "name": "Mattias Skjelmose",
+          "rider_url": "/profile/mattias-skjelmose-jensen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 07:51"
+        },
+        {
+          "rank": 9,
+          "name": "Cristian Rodriguez Martin",
+          "rider_url": "/profile/cristian-rodriguez-martin",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 07:51"
         },
         {
           "rank": 10,
-          "name": "Sepp Kuss",
-          "rider_url": "/profile/sepp-kuss",
+          "name": "Harold Alfonso Tejada Canacue",
+          "rider_url": "/profile/harold-alfonso-tejada-canacue",
           "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "+ 08:55"
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "+ 09:57"
         }
       ],
       "points_leader": "🇧🇪 Wout van Aert",
@@ -3339,7 +3441,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "282"
+          "time_gap": "306"
         },
         {
           "rank": 2,
@@ -3366,7 +3468,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "126"
+          "time_gap": "141"
         },
         {
           "rank": 5,
@@ -3388,6 +3490,15 @@
         },
         {
           "rank": 7,
+          "name": "Ethan Hayter",
+          "rider_url": "/profile/ethan-hayter",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "84"
+        },
+        {
+          "rank": 8,
           "name": "Kevin Vermaerke",
           "rider_url": "/profile/kevin-vermaerke",
           "team": "",
@@ -3396,7 +3507,7 @@
           "time_gap": "83"
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "Andreas Leknessund",
           "rider_url": "/profile/andreas-leknessund",
           "team": "",
@@ -3405,22 +3516,13 @@
           "time_gap": "79"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "Ramses Debruyne",
           "rider_url": "/profile/ramses-debruyne",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "78"
-        },
-        {
-          "rank": 10,
-          "name": "Ethan Hayter",
-          "rider_url": "/profile/ethan-hayter",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "77"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -3432,7 +3534,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "60:15:28"
+          "time_gap": "60:52:01"
         },
         {
           "rank": 2,
@@ -3441,7 +3543,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "+ 30"
+          "time_gap": "+ 57"
         },
         {
           "rank": 3,
@@ -3450,7 +3552,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 10:41"
+          "time_gap": "+ 12:33"
         },
         {
           "rank": 4,
@@ -3459,7 +3561,7 @@
           "team": "",
           "nat_code": "US",
           "flag": "🇺🇸",
-          "time_gap": "+ 20:04"
+          "time_gap": "+ 20:54"
         },
         {
           "rank": 5,
@@ -3468,7 +3570,7 @@
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "+ 24:02"
+          "time_gap": "+ 27:08"
         },
         {
           "rank": 6,
@@ -3477,7 +3579,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "+ 33:35"
+          "time_gap": "+ 34:54"
         },
         {
           "rank": 7,
@@ -3486,7 +3588,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 39:45"
+          "time_gap": "+ 43:31"
         },
         {
           "rank": 8,
@@ -3495,7 +3597,7 @@
           "team": "",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 43:46"
+          "time_gap": "+ 46:22"
         },
         {
           "rank": 9,
@@ -3504,7 +3606,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 45:28"
+          "time_gap": "+ 51:16"
         },
         {
           "rank": 10,
@@ -3513,7 +3615,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 01:14:10"
+          "time_gap": "+ 01:19:00"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
@@ -3662,7 +3764,7 @@
       "stage_type": "mountain",
       "start_town": "Montréal",
       "finish_town": "Montréal",
-      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 13 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 845 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Brandon McNulty Tom Pidcock Quinn Simmons Juan Ayuso Pesquera Matteo Jorgenson Jhonnatan Manuel Narváez Mauro Schmid Win chance 1 Remco Evenepoel 59.96% 2 Isaac Del Toro Romero 9.34% 3 Paul Seixas 4.54% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 13 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 845 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Giulio Ciccone Tom Pidcock Quinn Simmons Louis Barré Jenno Berckmoes Mauro Schmid Tim Wellens Win chance 1 Remco Evenepoel 59.96% 2 Isaac Del Toro Romero 9.34% 3 Paul Seixas 4.54% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "il-lombardia",
@@ -135153,6 +135255,264 @@
         }
       ],
       "wins_refreshed_at": "2026-09-08T14:51:39.386639+00:00"
+    },
+    "stefan-kung": {
+      "slug": "stefan-kung",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "10-09-2026",
+          "race": "Vuelta a España - Stage 18",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2026",
+          "date": "09-08-2026",
+          "race": "Tour de Pologne - Stage 7",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "13-10-2024",
+          "race": "Chrono des Nations",
+          "cat": "1.1"
+        },
+        {
+          "year": "2024",
+          "date": "08-09-2024",
+          "race": "Vuelta a España - Stage 21",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "20-06-2024",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2023",
+          "date": "11-06-2023",
+          "race": "Tour de Suisse - Stage 1",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2023",
+          "date": "19-02-2023",
+          "race": "Volta ao Algarve em Bicicleta - Stage 5",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2022",
+          "date": "16-10-2022",
+          "race": "Chrono des Nations",
+          "cat": "1.1"
+        },
+        {
+          "year": "2022",
+          "date": "26-08-2022",
+          "race": "Tour Poitou - Charentes",
+          "cat": "2.1"
+        },
+        {
+          "year": "2022",
+          "date": "25-08-2022",
+          "race": "Tour Poitou - Charentes - Stage 3b",
+          "cat": "2.1"
+        },
+        {
+          "year": "2021",
+          "date": "17-10-2021",
+          "race": "Chrono des Nations",
+          "cat": "1.1"
+        },
+        {
+          "year": "2021",
+          "date": "09-09-2021",
+          "race": "UEC Road European Championships TT",
+          "cat": "CC"
+        },
+        {
+          "year": "2021",
+          "date": "16-06-2021",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2021",
+          "date": "06-06-2021",
+          "race": "Tour de Suisse - Stage 1",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2021",
+          "date": "18-04-2021",
+          "race": "Volta a la Comunitat Valenciana",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2021",
+          "date": "17-04-2021",
+          "race": "Volta a la Comunitat Valenciana - Stage 4",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2020",
+          "date": "31-10-2020",
+          "race": "National Road Championships - Switzerland",
+          "cat": "CN"
+        },
+        {
+          "year": "2020",
+          "date": "24-08-2020",
+          "race": "UEC Road European Championships TT",
+          "cat": "CC"
+        },
+        {
+          "year": "2020",
+          "date": "12-07-2020",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2019",
+          "date": "18-09-2019",
+          "race": "Okolo Slovenska / Tour de Slovaquie - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2019",
+          "date": "15-09-2019",
+          "race": "Tour du Doubs",
+          "cat": "1.1"
+        },
+        {
+          "year": "2019",
+          "date": "26-06-2019",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2019",
+          "date": "02-05-2019",
+          "race": "Tour de Romandie - Stage 2",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2019",
+          "date": "22-02-2019",
+          "race": "Volta ao Algarve em Bicicleta - Stage 3",
+          "cat": "2.HC"
+        },
+        {
+          "year": "2018",
+          "date": "14-08-2018",
+          "race": "Binck Bank Tour - Stage 2",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2018",
+          "date": "27-06-2018",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2018",
+          "date": "17-06-2018",
+          "race": "Tour de Suisse - Stage 9",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2017",
+          "date": "08-08-2017",
+          "race": "BinckBank Tour - Stage 2",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2017",
+          "date": "22-06-2017",
+          "race": "National Road Championships - Switzerland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2017",
+          "date": "27-04-2017",
+          "race": "Tour de Romandie - Stage 2",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2015",
+          "date": "01-05-2015",
+          "race": "Tour de Romandie - Stage 4",
+          "cat": "WT"
+        },
+        {
+          "year": "2015",
+          "date": "04-04-2015",
+          "race": "Volta Limburg Classic",
+          "cat": "1.1"
+        },
+        {
+          "year": "2015",
+          "date": "19-02-2015",
+          "race": "UCI Cycling World Championships - Track (Individual Pursuit)",
+          "cat": "CM"
+        },
+        {
+          "year": "2014",
+          "date": "13-07-2014",
+          "race": "European Championship U23",
+          "cat": "CC"
+        },
+        {
+          "year": "2014",
+          "date": "11-07-2014",
+          "race": "European Championship TT U23",
+          "cat": "CC"
+        },
+        {
+          "year": "2014",
+          "date": "22-06-2014",
+          "race": "Flèche Ardennaise",
+          "cat": "1.2"
+        },
+        {
+          "year": "2014",
+          "date": "30-03-2014",
+          "race": "Tour de Normandie",
+          "cat": "2.2"
+        },
+        {
+          "year": "2014",
+          "date": "24-03-2014",
+          "race": "Tour de Normandie - Prologue",
+          "cat": "2.2"
+        },
+        {
+          "year": "2013",
+          "date": "19-06-2013",
+          "race": "National Road Championships - Switzerland TT U23",
+          "cat": "CN"
+        },
+        {
+          "year": "2013",
+          "date": "01-04-2013",
+          "race": "Giro del Belvedere di Villa di Cordignano",
+          "cat": "1.2U"
+        },
+        {
+          "year": "2011",
+          "date": "23-06-2011",
+          "race": "National Road Championships - Switzerland TT U19",
+          "cat": "CN"
+        },
+        {
+          "year": "2011",
+          "date": "29-05-2011",
+          "race": "Tour du Pays de Vaud - Stage 3",
+          "cat": "2.1"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-10T19:22:47.323264+00:00"
     }
   },
   "startlists_needed": [

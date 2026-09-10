@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-09T19:35:21.713719+00:00",
-  "scraped_at_human": "09 Sep 2026 19:35 UTC",
+  "scraped_at": "2026-09-10T14:44:03.114135+00:00",
+  "scraped_at_human": "10 Sep 2026 14:44 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -3609,6 +3609,20 @@
           "time_gap": "10"
         }
       ]
+    },
+    {
+      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
+      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "live",
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
+      "startlist": [],
+      "stages": []
     }
   ],
   "upcoming": [
@@ -3629,7 +3643,7 @@
       "stage_type": "hilly",
       "start_town": "Québec",
       "finish_town": "Québec",
-      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Jhonnatan Manuel Narváez Paul Seixas Louis Barré Paul Lapeira Quinn Simmons Maxim Van Gils Win chance 1 Remco Evenepoel 59.97% 2 Isaac Del Toro Romero 9.50% 3 Paul Seixas 4.44% 4 Tom Pidcock 2.50% 5 Giulio Ciccone 2.43% 6 Juan Ayuso Pesquera 1.93% 7 Matteo Jorgenson 1.30% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 13 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 845 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Jhonnatan Manuel Narváez Paul Seixas Louis Barré Paul Lapeira Quinn Simmons Maxim Van Gils Win chance 1 Remco Evenepoel 59.98% 2 Isaac Del Toro Romero 9.49% 3 Paul Seixas 4.45% 4 Tom Pidcock 2.50% 5 Giulio Ciccone 2.43% 6 Juan Ayuso Pesquera 1.93% 7 Matteo Jorgenson 1.31% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "grand-prix-cycliste-de-montreal",
@@ -3648,7 +3662,7 @@
       "stage_type": "mountain",
       "start_town": "Montréal",
       "finish_town": "Montréal",
-      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 869 9 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 863 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 846 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Brandon McNulty Tom Pidcock Quinn Simmons Juan Ayuso Pesquera Matteo Jorgenson Jhonnatan Manuel Narváez Mauro Schmid Win chance 1 Remco Evenepoel 59.95% 2 Isaac Del Toro Romero 9.35% 3 Paul Seixas 4.53% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 12 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 13 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 19 Quinn Simmons Lidl - Trek Lidl - Trek 853 22 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 23 Giulio Ciccone Lidl - Trek Lidl - Trek 845 25 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Brandon McNulty Tom Pidcock Quinn Simmons Juan Ayuso Pesquera Matteo Jorgenson Jhonnatan Manuel Narváez Mauro Schmid Win chance 1 Remco Evenepoel 59.96% 2 Isaac Del Toro Romero 9.34% 3 Paul Seixas 4.54% 4 Giulio Ciccone 2.49% 5 Juan Ayuso Pesquera 2.21% 6 Tom Pidcock 1.99% 7 Matteo Jorgenson 1.38% 8 Ilan Van Wilder 0.95% 9 Brandon McNulty 0.85% 10 Guillermo Thomas Silva Coussan 0.73% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "il-lombardia",
@@ -3874,19 +3888,6 @@
       ]
     },
     {
-      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini",
-      "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-10",
-      "end_date": "2026-09-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "startlist": []
-    },
-    {
       "slug": "gp-de-fourmies-la-voix-du-nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "name": "GP de Fourmies / La Voix du Nord",
@@ -4012,7 +4013,7 @@
       "stage_type": "mountain",
       "start_town": "Seraing",
       "finish_town": "Namur",
-      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 90 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 800 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 139 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 788 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "super-8-classic",
@@ -135159,79 +135160,79 @@
       "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
       "cf_slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
       "start_date": "2026-09-10",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Grand Prix Cycliste de Québec",
       "cf_slug": "grand-prix-cycliste-de-quebec-2026",
       "start_date": "2026-09-11",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Grand Prix Cycliste de Montréal",
       "cf_slug": "grand-prix-cycliste-de-montreal-2026",
       "start_date": "2026-09-13",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "GP de Fourmies / La Voix du Nord",
       "cf_slug": "gp-de-fourmies-la-voix-du-nord-2026",
       "start_date": "2026-09-13",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 24
+      "days_away": 23
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 24
+      "days_away": 23
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 32
+      "days_away": 31
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 39
+      "days_away": 38
     }
   ]
 }

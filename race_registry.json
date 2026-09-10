@@ -1680,7 +1680,7 @@
    "name": "Skoda Tour de Luxembourg",
    "sources": {
     "cf_slug": "skoda-tour-de-luxembourg",
-    "pcs_slug": "skoda-tour-de-luxembourg",
+    "pcs_slug": "tour-de-luxembourg",
     "cyclingoo_slug": null
    },
    "years": {
@@ -2426,5 +2426,5 @@
    "wants_bibs": true
   }
  },
- "updated_at": "2026-09-09"
+ "updated_at": "2026-09-10"
 }

@@ -6,7 +6,7 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-10",
+   "fetched_at": "2026-09-11",
    "matched": 87,
    "parsed": 129,
    "bibs": {
@@ -177,7 +177,7 @@
    "name": "Skoda Tour de Luxembourg",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-de-luxembourg/2026/startlist",
-   "fetched_at": "2026-09-10",
+   "fetched_at": "2026-09-11",
    "matched": 60,
    "parsed": 96,
    "bibs": {
@@ -249,7 +249,7 @@
    "name": "Vuelta a España",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/startlist",
-   "fetched_at": "2026-09-10",
+   "fetched_at": "2026-09-11",
    "matched": 175,
    "parsed": 183,
    "bibs": {
@@ -431,5 +431,5 @@
    }
   }
  },
- "generated_at": "2026-09-10"
+ "generated_at": "2026-09-11"
 }

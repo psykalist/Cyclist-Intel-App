@@ -1,26 +1,26 @@
 {
-  "run_at": "2026-09-10 21:21 UTC",
-  "run_at_iso": "2026-09-10T19:22:45.681925+00:00",
+  "run_at": "2026-09-11 16:43 UTC",
+  "run_at_iso": "2026-09-11T14:45:30.992417+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 16,
-      "stages_completed_after": 18,
+      "stages_completed_before": 17,
+      "stages_completed_after": 19,
       "new_stages_found": 2,
       "cancelled_stages": [
         3
       ],
       "probe": {
-        "stage_num": 19,
-        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-19",
+        "stage_num": 20,
+        "url": "https://cyclingflash.com/race/vuelta-a-espana-2026/result/stage-20",
         "fetch_ok": true,
-        "response_bytes": 335291,
+        "response_bytes": 336593,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-09-10 21:21 UTC",
+        "stall_since": "2026-09-11 16:43 UTC",
         "stall_attempts": 1,
         "stall_hours": -2.0,
         "possible_parser_drift": false
@@ -30,27 +30,20 @@
       "incomplete_classifications": []
     },
     {
-      "slug": "gran-premio-citta-di-peccioli-coppa-sabatini-2026",
-      "name": "Gran Premio città di Peccioli - Coppa Sabatini 2026",
+      "slug": "grand-prix-cycliste-de-quebec-2026",
+      "name": "Grand Prix Cycliste de Québec",
       "total_stages": 1,
       "stages_completed_before": 0,
-      "stages_completed_after": 0,
-      "new_stages_found": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 1,
-        "url": "https://cyclingflash.com/race/gran-premio-citta-di-peccioli-coppa-sabatini-2026/result/stage-1",
-        "fetch_ok": false,
-        "response_bytes": 0,
-        "matched_result_table": false,
-        "overdue": false
-      },
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
     }
   ],
-  "has_fetch_errors": true,
+  "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
   "has_incomplete_results": false

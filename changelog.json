@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T19:23:47.068141+00:00",
+  "generated_at": "2026-09-11T14:46:27.025665+00:00",
   "entries": [
     {
       "id": "e1ae50e8edcf",
@@ -427,20 +427,6 @@
       "type": "leader_change",
       "icon": "green",
       "text": "Vuelta a España Points: 🇧🇪 Wout van Aert leads"
-    },
-    {
-      "id": "c36b237418e7",
-      "timestamp": "2026-08-27T20:54:38.941659+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 6 Vuelta a España: 🇸🇮 Tadej Pogačar wins"
-    },
-    {
-      "id": "bba4d60fd5cd",
-      "timestamp": "2026-08-27T20:54:38.941659+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Alessandro Fancellu, Damiano Caruso, Mikkel Frølich Honoré (+2 more) added"
     }
   ]
 }

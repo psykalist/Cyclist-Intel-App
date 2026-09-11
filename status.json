@@ -1,24 +1,21 @@
 {
-  "updated_at": "2026-09-11T10:04:18.446651+00:00",
+  "updated_at": "2026-09-11T14:47:24.683557+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "data.json is 15h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: could not fetch next-stage probe for ['gran-premio-citta-di-peccioli-coppa-sabatini-2026'] -- network/HTTP issue, not necessarily a bug"
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 4021,
-    "data_upcoming": 19,
-    "data_recent": 76,
+    "data_upcoming": 18,
+    "data_recent": 77,
     "data_teams": 33,
     "rider_profiles": 2689,
     "live_races": 2,
-    "scraped_at": "2026-09-10T19:22:47.323469+00:00",
-    "data_age_hours": 14.7,
+    "scraped_at": "2026-09-11T14:45:30.993267+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-10 21:21 UTC",
+    "scrape_log_run_at": "2026-09-11 16:43 UTC",
     "rider_roster": 1346,
     "rider_missing_profile": 101,
     "rider_missing_palmares": 922

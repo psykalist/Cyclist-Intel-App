@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-11 16:43 UTC",
-  "run_at_iso": "2026-09-11T14:45:30.992417+00:00",
+  "run_at": "2026-09-11 21:21 UTC",
+  "run_at_iso": "2026-09-11T19:23:00.176373+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -21,8 +21,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-11 16:43 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 2.6,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

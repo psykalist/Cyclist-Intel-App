@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-11T14:45:30.993267+00:00",
-  "scraped_at_human": "11 Sep 2026 14:45 UTC",
+  "scraped_at": "2026-09-11T19:23:02.016785+00:00",
+  "scraped_at_human": "11 Sep 2026 19:23 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 18,
+      "stages_completed": 19,
       "stages": [
         {
           "num": 1,
@@ -2179,10 +2179,101 @@
           "num": 19,
           "label": "Stage 19",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-19",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Eddie Dunbar",
+          "winner_flag": "🇮🇪",
+          "winner_nat": "IE",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Eddie Dunbar",
+              "rider_url": "/profile/eddie-dunbar",
+              "team": "",
+              "nat_code": "IE",
+              "flag": "🇮🇪",
+              "time_gap": "05:00:54"
+            },
+            {
+              "rank": 2,
+              "name": "Santiago Buitrago Sanchez",
+              "rider_url": "/profile/santiago-buitrago-sanchez",
+              "team": "",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "+ 14"
+            },
+            {
+              "rank": 3,
+              "name": "Thomas Gloag",
+              "rider_url": "/profile/thomas-gloag",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 23"
+            },
+            {
+              "rank": 4,
+              "name": "Urko Berrade Fernandez",
+              "rider_url": "/profile/urko-berrade-fernandez",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 44"
+            },
+            {
+              "rank": 5,
+              "name": "Marcel Camprubi Pijuan",
+              "rider_url": "/profile/marcel-camprubi-pijuan",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 01:44"
+            },
+            {
+              "rank": 6,
+              "name": "Andreas Leknessund",
+              "rider_url": "/profile/andreas-leknessund",
+              "team": "",
+              "nat_code": "NO",
+              "flag": "🇳🇴",
+              "time_gap": "+ 02:01"
+            },
+            {
+              "rank": 7,
+              "name": "Guillaume Martin",
+              "rider_url": "/profile/guillaume-martin",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 02:11"
+            },
+            {
+              "rank": 8,
+              "name": "Chris Hamilton",
+              "rider_url": "/profile/chris-hamilton",
+              "team": "",
+              "nat_code": "AU",
+              "flag": "🇦🇺",
+              "time_gap": "+ 02:39"
+            },
+            {
+              "rank": 9,
+              "name": "Kevin Vermaerke",
+              "rider_url": "/profile/kevin-vermaerke",
+              "team": "",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "+ 03:03"
+            },
+            {
+              "rank": 10,
+              "name": "Sergio Samitier",
+              "rider_url": "/profile/sergio-samitier",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 03:17"
+            }
+          ],
           "date_str": "Friday 11 September",
           "start_town": "Vélez-Málaga",
           "finish_town": "Peñas Blancas",
@@ -2191,7 +2282,36 @@
           "start_time": "12:07",
           "stage_type": "mountain",
           "description": "Immediately after the descent comes the Puerto de los Empedrados, measuring 7.1 kilometres at an average gradient of 5.8 percent. A short descent follows, then another climb and eventually a long plunge towards Ronda. There, the Puerto Cerro Mojón awaits, a climb no less than fifteen kilometres long but with modest gradients. After a short section at altitude, the riders descend from more than a thousand metres back towards sea level. Having followed the coast between San Pedro de Alcántara and Estepona, the finale begins virtually on the beach. Over nineteen kilometres, the road climbs from sea level to an altitude of 1,270 metres at an average gradient of 6.7 percent, with the first 2.5 kilometres forming the steepest section, reaching up to 12.5 percent. Date Friday 11 September Start Vélez-Málaga Finish Estepona. Alto Peñas Blancas Distance 210.0 km Elevation gain 3781 m Start time 12:07 Expected finish 17:14-17:47 Win chance 1 Tadej Pogačar 77.29% 2 Richard Carapaz 2.07% 3 Felix Gall 2.03% 4 Mattias Skjelmose 1.82% 5 Tobias Halland Johannessen 1.25% 6 Primož Roglič 1.17% 7 Christophe Laporte 0.73% 8 Wout van Aert 0.58% 9 Oscar Onley 0.54% 10 Matthew Riccitello 0.48% Model-based estimate from rider ratings and the stage profile.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32691/responsive-images/01KCPW6ZTDDFY5CTN548H62Q0T___heightProfile_1200_481.webp",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Paul Double",
+              "rider_url": "/profile/paul-double",
+              "team": "Team Jayco AlUla",
+              "nat_code": "GB",
+              "flag": "🇬🇧"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Stefan Küng",
+              "rider_url": "/profile/stefan-kung",
+              "team": "Tudor Pro Cycling Team",
+              "nat_code": "CH",
+              "flag": "🇨🇭"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Yevgeniy Fedorov",
+              "rider_url": "/profile/yevgeniy-fedorov",
+              "team": "XDS Astana Team",
+              "nat_code": "KZ",
+              "flag": "🇰🇿"
+            }
+          ]
         },
         {
           "num": 20,
@@ -3336,9 +3456,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Stefan Küng",
-      "last_stage_winner_flag": "🇨🇭",
-      "last_stage_num": 18,
+      "last_stage_winner": "Eddie Dunbar",
+      "last_stage_winner_flag": "🇮🇪",
+      "last_stage_num": 19,
       "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
@@ -3348,7 +3468,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "60:45:58"
+          "time_gap": "65:52:03"
         },
         {
           "rank": 2,
@@ -3393,7 +3513,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "+ 07:00"
+          "time_gap": "+ 07:06"
         },
         {
           "rank": 7,
@@ -3402,25 +3522,25 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 07:47"
+          "time_gap": "+ 07:57"
         },
         {
           "rank": 8,
-          "name": "Mattias Skjelmose",
-          "rider_url": "/profile/mattias-skjelmose-jensen",
-          "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "+ 07:51"
-        },
-        {
-          "rank": 9,
           "name": "Cristian Rodriguez Martin",
           "rider_url": "/profile/cristian-rodriguez-martin",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 07:51"
+          "time_gap": "+ 08:21"
+        },
+        {
+          "rank": 9,
+          "name": "Mattias Skjelmose",
+          "rider_url": "/profile/mattias-skjelmose-jensen",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 09:06"
         },
         {
           "rank": 10,
@@ -3429,7 +3549,7 @@
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "+ 09:57"
+          "time_gap": "+ 10:27"
         }
       ],
       "points_leader": "🇧🇪 Wout van Aert",
@@ -3481,6 +3601,15 @@
         },
         {
           "rank": 6,
+          "name": "Kevin Vermaerke",
+          "rider_url": "/profile/kevin-vermaerke",
+          "team": "",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "110"
+        },
+        {
+          "rank": 7,
           "name": "Magnus Cort",
           "rider_url": "/profile/magnus-cort-nielsen",
           "team": "",
@@ -3489,31 +3618,22 @@
           "time_gap": "90"
         },
         {
-          "rank": 7,
+          "rank": 8,
+          "name": "Andreas Leknessund",
+          "rider_url": "/profile/andreas-leknessund",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "89"
+        },
+        {
+          "rank": 9,
           "name": "Ethan Hayter",
           "rider_url": "/profile/ethan-hayter",
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
           "time_gap": "84"
-        },
-        {
-          "rank": 8,
-          "name": "Kevin Vermaerke",
-          "rider_url": "/profile/kevin-vermaerke",
-          "team": "",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "83"
-        },
-        {
-          "rank": 9,
-          "name": "Andreas Leknessund",
-          "rider_url": "/profile/andreas-leknessund",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "79"
         },
         {
           "rank": 10,
@@ -3534,7 +3654,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "60:52:01"
+          "time_gap": "65:58:06"
         },
         {
           "rank": 2,
@@ -3543,7 +3663,7 @@
           "team": "",
           "nat_code": "SI",
           "flag": "🇸🇮",
-          "time_gap": "+ 57"
+          "time_gap": "+ 01:03"
         },
         {
           "rank": 3,
@@ -3552,7 +3672,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 12:33"
+          "time_gap": "+ 13:14"
         },
         {
           "rank": 4,
@@ -3561,7 +3681,7 @@
           "team": "",
           "nat_code": "US",
           "flag": "🇺🇸",
-          "time_gap": "+ 20:54"
+          "time_gap": "+ 21:49"
         },
         {
           "rank": 5,
@@ -3570,34 +3690,34 @@
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "+ 27:08"
+          "time_gap": "+ 30:15"
         },
         {
           "rank": 6,
-          "name": "Finlay Pickering",
-          "rider_url": "/profile/xavier-finlay-pickering",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "+ 34:54"
-        },
-        {
-          "rank": 7,
           "name": "Raúl García Pierna",
           "rider_url": "/profile/raul-garcia-pierna",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 43:31"
+          "time_gap": "+ 54:10"
         },
         {
-          "rank": 8,
+          "rank": 7,
           "name": "Embret Svestad-Bardseng",
           "rider_url": "/profile/embret-svestad-bardseng",
           "team": "",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 46:22"
+          "time_gap": "+ 58:57"
+        },
+        {
+          "rank": 8,
+          "name": "Finlay Pickering",
+          "rider_url": "/profile/xavier-finlay-pickering",
+          "team": "",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:04:51"
         },
         {
           "rank": 9,
@@ -3606,16 +3726,16 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 51:16"
+          "time_gap": "+ 01:14:57"
         },
         {
           "rank": 10,
-          "name": "Valentin Paret-Peintre",
-          "rider_url": "/profile/valentin-paret-peintre",
+          "name": "Carlos Rodríguez Cano",
+          "rider_url": "/profile/carlos-rodriguez-cano",
           "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 01:19:00"
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:37:06"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
@@ -3627,7 +3747,7 @@
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "69"
+          "time_gap": "78"
         },
         {
           "rank": 2,
@@ -3640,21 +3760,21 @@
         },
         {
           "rank": 3,
+          "name": "Andreas Leknessund",
+          "rider_url": "/profile/andreas-leknessund",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "29"
+        },
+        {
+          "rank": 4,
           "name": "Enric Mas Nicolau",
           "rider_url": "/profile/enric-mas-nicolau",
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
           "time_gap": "24"
-        },
-        {
-          "rank": 4,
-          "name": "Andreas Leknessund",
-          "rider_url": "/profile/andreas-leknessund",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "23"
         },
         {
           "rank": 5,
@@ -3667,12 +3787,12 @@
         },
         {
           "rank": 6,
-          "name": "Jakob Omrzel",
-          "rider_url": "/profile/jakob-omrzel",
+          "name": "Eddie Dunbar",
+          "rider_url": "/profile/eddie-dunbar",
           "team": "",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "12"
+          "nat_code": "IE",
+          "flag": "🇮🇪",
+          "time_gap": "16"
         },
         {
           "rank": 7,
@@ -3681,10 +3801,19 @@
           "team": "",
           "nat_code": "US",
           "flag": "🇺🇸",
-          "time_gap": "11"
+          "time_gap": "14"
         },
         {
           "rank": 8,
+          "name": "Jakob Omrzel",
+          "rider_url": "/profile/jakob-omrzel",
+          "team": "",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "12"
+        },
+        {
+          "rank": 9,
           "name": "Felix Gall",
           "rider_url": "/profile/felix-gall",
           "team": "",
@@ -3693,21 +3822,12 @@
           "time_gap": "11"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "Marco Brenner",
           "rider_url": "/profile/marco-brenner",
           "team": "",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "10"
-        },
-        {
-          "rank": 10,
-          "name": "Oscar Onley",
-          "rider_url": "/profile/oscar-onley",
-          "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
           "time_gap": "10"
         }
       ]
@@ -3729,7 +3849,7 @@
       "stage_type": "hilly",
       "start_town": "Québec",
       "finish_town": "Québec",
-      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Info Date 11 September 2026 Discipline Road - Individual Road Race Category 1.UWT Country Canada Start Québec Finish Québec Times 17:00 - 22:05 Distance 205.4 km Elevation gain 2446 m Overall Profile Hill Finish Profile Hill Website https://www.gpcqm.ca Related news Tom Pidcock: “It’s especially strange that Tadej Pogacar won’t wear the rainbow jersey next year” Isaac Del Toro is a world championship contender, but looks beyond Montréal: “Why shouldn’t I stay?” Paul Seixas wants to know where he stands in Canada: \"Now I know I'm competitive with the very best\" If Remco Evenepoel had to choose: \"I’d rather win Montréal in three weeks than now\" Preview: GP de Québec 2026, battle between Evenepoel, Del Toro, Pidcock and Seixas Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 13 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 20 Quinn Simmons Lidl - Trek Lidl - Trek 853 24 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 25 Giulio Ciccone Lidl - Trek Lidl - Trek 845 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Jhonnatan Manuel Narváez Paul Seixas Paul Lapeira Guillermo Thomas Silva Coussan Quinn Simmons Maxim Van Gils Win chance 1 Remco Evenepoel 60.19% 2 Isaac Del Toro Romero 9.52% 3 Paul Seixas 4.45% 4 Tom Pidcock 2.51% 5 Giulio Ciccone 2.43% 6 Juan Ayuso Pesquera 1.93% 7 Matteo Jorgenson 1.29% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile.",
+      "description": "Info Startlist Results Winners 11 Sep Date 205 km Distance 1.UWT Category Info Date 11 September 2026 Discipline Road - Individual Road Race Category 1.UWT Country Canada Start Québec Finish Québec Times 17:00 - 22:05 Distance 205.4 km Elevation gain 2446 m Overall Profile Hill Finish Profile Hill Website https://www.gpcqm.ca Related news 2026 World Championships: Paul Seixas hopes he won’t have to miss Visma rider Louis Barré Sick Victor Campenaerts abandons early in 2026 GP de Québec Louis Barré misses Canadian double-header after breaking his wrist in Québec crash Tom Pidcock: “It’s especially strange that Tadej Pogacar won’t wear the rainbow jersey next year” Isaac Del Toro is a world championship contender, but looks beyond Montréal: “Why shouldn’t I stay?” Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 951 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 892 7 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 868 10 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 862 13 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 859 14 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 859 20 Quinn Simmons Lidl - Trek Lidl - Trek 853 24 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 847 25 Giulio Ciccone Lidl - Trek Lidl - Trek 845 26 Michael Matthews Team Jayco AlUla Team Jayco AlUla 843 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Tom Pidcock Michael Matthews Jhonnatan Manuel Narváez Paul Seixas Paul Lapeira Guillermo Thomas Silva Coussan Quinn Simmons Maxim Van Gils Win chance 1 Remco Evenepoel 60.19% 2 Isaac Del Toro Romero 9.52% 3 Paul Seixas 4.46% 4 Tom Pidcock 2.52% 5 Giulio Ciccone 2.44% 6 Juan Ayuso Pesquera 1.94% 7 Matteo Jorgenson 1.24% 8 Guillermo Thomas Silva Coussan 0.96% 9 Ilan Van Wilder 0.86% 10 Quinn Simmons 0.85% Model-based estimate from rider ratings and the stage profile.",
       "stages": [
         {
           "num": 1,
@@ -135526,6 +135646,66 @@
         }
       ],
       "wins_refreshed_at": "2026-09-10T19:22:47.323264+00:00"
+    },
+    "eddie-dunbar": {
+      "slug": "eddie-dunbar",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "11-09-2026",
+          "race": "Vuelta a España - Stage 19",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "07-09-2024",
+          "race": "Vuelta a España - Stage 20",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "28-08-2024",
+          "race": "Vuelta a España - Stage 11",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "20-06-2024",
+          "race": "National Road Championships - Ireland TT",
+          "cat": "CN"
+        },
+        {
+          "year": "2022",
+          "date": "15-05-2022",
+          "race": "Tour de Hongrie",
+          "cat": "2.1"
+        },
+        {
+          "year": "2022",
+          "date": "26-03-2022",
+          "race": "Settimana Internazionale Coppi e Bartali",
+          "cat": "2.1"
+        },
+        {
+          "year": "2017",
+          "date": "08-04-2017",
+          "race": "Ronde van Vlaanderen U23",
+          "cat": "1.NCUP"
+        },
+        {
+          "year": "2016",
+          "date": "28-05-2016",
+          "race": "An Post Rás - Stage 7",
+          "cat": "2.2"
+        },
+        {
+          "year": "2014",
+          "date": "17-08-2014",
+          "race": "National Road Championships - Ireland U19",
+          "cat": "CN"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-11T19:23:02.016702+00:00"
     }
   },
   "startlists_needed": [

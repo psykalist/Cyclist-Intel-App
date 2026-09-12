@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-11T19:23:57.221505+00:00",
+  "generated_at": "2026-09-12T13:50:56.451914+00:00",
   "entries": [
+    {
+      "id": "2ee54e13a6d4",
+      "timestamp": "2026-09-12T13:50:56.445884+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "CRO Race startlist: Adrien Boichis, Alessandro Fancellu, Alessio Magagnotti (+127 more) added"
+    },
     {
       "id": "76845184b535",
       "timestamp": "2026-09-11T19:23:57.215881+00:00",
@@ -420,20 +427,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Jan Castellon added"
-    },
-    {
-      "id": "7a4faff1a643",
-      "timestamp": "2026-08-28T21:19:53.882243+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 7 Vuelta a España: 🇳🇴 Andreas Leknessund wins"
-    },
-    {
-      "id": "ba7c22f818f8",
-      "timestamp": "2026-08-28T21:19:53.882243+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Vuelta a España Points: 🇧🇪 Wout van Aert leads"
     }
   ]
 }

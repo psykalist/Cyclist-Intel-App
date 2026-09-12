@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-12T13:50:56.451914+00:00",
+  "generated_at": "2026-09-12T18:54:46.524072+00:00",
   "entries": [
+    {
+      "id": "5e4775d2bca5",
+      "timestamp": "2026-09-12T18:54:46.518386+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 20 Vuelta a España: 🇪🇸 Mikel Landa Meana wins"
+    },
     {
       "id": "2ee54e13a6d4",
       "timestamp": "2026-09-12T13:50:56.445884+00:00",
@@ -420,13 +427,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Vuelta a España KOM: 🇳🇴 Andreas Leknessund leads"
-    },
-    {
-      "id": "10e2f728743b",
-      "timestamp": "2026-08-29T15:26:23.326275+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Jan Castellon added"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-13T14:46:05.380484+00:00",
-  "scraped_at_human": "13 Sep 2026 14:46 UTC",
+  "scraped_at": "2026-09-13T19:08:01.808517+00:00",
+  "scraped_at_human": "13 Sep 2026 19:08 UTC",
   "live": [
     {
       "slug": "vuelta-a-espana",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-13",
       "total_stages": 21,
       "official_url": "https://cyclingflash.com/race/vuelta-a-espana-2026",
-      "stages_completed": 20,
+      "stages_completed": 21,
       "stages": [
         {
           "num": 1,
@@ -2455,10 +2455,101 @@
           "num": 21,
           "label": "Stage 21",
           "result_url": "/race/vuelta-a-espana-2026/result/stage-21",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Tobias Halland Johannessen",
+          "winner_flag": "🇳🇴",
+          "winner_nat": "NO",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tobias Halland Johannessen",
+              "rider_url": "/profile/tobias-halland-johannessen",
+              "team": "",
+              "nat_code": "NO",
+              "flag": "🇳🇴",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 2,
+              "name": "Alessandro Romele",
+              "rider_url": "/profile/alessandro-romele",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 3,
+              "name": "Ramses Debruyne",
+              "rider_url": "/profile/ramses-debruyne",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 4,
+              "name": "Matthew Brennan",
+              "rider_url": "/profile/matthew-brennan",
+              "team": "",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 5,
+              "name": "Bastien Tronchon",
+              "rider_url": "/profile/bastien-tronchon",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 6,
+              "name": "Pello Bilbao Lopez de Armentia",
+              "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 7,
+              "name": "Finn Fisher-Black",
+              "rider_url": "/profile/finn-fisher-black",
+              "team": "",
+              "nat_code": "NZ",
+              "flag": "🇳🇿",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 8,
+              "name": "Axel Laurance",
+              "rider_url": "/profile/axel-laurance",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 9,
+              "name": "Pau Marti Soriano",
+              "rider_url": "/profile/pau-marti-soriano",
+              "team": "",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "02:54:08"
+            },
+            {
+              "rank": 10,
+              "name": "Marco Brenner",
+              "rider_url": "/profile/marco-brenner",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "02:54:08"
+            }
+          ],
           "date_str": "Sunday 13 September",
           "start_town": "Granada",
           "finish_town": "Granada",
@@ -2467,7 +2558,8 @@
           "start_time": "16:20",
           "stage_type": "hilly",
           "description": "Granada provides an atmospheric backdrop for the Vuelta’s finale. Towering above the city is the famous Alhambra, the Moorish palace complex on Sabika Hill. The peloton will regularly have the iconic monument in view during the closing stages. The decision to finish in Granada was also partly prompted by Formula 1 visiting Madrid on the same weekend, leading the Vuelta to avoid the Spanish capital. The opening part of the final stage is relatively straightforward. For around 65 kilometres, the peloton will mainly encounter gently rolling roads. The real finale then begins, with five laps of the local circuit and four ascents of the climb. The climb towards the Alhambra is only one kilometre long, but at an average gradient of 7.3%, it is steep enough to split the peloton on each passage. After four ascents, the final finish of this Vuelta awaits at the foot of the climb. Instead of a flat bunch sprint in Madrid, the race will conclude with a short, explosive finale in Granada, providing a fitting end to the Vuelta a España.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/32658/responsive-images/01KCPV3R6MNKBSZMQK4JX1X04H___heightProfile_1200_547.webp",
+          "non_finishers": []
         }
       ],
       "startlist": [
@@ -3576,9 +3668,9 @@
           "team": "Equipo Kern Pharma (PRT)"
         }
       ],
-      "last_stage_winner": "Mikel Landa Meana",
-      "last_stage_winner_flag": "🇪🇸",
-      "last_stage_num": 20,
+      "last_stage_winner": "Tobias Halland Johannessen",
+      "last_stage_winner_flag": "🇳🇴",
+      "last_stage_num": 21,
       "gc_leader": "🇪🇸 Enric Mas Nicolau",
       "gc_top10": [
         {
@@ -3588,7 +3680,7 @@
           "team": "",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "70:56:58"
+          "time_gap": "73:52:55"
         },
         {
           "rank": 2,
@@ -3669,7 +3761,7 @@
           "team": "",
           "nat_code": "CO",
           "flag": "🇨🇴",
-          "time_gap": "+ 14:40"
+          "time_gap": "+ 12:51"
         }
       ],
       "points_leader": "🇧🇪 Wout van Aert",
@@ -3690,7 +3782,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "239"
+          "time_gap": "273"
         },
         {
           "rank": 3,
@@ -3699,7 +3791,7 @@
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "171"
+          "time_gap": "216"
         },
         {
           "rank": 4,
@@ -3730,6 +3822,15 @@
         },
         {
           "rank": 7,
+          "name": "Ramses Debruyne",
+          "rider_url": "/profile/ramses-debruyne",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "115"
+        },
+        {
+          "rank": 8,
           "name": "Andreas Leknessund",
           "rider_url": "/profile/andreas-leknessund",
           "team": "",
@@ -3738,31 +3839,22 @@
           "time_gap": "106"
         },
         {
-          "rank": 8,
-          "name": "Ramses Debruyne",
-          "rider_url": "/profile/ramses-debruyne",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "93"
-        },
-        {
           "rank": 9,
-          "name": "Magnus Cort",
-          "rider_url": "/profile/magnus-cort-nielsen",
+          "name": "Tobias Halland Johannessen",
+          "rider_url": "/profile/tobias-halland-johannessen",
           "team": "",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "90"
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "104"
         },
         {
           "rank": 10,
-          "name": "Ethan Hayter",
-          "rider_url": "/profile/ethan-hayter",
+          "name": "Bastien Tronchon",
+          "rider_url": "/profile/bastien-tronchon",
           "team": "",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
-          "time_gap": "84"
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "103"
         }
       ],
       "youth_leader": "🇬🇧 Oscar Onley",
@@ -3774,7 +3866,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "71:06:26"
+          "time_gap": "74:02:23"
         },
         {
           "rank": 2,
@@ -3792,7 +3884,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 17:24"
+          "time_gap": "+ 15:35"
         },
         {
           "rank": 4,
@@ -3810,7 +3902,7 @@
           "team": "",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 01:03:07"
+          "time_gap": "+ 01:01:18"
         },
         {
           "rank": 6,
@@ -3828,7 +3920,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 01:11:13"
+          "time_gap": "+ 01:09:24"
         },
         {
           "rank": 8,
@@ -3837,7 +3929,7 @@
           "team": "",
           "nat_code": "GB",
           "flag": "🇬🇧",
-          "time_gap": "+ 01:19:58"
+          "time_gap": "+ 01:19:42"
         },
         {
           "rank": 9,
@@ -3846,7 +3938,7 @@
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 01:42:52"
+          "time_gap": "+ 01:41:03"
         },
         {
           "rank": 10,
@@ -3855,7 +3947,7 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 01:49:02"
+          "time_gap": "+ 01:47:13"
         }
       ],
       "kom_leader": "🇨🇴 Santiago Buitrago Sanchez",
@@ -3969,7 +4061,7 @@
       "stage_type": "mountain",
       "start_town": "Montréal",
       "finish_town": "Montréal",
-      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Info Date 13 September 2026 Discipline Road - Individual Road Race Category 1.UWT Country Canada Start Montréal Finish Montréal Times 16:15 - 21:45 Distance 215.3 km Elevation gain 3550 m Overall Profile Hill Finish Profile Hill Website https://www.gpcqm.ca Related news Sick Victor Campenaerts abandons early in 2026 GP de Québec Louis Barré misses Canadian double-header after breaking his wrist in Québec crash Tom Pidcock: “It’s especially strange that Tadej Pogacar won’t wear the rainbow jersey next year” Isaac Del Toro is a world championship contender, but looks beyond Montréal: “Why shouldn’t I stay?” Paul Seixas wants to know where he stands in Canada: \"Now I know I'm competitive with the very best\" Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 956 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 886 5 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 875 9 Quinn Simmons Lidl - Trek Lidl - Trek 864 10 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 864 11 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 864 12 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 861 22 Giulio Ciccone Lidl - Trek Lidl - Trek 849 23 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 849 24 Michael Matthews Team Jayco AlUla Team Jayco AlUla 847 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Giulio Ciccone Tom Pidcock Quinn Simmons Anthon Charmig Matteo Jorgenson Brandon McNulty Mauro Schmid Win chance 1 Remco Evenepoel 71.26% 2 Isaac Del Toro Romero 4.48% 3 Paul Seixas 3.50% 4 Giulio Ciccone 3.13% 5 Juan Ayuso Pesquera 1.89% 6 Tom Pidcock 1.73% 7 Matteo Jorgenson 1.19% 8 Quinn Simmons 0.84% 9 Ilan Van Wilder 0.63% 10 Brandon McNulty 0.59% Model-based estimate from rider ratings and the stage profile.",
+      "description": "Info Startlist Results Winners 13 Sep Date 215 km Distance 1.UWT Category Info Date 13 September 2026 Discipline Road - Individual Road Race Category 1.UWT Country Canada Start Montréal Finish Montréal Times 16:15 - 21:45 Distance 215.3 km Elevation gain 3550 m Overall Profile Hill Finish Profile Hill Website https://www.gpcqm.ca Related news Isaac Del Toro: \"GP de Montréal is a very important day to see where I stand\" Paul Seixas builds confidence: \"Hopefully I can let my legs do the talking in Montréal\" Sick Victor Campenaerts abandons early in 2026 GP de Québec Louis Barré misses Canadian double-header after breaking his wrist in Québec crash Tom Pidcock: “It’s especially strange that Tadej Pogacar won’t wear the rainbow jersey next year” Best riders on startlist Rank Rider Team Rating 2 Remco Evenepoel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 956 4 Isaac Del Toro Romero UAE Team Emirates XRG UAE Team Emirates XRG 886 5 Maxim Van Gils Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 875 9 Quinn Simmons Lidl - Trek Lidl - Trek 864 10 Juan Ayuso Pesquera Lidl - Trek Lidl - Trek 864 11 Paul Seixas Decathlon CMA CGM Team Decathlon CMA CGM Team 864 12 Tom Pidcock Pinarello - Q36.5 Pro Cycling Team Pinarello - Q36.5 Pro Cycling Team 861 22 Giulio Ciccone Lidl - Trek Lidl - Trek 849 23 Brandon McNulty UAE Team Emirates XRG UAE Team Emirates XRG 849 24 Michael Matthews Team Jayco AlUla Team Jayco AlUla 847 Full startlist Favorites Remco Evenepoel Isaac Del Toro Romero Paul Seixas Giulio Ciccone Tom Pidcock Quinn Simmons Anthon Charmig Matteo Jorgenson Brandon McNulty Mauro Schmid Win chance 1 Remco Evenepoel 71.26% 2 Isaac Del Toro Romero 4.48% 3 Paul Seixas 3.50% 4 Giulio Ciccone 3.13% 5 Juan Ayuso Pesquera 1.89% 6 Tom Pidcock 1.73% 7 Matteo Jorgenson 1.19% 8 Quinn Simmons 0.84% 9 Ilan Van Wilder 0.63% 10 Brandon McNulty 0.59% Model-based estimate from rider ratings and the stage profile.",
       "stages": [
         {
           "num": 1,
@@ -4335,7 +4427,7 @@
       "stage_type": "mountain",
       "start_town": "Seraing",
       "finish_town": "Namur",
-      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 71 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 807 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 71 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 806 Full startlist Win chance 1 Benoît Cosnefroy 100.00% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "super-8-classic",
@@ -4710,12 +4802,6 @@
           "name": "BUGGE Martin Urianstad",
           "slug": "martin-urianstad",
           "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Anthon Charmig",
-          "slug": "anthon-charmig",
-          "nat": "dk",
           "team": "Uno-X Mobility (WT)"
         },
         {
@@ -107713,6 +107799,12 @@
       "nat": "Norway",
       "wins": [
         {
+          "year": "2026",
+          "date": "13-09-2026",
+          "race": "Vuelta a España - Stage 21",
+          "cat": "2.UWT"
+        },
+        {
           "year": "2023",
           "date": "24-09-2023",
           "race": "Skoda Tour Luxembourg - Stage 5",
@@ -107823,7 +107915,8 @@
           "bar": 56
         }
       },
-      "fetched_at": "2026-07-01T19:34:19.443392+00:00"
+      "fetched_at": "2026-07-01T19:34:19.443392+00:00",
+      "wins_refreshed_at": "2026-09-13T19:08:01.808320+00:00"
     },
     "remco-evenepoel": {
       "slug": "remco-evenepoel",

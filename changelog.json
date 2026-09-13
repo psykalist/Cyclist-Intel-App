@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:54:46.524072+00:00",
+  "generated_at": "2026-09-13T14:46:58.693305+00:00",
   "entries": [
     {
       "id": "5e4775d2bca5",
@@ -406,27 +406,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Bretagne Classic - Ouest-France Youth: 🇪🇸 Alex Aranburu Deba leads"
-    },
-    {
-      "id": "ffde99c9b465",
-      "timestamp": "2026-08-29T19:36:41.365846+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 8 Vuelta a España: 🇫🇷 Bryan Coquard wins"
-    },
-    {
-      "id": "c1dd853f536c",
-      "timestamp": "2026-08-29T19:36:41.365846+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Vuelta a España GC: 🇪🇸 Enric Mas Nicolau leads"
-    },
-    {
-      "id": "e8e8510d8030",
-      "timestamp": "2026-08-29T19:36:41.365846+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a España KOM: 🇳🇴 Andreas Leknessund leads"
     }
   ]
 }

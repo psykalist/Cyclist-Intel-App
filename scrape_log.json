@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-09-12 20:52 UTC",
-  "run_at_iso": "2026-09-12T18:53:51.709365+00:00",
+  "run_at": "2026-09-13 16:44 UTC",
+  "run_at_iso": "2026-09-13T14:46:05.379574+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "vuelta-a-espana-2026",
       "name": "Vuelta a España",
       "total_stages": 21,
-      "stages_completed_before": 18,
+      "stages_completed_before": 19,
       "stages_completed_after": 20,
-      "new_stages_found": 2,
+      "new_stages_found": 1,
       "cancelled_stages": [
         3
       ],
@@ -21,16 +21,49 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-12 20:52 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 17.9,
         "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "grand-prix-cycliste-de-montreal-2026",
+      "name": "Grand Prix Cycliste de Montréal",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "gp-de-fourmies-la-voix-du-nord-2026",
+      "name": "GP de Fourmies / La Voix du Nord",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 0,
+      "new_stages_found": 0,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 1,
+        "url": "https://cyclingflash.com/race/gp-de-fourmies-la-voix-du-nord-2026/result/stage-1",
+        "fetch_ok": false,
+        "response_bytes": 0,
+        "matched_result_table": false,
+        "overdue": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
     }
   ],
-  "has_fetch_errors": false,
+  "has_fetch_errors": true,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
   "has_incomplete_results": false

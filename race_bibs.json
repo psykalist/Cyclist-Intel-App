@@ -6,7 +6,7 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-12",
+   "fetched_at": "2026-09-13",
    "matched": 87,
    "parsed": 129,
    "bibs": {
@@ -177,13 +177,12 @@
    "name": "Skoda Tour de Luxembourg",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-de-luxembourg/2026/startlist",
-   "fetched_at": "2026-09-12",
-   "matched": 61,
-   "parsed": 97,
+   "fetched_at": "2026-09-13",
+   "matched": 60,
+   "parsed": 96,
    "bibs": {
     "igor-arrieta-lizarraga": 1,
     "jan-christen": 3,
-    "milan-van-den-haute": 4,
     "julius-johansen": 5,
     "adria-pericas-capdevila": 6,
     "mathieu-van-der-poel": 11,
@@ -250,7 +249,7 @@
    "name": "Vuelta a España",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/vuelta-a-espana/2026/startlist",
-   "fetched_at": "2026-09-12",
+   "fetched_at": "2026-09-13",
    "matched": 175,
    "parsed": 183,
    "bibs": {
@@ -432,5 +431,5 @@
    }
   }
  },
- "generated_at": "2026-09-12"
+ "generated_at": "2026-09-13"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T19:08:54.432365+00:00",
+  "generated_at": "2026-09-14T16:45:07.398732+00:00",
   "entries": [
     {
       "id": "5e893cd10a13",
@@ -364,55 +364,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Luca Paletti added"
-    },
-    {
-      "id": "55970ab6fbaa",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 9 Vuelta a España: 🇪🇸 Enric Mas Nicolau wins"
-    },
-    {
-      "id": "29dd669c8038",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a España KOM: 🇨🇴 Santiago Buitrago Sanchez leads"
-    },
-    {
-      "id": "89a9001ae53f",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Bretagne Classic - Ouest-France: 🇪🇸 Alex Aranburu Deba wins"
-    },
-    {
-      "id": "848cd481a18c",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Bretagne Classic - Ouest-France GC: 🇪🇸 Alex Aranburu Deba leads"
-    },
-    {
-      "id": "046dd27d6277",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Bretagne Classic - Ouest-France Points: 🇪🇸 Alex Aranburu Deba leads"
-    },
-    {
-      "id": "4db55c90db3d",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Bretagne Classic - Ouest-France KOM: 🇪🇸 Alex Aranburu Deba leads"
-    },
-    {
-      "id": "b893b33a6643",
-      "timestamp": "2026-08-30T19:37:35.263146+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Bretagne Classic - Ouest-France Youth: 🇪🇸 Alex Aranburu Deba leads"
     }
   ]
 }

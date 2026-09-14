@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-09-14T01:52:18.831691+00:00",
+  "updated_at": "2026-09-14T11:02:39.463083+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 16h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: could not fetch next-stage probe for ['gp-de-fourmies-la-voix-du-nord-2026'] -- network/HTTP issue, not necessarily a bug"
   ],
   "repairs": [],
@@ -12,14 +13,14 @@
     "data_upcoming": 16,
     "data_recent": 78,
     "data_teams": 33,
-    "rider_profiles": 2689,
+    "rider_profiles": 2710,
     "live_races": 3,
     "scraped_at": "2026-09-13T19:08:01.808517+00:00",
-    "data_age_hours": 6.7,
+    "data_age_hours": 15.9,
     "index_html_bytes": 330574,
     "scrape_log_run_at": "2026-09-13 21:06 UTC",
     "rider_roster": 1369,
-    "rider_missing_profile": 120,
-    "rider_missing_palmares": 944
+    "rider_missing_profile": 99,
+    "rider_missing_palmares": 939
   }
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-14T20:42:03.416022+00:00",
-  "scraped_at_human": "14 Sep 2026 20:42 UTC",
+  "scraped_at": "2026-09-15T15:21:57.978488+00:00",
+  "scraped_at_human": "15 Sep 2026 15:21 UTC",
   "live": [],
   "upcoming": [
     {
@@ -339,7 +339,7 @@
       "stage_type": "mountain",
       "start_town": "Seraing",
       "finish_town": "Namur",
-      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 64 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 810 84 Milan Fretin Cofidis Cofidis 802 117 Hugo Page Cofidis Cofidis 794 129 Dylan Teuns Cofidis Cofidis 791 230 Javier Serrano Rodriguez Team Polti VisitMalta Team Polti VisitMalta 766 313 Louis Hardouin Van Rysel - Roubaix Van Rysel - Roubaix 752 344 Dario Igor Belletta Team Polti VisitMalta Team Polti VisitMalta 748 347 Dario Giuliano Team Polti VisitMalta Team Polti VisitMalta 747 388 Andréa Mifsud Team Polti VisitMalta Team Polti VisitMalta 742 621 Davide Bais Team Polti VisitMalta Team Polti VisitMalta 715 Full startlist Win chance 1 Milan Fretin 30.35% 2 Benoît Cosnefroy 18.61% 3 Hugo Page 16.24% 4 Dylan Teuns 8.17% 5 Javier Serrano Rodriguez 4.22% 6 Dario Giuliano 3.76% 7 Killian Theot 3.52% 8 Dario Igor Belletta 3.27% 9 Louis Hardouin 3.12% 10 Joppe Heremans 2.15% Model-based estimate from rider ratings and the stage profile."
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 23 Romain Grégoire Groupama - FDJ United Groupama - FDJ United 846 31 Laurence Pithie Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 837 38 Jenno Berckmoes Lotto - Intermarché Lotto - Intermarché 828 41 Mike Teunissen XDS Astana Team XDS Astana Team 823 58 Rick Pluimers Tudor Pro Cycling Team Tudor Pro Cycling Team 813 59 Paul Lapeira Decathlon CMA CGM Team Decathlon CMA CGM Team 813 61 Søren Wærenskjold Uno-X Mobility Uno-X Mobility 812 64 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 810 84 Milan Fretin Cofidis Cofidis 802 96 Natnael Tesfatsion Ocbit Movistar Team Movistar Team 798 Full startlist Favorites Benoît Cosnefroy Jenno Berckmoes Tim Wellens Lewis Askey Arnaud De Lie Paul Lapeira Roger Adria Oliveras Tibor Del Grosso Romain Grégoire Florian Vermeersch Win chance 1 Laurence Pithie 7.05% 2 Romain Grégoire 6.78% 3 Jenno Berckmoes 5.35% 4 Benoît Cosnefroy 4.07% 5 Lewis Askey 3.84% 6 Rick Pluimers 3.81% 7 Milan Fretin 3.63% 8 Aubin Sparfel 3.27% 9 Søren Wærenskjold 2.79% 10 Arnaud De Lie 2.77% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "super-8-classic",
@@ -480,18 +480,6 @@
           "name": "Juan Sebastián Molano",
           "slug": "juan-sebastian-molano",
           "nat": "co",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Ivo Oliveira",
-          "slug": "ivo-emanuel-alves",
-          "nat": "pt",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "António Morgado",
-          "slug": "antonio-morgado",
-          "nat": "pt",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
@@ -1376,7 +1364,7 @@
       "stage_type": "hilly",
       "start_town": "Borken",
       "finish_town": "Münster",
-      "description": "Info Startlist Results Winners 3 Oct Date 205 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 411 Loe Van Belle Team Visma | Lease a Bike Team Visma | Lease a Bike 738 Full startlist Win chance 1 Loe Van Belle 100.00% Model-based estimate from rider ratings and the stage profile.",
+      "description": "Info Startlist Results Winners 3 Oct Date 205 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 412 Loe Van Belle Team Visma | Lease a Bike Team Visma | Lease a Bike 738 Full startlist Win chance 1 Loe Van Belle 100.00% Model-based estimate from rider ratings and the stage profile.",
       "elevation_m": 1222
     },
     {
@@ -136826,55 +136814,55 @@
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 19
+      "days_away": 18
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 21
+      "days_away": 20
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 27
+      "days_away": 26
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 34
+      "days_away": 33
     }
   ]
 }

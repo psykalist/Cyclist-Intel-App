@@ -1,7 +1,140 @@
 {
-  "scraped_at": "2026-09-15T19:56:16.660095+00:00",
-  "scraped_at_human": "15 Sep 2026 19:56 UTC",
-  "live": [],
+  "scraped_at": "2026-09-16T15:15:04.277794+00:00",
+  "scraped_at_human": "16 Sep 2026 15:15 UTC",
+  "live": [
+    {
+      "slug": "skoda-tour-de-luxembourg",
+      "cf_slug": "skoda-tour-de-luxembourg-2026",
+      "name": "Skoda Tour de Luxembourg",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "live",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-20",
+      "total_stages": 5,
+      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 157.4,
+          "elevation_m": 2381,
+          "stage_type": "hilly",
+          "start_town": "Luxembourg",
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 1 Luxembourg - Luxembourg (157.4km) The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race. The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176476/responsive-images/stage-1-height-profile___heightProfile_1131_800.webp",
+          "date_str": "Wednesday 16 September"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 166.8,
+          "elevation_m": 2298,
+          "stage_type": "hilly",
+          "start_town": "Differdange",
+          "finish_town": "Junglinster",
+          "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp",
+          "date_str": "Thursday 17 September"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 179.6,
+          "elevation_m": 3272,
+          "stage_type": "mountain",
+          "start_town": "Wiltz",
+          "finish_town": "Diekirch",
+          "description": "Info Startlist Stages Results Winners Stage 3 Wiltz - Diekirch (179.6km) Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race. Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176480/responsive-images/stage-3-height-profile___heightProfile_1131_800.webp",
+          "date_str": "Friday 18 September"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 20.4,
+          "elevation_m": 355,
+          "stage_type": "ITT",
+          "start_town": "Ettelbruck",
+          "finish_town": "Ettelbruck",
+          "description": "Info Startlist Stages Results Winners Stage 4 Ettelbruck - Ettelbruck (20.4km) Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role. Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176481/responsive-images/stage-4-height-profile___heightProfile_1131_800.webp",
+          "date_str": "Saturday 19 September"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 177.6,
+          "elevation_m": 3064,
+          "stage_type": "mountain",
+          "start_town": "Mersch",
+          "finish_town": "Luxembourg",
+          "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp",
+          "date_str": "Sunday 20 September"
+        }
+      ],
+      "startlist": []
+    },
+    {
+      "slug": "grand-prix-de-wallonie",
+      "cf_slug": "grand-prix-de-wallonie-2026",
+      "name": "Grand Prix de Wallonie",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "live",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-16",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
+      "startlist": [],
+      "distance_km": 194.8,
+      "elevation_m": 2679,
+      "stage_type": "mountain",
+      "start_town": "Seraing",
+      "finish_town": "Namur",
+      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Info Date 16 September 2026 Discipline Road - Individual Road Race Category 1.Pro Country Belgium Start Seraing Finish Namur Times 12:40 - 17:11-17:38 Distance 194.8 km Elevation gain 2679 m Overall Profile Hill Finish Profile Hill Website lottograndprixdewallonie.be Best riders on startlist Rank Rider Team Rating 23 Romain Grégoire Groupama - FDJ United Groupama - FDJ United 846 32 Laurence Pithie Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 837 38 Jenno Berckmoes Lotto - Intermarché Lotto - Intermarché 828 42 Mike Teunissen XDS Astana Team XDS Astana Team 823 58 Rick Pluimers Tudor Pro Cycling Team Tudor Pro Cycling Team 813 59 Paul Lapeira Decathlon CMA CGM Team Decathlon CMA CGM Team 813 62 Søren Wærenskjold Uno-X Mobility Uno-X Mobility 812 64 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 810 84 Milan Fretin Cofidis Cofidis 802 92 Danny van Poppel Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 799 Full startlist Favorites Benoît Cosnefroy Jenno Berckmoes Tim Wellens Lewis Askey Arnaud De Lie Paul Lapeira Roger Adria Oliveras Tibor Del Grosso Romain Grégoire Florian Vermeersch Win chance 1 Laurence Pithie 7.21% 2 Romain Grégoire 6.55% 3 Jenno Berckmoes 5.21% 4 Benoît Cosnefroy 3.94% 5 Lewis Askey 3.74% 6 Rick Pluimers 3.72% 7 Milan Fretin 3.58% 8 Aubin Sparfel 3.15% 9 Søren Wærenskjold 2.72% 10 Arnaud De Lie 2.69% Model-based estimate from rider ratings and the stage profile.",
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/grand-prix-de-wallonie-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "date_str": "Wednesday 16 September"
+        }
+      ]
+    }
+  ],
   "upcoming": [
     {
       "slug": "il-lombardia",
@@ -225,121 +358,6 @@
           "team": "Cofidis (PRT)"
         }
       ]
-    },
-    {
-      "slug": "skoda-tour-de-luxembourg",
-      "cf_slug": "skoda-tour-de-luxembourg-2026",
-      "name": "Skoda Tour de Luxembourg",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-20",
-      "total_stages": 5,
-      "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 157.4,
-          "elevation_m": 2381,
-          "stage_type": "hilly",
-          "start_town": "Luxembourg",
-          "finish_town": "Luxembourg",
-          "description": "Info Startlist Stages Results Winners Stage 1 Luxembourg - Luxembourg (157.4km) The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race. The first stage of the Škoda Tour de Luxembourg takes place on Wednesday, 16 September, starting and finishing in Luxembourg. The stage covers 157.4 km and includes 2,381 metres of elevation gain. The hilly course provides a demanding opening day. The amount of climbing could already create some differences early in the race.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176476/responsive-images/stage-1-height-profile___heightProfile_1131_800.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 166.8,
-          "elevation_m": 2298,
-          "stage_type": "hilly",
-          "start_town": "Differdange",
-          "finish_town": "Junglinster",
-          "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 179.6,
-          "elevation_m": 3272,
-          "stage_type": "mountain",
-          "start_town": "Wiltz",
-          "finish_town": "Diekirch",
-          "description": "Info Startlist Stages Results Winners Stage 3 Wiltz - Diekirch (179.6km) Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race. Stage 3 runs from Wiltz to Diekirch on Friday, 18 September. At 179.6 km, it is the longest stage of this edition. The route features no fewer than 3,272 metres of elevation gain, the highest figure of the 5 stages. This makes it one of the toughest days of the race.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176480/responsive-images/stage-3-height-profile___heightProfile_1131_800.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 20.4,
-          "elevation_m": 355,
-          "stage_type": "ITT",
-          "start_town": "Ettelbruck",
-          "finish_town": "Ettelbruck",
-          "description": "Info Startlist Stages Results Winners Stage 4 Ettelbruck - Ettelbruck (20.4km) Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role. Stage 4 on Saturday, 19 September is an individual time trial in Ettelbruck. At 20.4 km, it is by far the shortest stage of the race. Despite its limited distance, the course includes 355 metres of elevation gain. This means it is not a completely flat time trial, with the elevation likely to play an important role.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176481/responsive-images/stage-4-height-profile___heightProfile_1131_800.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 177.6,
-          "elevation_m": 3064,
-          "stage_type": "mountain",
-          "start_town": "Mersch",
-          "finish_town": "Luxembourg",
-          "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp"
-        }
-      ],
-      "startlist": []
-    },
-    {
-      "slug": "grand-prix-de-wallonie",
-      "cf_slug": "grand-prix-de-wallonie-2026",
-      "name": "Grand Prix de Wallonie",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-16",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/grand-prix-de-wallonie-2026",
-      "startlist": [],
-      "distance_km": 194.8,
-      "elevation_m": 2679,
-      "stage_type": "mountain",
-      "start_town": "Seraing",
-      "finish_town": "Namur",
-      "description": "Info Startlist Results Winners 16 Sep Date 195 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 23 Romain Grégoire Groupama - FDJ United Groupama - FDJ United 846 31 Laurence Pithie Red Bull - BORA - hansgrohe Red Bull - BORA - hansgrohe 837 38 Jenno Berckmoes Lotto - Intermarché Lotto - Intermarché 828 41 Mike Teunissen XDS Astana Team XDS Astana Team 823 58 Rick Pluimers Tudor Pro Cycling Team Tudor Pro Cycling Team 813 59 Paul Lapeira Decathlon CMA CGM Team Decathlon CMA CGM Team 813 61 Søren Wærenskjold Uno-X Mobility Uno-X Mobility 812 64 Benoît Cosnefroy UAE Team Emirates XRG UAE Team Emirates XRG 810 84 Milan Fretin Cofidis Cofidis 802 96 Natnael Tesfatsion Ocbit Movistar Team Movistar Team 798 Full startlist Favorites Benoît Cosnefroy Jenno Berckmoes Tim Wellens Lewis Askey Arnaud De Lie Paul Lapeira Roger Adria Oliveras Tibor Del Grosso Romain Grégoire Florian Vermeersch Win chance 1 Laurence Pithie 7.05% 2 Romain Grégoire 6.78% 3 Jenno Berckmoes 5.35% 4 Benoît Cosnefroy 4.07% 5 Lewis Askey 3.84% 6 Rick Pluimers 3.81% 7 Milan Fretin 3.63% 8 Aubin Sparfel 3.27% 9 Søren Wærenskjold 2.79% 10 Arnaud De Lie 2.77% Model-based estimate from rider ratings and the stage profile."
     },
     {
       "slug": "super-8-classic",
@@ -136814,55 +136832,55 @@
       "name": "Skoda Tour de Luxembourg",
       "cf_slug": "skoda-tour-de-luxembourg-2026",
       "start_date": "2026-09-16",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Grand Prix de Wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
       "start_date": "2026-09-16",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 26
+      "days_away": 25
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 33
+      "days_away": 32
     }
   ]
 }

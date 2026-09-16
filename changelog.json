@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-09-16T15:15:47.411348+00:00",
+  "generated_at": "2026-09-16T19:50:26.910352+00:00",
   "entries": [
+    {
+      "id": "a89fbedc13bd",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Skoda Tour de Luxembourg: 🇳🇱 Mathieu van der Poel wins"
+    },
+    {
+      "id": "72293f112da0",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Skoda Tour de Luxembourg GC: 🇳🇱 Mathieu van der Poel leads"
+    },
+    {
+      "id": "8ad89e208130",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Skoda Tour de Luxembourg Points: 🇳🇱 Mathieu van der Poel leads"
+    },
+    {
+      "id": "33532983179f",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Skoda Tour de Luxembourg KOM: 🇩🇰 Malte Hellerup leads"
+    },
+    {
+      "id": "dbc15618661b",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Skoda Tour de Luxembourg Youth: 🇫🇷 Pierre Gautherat leads"
+    },
+    {
+      "id": "6b8f3a654059",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Grand Prix de Wallonie: 🇫🇷 Aubin Sparfel wins"
+    },
+    {
+      "id": "6a3a72aa1c28",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Grand Prix de Wallonie GC: 🇫🇷 Aubin Sparfel leads"
+    },
+    {
+      "id": "43e2d74c2ad3",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Grand Prix de Wallonie Points: 🇫🇷 Aubin Sparfel leads"
+    },
+    {
+      "id": "9713cd376a0c",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Grand Prix de Wallonie KOM: 🇫🇷 Aubin Sparfel leads"
+    },
+    {
+      "id": "c0d795c50fa3",
+      "timestamp": "2026-09-16T19:50:26.904826+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Grand Prix de Wallonie Youth: 🇫🇷 Aubin Sparfel leads"
+    },
     {
       "id": "5e893cd10a13",
       "timestamp": "2026-09-13T19:08:54.426957+00:00",
@@ -259,27 +329,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Alex Aranburu, Benjamin Thomas, Dylan Teuns (+4 more) added"
-    },
-    {
-      "id": "cfa02f37e513",
-      "timestamp": "2026-09-02T19:36:15.673488+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 11 Vuelta a España: 🇬🇧 Matthew Brennan wins"
-    },
-    {
-      "id": "1e75e32bd7a3",
-      "timestamp": "2026-09-02T19:36:15.673488+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Lloyds Tour of Britain Men Youth: 🇬🇧 Elliot Rowe leads"
-    },
-    {
-      "id": "437ab6dafb6a",
-      "timestamp": "2026-09-02T19:36:15.673488+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Alex Baudin, Andrea Vendrame, Antonio Tiberi (+14 more) added"
     }
   ]
 }

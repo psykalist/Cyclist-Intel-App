@@ -1,21 +1,23 @@
 {
-  "updated_at": "2026-09-16T15:37:40.295473+00:00",
+  "updated_at": "2026-09-16T19:51:13.567055+00:00",
   "source": "ci",
-  "overall": "ok",
+  "overall": "warning",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "scrape_log.json: INCOMPLETE kom_top10 on skoda-tour-de-luxembourg-2026 -- pulled 9 of 10 expected rows."
+  ],
   "repairs": [],
   "data": {
-    "data_size_kb": 4059,
+    "data_size_kb": 4101,
     "data_upcoming": 14,
     "data_recent": 81,
     "data_teams": 33,
     "rider_profiles": 2710,
     "live_races": 2,
-    "scraped_at": "2026-09-16T15:15:04.277794+00:00",
-    "data_age_hours": 0.4,
+    "scraped_at": "2026-09-16T19:49:43.338113+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-16 17:13 UTC",
+    "scrape_log_run_at": "2026-09-16 21:48 UTC",
     "rider_roster": 1369,
     "rider_missing_profile": 99,
     "rider_missing_palmares": 939

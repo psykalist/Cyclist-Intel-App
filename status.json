@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-09-17T01:56:28.233317+00:00",
+  "updated_at": "2026-09-17T10:30:55.523248+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 15h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: INCOMPLETE kom_top10 on skoda-tour-de-luxembourg-2026 -- pulled 9 of 10 expected rows."
   ],
   "repairs": [],
@@ -15,7 +16,7 @@
     "rider_profiles": 2710,
     "live_races": 2,
     "scraped_at": "2026-09-16T19:49:43.338113+00:00",
-    "data_age_hours": 6.1,
+    "data_age_hours": 14.7,
     "index_html_bytes": 330574,
     "scrape_log_run_at": "2026-09-16 21:48 UTC",
     "rider_roster": 1369,

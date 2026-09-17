@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-09-16 21:48 UTC",
-  "run_at_iso": "2026-09-16T19:49:39.612012+00:00",
+  "run_at": "2026-09-17 17:22 UTC",
+  "run_at_iso": "2026-09-17T15:23:47.150158+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "skoda-tour-de-luxembourg-2026",
       "name": "Skoda Tour de Luxembourg",
       "total_stages": 5,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 2,
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-16 21:48 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 17.6,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -31,19 +31,6 @@
           "rows": 9
         }
       ]
-    },
-    {
-      "slug": "grand-prix-de-wallonie-2026",
-      "name": "Grand Prix de Wallonie",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 1,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
     }
   ],
   "has_fetch_errors": false,

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-17T15:23:47.150913+00:00",
-  "scraped_at_human": "17 Sep 2026 15:23 UTC",
+  "scraped_at": "2026-09-17T19:57:31.886311+00:00",
+  "scraped_at_human": "17 Sep 2026 19:57 UTC",
   "live": [
     {
       "slug": "skoda-tour-de-luxembourg",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-20",
       "total_stages": 5,
       "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
-      "stages_completed": 1,
+      "stages_completed": 2,
       "stages": [
         {
           "num": 1,
@@ -138,10 +138,101 @@
           "num": 2,
           "label": "Stage 2",
           "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Marijn van den Berg",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Marijn van den Berg",
+              "rider_url": "/profile/marijn-van-den-berg",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 2,
+              "name": "Timo Kielich",
+              "rider_url": "/profile/timo-kielich",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 3,
+              "name": "Pierre Gautherat",
+              "rider_url": "/profile/pierre-gautherat",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 4,
+              "name": "Jasper Stuyven",
+              "rider_url": "/profile/jasper-stuyven",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 5,
+              "name": "Mathieu van der Poel",
+              "rider_url": "/profile/mathieu-van-der-poel",
+              "team": "",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 6,
+              "name": "Andrea Bagioli",
+              "rider_url": "/profile/andrea-bagioli",
+              "team": "",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 7,
+              "name": "Elias Maris",
+              "rider_url": "/profile/elias-maris",
+              "team": "",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 8,
+              "name": "Eike Behrens",
+              "rider_url": "/profile/eike-behrens",
+              "team": "",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 9,
+              "name": "Léandre Lozouet",
+              "rider_url": "/profile/leandre-lozouet",
+              "team": "",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:50:12"
+            },
+            {
+              "rank": 10,
+              "name": "Mathieu Kockelmann",
+              "rider_url": "/profile/mathieu-kockelmann",
+              "team": "",
+              "nat_code": "LU",
+              "flag": "🇱🇺",
+              "time_gap": "03:50:12"
+            }
+          ],
           "distance_km": 166.8,
           "elevation_m": 2298,
           "stage_type": "hilly",
@@ -149,7 +240,8 @@
           "finish_town": "Junglinster",
           "description": "Info Startlist Stages Results Winners Stage 2 Differdange - Junglinster (166.8km) The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day. The second stage takes place on Thursday, 17 September, from Differdange to Junglinster. The 166.8 km route includes 2,298 metres of elevation gain. This stage also has a distinctly hilly character. The combination of distance and climbing makes it another challenging day.",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176479/responsive-images/stage-2-height-profile___heightProfile_1131_800.webp",
-          "date_str": "Thursday 17 September"
+          "date_str": "Thursday 17 September",
+          "non_finishers": []
         },
         {
           "num": 3,
@@ -204,19 +296,19 @@
         }
       ],
       "startlist": [],
-      "last_stage_winner": "Mathieu van der Poel",
+      "last_stage_winner": "Marijn van den Berg",
       "last_stage_winner_flag": "🇳🇱",
-      "last_stage_num": 1,
-      "gc_leader": "🇳🇱 Mathieu van der Poel",
+      "last_stage_num": 2,
+      "gc_leader": "🇳🇱 Marijn van den Berg",
       "gc_top10": [
         {
           "rank": 1,
-          "name": "Mathieu van der Poel",
-          "rider_url": "/profile/mathieu-van-der-poel",
+          "name": "Marijn van den Berg",
+          "rider_url": "/profile/marijn-van-den-berg",
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "03:45:32"
+          "time_gap": "07:35:40"
         },
         {
           "rank": 2,
@@ -229,48 +321,48 @@
         },
         {
           "rank": 3,
-          "name": "Marijn van den Berg",
-          "rider_url": "/profile/marijn-van-den-berg",
+          "name": "Mathieu van der Poel",
+          "rider_url": "/profile/mathieu-van-der-poel",
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 06"
+          "time_gap": "+ 04"
         },
         {
           "rank": 4,
-          "name": "Per Strand Hagenes",
-          "rider_url": "/profile/per-strand-hagenes",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "+ 12"
-        },
-        {
-          "rank": 5,
           "name": "Jasper Stuyven",
           "rider_url": "/profile/jasper-stuyven",
           "team": "",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
+        },
+        {
+          "rank": 5,
+          "name": "Davide Piganzoli",
+          "rider_url": "/profile/davide-piganzoli",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 16"
         },
         {
           "rank": 6,
+          "name": "Nicolas Breuillard",
+          "rider_url": "/profile/nicolas-breuillard",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 16"
+        },
+        {
+          "rank": 7,
           "name": "Axel Mariault",
           "rider_url": "/profile/axel-mariault",
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 12"
-        },
-        {
-          "rank": 7,
-          "name": "Andrea Raccagni Noviero",
-          "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
         },
         {
           "rank": 8,
@@ -279,58 +371,76 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
         },
         {
           "rank": 9,
-          "name": "Nicolas Breuillard",
-          "rider_url": "/profile/nicolas-breuillard",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 12"
-        },
-        {
-          "rank": 10,
-          "name": "Davide Piganzoli",
-          "rider_url": "/profile/davide-piganzoli",
+          "name": "Andrea Raccagni Noviero",
+          "rider_url": "/profile/andrea-raccagni-noviero",
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
+        },
+        {
+          "rank": 10,
+          "name": "Per Strand Hagenes",
+          "rider_url": "/profile/per-strand-hagenes",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 16"
         }
       ],
-      "points_leader": "🇳🇱 Mathieu van der Poel",
+      "points_leader": "🇳🇱 Marijn van den Berg",
       "points_top10": [
         {
           "rank": 1,
-          "name": "Mathieu van der Poel",
-          "rider_url": "/profile/mathieu-van-der-poel",
-          "team": "",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "20"
-        },
-        {
-          "rank": 2,
-          "name": "Pierre Gautherat",
-          "rider_url": "/profile/pierre-gautherat",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "16"
-        },
-        {
-          "rank": 3,
           "name": "Marijn van den Berg",
           "rider_url": "/profile/marijn-van-den-berg",
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "13"
+          "time_gap": "33"
+        },
+        {
+          "rank": 2,
+          "name": "Mathieu van der Poel",
+          "rider_url": "/profile/mathieu-van-der-poel",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "29"
+        },
+        {
+          "rank": 3,
+          "name": "Pierre Gautherat",
+          "rider_url": "/profile/pierre-gautherat",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "29"
         },
         {
           "rank": 4,
+          "name": "Jasper Stuyven",
+          "rider_url": "/profile/jasper-stuyven",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "20"
+        },
+        {
+          "rank": 5,
+          "name": "Timo Kielich",
+          "rider_url": "/profile/timo-kielich",
+          "team": "",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "16"
+        },
+        {
+          "rank": 6,
           "name": "Per Strand Hagenes",
           "rider_url": "/profile/per-strand-hagenes",
           "team": "",
@@ -339,16 +449,7 @@
           "time_gap": "11"
         },
         {
-          "rank": 5,
-          "name": "Jasper Stuyven",
-          "rider_url": "/profile/jasper-stuyven",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "9"
-        },
-        {
-          "rank": 6,
+          "rank": 7,
           "name": "Axel Mariault",
           "rider_url": "/profile/axel-mariault",
           "team": "",
@@ -357,16 +458,16 @@
           "time_gap": "7"
         },
         {
-          "rank": 7,
-          "name": "Mattéo Vercher",
-          "rider_url": "/profile/matteo-vercher",
+          "rank": 8,
+          "name": "Andrea Bagioli",
+          "rider_url": "/profile/andrea-bagioli",
           "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "6"
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "7"
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "Malte Hellerup",
           "rider_url": "/profile/malte-hellerup",
           "team": "",
@@ -375,28 +476,28 @@
           "time_gap": "5"
         },
         {
-          "rank": 9,
-          "name": "Andrea Raccagni Noviero",
-          "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "5"
-        },
-        {
           "rank": 10,
-          "name": "Nicolas Breuillard",
-          "rider_url": "/profile/nicolas-breuillard",
+          "name": "Mats Berns",
+          "rider_url": "/profile/mats-berns",
           "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "2"
+          "nat_code": "LU",
+          "flag": "🇱🇺",
+          "time_gap": "5"
         }
       ],
-      "kom_leader": "🇩🇰 Malte Hellerup",
+      "kom_leader": "🇩🇰 Conrad Haugsted",
       "kom_top10": [
         {
           "rank": 1,
+          "name": "Conrad Haugsted",
+          "rider_url": "/profile/conrad-haugsted",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "13"
+        },
+        {
+          "rank": 2,
           "name": "Malte Hellerup",
           "rider_url": "/profile/malte-hellerup",
           "team": "",
@@ -405,7 +506,16 @@
           "time_gap": "13"
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "name": "Steyn van der Veen",
+          "rider_url": "/profile/steyn-van-der-veen",
+          "team": "",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "9"
+        },
+        {
+          "rank": 4,
           "name": "Fábio Costa",
           "rider_url": "/profile/fabio-costa",
           "team": "",
@@ -414,7 +524,7 @@
           "time_gap": "8"
         },
         {
-          "rank": 3,
+          "rank": 5,
           "name": "Jonathan Malte Rottmann",
           "rider_url": "/profile/jonathan-malte-rottmann",
           "team": "",
@@ -423,7 +533,16 @@
           "time_gap": "7"
         },
         {
-          "rank": 4,
+          "rank": 6,
+          "name": "Mael Guegan",
+          "rider_url": "/profile/mael-guegan",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "7"
+        },
+        {
+          "rank": 7,
           "name": "Mathieu van der Poel",
           "rider_url": "/profile/mathieu-van-der-poel",
           "team": "",
@@ -432,7 +551,7 @@
           "time_gap": "5"
         },
         {
-          "rank": 5,
+          "rank": 8,
           "name": "Cole Kessler",
           "rider_url": "/profile/cole-kessler",
           "team": "",
@@ -441,7 +560,7 @@
           "time_gap": "4"
         },
         {
-          "rank": 6,
+          "rank": 9,
           "name": "Eike Behrens",
           "rider_url": "/profile/eike-behrens",
           "team": "",
@@ -450,31 +569,13 @@
           "time_gap": "3"
         },
         {
-          "rank": 7,
+          "rank": 10,
           "name": "Andrea Raccagni Noviero",
           "rider_url": "/profile/andrea-raccagni-noviero",
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "2"
-        },
-        {
-          "rank": 8,
-          "name": "Davide Piganzoli",
-          "rider_url": "/profile/davide-piganzoli",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "1"
-        },
-        {
-          "rank": 9,
-          "name": "Amanuel Gebreigzabhier",
-          "rider_url": "/profile/amanuel-gebreigzabhier",
-          "team": "",
-          "nat_code": "ER",
-          "flag": "🇪🇷",
-          "time_gap": "1"
         }
       ],
       "youth_leader": "🇫🇷 Pierre Gautherat",
@@ -486,61 +587,61 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "03:45:36"
+          "time_gap": "07:35:44"
         },
         {
           "rank": 2,
-          "name": "Per Strand Hagenes",
-          "rider_url": "/profile/per-strand-hagenes",
-          "team": "",
-          "nat_code": "NO",
-          "flag": "🇳🇴",
-          "time_gap": "+ 08"
-        },
-        {
-          "rank": 3,
-          "name": "Andrea Raccagni Noviero",
-          "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 08"
-        },
-        {
-          "rank": 4,
-          "name": "Mattéo Vercher",
-          "rider_url": "/profile/matteo-vercher",
-          "team": "",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 08"
-        },
-        {
-          "rank": 5,
           "name": "Davide Piganzoli",
           "rider_url": "/profile/davide-piganzoli",
           "team": "",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "+ 08"
+          "time_gap": "+ 12"
+        },
+        {
+          "rank": 3,
+          "name": "Mattéo Vercher",
+          "rider_url": "/profile/matteo-vercher",
+          "team": "",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 12"
+        },
+        {
+          "rank": 4,
+          "name": "Andrea Raccagni Noviero",
+          "rider_url": "/profile/andrea-raccagni-noviero",
+          "team": "",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 12"
+        },
+        {
+          "rank": 5,
+          "name": "Per Strand Hagenes",
+          "rider_url": "/profile/per-strand-hagenes",
+          "team": "",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 12"
         },
         {
           "rank": 6,
+          "name": "Conrad Haugsted",
+          "rider_url": "/profile/conrad-haugsted",
+          "team": "",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 13"
+        },
+        {
+          "rank": 7,
           "name": "Morten Aalling Nørtoft",
           "rider_url": "/profile/morten-aalling-nortoft",
           "team": "",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "+ 12"
-        },
-        {
-          "rank": 7,
-          "name": "Adria Pericas Capdevila",
-          "rider_url": "/profile/adria-pericas-capdevila",
-          "team": "",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
         },
         {
           "rank": 8,
@@ -549,25 +650,25 @@
           "team": "",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
         },
         {
           "rank": 9,
-          "name": "Senne Thonnon",
-          "rider_url": "/profile/senne-thonnon",
-          "team": "",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 12"
-        },
-        {
-          "rank": 10,
           "name": "Tijmen Graat",
           "rider_url": "/profile/tijmen-graat",
           "team": "",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 12"
+          "time_gap": "+ 16"
+        },
+        {
+          "rank": 10,
+          "name": "Adria Pericas Capdevila",
+          "rider_url": "/profile/adria-pericas-capdevila",
+          "team": "",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 16"
         }
       ]
     }
@@ -138278,6 +138379,132 @@
         }
       ],
       "wins_refreshed_at": "2026-09-16T19:49:41.197157+00:00"
+    },
+    "marijn-van-den-berg": {
+      "slug": "marijn-van-den-berg",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "17-09-2026",
+          "race": "Skoda Tour de Luxembourg - Stage 2",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "19-06-2025",
+          "race": "La Route d'Occitanie - CIC - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2025",
+          "date": "30-01-2025",
+          "race": "Trofeo Felanitx-Ses Salines",
+          "cat": "1.1"
+        },
+        {
+          "year": "2024",
+          "date": "05-04-2024",
+          "race": "Région Pays de la Loire Tour",
+          "cat": "2.1"
+        },
+        {
+          "year": "2024",
+          "date": "05-04-2024",
+          "race": "Région Pays de la Loire Tour - Stage 4",
+          "cat": "2.1"
+        },
+        {
+          "year": "2024",
+          "date": "02-04-2024",
+          "race": "Région Pays de la Loire Tour - Stage 1",
+          "cat": "2.1"
+        },
+        {
+          "year": "2024",
+          "date": "21-03-2024",
+          "race": "Volta Ciclista a Catalunya - Stage 4",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2023",
+          "date": "02-08-2023",
+          "race": "Tour de Pologne - Stage 5",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2023",
+          "date": "15-06-2023",
+          "race": "La Route d'Occitanie - La Dépêche du Midi - Stage 1",
+          "cat": "2.1"
+        },
+        {
+          "year": "2023",
+          "date": "26-01-2023",
+          "race": "Trofeo Port D'Alcudia - Port D'Alcudia",
+          "cat": "1.1"
+        },
+        {
+          "year": "2021",
+          "date": "18-08-2021",
+          "race": "Tour de l'Avenir - Stage 5",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2021",
+          "date": "16-08-2021",
+          "race": "Tour de l'Avenir - Stage 3",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2021",
+          "date": "30-05-2021",
+          "race": "Orlen Nations Grand Prix",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2021",
+          "date": "30-05-2021",
+          "race": "Orlen Nations Grand Prix - Stage 2",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2021",
+          "date": "29-05-2021",
+          "race": "Orlen Nations Grand Prix - Stage 1",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2021",
+          "date": "19-05-2021",
+          "race": "Alpes Isère Tour - Stage 1",
+          "cat": "2.2"
+        },
+        {
+          "year": "2021",
+          "date": "28-03-2021",
+          "race": "GP Adria Mobil",
+          "cat": "1.2"
+        },
+        {
+          "year": "2019",
+          "date": "05-05-2019",
+          "race": "Carpathian Couriers Race",
+          "cat": "2.2U"
+        },
+        {
+          "year": "2019",
+          "date": "02-05-2019",
+          "race": "Carpathian Couriers Race - Stage 2",
+          "cat": "2.2U"
+        },
+        {
+          "year": "2018",
+          "date": "16-09-2018",
+          "race": "Olympia's Tour - Stage 7",
+          "cat": "2.2U"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-17T19:57:31.886092+00:00"
     }
   },
   "startlists_needed": [

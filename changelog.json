@@ -1,6 +1,34 @@
 {
-  "generated_at": "2026-09-17T15:24:21.513509+00:00",
+  "generated_at": "2026-09-17T19:58:05.800551+00:00",
   "entries": [
+    {
+      "id": "c49613d1ad20",
+      "timestamp": "2026-09-17T19:58:05.794558+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 2 Skoda Tour de Luxembourg: 🇳🇱 Marijn van den Berg wins"
+    },
+    {
+      "id": "f3d33a2aa335",
+      "timestamp": "2026-09-17T19:58:05.794558+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Skoda Tour de Luxembourg GC: 🇳🇱 Marijn van den Berg leads"
+    },
+    {
+      "id": "d7bfaa366004",
+      "timestamp": "2026-09-17T19:58:05.794558+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Skoda Tour de Luxembourg Points: 🇳🇱 Marijn van den Berg leads"
+    },
+    {
+      "id": "dcec2a51ec2b",
+      "timestamp": "2026-09-17T19:58:05.794558+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Skoda Tour de Luxembourg KOM: 🇩🇰 Conrad Haugsted leads"
+    },
     {
       "id": "4d8e12ffe19f",
       "timestamp": "2026-09-17T15:24:21.508007+00:00",
@@ -287,13 +315,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Alex Baudin, Davide Formolo, Geoffrey Bouchard (+3 more) added"
-    },
-    {
-      "id": "2ae551a1f889",
-      "timestamp": "2026-09-03T19:32:29.544782+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Abram Stockman, Adrià Pericas, Aivaras Mikutis (+126 more) added"
     }
   ]
 }

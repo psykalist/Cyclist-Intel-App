@@ -1,6 +1,34 @@
 {
-  "generated_at": "2026-09-18T14:44:20.325243+00:00",
+  "generated_at": "2026-09-18T19:20:36.859724+00:00",
   "entries": [
+    {
+      "id": "44f958e04016",
+      "timestamp": "2026-09-18T19:20:36.854113+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Skoda Tour de Luxembourg: 🇳🇱 Pepijn Reinderink wins"
+    },
+    {
+      "id": "9ba346a33f11",
+      "timestamp": "2026-09-18T19:20:36.854113+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Skoda Tour de Luxembourg GC: 🇮🇹 Davide Piganzoli leads"
+    },
+    {
+      "id": "61309ab849e2",
+      "timestamp": "2026-09-18T19:20:36.854113+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Skoda Tour de Luxembourg KOM: 🇳🇱 Pepijn Reinderink leads"
+    },
+    {
+      "id": "33fd24f6d0e9",
+      "timestamp": "2026-09-18T19:20:36.854113+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Skoda Tour de Luxembourg Youth: 🇮🇹 Davide Piganzoli leads"
+    },
     {
       "id": "c49613d1ad20",
       "timestamp": "2026-09-17T19:58:05.794558+00:00",
@@ -287,13 +315,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Clément Champoussin, Jaime Torres added"
-    },
-    {
-      "id": "b524df477d58",
-      "timestamp": "2026-09-04T19:15:31.558729+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 13 Vuelta a España: 🇧🇪 Wout van Aert wins"
     }
   ]
 }

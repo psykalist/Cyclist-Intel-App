@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-17T19:57:31.886311+00:00",
-  "scraped_at_human": "17 Sep 2026 19:57 UTC",
+  "scraped_at": "2026-09-18T14:43:45.211638+00:00",
+  "scraped_at_human": "18 Sep 2026 14:43 UTC",
   "live": [
     {
       "slug": "skoda-tour-de-luxembourg",
@@ -305,7 +305,7 @@
           "rank": 1,
           "name": "Marijn van den Berg",
           "rider_url": "/profile/marijn-van-den-berg",
-          "team": "",
+          "team": "EF Education - EasyPost",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "07:35:40"
@@ -314,7 +314,7 @@
           "rank": 2,
           "name": "Pierre Gautherat",
           "rider_url": "/profile/pierre-gautherat",
-          "team": "",
+          "team": "Decathlon CMA CGM Team",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 04"
@@ -323,7 +323,7 @@
           "rank": 3,
           "name": "Mathieu van der Poel",
           "rider_url": "/profile/mathieu-van-der-poel",
-          "team": "",
+          "team": "Alpecin - Premier Tech",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "+ 04"
@@ -332,7 +332,7 @@
           "rank": 4,
           "name": "Jasper Stuyven",
           "rider_url": "/profile/jasper-stuyven",
-          "team": "",
+          "team": "Soudal - Quick Step",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "+ 16"
@@ -341,7 +341,7 @@
           "rank": 5,
           "name": "Davide Piganzoli",
           "rider_url": "/profile/davide-piganzoli",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "+ 16"
@@ -350,7 +350,7 @@
           "rank": 6,
           "name": "Nicolas Breuillard",
           "rider_url": "/profile/nicolas-breuillard",
-          "team": "",
+          "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 16"
@@ -359,7 +359,7 @@
           "rank": 7,
           "name": "Axel Mariault",
           "rider_url": "/profile/axel-mariault",
-          "team": "",
+          "team": "CIC Pro Cycling Academy",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 16"
@@ -368,7 +368,7 @@
           "rank": 8,
           "name": "Mattéo Vercher",
           "rider_url": "/profile/matteo-vercher",
-          "team": "",
+          "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 16"
@@ -377,7 +377,7 @@
           "rank": 9,
           "name": "Andrea Raccagni Noviero",
           "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
+          "team": "Soudal - Quick Step",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "+ 16"
@@ -386,7 +386,7 @@
           "rank": 10,
           "name": "Per Strand Hagenes",
           "rider_url": "/profile/per-strand-hagenes",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "NO",
           "flag": "🇳🇴",
           "time_gap": "+ 16"
@@ -398,7 +398,7 @@
           "rank": 1,
           "name": "Marijn van den Berg",
           "rider_url": "/profile/marijn-van-den-berg",
-          "team": "",
+          "team": "EF Education - EasyPost",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "33"
@@ -407,7 +407,7 @@
           "rank": 2,
           "name": "Mathieu van der Poel",
           "rider_url": "/profile/mathieu-van-der-poel",
-          "team": "",
+          "team": "Alpecin - Premier Tech",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "29"
@@ -416,7 +416,7 @@
           "rank": 3,
           "name": "Pierre Gautherat",
           "rider_url": "/profile/pierre-gautherat",
-          "team": "",
+          "team": "Decathlon CMA CGM Team",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "29"
@@ -425,7 +425,7 @@
           "rank": 4,
           "name": "Jasper Stuyven",
           "rider_url": "/profile/jasper-stuyven",
-          "team": "",
+          "team": "Soudal - Quick Step",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "20"
@@ -434,7 +434,7 @@
           "rank": 5,
           "name": "Timo Kielich",
           "rider_url": "/profile/timo-kielich",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "16"
@@ -443,7 +443,7 @@
           "rank": 6,
           "name": "Per Strand Hagenes",
           "rider_url": "/profile/per-strand-hagenes",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "NO",
           "flag": "🇳🇴",
           "time_gap": "11"
@@ -452,7 +452,7 @@
           "rank": 7,
           "name": "Axel Mariault",
           "rider_url": "/profile/axel-mariault",
-          "team": "",
+          "team": "CIC Pro Cycling Academy",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "7"
@@ -461,7 +461,7 @@
           "rank": 8,
           "name": "Andrea Bagioli",
           "rider_url": "/profile/andrea-bagioli",
-          "team": "",
+          "team": "Lidl - Trek",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "7"
@@ -470,7 +470,7 @@
           "rank": 9,
           "name": "Malte Hellerup",
           "rider_url": "/profile/malte-hellerup",
-          "team": "",
+          "team": "Team ColoQuick",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "5"
@@ -479,7 +479,7 @@
           "rank": 10,
           "name": "Mats Berns",
           "rider_url": "/profile/mats-berns",
-          "team": "",
+          "team": "Luxembourg",
           "nat_code": "LU",
           "flag": "🇱🇺",
           "time_gap": "5"
@@ -491,7 +491,7 @@
           "rank": 1,
           "name": "Conrad Haugsted",
           "rider_url": "/profile/conrad-haugsted",
-          "team": "",
+          "team": "Team ColoQuick",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "13"
@@ -500,7 +500,7 @@
           "rank": 2,
           "name": "Malte Hellerup",
           "rider_url": "/profile/malte-hellerup",
-          "team": "",
+          "team": "Team ColoQuick",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "13"
@@ -509,7 +509,7 @@
           "rank": 3,
           "name": "Steyn van der Veen",
           "rider_url": "/profile/steyn-van-der-veen",
-          "team": "",
+          "team": "Metec - Solarwatt P/B Mantel",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "9"
@@ -518,7 +518,7 @@
           "rank": 4,
           "name": "Fábio Costa",
           "rider_url": "/profile/fabio-costa",
-          "team": "",
+          "team": "Feira dos Sofás - Boavista",
           "nat_code": "PT",
           "flag": "🇵🇹",
           "time_gap": "8"
@@ -527,7 +527,7 @@
           "rank": 5,
           "name": "Jonathan Malte Rottmann",
           "rider_url": "/profile/jonathan-malte-rottmann",
-          "team": "",
+          "team": "Team Lotto Kern-Haus Outlet Montabaur",
           "nat_code": "DE",
           "flag": "🇩🇪",
           "time_gap": "7"
@@ -536,7 +536,7 @@
           "rank": 6,
           "name": "Mael Guegan",
           "rider_url": "/profile/mael-guegan",
-          "team": "",
+          "team": "CIC Pro Cycling Academy",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "7"
@@ -545,7 +545,7 @@
           "rank": 7,
           "name": "Mathieu van der Poel",
           "rider_url": "/profile/mathieu-van-der-poel",
-          "team": "",
+          "team": "Alpecin - Premier Tech",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "5"
@@ -554,7 +554,7 @@
           "rank": 8,
           "name": "Cole Kessler",
           "rider_url": "/profile/cole-kessler",
-          "team": "",
+          "team": "Modern Adventure Pro Cycling",
           "nat_code": "US",
           "flag": "🇺🇸",
           "time_gap": "4"
@@ -563,7 +563,7 @@
           "rank": 9,
           "name": "Eike Behrens",
           "rider_url": "/profile/eike-behrens",
-          "team": "",
+          "team": "Team Lotto Kern-Haus Outlet Montabaur",
           "nat_code": "DE",
           "flag": "🇩🇪",
           "time_gap": "3"
@@ -572,7 +572,7 @@
           "rank": 10,
           "name": "Andrea Raccagni Noviero",
           "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
+          "team": "Soudal - Quick Step",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "2"
@@ -584,7 +584,7 @@
           "rank": 1,
           "name": "Pierre Gautherat",
           "rider_url": "/profile/pierre-gautherat",
-          "team": "",
+          "team": "Decathlon CMA CGM Team",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "07:35:44"
@@ -593,7 +593,7 @@
           "rank": 2,
           "name": "Davide Piganzoli",
           "rider_url": "/profile/davide-piganzoli",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "+ 12"
@@ -602,7 +602,7 @@
           "rank": 3,
           "name": "Mattéo Vercher",
           "rider_url": "/profile/matteo-vercher",
-          "team": "",
+          "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 12"
@@ -611,7 +611,7 @@
           "rank": 4,
           "name": "Andrea Raccagni Noviero",
           "rider_url": "/profile/andrea-raccagni-noviero",
-          "team": "",
+          "team": "Soudal - Quick Step",
           "nat_code": "IT",
           "flag": "🇮🇹",
           "time_gap": "+ 12"
@@ -620,7 +620,7 @@
           "rank": 5,
           "name": "Per Strand Hagenes",
           "rider_url": "/profile/per-strand-hagenes",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "NO",
           "flag": "🇳🇴",
           "time_gap": "+ 12"
@@ -629,7 +629,7 @@
           "rank": 6,
           "name": "Conrad Haugsted",
           "rider_url": "/profile/conrad-haugsted",
-          "team": "",
+          "team": "Team ColoQuick",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "+ 13"
@@ -638,7 +638,7 @@
           "rank": 7,
           "name": "Morten Aalling Nørtoft",
           "rider_url": "/profile/morten-aalling-nortoft",
-          "team": "",
+          "team": "Team ColoQuick",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "+ 16"
@@ -647,7 +647,7 @@
           "rank": 8,
           "name": "Maxime Vezie",
           "rider_url": "/profile/maxime-vezie",
-          "team": "",
+          "team": "CIC Pro Cycling Academy",
           "nat_code": "FR",
           "flag": "🇫🇷",
           "time_gap": "+ 16"
@@ -656,7 +656,7 @@
           "rank": 9,
           "name": "Tijmen Graat",
           "rider_url": "/profile/tijmen-graat",
-          "team": "",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "NL",
           "flag": "🇳🇱",
           "time_gap": "+ 16"
@@ -665,7 +665,7 @@
           "rank": 10,
           "name": "Adria Pericas Capdevila",
           "rider_url": "/profile/adria-pericas-capdevila",
-          "team": "",
+          "team": "UAE Team Emirates XRG",
           "nat_code": "ES",
           "flag": "🇪🇸",
           "time_gap": "+ 16"
@@ -1405,9 +1405,9 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Alexis Renard",
-          "slug": "alexis-renard",
-          "nat": "fr",
+          "name": "Dylan Teuns",
+          "slug": "dylan-teuns",
+          "nat": "be",
           "team": "Cofidis (PRT)"
         },
         {
@@ -138512,43 +138512,43 @@
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 24
+      "days_away": 23
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 31
+      "days_away": 30
     }
   ]
 }

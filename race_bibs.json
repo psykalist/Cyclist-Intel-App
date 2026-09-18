@@ -6,7 +6,7 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-17",
+   "fetched_at": "2026-09-18",
    "matched": 87,
    "parsed": 128,
    "bibs": {
@@ -58,7 +58,7 @@
     "valentin-ferron": 93,
     "clement-izquierdo": 94,
     "sam-maisonobe": 95,
-    "alexis-renard": 96,
+    "dylan-teuns": 96,
     "edoardo-zamperini": 97,
     "ibai-azanza-burusco": 101,
     "urko-berrade-fernandez": 102,
@@ -177,7 +177,7 @@
    "name": "Skoda Tour de Luxembourg",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-de-luxembourg/2026/startlist",
-   "fetched_at": "2026-09-17",
+   "fetched_at": "2026-09-18",
    "matched": 65,
    "parsed": 102,
    "bibs": {
@@ -436,5 +436,5 @@
    }
   }
  },
- "generated_at": "2026-09-17"
+ "generated_at": "2026-09-18"
 }

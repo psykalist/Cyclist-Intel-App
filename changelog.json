@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T19:58:05.800551+00:00",
+  "generated_at": "2026-09-18T14:44:20.325243+00:00",
   "entries": [
     {
       "id": "c49613d1ad20",
@@ -294,27 +294,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 13 Vuelta a España: 🇧🇪 Wout van Aert wins"
-    },
-    {
-      "id": "d195663059a9",
-      "timestamp": "2026-09-04T14:41:22.406442+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Lloyds Tour of Britain Men: 🇳🇱 Olav Kooij wins"
-    },
-    {
-      "id": "6b9606b496b3",
-      "timestamp": "2026-09-04T14:41:22.406442+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Lloyds Tour of Britain Men Points: 🇧🇪 Tim Merlier leads"
-    },
-    {
-      "id": "59fd742558bc",
-      "timestamp": "2026-09-04T14:41:22.406442+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Alex Baudin, Davide Formolo, Geoffrey Bouchard (+3 more) added"
     }
   ]
 }

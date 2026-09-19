@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-18T19:20:36.859724+00:00",
+  "generated_at": "2026-09-19T14:05:15.783887+00:00",
   "entries": [
+    {
+      "id": "adf1ff48bc98",
+      "timestamp": "2026-09-19T14:05:15.777881+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "CRO Race startlist: Alain Suarez, Alex Tolio, Alexandre Balmer (+20 more) added"
+    },
     {
       "id": "44f958e04016",
       "timestamp": "2026-09-18T19:20:36.854113+00:00",
@@ -308,13 +315,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "GP Industria & Artigianato startlist: Diego Nembrini, Gotzon Martín, Jon Agirre (+3 more) added"
-    },
-    {
-      "id": "e99b954fdc70",
-      "timestamp": "2026-09-05T13:41:02.408549+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Clément Champoussin, Jaime Torres added"
     }
   ]
 }

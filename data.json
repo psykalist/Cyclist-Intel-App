@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-18T19:20:02.182325+00:00",
-  "scraped_at_human": "18 Sep 2026 19:20 UTC",
+  "scraped_at": "2026-09-19T14:04:41.598378+00:00",
+  "scraped_at_human": "19 Sep 2026 14:04 UTC",
   "live": [
     {
       "slug": "skoda-tour-de-luxembourg",
@@ -818,6 +818,25 @@
           "time_gap": "+ 04:50"
         }
       ]
+    },
+    {
+      "slug": "super-8-classic",
+      "cf_slug": "super-8-classic-2026",
+      "name": "SUPER 8 Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "live",
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-19",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
+      "startlist": [],
+      "distance_km": 199.4,
+      "stage_type": "flat",
+      "start_town": "Brakel",
+      "finish_town": "Haacht",
+      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3080 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.53% 2 Tim Merlier 25.33% 3 Biniam Girmay Hailu 9.76% 4 Matteo Trentin 9.15% 5 Davide Ballerini 4.24% 6 Florian Sénéchal 2.24% 7 Filippo Baroncini 1.87% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile.",
+      "stages": []
     }
   ],
   "upcoming": [
@@ -1045,24 +1064,6 @@
       ]
     },
     {
-      "slug": "super-8-classic",
-      "cf_slug": "super-8-classic-2026",
-      "name": "SUPER 8 Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-19",
-      "end_date": "2026-09-19",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
-      "startlist": [],
-      "distance_km": 199.4,
-      "stage_type": "flat",
-      "start_town": "Brakel",
-      "finish_town": "Haacht",
-      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3080 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.53% 2 Tim Merlier 25.33% 3 Biniam Girmay Hailu 9.76% 4 Matteo Trentin 9.15% 5 Davide Ballerini 4.24% 6 Florian Sénéchal 2.24% 7 Filippo Baroncini 1.87% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile."
-    },
-    {
       "slug": "cro-race",
       "cf_slug": "cro-race-2026",
       "name": "CRO Race",
@@ -1198,12 +1199,6 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Tim Wellens",
-          "slug": "tim-wellens",
-          "nat": "be",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
           "name": "Žak Eržen",
           "slug": "zak-erzen",
           "nat": "si",
@@ -1234,6 +1229,12 @@
           "team": "Bahrain - Victorious (WT)"
         },
         {
+          "name": "MECHELEN Vlad Van",
+          "slug": "vlad-van-mechelen",
+          "nat": "be",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
           "name": "Edoardo Zambanini",
           "slug": "edoardo-zambanini",
           "nat": "it",
@@ -1246,9 +1247,15 @@
           "team": "Lidl - Trek (WT)"
         },
         {
-          "name": "NORSGAARD Mathias Sunekær",
-          "slug": "mathias-norsgaard",
-          "nat": "dk",
+          "name": "Andrea Bessega",
+          "slug": "andrea-bessega",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Lennard Kämna",
+          "slug": "lennard-kamna",
+          "nat": "de",
           "team": "Lidl - Trek (WT)"
         },
         {
@@ -1282,9 +1289,9 @@
           "team": "NSN Cycling Team (WT)"
         },
         {
-          "name": "Brady Gilmore",
-          "slug": "brady-gilmore",
-          "nat": "au",
+          "name": "Itamar Einhorn",
+          "slug": "itamar-einhorn",
+          "nat": "il",
           "team": "NSN Cycling Team (WT)"
         },
         {
@@ -1306,15 +1313,15 @@
           "team": "NSN Cycling Team (WT)"
         },
         {
-          "name": "Riley Sheehan",
-          "slug": "riley-sheehan",
-          "nat": "us",
-          "team": "NSN Cycling Team (WT)"
-        },
-        {
           "name": "Rotem Tene",
           "slug": "rotem-tene",
           "nat": "il",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "TRICHT Floris Van",
+          "slug": "floris-van-tricht",
+          "nat": "be",
           "team": "NSN Cycling Team (WT)"
         },
         {
@@ -1336,9 +1343,9 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Alessio Magagnotti",
-          "slug": "alessio-magagnotti",
-          "nat": "it",
+          "name": "Arne Marit",
+          "slug": "arne-marit",
+          "nat": "be",
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
@@ -1360,15 +1367,15 @@
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Paul Magnier",
-          "slug": "paul-magnier",
-          "nat": "fr",
-          "team": "Soudal Quick-Step (WT)"
-        },
-        {
           "name": "Steff Cras",
           "slug": "steff-cras",
           "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Paul Magnier",
+          "slug": "paul-magnier",
+          "nat": "fr",
           "team": "Soudal Quick-Step (WT)"
         },
         {
@@ -1426,6 +1433,12 @@
           "team": "Uno-X Mobility (WT)"
         },
         {
+          "name": "Johannes Kulset",
+          "slug": "johannes-kulset",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
           "name": "Håkon Eiksund Øksnes",
           "slug": "hakon-eiksund-oksnes",
           "nat": "no",
@@ -1456,14 +1469,14 @@
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
-          "name": "Mattia Stenico",
-          "slug": "mattia-stenico",
+          "name": "Manuele Tarozzi",
+          "slug": "manuele-tarozzi",
           "nat": "it",
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
-          "name": "Manuele Tarozzi",
-          "slug": "manuele-tarozzi",
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
           "nat": "it",
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
@@ -1564,62 +1577,14 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Ibai Azanza",
-          "slug": "ibai-azanza",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "Urko Berrade",
-          "slug": "urko-berrade-fernandez",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "Pablo Carrascosa",
-          "slug": "pablo-carrascosa",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "Iván Cobo",
-          "slug": "ivan-cobo-cayon",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "Iker Gómez",
-          "slug": "iker-gomez-lopez-de-goicoechea",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "Unai Iribar",
-          "slug": "unai-iribar-jauregi",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
-          "name": "César Pérez",
-          "slug": "cesar-perez-lopez",
-          "nat": "es",
-          "team": "Equipo Kern Pharma (PRT)"
-        },
-        {
           "name": "Jon Agirre",
           "slug": "jon-agirre",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Xabier Berasategi",
-          "slug": "xabier-berasategi-garmendia",
-          "nat": "es",
-          "team": "Euskaltel - Euskadi (PRT)"
-        },
-        {
-          "name": "Xabier Isasa",
-          "slug": "xabier-isasa-larranaga",
+          "name": "Mikel Bizkarra",
+          "slug": "mikel-bizkarra",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
@@ -1630,22 +1595,34 @@
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
+          "name": "Marco Martín",
+          "slug": "marco-martin-cuevas",
+          "nat": "es",
+          "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
           "name": "Gotzon Martín",
           "slug": "gotzon-martin",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Jokin Murguialday",
-          "slug": "jokin-murguialday-elorza",
+          "name": "Alain Suarez",
+          "slug": "alain-suarez",
           "nat": "es",
           "team": "Euskaltel - Euskadi (PRT)"
         },
         {
-          "name": "Louis Sutton",
-          "slug": "louis-sutton",
-          "nat": "gb",
+          "name": "DER TUUK Axel Van",
+          "slug": "axel-van-der-tuuk",
+          "nat": "nl",
           "team": "Euskaltel - Euskadi (PRT)"
+        },
+        {
+          "name": "Matteo Ambrosini",
+          "slug": "matteo-ambrosini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
           "name": "Christian Bagatin",
@@ -1654,15 +1631,21 @@
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Cesare Chesini",
-          "slug": "cesare-chesini",
+          "name": "Nicolò Buratti",
+          "slug": "nicolo-buratti",
           "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Alessandro Fancellu",
-          "slug": "alessandro-fancellu",
+          "name": "Filippo D'Aiuto",
+          "slug": "filippo-d-aiuto",
           "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Márton Dina",
+          "slug": "marton-dina",
+          "nat": "hu",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
@@ -1672,21 +1655,9 @@
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Davide Persico",
-          "slug": "davide-persico",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Zsombor Takács",
-          "slug": "zsombor-tamas-takacs",
+          "name": "Márk Valent",
+          "slug": "mark-valent",
           "nat": "hu",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
-          "name": "Samuele Zoccarato",
-          "slug": "samuele-zoccarato",
-          "nat": "it",
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
@@ -1698,12 +1669,6 @@
         {
           "name": "Harry Lasker",
           "slug": "harry-lasker",
-          "nat": "us",
-          "team": "Modern Adventure Pro Cycling (PRT)"
-        },
-        {
-          "name": "Ian López",
-          "slug": "ian-lopez",
           "nat": "us",
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
@@ -1720,15 +1685,21 @@
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
+          "name": "Mark Stewart",
+          "slug": "mark-stewart",
+          "nat": "gb",
+          "team": "Modern Adventure Pro Cycling (PRT)"
+        },
+        {
           "name": "Tyler Stites",
           "slug": "tyler-stites",
           "nat": "us",
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
-          "name": "Paul Wright",
-          "slug": "paul-wright",
-          "nat": "nz",
+          "name": "Lucas Towers",
+          "slug": "luca-towers",
+          "nat": "gb",
           "team": "Modern Adventure Pro Cycling (PRT)"
         },
         {
@@ -1774,9 +1745,9 @@
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         },
         {
-          "name": "Samuel Bertolli",
-          "slug": "samuel-bertolli",
-          "nat": "it",
+          "name": "Alexandre Balmer",
+          "slug": "alexandre-balmer",
+          "nat": "ch",
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
@@ -1792,15 +1763,15 @@
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
-          "name": "Ben Granger",
-          "slug": "ben-granger",
-          "nat": "gb",
+          "name": "Michele Gazzoli",
+          "slug": "michele-gazzoli",
+          "nat": "it",
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
-          "name": "Domenico Pozzovivo",
-          "slug": "domenico-pozzovivo",
-          "nat": "it",
+          "name": "Roberto Carlos González",
+          "slug": "roberto-gonzalez",
+          "nat": "pa",
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
@@ -1810,9 +1781,9 @@
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
-          "name": "Kyrylo Tsarenko",
-          "slug": "kyrylo-tsarenko",
-          "nat": "ua",
+          "name": "Attilio Viviani",
+          "slug": "attilio-viviani",
+          "nat": "it",
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
@@ -138666,43 +138637,43 @@
       "name": "SUPER 8 Classic",
       "cf_slug": "super-8-classic-2026",
       "start_date": "2026-09-19",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 23
+      "days_away": 22
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 30
+      "days_away": 29
     }
   ]
 }

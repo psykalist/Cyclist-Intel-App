@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-19 16:03 UTC",
-  "run_at_iso": "2026-09-19T14:04:41.597306+00:00",
+  "run_at": "2026-09-19 21:04 UTC",
+  "run_at_iso": "2026-09-19T19:05:57.935017+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,19 +8,19 @@
       "name": "Skoda Tour de Luxembourg",
       "total_stages": 5,
       "stages_completed_before": 3,
-      "stages_completed_after": 3,
-      "new_stages_found": 0,
+      "stages_completed_after": 4,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 4,
-        "url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026/result/stage-4",
+        "stage_num": 5,
+        "url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026/result/stage-5",
         "fetch_ok": true,
-        "response_bytes": 269598,
+        "response_bytes": 264066,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-09-18 21:18 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 16.8,
+        "stall_since": "2026-09-19 21:04 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

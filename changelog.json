@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-19T14:05:15.783887+00:00",
+  "generated_at": "2026-09-19T19:06:33.998370+00:00",
   "entries": [
+    {
+      "id": "82428924de8a",
+      "timestamp": "2026-09-19T19:06:33.993102+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Skoda Tour de Luxembourg: 🇮🇹 Davide Piganzoli wins"
+    },
+    {
+      "id": "dbccfafd5903",
+      "timestamp": "2026-09-19T19:06:33.993102+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Skoda Tour de Luxembourg Points: 🇮🇹 Davide Piganzoli leads"
+    },
     {
       "id": "adf1ff48bc98",
       "timestamp": "2026-09-19T14:05:15.777881+00:00",
@@ -287,34 +301,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 5 Lloyds Tour of Britain Men: 🇩🇪 Nils Politt wins"
-    },
-    {
-      "id": "722d544e8b74",
-      "timestamp": "2026-09-05T18:43:13.383250+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 14 Vuelta a España: 🇩🇪 Marco Brenner wins"
-    },
-    {
-      "id": "2a19273b0a80",
-      "timestamp": "2026-09-05T18:43:13.383250+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Lloyds Tour of Britain Men: 🇳🇱 Cees Bol wins"
-    },
-    {
-      "id": "8f0d2c81ddec",
-      "timestamp": "2026-09-05T18:43:13.383250+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Lloyds Tour of Britain Men GC: 🇧🇪 Tim Wellens leads"
-    },
-    {
-      "id": "546fdc31a81e",
-      "timestamp": "2026-09-05T18:43:13.383250+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "GP Industria & Artigianato startlist: Diego Nembrini, Gotzon Martín, Jon Agirre (+3 more) added"
     }
   ]
 }

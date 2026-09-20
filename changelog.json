@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-19T19:06:33.998370+00:00",
+  "generated_at": "2026-09-20T14:25:26.649657+00:00",
   "entries": [
+    {
+      "id": "fe526b127ecd",
+      "timestamp": "2026-09-20T14:25:26.644210+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "CRO Race startlist: Tim Wellens added"
+    },
     {
       "id": "82428924de8a",
       "timestamp": "2026-09-19T19:06:33.993102+00:00",
@@ -287,20 +294,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "GP Industria & Artigianato Youth: 🇬🇧 Tom Pidcock leads"
-    },
-    {
-      "id": "2c322f922528",
-      "timestamp": "2026-09-06T13:54:15.415988+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 12 Vuelta a España: 🇸🇮 Jakob Omrzel wins"
-    },
-    {
-      "id": "f484ac0ac6bb",
-      "timestamp": "2026-09-06T13:54:15.415988+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Lloyds Tour of Britain Men: 🇩🇪 Nils Politt wins"
     }
   ]
 }

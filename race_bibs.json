@@ -6,11 +6,12 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-19",
-   "matched": 79,
-   "parsed": 122,
+   "fetched_at": "2026-09-20",
+   "matched": 80,
+   "parsed": 123,
    "bibs": {
     "benoit-cosnefroy": 2,
+    "tim-wellens": 5,
     "florian-vermeersch": 7,
     "zak-erzen": 11,
     "fran-miholjevic": 12,
@@ -169,7 +170,7 @@
    "name": "Skoda Tour de Luxembourg",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-de-luxembourg/2026/startlist",
-   "fetched_at": "2026-09-19",
+   "fetched_at": "2026-09-20",
    "matched": 65,
    "parsed": 102,
    "bibs": {
@@ -428,5 +429,5 @@
    }
   }
  },
- "generated_at": "2026-09-19"
+ "generated_at": "2026-09-20"
 }

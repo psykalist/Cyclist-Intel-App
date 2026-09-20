@@ -1,54 +1,34 @@
 {
-  "run_at": "2026-09-19 21:04 UTC",
-  "run_at_iso": "2026-09-19T19:05:57.935017+00:00",
+  "run_at": "2026-09-20 16:23 UTC",
+  "run_at_iso": "2026-09-20T14:24:57.039702+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "skoda-tour-de-luxembourg-2026",
       "name": "Skoda Tour de Luxembourg",
       "total_stages": 5,
-      "stages_completed_before": 3,
+      "stages_completed_before": 4,
       "stages_completed_after": 4,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 5,
         "url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026/result/stage-5",
         "fetch_ok": true,
-        "response_bytes": 264066,
+        "response_bytes": 272216,
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-09-19 21:04 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 17.3,
         "possible_parser_drift": false
-      },
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "super-8-classic-2026",
-      "name": "SUPER 8 Classic",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 0,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": {
-        "stage_num": 1,
-        "url": "https://cyclingflash.com/race/super-8-classic-2026/result/stage-1",
-        "fetch_ok": false,
-        "response_bytes": 0,
-        "matched_result_table": false,
-        "overdue": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
     }
   ],
-  "has_fetch_errors": true,
+  "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
   "has_incomplete_results": false

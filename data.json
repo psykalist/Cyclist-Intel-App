@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-19T19:05:59.433307+00:00",
-  "scraped_at_human": "19 Sep 2026 19:05 UTC",
+  "scraped_at": "2026-09-20T14:24:57.040467+00:00",
+  "scraped_at_human": "20 Sep 2026 14:24 UTC",
   "live": [
     {
       "slug": "skoda-tour-de-luxembourg",
@@ -920,25 +920,6 @@
           "time_gap": "+ 06:04"
         }
       ]
-    },
-    {
-      "slug": "super-8-classic",
-      "cf_slug": "super-8-classic-2026",
-      "name": "SUPER 8 Classic",
-      "year": "2026",
-      "category": "1.Pro",
-      "status": "live",
-      "start_date": "2026-09-19",
-      "end_date": "2026-09-19",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
-      "startlist": [],
-      "distance_km": 199.4,
-      "stage_type": "flat",
-      "start_town": "Brakel",
-      "finish_town": "Haacht",
-      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3080 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.53% 2 Tim Merlier 25.33% 3 Biniam Girmay Hailu 9.76% 4 Matteo Trentin 9.15% 5 Davide Ballerini 4.24% 6 Florian Sénéchal 2.24% 7 Filippo Baroncini 1.87% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile.",
-      "stages": []
     }
   ],
   "upcoming": [
@@ -1270,6 +1251,12 @@
         }
       ],
       "startlist": [
+        {
+          "name": "Tim Wellens",
+          "slug": "tim-wellens",
+          "nat": "be",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
         {
           "name": "Rui Oliveira",
           "slug": "rui-oliveira",
@@ -2420,6 +2407,25 @@
     }
   ],
   "recent": [
+    {
+      "slug": "super-8-classic",
+      "cf_slug": "super-8-classic-2026",
+      "name": "SUPER 8 Classic",
+      "year": "2026",
+      "category": "1.Pro",
+      "status": "recent",
+      "start_date": "2026-09-19",
+      "end_date": "2026-09-19",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/super-8-classic-2026",
+      "startlist": [],
+      "distance_km": 199.4,
+      "stage_type": "flat",
+      "start_town": "Brakel",
+      "finish_town": "Haacht",
+      "description": "Info Startlist Results Winners 19 Sep Date 199 km Distance 1.Pro Category Best riders on startlist Rank Rider Team Rating 150 Arnaud De Lie Lotto - Intermarché Lotto - Intermarché 785 182 Biniam Girmay Hailu NSN Cycling Team NSN Cycling Team 778 196 Tim Merlier Soudal - Quick Step Soudal - Quick Step 773 288 Davide Ballerini XDS Astana Team XDS Astana Team 756 317 Filippo Baroncini UAE Team Emirates XRG UAE Team Emirates XRG 752 419 Florian Sénéchal Alpecin - Premier Tech Alpecin - Premier Tech 736 497 Matteo Trentin Tudor Pro Cycling Team Tudor Pro Cycling Team 727 692 Tiesj Benoot Decathlon CMA CGM Team Decathlon CMA CGM Team 708 3080 Taco van der Hoorn Lotto - Intermarché Lotto - Intermarché 541 Full startlist Win chance 1 Arnaud De Lie 45.53% 2 Tim Merlier 25.33% 3 Biniam Girmay Hailu 9.76% 4 Matteo Trentin 9.15% 5 Davide Ballerini 4.24% 6 Florian Sénéchal 2.24% 7 Filippo Baroncini 1.87% 8 Tiesj Benoot 1.52% 9 Taco van der Hoorn 0.35% Model-based estimate from rider ratings and the stage profile.",
+      "stages": []
+    },
     {
       "slug": "grand-prix-de-wallonie",
       "cf_slug": "grand-prix-de-wallonie-2026",
@@ -138743,46 +138749,40 @@
   },
   "startlists_needed": [
     {
-      "name": "SUPER 8 Classic",
-      "cf_slug": "super-8-classic-2026",
-      "start_date": "2026-09-19",
-      "days_away": 0
-    },
-    {
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 8
+      "days_away": 7
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 16
+      "days_away": 15
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 22
+      "days_away": 21
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 29
+      "days_away": 28
     }
   ]
 }

@@ -1,24 +1,21 @@
 {
-  "updated_at": "2026-09-20T10:10:14.166267+00:00",
+  "updated_at": "2026-09-20T14:26:10.253736+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "data.json is 15h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: could not fetch next-stage probe for ['super-8-classic-2026'] -- network/HTTP issue, not necessarily a bug"
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 4116,
     "data_upcoming": 13,
-    "data_recent": 82,
+    "data_recent": 83,
     "data_teams": 33,
     "rider_profiles": 2710,
-    "live_races": 2,
-    "scraped_at": "2026-09-19T19:05:59.433307+00:00",
-    "data_age_hours": 15.1,
+    "live_races": 1,
+    "scraped_at": "2026-09-20T14:24:57.040467+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-19 21:04 UTC",
+    "scrape_log_run_at": "2026-09-20 16:23 UTC",
     "rider_roster": 1372,
     "rider_missing_profile": 102,
     "rider_missing_palmares": 944

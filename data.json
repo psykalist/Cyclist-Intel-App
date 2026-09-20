@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-20T14:24:57.040467+00:00",
-  "scraped_at_human": "20 Sep 2026 14:24 UTC",
+  "scraped_at": "2026-09-20T19:12:29.679637+00:00",
+  "scraped_at_human": "20 Sep 2026 19:12 UTC",
   "live": [
     {
       "slug": "skoda-tour-de-luxembourg",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-20",
       "total_stages": 5,
       "official_url": "https://cyclingflash.com/race/skoda-tour-de-luxembourg-2026",
-      "stages_completed": 4,
+      "stages_completed": 5,
       "stages": [
         {
           "num": 1,
@@ -530,10 +530,101 @@
           "num": 5,
           "label": "Stage 5",
           "result_url": "/race/skoda-tour-de-luxembourg-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Mathieu van der Poel",
+          "winner_flag": "🇳🇱",
+          "winner_nat": "NL",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Mathieu van der Poel",
+              "rider_url": "/profile/mathieu-van-der-poel",
+              "team": "Alpecin - Premier Tech",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "04:10:58"
+            },
+            {
+              "rank": 2,
+              "name": "Mikkel Frølich Honoré",
+              "rider_url": "/profile/mikkel-froelich-honore",
+              "team": "EF Education - EasyPost",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 01:04"
+            },
+            {
+              "rank": 3,
+              "name": "Pepijn Reinderink",
+              "rider_url": "/profile/pepijn-reinderink",
+              "team": "Soudal - Quick Step",
+              "nat_code": "NL",
+              "flag": "🇳🇱",
+              "time_gap": "+ 01:09"
+            },
+            {
+              "rank": 4,
+              "name": "Davide Piganzoli",
+              "rider_url": "/profile/davide-piganzoli",
+              "team": "Team Visma | Lease a Bike",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 01:09"
+            },
+            {
+              "rank": 5,
+              "name": "Lukas Nerurkar",
+              "rider_url": "/profile/lukas-nerurkar",
+              "team": "EF Education - EasyPost",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 01:09"
+            },
+            {
+              "rank": 6,
+              "name": "Mattéo Vercher",
+              "rider_url": "/profile/matteo-vercher",
+              "team": "TotalEnergies",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:14"
+            },
+            {
+              "rank": 7,
+              "name": "Søren Kragh Andersen",
+              "rider_url": "/profile/soren-kragh-andersen",
+              "team": "Lidl - Trek",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "+ 01:14"
+            },
+            {
+              "rank": 8,
+              "name": "Thomas Gachignard",
+              "rider_url": "/profile/thomas-gachignard",
+              "team": "TotalEnergies",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:14"
+            },
+            {
+              "rank": 9,
+              "name": "Antoine L'Hote",
+              "rider_url": "/profile/antoine-lhote",
+              "team": "Decathlon CMA CGM Team",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:18"
+            },
+            {
+              "rank": 10,
+              "name": "Aurélien Paret-Peintre",
+              "rider_url": "/profile/aurelien-paret-peintre",
+              "team": "Decathlon CMA CGM Team",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:18"
+            }
+          ],
           "distance_km": 177.6,
           "elevation_m": 3064,
           "stage_type": "mountain",
@@ -541,13 +632,186 @@
           "finish_town": "Luxembourg",
           "description": "Info Startlist Stages Results Winners Stage 5 Mersch - Luxembourg (177.6km) The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg. The fifth and final stage takes place on Sunday, 20 September, from Mersch to Luxembourg. The final stage covers 177.6 km and features 3,064 metres of elevation gain. This provides another particularly demanding and hilly course on the last day. After 5 stages, the 2026 Škoda Tour de Luxembourg comes to an end in Luxembourg.",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176482/responsive-images/stage-5-height-profile___heightProfile_1131_800.webp",
-          "date_str": "Sunday 20 September"
+          "date_str": "Sunday 20 September",
+          "non_finishers": [
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Thibault Guernalec",
+              "rider_url": "/profile/thibault-guernalec",
+              "team": "TotalEnergies",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Mats Berns",
+              "rider_url": "/profile/mats-berns",
+              "team": "Luxembourg",
+              "nat_code": "LU",
+              "flag": "🇱🇺"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Collin Westbroek",
+              "rider_url": "/profile/collin-westbroek",
+              "team": "Metec - Solarwatt P/B Mantel",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Steyn van der Veen",
+              "rider_url": "/profile/steyn-van-der-veen",
+              "team": "Metec - Solarwatt P/B Mantel",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Oscar Rota Rus",
+              "rider_url": "/profile/oscar-rota-rus",
+              "team": "Feira dos Sofás - Boavista",
+              "nat_code": "ES",
+              "flag": "🇪🇸"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Rúben Rodrigues",
+              "rider_url": "/profile/ruben-rodrigues",
+              "team": "Feira dos Sofás - Boavista",
+              "nat_code": "PT",
+              "flag": "🇵🇹"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Henri Vandenabeele",
+              "rider_url": "/profile/henri-vandenabeele",
+              "team": "Team Flanders - Baloise",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Roger Kluge",
+              "rider_url": "/profile/roger-kluge",
+              "team": "Rembe | Rad-Net",
+              "nat_code": "DE",
+              "flag": "🇩🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Fabien Doubey",
+              "rider_url": "/profile/fabien-doubey",
+              "team": "TotalEnergies",
+              "nat_code": "FR",
+              "flag": "🇫🇷"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Gauthier Servranckx",
+              "rider_url": "/profile/gauthier-servranckx",
+              "team": "Soudal - Quick Step",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Bauke Mollema",
+              "rider_url": "/profile/bauke-mollema",
+              "team": "Lidl - Trek",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Jardi Christiaan Van Der Lee",
+              "rider_url": "/profile/jardi-christiaan-van-der-lee",
+              "team": "EF Education - EasyPost",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Noah Ramsay",
+              "rider_url": "/profile/noah-ramsay",
+              "team": "Alpecin - Premier Tech",
+              "nat_code": "CA",
+              "flag": "🇨🇦"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Morten Aalling Nørtoft",
+              "rider_url": "/profile/morten-aalling-nortoft",
+              "team": "Team ColoQuick",
+              "nat_code": "DK",
+              "flag": "🇩🇰"
+            },
+            {
+              "status": "DNF",
+              "status_label": "Did not finish — abandoned during the stage.",
+              "name": "Milan Van Den Haute",
+              "rider_url": "/profile/milan-van-den-haute",
+              "team": "Team Flanders - Baloise",
+              "nat_code": "BE",
+              "flag": "🇧🇪"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Noé Ury",
+              "rider_url": "/profile/noe-ury",
+              "team": "Luxembourg",
+              "nat_code": "LU",
+              "flag": "🇱🇺"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Andrea Bagioli",
+              "rider_url": "/profile/andrea-bagioli",
+              "team": "Lidl - Trek",
+              "nat_code": "IT",
+              "flag": "🇮🇹"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Danijel Agricola",
+              "rider_url": "/profile/danijel-agricola",
+              "team": "Metec - Solarwatt P/B Mantel",
+              "nat_code": "NL",
+              "flag": "🇳🇱"
+            },
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Mauro Brenner",
+              "rider_url": "/profile/mauro-brenner",
+              "team": "Rembe | Rad-Net",
+              "nat_code": "DE",
+              "flag": "🇩🇪"
+            }
+          ]
         }
       ],
       "startlist": [],
-      "last_stage_winner": "Davide Piganzoli",
-      "last_stage_winner_flag": "🇮🇹",
-      "last_stage_num": 4,
+      "last_stage_winner": "Mathieu van der Poel",
+      "last_stage_winner_flag": "🇳🇱",
+      "last_stage_num": 5,
       "gc_leader": "🇮🇹 Davide Piganzoli",
       "gc_top10": [
         {
@@ -557,7 +821,7 @@
           "team": "Team Visma | Lease a Bike",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "12:10:10"
+          "time_gap": "16:22:17"
         },
         {
           "rank": 2,
@@ -566,7 +830,7 @@
           "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 47"
+          "time_gap": "+ 52"
         },
         {
           "rank": 3,
@@ -575,7 +839,7 @@
           "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 49"
+          "time_gap": "+ 54"
         },
         {
           "rank": 4,
@@ -584,7 +848,7 @@
           "team": "Decathlon CMA CGM Team",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 54"
+          "time_gap": "+ 01:03"
         },
         {
           "rank": 5,
@@ -593,7 +857,7 @@
           "team": "UAE Team Emirates XRG",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 01:16"
+          "time_gap": "+ 01:25"
         },
         {
           "rank": 6,
@@ -602,76 +866,85 @@
           "team": "Team Visma | Lease a Bike",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 01:57"
+          "time_gap": "+ 02:10"
         },
         {
           "rank": 7,
-          "name": "Sam Oomen",
-          "rider_url": "/profile/sam-oomen",
-          "team": "Lidl - Trek",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "+ 02:03"
-        },
-        {
-          "rank": 8,
-          "name": "Eike Behrens",
-          "rider_url": "/profile/eike-behrens",
-          "team": "Team Lotto Kern-Haus Outlet Montabaur",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 02:03"
-        },
-        {
-          "rank": 9,
           "name": "Søren Kragh Andersen",
           "rider_url": "/profile/soren-kragh-andersen",
           "team": "Lidl - Trek",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "+ 02:12"
+          "time_gap": "+ 02:16"
         },
         {
-          "rank": 10,
+          "rank": 8,
+          "name": "Sam Oomen",
+          "rider_url": "/profile/sam-oomen",
+          "team": "Lidl - Trek",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "+ 02:16"
+        },
+        {
+          "rank": 9,
           "name": "Pepijn Reinderink",
           "rider_url": "/profile/pepijn-reinderink",
           "team": "Soudal - Quick Step",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 02:30"
+          "time_gap": "+ 02:24"
+        },
+        {
+          "rank": 10,
+          "name": "Eike Behrens",
+          "rider_url": "/profile/eike-behrens",
+          "team": "Team Lotto Kern-Haus Outlet Montabaur",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 02:33"
         }
       ],
-      "points_leader": "🇮🇹 Davide Piganzoli",
+      "points_leader": "🇳🇱 Mathieu van der Poel",
       "points_top10": [
         {
           "rank": 1,
-          "name": "Davide Piganzoli",
-          "rider_url": "/profile/davide-piganzoli",
-          "team": "Team Visma | Lease a Bike",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "37"
-        },
-        {
-          "rank": 2,
-          "name": "Marijn van den Berg",
-          "rider_url": "/profile/marijn-van-den-berg",
-          "team": "EF Education - EasyPost",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "33"
-        },
-        {
-          "rank": 3,
           "name": "Mathieu van der Poel",
           "rider_url": "/profile/mathieu-van-der-poel",
           "team": "Alpecin - Premier Tech",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "29"
+          "time_gap": "54"
+        },
+        {
+          "rank": 2,
+          "name": "Davide Piganzoli",
+          "rider_url": "/profile/davide-piganzoli",
+          "team": "Team Visma | Lease a Bike",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "48"
+        },
+        {
+          "rank": 3,
+          "name": "Marijn van den Berg",
+          "rider_url": "/profile/marijn-van-den-berg",
+          "team": "EF Education - EasyPost",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "36"
         },
         {
           "rank": 4,
+          "name": "Pepijn Reinderink",
+          "rider_url": "/profile/pepijn-reinderink",
+          "team": "Soudal - Quick Step",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "33"
+        },
+        {
+          "rank": 5,
           "name": "Pierre Gautherat",
           "rider_url": "/profile/pierre-gautherat",
           "team": "Decathlon CMA CGM Team",
@@ -680,7 +953,16 @@
           "time_gap": "29"
         },
         {
-          "rank": 5,
+          "rank": 6,
+          "name": "Mattéo Vercher",
+          "rider_url": "/profile/matteo-vercher",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "21"
+        },
+        {
+          "rank": 7,
           "name": "Andrea Raccagni Noviero",
           "rider_url": "/profile/andrea-raccagni-noviero",
           "team": "Soudal - Quick Step",
@@ -689,16 +971,7 @@
           "time_gap": "21"
         },
         {
-          "rank": 6,
-          "name": "Pepijn Reinderink",
-          "rider_url": "/profile/pepijn-reinderink",
-          "team": "Soudal - Quick Step",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "20"
-        },
-        {
-          "rank": 7,
+          "rank": 8,
           "name": "Jasper Stuyven",
           "rider_url": "/profile/jasper-stuyven",
           "team": "Soudal - Quick Step",
@@ -707,46 +980,46 @@
           "time_gap": "20"
         },
         {
-          "rank": 8,
-          "name": "Timo Kielich",
-          "rider_url": "/profile/timo-kielich",
-          "team": "Team Visma | Lease a Bike",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "16"
-        },
-        {
           "rank": 9,
-          "name": "Leo Hayter",
-          "rider_url": "/profile/leo-hayter",
-          "team": "Modern Adventure Pro Cycling",
-          "nat_code": "GB",
-          "flag": "🇬🇧",
+          "name": "Thomas Gachignard",
+          "rider_url": "/profile/thomas-gachignard",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
           "time_gap": "16"
         },
         {
           "rank": 10,
-          "name": "Mattéo Vercher",
-          "rider_url": "/profile/matteo-vercher",
-          "team": "TotalEnergies",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "14"
+          "name": "Søren Kragh Andersen",
+          "rider_url": "/profile/soren-kragh-andersen",
+          "team": "Lidl - Trek",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "16"
         }
       ],
-      "kom_leader": "🇳🇱 Pepijn Reinderink",
+      "kom_leader": "🇳🇱 Mathieu van der Poel",
       "kom_top10": [
         {
           "rank": 1,
+          "name": "Mathieu van der Poel",
+          "rider_url": "/profile/mathieu-van-der-poel",
+          "team": "Alpecin - Premier Tech",
+          "nat_code": "NL",
+          "flag": "🇳🇱",
+          "time_gap": "28"
+        },
+        {
+          "rank": 2,
           "name": "Pepijn Reinderink",
           "rider_url": "/profile/pepijn-reinderink",
           "team": "Soudal - Quick Step",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "18"
+          "time_gap": "21"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "Nils Politt",
           "rider_url": "/profile/nils-politt",
           "team": "UAE Team Emirates XRG",
@@ -755,7 +1028,16 @@
           "time_gap": "15"
         },
         {
-          "rank": 3,
+          "rank": 4,
+          "name": "Malte Hellerup",
+          "rider_url": "/profile/malte-hellerup",
+          "team": "Team ColoQuick",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "15"
+        },
+        {
+          "rank": 5,
           "name": "Conrad Haugsted",
           "rider_url": "/profile/conrad-haugsted",
           "team": "Team ColoQuick",
@@ -764,34 +1046,7 @@
           "time_gap": "13"
         },
         {
-          "rank": 4,
-          "name": "Malte Hellerup",
-          "rider_url": "/profile/malte-hellerup",
-          "team": "Team ColoQuick",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "13"
-        },
-        {
-          "rank": 5,
-          "name": "Steyn van der Veen",
-          "rider_url": "/profile/steyn-van-der-veen",
-          "team": "Metec - Solarwatt P/B Mantel",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "9"
-        },
-        {
           "rank": 6,
-          "name": "Mathieu van der Poel",
-          "rider_url": "/profile/mathieu-van-der-poel",
-          "team": "Alpecin - Premier Tech",
-          "nat_code": "NL",
-          "flag": "🇳🇱",
-          "time_gap": "8"
-        },
-        {
-          "rank": 7,
           "name": "Jonathan Malte Rottmann",
           "rider_url": "/profile/jonathan-malte-rottmann",
           "team": "Team Lotto Kern-Haus Outlet Montabaur",
@@ -800,7 +1055,7 @@
           "time_gap": "7"
         },
         {
-          "rank": 8,
+          "rank": 7,
           "name": "Eike Behrens",
           "rider_url": "/profile/eike-behrens",
           "team": "Team Lotto Kern-Haus Outlet Montabaur",
@@ -809,7 +1064,7 @@
           "time_gap": "7"
         },
         {
-          "rank": 9,
+          "rank": 8,
           "name": "Mael Guegan",
           "rider_url": "/profile/mael-guegan",
           "team": "CIC Pro Cycling Academy",
@@ -818,10 +1073,19 @@
           "time_gap": "7"
         },
         {
+          "rank": 9,
+          "name": "Davide Piganzoli",
+          "rider_url": "/profile/davide-piganzoli",
+          "team": "Team Visma | Lease a Bike",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "5"
+        },
+        {
           "rank": 10,
-          "name": "Gauthier Servranckx",
-          "rider_url": "/profile/gauthier-servranckx",
-          "team": "Soudal - Quick Step",
+          "name": "Timo Kielich",
+          "rider_url": "/profile/timo-kielich",
+          "team": "Team Visma | Lease a Bike",
           "nat_code": "BE",
           "flag": "🇧🇪",
           "time_gap": "5"
@@ -836,7 +1100,7 @@
           "team": "Team Visma | Lease a Bike",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "12:10:10"
+          "time_gap": "16:22:17"
         },
         {
           "rank": 2,
@@ -845,7 +1109,7 @@
           "team": "TotalEnergies",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 47"
+          "time_gap": "+ 52"
         },
         {
           "rank": 3,
@@ -854,7 +1118,7 @@
           "team": "UAE Team Emirates XRG",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 01:16"
+          "time_gap": "+ 01:25"
         },
         {
           "rank": 4,
@@ -863,25 +1127,25 @@
           "team": "Team Visma | Lease a Bike",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 01:57"
+          "time_gap": "+ 02:10"
         },
         {
           "rank": 5,
-          "name": "Eike Behrens",
-          "rider_url": "/profile/eike-behrens",
-          "team": "Team Lotto Kern-Haus Outlet Montabaur",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 02:03"
-        },
-        {
-          "rank": 6,
           "name": "Pepijn Reinderink",
           "rider_url": "/profile/pepijn-reinderink",
           "team": "Soudal - Quick Step",
           "nat_code": "NL",
           "flag": "🇳🇱",
-          "time_gap": "+ 02:30"
+          "time_gap": "+ 02:24"
+        },
+        {
+          "rank": 6,
+          "name": "Eike Behrens",
+          "rider_url": "/profile/eike-behrens",
+          "team": "Team Lotto Kern-Haus Outlet Montabaur",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 02:33"
         },
         {
           "rank": 7,
@@ -894,30 +1158,30 @@
         },
         {
           "rank": 8,
-          "name": "Pierre Thierry",
-          "rider_url": "/profile/pierre-thierry",
-          "team": "TotalEnergies",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 05:52"
-        },
-        {
-          "rank": 9,
           "name": "Senne Thonnon",
           "rider_url": "/profile/senne-thonnon",
           "team": "Team Flanders - Baloise",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 05:56"
+          "time_gap": "+ 06:09"
+        },
+        {
+          "rank": 9,
+          "name": "Pierre Thierry",
+          "rider_url": "/profile/pierre-thierry",
+          "team": "TotalEnergies",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 06:46"
         },
         {
           "rank": 10,
-          "name": "Gauthier Servranckx",
-          "rider_url": "/profile/gauthier-servranckx",
-          "team": "Soudal - Quick Step",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "+ 06:04"
+          "name": "Maxime Vezie",
+          "rider_url": "/profile/maxime-vezie",
+          "team": "CIC Pro Cycling Academy",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 06:47"
         }
       ]
     }
@@ -1252,12 +1516,6 @@
       ],
       "startlist": [
         {
-          "name": "Tim Wellens",
-          "slug": "tim-wellens",
-          "nat": "be",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
           "name": "Rui Oliveira",
           "slug": "rui-oliveira",
           "nat": "pt",
@@ -1284,6 +1542,12 @@
         {
           "name": "Florian Vermeersch",
           "slug": "florian-vermeersch",
+          "nat": "be",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Tim Wellens",
+          "slug": "tim-wellens",
           "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
@@ -123696,6 +123960,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "20-09-2026",
+          "race": "Skoda Tour de Luxembourg - Stage 5",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
           "date": "16-09-2026",
           "race": "Skoda Tour de Luxembourg - Stage 1",
           "cat": "2.Pro"
@@ -125942,7 +126212,7 @@
         }
       },
       "fetched_at": "2026-07-06T19:28:41.510483+00:00",
-      "wins_refreshed_at": "2026-09-16T19:49:43.338001+00:00"
+      "wins_refreshed_at": "2026-09-20T19:12:29.679518+00:00"
     },
     "giulio-pellizzari": {
       "slug": "giulio-pellizzari",

@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-20T14:25:26.649657+00:00",
+  "generated_at": "2026-09-20T19:12:59.120635+00:00",
   "entries": [
+    {
+      "id": "afd75e2ab146",
+      "timestamp": "2026-09-20T19:12:59.115321+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Skoda Tour de Luxembourg: 🇳🇱 Mathieu van der Poel wins"
+    },
+    {
+      "id": "5f2ac40d57cd",
+      "timestamp": "2026-09-20T19:12:59.115321+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Skoda Tour de Luxembourg KOM: 🇳🇱 Mathieu van der Poel leads"
+    },
     {
       "id": "fe526b127ecd",
       "timestamp": "2026-09-20T14:25:26.644210+00:00",
@@ -245,55 +259,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Vuelta a España Youth: 🇺🇸 Kevin Vermaerke leads"
-    },
-    {
-      "id": "39b68f092f3b",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 15 Vuelta a España: 🇧🇪 Wout van Aert wins"
-    },
-    {
-      "id": "0df1168592e8",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Lloyds Tour of Britain Men Points: 🇮🇹 Filippo Ganna leads"
-    },
-    {
-      "id": "4ad37a74ae9d",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 GP Industria & Artigianato: 🇬🇧 Tom Pidcock wins"
-    },
-    {
-      "id": "3e039cd3e4ff",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "GP Industria & Artigianato GC: 🇬🇧 Tom Pidcock leads"
-    },
-    {
-      "id": "de6eaf12f38d",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "GP Industria & Artigianato Points: 🇬🇧 Tom Pidcock leads"
-    },
-    {
-      "id": "42c2f2541f62",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "GP Industria & Artigianato KOM: 🇬🇧 Tom Pidcock leads"
-    },
-    {
-      "id": "dc6366638a2d",
-      "timestamp": "2026-09-06T18:47:22.853862+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "GP Industria & Artigianato Youth: 🇬🇧 Tom Pidcock leads"
     }
   ]
 }

@@ -1,22 +1,8 @@
 {
-  "run_at": "2026-09-20 21:11 UTC",
-  "run_at_iso": "2026-09-20T19:12:27.689322+00:00",
+  "run_at": "2026-09-21 18:42 UTC",
+  "run_at_iso": "2026-09-21T16:43:48.726809+00:00",
   "mode": "results-only",
-  "races": [
-    {
-      "slug": "skoda-tour-de-luxembourg-2026",
-      "name": "Skoda Tour de Luxembourg",
-      "total_stages": 5,
-      "stages_completed_before": 4,
-      "stages_completed_after": 5,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    }
-  ],
+  "races": [],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

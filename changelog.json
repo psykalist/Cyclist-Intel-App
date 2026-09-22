@@ -1,6 +1,34 @@
 {
-  "generated_at": "2026-09-22T15:19:08.255613+00:00",
+  "generated_at": "2026-09-22T19:59:37.101605+00:00",
   "entries": [
+    {
+      "id": "ee25d7f3a66f",
+      "timestamp": "2026-09-22T19:59:37.095765+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "CRO Race GC: 🇨🇴 Sebastian Molano leads"
+    },
+    {
+      "id": "6072e03f355d",
+      "timestamp": "2026-09-22T19:59:37.095765+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "CRO Race Points: 🇨🇴 Sebastian Molano leads"
+    },
+    {
+      "id": "ebb801d2623b",
+      "timestamp": "2026-09-22T19:59:37.095765+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "CRO Race KOM: 🇪🇸 Jon Agirre Egaña leads"
+    },
+    {
+      "id": "4a0e379318f4",
+      "timestamp": "2026-09-22T19:59:37.095765+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "CRO Race Youth: 🇫🇷 Paul Magnier leads"
+    },
     {
       "id": "9f63950d4e24",
       "timestamp": "2026-09-22T15:19:08.249878+00:00",
@@ -231,13 +259,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 17 Vuelta a España: 🇬🇧 Matthew Brennan wins"
-    },
-    {
-      "id": "7a28a29cb47b",
-      "timestamp": "2026-09-08T19:42:49.668044+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 16 Vuelta a España: 🇬🇧 Matthew Brennan wins"
     }
   ]
 }

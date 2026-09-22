@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-22T15:18:38.792247+00:00",
-  "scraped_at_human": "22 Sep 2026 15:18 UTC",
+  "scraped_at": "2026-09-22T19:59:01.185842+00:00",
+  "scraped_at_human": "22 Sep 2026 19:59 UTC",
   "live": [
     {
       "slug": "cro-race",
@@ -928,7 +928,343 @@
       ],
       "last_stage_winner": "Sebastian Molano",
       "last_stage_winner_flag": "🇨🇴",
-      "last_stage_num": 1
+      "last_stage_num": 1,
+      "gc_leader": "🇨🇴 Sebastian Molano",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Sebastian Molano",
+          "rider_url": "/profile/sebastian-molano",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "03:57:56"
+        },
+        {
+          "rank": 2,
+          "name": "Sam Maisonobe",
+          "rider_url": "/profile/sam-maisonobe",
+          "team": "Cofidis",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 03"
+        },
+        {
+          "rank": 3,
+          "name": "Paul Magnier",
+          "rider_url": "/profile/paul-magnier",
+          "team": "Soudal - Quick Step",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 04"
+        },
+        {
+          "rank": 4,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "Lidl - Trek",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 5,
+          "name": "Žak Eržen",
+          "rider_url": "/profile/zak-erzen",
+          "team": "Bahrain Victorious",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 6,
+          "name": "Enrico Zanoncello",
+          "rider_url": "/profile/enrico-zanoncello",
+          "team": "Bardiani CSF 7 Saber",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 7,
+          "name": "Sergi Darder Gari",
+          "rider_url": "/profile/sergi-darder-gari",
+          "team": "Caja Rural - Seguros RGA",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 8,
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 9,
+          "name": "Matis Louvel",
+          "rider_url": "/profile/matis-louvel",
+          "team": "NSN Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 10"
+        },
+        {
+          "rank": 10,
+          "name": "Brody Mcdonald",
+          "rider_url": "/profile/brody-mcdonald",
+          "team": "Modern Adventure Pro Cycling",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 10"
+        }
+      ],
+      "points_leader": "🇨🇴 Sebastian Molano",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Sebastian Molano",
+          "rider_url": "/profile/sebastian-molano",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "CO",
+          "flag": "🇨🇴",
+          "time_gap": "25"
+        },
+        {
+          "rank": 2,
+          "name": "Paul Magnier",
+          "rider_url": "/profile/paul-magnier",
+          "team": "Soudal - Quick Step",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "20"
+        },
+        {
+          "rank": 3,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "Lidl - Trek",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "16"
+        },
+        {
+          "rank": 4,
+          "name": "Žak Eržen",
+          "rider_url": "/profile/zak-erzen",
+          "team": "Bahrain Victorious",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "14"
+        },
+        {
+          "rank": 5,
+          "name": "Gabriele Raccagni",
+          "rider_url": "/profile/gabriele-raccagni",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "13"
+        },
+        {
+          "rank": 6,
+          "name": "Enrico Zanoncello",
+          "rider_url": "/profile/enrico-zanoncello",
+          "team": "Bardiani CSF 7 Saber",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "12"
+        },
+        {
+          "rank": 7,
+          "name": "Sam Maisonobe",
+          "rider_url": "/profile/sam-maisonobe",
+          "team": "Cofidis",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "11"
+        },
+        {
+          "rank": 8,
+          "name": "Sergi Darder Gari",
+          "rider_url": "/profile/sergi-darder-gari",
+          "team": "Caja Rural - Seguros RGA",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "10"
+        },
+        {
+          "rank": 9,
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "9"
+        },
+        {
+          "rank": 10,
+          "name": "Matis Louvel",
+          "rider_url": "/profile/matis-louvel",
+          "team": "NSN Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "8"
+        }
+      ],
+      "kom_leader": "🇪🇸 Jon Agirre Egaña",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Jon Agirre Egaña",
+          "rider_url": "/profile/jon-agirre-egana",
+          "team": "Euskaltel - Euskadi",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "6"
+        },
+        {
+          "rank": 2,
+          "name": "Gabriele Raccagni",
+          "rider_url": "/profile/gabriele-raccagni",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "6"
+        },
+        {
+          "rank": 3,
+          "name": "Igor Sek",
+          "rider_url": "/profile/igor-sek",
+          "team": "Wibatech Lubelskie Perła Polski",
+          "nat_code": "PL",
+          "flag": "🇵🇱",
+          "time_gap": "4"
+        },
+        {
+          "rank": 4,
+          "name": "Mihael Stajnar",
+          "rider_url": "/profile/mihael-stajnar",
+          "team": "Pogi Team Gusto Ljubljana",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "4"
+        },
+        {
+          "rank": 5,
+          "name": "Sam Maisonobe",
+          "rider_url": "/profile/sam-maisonobe",
+          "team": "Cofidis",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "2"
+        },
+        {
+          "rank": 6,
+          "name": "Manuele Tarozzi",
+          "rider_url": "/profile/manuele-tarozzi",
+          "team": "Bardiani CSF 7 Saber",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "2"
+        }
+      ],
+      "youth_leader": "🇫🇷 Paul Magnier",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Paul Magnier",
+          "rider_url": "/profile/paul-magnier",
+          "team": "Soudal - Quick Step",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "03:58:00"
+        },
+        {
+          "rank": 2,
+          "name": "Žak Eržen",
+          "rider_url": "/profile/zak-erzen",
+          "team": "Bahrain Victorious",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 3,
+          "name": "Gabriele Bessega",
+          "rider_url": "/profile/gabriele-bessega",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 4,
+          "name": "Lorenzo De Longhi",
+          "rider_url": "/profile/lorenzo-de-longhi",
+          "team": "Cofidis",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 5,
+          "name": "Davide Donati",
+          "rider_url": "/profile/davide-donati",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 6,
+          "name": "Matteo Turconi",
+          "rider_url": "/profile/matteo-turconi",
+          "team": "Bardiani CSF 7 Saber",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 7,
+          "name": "Dario Igor Belletta",
+          "rider_url": "/profile/dario-igor-belletta",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 8,
+          "name": "Nicolas Gojkovic",
+          "rider_url": "/profile/nicolas-gojkovic",
+          "team": "Pogi Team Gusto Ljubljana",
+          "nat_code": "HR",
+          "flag": "🇭🇷",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 9,
+          "name": "Carl-Frederik Bévort",
+          "rider_url": "/profile/carl-frederik-bevort",
+          "team": "Uno-X Mobility",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "+ 06"
+        },
+        {
+          "rank": 10,
+          "name": "Bastian Petrič",
+          "rider_url": "/profile/bastian-petric",
+          "team": "Pogi Team Gusto Ljubljana",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 06"
+        }
+      ]
     }
   ],
   "upcoming": [

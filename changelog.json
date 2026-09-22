@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-09-21T20:43:40.441810+00:00",
+  "generated_at": "2026-09-22T15:19:08.255613+00:00",
   "entries": [
+    {
+      "id": "9f63950d4e24",
+      "timestamp": "2026-09-22T15:19:08.249878+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 CRO Race: 🇨🇴 Sebastian Molano wins"
+    },
     {
       "id": "f367f89bb759",
       "timestamp": "2026-09-21T16:44:18.553518+00:00",
@@ -231,41 +238,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 16 Vuelta a España: 🇬🇧 Matthew Brennan wins"
-    },
-    {
-      "id": "4e9e3c5b6508",
-      "timestamp": "2026-09-08T14:52:40.620416+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 16 Vuelta a España: 🇺🇸 Kevin Vermaerke wins"
-    },
-    {
-      "id": "786b5cf54e82",
-      "timestamp": "2026-09-08T14:52:40.620416+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Vuelta a España GC: 🇺🇸 Kevin Vermaerke leads"
-    },
-    {
-      "id": "b1a9e4f010e3",
-      "timestamp": "2026-09-08T14:52:40.620416+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Vuelta a España Points: 🇺🇸 Kevin Vermaerke leads"
-    },
-    {
-      "id": "cbffbda66863",
-      "timestamp": "2026-09-08T14:52:40.620416+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Vuelta a España KOM: 🇺🇸 Kevin Vermaerke leads"
-    },
-    {
-      "id": "54f5161c9f04",
-      "timestamp": "2026-09-08T14:52:40.620416+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Vuelta a España Youth: 🇺🇸 Kevin Vermaerke leads"
     }
   ]
 }

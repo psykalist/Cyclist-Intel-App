@@ -1,258 +1,127 @@
 {
-  "scraped_at": "2026-09-21T20:43:09.992269+00:00",
-  "scraped_at_human": "21 Sep 2026 20:43 UTC",
-  "live": [],
-  "upcoming": [
-    {
-      "slug": "il-lombardia",
-      "cf_slug": "il-lombardia-2026",
-      "name": "Il Lombardia",
-      "year": "2026",
-      "category": "1.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-10",
-      "end_date": "2026-10-10",
-      "total_stages": 1,
-      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
-      "startlist": [
-        {
-          "name": "Jarno Widar",
-          "slug": "jarno-widar",
-          "nat": "be",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Tiesj Benoot",
-          "slug": "tiesj-benoot",
-          "nat": "be",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Paul Seixas",
-          "slug": "paul-seixas",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Antonio Tiberi",
-          "slug": "antonio-tiberi",
-          "nat": "it",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Bauke Mollema",
-          "slug": "bauke-mollema",
-          "nat": "nl",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
-          "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "be",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Ben Tulett",
-          "slug": "ben-tulett",
-          "nat": "gb",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Davide Piganzoli",
-          "slug": "davide-piganzoli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Bruno Armirail",
-          "slug": "bruno-armirail",
-          "nat": "fr",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Louis Barré",
-          "slug": "louis-barre",
-          "nat": "fr",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Matteo Jorgenson",
-          "slug": "matteo-jorgenson",
-          "nat": "us",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Domen Novak",
-          "slug": "domen-novak",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Jan Christen",
-          "slug": "jan-christen",
-          "nat": "ch",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Mathys Rondel",
-          "slug": "mathys-rondel",
-          "nat": "fr",
-          "team": "Tudor Pro Cycling Team (PRT)"
-        }
-      ]
-    },
-    {
-      "slug": "tour-of-guangxi",
-      "cf_slug": "tour-of-guangxi-2026",
-      "name": "Tour of Guangxi",
-      "year": "2026",
-      "category": "2.UWT",
-      "status": "upcoming",
-      "start_date": "2026-10-13",
-      "end_date": "2026-10-18",
-      "total_stages": 6,
-      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": []
-        }
-      ],
-      "startlist": [
-        {
-          "name": "Baptiste Veistroffer",
-          "slug": "baptiste-veistroffer",
-          "nat": "fr",
-          "team": "Lotto Intermarché (WT)"
-        },
-        {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
-        },
-        {
-          "name": "Filippo Fiorelli",
-          "slug": "filippo-fiorelli",
-          "nat": "it",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Erlend Blikra",
-          "slug": "erlend-blikra",
-          "nat": "no",
-          "team": "Uno-X Mobility (WT)"
-        },
-        {
-          "name": "Tiesj Benoot",
-          "slug": "tiesj-benoot",
-          "nat": "be",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Milan Fretin",
-          "slug": "milan-fretin",
-          "nat": "be",
-          "team": "Cofidis (PRT)"
-        }
-      ]
-    },
+  "scraped_at": "2026-09-22T15:18:38.792247+00:00",
+  "scraped_at_human": "22 Sep 2026 15:18 UTC",
+  "live": [
     {
       "slug": "cro-race",
       "cf_slug": "cro-race-2026",
       "name": "CRO Race",
       "year": "2026",
       "category": "2.Pro",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-09-22",
       "end_date": "2026-09-27",
       "total_stages": 6,
       "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 0,
+      "stages_completed": 1,
       "stages": [
         {
           "num": 1,
           "label": "Stage 1",
           "result_url": "/race/cro-race-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Sebastian Molano",
+          "winner_flag": "🇨🇴",
+          "winner_nat": "CO",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Sebastian Molano",
+              "rider_url": "/profile/sebastian-molano",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 2,
+              "name": "Paul Magnier",
+              "rider_url": "/profile/paul-magnier",
+              "team": "Soudal - Quick Step",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 3,
+              "name": "Tim Torn Teutenberg",
+              "rider_url": "/profile/tim-torn-teutenberg",
+              "team": "Lidl - Trek",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 4,
+              "name": "Žak Eržen",
+              "rider_url": "/profile/zak-erzen",
+              "team": "Bahrain Victorious",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 5,
+              "name": "Enrico Zanoncello",
+              "rider_url": "/profile/enrico-zanoncello",
+              "team": "Bardiani CSF 7 Saber",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 6,
+              "name": "Sergi Darder Gari",
+              "rider_url": "/profile/sergi-darder-gari",
+              "team": "Caja Rural - Seguros RGA",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 7,
+              "name": "Antonio Tiberi",
+              "rider_url": "/profile/antonio-tiberi",
+              "team": "Bahrain Victorious",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 8,
+              "name": "Matis Louvel",
+              "rider_url": "/profile/matis-louvel",
+              "team": "NSN Cycling Team",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 9,
+              "name": "Brody Mcdonald",
+              "rider_url": "/profile/brody-mcdonald",
+              "team": "Modern Adventure Pro Cycling",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "03:58:06"
+            },
+            {
+              "rank": 10,
+              "name": "Gabriele Bessega",
+              "rider_url": "/profile/gabriele-bessega",
+              "team": "Team Polti VisitMalta",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:58:06"
+            }
+          ],
           "distance_km": 171.8,
           "elevation_m": 2338,
           "stage_type": "hilly",
           "start_town": "Split",
           "finish_town": "Seget",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176681/responsive-images/stage-1-height-profile___heightProfile_1200_249.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176681/responsive-images/stage-1-height-profile___heightProfile_1200_249.webp",
+          "non_finishers": [],
+          "date_str": "Tuesday 22 September"
         },
         {
           "num": 2,
@@ -267,7 +136,8 @@
           "stage_type": "hilly",
           "start_town": "Biograd na Moru",
           "finish_town": "Novalja",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176690/responsive-images/stage-2-height-profile___heightProfile_1200_274.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176690/responsive-images/stage-2-height-profile___heightProfile_1200_274.webp",
+          "date_str": "Wednesday 23 September"
         },
         {
           "num": 3,
@@ -282,7 +152,8 @@
           "stage_type": "mountain",
           "start_town": "Krk",
           "finish_town": "Labin",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176692/responsive-images/stage-3-height-profile___heightProfile_1200_244.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176692/responsive-images/stage-3-height-profile___heightProfile_1200_244.webp",
+          "date_str": "Thursday 24 September"
         },
         {
           "num": 4,
@@ -297,7 +168,8 @@
           "stage_type": "hilly",
           "start_town": "Pula",
           "finish_town": "Rijeka",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176695/responsive-images/stage-4-height-profile___heightProfile_1200_285.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176695/responsive-images/stage-4-height-profile___heightProfile_1200_285.webp",
+          "date_str": "Friday 25 September"
         },
         {
           "num": 5,
@@ -312,7 +184,8 @@
           "stage_type": "hilly",
           "start_town": "Karlovac",
           "finish_town": "Sveta Nedelja",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176697/responsive-images/stage-5-height-profile___heightProfile_1200_243.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176697/responsive-images/stage-5-height-profile___heightProfile_1200_243.webp",
+          "date_str": "Saturday 26 September"
         },
         {
           "num": 6,
@@ -327,7 +200,8 @@
           "stage_type": "flat",
           "start_town": "Samobor",
           "finish_town": "Zagreb",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176699/responsive-images/stage-6-height-profile___heightProfile_1200_268.webp"
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176699/responsive-images/stage-6-height-profile___heightProfile_1200_268.webp",
+          "date_str": "Sunday 27 September"
         }
       ],
       "startlist": [
@@ -1050,6 +924,234 @@
           "slug": "szymon-wisniewski",
           "nat": "pl",
           "team": "Wibatech Lubelskie Perła Polski (CT)"
+        }
+      ],
+      "last_stage_winner": "Sebastian Molano",
+      "last_stage_winner_flag": "🇨🇴",
+      "last_stage_num": 1
+    }
+  ],
+  "upcoming": [
+    {
+      "slug": "il-lombardia",
+      "cf_slug": "il-lombardia-2026",
+      "name": "Il Lombardia",
+      "year": "2026",
+      "category": "1.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-10",
+      "total_stages": 1,
+      "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
+      "startlist": [
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Paul Seixas",
+          "slug": "paul-seixas",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Antonio Tiberi",
+          "slug": "antonio-tiberi",
+          "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Davide Piganzoli",
+          "slug": "davide-piganzoli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Bruno Armirail",
+          "slug": "bruno-armirail",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Louis Barré",
+          "slug": "louis-barre",
+          "nat": "fr",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Matteo Jorgenson",
+          "slug": "matteo-jorgenson",
+          "nat": "us",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Domen Novak",
+          "slug": "domen-novak",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Tadej Pogačar",
+          "slug": "tadej-pogacar",
+          "nat": "si",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Jan Christen",
+          "slug": "jan-christen",
+          "nat": "ch",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Mathys Rondel",
+          "slug": "mathys-rondel",
+          "nat": "fr",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        }
+      ]
+    },
+    {
+      "slug": "tour-of-guangxi",
+      "cf_slug": "tour-of-guangxi-2026",
+      "name": "Tour of Guangxi",
+      "year": "2026",
+      "category": "2.UWT",
+      "status": "upcoming",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-18",
+      "total_stages": 6,
+      "official_url": "https://cyclingflash.com/race/tour-of-guangxi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/tour-of-guangxi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": []
+        }
+      ],
+      "startlist": [
+        {
+          "name": "Baptiste Veistroffer",
+          "slug": "baptiste-veistroffer",
+          "nat": "fr",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Filippo Fiorelli",
+          "slug": "filippo-fiorelli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Erlend Blikra",
+          "slug": "erlend-blikra",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Milan Fretin",
+          "slug": "milan-fretin",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
         }
       ]
     },
@@ -138984,6 +139086,204 @@
         }
       ],
       "wins_refreshed_at": "2026-09-17T19:57:31.886092+00:00"
+    },
+    "sebastian-molano": {
+      "slug": "sebastian-molano",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "22-09-2026",
+          "race": "CRO Race - Stage 1",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
+          "date": "07-02-2026",
+          "race": "Tour of Oman - Stage 1",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "18-05-2025",
+          "race": "Tour de Hongrie - Stage 5",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "26-03-2025",
+          "race": "Classic Brugge-De Panne",
+          "cat": "1.UWT"
+        },
+        {
+          "year": "2024",
+          "date": "02-10-2024",
+          "race": "Cro Race - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2023",
+          "date": "16-10-2023",
+          "race": "Gree-Tour of Guangxi - Stage 5",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2023",
+          "date": "07-09-2023",
+          "race": "Vuelta a España - Stage 12",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2023",
+          "date": "15-08-2023",
+          "race": "Vuelta a Burgos - Stage 1",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2023",
+          "date": "16-03-2023",
+          "race": "Grand Prix de Denain - Porte du Hainaut",
+          "cat": "1.Pro"
+        },
+        {
+          "year": "2023",
+          "date": "23-02-2023",
+          "race": "UAE Tour - Stage 4",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2022",
+          "date": "11-09-2022",
+          "race": "Vuelta a España - Stage 21",
+          "cat": "2.UWT"
+        },
+        {
+          "year": "2022",
+          "date": "29-05-2022",
+          "race": "Boucles de la Mayenne - Stage 4",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2021",
+          "date": "29-09-2021",
+          "race": "Giro di Sicilia - Tour of Sicily - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2021",
+          "date": "28-09-2021",
+          "race": "Giro di Sicilia - Tour of Sicily - Stage 1",
+          "cat": "2.1"
+        },
+        {
+          "year": "2021",
+          "date": "06-08-2021",
+          "race": "Vuelta a Burgos - Stage 4",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2021",
+          "date": "04-08-2021",
+          "race": "Vuelta a Burgos - Stage 2",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2020",
+          "date": "15-02-2020",
+          "race": "Vuelta a Colombia - Stage 5",
+          "cat": "2.1"
+        },
+        {
+          "year": "2020",
+          "date": "13-02-2020",
+          "race": "Vuelta a Colombia - Stage 3",
+          "cat": "2.1"
+        },
+        {
+          "year": "2020",
+          "date": "12-02-2020",
+          "race": "Vuelta a Colombia - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2019",
+          "date": "14-02-2019",
+          "race": "Tour Colombia 2.1 - Stage 3",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "09-10-2018",
+          "race": "Tour of Taihu Lake - Stage 3",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "08-10-2018",
+          "race": "Tour of Taihu Lake - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "18-09-2018",
+          "race": "Tour of China II - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "15-09-2018",
+          "race": "Tour of China I",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "09-09-2018",
+          "race": "Tour of China I - Stage 2",
+          "cat": "2.1"
+        },
+        {
+          "year": "2018",
+          "date": "05-09-2018",
+          "race": "Tour of Xingtai - Stage 3",
+          "cat": "2.2"
+        },
+        {
+          "year": "2018",
+          "date": "04-09-2018",
+          "race": "Tour of Xingtai - Stage 2",
+          "cat": "2.2"
+        },
+        {
+          "year": "2018",
+          "date": "06-05-2018",
+          "race": "Campeonato Panamericano de Ruta",
+          "cat": "CC"
+        },
+        {
+          "year": "2017",
+          "date": "26-02-2017",
+          "race": "Volta ao Alentejo - Stage 5",
+          "cat": "2.1"
+        },
+        {
+          "year": "2017",
+          "date": "24-02-2017",
+          "race": "Volta ao Alentejo - Stage 3",
+          "cat": "2.1"
+        },
+        {
+          "year": "2016",
+          "date": "16-06-2016",
+          "race": "Vuelta a Colombia - Stage 4",
+          "cat": "2.2"
+        },
+        {
+          "year": "2016",
+          "date": "08-05-2016",
+          "race": "Vuelta Ciclista Comunidad de Madrid - Stage 2",
+          "cat": "2.1"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-22T15:18:38.792029+00:00"
     }
   },
   "startlists_needed": [
@@ -138991,37 +139291,37 @@
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 6
+      "days_away": 5
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 14
+      "days_away": 13
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 20
+      "days_away": 19
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 27
+      "days_away": 26
     }
   ]
 }

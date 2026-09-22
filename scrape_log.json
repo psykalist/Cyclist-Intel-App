@@ -1,8 +1,33 @@
 {
-  "run_at": "2026-09-21 22:42 UTC",
-  "run_at_iso": "2026-09-21T20:43:09.991483+00:00",
+  "run_at": "2026-09-22 17:17 UTC",
+  "run_at_iso": "2026-09-22T15:18:37.193891+00:00",
   "mode": "results-only",
-  "races": [],
+  "races": [
+    {
+      "slug": "cro-race-2026",
+      "name": "CRO Race",
+      "total_stages": 6,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": {
+        "stage_num": 2,
+        "url": "https://cyclingflash.com/race/cro-race-2026/result/stage-2",
+        "fetch_ok": true,
+        "response_bytes": 279559,
+        "matched_result_table": false,
+        "overdue": false,
+        "stall_since": "2026-09-22 17:17 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
+        "possible_parser_drift": false
+      },
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    }
+  ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

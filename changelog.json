@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-22T19:59:37.101605+00:00",
+  "generated_at": "2026-09-23T19:56:29.126605+00:00",
   "entries": [
+    {
+      "id": "82d3fb14b9a5",
+      "timestamp": "2026-09-23T19:56:29.120839+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 2 CRO Race: 🇩🇰 Carl-Frederik Bévort wins"
+    },
+    {
+      "id": "ea6acccf5c0d",
+      "timestamp": "2026-09-23T19:56:29.120839+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "CRO Race KOM: 🇮🇹 Gabriele Raccagni leads"
+    },
+    {
+      "id": "ff6a5c6cbb5a",
+      "timestamp": "2026-09-23T19:56:29.120839+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "CRO Race Youth: 🇭🇷 Nicolas Gojkovic leads"
+    },
     {
       "id": "ee25d7f3a66f",
       "timestamp": "2026-09-22T19:59:37.095765+00:00",
@@ -252,13 +273,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 18 Vuelta a España: 🇨🇭 Stefan Küng wins"
-    },
-    {
-      "id": "4043edd5d3a1",
-      "timestamp": "2026-09-09T19:36:22.012360+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 17 Vuelta a España: 🇬🇧 Matthew Brennan wins"
     }
   ]
 }

@@ -1,24 +1,23 @@
 {
-  "updated_at": "2026-09-23T15:38:41.008642+00:00",
+  "updated_at": "2026-09-23T19:57:18.745531+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 20h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: INCOMPLETE kom_top10 on cro-race-2026 -- pulled 6 of 10 expected rows."
+    "scrape_log.json: INCOMPLETE kom_top10 on cro-race-2026 -- pulled 9 of 10 expected rows."
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 4143,
+    "data_size_kb": 4148,
     "data_upcoming": 12,
     "data_recent": 84,
     "data_teams": 33,
     "rider_profiles": 2713,
     "live_races": 1,
-    "scraped_at": "2026-09-22T19:59:01.185842+00:00",
-    "data_age_hours": 19.7,
+    "scraped_at": "2026-09-23T19:55:59.962884+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-22 21:57 UTC",
+    "scrape_log_run_at": "2026-09-23 21:54 UTC",
     "rider_roster": 1372,
     "rider_missing_profile": 100,
     "rider_missing_palmares": 942

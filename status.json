@@ -1,11 +1,9 @@
 {
-  "updated_at": "2026-09-24T15:58:43.087035+00:00",
+  "updated_at": "2026-09-24T20:20:00.372330+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "scrape_log.json: INCOMPLETE kom_top10 on cro-race-2026 -- pulled 9 of 10 expected rows."
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 4152,
@@ -14,10 +12,10 @@
     "data_teams": 33,
     "rider_profiles": 2713,
     "live_races": 1,
-    "scraped_at": "2026-09-24T15:38:19.437764+00:00",
-    "data_age_hours": 0.3,
+    "scraped_at": "2026-09-24T20:14:04.186901+00:00",
+    "data_age_hours": 0.1,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-09-24 17:36 UTC",
+    "scrape_log_run_at": "2026-09-24 22:12 UTC",
     "rider_roster": 1372,
     "rider_missing_profile": 100,
     "rider_missing_palmares": 942

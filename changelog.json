@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-23T19:56:29.126605+00:00",
+  "generated_at": "2026-09-24T15:38:47.925363+00:00",
   "entries": [
+    {
+      "id": "b407c0a106ce",
+      "timestamp": "2026-09-24T15:38:47.920017+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 CRO Race: 🇩🇰 Tobias Svarre wins"
+    },
+    {
+      "id": "70c6ffeec3bd",
+      "timestamp": "2026-09-24T15:38:47.920017+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "CRO Race GC: 🇩🇰 Tobias Svarre leads"
+    },
     {
       "id": "82d3fb14b9a5",
       "timestamp": "2026-09-23T19:56:29.120839+00:00",

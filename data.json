@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-23T19:55:59.962884+00:00",
-  "scraped_at_human": "23 Sep 2026 19:55 UTC",
+  "scraped_at": "2026-09-24T15:38:19.437764+00:00",
+  "scraped_at_human": "24 Sep 2026 15:38 UTC",
   "live": [
     {
       "slug": "cro-race",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-27",
       "total_stages": 6,
       "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 2,
+      "stages_completed": 3,
       "stages": [
         {
           "num": 1,
@@ -235,17 +235,109 @@
           "num": 3,
           "label": "Stage 3",
           "result_url": "/race/cro-race-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Tobias Svarre",
+          "winner_flag": "🇩🇰",
+          "winner_nat": "DK",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Tobias Svarre",
+              "rider_url": "/profile/tobias-svarre",
+              "team": "Uno-X Mobility",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "04:10:54"
+            },
+            {
+              "rank": 2,
+              "name": "Antonio Tiberi",
+              "rider_url": "/profile/antonio-tiberi",
+              "team": "Bahrain Victorious",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "04:10:54"
+            },
+            {
+              "rank": 3,
+              "name": "Tim Wellens",
+              "rider_url": "/profile/tim-wellens",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 06"
+            },
+            {
+              "rank": 4,
+              "name": "Adrien Boichis",
+              "rider_url": "/profile/adrien-boichis",
+              "team": "Red Bull - BORA - hansgrohe",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 29"
+            },
+            {
+              "rank": 5,
+              "name": "Sam Maisonobe",
+              "rider_url": "/profile/sam-maisonobe",
+              "team": "Cofidis",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 31"
+            },
+            {
+              "rank": 6,
+              "name": "Emil Herzog",
+              "rider_url": "/profile/emil-herzog",
+              "team": "Red Bull - BORA - hansgrohe",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "+ 32"
+            },
+            {
+              "rank": 7,
+              "name": "Johannes Kulset",
+              "rider_url": "/profile/johannes-kulset",
+              "team": "Uno-X Mobility",
+              "nat_code": "NO",
+              "flag": "🇳🇴",
+              "time_gap": "+ 00"
+            },
+            {
+              "rank": 8,
+              "name": "Dylan Teuns",
+              "rider_url": "/profile/dylan-teuns",
+              "team": "Cofidis",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 00"
+            },
+            {
+              "rank": 9,
+              "name": "Steff Cras",
+              "rider_url": "/profile/steff-cras",
+              "team": "Soudal - Quick Step",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 37"
+            },
+            {
+              "rank": 10,
+              "name": "Edoardo Zambanini",
+              "rider_url": "/profile/edoardo-zambanini",
+              "team": "Bahrain Victorious",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 56"
+            }
+          ],
           "distance_km": 174.5,
           "elevation_m": 3300,
           "stage_type": "mountain",
           "start_town": "Krk",
           "finish_town": "Labin",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176692/responsive-images/stage-3-height-profile___heightProfile_1200_244.webp",
-          "date_str": "Thursday 24 September"
+          "date_str": "Thursday 24 September",
+          "non_finishers": []
         },
         {
           "num": 4,
@@ -1018,100 +1110,100 @@
           "team": "Wibatech Lubelskie Perła Polski (CT)"
         }
       ],
-      "last_stage_winner": "Carl-Frederik Bévort",
+      "last_stage_winner": "Tobias Svarre",
       "last_stage_winner_flag": "🇩🇰",
-      "last_stage_num": 2,
-      "gc_leader": "🇨🇴 Sebastian Molano",
+      "last_stage_num": 3,
+      "gc_leader": "🇩🇰 Tobias Svarre",
       "gc_top10": [
         {
           "rank": 1,
-          "name": "Sebastian Molano",
-          "rider_url": "/profile/sebastian-molano",
-          "team": "UAE Team Emirates XRG",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "06:40:00"
-        },
-        {
-          "rank": 2,
-          "name": "Carl-Frederik Bévort",
-          "rider_url": "/profile/carl-frederik-bevort",
+          "name": "Tobias Svarre",
+          "rider_url": "/profile/tobias-svarre",
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
+          "time_gap": "10:50:58"
+        },
+        {
+          "rank": 2,
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
           "time_gap": "+ 04"
         },
         {
           "rank": 3,
-          "name": "Sam Maisonobe",
-          "rider_url": "/profile/sam-maisonobe",
-          "team": "Cofidis",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 07"
-        },
-        {
-          "rank": 4,
-          "name": "Nicolas Gojkovic",
-          "rider_url": "/profile/nicolas-gojkovic",
-          "team": "Pogi Team Gusto Ljubljana",
-          "nat_code": "HR",
-          "flag": "🇭🇷",
-          "time_gap": "+ 08"
-        },
-        {
-          "rank": 5,
-          "name": "Paul Magnier",
-          "rider_url": "/profile/paul-magnier",
-          "team": "Soudal - Quick Step",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "+ 08"
-        },
-        {
-          "rank": 6,
-          "name": "Tim Torn Teutenberg",
-          "rider_url": "/profile/tim-torn-teutenberg",
-          "team": "Lidl - Trek",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 10"
-        },
-        {
-          "rank": 7,
           "name": "Tim Wellens",
           "rider_url": "/profile/tim-wellens",
           "team": "UAE Team Emirates XRG",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 10"
+          "time_gap": "+ 08"
+        },
+        {
+          "rank": 4,
+          "name": "Sam Maisonobe",
+          "rider_url": "/profile/sam-maisonobe",
+          "team": "Cofidis",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 34"
+        },
+        {
+          "rank": 5,
+          "name": "Adrien Boichis",
+          "rider_url": "/profile/adrien-boichis",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 39"
+        },
+        {
+          "rank": 6,
+          "name": "Dylan Teuns",
+          "rider_url": "/profile/dylan-teuns",
+          "team": "Cofidis",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 42"
+        },
+        {
+          "rank": 7,
+          "name": "Johannes Kulset",
+          "rider_url": "/profile/johannes-kulset",
+          "team": "Uno-X Mobility",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 42"
         },
         {
           "rank": 8,
-          "name": "Gorka Sorarrain Agirrezabala",
-          "rider_url": "/profile/gorka-sorarrain-agirrezabala",
-          "team": "Caja Rural - Seguros RGA",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "+ 12"
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 42"
         },
         {
           "rank": 9,
-          "name": "Txomin Juaristi Arrieta",
-          "rider_url": "/profile/txomin-juaristi-arrieta",
-          "team": "Euskaltel - Euskadi",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "+ 13"
+          "name": "Steff Cras",
+          "rider_url": "/profile/steff-cras",
+          "team": "Soudal - Quick Step",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 47"
         },
         {
           "rank": 10,
-          "name": "Nils Politt",
-          "rider_url": "/profile/nils-politt",
-          "team": "UAE Team Emirates XRG",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 13"
+          "name": "Edoardo Zambanini",
+          "rider_url": "/profile/edoardo-zambanini",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:06"
         }
       ],
       "points_leader": "🇨🇴 Sebastian Molano",
@@ -139799,6 +139891,30 @@
         }
       ],
       "wins_refreshed_at": "2026-09-23T19:55:59.962807+00:00"
+    },
+    "tobias-svarre": {
+      "slug": "tobias-svarre",
+      "wins": [
+        {
+          "year": "2026",
+          "date": "24-09-2026",
+          "race": "CRO Race - Stage 3",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2025",
+          "date": "16-05-2025",
+          "race": "Orlen Nations Grand Prix - Stage 3",
+          "cat": "2.NCUP"
+        },
+        {
+          "year": "2022",
+          "date": "28-08-2022",
+          "race": "Trofeo Emilio Paganessi",
+          "cat": "1.1"
+        }
+      ],
+      "wins_refreshed_at": "2026-09-24T15:38:19.437680+00:00"
     }
   },
   "startlists_needed": [
@@ -139806,37 +139922,37 @@
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 18
+      "days_away": 17
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 25
+      "days_away": 24
     }
   ]
 }

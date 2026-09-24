@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-09-24T15:38:47.925363+00:00",
+  "generated_at": "2026-09-24T20:14:33.028202+00:00",
   "entries": [
+    {
+      "id": "da3eddf8ea71",
+      "timestamp": "2026-09-24T20:14:33.022160+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "CRO Race Points: 🇩🇰 Carl-Frederik Bévort leads"
+    },
+    {
+      "id": "a838eb44bc35",
+      "timestamp": "2026-09-24T20:14:33.022160+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "CRO Race KOM: 🇮🇹 Antonio Tiberi leads"
+    },
+    {
+      "id": "090fe2b154a4",
+      "timestamp": "2026-09-24T20:14:33.022160+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "CRO Race Youth: 🇩🇰 Tobias Svarre leads"
+    },
     {
       "id": "b407c0a106ce",
       "timestamp": "2026-09-24T15:38:47.920017+00:00",
@@ -280,13 +301,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 19 Vuelta a España: 🇮🇪 Eddie Dunbar wins"
-    },
-    {
-      "id": "e1ae50e8edcf",
-      "timestamp": "2026-09-10T19:23:47.062763+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 18 Vuelta a España: 🇨🇭 Stefan Küng wins"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-24T15:38:19.437764+00:00",
-  "scraped_at_human": "24 Sep 2026 15:38 UTC",
+  "scraped_at": "2026-09-24T20:14:04.186901+00:00",
+  "scraped_at_human": "24 Sep 2026 20:14 UTC",
   "live": [
     {
       "slug": "cro-race",
@@ -1167,7 +1167,7 @@
           "team": "Cofidis",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 42"
+          "time_gap": "+ 41"
         },
         {
           "rank": 7,
@@ -1176,7 +1176,7 @@
           "team": "Uno-X Mobility",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 42"
+          "time_gap": "+ 41"
         },
         {
           "rank": 8,
@@ -1185,7 +1185,7 @@
           "team": "Red Bull - BORA - hansgrohe",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "+ 42"
+          "time_gap": "+ 41"
         },
         {
           "rank": 9,
@@ -1206,28 +1206,64 @@
           "time_gap": "+ 01:06"
         }
       ],
-      "points_leader": "🇨🇴 Sebastian Molano",
+      "points_leader": "🇩🇰 Carl-Frederik Bévort",
       "points_top10": [
         {
           "rank": 1,
-          "name": "Sebastian Molano",
-          "rider_url": "/profile/sebastian-molano",
-          "team": "UAE Team Emirates XRG",
-          "nat_code": "CO",
-          "flag": "🇨🇴",
-          "time_gap": "41"
+          "name": "Carl-Frederik Bévort",
+          "rider_url": "/profile/carl-frederik-bevort",
+          "team": "Uno-X Mobility",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "34"
         },
         {
           "rank": 2,
-          "name": "Carl-Frederik Bévort",
-          "rider_url": "/profile/carl-frederik-bevort",
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "31"
+        },
+        {
+          "rank": 3,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "Lidl - Trek",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "27"
+        },
+        {
+          "rank": 4,
+          "name": "Tobias Svarre",
+          "rider_url": "/profile/tobias-svarre",
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "25"
         },
         {
-          "rank": 3,
+          "rank": 5,
+          "name": "Sam Maisonobe",
+          "rider_url": "/profile/sam-maisonobe",
+          "team": "Cofidis",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "23"
+        },
+        {
+          "rank": 6,
+          "name": "Tim Wellens",
+          "rider_url": "/profile/tim-wellens",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "22"
+        },
+        {
+          "rank": 7,
           "name": "Nicolas Gojkovic",
           "rider_url": "/profile/nicolas-gojkovic",
           "team": "Pogi Team Gusto Ljubljana",
@@ -1236,7 +1272,7 @@
           "time_gap": "20"
         },
         {
-          "rank": 4,
+          "rank": 8,
           "name": "Lorenzo De Longhi",
           "rider_url": "/profile/lorenzo-de-longhi",
           "team": "Cofidis",
@@ -1245,7 +1281,7 @@
           "time_gap": "19"
         },
         {
-          "rank": 5,
+          "rank": 9,
           "name": "Matis Louvel",
           "rider_url": "/profile/matis-louvel",
           "team": "NSN Cycling Team",
@@ -1254,55 +1290,28 @@
           "time_gap": "18"
         },
         {
-          "rank": 6,
+          "rank": 10,
           "name": "Žak Eržen",
           "rider_url": "/profile/zak-erzen",
           "team": "Bahrain Victorious",
           "nat_code": "SI",
           "flag": "🇸🇮",
           "time_gap": "18"
-        },
-        {
-          "rank": 7,
-          "name": "Tim Torn Teutenberg",
-          "rider_url": "/profile/tim-torn-teutenberg",
-          "team": "Lidl - Trek",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "16"
-        },
-        {
-          "rank": 8,
-          "name": "Davide Donati",
-          "rider_url": "/profile/davide-donati",
-          "team": "Red Bull - BORA - hansgrohe",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "16"
-        },
-        {
-          "rank": 9,
-          "name": "Brody Mcdonald",
-          "rider_url": "/profile/brody-mcdonald",
-          "team": "Modern Adventure Pro Cycling",
-          "nat_code": "US",
-          "flag": "🇺🇸",
-          "time_gap": "15"
-        },
-        {
-          "rank": 10,
-          "name": "Paul Magnier",
-          "rider_url": "/profile/paul-magnier",
-          "team": "Soudal - Quick Step",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "14"
         }
       ],
-      "kom_leader": "🇮🇹 Gabriele Raccagni",
+      "kom_leader": "🇮🇹 Antonio Tiberi",
       "kom_top10": [
         {
           "rank": 1,
+          "name": "Antonio Tiberi",
+          "rider_url": "/profile/antonio-tiberi",
+          "team": "Bahrain Victorious",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "14"
+        },
+        {
+          "rank": 2,
           "name": "Gabriele Raccagni",
           "rider_url": "/profile/gabriele-raccagni",
           "team": "Team Polti VisitMalta",
@@ -1311,7 +1320,25 @@
           "time_gap": "13"
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "name": "Tobias Svarre",
+          "rider_url": "/profile/tobias-svarre",
+          "team": "Uno-X Mobility",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "11"
+        },
+        {
+          "rank": 4,
+          "name": "Tim Torn Teutenberg",
+          "rider_url": "/profile/tim-torn-teutenberg",
+          "team": "Lidl - Trek",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "9"
+        },
+        {
+          "rank": 5,
           "name": "Jon Agirre Egaña",
           "rider_url": "/profile/jon-agirre-egana",
           "team": "Euskaltel - Euskadi",
@@ -1320,40 +1347,13 @@
           "time_gap": "8"
         },
         {
-          "rank": 3,
-          "name": "Marco Martin Cuevas",
-          "rider_url": "/profile/marco-martin-cuevas",
-          "team": "Euskaltel - Euskadi",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "4"
-        },
-        {
-          "rank": 4,
-          "name": "Igor Sek",
-          "rider_url": "/profile/igor-sek",
-          "team": "Wibatech Lubelskie Perła Polski",
-          "nat_code": "PL",
-          "flag": "🇵🇱",
-          "time_gap": "4"
-        },
-        {
-          "rank": 5,
-          "name": "Mihael Stajnar",
-          "rider_url": "/profile/mihael-stajnar",
-          "team": "Pogi Team Gusto Ljubljana",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "4"
-        },
-        {
           "rank": 6,
-          "name": "Szymon Wisniewski",
-          "rider_url": "/profile/szymon-wisniewski",
-          "team": "Wibatech Lubelskie Perła Polski",
-          "nat_code": "PL",
-          "flag": "🇵🇱",
-          "time_gap": "3"
+          "name": "Tim Wellens",
+          "rider_url": "/profile/tim-wellens",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "7"
         },
         {
           "rank": 7,
@@ -1362,109 +1362,25 @@
           "team": "Cofidis",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "2"
+          "time_gap": "6"
         },
         {
           "rank": 8,
-          "name": "Manuele Tarozzi",
-          "rider_url": "/profile/manuele-tarozzi",
-          "team": "Bardiani CSF 7 Saber",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "2"
+          "name": "Carl-Frederik Bévort",
+          "rider_url": "/profile/carl-frederik-bevort",
+          "team": "Uno-X Mobility",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "6"
         },
         {
           "rank": 9,
-          "name": "Jakob Slibar",
-          "rider_url": "/profile/jakob-slibar",
-          "team": "Pogi Team Gusto Ljubljana",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "2"
-        }
-      ],
-      "youth_leader": "🇭🇷 Nicolas Gojkovic",
-      "youth_top10": [
-        {
-          "rank": 1,
-          "name": "Nicolas Gojkovic",
-          "rider_url": "/profile/nicolas-gojkovic",
-          "team": "Pogi Team Gusto Ljubljana",
-          "nat_code": "HR",
-          "flag": "🇭🇷",
-          "time_gap": "06:40:08"
-        },
-        {
-          "rank": 2,
-          "name": "Paul Magnier",
-          "rider_url": "/profile/paul-magnier",
-          "team": "Soudal - Quick Step",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
-          "time_gap": "06:40:08"
-        },
-        {
-          "rank": 3,
-          "name": "Lorenzo De Longhi",
-          "rider_url": "/profile/lorenzo-de-longhi",
-          "team": "Cofidis",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 4,
-          "name": "Žak Eržen",
-          "rider_url": "/profile/zak-erzen",
-          "team": "Bahrain Victorious",
-          "nat_code": "SI",
-          "flag": "🇸🇮",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 5,
-          "name": "Davide Donati",
-          "rider_url": "/profile/davide-donati",
-          "team": "Red Bull - BORA - hansgrohe",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 6,
-          "name": "Gabriele Bessega",
-          "rider_url": "/profile/gabriele-bessega",
-          "team": "Team Polti VisitMalta",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 7,
-          "name": "Dario Igor Belletta",
-          "rider_url": "/profile/dario-igor-belletta",
-          "team": "Team Polti VisitMalta",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 8,
-          "name": "Matteo Turconi",
-          "rider_url": "/profile/matteo-turconi",
-          "team": "Bardiani CSF 7 Saber",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
-        },
-        {
-          "rank": 9,
-          "name": "Lorenzo Conforti",
-          "rider_url": "/profile/lorenzo-conforti",
-          "team": "Bardiani CSF 7 Saber",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 06"
+          "name": "Igor Sek",
+          "rider_url": "/profile/igor-sek",
+          "team": "Wibatech Lubelskie Perła Polski",
+          "nat_code": "PL",
+          "flag": "🇵🇱",
+          "time_gap": "4"
         },
         {
           "rank": 10,
@@ -1473,7 +1389,100 @@
           "team": "Euskaltel - Euskadi",
           "nat_code": "ES",
           "flag": "🇪🇸",
-          "time_gap": "+ 06"
+          "time_gap": "4"
+        }
+      ],
+      "youth_leader": "🇩🇰 Tobias Svarre",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Tobias Svarre",
+          "rider_url": "/profile/tobias-svarre",
+          "team": "Uno-X Mobility",
+          "nat_code": "DK",
+          "flag": "🇩🇰",
+          "time_gap": "10:50:58"
+        },
+        {
+          "rank": 2,
+          "name": "Johannes Kulset",
+          "rider_url": "/profile/johannes-kulset",
+          "team": "Uno-X Mobility",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 41"
+        },
+        {
+          "rank": 3,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
+          "time_gap": "+ 41"
+        },
+        {
+          "rank": 4,
+          "name": "Dario Giuliano",
+          "rider_url": "/profile/dario-giuliano",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:23"
+        },
+        {
+          "rank": 5,
+          "name": "Lorenzo Nespoli",
+          "rider_url": "/profile/lorenzo-nespoli",
+          "team": "MBH Bank CSB Telecom Fort",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:28"
+        },
+        {
+          "rank": 6,
+          "name": "Dario Igor Belletta",
+          "rider_url": "/profile/dario-igor-belletta",
+          "team": "Team Polti VisitMalta",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 03:06"
+        },
+        {
+          "rank": 7,
+          "name": "Roei Edinger",
+          "rider_url": "/profile/roei-edinger",
+          "team": "NSN Cycling Team",
+          "nat_code": "IL",
+          "flag": "🇮🇱",
+          "time_gap": "+ 06:46"
+        },
+        {
+          "rank": 8,
+          "name": "Jon Pritržnik",
+          "rider_url": "/profile/jon-pritrznik",
+          "team": "Pogi Team Gusto Ljubljana",
+          "nat_code": "SI",
+          "flag": "🇸🇮",
+          "time_gap": "+ 07:47"
+        },
+        {
+          "rank": 9,
+          "name": "Andrea Bessega",
+          "rider_url": "/profile/andrea-bessega",
+          "team": "Lidl - Trek",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 07:47"
+        },
+        {
+          "rank": 10,
+          "name": "Storm Ingebrigtsen",
+          "rider_url": "/profile/storm-ingebrigtsen",
+          "team": "Uno-X Mobility",
+          "nat_code": "NO",
+          "flag": "🇳🇴",
+          "time_gap": "+ 09:11"
         }
       ]
     }

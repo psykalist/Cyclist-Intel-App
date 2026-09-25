@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-24T20:14:04.186901+00:00",
-  "scraped_at_human": "24 Sep 2026 20:14 UTC",
+  "scraped_at": "2026-09-25T15:42:34.453959+00:00",
+  "scraped_at_human": "25 Sep 2026 15:42 UTC",
   "live": [
     {
       "slug": "cro-race",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-27",
       "total_stages": 6,
       "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 3,
+      "stages_completed": 4,
       "stages": [
         {
           "num": 1,
@@ -343,17 +343,109 @@
           "num": 4,
           "label": "Stage 4",
           "result_url": "/race/cro-race-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Daniel Felipe Martinez",
+          "winner_flag": "🇨🇴",
+          "winner_nat": "CO",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Daniel Felipe Martinez",
+              "rider_url": "/profile/daniel-felipe-martinez",
+              "team": "Red Bull - BORA - hansgrohe",
+              "nat_code": "CO",
+              "flag": "🇨🇴",
+              "time_gap": "03:43:19"
+            },
+            {
+              "rank": 2,
+              "name": "Louis Vervaeke",
+              "rider_url": "/profile/louis-vervaeke",
+              "team": "Soudal - Quick Step",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:43:19"
+            },
+            {
+              "rank": 3,
+              "name": "Domen Novak",
+              "rider_url": "/profile/domen-novak",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "03:43:19"
+            },
+            {
+              "rank": 4,
+              "name": "Aimé De Gendt",
+              "rider_url": "/profile/aime-de-gendt",
+              "team": "Pinarello - Q36.5 Pro Cycling Team",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "03:43:19"
+            },
+            {
+              "rank": 5,
+              "name": "Sam Maisonobe",
+              "rider_url": "/profile/sam-maisonobe",
+              "team": "Cofidis",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:43:19"
+            },
+            {
+              "rank": 6,
+              "name": "Ilan Van Wilder",
+              "rider_url": "/profile/ilan-van-wilder",
+              "team": "Soudal - Quick Step",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 15"
+            },
+            {
+              "rank": 7,
+              "name": "Edoardo Zambanini",
+              "rider_url": "/profile/edoardo-zambanini",
+              "team": "Bahrain Victorious",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 15"
+            },
+            {
+              "rank": 8,
+              "name": "Thomas Pesenti",
+              "rider_url": "/profile/thomas-pesenti",
+              "team": "Team Polti VisitMalta",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 15"
+            },
+            {
+              "rank": 9,
+              "name": "Dario Giuliano",
+              "rider_url": "/profile/dario-giuliano",
+              "team": "Team Polti VisitMalta",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 15"
+            },
+            {
+              "rank": 10,
+              "name": "Joseph Pidcock",
+              "rider_url": "/profile/joseph-pidcock",
+              "team": "Pinarello - Q36.5 Pro Cycling Team",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 15"
+            }
+          ],
           "distance_km": 160.0,
           "elevation_m": 2470,
           "stage_type": "hilly",
           "start_town": "Pula",
           "finish_town": "Rijeka",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176695/responsive-images/stage-4-height-profile___heightProfile_1200_285.webp",
-          "date_str": "Friday 25 September"
+          "date_str": "Friday 25 September",
+          "non_finishers": []
         },
         {
           "num": 5,
@@ -1110,9 +1202,9 @@
           "team": "Wibatech Lubelskie Perła Polski (CT)"
         }
       ],
-      "last_stage_winner": "Tobias Svarre",
-      "last_stage_winner_flag": "🇩🇰",
-      "last_stage_num": 3,
+      "last_stage_winner": "Daniel Felipe Martinez",
+      "last_stage_winner_flag": "🇨🇴",
+      "last_stage_num": 4,
       "gc_leader": "🇩🇰 Tobias Svarre",
       "gc_top10": [
         {
@@ -1122,7 +1214,7 @@
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "10:50:58"
+          "time_gap": "10:14:34"
         },
         {
           "rank": 2,
@@ -1131,7 +1223,7 @@
           "team": "Bahrain Victorious",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "+ 04"
+          "time_gap": "+ 06:00:04"
         },
         {
           "rank": 3,
@@ -1140,7 +1232,7 @@
           "team": "UAE Team Emirates XRG",
           "nat_code": "BE",
           "flag": "🇧🇪",
-          "time_gap": "+ 08"
+          "time_gap": "+ 08:00:08"
         },
         {
           "rank": 4,
@@ -1149,7 +1241,7 @@
           "team": "Cofidis",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 34"
+          "time_gap": "+ 07:00:19"
         },
         {
           "rank": 5,
@@ -1176,7 +1268,7 @@
           "team": "Uno-X Mobility",
           "nat_code": "NO",
           "flag": "🇳🇴",
-          "time_gap": "+ 41"
+          "time_gap": "+ 00"
         },
         {
           "rank": 8,
@@ -1185,7 +1277,7 @@
           "team": "Red Bull - BORA - hansgrohe",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "+ 41"
+          "time_gap": "+ 00"
         },
         {
           "rank": 9,
@@ -1198,12 +1290,12 @@
         },
         {
           "rank": 10,
-          "name": "Edoardo Zambanini",
-          "rider_url": "/profile/edoardo-zambanini",
-          "team": "Bahrain Victorious",
-          "nat_code": "IT",
-          "flag": "🇮🇹",
-          "time_gap": "+ 01:06"
+          "name": "Aimé De Gendt",
+          "rider_url": "/profile/aime-de-gendt",
+          "team": "Pinarello - Q36.5 Pro Cycling Team",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:00:59"
         }
       ],
       "points_leader": "🇩🇰 Carl-Frederik Bévort",
@@ -119882,6 +119974,12 @@
       "nat": "Colombia",
       "wins": [
         {
+          "year": "2026",
+          "date": "25-09-2026",
+          "race": "CRO Race - Stage 4",
+          "cat": "2.Pro"
+        },
+        {
           "year": "2024",
           "date": "18-02-2024",
           "race": "Volta ao Algarve - Stage 5",
@@ -120004,7 +120102,8 @@
           "bar": 25
         }
       },
-      "fetched_at": "2026-07-05T15:07:03.272455+00:00"
+      "fetched_at": "2026-07-05T15:07:03.272455+00:00",
+      "wins_refreshed_at": "2026-09-25T15:42:34.453775+00:00"
     },
     "tim-van-dijke": {
       "slug": "tim-van-dijke",
@@ -139931,37 +140030,37 @@
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 3
+      "days_away": 2
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 17
+      "days_away": 16
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 24
+      "days_away": 23
     }
   ]
 }

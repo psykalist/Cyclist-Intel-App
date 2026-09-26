@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-25T20:12:49.441141+00:00",
+  "generated_at": "2026-09-26T14:50:42.194638+00:00",
   "entries": [
+    {
+      "id": "d13eb8328cb1",
+      "timestamp": "2026-09-26T14:50:42.187030+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 CRO Race: 🇫🇷 Paul Magnier wins"
+    },
+    {
+      "id": "9ba329684cbd",
+      "timestamp": "2026-09-26T14:50:42.187030+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tre Valli Varesine startlist: Alessandro Fancellu, Alessandro Romele, Damiano Caruso (+3 more) added"
+    },
     {
       "id": "49f36f17ca65",
       "timestamp": "2026-09-25T15:43:03.604188+00:00",
@@ -294,13 +308,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 20 Vuelta a España: 🇪🇸 Mikel Landa Meana wins"
-    },
-    {
-      "id": "2ee54e13a6d4",
-      "timestamp": "2026-09-12T13:50:56.445884+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "CRO Race startlist: Adrien Boichis, Alessandro Fancellu, Alessio Magagnotti (+127 more) added"
     }
   ]
 }

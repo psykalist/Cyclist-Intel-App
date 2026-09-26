@@ -6,7 +6,7 @@
    "name": "CRO Race",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/cro-race/2026/startlist",
-   "fetched_at": "2026-09-25",
+   "fetched_at": "2026-09-26",
    "matched": 78,
    "parsed": 119,
    "bibs": {
@@ -427,5 +427,5 @@
    }
   }
  },
- "generated_at": "2026-09-25"
+ "generated_at": "2026-09-26"
 }

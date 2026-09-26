@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T14:50:42.194638+00:00",
+  "generated_at": "2026-09-26T19:31:36.989253+00:00",
   "entries": [
     {
       "id": "d13eb8328cb1",
@@ -301,13 +301,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 21 Vuelta a España: 🇳🇴 Tobias Halland Johannessen wins"
-    },
-    {
-      "id": "5e4775d2bca5",
-      "timestamp": "2026-09-12T18:54:46.518386+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 20 Vuelta a España: 🇪🇸 Mikel Landa Meana wins"
     }
   ]
 }

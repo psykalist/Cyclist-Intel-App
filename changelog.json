@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T15:29:56.012840+00:00",
+  "generated_at": "2026-09-27T19:57:45.025148+00:00",
   "entries": [
     {
       "id": "bb520f9e3da2",
@@ -301,13 +301,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Grand Prix de Wallonie Youth: 🇫🇷 Aubin Sparfel leads"
-    },
-    {
-      "id": "5e893cd10a13",
-      "timestamp": "2026-09-13T19:08:54.426957+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 21 Vuelta a España: 🇳🇴 Tobias Halland Johannessen wins"
     }
   ]
 }

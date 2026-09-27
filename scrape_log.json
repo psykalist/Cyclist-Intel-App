@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-09-26 21:29 UTC",
-  "run_at_iso": "2026-09-26T19:30:57.742054+00:00",
+  "run_at": "2026-09-27 17:27 UTC",
+  "run_at_iso": "2026-09-27T15:29:25.345214+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,27 +8,36 @@
       "name": "CRO Race",
       "total_stages": 6,
       "stages_completed_before": 5,
-      "stages_completed_after": 5,
+      "stages_completed_after": 6,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "petronas-le-tour-de-langkawi-2026",
+      "name": "Petronas Le Tour de Langkawi",
+      "total_stages": 7,
+      "stages_completed_before": 0,
+      "stages_completed_after": 0,
       "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 6,
-        "url": "https://cyclingflash.com/race/cro-race-2026/result/stage-6",
-        "fetch_ok": true,
-        "response_bytes": 315429,
+        "stage_num": 1,
+        "url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
+        "fetch_ok": false,
+        "response_bytes": 0,
         "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-09-26 16:48 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 2.7,
-        "possible_parser_drift": false
+        "overdue": false
       },
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []
     }
   ],
-  "has_fetch_errors": false,
+  "has_fetch_errors": true,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,
   "has_incomplete_results": false

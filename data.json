@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-26T19:30:57.742924+00:00",
-  "scraped_at_human": "26 Sep 2026 19:30 UTC",
+  "scraped_at": "2026-09-27T15:29:26.828614+00:00",
+  "scraped_at_human": "27 Sep 2026 15:29 UTC",
   "live": [
     {
       "slug": "cro-race",
@@ -13,7 +13,7 @@
       "end_date": "2026-09-27",
       "total_stages": 6,
       "official_url": "https://cyclingflash.com/race/cro-race-2026",
-      "stages_completed": 5,
+      "stages_completed": 6,
       "stages": [
         {
           "num": 1,
@@ -596,17 +596,119 @@
           "num": 6,
           "label": "Stage 6",
           "result_url": "/race/cro-race-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
+          "winner": "Davide Donati",
+          "winner_flag": "🇮🇹",
+          "winner_nat": "IT",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Davide Donati",
+              "rider_url": "/profile/davide-donati",
+              "team": "Red Bull - BORA - hansgrohe",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 2,
+              "name": "Lorenzo De Longhi",
+              "rider_url": "/profile/lorenzo-de-longhi",
+              "team": "Cofidis",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 3,
+              "name": "Paul Magnier",
+              "rider_url": "/profile/paul-magnier",
+              "team": "Soudal - Quick Step",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 4,
+              "name": "Tim Torn Teutenberg",
+              "rider_url": "/profile/tim-torn-teutenberg",
+              "team": "Lidl - Trek",
+              "nat_code": "DE",
+              "flag": "🇩🇪",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 5,
+              "name": "Erlend Blikra",
+              "rider_url": "/profile/erlend-blikra",
+              "team": "Uno-X Mobility",
+              "nat_code": "NO",
+              "flag": "🇳🇴",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 6,
+              "name": "Carl-Frederik Bévort",
+              "rider_url": "/profile/carl-frederik-bevort",
+              "team": "Uno-X Mobility",
+              "nat_code": "DK",
+              "flag": "🇩🇰",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 7,
+              "name": "Enrico Zanoncello",
+              "rider_url": "/profile/enrico-zanoncello",
+              "team": "Bardiani CSF 7 Saber",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 8,
+              "name": "Brody Mcdonald",
+              "rider_url": "/profile/brody-mcdonald",
+              "team": "Modern Adventure Pro Cycling",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 9,
+              "name": "Bastian Petrič",
+              "rider_url": "/profile/bastian-petric",
+              "team": "Pogi Team Gusto Ljubljana",
+              "nat_code": "SI",
+              "flag": "🇸🇮",
+              "time_gap": "03:14:57"
+            },
+            {
+              "rank": 10,
+              "name": "Sergi Darder Gari",
+              "rider_url": "/profile/sergi-darder-gari",
+              "team": "Caja Rural - Seguros RGA",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "03:14:57"
+            }
+          ],
           "distance_km": 159.5,
           "elevation_m": 635,
           "stage_type": "flat",
           "start_town": "Samobor",
           "finish_town": "Zagreb",
           "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176699/responsive-images/stage-6-height-profile___heightProfile_1200_268.webp",
-          "date_str": "Sunday 27 September"
+          "date_str": "Sunday 27 September",
+          "non_finishers": [
+            {
+              "status": "DNS",
+              "status_label": "Did not start — withdrew before the stage began.",
+              "name": "Lucas Joseph Towers",
+              "rider_url": "/profile/lucas-joseph-towers",
+              "team": "Modern Adventure Pro Cycling",
+              "nat_code": "GB",
+              "flag": "🇬🇧"
+            }
+          ]
         }
       ],
       "startlist": [
@@ -1331,9 +1433,9 @@
           "team": "Wibatech Lubelskie Perła Polski (CT)"
         }
       ],
-      "last_stage_winner": "Paul Magnier",
-      "last_stage_winner_flag": "🇫🇷",
-      "last_stage_num": 5,
+      "last_stage_winner": "Davide Donati",
+      "last_stage_winner_flag": "🇮🇹",
+      "last_stage_num": 6,
       "gc_leader": "🇩🇰 Tobias Svarre",
       "gc_top10": [
         {
@@ -1343,7 +1445,7 @@
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "18:22:53"
+          "time_gap": "21:37:50"
         },
         {
           "rank": 2,
@@ -1392,20 +1494,20 @@
         },
         {
           "rank": 7,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "Red Bull - BORA - hansgrohe",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 41"
-        },
-        {
-          "rank": 8,
           "name": "Johannes Kulset",
           "rider_url": "/profile/johannes-kulset",
           "team": "Uno-X Mobility",
           "nat_code": "NO",
           "flag": "🇳🇴",
+          "time_gap": "+ 41"
+        },
+        {
+          "rank": 8,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
           "time_gap": "+ 41"
         },
         {
@@ -1436,7 +1538,7 @@
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "53"
+          "time_gap": "64"
         },
         {
           "rank": 2,
@@ -1445,10 +1547,28 @@
           "team": "Lidl - Trek",
           "nat_code": "DE",
           "flag": "🇩🇪",
-          "time_gap": "43"
+          "time_gap": "60"
         },
         {
           "rank": 3,
+          "name": "Paul Magnier",
+          "rider_url": "/profile/paul-magnier",
+          "team": "Soudal - Quick Step",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "55"
+        },
+        {
+          "rank": 4,
+          "name": "Davide Donati",
+          "rider_url": "/profile/davide-donati",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "46"
+        },
+        {
+          "rank": 5,
           "name": "Antonio Tiberi",
           "rider_url": "/profile/antonio-tiberi",
           "team": "Bahrain Victorious",
@@ -1457,16 +1577,16 @@
           "time_gap": "43"
         },
         {
-          "rank": 4,
-          "name": "Paul Magnier",
-          "rider_url": "/profile/paul-magnier",
-          "team": "Soudal - Quick Step",
-          "nat_code": "FR",
-          "flag": "🇫🇷",
+          "rank": 6,
+          "name": "Lorenzo De Longhi",
+          "rider_url": "/profile/lorenzo-de-longhi",
+          "team": "Cofidis",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
           "time_gap": "39"
         },
         {
-          "rank": 5,
+          "rank": 7,
           "name": "Sam Maisonobe",
           "rider_url": "/profile/sam-maisonobe",
           "team": "Cofidis",
@@ -1475,7 +1595,7 @@
           "time_gap": "35"
         },
         {
-          "rank": 6,
+          "rank": 8,
           "name": "Daniel Felipe Martinez",
           "rider_url": "/profile/daniel-felipe-martinez",
           "team": "Red Bull - BORA - hansgrohe",
@@ -1484,7 +1604,7 @@
           "time_gap": "28"
         },
         {
-          "rank": 7,
+          "rank": 9,
           "name": "Tim Wellens",
           "rider_url": "/profile/tim-wellens",
           "team": "UAE Team Emirates XRG",
@@ -1493,31 +1613,13 @@
           "time_gap": "28"
         },
         {
-          "rank": 8,
-          "name": "Tobias Svarre",
-          "rider_url": "/profile/tobias-svarre",
-          "team": "Uno-X Mobility",
-          "nat_code": "DK",
-          "flag": "🇩🇰",
-          "time_gap": "25"
-        },
-        {
-          "rank": 9,
+          "rank": 10,
           "name": "Edoardo Zambanini",
           "rider_url": "/profile/edoardo-zambanini",
           "team": "Bahrain Victorious",
           "nat_code": "IT",
           "flag": "🇮🇹",
-          "time_gap": "25"
-        },
-        {
-          "rank": 10,
-          "name": "Louis Vervaeke",
-          "rider_url": "/profile/louis-vervaeke",
-          "team": "Soudal - Quick Step",
-          "nat_code": "BE",
-          "flag": "🇧🇪",
-          "time_gap": "25"
+          "time_gap": "28"
         }
       ],
       "kom_leader": "🇮🇹 Antonio Tiberi",
@@ -1542,21 +1644,21 @@
         },
         {
           "rank": 3,
+          "name": "Jon Agirre Egaña",
+          "rider_url": "/profile/jon-agirre-egana",
+          "team": "Euskaltel - Euskadi",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "19"
+        },
+        {
+          "rank": 4,
           "name": "Tobias Svarre",
           "rider_url": "/profile/tobias-svarre",
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
           "time_gap": "19"
-        },
-        {
-          "rank": 4,
-          "name": "Jon Agirre Egaña",
-          "rider_url": "/profile/jon-agirre-egana",
-          "team": "Euskaltel - Euskadi",
-          "nat_code": "ES",
-          "flag": "🇪🇸",
-          "time_gap": "16"
         },
         {
           "rank": 5,
@@ -1622,24 +1724,24 @@
           "team": "Uno-X Mobility",
           "nat_code": "DK",
           "flag": "🇩🇰",
-          "time_gap": "18:22:53"
+          "time_gap": "21:37:50"
         },
         {
           "rank": 2,
-          "name": "Emil Herzog",
-          "rider_url": "/profile/emil-herzog",
-          "team": "Red Bull - BORA - hansgrohe",
-          "nat_code": "DE",
-          "flag": "🇩🇪",
-          "time_gap": "+ 41"
-        },
-        {
-          "rank": 3,
           "name": "Johannes Kulset",
           "rider_url": "/profile/johannes-kulset",
           "team": "Uno-X Mobility",
           "nat_code": "NO",
           "flag": "🇳🇴",
+          "time_gap": "+ 41"
+        },
+        {
+          "rank": 3,
+          "name": "Emil Herzog",
+          "rider_url": "/profile/emil-herzog",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "DE",
+          "flag": "🇩🇪",
           "time_gap": "+ 41"
         },
         {
@@ -1649,7 +1751,7 @@
           "team": "Team Polti VisitMalta",
           "nat_code": "FR",
           "flag": "🇫🇷",
-          "time_gap": "+ 01:23"
+          "time_gap": "+ 01:21"
         },
         {
           "rank": 5,
@@ -1706,6 +1808,120 @@
           "time_gap": "+ 16:31"
         }
       ]
+    },
+    {
+      "slug": "petronas-le-tour-de-langkawi",
+      "cf_slug": "petronas-le-tour-de-langkawi-2026",
+      "name": "Petronas Le Tour de Langkawi",
+      "year": "2026",
+      "category": "2.Pro",
+      "status": "live",
+      "start_date": "2026-09-27",
+      "end_date": "2026-10-04",
+      "total_stages": 7,
+      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
+      "stages_completed": 0,
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 193.0,
+          "stage_type": "flat",
+          "start_town": "Shah Alam",
+          "finish_town": "Kampar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176660/responsive-images/stage-1-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 2,
+          "label": "Stage 2",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 145.6,
+          "stage_type": "flat",
+          "start_town": "Taiping",
+          "finish_town": "Gunung Jerai",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176663/responsive-images/stage-2-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 3,
+          "label": "Stage 3",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 189.9,
+          "stage_type": "flat",
+          "start_town": "Sungai Petani",
+          "finish_town": "Kuala Kangsar",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176665/responsive-images/stage-3-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 4,
+          "label": "Stage 4",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 142.3,
+          "stage_type": "flat",
+          "start_town": "Tambun",
+          "finish_town": "Cameron Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176667/responsive-images/stage-4-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 5,
+          "label": "Stage 5",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 125.7,
+          "stage_type": "flat",
+          "start_town": "Tapah",
+          "finish_town": "Genting Highlands",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176668/responsive-images/stage-5-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 6,
+          "label": "Stage 6",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 121.3,
+          "stage_type": "flat",
+          "start_town": "Pandan Indah",
+          "finish_town": "Rembau",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176671/responsive-images/stage-6-height-profile___heightProfile_1200_767.webp"
+        },
+        {
+          "num": 7,
+          "label": "Stage 7",
+          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
+          "winner": null,
+          "winner_flag": "",
+          "winner_nat": "",
+          "top10": [],
+          "distance_km": 159.1,
+          "stage_type": "flat",
+          "start_town": "Melaka",
+          "finish_town": "Batu Pahat",
+          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176673/responsive-images/stage-7-height-profile___heightProfile_1200_767.webp"
+        }
+      ],
+      "startlist": []
     }
   ],
   "upcoming": [
@@ -1931,120 +2147,6 @@
           "team": "Cofidis (PRT)"
         }
       ]
-    },
-    {
-      "slug": "petronas-le-tour-de-langkawi",
-      "cf_slug": "petronas-le-tour-de-langkawi-2026",
-      "name": "Petronas Le Tour de Langkawi",
-      "year": "2026",
-      "category": "2.Pro",
-      "status": "upcoming",
-      "start_date": "2026-09-27",
-      "end_date": "2026-10-04",
-      "total_stages": 7,
-      "official_url": "https://cyclingflash.com/race/petronas-le-tour-de-langkawi-2026",
-      "stages_completed": 0,
-      "stages": [
-        {
-          "num": 1,
-          "label": "Stage 1",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-1",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 193.0,
-          "stage_type": "flat",
-          "start_town": "Shah Alam",
-          "finish_town": "Kampar",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176660/responsive-images/stage-1-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 2,
-          "label": "Stage 2",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-2",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 145.6,
-          "stage_type": "flat",
-          "start_town": "Taiping",
-          "finish_town": "Gunung Jerai",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176663/responsive-images/stage-2-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 3,
-          "label": "Stage 3",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-3",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 189.9,
-          "stage_type": "flat",
-          "start_town": "Sungai Petani",
-          "finish_town": "Kuala Kangsar",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176665/responsive-images/stage-3-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 4,
-          "label": "Stage 4",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-4",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 142.3,
-          "stage_type": "flat",
-          "start_town": "Tambun",
-          "finish_town": "Cameron Highlands",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176667/responsive-images/stage-4-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 5,
-          "label": "Stage 5",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-5",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 125.7,
-          "stage_type": "flat",
-          "start_town": "Tapah",
-          "finish_town": "Genting Highlands",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176668/responsive-images/stage-5-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 6,
-          "label": "Stage 6",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-6",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 121.3,
-          "stage_type": "flat",
-          "start_town": "Pandan Indah",
-          "finish_town": "Rembau",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176671/responsive-images/stage-6-height-profile___heightProfile_1200_767.webp"
-        },
-        {
-          "num": 7,
-          "label": "Stage 7",
-          "result_url": "/race/petronas-le-tour-de-langkawi-2026/result/stage-7",
-          "winner": null,
-          "winner_flag": "",
-          "winner_nat": "",
-          "top10": [],
-          "distance_km": 159.1,
-          "stage_type": "flat",
-          "start_town": "Melaka",
-          "finish_town": "Batu Pahat",
-          "height_profile_img": "https://cyclingflash.ams3.cdn.digitaloceanspaces.com/176673/responsive-images/stage-7-height-profile___heightProfile_1200_767.webp"
-        }
-      ],
-      "startlist": []
     },
     {
       "slug": "sparkassen-munsterland-giro",
@@ -117989,6 +118091,12 @@
       "wins": [
         {
           "year": "2026",
+          "date": "27-09-2026",
+          "race": "CRO Race - Stage 6",
+          "cat": "2.Pro"
+        },
+        {
+          "year": "2026",
           "date": "15-06-2026",
           "race": "Giro d'Italia Next Gen - Stage 2",
           "cat": "2.2U"
@@ -118080,7 +118188,8 @@
           "bar": 38
         }
       },
-      "fetched_at": "2026-07-05T15:05:00.577786+00:00"
+      "fetched_at": "2026-07-05T15:05:00.577786+00:00",
+      "wins_refreshed_at": "2026-09-27T15:29:26.828380+00:00"
     },
     "zeteny-szijarto": {
       "slug": "zeteny-szijarto",
@@ -140213,37 +140322,37 @@
       "name": "Petronas Le Tour de Langkawi",
       "cf_slug": "petronas-le-tour-de-langkawi-2026",
       "start_date": "2026-09-27",
-      "days_away": 1
+      "days_away": 0
     },
     {
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 9
+      "days_away": 8
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 15
+      "days_away": 14
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 22
+      "days_away": 21
     }
   ]
 }

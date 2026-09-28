@@ -1,21 +1,8 @@
 {
-  "run_at": "2026-09-27 21:55 UTC",
-  "run_at_iso": "2026-09-27T19:57:15.428126+00:00",
+  "run_at": "2026-09-28 20:18 UTC",
+  "run_at_iso": "2026-09-28T18:20:25.305602+00:00",
   "mode": "results-only",
   "races": [
-    {
-      "slug": "cro-race-2026",
-      "name": "CRO Race",
-      "total_stages": 6,
-      "stages_completed_before": 6,
-      "stages_completed_after": 6,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
     {
       "slug": "petronas-le-tour-de-langkawi-2026",
       "name": "Petronas Le Tour de Langkawi",

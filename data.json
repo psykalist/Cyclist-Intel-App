@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-28T18:20:25.306386+00:00",
-  "scraped_at_human": "28 Sep 2026 18:20 UTC",
+  "scraped_at": "2026-09-28T22:22:34.081476+00:00",
+  "scraped_at_human": "28 Sep 2026 22:22 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -140340,31 +140340,31 @@
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 7
+      "days_away": 6
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 13
+      "days_away": 12
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 20
+      "days_away": 19
     }
   ]
 }

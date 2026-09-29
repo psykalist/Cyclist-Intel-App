@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-28T22:22:34.081476+00:00",
-  "scraped_at_human": "28 Sep 2026 22:22 UTC",
+  "scraped_at": "2026-09-29T16:43:29.396060+00:00",
+  "scraped_at_human": "29 Sep 2026 16:43 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -399,34 +399,52 @@
       "official_url": "https://cyclingflash.com/race/tre-valli-varesine-2026",
       "startlist": [
         {
-          "name": "Alessandro Romele",
-          "slug": "alessandro-romele",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
+          "name": "Brandon Mcnulty",
+          "slug": "brandon-mcnulty",
+          "nat": "us",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Giulio Pellizzari",
-          "slug": "giulio-pellizzari",
+          "name": "Filippo Baroncini",
+          "slug": "filippo-baroncini",
           "nat": "it",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Damiano Caruso",
-          "slug": "damiano-caruso",
-          "nat": "it",
-          "team": "Bahrain - Victorious (WT)"
+          "name": "Benoît Cosnefroy",
+          "slug": "benoit-cosnefroy",
+          "nat": "fr",
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Alessandro Fancellu",
-          "slug": "alessandro-fancellu",
+          "name": "Luca Giaimi",
+          "slug": "luca-giaimi",
           "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
+          "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Mikkel Frølich Honoré",
-          "slug": "mikkel-honore",
-          "nat": "dk",
-          "team": "EF Education - EasyPost (WT)"
+          "name": "Jhonatan Narváez",
+          "slug": "jhonatan-narvaez",
+          "nat": "ec",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Pavel Sivakov",
+          "slug": "pavel-sivakov",
+          "nat": "fr",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Tim Wellens",
+          "slug": "tim-wellens",
+          "nat": "be",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Francesco Busatto",
+          "slug": "francesco-busatto",
+          "nat": "it",
+          "team": "Alpecin - Premier Tech (WT)"
         },
         {
           "name": "Ramses Debruyne",
@@ -435,10 +453,1000 @@
           "team": "Alpecin - Premier Tech (WT)"
         },
         {
+          "name": "Aaron Dockx",
+          "slug": "aaron-dockx",
+          "nat": "be",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Michael Gogl",
+          "slug": "michael-gogl",
+          "nat": "at",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Senna Remijn",
+          "slug": "senna-remijn",
+          "nat": "nl",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Luca Vergallito",
+          "slug": "luca-vergallito",
+          "nat": "it",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Emiel Verstrynge",
+          "slug": "emiel-verstrynge",
+          "nat": "be",
+          "team": "Alpecin - Premier Tech (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Lenny Martinez",
+          "slug": "lenny-martinez",
+          "nat": "fr",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Pello Bilbao",
+          "slug": "pello-bilbao",
+          "nat": "es",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Santiago Buitrago",
+          "slug": "santiago-buitrago-sanchez",
+          "nat": "co",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Jakob Omrzel",
+          "slug": "jakob-omrzel",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Antonio Tiberi",
+          "slug": "antonio-tiberi",
+          "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Matej Mohorič",
+          "slug": "matej-mohoric",
+          "nat": "si",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Tiesj Benoot",
+          "slug": "tiesj-benoot",
+          "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Felix Gall",
+          "slug": "felix-gall",
+          "nat": "at",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Noa Isidore",
+          "slug": "noa-isidore",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Jordan Labrosse",
+          "slug": "jordan-labrosse",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Gregor Mühlberger",
+          "slug": "gregor-muhlberger",
+          "nat": "at",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Nicolas Prodhomme",
+          "slug": "nicolas-prodhomme",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Callum Scotson",
+          "slug": "callum-scotson",
+          "nat": "au",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Alex Baudin",
+          "slug": "alex-baudin",
+          "nat": "fr",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Richard Carapaz",
+          "slug": "richard-carapaz",
+          "nat": "ec",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Jefferson Alexander Cepeda",
+          "slug": "jefferson-alexander-cepeda",
+          "nat": "ec",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Ben Healy",
+          "slug": "ben-healy",
+          "nat": "ie",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Mikkel Frølich Honoré",
+          "slug": "mikkel-honore",
+          "nat": "dk",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Neilson Powless",
+          "slug": "neilson-powless",
+          "nat": "us",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Sean Quinn",
+          "slug": "sean-quinn",
+          "nat": "us",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Clément Berthet",
+          "slug": "clement-berthet",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "AFONSO Clément Braz",
+          "slug": "clement-braz-afonso",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Ewen Costiou",
+          "slug": "ewen-costiou",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Lorenzo Germani",
+          "slug": "lorenzo-germani",
+          "nat": "it",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Romain Grégoire",
+          "slug": "romain-gregoire",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Guillaume Martin",
+          "slug": "guillaume-martin",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Quentin Pacher",
+          "slug": "quentin-pacher",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Juan Ayuso",
+          "slug": "juan-ayuso-pesquera",
+          "nat": "es",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Andrea Bagioli",
+          "slug": "andrea-bagioli",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Julien Bernard",
+          "slug": "julien-bernard",
+          "nat": "fr",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Giulio Ciccone",
+          "slug": "giulio-ciccone",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Sam Oomen",
+          "slug": "sam-oomen",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Quinn Simmons",
+          "slug": "quinn-simmons",
+          "nat": "us",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Lars Craps",
+          "slug": "lars-craps",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Simone Gualdi",
+          "slug": "simone-gualdi",
+          "nat": "it",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Maxence Place",
+          "slug": "maxence-place",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Reuben Thompson",
+          "slug": "reuben-thompson",
+          "nat": "nz",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "EETVELT Lennert Van",
+          "slug": "lennert-van-eetvelt",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Jarno Widar",
+          "slug": "jarno-widar",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Georg Zimmermann",
+          "slug": "georg-zimmermann",
+          "nat": "de",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Roger Adrià",
+          "slug": "roger-adria",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Jefferson Alveiro Cepeda",
+          "slug": "jefferson-cepeda-hernandez",
+          "nat": "ec",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Davide Formolo",
+          "slug": "davide-formolo",
+          "nat": "it",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Juan Pedro López",
+          "slug": "juan-pedro-lopez",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Enric Mas",
+          "slug": "enric-mas",
+          "nat": "es",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Diego Pescador",
+          "slug": "diego-pescador",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Einer Rubio",
+          "slug": "einer-rubio",
+          "nat": "co",
+          "team": "Movistar Team (WT)"
+        },
+        {
+          "name": "Thymen Arensman",
+          "slug": "thymen-arensman",
+          "nat": "nl",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Jack Haig",
+          "slug": "jack-haig",
+          "nat": "au",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Lucas Hamilton",
+          "slug": "lucas-hamilton",
+          "nat": "au",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Michał Kwiatkowski",
+          "slug": "michal-kwiatkowski",
+          "nat": "pl",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Oscar Onley",
+          "slug": "oscar-onley",
+          "nat": "gb",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "slug": "carlos-rodriguez-cano",
+          "nat": "es",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Óscar Rodríguez",
+          "slug": "oscar-rodriguez",
+          "nat": "es",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "George Bennett",
+          "slug": "george-bennett",
+          "nat": "nz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Jan Hirt",
+          "slug": "jan-hirt",
+          "nat": "cz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Moritz Kretschy",
+          "slug": "moritz-kretschy",
+          "nat": "de",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Alexey Lutsenko",
+          "slug": "aleksey-lutsenko",
+          "nat": "kz",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Zac Marriage",
+          "slug": "zac-marriage",
+          "nat": "au",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Alessandro Pinarello",
+          "slug": "alessandro-pinarello",
+          "nat": "it",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "TRICHT Floris Van",
+          "slug": "floris-van-tricht",
+          "nat": "be",
+          "team": "NSN Cycling Team (WT)"
+        },
+        {
+          "name": "Giovanni Aleotti",
+          "slug": "giovanni-aleotti",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Lorenzo Mark Finn",
+          "slug": "lorenzo-finn",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Finn Fisher-Black",
+          "slug": "finn-fisher-black",
+          "nat": "nz",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Jai Hindley",
+          "slug": "jai-hindley",
+          "nat": "au",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Florian Lipowitz",
+          "slug": "florian-lipowitz",
+          "nat": "de",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Giulio Pellizzari",
+          "slug": "giulio-pellizzari",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
+          "name": "Steff Cras",
+          "slug": "steff-cras",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Gianmarco Garofoli",
+          "slug": "gianmarco-garofoli",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Mikel Landa",
+          "slug": "mikel-landa",
+          "nat": "es",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "NOVIERO Andrea Raccagni",
+          "slug": "andrea-raccagni-noviero",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Henrique Bravo",
+          "slug": "henrique-ribeiro-bravo",
+          "nat": "br",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Mauri Vansevenant",
+          "slug": "mauri-vansevenant",
+          "nat": "be",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Filippo Zana",
+          "slug": "filippo-zana",
+          "nat": "it",
+          "team": "Soudal Quick-Step (WT)"
+        },
+        {
+          "name": "Filippo Conca",
+          "slug": "filippo-conca",
+          "nat": "it",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Alessandro Covi",
+          "slug": "alessandro-covi",
+          "nat": "it",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Felix Engelhardt",
+          "slug": "felix-engelhardt",
+          "nat": "de",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Alan Hatherly",
+          "slug": "alan-hatherly",
+          "nat": "za",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Finlay Pickering",
+          "slug": "finlay-pickering",
+          "nat": "gb",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Rudy Porter",
+          "slug": "rudy-porter",
+          "nat": "au",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Mauro Schmid",
+          "slug": "mauro-schmid",
+          "nat": "ch",
+          "team": "Team Jayco AlUla (WT)"
+        },
+        {
+          "name": "Menno Huising",
+          "slug": "menno-huising",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Matteo Jorgenson",
+          "slug": "matteo-jorgenson",
+          "nat": "us",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Bart Lemmen",
+          "slug": "bart-lemmen",
+          "nat": "nl",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Jørgen Nordhagen",
+          "slug": "jorgen-nordhagen",
+          "nat": "no",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Davide Piganzoli",
+          "slug": "davide-piganzoli",
+          "nat": "it",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Tim Rex",
+          "slug": "tim-rex",
+          "nat": "be",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Ben Tulett",
+          "slug": "ben-tulett",
+          "nat": "gb",
+          "team": "Team Visma | Lease a Bike (WT)"
+        },
+        {
+          "name": "Anthon Charmig",
+          "slug": "anthon-charmig",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Simon Dalby",
+          "slug": "simon-dalby",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Tobias Halland Johannessen",
+          "slug": "tobias-halland-johannessen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Andreas Kron",
+          "slug": "andreas-kron",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Johannes Kulset",
+          "slug": "johannes-kulset",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Andreas Leknessund",
+          "slug": "andreas-leknessund",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Toralf Rydningen Martinsen",
+          "slug": "toralf-rydningen-martinsen",
+          "nat": "no",
+          "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Clément Champoussin",
+          "slug": "clement-champoussin",
+          "nat": "fr",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Nicola Conci",
+          "slug": "nicola-conci",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Lorenzo Fortunato",
+          "slug": "lorenzo-fortunato",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Alessandro Romele",
+          "slug": "alessandro-romele",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Christian Scaroni",
+          "slug": "christian-scaroni",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Harold Tejada",
+          "slug": "harold-tejada",
+          "nat": "co",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Diego Ulissi",
+          "slug": "diego-ulissi",
+          "nat": "it",
+          "team": "XDS Astana Team (WT)"
+        },
+        {
+          "name": "Luca Covili",
+          "slug": "luca-covili",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Martin Marcellusi",
+          "slug": "martin-marcellusi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alessio Martinelli",
+          "slug": "alessio-martinelli",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Luca Paletti",
+          "slug": "luca-paletti",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Manuele Tarozzi",
+          "slug": "manuele-tarozzi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Filippo Turconi",
+          "slug": "filippo-turconi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Fernando Barceló",
+          "slug": "fernando-barcelo",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Joan Bou",
+          "slug": "joan-bou",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Gorka Corres",
+          "slug": "gorka-corres-ibanez-de-opakua",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Alex Díaz",
+          "slug": "alex-diaz-alvarez",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Samuel Fernández",
+          "slug": "samuel-fernandez-garcia",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "José Félix Parra",
+          "slug": "jose-felix-parra",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Marc Rubirola",
+          "slug": "marc-rubirola",
+          "nat": "es",
+          "team": "Caja Rural - Seguros RGA (PRT)"
+        },
+        {
+          "name": "Valentin Ferron",
+          "slug": "valentin-ferron",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Ion Izagirre",
+          "slug": "ion-izagirre",
+          "nat": "es",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Yaël Joalland",
+          "slug": "yael-joalland",
+          "nat": "fr",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sylvain Moniquet",
+          "slug": "sylvain-moniquet",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Sergio Samitier",
+          "slug": "sergio-samitier",
+          "nat": "es",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Dylan Teuns",
+          "slug": "dylan-teuns",
+          "nat": "be",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Edoardo Zamperini",
+          "slug": "edoardo-zamperini",
+          "nat": "it",
+          "team": "Cofidis (PRT)"
+        },
+        {
+          "name": "Christian Bagatin",
+          "slug": "christian-bagatin",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Cesare Chesini",
+          "slug": "cesare-chesini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Alessandro Fancellu",
+          "slug": "alessandro-fancellu",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Filip Gruszczyński",
+          "slug": "filip-gruszczynski",
+          "nat": "pl",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Florian Samuel Kajamini",
+          "slug": "florian-samuel-kajamini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Fausto Masnada",
+          "slug": "fausto-masnada",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Alessandro Verre",
+          "slug": "alessandro-verre",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Walter Calzoni",
+          "slug": "walter-calzoni",
+          "nat": "it",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Marcel Camprubí",
+          "slug": "marcel-camprubi",
+          "nat": "es",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Mark Donovan",
+          "slug": "mark-donovan",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Thomas Gloag",
+          "slug": "thomas-gloag",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Quinten Hermans",
+          "slug": "quinten-hermans",
+          "nat": "be",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Xandro Meurisse",
+          "slug": "xandro-meurisse",
+          "nat": "be",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
           "name": "Tom Pidcock",
           "slug": "tom-pidcock",
           "nat": "gb",
           "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Valerio Conti",
+          "slug": "valerio-conti",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Matteo Fabbro",
+          "slug": "matteo-fabbro",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Roberto Carlos González",
+          "slug": "roberto-gonzalez",
+          "nat": "pa",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Ben Granger",
+          "slug": "ben-granger",
+          "nat": "gb",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Domenico Pozzovivo",
+          "slug": "domenico-pozzovivo",
+          "nat": "it",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Kyrylo Tsarenko",
+          "slug": "kyrylo-tsarenko",
+          "nat": "ua",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Santiago Umba",
+          "slug": "santiago-umba",
+          "nat": "co",
+          "team": "Solution Tech NIPPO Rali (PRT)"
+        },
+        {
+          "name": "Mattia Bais",
+          "slug": "mattia-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Ludovico Crescioli",
+          "slug": "ludovico-crescioli",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Dario Giuliano",
+          "slug": "dario-giuliano",
+          "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Germán Darío Gómez",
+          "slug": "german-dario-gomez",
+          "nat": "co",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Thomas Pesenti",
+          "slug": "thomas-pesenti",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fernando Tercero",
+          "slug": "fernando-tercero-lopez",
+          "nat": "es",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Alessandro Tonelli",
+          "slug": "alessandro-tonelli",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Marco Brenner",
+          "slug": "marco-brenner",
+          "nat": "de",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Robin Donzé",
+          "slug": "robin-donze",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Marc Hirschi",
+          "slug": "marc-hirschi",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Mathys Rondel",
+          "slug": "mathys-rondel",
+          "nat": "fr",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Michael Storer",
+          "slug": "michael-storer",
+          "nat": "au",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Florian Stork",
+          "slug": "florian-stork",
+          "nat": "de",
+          "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Yannis Voisard",
+          "slug": "yannis-voisard",
+          "nat": "ch",
+          "team": "Tudor Pro Cycling Team (PRT)"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-29T21:12:30.613307+00:00",
-  "scraped_at_human": "29 Sep 2026 21:12 UTC",
+  "scraped_at": "2026-09-30T16:35:12.696875+00:00",
+  "scraped_at_human": "30 Sep 2026 16:35 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -131,10 +131,22 @@
       "official_url": "https://cyclingflash.com/race/il-lombardia-2026",
       "startlist": [
         {
+          "name": "EETVELT Lennert Van",
+          "slug": "lennert-van-eetvelt",
+          "nat": "be",
+          "team": "Lotto Intermarché (WT)"
+        },
+        {
           "name": "Jarno Widar",
           "slug": "jarno-widar",
           "nat": "be",
           "team": "Lotto Intermarché (WT)"
+        },
+        {
+          "name": "Nicolas Prodhomme",
+          "slug": "nicolas-prodhomme",
+          "nat": "fr",
+          "team": "Decathlon CMA CGM Team (WT)"
         },
         {
           "name": "Tiesj Benoot",
@@ -149,16 +161,34 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Pello Bilbao",
+          "slug": "pello-bilbao",
+          "nat": "es",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Damiano Caruso",
+          "slug": "damiano-caruso",
+          "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
           "name": "Antonio Tiberi",
           "slug": "antonio-tiberi",
           "nat": "it",
           "team": "Bahrain - Victorious (WT)"
         },
         {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
+          "name": "Juan Ayuso",
+          "slug": "juan-ayuso-pesquera",
+          "nat": "es",
+          "team": "Lidl - Trek (WT)"
         },
         {
           "name": "Bauke Mollema",
@@ -167,16 +197,22 @@
           "team": "Lidl - Trek (WT)"
         },
         {
+          "name": "Remco Evenepoel",
+          "slug": "remco-evenepoel",
+          "nat": "be",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
+        },
+        {
           "name": "Giulio Pellizzari",
           "slug": "giulio-pellizzari",
           "nat": "it",
           "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
-          "name": "Remco Evenepoel",
-          "slug": "remco-evenepoel",
-          "nat": "be",
-          "team": "Red Bull - BORA - hansgrohe (WT)"
+          "name": "Mattia Gaffuri",
+          "slug": "mattia-gaffuri",
+          "nat": "it",
+          "team": "Team Picnic PostNL (WT)"
         },
         {
           "name": "Ben Tulett",
@@ -215,12 +251,6 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Tadej Pogačar",
-          "slug": "tadej-pogacar",
-          "nat": "si",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
           "name": "Jan Christen",
           "slug": "jan-christen",
           "nat": "ch",
@@ -231,6 +261,12 @@
           "slug": "mathys-rondel",
           "nat": "fr",
           "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Tom Pidcock",
+          "slug": "tom-pidcock",
+          "nat": "gb",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         }
       ]
     },
@@ -649,48 +685,6 @@
           "slug": "quentin-pacher",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
-        },
-        {
-          "name": "Juan Ayuso",
-          "slug": "juan-ayuso-pesquera",
-          "nat": "es",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Andrea Bagioli",
-          "slug": "andrea-bagioli",
-          "nat": "it",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Julien Bernard",
-          "slug": "julien-bernard",
-          "nat": "fr",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Giulio Ciccone",
-          "slug": "giulio-ciccone",
-          "nat": "it",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Bauke Mollema",
-          "slug": "bauke-mollema",
-          "nat": "nl",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Sam Oomen",
-          "slug": "sam-oomen",
-          "nat": "nl",
-          "team": "Lidl - Trek (WT)"
-        },
-        {
-          "name": "Quinn Simmons",
-          "slug": "quinn-simmons",
-          "nat": "us",
-          "team": "Lidl - Trek (WT)"
         },
         {
           "name": "Lars Craps",
@@ -1203,12 +1197,6 @@
           "team": "Cofidis (PRT)"
         },
         {
-          "name": "Ion Izagirre",
-          "slug": "ion-izagirre",
-          "nat": "es",
-          "team": "Cofidis (PRT)"
-        },
-        {
           "name": "Yaël Joalland",
           "slug": "yael-joalland",
           "nat": "fr",
@@ -1447,6 +1435,48 @@
           "slug": "yannis-voisard",
           "nat": "ch",
           "team": "Tudor Pro Cycling Team (PRT)"
+        },
+        {
+          "name": "Juan Ayuso",
+          "slug": "juan-ayuso-pesquera",
+          "nat": "es",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Andrea Bagioli",
+          "slug": "andrea-bagioli",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Julien Bernard",
+          "slug": "julien-bernard",
+          "nat": "fr",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Giulio Ciccone",
+          "slug": "giulio-ciccone",
+          "nat": "it",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Bauke Mollema",
+          "slug": "bauke-mollema",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Sam Oomen",
+          "slug": "sam-oomen",
+          "nat": "nl",
+          "team": "Lidl - Trek (WT)"
+        },
+        {
+          "name": "Quinn Simmons",
+          "slug": "quinn-simmons",
+          "nat": "us",
+          "team": "Lidl - Trek (WT)"
         }
       ]
     },
@@ -141348,31 +141378,31 @@
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 6
+      "days_away": 5
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 12
+      "days_away": 11
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 19
+      "days_away": 18
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T16:35:40.806018+00:00",
+  "generated_at": "2026-09-30T21:07:41.992953+00:00",
   "entries": [
     {
       "id": "a8813e24c2ba",
@@ -252,76 +252,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "CRO Race startlist: Tim Wellens added"
-    },
-    {
-      "id": "a89fbedc13bd",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Skoda Tour de Luxembourg: 🇳🇱 Mathieu van der Poel wins"
-    },
-    {
-      "id": "72293f112da0",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Skoda Tour de Luxembourg GC: 🇳🇱 Mathieu van der Poel leads"
-    },
-    {
-      "id": "8ad89e208130",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Skoda Tour de Luxembourg Points: 🇳🇱 Mathieu van der Poel leads"
-    },
-    {
-      "id": "33532983179f",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Skoda Tour de Luxembourg KOM: 🇩🇰 Malte Hellerup leads"
-    },
-    {
-      "id": "dbc15618661b",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Skoda Tour de Luxembourg Youth: 🇫🇷 Pierre Gautherat leads"
-    },
-    {
-      "id": "6b8f3a654059",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Grand Prix de Wallonie: 🇫🇷 Aubin Sparfel wins"
-    },
-    {
-      "id": "6a3a72aa1c28",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Grand Prix de Wallonie GC: 🇫🇷 Aubin Sparfel leads"
-    },
-    {
-      "id": "43e2d74c2ad3",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Grand Prix de Wallonie Points: 🇫🇷 Aubin Sparfel leads"
-    },
-    {
-      "id": "9713cd376a0c",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Grand Prix de Wallonie KOM: 🇫🇷 Aubin Sparfel leads"
-    },
-    {
-      "id": "c0d795c50fa3",
-      "timestamp": "2026-09-16T19:50:26.904826+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Grand Prix de Wallonie Youth: 🇫🇷 Aubin Sparfel leads"
     }
   ]
 }

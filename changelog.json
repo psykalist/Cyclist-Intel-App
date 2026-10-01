@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T17:14:36.477357+00:00",
+  "generated_at": "2026-10-01T21:32:16.351948+00:00",
   "entries": [
     {
       "id": "44037eeec37b",
@@ -231,34 +231,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Skoda Tour de Luxembourg Youth: 🇮🇹 Davide Piganzoli leads"
-    },
-    {
-      "id": "c49613d1ad20",
-      "timestamp": "2026-09-17T19:58:05.794558+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Skoda Tour de Luxembourg: 🇳🇱 Marijn van den Berg wins"
-    },
-    {
-      "id": "f3d33a2aa335",
-      "timestamp": "2026-09-17T19:58:05.794558+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Skoda Tour de Luxembourg GC: 🇳🇱 Marijn van den Berg leads"
-    },
-    {
-      "id": "d7bfaa366004",
-      "timestamp": "2026-09-17T19:58:05.794558+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Skoda Tour de Luxembourg Points: 🇳🇱 Marijn van den Berg leads"
-    },
-    {
-      "id": "dcec2a51ec2b",
-      "timestamp": "2026-09-17T19:58:05.794558+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Skoda Tour de Luxembourg KOM: 🇩🇰 Conrad Haugsted leads"
     }
   ]
 }

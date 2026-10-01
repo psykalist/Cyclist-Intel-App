@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-09-30T21:07:14.300267+00:00",
-  "scraped_at_human": "30 Sep 2026 21:07 UTC",
+  "scraped_at": "2026-10-01T17:14:08.946005+00:00",
+  "scraped_at_human": "01 Oct 2026 17:14 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -143,15 +143,15 @@
           "team": "Lotto Intermarché (WT)"
         },
         {
-          "name": "Nicolas Prodhomme",
-          "slug": "nicolas-prodhomme",
-          "nat": "fr",
-          "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
           "name": "Tiesj Benoot",
           "slug": "tiesj-benoot",
           "nat": "be",
+          "team": "Decathlon CMA CGM Team (WT)"
+        },
+        {
+          "name": "Nicolas Prodhomme",
+          "slug": "nicolas-prodhomme",
+          "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
@@ -159,12 +159,6 @@
           "slug": "paul-seixas",
           "nat": "fr",
           "team": "Decathlon CMA CGM Team (WT)"
-        },
-        {
-          "name": "Afonso Eulálio",
-          "slug": "afonso-eulalio",
-          "nat": "pt",
-          "team": "Bahrain - Victorious (WT)"
         },
         {
           "name": "Pello Bilbao",
@@ -182,6 +176,12 @@
           "name": "Antonio Tiberi",
           "slug": "antonio-tiberi",
           "nat": "it",
+          "team": "Bahrain - Victorious (WT)"
+        },
+        {
+          "name": "Afonso Eulálio",
+          "slug": "afonso-eulalio",
+          "nat": "pt",
           "team": "Bahrain - Victorious (WT)"
         },
         {
@@ -207,12 +207,6 @@
           "slug": "giulio-pellizzari",
           "nat": "it",
           "team": "Red Bull - BORA - hansgrohe (WT)"
-        },
-        {
-          "name": "Mattia Gaffuri",
-          "slug": "mattia-gaffuri",
-          "nat": "it",
-          "team": "Team Picnic PostNL (WT)"
         },
         {
           "name": "Ben Tulett",
@@ -245,6 +239,12 @@
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
+          "name": "Brandon Mcnulty",
+          "slug": "brandon-mcnulty",
+          "nat": "us",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
           "name": "Domen Novak",
           "slug": "domen-novak",
           "nat": "si",
@@ -255,6 +255,12 @@
           "slug": "jan-christen",
           "nat": "ch",
           "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Valentin Madouas",
+          "slug": "valentin-madouas",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
         },
         {
           "name": "Mathys Rondel",
@@ -1499,6 +1505,12 @@
           "team": "XDS Astana Team (WT)"
         },
         {
+          "name": "Valentin Madouas",
+          "slug": "valentin-madouas",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
           "name": "Mikkel Frølich Honoré",
           "slug": "mikkel-honore",
           "nat": "dk",
@@ -1515,6 +1527,12 @@
           "slug": "dario-igor-belletta",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Walter Calzoni",
+          "slug": "walter-calzoni",
+          "nat": "it",
+          "team": "Pinarello Q36.5 Pro Cycling Team (PRT)"
         }
       ]
     },
@@ -141378,31 +141396,31 @@
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 3
+      "days_away": 2
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 3
+      "days_away": 2
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 5
+      "days_away": 4
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 11
+      "days_away": 10
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 18
+      "days_away": 17
     }
   ]
 }

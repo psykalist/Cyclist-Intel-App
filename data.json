@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-01T21:31:45.098000+00:00",
-  "scraped_at_human": "01 Oct 2026 21:31 UTC",
+  "scraped_at": "2026-10-02T16:26:44.062708+00:00",
+  "scraped_at_human": "02 Oct 2026 16:26 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -795,12 +795,6 @@
           "team": "Netcompany INEOS (WT)"
         },
         {
-          "name": "Michał Kwiatkowski",
-          "slug": "michal-kwiatkowski",
-          "nat": "pl",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
           "name": "Oscar Onley",
           "slug": "oscar-onley",
           "nat": "gb",
@@ -996,12 +990,6 @@
           "name": "Matteo Jorgenson",
           "slug": "matteo-jorgenson",
           "nat": "us",
-          "team": "Team Visma | Lease a Bike (WT)"
-        },
-        {
-          "name": "Bart Lemmen",
-          "slug": "bart-lemmen",
-          "nat": "nl",
           "team": "Team Visma | Lease a Bike (WT)"
         },
         {
@@ -1359,21 +1347,15 @@
           "team": "Solution Tech NIPPO Rali (PRT)"
         },
         {
-          "name": "Mattia Bais",
-          "slug": "mattia-bais",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Ludovico Crescioli",
-          "slug": "ludovico-crescioli",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
           "name": "Dario Giuliano",
           "slug": "dario-giuliano",
           "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Fernando Tercero",
+          "slug": "fernando-tercero-lopez",
+          "nat": "es",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -1389,9 +1371,15 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Fernando Tercero",
-          "slug": "fernando-tercero-lopez",
-          "nat": "es",
+          "name": "Mattia Bais",
+          "slug": "mattia-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Ludovico Crescioli",
+          "slug": "ludovico-crescioli",
+          "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -141396,31 +141384,31 @@
       "name": "Sparkassen Münsterland Giro",
       "cf_slug": "sparkassen-munsterland-giro-2026",
       "start_date": "2026-10-03",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Giro dell'Emilia",
       "cf_slug": "giro-dellemilia-2026",
       "start_date": "2026-10-03",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Coppa Bernocchi - GP Banco BPM",
       "cf_slug": "coppa-bernocchi-gp-banco-bpm-2026",
       "start_date": "2026-10-05",
-      "days_away": 4
+      "days_away": 3
     },
     {
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 10
+      "days_away": 9
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 17
+      "days_away": 16
     }
   ]
 }

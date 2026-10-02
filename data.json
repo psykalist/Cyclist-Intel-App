@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-02T16:26:44.062708+00:00",
-  "scraped_at_human": "02 Oct 2026 16:26 UTC",
+  "scraped_at": "2026-10-02T21:07:01.953799+00:00",
+  "scraped_at_human": "02 Oct 2026 21:07 UTC",
   "live": [
     {
       "slug": "petronas-le-tour-de-langkawi",
@@ -1497,6 +1497,12 @@
           "slug": "valentin-madouas",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Davide Donati",
+          "slug": "davide-donati",
+          "nat": "it",
+          "team": "Red Bull - BORA - hansgrohe (WT)"
         },
         {
           "name": "Mikkel Frølich Honoré",

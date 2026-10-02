@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-10-02T16:27:11.322732+00:00",
+  "generated_at": "2026-10-02T21:07:29.216094+00:00",
   "entries": [
+    {
+      "id": "8e5df829d217",
+      "timestamp": "2026-10-02T21:07:29.210391+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Gran Piemonte startlist: Davide Donati added"
+    },
     {
       "id": "44037eeec37b",
       "timestamp": "2026-10-01T17:14:36.469337+00:00",
@@ -203,34 +210,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "CRO Race startlist: Alain Suarez, Alex Tolio, Alexandre Balmer (+20 more) added"
-    },
-    {
-      "id": "44f958e04016",
-      "timestamp": "2026-09-18T19:20:36.854113+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 Skoda Tour de Luxembourg: 🇳🇱 Pepijn Reinderink wins"
-    },
-    {
-      "id": "9ba346a33f11",
-      "timestamp": "2026-09-18T19:20:36.854113+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Skoda Tour de Luxembourg GC: 🇮🇹 Davide Piganzoli leads"
-    },
-    {
-      "id": "61309ab849e2",
-      "timestamp": "2026-09-18T19:20:36.854113+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Skoda Tour de Luxembourg KOM: 🇳🇱 Pepijn Reinderink leads"
-    },
-    {
-      "id": "33fd24f6d0e9",
-      "timestamp": "2026-09-18T19:20:36.854113+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Skoda Tour de Luxembourg Youth: 🇮🇹 Davide Piganzoli leads"
     }
   ]
 }

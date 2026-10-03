@@ -1,26 +1,25 @@
 {
-  "updated_at": "2026-10-03T10:42:34.295963+00:00",
+  "updated_at": "2026-10-03T15:02:54.346113+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 14h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: could not fetch next-stage probe for ['petronas-le-tour-de-langkawi-2026'] -- network/HTTP issue, not necessarily a bug"
   ],
   "repairs": [],
   "data": {
-    "data_size_kb": 4193,
-    "data_upcoming": 11,
+    "data_size_kb": 4230,
+    "data_upcoming": 9,
     "data_recent": 85,
     "data_teams": 33,
     "rider_profiles": 2715,
-    "live_races": 1,
-    "scraped_at": "2026-10-02T21:07:01.953799+00:00",
-    "data_age_hours": 13.6,
+    "live_races": 3,
+    "scraped_at": "2026-10-03T15:01:45.125878+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-10-02 23:05 UTC",
-    "rider_roster": 1377,
-    "rider_missing_profile": 100,
-    "rider_missing_palmares": 946
+    "scrape_log_run_at": "2026-10-03 16:59 UTC",
+    "rider_roster": 1387,
+    "rider_missing_profile": 106,
+    "rider_missing_palmares": 955
   }
 }

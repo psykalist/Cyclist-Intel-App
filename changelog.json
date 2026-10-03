@@ -1,6 +1,55 @@
 {
-  "generated_at": "2026-10-02T21:07:29.216094+00:00",
+  "generated_at": "2026-10-03T15:02:13.916358+00:00",
   "entries": [
+    {
+      "id": "845402896eec",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Giro dell'Emilia: 🇮🇹 Davide Piganzoli wins"
+    },
+    {
+      "id": "a91ade5e7505",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Giro dell'Emilia GC: 🇮🇹 Davide Piganzoli leads"
+    },
+    {
+      "id": "15fe725b82f2",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Giro dell'Emilia Points: 🇮🇹 Davide Piganzoli leads"
+    },
+    {
+      "id": "1b1d8b165d45",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Giro dell'Emilia KOM: 🇮🇹 Davide Piganzoli leads"
+    },
+    {
+      "id": "ceacc19f8647",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Giro dell'Emilia Youth: 🇮🇹 Davide Piganzoli leads"
+    },
+    {
+      "id": "afebe05c5e2e",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tour of Guangxi startlist: AFONSO Clément Braz, ANDERSEN Søren Kragh, Adrien Boichis (+147 more) added"
+    },
+    {
+      "id": "746f3b1703bf",
+      "timestamp": "2026-10-03T15:02:13.909998+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tre Valli Varesine startlist: Matthew Riccitello, Paul Lapeira, Rémi Arsac (+1 more) added"
+    },
     {
       "id": "8e5df829d217",
       "timestamp": "2026-10-02T21:07:29.210391+00:00",
@@ -203,13 +252,6 @@
       "type": "leader_change",
       "icon": "green",
       "text": "Skoda Tour de Luxembourg Points: 🇮🇹 Davide Piganzoli leads"
-    },
-    {
-      "id": "adf1ff48bc98",
-      "timestamp": "2026-09-19T14:05:15.777881+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "CRO Race startlist: Alain Suarez, Alex Tolio, Alexandre Balmer (+20 more) added"
     }
   ]
 }

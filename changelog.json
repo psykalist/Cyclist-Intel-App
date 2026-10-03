@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-10-03T15:02:13.916358+00:00",
+  "generated_at": "2026-10-03T19:38:23.857690+00:00",
   "entries": [
+    {
+      "id": "647075da5d62",
+      "timestamp": "2026-10-03T19:38:23.851767+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Sparkassen Münsterland Giro: 🇳🇱 Olav Kooij wins"
+    },
+    {
+      "id": "f2c33f323079",
+      "timestamp": "2026-10-03T19:38:23.851767+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Sparkassen Münsterland Giro GC: 🇳🇱 Olav Kooij leads"
+    },
+    {
+      "id": "e6e65eebce74",
+      "timestamp": "2026-10-03T19:38:23.851767+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Sparkassen Münsterland Giro Points: 🇳🇱 Olav Kooij leads"
+    },
+    {
+      "id": "d3a2053755b9",
+      "timestamp": "2026-10-03T19:38:23.851767+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Sparkassen Münsterland Giro KOM: 🇳🇱 Olav Kooij leads"
+    },
+    {
+      "id": "3e2f18040c29",
+      "timestamp": "2026-10-03T19:38:23.851767+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Sparkassen Münsterland Giro Youth: 🇳🇱 Olav Kooij leads"
+    },
     {
       "id": "845402896eec",
       "timestamp": "2026-10-03T15:02:13.909998+00:00",
@@ -238,20 +273,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "CRO Race startlist: Tim Wellens added"
-    },
-    {
-      "id": "82428924de8a",
-      "timestamp": "2026-09-19T19:06:33.993102+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 4 Skoda Tour de Luxembourg: 🇮🇹 Davide Piganzoli wins"
-    },
-    {
-      "id": "dbccfafd5903",
-      "timestamp": "2026-09-19T19:06:33.993102+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Skoda Tour de Luxembourg Points: 🇮🇹 Davide Piganzoli leads"
     }
   ]
 }

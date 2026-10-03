@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-10-03T02:28:59.406038+00:00",
+  "updated_at": "2026-10-03T10:42:34.295963+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 14h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: could not fetch next-stage probe for ['petronas-le-tour-de-langkawi-2026'] -- network/HTTP issue, not necessarily a bug"
   ],
   "repairs": [],
@@ -15,7 +16,7 @@
     "rider_profiles": 2715,
     "live_races": 1,
     "scraped_at": "2026-10-02T21:07:01.953799+00:00",
-    "data_age_hours": 5.4,
+    "data_age_hours": 13.6,
     "index_html_bytes": 330574,
     "scrape_log_run_at": "2026-10-02 23:05 UTC",
     "rider_roster": 1377,

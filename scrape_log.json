@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-03 21:36 UTC",
-  "run_at_iso": "2026-10-03T19:37:50.885926+00:00",
+  "run_at": "2026-10-04 17:35 UTC",
+  "run_at_iso": "2026-10-04T15:36:42.291536+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -19,32 +19,6 @@
         "matched_result_table": false,
         "overdue": false
       },
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "sparkassen-munsterland-giro-2026",
-      "name": "Sparkassen Münsterland Giro",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 1,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "giro-dellemilia-2026",
-      "name": "Giro dell'Emilia",
-      "total_stages": 1,
-      "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

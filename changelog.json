@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-03T19:38:23.857690+00:00",
+  "generated_at": "2026-10-04T15:37:04.181781+00:00",
   "entries": [
+    {
+      "id": "9d2d33b9f55e",
+      "timestamp": "2026-10-04T15:37:04.173178+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tre Valli Varesine startlist: Alex Aranburu, Louis Rouland, Luis Alberto Lajarin added"
+    },
+    {
+      "id": "5892c6c6268f",
+      "timestamp": "2026-10-04T15:37:04.173178+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Giro del Veneto startlist: Dario Igor Belletta, Filippo Agostinacchio, Matias Malmberg (+2 more) added"
+    },
     {
       "id": "647075da5d62",
       "timestamp": "2026-10-03T19:38:23.851767+00:00",
@@ -266,13 +280,6 @@
       "type": "leader_change",
       "icon": "red",
       "text": "Skoda Tour de Luxembourg KOM: 🇳🇱 Mathieu van der Poel leads"
-    },
-    {
-      "id": "fe526b127ecd",
-      "timestamp": "2026-09-20T14:25:26.644210+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "CRO Race startlist: Tim Wellens added"
     }
   ]
 }

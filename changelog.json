@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T15:37:04.181781+00:00",
+  "generated_at": "2026-10-04T19:52:22.333956+00:00",
   "entries": [
     {
       "id": "9d2d33b9f55e",
@@ -266,20 +266,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "CRO Race startlist: Carl-Frederik Bévort, DER MEULEN Max Van, Damien Howson (+11 more) added"
-    },
-    {
-      "id": "afd75e2ab146",
-      "timestamp": "2026-09-20T19:12:59.115321+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 Skoda Tour de Luxembourg: 🇳🇱 Mathieu van der Poel wins"
-    },
-    {
-      "id": "5f2ac40d57cd",
-      "timestamp": "2026-09-20T19:12:59.115321+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Skoda Tour de Luxembourg KOM: 🇳🇱 Mathieu van der Poel leads"
     }
   ]
 }

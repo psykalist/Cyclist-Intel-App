@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-04T19:52:22.333956+00:00",
+  "generated_at": "2026-10-05T19:28:03.728219+00:00",
   "entries": [
+    {
+      "id": "73b7da0e309b",
+      "timestamp": "2026-10-05T19:28:03.722516+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Il Lombardia startlist: Giulio Ciccone added"
+    },
+    {
+      "id": "2876497f58fe",
+      "timestamp": "2026-10-05T19:28:03.722516+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Tre Valli Varesine startlist: Amanuel Ghebreigzabhier, Anders Skaarseth, Andrea Piras (+43 more) added"
+    },
     {
       "id": "9d2d33b9f55e",
       "timestamp": "2026-10-04T15:37:04.173178+00:00",
@@ -259,13 +273,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 1 CRO Race: 🇨🇴 Sebastian Molano wins"
-    },
-    {
-      "id": "f367f89bb759",
-      "timestamp": "2026-09-21T16:44:18.553518+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "CRO Race startlist: Carl-Frederik Bévort, DER MEULEN Max Van, Damien Howson (+11 more) added"
     }
   ]
 }

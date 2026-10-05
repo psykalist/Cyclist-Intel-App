@@ -245,7 +245,7 @@
    "name": "Tour of Guangxi",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-of-guangxi/2026/startlist",
-   "fetched_at": "2026-10-04",
+   "fetched_at": "2026-10-05",
    "matched": 133,
    "parsed": 153,
    "bibs": {
@@ -572,5 +572,5 @@
    }
   }
  },
- "generated_at": "2026-10-04"
+ "generated_at": "2026-10-05"
 }

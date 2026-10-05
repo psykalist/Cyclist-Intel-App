@@ -1,23 +1,21 @@
 {
-  "updated_at": "2026-10-05T19:28:43.572602+00:00",
+  "updated_at": "2026-10-05T23:02:33.715089+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "scrape_log.json: could not fetch next-stage probe for ['coppa-bernocchi-gp-banco-bpm-2026'] -- network/HTTP issue, not necessarily a bug"
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
     "data_size_kb": 4245,
-    "data_upcoming": 8,
-    "data_recent": 88,
+    "data_upcoming": 7,
+    "data_recent": 89,
     "data_teams": 33,
     "rider_profiles": 2724,
     "live_races": 1,
-    "scraped_at": "2026-10-05T19:27:40.843525+00:00",
+    "scraped_at": "2026-10-05T23:01:31.952473+00:00",
     "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-10-05 21:26 UTC",
+    "scrape_log_run_at": "2026-10-06 01:00 UTC",
     "rider_roster": 1392,
     "rider_missing_profile": 100,
     "rider_missing_palmares": 960

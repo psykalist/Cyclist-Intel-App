@@ -1,26 +1,25 @@
 {
-  "updated_at": "2026-10-05T12:47:01.730365+00:00",
+  "updated_at": "2026-10-05T19:28:43.572602+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
-    "data.json is 17h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: could not fetch next-stage probe for ['petronas-le-tour-de-langkawi-2026'] -- network/HTTP issue, not necessarily a bug"
+    "scrape_log.json: could not fetch next-stage probe for ['coppa-bernocchi-gp-banco-bpm-2026'] -- network/HTTP issue, not necessarily a bug"
   ],
   "repairs": [],
   "data": {
     "data_size_kb": 4245,
-    "data_upcoming": 9,
-    "data_recent": 87,
+    "data_upcoming": 8,
+    "data_recent": 88,
     "data_teams": 33,
     "rider_profiles": 2724,
     "live_races": 1,
-    "scraped_at": "2026-10-04T19:52:00.216797+00:00",
-    "data_age_hours": 16.9,
+    "scraped_at": "2026-10-05T19:27:40.843525+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-10-04 21:50 UTC",
-    "rider_roster": 1389,
-    "rider_missing_profile": 98,
-    "rider_missing_palmares": 957
+    "scrape_log_run_at": "2026-10-05 21:26 UTC",
+    "rider_roster": 1392,
+    "rider_missing_profile": 100,
+    "rider_missing_palmares": 960
   }
 }

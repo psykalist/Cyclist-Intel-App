@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-10-06T17:01:38.295229+00:00",
+  "generated_at": "2026-10-06T21:25:03.700753+00:00",
   "entries": [
+    {
+      "id": "e999f499d901",
+      "timestamp": "2026-10-06T21:25:03.692786+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Il Lombardia startlist: Ben Healy added"
+    },
     {
       "id": "c9712cc1a835",
       "timestamp": "2026-10-06T17:01:38.286747+00:00",
@@ -280,34 +287,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "CRO Race Youth: 🇭🇷 Nicolas Gojkovic leads"
-    },
-    {
-      "id": "ee25d7f3a66f",
-      "timestamp": "2026-09-22T19:59:37.095765+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "CRO Race GC: 🇨🇴 Sebastian Molano leads"
-    },
-    {
-      "id": "6072e03f355d",
-      "timestamp": "2026-09-22T19:59:37.095765+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "CRO Race Points: 🇨🇴 Sebastian Molano leads"
-    },
-    {
-      "id": "ebb801d2623b",
-      "timestamp": "2026-09-22T19:59:37.095765+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "CRO Race KOM: 🇪🇸 Jon Agirre Egaña leads"
-    },
-    {
-      "id": "4a0e379318f4",
-      "timestamp": "2026-09-22T19:59:37.095765+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "CRO Race Youth: 🇫🇷 Paul Magnier leads"
     }
   ]
 }

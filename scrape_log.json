@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-10-06 18:59 UTC",
-  "run_at_iso": "2026-10-06T17:01:19.663828+00:00",
+  "run_at": "2026-10-06 23:23 UTC",
+  "run_at_iso": "2026-10-06T21:24:47.019736+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tre-valli-varesine-2026",
       "name": "Tre Valli Varesine",
       "total_stages": 1,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": null,
       "expected_rows": 10,

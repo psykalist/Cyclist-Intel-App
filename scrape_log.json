@@ -1,22 +1,8 @@
 {
-  "run_at": "2026-10-06 23:23 UTC",
-  "run_at_iso": "2026-10-06T21:24:47.019736+00:00",
+  "run_at": "2026-10-07 19:36 UTC",
+  "run_at_iso": "2026-10-07T17:37:47.462112+00:00",
   "mode": "results-only",
-  "races": [
-    {
-      "slug": "tre-valli-varesine-2026",
-      "name": "Tre Valli Varesine",
-      "total_stages": 1,
-      "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    }
-  ],
+  "races": [],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

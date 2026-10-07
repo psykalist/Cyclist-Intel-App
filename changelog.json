@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-10-07T17:38:03.253931+00:00",
+  "generated_at": "2026-10-07T21:43:28.191082+00:00",
   "entries": [
+    {
+      "id": "10a5a682a6b3",
+      "timestamp": "2026-10-07T21:43:28.183325+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Il Lombardia startlist: Ion Izagirre added"
+    },
     {
       "id": "fdc30629d771",
       "timestamp": "2026-10-07T17:38:03.244652+00:00",
@@ -280,27 +287,6 @@
       "type": "leader_change",
       "icon": "yellow",
       "text": "CRO Race GC: 🇩🇰 Tobias Svarre leads"
-    },
-    {
-      "id": "82d3fb14b9a5",
-      "timestamp": "2026-09-23T19:56:29.120839+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 CRO Race: 🇩🇰 Carl-Frederik Bévort wins"
-    },
-    {
-      "id": "ea6acccf5c0d",
-      "timestamp": "2026-09-23T19:56:29.120839+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "CRO Race KOM: 🇮🇹 Gabriele Raccagni leads"
-    },
-    {
-      "id": "ff6a5c6cbb5a",
-      "timestamp": "2026-09-23T19:56:29.120839+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "CRO Race Youth: 🇭🇷 Nicolas Gojkovic leads"
     }
   ]
 }

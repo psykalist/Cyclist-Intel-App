@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-10-08T17:41:19.148427+00:00",
+  "generated_at": "2026-10-08T21:40:27.063525+00:00",
   "entries": [
+    {
+      "id": "1966b64c1cf1",
+      "timestamp": "2026-10-08T21:40:27.056958+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Veneto Classic startlist: Anthon Charmig added"
+    },
     {
       "id": "714d65f727a1",
       "timestamp": "2026-10-08T17:41:19.140386+00:00",
@@ -294,27 +301,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 4 CRO Race: 🇨🇴 Daniel Felipe Martinez wins"
-    },
-    {
-      "id": "da3eddf8ea71",
-      "timestamp": "2026-09-24T20:14:33.022160+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "CRO Race Points: 🇩🇰 Carl-Frederik Bévort leads"
-    },
-    {
-      "id": "a838eb44bc35",
-      "timestamp": "2026-09-24T20:14:33.022160+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "CRO Race KOM: 🇮🇹 Antonio Tiberi leads"
-    },
-    {
-      "id": "090fe2b154a4",
-      "timestamp": "2026-09-24T20:14:33.022160+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "CRO Race Youth: 🇩🇰 Tobias Svarre leads"
     }
   ]
 }

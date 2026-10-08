@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-08T17:41:01.827618+00:00",
-  "scraped_at_human": "08 Oct 2026 17:41 UTC",
+  "scraped_at": "2026-10-08T21:40:10.269893+00:00",
+  "scraped_at_human": "08 Oct 2026 21:40 UTC",
   "live": [
     {
       "slug": "gran-piemonte",
@@ -1914,9 +1914,9 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Richard Carapaz",
-          "slug": "richard-carapaz",
-          "nat": "ec",
+          "name": "Ben Healy",
+          "slug": "ben-healy",
+          "nat": "ie",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -1926,9 +1926,9 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Ben Healy",
-          "slug": "ben-healy",
-          "nat": "ie",
+          "name": "Michael Leonard",
+          "slug": "michael-leonard1",
+          "nat": "ca",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -1938,21 +1938,21 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Neilson Powless",
-          "slug": "neilson-powless",
-          "nat": "us",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
           "name": "Sean Quinn",
           "slug": "sean-quinn",
           "nat": "us",
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "DER LEE Jardi Christiaan Van",
-          "slug": "jardi-christiaan-van-der-lee",
-          "nat": "nl",
+          "name": "Juan Felipe Rodriguez",
+          "slug": "juan-felipe-rodriguez",
+          "nat": "co",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Michael Valgren",
+          "slug": "michael-valgren-andersen",
+          "nat": "dk",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -3794,6 +3794,12 @@
           "slug": "valentin-madouas",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Anthon Charmig",
+          "slug": "anthon-charmig",
+          "nat": "dk",
+          "team": "Uno-X Mobility (WT)"
         },
         {
           "name": "Matias Malmberg",

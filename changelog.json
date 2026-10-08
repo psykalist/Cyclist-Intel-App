@@ -1,6 +1,48 @@
 {
-  "generated_at": "2026-10-07T21:43:28.191082+00:00",
+  "generated_at": "2026-10-08T17:41:19.148427+00:00",
   "entries": [
+    {
+      "id": "714d65f727a1",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Gran Piemonte: 🇫🇷 Dorian Godon wins"
+    },
+    {
+      "id": "a7f30b4f5f29",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Gran Piemonte GC: 🇫🇷 Dorian Godon leads"
+    },
+    {
+      "id": "dc192ca3288c",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Gran Piemonte Points: 🇫🇷 Dorian Godon leads"
+    },
+    {
+      "id": "552010330dee",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Gran Piemonte KOM: 🇫🇷 Dorian Godon leads"
+    },
+    {
+      "id": "5118e7f1aa85",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Gran Piemonte Youth: 🇫🇷 Dorian Godon leads"
+    },
+    {
+      "id": "38bdd4b6aa6d",
+      "timestamp": "2026-10-08T17:41:19.140386+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Veneto Classic startlist: Filippo Agostinacchio, Matias Malmberg, Thomas Gloag (+1 more) added"
+    },
     {
       "id": "10a5a682a6b3",
       "timestamp": "2026-10-07T21:43:28.183325+00:00",
@@ -273,20 +315,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "CRO Race Youth: 🇩🇰 Tobias Svarre leads"
-    },
-    {
-      "id": "b407c0a106ce",
-      "timestamp": "2026-09-24T15:38:47.920017+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 3 CRO Race: 🇩🇰 Tobias Svarre wins"
-    },
-    {
-      "id": "70c6ffeec3bd",
-      "timestamp": "2026-09-24T15:38:47.920017+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "CRO Race GC: 🇩🇰 Tobias Svarre leads"
     }
   ]
 }

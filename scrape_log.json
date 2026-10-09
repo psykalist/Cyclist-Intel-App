@@ -1,22 +1,8 @@
 {
-  "run_at": "2026-10-08 23:38 UTC",
-  "run_at_iso": "2026-10-08T21:40:10.269113+00:00",
+  "run_at": "2026-10-09 19:15 UTC",
+  "run_at_iso": "2026-10-09T17:16:15.663486+00:00",
   "mode": "results-only",
-  "races": [
-    {
-      "slug": "gran-piemonte-2026",
-      "name": "Gran Piemonte",
-      "total_stages": 1,
-      "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    }
-  ],
+  "races": [],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

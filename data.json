@@ -1,15 +1,14 @@
 {
-  "scraped_at": "2026-10-09T21:25:16.304099+00:00",
-  "scraped_at_human": "09 Oct 2026 21:25 UTC",
-  "live": [],
-  "upcoming": [
+  "scraped_at": "2026-10-10T16:03:50.679825+00:00",
+  "scraped_at_human": "10 Oct 2026 16:03 UTC",
+  "live": [
     {
       "slug": "il-lombardia",
       "cf_slug": "il-lombardia-2026",
       "name": "Il Lombardia",
       "year": "2026",
       "category": "1.UWT",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-10-10",
       "end_date": "2026-10-10",
       "total_stages": 1,
@@ -1059,8 +1058,490 @@
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         }
+      ],
+      "stages": [
+        {
+          "num": 1,
+          "label": "Stage 1",
+          "result_url": "/race/il-lombardia-2026/result/stage-1",
+          "winner": "Paul Seixas",
+          "winner_flag": "🇫🇷",
+          "winner_nat": "FR",
+          "top10": [
+            {
+              "rank": 1,
+              "name": "Paul Seixas",
+              "rider_url": "/profile/paul-seixas",
+              "team": "Decathlon CMA CGM Team",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "05:49:28"
+            },
+            {
+              "rank": 2,
+              "name": "Enric Mas Nicolau",
+              "rider_url": "/profile/enric-mas-nicolau",
+              "team": "Movistar Team",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 48"
+            },
+            {
+              "rank": 3,
+              "name": "Giulio Ciccone",
+              "rider_url": "/profile/giulio-ciccone",
+              "team": "Lidl - Trek",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 01:05"
+            },
+            {
+              "rank": 4,
+              "name": "Remco Evenepoel",
+              "rider_url": "/profile/remco-evenepoel",
+              "team": "Red Bull - BORA - hansgrohe",
+              "nat_code": "BE",
+              "flag": "🇧🇪",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 5,
+              "name": "Brandon McNulty",
+              "rider_url": "/profile/brandon-mcnulty",
+              "team": "UAE Team Emirates XRG",
+              "nat_code": "US",
+              "flag": "🇺🇸",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 6,
+              "name": "Tom Pidcock",
+              "rider_url": "/profile/tom-pidcock",
+              "team": "Pinarello - Q36.5 Pro Cycling Team",
+              "nat_code": "GB",
+              "flag": "🇬🇧",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 7,
+              "name": "Pello Bilbao Lopez de Armentia",
+              "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+              "team": "Bahrain Victorious",
+              "nat_code": "ES",
+              "flag": "🇪🇸",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 8,
+              "name": "Christian Scaroni",
+              "rider_url": "/profile/christian-scaroni",
+              "team": "XDS Astana Team",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 9,
+              "name": "Filippo Zana",
+              "rider_url": "/profile/filippo-zana",
+              "team": "Soudal - Quick Step",
+              "nat_code": "IT",
+              "flag": "🇮🇹",
+              "time_gap": "+ 01:20"
+            },
+            {
+              "rank": 10,
+              "name": "Mathys Rondel",
+              "rider_url": "/profile/mathys-rondel",
+              "team": "Tudor Pro Cycling Team",
+              "nat_code": "FR",
+              "flag": "🇫🇷",
+              "time_gap": "+ 01:20"
+            }
+          ],
+          "non_finishers": [],
+          "date_str": "Saturday 10 October"
+        }
+      ],
+      "last_stage_winner": "Paul Seixas",
+      "last_stage_winner_flag": "🇫🇷",
+      "last_stage_num": 1,
+      "stages_completed": 1,
+      "gc_leader": "🇫🇷 Paul Seixas",
+      "gc_top10": [
+        {
+          "rank": 1,
+          "name": "Paul Seixas",
+          "rider_url": "/profile/paul-seixas",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "05:49:28"
+        },
+        {
+          "rank": 2,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "Movistar Team",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 48"
+        },
+        {
+          "rank": 3,
+          "name": "Giulio Ciccone",
+          "rider_url": "/profile/giulio-ciccone",
+          "team": "Lidl - Trek",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:05"
+        },
+        {
+          "rank": 4,
+          "name": "Remco Evenepoel",
+          "rider_url": "/profile/remco-evenepoel",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 5,
+          "name": "Brandon McNulty",
+          "rider_url": "/profile/brandon-mcnulty",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 6,
+          "name": "Tom Pidcock",
+          "rider_url": "/profile/tom-pidcock",
+          "team": "Pinarello - Q36.5 Pro Cycling Team",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 7,
+          "name": "Pello Bilbao Lopez de Armentia",
+          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "team": "Bahrain Victorious",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 8,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 9,
+          "name": "Filippo Zana",
+          "rider_url": "/profile/filippo-zana",
+          "team": "Soudal - Quick Step",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 10,
+          "name": "Mathys Rondel",
+          "rider_url": "/profile/mathys-rondel",
+          "team": "Tudor Pro Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:20"
+        }
+      ],
+      "points_leader": "🇫🇷 Paul Seixas",
+      "points_top10": [
+        {
+          "rank": 1,
+          "name": "Paul Seixas",
+          "rider_url": "/profile/paul-seixas",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "05:49:28"
+        },
+        {
+          "rank": 2,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "Movistar Team",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 48"
+        },
+        {
+          "rank": 3,
+          "name": "Giulio Ciccone",
+          "rider_url": "/profile/giulio-ciccone",
+          "team": "Lidl - Trek",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:05"
+        },
+        {
+          "rank": 4,
+          "name": "Remco Evenepoel",
+          "rider_url": "/profile/remco-evenepoel",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 5,
+          "name": "Brandon McNulty",
+          "rider_url": "/profile/brandon-mcnulty",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 6,
+          "name": "Tom Pidcock",
+          "rider_url": "/profile/tom-pidcock",
+          "team": "Pinarello - Q36.5 Pro Cycling Team",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 7,
+          "name": "Pello Bilbao Lopez de Armentia",
+          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "team": "Bahrain Victorious",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 8,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 9,
+          "name": "Filippo Zana",
+          "rider_url": "/profile/filippo-zana",
+          "team": "Soudal - Quick Step",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 10,
+          "name": "Mathys Rondel",
+          "rider_url": "/profile/mathys-rondel",
+          "team": "Tudor Pro Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:20"
+        }
+      ],
+      "kom_leader": "🇫🇷 Paul Seixas",
+      "kom_top10": [
+        {
+          "rank": 1,
+          "name": "Paul Seixas",
+          "rider_url": "/profile/paul-seixas",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "05:49:28"
+        },
+        {
+          "rank": 2,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "Movistar Team",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 48"
+        },
+        {
+          "rank": 3,
+          "name": "Giulio Ciccone",
+          "rider_url": "/profile/giulio-ciccone",
+          "team": "Lidl - Trek",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:05"
+        },
+        {
+          "rank": 4,
+          "name": "Remco Evenepoel",
+          "rider_url": "/profile/remco-evenepoel",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 5,
+          "name": "Brandon McNulty",
+          "rider_url": "/profile/brandon-mcnulty",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 6,
+          "name": "Tom Pidcock",
+          "rider_url": "/profile/tom-pidcock",
+          "team": "Pinarello - Q36.5 Pro Cycling Team",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 7,
+          "name": "Pello Bilbao Lopez de Armentia",
+          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "team": "Bahrain Victorious",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 8,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 9,
+          "name": "Filippo Zana",
+          "rider_url": "/profile/filippo-zana",
+          "team": "Soudal - Quick Step",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 10,
+          "name": "Mathys Rondel",
+          "rider_url": "/profile/mathys-rondel",
+          "team": "Tudor Pro Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:20"
+        }
+      ],
+      "youth_leader": "🇫🇷 Paul Seixas",
+      "youth_top10": [
+        {
+          "rank": 1,
+          "name": "Paul Seixas",
+          "rider_url": "/profile/paul-seixas",
+          "team": "Decathlon CMA CGM Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "05:49:28"
+        },
+        {
+          "rank": 2,
+          "name": "Enric Mas Nicolau",
+          "rider_url": "/profile/enric-mas-nicolau",
+          "team": "Movistar Team",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 48"
+        },
+        {
+          "rank": 3,
+          "name": "Giulio Ciccone",
+          "rider_url": "/profile/giulio-ciccone",
+          "team": "Lidl - Trek",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:05"
+        },
+        {
+          "rank": 4,
+          "name": "Remco Evenepoel",
+          "rider_url": "/profile/remco-evenepoel",
+          "team": "Red Bull - BORA - hansgrohe",
+          "nat_code": "BE",
+          "flag": "🇧🇪",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 5,
+          "name": "Brandon McNulty",
+          "rider_url": "/profile/brandon-mcnulty",
+          "team": "UAE Team Emirates XRG",
+          "nat_code": "US",
+          "flag": "🇺🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 6,
+          "name": "Tom Pidcock",
+          "rider_url": "/profile/tom-pidcock",
+          "team": "Pinarello - Q36.5 Pro Cycling Team",
+          "nat_code": "GB",
+          "flag": "🇬🇧",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 7,
+          "name": "Pello Bilbao Lopez de Armentia",
+          "rider_url": "/profile/pello-bilbao-lopez-de-armentia",
+          "team": "Bahrain Victorious",
+          "nat_code": "ES",
+          "flag": "🇪🇸",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 8,
+          "name": "Christian Scaroni",
+          "rider_url": "/profile/christian-scaroni",
+          "team": "XDS Astana Team",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 9,
+          "name": "Filippo Zana",
+          "rider_url": "/profile/filippo-zana",
+          "team": "Soudal - Quick Step",
+          "nat_code": "IT",
+          "flag": "🇮🇹",
+          "time_gap": "+ 01:20"
+        },
+        {
+          "rank": 10,
+          "name": "Mathys Rondel",
+          "rider_url": "/profile/mathys-rondel",
+          "team": "Tudor Pro Cycling Team",
+          "nat_code": "FR",
+          "flag": "🇫🇷",
+          "time_gap": "+ 01:20"
+        }
       ]
-    },
+    }
+  ],
+  "upcoming": [
     {
       "slug": "tour-of-guangxi",
       "cf_slug": "tour-of-guangxi-2026",
@@ -1299,14 +1780,14 @@
           "team": "Decathlon CMA CGM Team (WT)"
         },
         {
-          "name": "Mattia Agostinacchio",
-          "slug": "mattia-agostinacchio",
-          "nat": "it",
+          "name": "Luke Lamperti",
+          "slug": "luke-lamperti",
+          "nat": "us",
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Vincenzo Albanese",
-          "slug": "vincenzo-albanese",
+          "name": "Mattia Agostinacchio",
+          "slug": "mattia-agostinacchio",
           "nat": "it",
           "team": "EF Education - EasyPost (WT)"
         },
@@ -1314,12 +1795,6 @@
           "name": "Samuele Battistella",
           "slug": "samuele-battistella",
           "nat": "it",
-          "team": "EF Education - EasyPost (WT)"
-        },
-        {
-          "name": "Noah Hobbs",
-          "slug": "noah-hobbs",
-          "nat": "gb",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -1335,9 +1810,15 @@
           "team": "EF Education - EasyPost (WT)"
         },
         {
-          "name": "Harry Sweeny",
-          "slug": "harry-sweeny",
-          "nat": "au",
+          "name": "DEN BERG Marijn Van",
+          "slug": "marijn-van-den-berg",
+          "nat": "nl",
+          "team": "EF Education - EasyPost (WT)"
+        },
+        {
+          "name": "Max Walker",
+          "slug": "max-walker",
+          "nat": "gb",
           "team": "EF Education - EasyPost (WT)"
         },
         {
@@ -1533,12 +2014,6 @@
           "team": "Netcompany INEOS (WT)"
         },
         {
-          "name": "Magnus Sheffield",
-          "slug": "magnus-sheffield",
-          "nat": "us",
-          "team": "Netcompany INEOS (WT)"
-        },
-        {
           "name": "Artem Shmidt",
           "slug": "artem-shmidt",
           "nat": "us",
@@ -1548,6 +2023,12 @@
           "name": "Kévin Vauquelin",
           "slug": "kevin-vauquelin",
           "nat": "fr",
+          "team": "Netcompany INEOS (WT)"
+        },
+        {
+          "name": "Sam Welsford",
+          "slug": "sam-welsford",
+          "nat": "au",
           "team": "Netcompany INEOS (WT)"
         },
         {
@@ -123052,6 +123533,18 @@
       "wins": [
         {
           "year": "2026",
+          "date": "10-10-2026",
+          "race": "Il Lombardia",
+          "cat": "1.UWT"
+        },
+        {
+          "year": "2026",
+          "date": "16-08-2026",
+          "race": "Profwielerronde Etten-Leur",
+          "cat": "CRTP"
+        },
+        {
+          "year": "2026",
           "date": "22-04-2026",
           "race": "La Flèche Wallonne",
           "cat": "1.UWT"
@@ -123257,7 +123750,8 @@
           "bar": 20
         }
       },
-      "fetched_at": "2026-07-06T19:27:38.176521+00:00"
+      "fetched_at": "2026-07-06T19:27:38.176521+00:00",
+      "wins_refreshed_at": "2026-10-10T16:03:50.679661+00:00"
     },
     "romain-gregoire": {
       "slug": "romain-gregoire",
@@ -146416,13 +146910,13 @@
       "name": "Paris - Tours Elite",
       "cf_slug": "paris-tours-elite-2026",
       "start_date": "2026-10-11",
-      "days_away": 2
+      "days_away": 1
     },
     {
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 9
+      "days_away": 8
     }
   ]
 }

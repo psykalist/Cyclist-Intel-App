@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-10-09T21:25:32.294579+00:00",
+  "generated_at": "2026-10-10T16:04:06.523802+00:00",
   "entries": [
+    {
+      "id": "7402c2e79668",
+      "timestamp": "2026-10-10T16:04:06.515552+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Il Lombardia: 🇫🇷 Paul Seixas wins"
+    },
+    {
+      "id": "13468291fea4",
+      "timestamp": "2026-10-10T16:04:06.515552+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Il Lombardia GC: 🇫🇷 Paul Seixas leads"
+    },
+    {
+      "id": "a61200ff5657",
+      "timestamp": "2026-10-10T16:04:06.515552+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Il Lombardia Points: 🇫🇷 Paul Seixas leads"
+    },
+    {
+      "id": "691a152ae624",
+      "timestamp": "2026-10-10T16:04:06.515552+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Il Lombardia KOM: 🇫🇷 Paul Seixas leads"
+    },
+    {
+      "id": "d46e2456065d",
+      "timestamp": "2026-10-10T16:04:06.515552+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Il Lombardia Youth: 🇫🇷 Paul Seixas leads"
+    },
     {
       "id": "1966b64c1cf1",
       "timestamp": "2026-10-08T21:40:27.056958+00:00",
@@ -280,20 +315,6 @@
       "type": "stage_result",
       "icon": "trophy",
       "text": "Stage 6 CRO Race: 🇮🇹 Davide Donati wins"
-    },
-    {
-      "id": "d13eb8328cb1",
-      "timestamp": "2026-09-26T14:50:42.187030+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 5 CRO Race: 🇫🇷 Paul Magnier wins"
-    },
-    {
-      "id": "9ba329684cbd",
-      "timestamp": "2026-09-26T14:50:42.187030+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tre Valli Varesine startlist: Alessandro Fancellu, Alessandro Romele, Damiano Caruso (+3 more) added"
     }
   ]
 }

@@ -1,8 +1,22 @@
 {
-  "run_at": "2026-10-09 23:23 UTC",
-  "run_at_iso": "2026-10-09T21:25:16.303283+00:00",
+  "run_at": "2026-10-10 18:02 UTC",
+  "run_at_iso": "2026-10-10T16:03:49.048819+00:00",
   "mode": "results-only",
-  "races": [],
+  "races": [
+    {
+      "slug": "il-lombardia-2026",
+      "name": "Il Lombardia",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    }
+  ],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

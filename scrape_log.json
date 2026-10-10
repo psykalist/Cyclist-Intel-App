@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-10-10 18:02 UTC",
-  "run_at_iso": "2026-10-10T16:03:49.048819+00:00",
+  "run_at": "2026-10-10 22:22 UTC",
+  "run_at_iso": "2026-10-10T20:23:35.936469+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "il-lombardia-2026",
       "name": "Il Lombardia",
       "total_stages": 1,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": null,
       "expected_rows": 10,

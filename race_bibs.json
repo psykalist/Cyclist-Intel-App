@@ -415,9 +415,9 @@
    "name": "Tour of Guangxi",
    "year": 2026,
    "source": "https://www.procyclingstats.com/race/tour-of-guangxi/2026/startlist",
-   "fetched_at": "2026-10-11",
-   "matched": 133,
-   "parsed": 153,
+   "fetched_at": "2026-10-12",
+   "matched": 130,
+   "parsed": 150,
    "bibs": {
     "paul-double": 1,
     "dries-de-bondt": 2,
@@ -427,10 +427,8 @@
     "rudy-porter": 6,
     "jasha-sutterlin": 7,
     "tobias-bayer": 11,
-    "gal-glivar": 12,
     "kaden-groves": 13,
     "edward-planckaert": 14,
-    "jensen-plowright": 15,
     "jonas-rickaert": 16,
     "oscar-riesebeek": 17,
     "afonso-eulalio": 21,
@@ -463,7 +461,6 @@
     "remy-rochas": 57,
     "juan-ayuso-pesquera": 61,
     "andrea-bagioli": 62,
-    "amanuel-gebreigzabhier": 63,
     "lennard-kamna": 64,
     "soren-kragh-andersen": 65,
     "mathias-norsgaard-jorgensen": 66,
@@ -742,5 +739,5 @@
    }
   }
  },
- "generated_at": "2026-10-11"
+ "generated_at": "2026-10-12"
 }

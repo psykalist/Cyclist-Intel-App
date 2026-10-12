@@ -1,15 +1,14 @@
 {
-  "scraped_at": "2026-10-12T20:04:21.647329+00:00",
-  "scraped_at_human": "12 Oct 2026 20:04 UTC",
-  "live": [],
-  "upcoming": [
+  "scraped_at": "2026-10-12T23:23:16.682577+00:00",
+  "scraped_at_human": "12 Oct 2026 23:23 UTC",
+  "live": [
     {
       "slug": "tour-of-guangxi",
       "cf_slug": "tour-of-guangxi-2026",
       "name": "Tour of Guangxi",
       "year": "2026",
       "category": "2.UWT",
-      "status": "upcoming",
+      "status": "live",
       "start_date": "2026-10-13",
       "end_date": "2026-10-18",
       "total_stages": 6,
@@ -23,7 +22,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Tuesday 13 October"
         },
         {
           "num": 2,
@@ -32,7 +32,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Wednesday 14 October"
         },
         {
           "num": 3,
@@ -41,7 +42,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Thursday 15 October"
         },
         {
           "num": 4,
@@ -50,7 +52,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Friday 16 October"
         },
         {
           "num": 5,
@@ -59,7 +62,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Saturday 17 October"
         },
         {
           "num": 6,
@@ -68,7 +72,8 @@
           "winner": null,
           "winner_flag": "",
           "winner_nat": "",
-          "top10": []
+          "top10": [],
+          "date_str": "Sunday 18 October"
         }
       ],
       "startlist": [
@@ -979,7 +984,9 @@
           "team": "China (NAT)"
         }
       ]
-    },
+    }
+  ],
+  "upcoming": [
     {
       "slug": "giro-del-veneto",
       "cf_slug": "giro-del-veneto-2026",
@@ -148395,7 +148402,7 @@
       "name": "Utsunomiya Japan Cup Road Race",
       "cf_slug": "utsunomiya-japan-cup-road-race-2026",
       "start_date": "2026-10-18",
-      "days_away": 6
+      "days_away": 5
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-13T17:53:23.207971+00:00",
-  "scraped_at_human": "13 Oct 2026 17:53 UTC",
+  "scraped_at": "2026-10-13T21:39:58.164539+00:00",
+  "scraped_at_human": "13 Oct 2026 21:39 UTC",
   "live": [
     {
       "slug": "tour-of-guangxi",
@@ -2131,32 +2131,8 @@
       "official_url": "https://cyclingflash.com/race/veneto-classic-2026",
       "startlist": [
         {
-          "name": "Germán Darío Gómez",
-          "slug": "german-dario-gomez",
-          "nat": "co",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Davide Bais",
-          "slug": "davide-bais",
-          "nat": "it",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Andrea Mifsud",
-          "slug": "andrea-mifsud",
-          "nat": "mt",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Dario Giuliano",
-          "slug": "dario-giuliano",
-          "nat": "fr",
-          "team": "Team Polti VisitMalta (PRT)"
-        },
-        {
-          "name": "Andrea Pietrobon",
-          "slug": "andrea-pietrobon",
+          "name": "Mattia Bais",
+          "slug": "mattia-bais",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
@@ -2167,14 +2143,38 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Mattia Bais",
-          "slug": "mattia-bais",
+          "name": "Andrea Pietrobon",
+          "slug": "andrea-pietrobon",
           "nat": "it",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Matteo Scalco",
-          "slug": "matteo-scalco",
+          "name": "Dario Giuliano",
+          "slug": "dario-giuliano",
+          "nat": "fr",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Germán Darío Gómez",
+          "slug": "german-dario-gomez",
+          "nat": "co",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Andrea Mifsud",
+          "slug": "andrea-mifsud",
+          "nat": "mt",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Davide Bais",
+          "slug": "davide-bais",
+          "nat": "it",
+          "team": "Team Polti VisitMalta (PRT)"
+        },
+        {
+          "name": "Davide Toneatti",
+          "slug": "davide-toneatti",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -2185,8 +2185,8 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Davide Toneatti",
-          "slug": "davide-toneatti",
+          "name": "Matteo Scalco",
+          "slug": "matteo-scalco",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -2197,8 +2197,8 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Simone Velasco",
-          "slug": "simone-velasco",
+          "name": "Christian Scaroni",
+          "slug": "christian-scaroni",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
@@ -2209,26 +2209,20 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Christian Scaroni",
-          "slug": "christian-scaroni",
+          "name": "Simone Velasco",
+          "slug": "simone-velasco",
           "nat": "it",
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Brieuc Rolland",
-          "slug": "brieuc-rolland",
+          "name": "Clément Berthet",
+          "slug": "clement-berthet",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
         {
-          "name": "Quentin Pacher",
-          "slug": "quentin-pacher",
-          "nat": "fr",
-          "team": "Groupama - FDJ United (WT)"
-        },
-        {
-          "name": "Baptiste Grégoire",
-          "slug": "baptiste-gregoire",
+          "name": "Yann Dubois",
+          "slug": "yann-dubois",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
@@ -2239,14 +2233,20 @@
           "team": "Groupama - FDJ United (WT)"
         },
         {
-          "name": "Yann Dubois",
-          "slug": "yann-dubois",
+          "name": "Baptiste Grégoire",
+          "slug": "baptiste-gregoire",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
         {
-          "name": "Clément Berthet",
-          "slug": "clement-berthet",
+          "name": "Quentin Pacher",
+          "slug": "quentin-pacher",
+          "nat": "fr",
+          "team": "Groupama - FDJ United (WT)"
+        },
+        {
+          "name": "Brieuc Rolland",
+          "slug": "brieuc-rolland",
           "nat": "fr",
           "team": "Groupama - FDJ United (WT)"
         },
@@ -2257,10 +2257,88 @@
           "team": "Groupama - FDJ United (WT)"
         },
         {
+          "name": "Alessandro Fancellu",
+          "slug": "alessandro-fancellu",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Fausto Masnada",
+          "slug": "fausto-masnada",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Alessandro Verre",
+          "slug": "alessandro-verre",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Luca Cretti",
+          "slug": "luca-cretti",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Márk Valent",
+          "slug": "mark-valent",
+          "nat": "hu",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
+          "name": "Florian Samuel Kajamini",
+          "slug": "florian-samuel-kajamini",
+          "nat": "it",
+          "team": "MBH Bank CSB Telecom Fort (PRT)"
+        },
+        {
           "name": "Anthon Charmig",
           "slug": "anthon-charmig",
           "nat": "dk",
           "team": "Uno-X Mobility (WT)"
+        },
+        {
+          "name": "Martin Santiago Herreño",
+          "slug": "martin-santiago-herreno",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Luca Covili",
+          "slug": "luca-covili",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Edward Cruz",
+          "slug": "edward-martinez-cruz",
+          "nat": "co",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Martin Marcellusi",
+          "slug": "martin-marcellusi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Vicente Rojas",
+          "slug": "vicente-rojas",
+          "nat": "cl",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Alex Tolio",
+          "slug": "alex-tolio",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
+        },
+        {
+          "name": "Filippo Turconi",
+          "slug": "filippo-turconi",
+          "nat": "it",
+          "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
           "name": "Moritz Mauss",
@@ -2269,14 +2347,20 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Tim Wellens",
-          "slug": "tim-wellens",
-          "nat": "be",
+          "name": "Brandon Mcnulty",
+          "slug": "brandon-mcnulty",
+          "nat": "us",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Pavel Sivakov",
-          "slug": "pavel-sivakov",
+          "name": "Filippo Baroncini",
+          "slug": "filippo-baroncini",
+          "nat": "it",
+          "team": "UAE Team Emirates - XRG (WT)"
+        },
+        {
+          "name": "Benoît Cosnefroy",
+          "slug": "benoit-cosnefroy",
           "nat": "fr",
           "team": "UAE Team Emirates - XRG (WT)"
         },
@@ -2287,21 +2371,15 @@
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Benoît Cosnefroy",
-          "slug": "benoit-cosnefroy",
+          "name": "Pavel Sivakov",
+          "slug": "pavel-sivakov",
           "nat": "fr",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {
-          "name": "Filippo Baroncini",
-          "slug": "filippo-baroncini",
-          "nat": "it",
-          "team": "UAE Team Emirates - XRG (WT)"
-        },
-        {
-          "name": "Brandon Mcnulty",
-          "slug": "brandon-mcnulty",
-          "nat": "us",
+          "name": "Tim Wellens",
+          "slug": "tim-wellens",
+          "nat": "be",
           "team": "UAE Team Emirates - XRG (WT)"
         },
         {

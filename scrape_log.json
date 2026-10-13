@@ -1,15 +1,15 @@
 {
-  "run_at": "2026-10-13 19:52 UTC",
-  "run_at_iso": "2026-10-13T17:53:21.687328+00:00",
+  "run_at": "2026-10-13 23:38 UTC",
+  "run_at_iso": "2026-10-13T21:39:58.163619+00:00",
   "mode": "results-only",
   "races": [
     {
       "slug": "tour-of-guangxi-2026",
       "name": "Tour of Guangxi",
       "total_stages": 6,
-      "stages_completed_before": 0,
+      "stages_completed_before": 1,
       "stages_completed_after": 1,
-      "new_stages_found": 1,
+      "new_stages_found": 0,
       "cancelled_stages": [],
       "probe": {
         "stage_num": 2,
@@ -19,8 +19,8 @@
         "matched_result_table": false,
         "overdue": false,
         "stall_since": "2026-10-13 19:52 UTC",
-        "stall_attempts": 1,
-        "stall_hours": -2.0,
+        "stall_attempts": 2,
+        "stall_hours": 1.8,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

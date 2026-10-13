@@ -1,6 +1,55 @@
 {
-  "generated_at": "2026-10-12T23:23:25.990603+00:00",
+  "generated_at": "2026-10-13T17:53:33.134530+00:00",
   "entries": [
+    {
+      "id": "26c279be807f",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Tour of Guangxi: 🇫🇷 Paul Magnier wins"
+    },
+    {
+      "id": "f9ac16d65bab",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Guangxi GC: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "24c2ef4237bd",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Guangxi Points: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "cd13a7927dcb",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Guangxi KOM: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "f03ef7f004ad",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Tour of Guangxi Youth: 🇫🇷 Paul Magnier leads"
+    },
+    {
+      "id": "d45cd607c899",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Giro del Veneto startlist: Andrea Mifsud, Luca Covili, Nicolo' Pettiti (+1 more) added"
+    },
+    {
+      "id": "186b001f8b1a",
+      "timestamp": "2026-10-13T17:53:33.126549+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Veneto Classic startlist: Andrea Mifsud, Andrea Pietrobon, Baptiste Grégoire (+17 more) added"
+    },
     {
       "id": "088339992389",
       "timestamp": "2026-10-12T20:04:31.019549+00:00",
@@ -350,13 +399,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Il Lombardia startlist: Damiano Caruso, EETVELT Lennert Van, Juan Ayuso (+4 more) added"
-    },
-    {
-      "id": "45a83ffa0982",
-      "timestamp": "2026-09-29T16:43:55.933014+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tre Valli Varesine startlist: AFONSO Clément Braz, Aaron Dockx, Afonso Eulálio (+166 more) added"
     }
   ]
 }

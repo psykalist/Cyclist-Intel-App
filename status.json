@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-10-15T01:59:21.035677+00:00",
+  "updated_at": "2026-10-15T10:25:32.833687+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
   "warnings": [
+    "data.json is 14h old (a live race is running) -- consider running scraper.py",
     "scrape_log.json: INCOMPLETE kom_top10 on tour-of-guangxi-2026 -- pulled 3 of 10 expected rows."
   ],
   "repairs": [],
@@ -15,7 +16,7 @@
     "rider_profiles": 2731,
     "live_races": 2,
     "scraped_at": "2026-10-14T20:23:30.562523+00:00",
-    "data_age_hours": 5.6,
+    "data_age_hours": 14.0,
     "index_html_bytes": 330574,
     "scrape_log_run_at": "2026-10-14 22:22 UTC",
     "rider_roster": 1437,

@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-10-14T20:23:38.609049+00:00",
+  "generated_at": "2026-10-15T15:26:20.258858+00:00",
   "entries": [
+    {
+      "id": "632a89bffa44",
+      "timestamp": "2026-10-15T15:26:20.252081+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 3 Tour of Guangxi: 🇧🇪 Milan Fretin wins"
+    },
+    {
+      "id": "3d3fe9afa656",
+      "timestamp": "2026-10-15T15:26:20.252081+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Guangxi GC: 🇳🇱 Frits Biesterbos leads"
+    },
+    {
+      "id": "1c4ae40caede",
+      "timestamp": "2026-10-15T15:26:20.252081+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Tour of Guangxi Points: 🇳🇱 Frits Biesterbos leads"
+    },
+    {
+      "id": "6b39c6dd7074",
+      "timestamp": "2026-10-15T15:26:20.252081+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Guangxi KOM: 🇨🇳 Ruidong Wang leads"
+    },
+    {
+      "id": "7861f77f3c6c",
+      "timestamp": "2026-10-15T15:26:20.252081+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Tour of Guangxi Youth: 🇳🇱 Frits Biesterbos leads"
+    },
     {
       "id": "e05bec36793a",
       "timestamp": "2026-10-14T15:40:03.341781+00:00",

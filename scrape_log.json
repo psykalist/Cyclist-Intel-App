@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-14 22:22 UTC",
-  "run_at_iso": "2026-10-14T20:23:30.561743+00:00",
+  "run_at": "2026-10-15 17:24 UTC",
+  "run_at_iso": "2026-10-15T15:26:11.949084+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,19 +8,19 @@
       "name": "Tour of Guangxi",
       "total_stages": 6,
       "stages_completed_before": 2,
-      "stages_completed_after": 2,
-      "new_stages_found": 0,
+      "stages_completed_after": 3,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 3,
-        "url": "https://cyclingflash.com/race/tour-of-guangxi-2026/result/stage-3",
+        "stage_num": 4,
+        "url": "https://cyclingflash.com/race/tour-of-guangxi-2026/result/stage-4",
         "fetch_ok": true,
-        "response_bytes": 290968,
+        "response_bytes": 293619,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-10-14 17:38 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 2.7,
+        "stall_since": "2026-10-15 17:24 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,
@@ -28,22 +28,9 @@
       "incomplete_classifications": [
         {
           "cls": "kom_top10",
-          "rows": 3
+          "rows": 6
         }
       ]
-    },
-    {
-      "slug": "giro-del-veneto-2026",
-      "name": "Giro del Veneto",
-      "total_stages": 1,
-      "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
     }
   ],
   "has_fetch_errors": false,

@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-10-15T20:08:32.409799+00:00",
+  "generated_at": "2026-10-16T15:06:02.882990+00:00",
   "entries": [
+    {
+      "id": "6b21d875a66b",
+      "timestamp": "2026-10-16T15:06:02.876387+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 4 Tour of Guangxi: 🇫🇷 Paul Magnier wins"
+    },
+    {
+      "id": "dcb7f23006eb",
+      "timestamp": "2026-10-16T15:06:02.876387+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Tour of Guangxi KOM: 🇫🇷 Baptiste Veistroffer leads"
+    },
+    {
+      "id": "de254ed3c800",
+      "timestamp": "2026-10-16T15:06:02.876387+00:00",
+      "type": "startlist",
+      "icon": "group",
+      "text": "Veneto Classic startlist: Aivaras Mikutis, Alessandro Avi, Alessandro Covi (+87 more) added"
+    },
     {
       "id": "632a89bffa44",
       "timestamp": "2026-10-15T15:26:20.252081+00:00",

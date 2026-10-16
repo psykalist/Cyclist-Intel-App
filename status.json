@@ -1,26 +1,23 @@
 {
-  "updated_at": "2026-10-16T10:12:51.537931+00:00",
+  "updated_at": "2026-10-16T15:06:41.769019+00:00",
   "source": "ci",
-  "overall": "warning",
+  "overall": "ok",
   "errors": [],
-  "warnings": [
-    "data.json is 14h old (a live race is running) -- consider running scraper.py",
-    "scrape_log.json: INCOMPLETE kom_top10 on tour-of-guangxi-2026 -- pulled 6 of 10 expected rows."
-  ],
+  "warnings": [],
   "repairs": [],
   "data": {
-    "data_size_kb": 4442,
+    "data_size_kb": 4461,
     "data_upcoming": 2,
     "data_recent": 94,
     "data_teams": 33,
     "rider_profiles": 2731,
     "live_races": 1,
-    "scraped_at": "2026-10-15T20:08:25.718574+00:00",
-    "data_age_hours": 14.1,
+    "scraped_at": "2026-10-16T15:05:56.230567+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-10-15 22:07 UTC",
-    "rider_roster": 1437,
-    "rider_missing_profile": 129,
-    "rider_missing_palmares": 1004
+    "scrape_log_run_at": "2026-10-16 17:04 UTC",
+    "rider_roster": 1442,
+    "rider_missing_profile": 134,
+    "rider_missing_palmares": 1009
   }
 }

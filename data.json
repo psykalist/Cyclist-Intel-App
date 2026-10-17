@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-10-17T14:01:27.617028+00:00",
-  "scraped_at_human": "17 Oct 2026 14:01 UTC",
+  "scraped_at": "2026-10-17T18:57:58.295154+00:00",
+  "scraped_at_human": "17 Oct 2026 18:57 UTC",
   "live": [
     {
       "slug": "tour-of-guangxi",
@@ -2183,12 +2183,6 @@
           "team": "XDS Astana Team (WT)"
         },
         {
-          "name": "Davide Toneatti",
-          "slug": "davide-toneatti",
-          "nat": "it",
-          "team": "XDS Astana Team (WT)"
-        },
-        {
           "name": "Diego Ulissi",
           "slug": "diego-ulissi",
           "nat": "it",
@@ -2222,12 +2216,6 @@
           "name": "Martin Santiago Herreño",
           "slug": "martin-santiago-herreno",
           "nat": "co",
-          "team": "Bardiani CSF 7 Saber (PRT)"
-        },
-        {
-          "name": "Andrea Montagner",
-          "slug": "andrea-montagner",
-          "nat": "it",
           "team": "Bardiani CSF 7 Saber (PRT)"
         },
         {
@@ -2381,12 +2369,6 @@
           "team": "MBH Bank CSB Telecom Fort (PRT)"
         },
         {
-          "name": "Cesare Chesini",
-          "slug": "cesare-chesini",
-          "nat": "it",
-          "team": "MBH Bank CSB Telecom Fort (PRT)"
-        },
-        {
           "name": "Luca Cretti",
           "slug": "luca-cretti",
           "nat": "it",
@@ -2513,9 +2495,9 @@
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
-          "name": "Dario Igor Belletta",
-          "slug": "dario-igor-belletta",
-          "nat": "it",
+          "name": "Andrea Mifsud",
+          "slug": "andrea-mifsud",
+          "nat": "mt",
           "team": "Team Polti VisitMalta (PRT)"
         },
         {
@@ -2546,12 +2528,6 @@
           "name": "Marc Hirschi",
           "slug": "marc-hirschi",
           "nat": "ch",
-          "team": "Tudor Pro Cycling Team (PRT)"
-        },
-        {
-          "name": "Matteo Trentin",
-          "slug": "matteo-trentin",
-          "nat": "it",
           "team": "Tudor Pro Cycling Team (PRT)"
         },
         {
@@ -2729,8 +2705,8 @@
           "team": "Campana Imballagi - Morbiato - Trentino (CT)"
         },
         {
-          "name": "Enrico Simoni",
-          "slug": "enrico-simoni",
+          "name": "Christian Piffer",
+          "slug": "christian-piffer",
           "nat": "it",
           "team": "Campana Imballagi - Morbiato - Trentino (CT)"
         },

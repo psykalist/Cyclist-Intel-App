@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-16 21:45 UTC",
-  "run_at_iso": "2026-10-16T19:46:57.345263+00:00",
+  "run_at": "2026-10-17 15:59 UTC",
+  "run_at_iso": "2026-10-17T14:01:26.072913+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,19 +8,19 @@
       "name": "Tour of Guangxi",
       "total_stages": 6,
       "stages_completed_before": 4,
-      "stages_completed_after": 4,
-      "new_stages_found": 0,
+      "stages_completed_after": 5,
+      "new_stages_found": 1,
       "cancelled_stages": [],
       "probe": {
-        "stage_num": 5,
-        "url": "https://cyclingflash.com/race/tour-of-guangxi-2026/result/stage-5",
+        "stage_num": 6,
+        "url": "https://cyclingflash.com/race/tour-of-guangxi-2026/result/stage-6",
         "fetch_ok": true,
-        "response_bytes": 301056,
+        "response_bytes": 297245,
         "matched_result_table": false,
         "overdue": false,
-        "stall_since": "2026-10-16 17:04 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 2.7,
+        "stall_since": "2026-10-17 15:59 UTC",
+        "stall_attempts": 1,
+        "stall_hours": -2.0,
         "possible_parser_drift": false
       },
       "expected_rows": 10,

@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-10-16T19:47:03.937886+00:00",
+  "generated_at": "2026-10-17T14:01:34.715315+00:00",
   "entries": [
+    {
+      "id": "7b982e8ccbe7",
+      "timestamp": "2026-10-17T14:01:34.705825+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 5 Tour of Guangxi: 🇧🇪 Milan Fretin wins"
+    },
     {
       "id": "6b21d875a66b",
       "timestamp": "2026-10-16T15:06:02.876387+00:00",
@@ -497,13 +504,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Tre Valli Varesine startlist: Matthew Riccitello, Paul Lapeira, Rémi Arsac (+1 more) added"
-    },
-    {
-      "id": "8e5df829d217",
-      "timestamp": "2026-10-02T21:07:29.210391+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Gran Piemonte startlist: Davide Donati added"
     }
   ]
 }

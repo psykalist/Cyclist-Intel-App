@@ -1,6 +1,62 @@
 {
-  "generated_at": "2026-10-17T18:58:04.885756+00:00",
+  "generated_at": "2026-10-18T14:14:18.189097+00:00",
   "entries": [
+    {
+      "id": "6a18e93c5d27",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 6 Tour of Guangxi: 🇧🇪 Jarno Widar wins"
+    },
+    {
+      "id": "7887c9d0b6dd",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Tour of Guangxi GC: 🇧🇪 Jarno Widar leads"
+    },
+    {
+      "id": "2a22fd478b34",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Tour of Guangxi Youth: 🇧🇪 Jarno Widar leads"
+    },
+    {
+      "id": "6fb895b2be60",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Utsunomiya Japan Cup Road Race: 🇺🇸 Quinn Simmons wins"
+    },
+    {
+      "id": "8a5f04bbd6d1",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Utsunomiya Japan Cup Road Race GC: 🇺🇸 Quinn Simmons leads"
+    },
+    {
+      "id": "d0bc89a25eaa",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Utsunomiya Japan Cup Road Race Points: 🇺🇸 Quinn Simmons leads"
+    },
+    {
+      "id": "65be3dec3577",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Utsunomiya Japan Cup Road Race KOM: 🇺🇸 Quinn Simmons leads"
+    },
+    {
+      "id": "537853e6a487",
+      "timestamp": "2026-10-18T14:14:18.180464+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Utsunomiya Japan Cup Road Race Youth: 🇺🇸 Quinn Simmons leads"
+    },
     {
       "id": "34d2680cf53f",
       "timestamp": "2026-10-17T18:58:04.879351+00:00",
@@ -427,41 +483,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Giro del Veneto startlist: Dario Igor Belletta, Filippo Agostinacchio, Matias Malmberg (+2 more) added"
-    },
-    {
-      "id": "647075da5d62",
-      "timestamp": "2026-10-03T19:38:23.851767+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Sparkassen Münsterland Giro: 🇳🇱 Olav Kooij wins"
-    },
-    {
-      "id": "f2c33f323079",
-      "timestamp": "2026-10-03T19:38:23.851767+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Sparkassen Münsterland Giro GC: 🇳🇱 Olav Kooij leads"
-    },
-    {
-      "id": "e6e65eebce74",
-      "timestamp": "2026-10-03T19:38:23.851767+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Sparkassen Münsterland Giro Points: 🇳🇱 Olav Kooij leads"
-    },
-    {
-      "id": "d3a2053755b9",
-      "timestamp": "2026-10-03T19:38:23.851767+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Sparkassen Münsterland Giro KOM: 🇳🇱 Olav Kooij leads"
-    },
-    {
-      "id": "3e2f18040c29",
-      "timestamp": "2026-10-03T19:38:23.851767+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Sparkassen Münsterland Giro Youth: 🇳🇱 Olav Kooij leads"
     }
   ]
 }

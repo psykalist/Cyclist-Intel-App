@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-17 20:56 UTC",
-  "run_at_iso": "2026-10-17T18:57:58.294256+00:00",
+  "run_at": "2026-10-18 16:12 UTC",
+  "run_at_iso": "2026-10-18T14:14:08.475343+00:00",
   "mode": "results-only",
   "races": [
     {
@@ -8,21 +8,36 @@
       "name": "Tour of Guangxi",
       "total_stages": 6,
       "stages_completed_before": 5,
-      "stages_completed_after": 5,
-      "new_stages_found": 0,
+      "stages_completed_after": 6,
+      "new_stages_found": 1,
       "cancelled_stages": [],
-      "probe": {
-        "stage_num": 6,
-        "url": "https://cyclingflash.com/race/tour-of-guangxi-2026/result/stage-6",
-        "fetch_ok": true,
-        "response_bytes": 297245,
-        "matched_result_table": false,
-        "overdue": false,
-        "stall_since": "2026-10-17 15:59 UTC",
-        "stall_attempts": 2,
-        "stall_hours": 3.0,
-        "possible_parser_drift": false
-      },
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "utsunomiya-japan-cup-road-race-2026",
+      "name": "Utsunomiya Japan Cup Road Race",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
+      "expected_rows": 10,
+      "incomplete_results": [],
+      "incomplete_classifications": []
+    },
+    {
+      "slug": "veneto-classic-2026",
+      "name": "Veneto Classic",
+      "total_stages": 1,
+      "stages_completed_before": 0,
+      "stages_completed_after": 1,
+      "new_stages_found": 1,
+      "cancelled_stages": [],
+      "probe": null,
       "expected_rows": 10,
       "incomplete_results": [],
       "incomplete_classifications": []

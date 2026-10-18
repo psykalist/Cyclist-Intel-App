@@ -1,6 +1,41 @@
 {
-  "generated_at": "2026-10-18T14:14:18.189097+00:00",
+  "generated_at": "2026-10-18T19:06:42.441661+00:00",
   "entries": [
+    {
+      "id": "2310fae28012",
+      "timestamp": "2026-10-18T19:06:42.434598+00:00",
+      "type": "stage_result",
+      "icon": "trophy",
+      "text": "Stage 1 Veneto Classic: 🇺🇸 Brandon McNulty wins"
+    },
+    {
+      "id": "abb5ef036db6",
+      "timestamp": "2026-10-18T19:06:42.434598+00:00",
+      "type": "leader_change",
+      "icon": "yellow",
+      "text": "Veneto Classic GC: 🇺🇸 Brandon McNulty leads"
+    },
+    {
+      "id": "f26725b8a4ad",
+      "timestamp": "2026-10-18T19:06:42.434598+00:00",
+      "type": "leader_change",
+      "icon": "green",
+      "text": "Veneto Classic Points: 🇺🇸 Brandon McNulty leads"
+    },
+    {
+      "id": "cea43dedee57",
+      "timestamp": "2026-10-18T19:06:42.434598+00:00",
+      "type": "leader_change",
+      "icon": "red",
+      "text": "Veneto Classic KOM: 🇺🇸 Brandon McNulty leads"
+    },
+    {
+      "id": "8e812a8611a5",
+      "timestamp": "2026-10-18T19:06:42.434598+00:00",
+      "type": "leader_change",
+      "icon": "white",
+      "text": "Veneto Classic Youth: 🇺🇸 Brandon McNulty leads"
+    },
     {
       "id": "6a18e93c5d27",
       "timestamp": "2026-10-18T14:14:18.180464+00:00",
@@ -469,20 +504,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Tre Valli Varesine startlist: Amanuel Ghebreigzabhier, Anders Skaarseth, Andrea Piras (+43 more) added"
-    },
-    {
-      "id": "9d2d33b9f55e",
-      "timestamp": "2026-10-04T15:37:04.173178+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tre Valli Varesine startlist: Alex Aranburu, Louis Rouland, Luis Alberto Lajarin added"
-    },
-    {
-      "id": "5892c6c6268f",
-      "timestamp": "2026-10-04T15:37:04.173178+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Giro del Veneto startlist: Dario Igor Belletta, Filippo Agostinacchio, Matias Malmberg (+2 more) added"
     }
   ]
 }

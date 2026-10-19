@@ -1,48 +1,8 @@
 {
-  "run_at": "2026-10-18 21:05 UTC",
-  "run_at_iso": "2026-10-18T19:06:34.169617+00:00",
+  "run_at": "2026-10-19 19:16 UTC",
+  "run_at_iso": "2026-10-19T17:17:42.512760+00:00",
   "mode": "results-only",
-  "races": [
-    {
-      "slug": "tour-of-guangxi-2026",
-      "name": "Tour of Guangxi",
-      "total_stages": 6,
-      "stages_completed_before": 6,
-      "stages_completed_after": 6,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "utsunomiya-japan-cup-road-race-2026",
-      "name": "Utsunomiya Japan Cup Road Race",
-      "total_stages": 1,
-      "stages_completed_before": 1,
-      "stages_completed_after": 1,
-      "new_stages_found": 0,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    },
-    {
-      "slug": "veneto-classic-2026",
-      "name": "Veneto Classic",
-      "total_stages": 1,
-      "stages_completed_before": 0,
-      "stages_completed_after": 1,
-      "new_stages_found": 1,
-      "cancelled_stages": [],
-      "probe": null,
-      "expected_rows": 10,
-      "incomplete_results": [],
-      "incomplete_classifications": []
-    }
-  ],
+  "races": [],
   "has_fetch_errors": false,
   "has_possible_parser_drift": false,
   "has_overdue_stages": false,

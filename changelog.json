@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T17:17:43.172257+00:00",
+  "generated_at": "2026-10-19T21:18:54.085009+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -490,20 +490,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Gran Piemonte startlist: Aaron Dockx, Adrián Benito, Alan Hatherly (+159 more) added"
-    },
-    {
-      "id": "73b7da0e309b",
-      "timestamp": "2026-10-05T19:28:03.722516+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Il Lombardia startlist: Giulio Ciccone added"
-    },
-    {
-      "id": "2876497f58fe",
-      "timestamp": "2026-10-05T19:28:03.722516+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Tre Valli Varesine startlist: Amanuel Ghebreigzabhier, Anders Skaarseth, Andrea Piras (+43 more) added"
     }
   ]
 }

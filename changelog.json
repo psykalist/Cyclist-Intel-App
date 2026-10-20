@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:30:43.984711+00:00",
+  "generated_at": "2026-10-20T20:14:03.063520+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -448,48 +448,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Il Lombardia startlist: Ben Healy added"
-    },
-    {
-      "id": "c9712cc1a835",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Tre Valli Varesine: 🇧🇪 Jarno Widar wins"
-    },
-    {
-      "id": "dab3c424ca87",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tre Valli Varesine GC: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "bde1bb567c83",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Tre Valli Varesine Points: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "5c2c31bc52a2",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tre Valli Varesine KOM: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "3abfbe63459b",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tre Valli Varesine Youth: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "a5ecf353617d",
-      "timestamp": "2026-10-06T17:01:38.286747+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Gran Piemonte startlist: Aaron Dockx, Adrián Benito, Alan Hatherly (+159 more) added"
     }
   ]
 }

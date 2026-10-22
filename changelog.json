@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T15:46:42.486176+00:00",
+  "generated_at": "2026-10-22T15:46:08.814497+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -420,27 +420,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Veneto Classic startlist: Filippo Agostinacchio, Matias Malmberg, Thomas Gloag (+1 more) added"
-    },
-    {
-      "id": "10a5a682a6b3",
-      "timestamp": "2026-10-07T21:43:28.183325+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Il Lombardia startlist: Ion Izagirre added"
-    },
-    {
-      "id": "fdc30629d771",
-      "timestamp": "2026-10-07T17:38:03.244652+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Il Lombardia startlist: Aaron Dockx, Adam Yates, Alan Hatherly (+147 more) added"
-    },
-    {
-      "id": "5ff5a7f5418e",
-      "timestamp": "2026-10-07T17:38:03.244652+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Gran Piemonte startlist: Afonso Eulálio, Alessandro Covi, Alessandro Fancellu (+17 more) added"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T20:22:15.293470+00:00",
+  "generated_at": "2026-10-23T15:33:58.154333+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -371,13 +371,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Il Lombardia Youth: 🇫🇷 Paul Seixas leads"
-    },
-    {
-      "id": "1966b64c1cf1",
-      "timestamp": "2026-10-08T21:40:27.056958+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist: Anthon Charmig added"
     }
   ]
 }

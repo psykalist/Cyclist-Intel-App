@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T14:12:17.029154+00:00",
+  "generated_at": "2026-10-24T19:11:12.720392+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -336,41 +336,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Giro del Veneto startlist: Clément Izquierdo, Dylan Teuns, Edoardo Zamperini (+3 more) added"
-    },
-    {
-      "id": "7402c2e79668",
-      "timestamp": "2026-10-10T16:04:06.515552+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Il Lombardia: 🇫🇷 Paul Seixas wins"
-    },
-    {
-      "id": "13468291fea4",
-      "timestamp": "2026-10-10T16:04:06.515552+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Il Lombardia GC: 🇫🇷 Paul Seixas leads"
-    },
-    {
-      "id": "a61200ff5657",
-      "timestamp": "2026-10-10T16:04:06.515552+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Il Lombardia Points: 🇫🇷 Paul Seixas leads"
-    },
-    {
-      "id": "691a152ae624",
-      "timestamp": "2026-10-10T16:04:06.515552+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Il Lombardia KOM: 🇫🇷 Paul Seixas leads"
-    },
-    {
-      "id": "d46e2456065d",
-      "timestamp": "2026-10-10T16:04:06.515552+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Il Lombardia Youth: 🇫🇷 Paul Seixas leads"
     }
   ]
 }

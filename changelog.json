@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:43:18.386953+00:00",
+  "generated_at": "2026-10-25T19:24:21.923916+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -294,48 +294,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Veneto Classic startlist: António Morgado, Benoît Cosnefroy, Brandon Mcnulty (+4 more) added"
-    },
-    {
-      "id": "b889a4415f4d",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Paris - Tours Elite: 🇳🇴 Per Strand Hagenes wins"
-    },
-    {
-      "id": "ba1686f4d375",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Paris - Tours Elite GC: 🇳🇴 Per Strand Hagenes leads"
-    },
-    {
-      "id": "51c986ec87fb",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Paris - Tours Elite Points: 🇳🇴 Per Strand Hagenes leads"
-    },
-    {
-      "id": "73b46edbeb24",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Paris - Tours Elite KOM: 🇳🇴 Per Strand Hagenes leads"
-    },
-    {
-      "id": "88ed765de164",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Paris - Tours Elite Youth: 🇳🇴 Per Strand Hagenes leads"
-    },
-    {
-      "id": "bca39b443cc4",
-      "timestamp": "2026-10-11T16:29:39.938152+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Giro del Veneto startlist: Clément Izquierdo, Dylan Teuns, Edoardo Zamperini (+3 more) added"
     }
   ]
 }

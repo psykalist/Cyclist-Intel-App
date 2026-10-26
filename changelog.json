@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T17:05:35.314188+00:00",
+  "generated_at": "2026-10-26T21:17:01.371451+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -280,20 +280,6 @@
       "type": "startlist",
       "icon": "group",
       "text": "Veneto Classic startlist: Andrea Mifsud, Andrea Pietrobon, Baptiste Grégoire (+17 more) added"
-    },
-    {
-      "id": "088339992389",
-      "timestamp": "2026-10-12T20:04:31.019549+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Giro del Veneto startlist: Aivaras Mikutis, Alessandro Fancellu, Alessandro Milesi (+91 more) added"
-    },
-    {
-      "id": "d417b0212187",
-      "timestamp": "2026-10-12T20:04:31.019549+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist: António Morgado, Benoît Cosnefroy, Brandon Mcnulty (+4 more) added"
     }
   ]
 }

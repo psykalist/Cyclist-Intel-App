@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T21:04:18.701564+00:00",
+  "generated_at": "2026-10-28T16:55:55.576529+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -161,76 +161,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Tour of Guangxi Youth: 🇳🇱 Frits Biesterbos leads"
-    },
-    {
-      "id": "e05bec36793a",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 2 Tour of Guangxi: 🇳🇱 Frits Biesterbos wins"
-    },
-    {
-      "id": "1ccc1e1bf933",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Tour of Guangxi KOM: 🇵🇹 Afonso Eulálio leads"
-    },
-    {
-      "id": "3d273e875604",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Giro del Veneto: 🇮🇹 Alessandro Covi wins"
-    },
-    {
-      "id": "b796690bf418",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Giro del Veneto GC: 🇮🇹 Alessandro Covi leads"
-    },
-    {
-      "id": "49dcd336f867",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Giro del Veneto Points: 🇮🇹 Alessandro Covi leads"
-    },
-    {
-      "id": "d7f3c487669d",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Giro del Veneto KOM: 🇮🇹 Alessandro Covi leads"
-    },
-    {
-      "id": "2e334e7b30ae",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Giro del Veneto Youth: 🇮🇹 Alessandro Covi leads"
-    },
-    {
-      "id": "05316785fa2e",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Giro del Veneto startlist: Alessandro Avi, Alessandro Covi, Andrea Piras (+38 more) added"
-    },
-    {
-      "id": "801395ccbbbe",
-      "timestamp": "2026-10-14T15:40:03.341781+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist: Andrii Ponomar, CASSAN Davide De, Cristian Remelli (+11 more) added"
-    },
-    {
-      "id": "27d350ff1447",
-      "timestamp": "2026-10-13T21:40:07.852951+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist: Alessandro Fancellu, Alessandro Verre, Alex Tolio (+10 more) added"
     }
   ]
 }

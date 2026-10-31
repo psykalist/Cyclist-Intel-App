@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T15:56:38.132934+00:00",
+  "generated_at": "2026-10-31T20:22:18.834276+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -91,13 +91,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Utsunomiya Japan Cup Road Race Youth: 🇺🇸 Quinn Simmons leads"
-    },
-    {
-      "id": "34d2680cf53f",
-      "timestamp": "2026-10-17T18:58:04.879351+00:00",
-      "type": "startlist",
-      "icon": "group",
-      "text": "Veneto Classic startlist: Andrea Mifsud, Christian Piffer added"
     }
   ]
 }

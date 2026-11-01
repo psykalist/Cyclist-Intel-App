@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T20:22:18.834276+00:00",
+  "generated_at": "2026-11-01T16:59:01.771216+00:00",
   "entries": [
     {
       "id": "2310fae28012",
@@ -35,62 +35,6 @@
       "type": "leader_change",
       "icon": "white",
       "text": "Veneto Classic Youth: 🇺🇸 Brandon McNulty leads"
-    },
-    {
-      "id": "6a18e93c5d27",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 6 Tour of Guangxi: 🇧🇪 Jarno Widar wins"
-    },
-    {
-      "id": "7887c9d0b6dd",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Tour of Guangxi GC: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "2a22fd478b34",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Tour of Guangxi Youth: 🇧🇪 Jarno Widar leads"
-    },
-    {
-      "id": "6fb895b2be60",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Utsunomiya Japan Cup Road Race: 🇺🇸 Quinn Simmons wins"
-    },
-    {
-      "id": "8a5f04bbd6d1",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Utsunomiya Japan Cup Road Race GC: 🇺🇸 Quinn Simmons leads"
-    },
-    {
-      "id": "d0bc89a25eaa",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Utsunomiya Japan Cup Road Race Points: 🇺🇸 Quinn Simmons leads"
-    },
-    {
-      "id": "65be3dec3577",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Utsunomiya Japan Cup Road Race KOM: 🇺🇸 Quinn Simmons leads"
-    },
-    {
-      "id": "537853e6a487",
-      "timestamp": "2026-10-18T14:14:18.180464+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Utsunomiya Japan Cup Road Race Youth: 🇺🇸 Quinn Simmons leads"
     }
   ]
 }

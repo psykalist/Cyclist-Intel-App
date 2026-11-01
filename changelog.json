@@ -1,40 +1,4 @@
 {
-  "generated_at": "2026-11-01T16:59:01.771216+00:00",
-  "entries": [
-    {
-      "id": "2310fae28012",
-      "timestamp": "2026-10-18T19:06:42.434598+00:00",
-      "type": "stage_result",
-      "icon": "trophy",
-      "text": "Stage 1 Veneto Classic: 🇺🇸 Brandon McNulty wins"
-    },
-    {
-      "id": "abb5ef036db6",
-      "timestamp": "2026-10-18T19:06:42.434598+00:00",
-      "type": "leader_change",
-      "icon": "yellow",
-      "text": "Veneto Classic GC: 🇺🇸 Brandon McNulty leads"
-    },
-    {
-      "id": "f26725b8a4ad",
-      "timestamp": "2026-10-18T19:06:42.434598+00:00",
-      "type": "leader_change",
-      "icon": "green",
-      "text": "Veneto Classic Points: 🇺🇸 Brandon McNulty leads"
-    },
-    {
-      "id": "cea43dedee57",
-      "timestamp": "2026-10-18T19:06:42.434598+00:00",
-      "type": "leader_change",
-      "icon": "red",
-      "text": "Veneto Classic KOM: 🇺🇸 Brandon McNulty leads"
-    },
-    {
-      "id": "8e812a8611a5",
-      "timestamp": "2026-10-18T19:06:42.434598+00:00",
-      "type": "leader_change",
-      "icon": "white",
-      "text": "Veneto Classic Youth: 🇺🇸 Brandon McNulty leads"
-    }
-  ]
+  "generated_at": "2026-11-01T20:55:07.390887+00:00",
+  "entries": []
 }

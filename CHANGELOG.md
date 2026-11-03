@@ -7,6 +7,17 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## 2026-11-04 — Local folder renamed to `C:\Claude\Projects\CIA`
+
+- **CLAUDE.md** paths updated to `C:\Claude\Projects\CIA` / `$HOME/mnt/CIA`.
+- **Removed** stale `.bat` scripts that `cd`'d to the old `C:\DataDrive\...` path and ran scrapers locally: `update.bat`, `check.bat`, `fix_palmares.bat`, `push-fixes.bat`, `rebuild_datajs.bat`, `run_winner_profiles.bat`, plus their tracked logs (`fix_palmares_log.txt`, `rebuild_datajs_log.txt`, `run_log.txt`).
+- **`inject_palmares.py`, `patch_photos.py`** now resolve paths relative to the script instead of a hardcoded folder.
+- **`push.bat`** is now a wrapper for `git-push.sh` (it used to delete `.git\index` and `git add -A`, which committed CI-owned data files).
+- **README / DOCS** updated: dead `.bat` references removed, Cowork scheduled tasks marked retired.
+- Local `origin` remote now points at `psykalist/Cyclist-Intel-App`. No app version change.
+
+---
+
 ## v153 — 2026-09-06 — Detect cancelled one-day races (Maryland Cycling Classic)
 
 The Maryland Cycling Classic 2026 was cancelled, but the app showed it as a live one-day race with no results. Root cause: `main()` already skips races whose name starts with `CANCELLED:` (CyclingFlash's prefix), but that prefix lives in the page `<title>` and a header status badge — **not** in the `og:title` that `parse_race_info()` reads for the name, which stays clean ("Maryland Cycling Classic"). So the skip never fired and the race was scraped as a normal live event; its result page has no table (nothing to fetch), leaving an empty live card.

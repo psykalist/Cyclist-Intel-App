@@ -1,8 +1,9 @@
 import sqlite3, json, os
 from datetime import datetime, timezone
 
-DB  = r"C:\DataDrive\Documents\Claude\Projects\UCI Calendar & Results\cycling.db"
-DAT = r"C:\DataDrive\Documents\Claude\Projects\UCI Calendar & Results\data.json"
+HERE = os.path.dirname(os.path.abspath(__file__))
+DB  = os.path.join(HERE, "cycling.db")
+DAT = os.path.join(HERE, "data.json")
 
 conn = sqlite3.connect(DB)
 conn.row_factory = sqlite3.Row

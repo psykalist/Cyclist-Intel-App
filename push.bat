@@ -1,28 +1,14 @@
 @echo off
+REM push.bat - double-click wrapper for git-push.sh (the safe push path).
+REM git-push.sh stages source only, keeps CI-owned data files out of the commit,
+REM clears stale locks, and rebases on origin/main before pushing.
+REM Usage: push.bat "vNN: commit message"
 cd /d "%~dp0"
-echo === UCI Calendar - Git Push ===
-echo.
-
-:: Fix corrupted index if present
-if exist ".git\index" (
-    del /f ".git\index" 2>nul
+set "GITBASH=%ProgramFiles%\Git\bin\bash.exe"
+if not exist "%GITBASH%" (
+    echo Git Bash not found at %GITBASH% - install Git for Windows.
+    pause
+    exit /b 1
 )
-
-:: Reset, add all changes, commit and push
-git reset HEAD
-git add -A
-git status
-
-echo.
-set /p MSG="Commit message (or press Enter for 'chore: update'): "
-if "%MSG%"=="" set MSG=chore: update
-
-git commit -m "%MSG%"
-
-:: Pull rebase in case remote is ahead, then push
-git pull --rebase
-git push
-
-echo.
-echo === Done! ===
+"%GITBASH%" ./git-push.sh %*
 pause

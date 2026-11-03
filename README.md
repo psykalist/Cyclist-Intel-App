@@ -80,28 +80,29 @@ py pre_push_check.py
 
 ---
 
-### `push.bat` / `git-push.sh` — deploy helpers
-Convenience scripts that run the scraper, commit `data.json`, and push to GitHub in one step.
+### `git-push.sh` / `push.bat` — deploy helpers
+Commit and push **source** changes (index.html, *.py, workflows, docs). CI-owned data files
+(`data.json`, `status.json`, `rider_profiles.json`, …) are kept out of the commit, stale git
+locks are cleared, and the branch is rebased on `origin/main` before pushing. Neither script
+runs the scraper — scraping is done by GitHub Actions.
 
-**Windows:**
-```bat
-push.bat
-```
-
-**Git Bash / Linux:**
+**Git Bash:**
 ```bash
-bash git-push.sh
+bash git-push.sh "vNN: commit message"
 ```
 
----
-
-### `check.bat` / `check.sh` — quick health check
-Runs `pre_push_check.py` and prints a summary. Use before manual pushes.
+**Windows (double-click or cmd):** `push.bat "vNN: commit message"` — a thin wrapper that runs `git-push.sh` in Git Bash.
 
 ---
 
-### `update.bat` — full update cycle (Windows)
-Runs scraper → check → commit → push in sequence.
+### `check.sh` — quick health check
+Checks git locks/index, local vs remote, working tree, `index.html` syntax and `data.json`. Run with `bash check.sh`; writes `error.log`.
+
+---
+
+### Data updates
+All scraping runs in GitHub Actions (`scrape.yml`, `health-check.yml`, `update-data.yml`,
+`scrape-rider-profiles.yml`, `scrape-teams.yml`) on the self-hosted runner. Don't run the scrapers locally.
 
 ---
 
@@ -145,9 +146,9 @@ scrape_teams.py     # Team roster scraper
 check_and_fix.py    # Data integrity checker
 detect_changes.py   # Change detector
 pre_push_check.py   # Pre-push validator
-push.bat            # Windows deploy helper
-git-push.sh         # Bash deploy helper
-update.bat          # Full update cycle (Windows)
+push.bat            # Windows wrapper for git-push.sh
+git-push.sh         # Safe push helper (source only)
+check.sh            # Repo health check
 CHANGELOG.md        # Version history
 KNOWN_GAPS.md       # Known data gaps and limitations
 SCRAPE_PROFILES.md  # Scraper profile documentation

@@ -220,15 +220,17 @@ Validates `data.json` for common issues and auto-fixes what it can.
 
 Validates JSON structure, checks required fields, warns about anomalies. Run before manual pushes.
 
-### `push.bat` / `git-push.sh` / `update.bat` — deploy helpers
+### `git-push.sh` / `push.bat` — deploy helpers
 
-Convenience scripts that run the scraper, commit `data.json`, and push to GitHub.
+`bash git-push.sh "vNN: message"` commits and pushes source changes only (CI-owned data files are excluded), clearing stale locks and rebasing on `origin/main` first. `push.bat` is a Windows wrapper that runs it in Git Bash. Neither runs the scraper.
 
 ---
 
 ## Scheduled Tasks
 
-Three tasks run automatically while the Cowork app is open:
+> **Retired.** These Cowork scheduled tasks were replaced by GitHub Actions (see below); scrapers are no longer run locally. Kept for history.
+
+Three tasks used to run automatically while the Cowork app was open:
 
 | Time | Task | Command |
 |------|------|---------|

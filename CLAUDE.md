@@ -10,12 +10,12 @@
 
 ## Project
 
-Cyclist Intel App — a single-file PWA (`index.html`) deployed on GitHub Pages. (The local project folder is still named `UCI Calendar & Results`; the GitHub repo is `psykalist/Cyclist-Intel-App`.)
+Cyclist Intel App — a single-file PWA (`index.html`) deployed on GitHub Pages. (Local project folder: `C:\Claude\Projects\CIA`; GitHub repo: `psykalist/Cyclist-Intel-App`.)
 - **Live URL:** https://psykalist.github.io/Cyclist-Intel-App/
-- **Project folder:** C:\Claude\Projects\UCI Calendar & Results (moved from `D:\` on 2026-08-14; the DEVBOX Actions runner moved `D:\actions-runner` → `C:\actions-runner` the same day)
-- **Bash mount path:** varies per session — the sandbox mounts the folder under `/sessions/<name>/mnt/UCI Calendar & Results/` where `<name>` changes each session. Find it with:
+- **Project folder:** C:\Claude\Projects\CIA (renamed from `UCI Calendar & Results` on 2026-11-03; moved from `D:\` on 2026-08-14; the DEVBOX Actions runner moved `D:\actions-runner` → `C:\actions-runner` the same day)
+- **Bash mount path:** varies per session — the folder is mounted at `$HOME/mnt/CIA/` (e.g. `/sessions/<name>/mnt/CIA/`, where `<name>` changes each session). Find it with:
   ```bash
-  ls -d /sessions/*/mnt/"UCI Calendar & Results"
+  ls -d "$HOME"/mnt/CIA
   ```
 - See `ARCHITECTURE.md` for full system overview.
 
@@ -71,7 +71,7 @@ const APP_VERSION = 'vNN';   // increment NN by 1 each time
 
 Check current version first:
 ```bash
-grep "APP_VERSION" /sessions/*/mnt/"UCI Calendar & Results"/index.html
+grep "APP_VERSION" "$HOME"/mnt/CIA/index.html
 ```
 
 ### 3. Read and respond to bash output
@@ -103,7 +103,7 @@ If the user asks to update the workflow, rules, or project instructions, edit th
 - After editing `index.html`, verify JS brace balance:
   ```bash
   python3 -c "
-  import glob; h=open(glob.glob('/sessions/*/mnt/UCI Calendar & Results/index.html')[0]).read()
+  import os; h=open(os.path.expanduser('~/mnt/CIA/index.html')).read()
   js=h[h.index('<script>'):h.rindex('</script>')]
   print('Brace diff:', js.count('{') - js.count('}'))
   "
@@ -143,5 +143,5 @@ If the user asks to update the workflow, rules, or project instructions, edit th
 
 Check with:
 ```bash
-grep "APP_VERSION" /sessions/*/mnt/"UCI Calendar & Results"/index.html
+grep "APP_VERSION" "$HOME"/mnt/CIA/index.html
 ```

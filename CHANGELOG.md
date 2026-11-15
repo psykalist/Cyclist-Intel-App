@@ -7,6 +7,18 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## 2026-11-15 — Move the dead Claude scheduled tasks into CI
+
+The four CIA Claude scheduled tasks (`Uci startlists daily`, `Uci winner profiles`, `Uci pcs stats weekly`, `Uci calendar daily update`) had been "succeeding" in ~3 s while doing nothing: they still pointed at the pre-rename `C:\DataDrive\...\UCI Calendar & Results` folder and ran in a cloud sandbox that PCS blocks and that has no push credentials.
+
+- **New `.github/workflows/winner-profiles.yml`** — daily 19:15 UTC on the self-hosted runner: `scrape_rider_profiles.py --update-winners`, commits `rider_profiles.json`. Safe on fetch failure (skips the rider, keeps the existing profile).
+- **New `.github/workflows/pcs-stats.yml`** — Mondays 07:45 UTC: `scrape_pcs_stats.py --dynamic --all` (the old task's `--dynamic` alone was a no-op once cached), commits `pcs_stats.json`.
+- Startlists and live results were already covered by `scrape.yml` (`--startlists-only` / `--results-only`), so those two tasks have no replacement.
+- All four scheduled tasks paused (not deleted). Both new workflows share the `uci-calendar-git-write` concurrency group. Palmares injection from `cycling.db` was not carried over: that DB hasn't changed since June and `data.json` already has the palmares.
+- No app version change (CI config only).
+
+---
+
 ## 2026-11-04 — Local folder renamed to `C:\Claude\Projects\CIA`
 
 - **CLAUDE.md** paths updated to `C:\Claude\Projects\CIA` / `$HOME/mnt/CIA`.

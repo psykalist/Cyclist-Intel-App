@@ -93,6 +93,46 @@ def _is_bounce(html):
     return any(m in head for m in _BOUNCE_MARKERS)
 
 
+def _is_not_found(html):
+    # PCS answers unknown slugs (e.g. a CyclingFlash-style full name like
+    # isaac-del-toro-romero) with HTTP 200 and <h1>Page not found</h1>. Parsed
+    # as a rider it produced name "Page not found" + a bogus team from the nav
+    # links, overwriting real entries (27 of them on 2026-11-15).
+    m = re.search(r'<h1[^>]*>(.*?)</h1>', html[:200000], re.DOTALL | re.IGNORECASE)
+    return bool(m) and strip_tags(m.group(1)).strip().lower() == 'page not found'
+
+
+# Last rider_profiles.json commit before the 2026-11-15 "Page not found" damage.
+_PRE_DAMAGE_URL = ('https://raw.githubusercontent.com/psykalist/Cyclist-Intel-App/'
+                   'bdbb216843017497c3cbb7a9374354dcbebdf66c/rider_profiles.json')
+
+
+def _repair_not_found(existing):
+    """Restore entries overwritten with a PCS "Page not found" page. Idempotent:
+    a no-op once no entry carries that name. Returns the number repaired."""
+    bad = [k for k, v in existing.items() if isinstance(v, dict) and v.get('name') == 'Page not found']
+    if not bad:
+        return 0
+    good = {}
+    try:
+        with urlopen(Request(_PRE_DAMAGE_URL, headers=HEADERS), timeout=60) as r:
+            good = json.loads(r.read().decode('utf-8')).get('riders', {})
+    except Exception as e:
+        print(f'Warning: could not load pre-damage profiles ({e}); scrubbing only')
+    for k in bad:
+        if k in good:
+            prev = good[k]
+            # keep anything merged in since (e.g. fresh co_stats), prior data wins otherwise
+            existing[k] = {**{x: y for x, y in existing[k].items() if x in ('co_stats',)}, **prev}
+        else:
+            v = existing[k]
+            v.pop('name', None)
+            v.pop('team_history', None)
+            v['error'] = 'not_found'
+    print(f'Repaired {len(bad)} "Page not found" profiles')
+    return len(bad)
+
+
 def fetch_html(url, retries=3):
     for attempt in range(retries):
         try:
@@ -102,6 +142,8 @@ def fetch_html(url, retries=3):
             if _is_bounce(html):
                 print(' [bounced: challenge page]', end='', flush=True)
                 raise URLError('challenge page')
+            if _is_not_found(html):
+                return None   # PCS soft-404: HTTP 200 with a "Page not found" page
             return html
         except HTTPError as e:
             if e.code == 404:
@@ -552,6 +594,9 @@ def update_winners():
         except Exception as e:
             print(f'Warning: could not load existing profiles: {e}')
 
+    if _repair_not_found(existing):
+        save(existing)
+
     winner_slugs = collect_winner_slugs()
     print(f'Found {len(winner_slugs)} winner/leader slugs in data.json')
     if not winner_slugs:
@@ -652,6 +697,9 @@ def main():
         if 'fetched_at' not in r:
             raise ValueError('missing fetched_at')
 
+    if existing and _repair_not_found(existing):
+        save(existing)
+
     if existing:
         pre_scrape_check(existing, sample_size=5, validator=validate_rider, label='rider_profiles.json')
 
@@ -691,7 +739,8 @@ def main():
         if html_main is None:
             print('X (not found)')
             err += 1
-            existing[slug] = {'slug': slug, 'wins': [], 'error': 'not_found'}
+            if slug not in existing:   # never clobber an existing profile
+                existing[slug] = {'slug': slug, 'wins': [], 'error': 'not_found'}
             continue
 
         profile = parse_rider_page(html_main, slug)

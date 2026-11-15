@@ -7,6 +7,17 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v155 — 2026-11-15 — Stop PCS "Page not found" pages overwriting rider profiles
+
+First runs of the v154 workflows checked out: 417 riders refreshed with full bio data, and all 37 dynamic PCS stats pages fetched with rows. But 27 slugs PCS doesn't recognise (CyclingFlash-style full names, e.g. `isaac-del-toro-romero` vs PCS `isaac-del-toro`) return HTTP 200 with `<h1>Page not found</h1>`. Those were parsed as riders, so v154's new `<h1>` name fallback saved the name "Page not found" plus a bogus team from the nav links. That overwrote existing entries, and three CyclingOracle stubs (L'Hote, Molano, Søjberg Pedersen) lost their name, nat and co_stats.
+
+- `fetch_html()` now treats that soft-404 page as not found (`_is_not_found()`, checked against the live PCS page).
+- Default and `--fix-*` modes no longer replace an existing profile with an error stub when its page isn't found. `update_winners` already skipped.
+- **One-time self-repair:** `_repair_not_found()` runs on load in every mode. It restores any "Page not found" entry from the last pre-damage commit (`bdbb216`, pinned raw URL), keeping any newer `co_stats`. Entries that didn't exist before become `error: not_found` stubs. It's idempotent, so it's a no-op once clean. Dry-run against the live file restored all 27.
+- Version v154→v155.
+
+---
+
 ## v154 — 2026-11-15 — Move the dead Claude scheduled tasks into CI + fix PCS rider-page parser
 
 The four CIA Claude scheduled tasks (`Uci startlists daily`, `Uci winner profiles`, `Uci pcs stats weekly`, `Uci calendar daily update`) had been "succeeding" in ~3 s while doing nothing: they still pointed at the pre-rename `C:\DataDrive\...\UCI Calendar & Results` folder and ran in a cloud sandbox that PCS blocks and that has no push credentials.

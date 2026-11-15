@@ -153,6 +153,17 @@ def strip_tags(s):
     return re.sub(r'\s+', ' ', s).strip()
 
 
+# Anti-bot / challenge pages (Cloudflare etc.) come back as HTTP 200 with a stub
+# page. Parsed as-is they look like "rider/stat with no data" and would overwrite
+# good records, so treat them as a failed fetch instead.
+_BOUNCE_MARKERS = ('just a moment...', 'cf-chl', 'challenge-platform',
+                   'attention required! | cloudflare', 'access denied', 'enable javascript and cookies')
+
+def _is_bounce(html):
+    head = html[:6000].lower()
+    return any(m in head for m in _BOUNCE_MARKERS)
+
+
 def fetch(url):
     for attempt in range(3):
         try:
@@ -161,6 +172,8 @@ def fetch(url):
                 data = r.read().decode('utf-8', errors='replace')
             if len(data) < 500:
                 raise ValueError(f"Response too short ({len(data)} chars)")
+            if _is_bounce(data):
+                raise ValueError("bounced: anti-bot challenge page")
             return data
         except HTTPError as e:
             if e.code == 404:
@@ -598,6 +611,15 @@ def main():
             "rows":        rows,
         }
 
+        prev_rows = stats.get(sid, {}).get("row_count", 0)
+        if not rows and prev_rows:
+            # Don't replace a good cached table with an empty parse.
+            print(f"  0 rows parsed -- keeping cached copy ({prev_rows} rows)", flush=True)
+            skipped += 1
+            if i < total:
+                time.sleep(DELAY)
+            continue
+
         stats[sid] = entry
         save_cache(cache)
 
@@ -616,6 +638,9 @@ def main():
     print(f"Done. {ok} fetched, {skipped} empty, {failed} failed.")
     if failed:
         print("Re-run to retry failures.")
+    if ok == 0 and failed > 0:
+        print("FAILED: no pages fetched -- PCS unreachable or blocking.")
+        sys.exit(1)
     print(f"Total in cache: {len(stats)} stat pages")
     print(f"Output: pcs_stats.json")
     print("\nNext: git add pcs_stats.json scrape_pcs_stats.py && git commit -m \'data: PCS stats\' && git push")

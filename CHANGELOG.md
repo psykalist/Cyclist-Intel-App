@@ -7,7 +7,7 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
-## 2026-11-15 — Move the dead Claude scheduled tasks into CI
+## v154 — 2026-11-15 — Move the dead Claude scheduled tasks into CI + fix PCS rider-page parser
 
 The four CIA Claude scheduled tasks (`Uci startlists daily`, `Uci winner profiles`, `Uci pcs stats weekly`, `Uci calendar daily update`) had been "succeeding" in ~3 s while doing nothing: they still pointed at the pre-rename `C:\DataDrive\...\UCI Calendar & Results` folder and ran in a cloud sandbox that PCS blocks and that has no push credentials.
 
@@ -15,7 +15,10 @@ The four CIA Claude scheduled tasks (`Uci startlists daily`, `Uci winner profile
 - **New `.github/workflows/pcs-stats.yml`** — Mondays 07:45 UTC: `scrape_pcs_stats.py --dynamic --all` (the old task's `--dynamic` alone was a no-op once cached), commits `pcs_stats.json`.
 - Startlists and live results were already covered by `scrape.yml` (`--startlists-only` / `--results-only`), so those two tasks have no replacement.
 - All four scheduled tasks paused (not deleted). Both new workflows share the `uci-calendar-git-write` concurrency group. Palmares injection from `cycling.db` was not carried over: that DB hasn't changed since June and `data.json` already has the palmares.
-- No app version change (CI config only).
+- **Rider-page parser fixed (`scrape_rider_profiles.py`).** Around early October PCS replaced the bio `<li>` items with `<div>Label:</div><div>value</div>` pairs separated by `<br>`, and put month and year in one div. Every profile fetched since then (~53 riders, Oct 5–19) has blank name/nat/dob/weight/height; team history and results were fine. The new `_parse_info_divs()` fills those fields from the new layout, takes nationality from the flag span's ISO code, and falls back to `<h1>` for the name. The specialty regex now also accepts "Oneday" (it used to need "One day races", so one-day scores were being dropped). Checked against live Pogačar / Dubois / van der Poel markup.
+- **Bounce / blank guards.** Both scrapers now treat Cloudflare-style challenge pages (HTTP 200 stubs) as failed fetches and back off longer on 403/429/503. `update_winners` skips (keeps the existing profile) any page with no rider name. `scrape_pcs_stats.py` never replaces a cached table with a 0-row parse. Both exit 1 when every fetch fails, so CI goes red instead of reporting a false success.
+- Confirmed PCS does not block the DEVBOX runner: CI has been fetching PCS startlists successfully (e.g. Il Lombardia 10 Oct, Tour of Guangxi 18 Oct).
+- Version v153→v154 (`index.html` version only).
 
 ---
 

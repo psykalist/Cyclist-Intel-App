@@ -82,20 +82,37 @@ SPEC_KEYS = {
 def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s).strip()
 
+# Anti-bot / challenge pages (Cloudflare etc.) come back as HTTP 200 with a stub
+# page. Parsed as-is they look like "rider/stat with no data" and would overwrite
+# good records, so treat them as a failed fetch instead.
+_BOUNCE_MARKERS = ('just a moment...', 'cf-chl', 'challenge-platform',
+                   'attention required! | cloudflare', 'access denied', 'enable javascript and cookies')
+
+def _is_bounce(html):
+    head = html[:6000].lower()
+    return any(m in head for m in _BOUNCE_MARKERS)
+
+
 def fetch_html(url, retries=3):
     for attempt in range(retries):
         try:
             req = Request(url, headers=HEADERS)
             with urlopen(req, timeout=20) as r:
-                return r.read().decode('utf-8', errors='replace')
+                html = r.read().decode('utf-8', errors='replace')
+            if _is_bounce(html):
+                print(' [bounced: challenge page]', end='', flush=True)
+                raise URLError('challenge page')
+            return html
         except HTTPError as e:
             if e.code == 404:
                 return None
+            if e.code in (403, 429, 503):
+                print(f' [HTTP {e.code}]', end='', flush=True)
             if attempt < retries - 1:
-                time.sleep(2 ** attempt)
+                time.sleep(5 * (2 ** attempt) if e.code in (403, 429, 503) else 2 ** attempt)
         except URLError:
             if attempt < retries - 1:
-                time.sleep(2 ** attempt)
+                time.sleep(5 * (2 ** attempt))
     return None
 
 
@@ -175,7 +192,7 @@ def parse_rider_page(html, slug):
         else:
             # Specialty scores, e.g. "9983Onedayraces", "7594GC", "10062Climber"
             spec_hits = re.findall(
-                r'(\d+)\s*(GC|One\s*day\s*races?|TT|Time\s*trial|Sprint|Climber|Hills?)',
+                r'(\d+)\s*(GC|One\s*day(?:\s*races?)?|TT|Time\s*trial|Sprint|Climber|Hills?)',
                 li, re.IGNORECASE
             )
             if spec_hits:
@@ -186,7 +203,55 @@ def parse_rider_page(html, slug):
                     key = SPEC_KEYS.get(raw_key, raw_key)
                     profile['specialties'][key] = int(score)
 
+    _parse_info_divs(html, block, profile)
     return profile
+
+
+def _parse_info_divs(html, block, profile):
+    """PCS markup since ~Oct 2026: the bio block is <div>Label:</div><div>value</div>
+    pairs separated by <br>, with no <li> items, so the <li> loop above finds no
+    name/dob/nationality/weight/height (every profile fetched from early October
+    came back with those blank). Flatten the block to one line per field and fill
+    in anything still missing. Field layout, e.g.:
+        Name: Tadej Pogačar
+        Date of birth: 21st September 1998 (28)
+        Nationality: Slovenia           (+ <span class="flag si">)
+        Weight: 66 kg Height: 1.76 m
+    """
+    import html as _html
+    flat = re.sub(r'<br\s*/?>', '\n', block)
+    flat = _html.unescape(re.sub(r'<[^>]+>', ' ', flat))
+    for line in (re.sub(r'\s+', ' ', l).strip() for l in flat.split('\n')):
+        if not line:
+            continue
+        m = re.match(r'Name:\s*(.+)', line)
+        if m and not profile.get('name'):
+            profile['name'] = m.group(1).strip()
+        m = re.search(r'Date of birth:\s*(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)\s+((?:19|20)\d{2})', line)
+        if m and not profile.get('dob'):
+            mon = MONTHS.get(m.group(2).lower())
+            if mon:
+                profile['dob'] = f'{int(m.group(3)):04d}-{mon:02d}-{int(m.group(1)):02d}'
+        m = re.match(r'Nationality:\s*(.+)', line)
+        if m and not profile.get('nat'):
+            country = m.group(1).strip()
+            profile['nat_name'] = country
+            profile['nat'] = COUNTRY_MAP.get(country, country[:2].upper())
+        m = re.search(r'Weight:\s*(\d+)\s*kg', line, re.IGNORECASE)
+        if m and not profile.get('weight'):
+            profile['weight'] = int(m.group(1))
+        m = re.search(r'Height:\s*([\d.]+)\s*m', line, re.IGNORECASE)
+        if m and not profile.get('height'):
+            profile['height'] = float(m.group(1))
+    # The flag span carries the ISO code directly -- more reliable than mapping
+    # the country name (e.g. names missing from COUNTRY_MAP).
+    fm = re.search(r'Nationality:.*?class=["\']flag ([a-z]{2})["\']', block, re.DOTALL)
+    if fm:
+        profile['nat'] = fm.group(1).upper()
+    if not profile.get('name'):
+        hm = re.search(r'<h1[^>]*>(.*?)</h1>', html or '', re.DOTALL)
+        if hm:
+            profile['name'] = _html.unescape(strip_tags(hm.group(1))).strip()
 
 
 def parse_team_history(html):
@@ -507,6 +572,12 @@ def update_winners():
             continue
 
         profile = parse_rider_page(html_main, slug)
+        if not profile.get('name'):
+            # Page loaded but isn't a rider page (bounce/markup change) --
+            # keep the existing profile rather than overwrite it with blanks.
+            print('X (no rider data on page -- kept existing)')
+            err += 1
+            continue
         profile['team_history'] = parse_team_history(html_main)
 
         html_wins = fetch_html(f'https://www.procyclingstats.com/rider/{slug}/statistics/wins')
@@ -522,6 +593,11 @@ def update_winners():
         ok += 1
         print(f'ok  {len(profile["wins"]):>3} wins  {len(profile.get("team_history",[]))} teams  {profile.get("nat",""):>3}')
 
+    if ok == 0 and err > 0:
+        # Every fetch failed -- almost certainly blocked. Fail loudly (CI goes
+        # red) and leave rider_profiles.json untouched.
+        print(f'\nFAILED: 0 updated, {err} errors -- PCS unreachable or blocking. Nothing saved.')
+        sys.exit(1)
     save(existing)
     print(f'\nDone. {ok} updated, {err} errors.')
     git_commit_push('data: refresh winner profiles (' + str(ok) + ' riders)')

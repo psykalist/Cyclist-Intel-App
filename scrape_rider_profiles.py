@@ -93,6 +93,49 @@ def _is_bounce(html):
     return any(m in head for m in _BOUNCE_MARKERS)
 
 
+# App slugs (from CyclingFlash full names) -> the slug PCS actually uses. Without
+# these, PCS answers "Page not found" and the rider never gets bio data.
+# Profiles stay keyed by the APP slug (what index.html looks up); only the fetch
+# URL changes. Each verified on PCS 2026-11-15 by name + DOB (+ team where
+# data.json has one). Extend as unmatched riders surface.
+PCS_RIDER_SLUGS = {
+    'aksel-bech-skot-hansen':         'aksel-skot-hansen',
+    'alex-aranburu-deba':             'alex-aranburu',
+    'alexander-kamp-egested':         'alexander-kamp',
+    'antoine-lhote':                  'antoine-l-hote',
+    'biniam-girmay-hailu':            'biniam-girmay',
+    'diego-pablo-sevilla-lopez':      'diego-pablo-sevilla',
+    'fernando-diego-pescador-castro': 'diego-pescador',
+    'harold-alfonso-tejada-canacue':  'harold-tejada',
+    'isaac-del-toro-romero':          'isaac-del-toro',
+    'ivan-romeo-abad':                'ivan-romeo',
+    'jhonnatan-manuel-narvaez':       'jhonatan-narvaez',
+    'martin-bugge-urianstad':         'martin-urianstad',
+    'natnael-tesfatsion-ocbit':       'natnael-tesfatsion',
+    'sebastian-molano':               'juan-sebastian-molano',
+    'abner-santiago-umba-lopez':      'santiago-umba',
+    'breiner-henrik-pedersen':        'henrik-pedersen',
+    'eddie-dunbar':                   'edward-irl-dunbar',
+    'cristian-rodriguez-martin':      'cristian-rodriguez',
+    'enric-mas-nicolau':              'enric-mas',
+    'jonathan-klever-caicedo-cepeda': 'jonathan-klever-caicedo',
+    'lorenzo-mark-finn':              'lorenzo-finn',
+    'matias-gunnar-malmberg':         'matias-malmberg',
+    'mikel-landa-meana':              'mikel-landa',
+    # No PCS page found (2026-11-15): matthew-george-woods, rasmus-sojberg-pedersen
+}
+
+
+def _pcs_url(slug, suffix=''):
+    return 'https://www.procyclingstats.com/rider/' + PCS_RIDER_SLUGS.get(slug, slug) + suffix
+
+
+def _is_team_slug(slug):
+    # Team classification rows leak team slugs (e.g. ineos-grenadiers-2026)
+    # into the rider lists; no rider slug ends in a year.
+    return re.search(r'-(19|20)\d{2}$', slug) is not None
+
+
 def _is_not_found(html):
     # PCS answers unknown slugs (e.g. a CyclingFlash-style full name like
     # isaac-del-toro-romero) with HTTP 200 and <h1>Page not found</h1>. Parsed
@@ -453,7 +496,7 @@ def collect_slugs():
             print(f'  Warning: could not parse {DATA_FILE.name}: {e}')
 
     # Filter out obviously bad slugs
-    return {s for s in slugs if s and re.match(r'^[a-z0-9\-]+$', s)}
+    return {s for s in slugs if s and re.match(r'^[a-z0-9\-]+$', s) and not _is_team_slug(s)}
 
 
 # -- Persistence ---------------------------------------------------------------
@@ -579,7 +622,7 @@ def collect_winner_slugs():
                         slugs.add(s)
     except Exception as e:
         print(f'Warning: could not parse {DATA_FILE.name}: {e}')
-    return {s for s in slugs if s and re.match(r'^[a-z0-9\-]+$', s)}
+    return {s for s in slugs if s and re.match(r'^[a-z0-9\-]+$', s) and not _is_team_slug(s)}
 
 
 def update_winners():
@@ -609,7 +652,7 @@ def update_winners():
     for i, slug in enumerate(todo, 1):
         print(f'[{i}/{len(todo)}] {slug:<40}', end='', flush=True)
 
-        html_main = fetch_html(f'https://www.procyclingstats.com/rider/{slug}')
+        html_main = fetch_html(_pcs_url(slug))
         time.sleep(DELAY)
         if html_main is None:
             print('X (not found)')
@@ -625,11 +668,11 @@ def update_winners():
             continue
         profile['team_history'] = parse_team_history(html_main)
 
-        html_wins = fetch_html(f'https://www.procyclingstats.com/rider/{slug}/statistics/wins')
+        html_wins = fetch_html(_pcs_url(slug, '/statistics/wins'))
         time.sleep(DELAY)
         profile['wins'] = parse_wins_page(html_wins) if html_wins else []
 
-        html_results = fetch_html(f'https://www.procyclingstats.com/rider/{slug}/results')
+        html_results = fetch_html(_pcs_url(slug, '/results'))
         time.sleep(DELAY)
         profile['season_results'] = parse_season_results(html_results) if html_results else []
         profile['fetched_at'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -733,7 +776,7 @@ def main():
     for i, slug in enumerate(todo, 1):
         print('[' + str(i) + '/' + str(len(todo)) + '] ' + slug.ljust(40), end='', flush=True)
 
-        html_main = fetch_html('https://www.procyclingstats.com/rider/' + slug)
+        html_main = fetch_html(_pcs_url(slug))
         time.sleep(DELAY)
 
         if html_main is None:
@@ -746,11 +789,11 @@ def main():
         profile = parse_rider_page(html_main, slug)
         profile['team_history'] = parse_team_history(html_main)
 
-        html_wins = fetch_html('https://www.procyclingstats.com/rider/' + slug + '/statistics/wins')
+        html_wins = fetch_html(_pcs_url(slug, '/statistics/wins'))
         time.sleep(DELAY)
         profile['wins'] = parse_wins_page(html_wins) if html_wins else []
 
-        html_results = fetch_html('https://www.procyclingstats.com/rider/' + slug + '/results')
+        html_results = fetch_html(_pcs_url(slug, '/results'))
         time.sleep(DELAY)
         profile['season_results'] = parse_season_results(html_results) if html_results else []
         profile['fetched_at'] = datetime.datetime.now(datetime.timezone.utc).isoformat()

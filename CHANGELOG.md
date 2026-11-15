@@ -7,6 +7,18 @@ All notable changes to Cyclist Intel App are documented here, newest first.
 
 ---
 
+## v156 — 2026-11-15 — Map app rider slugs to PCS slugs
+
+The v155 repair ran clean: no "Page not found" entries left, and L'Hote, Molano and Søjberg Pedersen got their names, nationality and co_stats back. Those 27 riders still had no PCS data, because the app's slugs (CyclingFlash full names) aren't PCS's.
+
+- **`PCS_RIDER_SLUGS`** (`scrape_rider_profiles.py`) maps 23 app slugs to the PCS slug, e.g. `isaac-del-toro-romero`→`isaac-del-toro`, `eddie-dunbar`→`edward-irl-dunbar`, `sebastian-molano`→`juan-sebastian-molano`, `fernando-diego-pescador-castro`→`diego-pescador`. Each checked on PCS by name + DOB, plus team where data.json has one (Kamp/Urianstad/H. Pedersen at Uno-X, Umba at Solution Tech). Only the fetch URL changes (`_pcs_url()`); profiles stay keyed by the app slug the app looks up.
+- **Unresolved, left unmapped:** `matthew-george-woods`, `rasmus-sojberg-pedersen`. No PCS page was found; the "rasmus-pedersen" search hit is Rasmus *Lund* Pedersen, a different rider.
+- **Team slugs filtered:** `ineos-grenadiers-2026` and `team-visma-lease-a-bike-2026` were leaking into the rider lists from team classifications. Both collectors now drop slugs ending in a year (`_is_team_slug()`).
+- Mapped riders pick up data on the next winner-profiles run (if they're winners/leaders) or a `--fix-dob` backfill.
+- Version v155→v156.
+
+---
+
 ## v155 — 2026-11-15 — Stop PCS "Page not found" pages overwriting rider profiles
 
 First runs of the v154 workflows checked out: 417 riders refreshed with full bio data, and all 37 dynamic PCS stats pages fetched with rows. But 27 slugs PCS doesn't recognise (CyclingFlash-style full names, e.g. `isaac-del-toro-romero` vs PCS `isaac-del-toro`) return HTTP 200 with `<h1>Page not found</h1>`. Those were parsed as riders, so v154's new `<h1>` name fallback saved the name "Page not found" plus a bogus team from the nav links. That overwrote existing entries, and three CyclingOracle stubs (L'Hote, Molano, Søjberg Pedersen) lost their name, nat and co_stats.

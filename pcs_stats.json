@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T20:51:44.252111+00:00",
+  "updated_at": "2026-11-16T17:32:06.972528+00:00",
   "stats": {
     "riders/king-of-classics": {
       "label": "King of the classics",
@@ -9,7 +9,7 @@
       "notes": "Career points in one-day races; grows",
       "description": "Who is the best classics rider of alltime? Eddy Merckx has accumulated 22346 points over his career in one day races, Marianne Vos has 20118 points and Roger De Vlaeminck has 19525 points.",
       "url": "https://www.procyclingstats.com/statistics/riders/king-of-the-classics",
-      "fetched_at": "2026-11-15T20:48:45.365592+00:00",
+      "fetched_at": "2026-11-16T17:29:10.568201+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -635,7 +635,7 @@
       "notes": "Career achievement; grows",
       "description": "Tadej Pogačar has accumulated the most badges in cycling.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-badges",
-      "fetched_at": "2026-11-15T20:49:01.431951+00:00",
+      "fetched_at": "2026-11-16T17:29:26.542950+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -655,29 +655,29 @@
         {
           "pos": 3,
           "type": "rider",
-          "slug": "peter-sagan",
-          "name": "SAGAN Peter",
-          "badges": "40"
-        },
-        {
-          "pos": 4,
-          "type": "rider",
           "slug": "philippe-gilbert",
           "name": "GILBERT Philippe",
           "badges": "40"
         },
         {
+          "pos": 4,
+          "type": "rider",
+          "slug": "peter-sagan",
+          "name": "SAGAN Peter",
+          "badges": "39"
+        },
+        {
           "pos": 5,
           "type": "rider",
-          "slug": "primoz-roglic",
-          "name": "ROGLIČ Primož",
+          "slug": "eddy-merckx",
+          "name": "MERCKX Eddy",
           "badges": "39"
         },
         {
           "pos": 6,
           "type": "rider",
-          "slug": "eddy-merckx",
-          "name": "MERCKX Eddy",
+          "slug": "primoz-roglic",
+          "name": "ROGLIČ Primož",
           "badges": "39"
         },
         {
@@ -1054,29 +1054,29 @@
         {
           "pos": 60,
           "type": "rider",
-          "slug": "richard-carapaz",
-          "name": "CARAPAZ Richard",
-          "badges": "26"
-        },
-        {
-          "pos": 61,
-          "type": "rider",
           "slug": "rui-costa",
           "name": "COSTA Rui",
           "badges": "26"
         },
         {
-          "pos": 62,
+          "pos": 61,
           "type": "rider",
           "slug": "nairo-quintana",
           "name": "QUINTANA Nairo",
           "badges": "26"
         },
         {
-          "pos": 63,
+          "pos": 62,
           "type": "rider",
           "slug": "tony-rominger",
           "name": "ROMINGER Tony",
+          "badges": "26"
+        },
+        {
+          "pos": 63,
+          "type": "rider",
+          "slug": "richard-carapaz",
+          "name": "CARAPAZ Richard",
           "badges": "26"
         },
         {
@@ -1250,8 +1250,8 @@
         {
           "pos": 88,
           "type": "rider",
-          "slug": "alfredo-binda",
-          "name": "BINDA Alfredo",
+          "slug": "gino-bartali",
+          "name": "BARTALI Gino",
           "badges": "24"
         },
         {
@@ -1264,78 +1264,78 @@
         {
           "pos": 90,
           "type": "rider",
-          "slug": "gino-bartali",
-          "name": "BARTALI Gino",
-          "badges": "24"
-        },
-        {
-          "pos": 91,
-          "type": "rider",
-          "slug": "egan-bernal",
-          "name": "BERNAL Egan",
-          "badges": "24"
-        },
-        {
-          "pos": 92,
-          "type": "rider",
           "slug": "francisco-mancebo",
           "name": "MANCEBO Francisco",
           "badges": "24"
         },
         {
-          "pos": 93,
+          "pos": 91,
           "type": "rider",
           "slug": "vasil-kiryienka",
           "name": "KIRYIENKA Vasil",
           "badges": "24"
         },
         {
-          "pos": 94,
+          "pos": 92,
           "type": "rider",
           "slug": "nelson-oliveira",
           "name": "OLIVEIRA Nelson",
           "badges": "24"
         },
         {
-          "pos": 95,
+          "pos": 93,
+          "type": "rider",
+          "slug": "egan-bernal",
+          "name": "BERNAL Egan",
+          "badges": "24"
+        },
+        {
+          "pos": 94,
           "type": "rider",
           "slug": "alex-zulle",
           "name": "ZÜLLE Alex",
           "badges": "24"
         },
         {
-          "pos": 96,
+          "pos": 95,
           "type": "rider",
           "slug": "erik-dekker",
           "name": "DEKKER Erik",
           "badges": "24"
         },
         {
-          "pos": 97,
+          "pos": 96,
           "type": "rider",
           "slug": "bob-jungels",
           "name": "JUNGELS Bob",
           "badges": "24"
         },
         {
-          "pos": 98,
+          "pos": 97,
           "type": "rider",
           "slug": "jan-janssen",
           "name": "JANSSEN Jan",
           "badges": "24"
         },
         {
-          "pos": 99,
+          "pos": 98,
           "type": "rider",
           "slug": "roman-kreuziger",
           "name": "KREUZIGER Roman",
           "badges": "23"
         },
         {
-          "pos": 100,
+          "pos": 99,
           "type": "rider",
           "slug": "michele-bartoli",
           "name": "BARTOLI Michele",
+          "badges": "23"
+        },
+        {
+          "pos": 100,
+          "type": "rider",
+          "slug": "simon-yates",
+          "name": "YATES Simon",
           "badges": "23"
         }
       ]
@@ -1945,7 +1945,7 @@
       "notes": "Dynamic; shrinks after each DNF",
       "description": "",
       "url": "https://www.procyclingstats.com/statistics/riders/riders-without-dnf",
-      "fetched_at": "2026-11-15T20:49:11.931619+00:00",
+      "fetched_at": "2026-11-16T17:29:36.938286+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -2308,7 +2308,7 @@
       "notes": "Career total; grows",
       "description": "List of riders with the most victories in the UCI WorldTour in 2026",
       "url": "https://www.procyclingstats.com/statistics/riders/wins-on-wt-level",
-      "fetched_at": "2026-11-15T20:49:23.356585+00:00",
+      "fetched_at": "2026-11-16T17:29:48.492726+00:00",
       "row_count": 93,
       "rows": [
         {
@@ -3344,7 +3344,7 @@
       "notes": "Career total; grows",
       "description": "How many victories had each world champion? had 23 wins when he was the world champion",
       "url": "https://www.procyclingstats.com/statistics/riders/wins-by-world-champions",
-      "fetched_at": "2026-11-15T20:49:34.009006+00:00",
+      "fetched_at": "2026-11-16T17:29:58.803980+00:00",
       "row_count": 84,
       "rows": [
         {
@@ -3945,7 +3945,7 @@
       "notes": "Career total; grows",
       "description": "has scored 1250 points in one day races in the WorldTour like Tour of Flanders, Paris-Roubaix and Classica San Sebastian.",
       "url": "https://www.procyclingstats.com/statistics/riders/wt-classics-ranking",
-      "fetched_at": "2026-11-15T20:49:49.930779+00:00",
+      "fetched_at": "2026-11-16T17:30:14.838191+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -4308,7 +4308,7 @@
       "notes": "Career total; grows",
       "description": "has done a solo of 79.2 kilometre in Strade Bianche, which was the longest solo in 2026 in the WorldTour.",
       "url": "https://www.procyclingstats.com/statistics/riders/solo-victories",
-      "fetched_at": "2026-11-15T20:49:55.653571+00:00",
+      "fetched_at": "2026-11-16T17:30:20.466456+00:00",
       "row_count": 91,
       "rows": [
         {
@@ -5140,7 +5140,7 @@
       "notes": "Current season lineups",
       "description": "Will Tadej Pogačar, Jonas Vingegaard, Isaac del Toro compete in the Tour de France, Giro d",
       "url": "https://www.procyclingstats.com/statistics/riders/grand-tour-roster-for-top-gc-riders",
-      "fetched_at": "2026-11-15T20:50:12.298816+00:00",
+      "fetched_at": "2026-11-16T17:30:35.973260+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -5603,7 +5603,7 @@
       "notes": "Current season; updates early in year",
       "description": "For so far known, Tadej Pogačar will start his season in Tour de France. Remco Evenepoel is scheduled for and Isaac del Toro is on the startlist of . This table lists the starting race of the top-100 best riders for the 2027 season.",
       "url": "https://www.procyclingstats.com/statistics/riders/where-will-the-top-100-start-their-season",
-      "fetched_at": "2026-11-15T20:50:17.695013+00:00",
+      "fetched_at": "2026-11-16T17:30:41.263690+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -5748,7 +5748,7 @@
           "slug": "laurence-pithie",
           "name": "PITHIE Laurence",
           "date": "2027-01-19",
-          "race": "Santos Tour Down Under"
+          "race": "Santos Tour Down Under ME"
         },
         {
           "pos": 24,
@@ -5986,7 +5986,7 @@
           "slug": "jai-hindley",
           "name": "HINDLEY Jai",
           "date": "2027-01-19",
-          "race": "Santos Tour Down Under"
+          "race": "Santos Tour Down Under ME"
         },
         {
           "pos": 63,
@@ -6226,7 +6226,7 @@
       "notes": "PCS scores; update seasonally",
       "description": "Looking at the 5 specialties of climbing, sprinting, classics, time trial and classification, Philippe Gilbert ranks the highest of the active riders before Wout Aert and Mathieu Poel.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-allround-riders",
-      "fetched_at": "2026-11-15T20:50:22.849128+00:00",
+      "fetched_at": "2026-11-16T17:30:46.404153+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -6839,7 +6839,7 @@
       "notes": "PCS scores; update seasonally",
       "description": "Mark Cavendish has scored the most points in the sprint, far more than any other cycling specialty. Philippe Gilbert has scored most points in classics, where Tony Martin has the most points in time trials.",
       "url": "https://www.procyclingstats.com/statistics/riders/single-specialty-riders",
-      "fetched_at": "2026-11-15T20:50:28.120950+00:00",
+      "fetched_at": "2026-11-16T17:30:51.551666+00:00",
       "row_count": 20,
       "rows": [
         {
@@ -7112,7 +7112,7 @@
       "notes": "Career total; grows",
       "description": "has 63 victories in time trials and a grand total of 1130 points. Runner-up is with 1017 points in time trials and has 957 points obtained in his career.",
       "url": "https://www.procyclingstats.com/statistics/riders/all-time-time-trial-ranking",
-      "fetched_at": "2026-11-15T20:50:33.541568+00:00",
+      "fetched_at": "2026-11-16T17:30:56.876941+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -7925,7 +7925,7 @@
       "notes": "Career total; grows",
       "description": "The rider with the most starts in grand tours is TOSATTO Matteo with 34 starts. He started 12 times in the Tour de France, 13 times in the Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-starts",
-      "fetched_at": "2026-11-15T20:50:49.543404+00:00",
+      "fetched_at": "2026-11-16T17:31:12.828853+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -8488,7 +8488,7 @@
       "notes": "Career total; grows",
       "description": "Who has the most grand tour wins? has won 11 grand tours, before (10) and (9).",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-wins",
-      "fetched_at": "2026-11-15T20:50:54.801993+00:00",
+      "fetched_at": "2026-11-16T17:31:17.990675+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -8951,7 +8951,7 @@
       "notes": "Career achievement; grows",
       "description": "There are 116 riders that have won at least one stage in the grand tours Tour de France, Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/stage-winners-in-all-3-gts",
-      "fetched_at": "2026-11-15T20:51:00.168790+00:00",
+      "fetched_at": "2026-11-16T17:31:23.375240+00:00",
       "row_count": 116,
       "rows": [
         {
@@ -10240,7 +10240,7 @@
       "notes": "Career total; grows",
       "description": "With a total of 64 stage wins, Eddy Merckx has won the most stages in the grand tours. He won 24 stage in the Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-stage-wins",
-      "fetched_at": "2026-11-15T20:51:05.566061+00:00",
+      "fetched_at": "2026-11-16T17:31:28.766312+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -10753,7 +10753,7 @@
       "notes": "Career total; grows",
       "description": "Soudal Quick-Step has won 106 stages in the last 10 season in the grand tours. Second is UAE Team Emirates - XRG with 89 wins, before Team Visma | Lease a Bike with 80 victories.",
       "url": "https://www.procyclingstats.com/statistics/grandtours/stage-wins-by-teams",
-      "fetched_at": "2026-11-15T20:51:10.773524+00:00",
+      "fetched_at": "2026-11-16T17:31:33.981826+00:00",
       "row_count": 42,
       "rows": [
         {
@@ -11102,7 +11102,7 @@
       "notes": "Career total; grows",
       "description": "There are 123 riders that have won more than one monumental classic. Eddy Merckx has won the most monuments, 19 in total. With 229 victories, Belgium has the most victories by nation.",
       "url": "https://www.procyclingstats.com/statistics/monuments/most-wins",
-      "fetched_at": "2026-11-15T20:51:16.031215+00:00",
+      "fetched_at": "2026-11-16T17:31:39.127185+00:00",
       "row_count": 123,
       "rows": [
         {
@@ -13517,7 +13517,7 @@
       "notes": "Current season team stats",
       "description": "What team has the most wins? Who has the youngest or oldest riders on their squad? And which team is on average the youngest this season? You can find all team related statistics on this page.",
       "url": "https://www.procyclingstats.com/statistics/teams",
-      "fetched_at": "2026-11-15T20:51:22.316875+00:00",
+      "fetched_at": "2026-11-16T17:31:45.347233+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -13850,7 +13850,7 @@
       "notes": "Current season nation stats",
       "description": "There are 76 from Belgium listed at a WorldTour team in 2026. Italy and France are respectively 2nd and 3rd with 57 and 56 riders.",
       "url": "https://www.procyclingstats.com/statistics/nations",
-      "fetched_at": "2026-11-15T20:51:27.463413+00:00",
+      "fetched_at": "2026-11-16T17:31:50.567717+00:00",
       "row_count": 39,
       "rows": [
         {
@@ -14683,7 +14683,7 @@
       "notes": "Career totals; grows",
       "description": "Statistics on the seven major tours in cycling; Volta a Catalunya, Itzulia Basque Country, Paris-Nice, Tour de Suisse, Critérium du Dauphiné, Tour de Romandie and Tirreno-Adriatico.",
       "url": "https://www.procyclingstats.com/statistics/major-tours",
-      "fetched_at": "2026-11-15T20:51:32.770820+00:00",
+      "fetched_at": "2026-11-16T17:31:55.857993+00:00",
       "row_count": 7,
       "rows": [
         {
@@ -14757,7 +14757,7 @@
       "notes": "Updates as teams change equipment",
       "description": "Alpecin - Premier Tech is riding on Canyon bikes, Shimano for the groupset and Shimano wheels.",
       "url": "https://www.procyclingstats.com/statistics/gear",
-      "fetched_at": "2026-11-15T20:51:38.038434+00:00",
+      "fetched_at": "2026-11-16T17:32:01.013332+00:00",
       "row_count": 18,
       "rows": [
         {
@@ -14950,7 +14950,7 @@
       "notes": "Career totals; grows",
       "description": "The Montjuïc was visited 280 times in all races, 280 more than Col du Tourmalet (115) and Col d",
       "url": "https://www.procyclingstats.com/statistics/climbs/most-visited",
-      "fetched_at": "2026-11-15T20:51:44.252096+00:00",
+      "fetched_at": "2026-11-16T17:32:06.972497+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -15313,7 +15313,7 @@
       "notes": "Shrinks as season progresses",
       "description": "Bram Welten, Stephen Williams and Archie Ryan are among the riders with no start yet this season.",
       "url": "https://www.procyclingstats.com/statistics/riders/riders-with-no-starts-yet",
-      "fetched_at": "2026-11-15T20:48:27.707321+00:00",
+      "fetched_at": "2026-11-16T17:28:52.942241+00:00",
       "row_count": 7,
       "rows": [
         {
@@ -15382,7 +15382,7 @@
       "notes": "Career total; grows for active riders",
       "description": "Huub Duijn has started in a total number of 203 different races. He stays ahead of Reinier Honig (192) and Davide Rebellin (192). There are 129 riders that started in more than 150 races.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-races-started",
-      "fetched_at": "2026-11-15T20:48:32.947225+00:00",
+      "fetched_at": "2026-11-16T17:28:58.196377+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -16095,7 +16095,7 @@
       "notes": "Career total",
       "description": "Briek Schotte has competed 20 times in Ronde van Vlaanderen ME, which is the most starts in a WorldTour level race.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-competed-in-one-race",
-      "fetched_at": "2026-11-15T20:48:40.114309+00:00",
+      "fetched_at": "2026-11-16T17:29:05.425494+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -16508,7 +16508,7 @@
       "notes": "Updated as riders pass away",
       "description": "Overview of former professional riders that passed away.",
       "url": "https://www.procyclingstats.com/statistics/riders/recently-passed-away",
-      "fetched_at": "2026-11-15T20:48:50.766583+00:00",
+      "fetched_at": "2026-11-16T17:29:15.874150+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -16871,7 +16871,7 @@
       "notes": "Past seasons frozen; current season grows",
       "description": "The youngest winner in the WorldTour in 2026 was in Itzulia Basque Country | Stage 1 (ITT) at age 19y + 194d. Runner-up is in La Vuelta Ciclista a España | Stage 12 and in Tour Down Under | Stage 5.",
       "url": "https://www.procyclingstats.com/statistics/riders/youngest-winners-per-season",
-      "fetched_at": "2026-11-15T20:48:56.084735+00:00",
+      "fetched_at": "2026-11-16T17:29:21.070365+00:00",
       "row_count": 20,
       "rows": [
         {
@@ -17064,7 +17064,7 @@
       "notes": "Career total; grows",
       "description": "In season 2026 Alexys Brunel had 17 DNFs or did not finishes. The woman with the most DNFs was Georgia Gardiner with 12 DNFs to her name.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-dnf",
-      "fetched_at": "2026-11-15T20:49:06.714061+00:00",
+      "fetched_at": "2026-11-16T17:29:31.802974+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -17427,7 +17427,7 @@
       "notes": "Current season efficiency",
       "description": "The most effective rider measured in points per raceday in 2026 was Tadej Pogačar with 3715 points in 45 racedays. Second was Remco Evenepoel with 61.7 points per raceday and third Paul Seixas with a ratio of 50.7.",
       "url": "https://www.procyclingstats.com/statistics/riders/points-per-raceday",
-      "fetched_at": "2026-11-15T20:49:17.907257+00:00",
+      "fetched_at": "2026-11-16T17:29:43.036454+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -18340,7 +18340,7 @@
       "notes": "Streak; changes each race",
       "description": "Romain Grégoire has done 239 days of racing since his last DNF (Did Not Finish). He is followed by Mike Teunissen (237) and Dorian Godon (236).",
       "url": "https://www.procyclingstats.com/statistics/riders/longest-without-dnf",
-      "fetched_at": "2026-11-15T20:49:28.754948+00:00",
+      "fetched_at": "2026-11-16T17:29:53.630407+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -18803,7 +18803,7 @@
       "notes": "Updated after each ruling",
       "description": "Tomas Contte has accumulated 100 penalty points in 2026.",
       "url": "https://www.procyclingstats.com/statistics/riders/penalty-points-ranking",
-      "fetched_at": "2026-11-15T20:49:39.292421+00:00",
+      "fetched_at": "2026-11-16T17:30:04.004215+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -19096,7 +19096,7 @@
       "notes": "Updated after each ruling",
       "description": "In 2025 it was Lidl - Trek with 200 penalty points who had the most points subtracted, before Team Visma | Lease a Bike (185) and Red Bull - BORA - hansgrohe (150).",
       "url": "https://www.procyclingstats.com/statistics/riders/penalty-points-ranking-teams",
-      "fetched_at": "2026-11-15T20:49:44.560543+00:00",
+      "fetched_at": "2026-11-16T17:30:09.259681+00:00",
       "row_count": 25,
       "rows": [
         {
@@ -19284,7 +19284,7 @@
       "notes": "Current U23 cohort",
       "description": "In 2026 16.0 percent of the total points were scored by riders under 23, compared to around 5% in the early 2000s.",
       "url": "https://www.procyclingstats.com/statistics/riders/points-scored-by-riders-u23",
-      "fetched_at": "2026-11-15T20:50:00.858964+00:00",
+      "fetched_at": "2026-11-16T17:30:25.603569+00:00",
       "row_count": 26,
       "rows": [
         {
@@ -19505,7 +19505,7 @@
       "notes": "Updates each season",
       "description": "Riders with their last season being their best season.",
       "url": "https://www.procyclingstats.com/statistics/riders/last-season-best-season",
-      "fetched_at": "2026-11-15T20:50:06.065265+00:00",
+      "fetched_at": "2026-11-16T17:30:30.737459+00:00",
       "row_count": 41,
       "rows": [
         {
@@ -19805,7 +19805,7 @@
       "notes": "Current season; updates frequently",
       "description": "Full list of rider injuries in season 2026.",
       "url": "https://www.procyclingstats.com/statistics/riders/season-injuries",
-      "fetched_at": "2026-11-15T20:50:38.741337+00:00",
+      "fetched_at": "2026-11-16T17:31:02.074878+00:00",
       "row_count": 429,
       "rows": [
         {
@@ -23210,14 +23210,14 @@
       "subcategory": "injuries",
       "is_static": false,
       "notes": "Live; updates as riders return",
-      "description": "It has been 287 days since the injury of Knee injury, for Abdominal trauma,Fractured femur,Ruptured spleen it has been 278 days.",
+      "description": "It has been 288 days since the injury of Knee injury, for Abdominal trauma,Fractured femur,Ruptured spleen it has been 279 days.",
       "url": "https://www.procyclingstats.com/statistics/riders/not-back-in-action-after-injury",
-      "fetched_at": "2026-11-15T20:50:44.376425+00:00",
+      "fetched_at": "2026-11-16T17:31:07.657557+00:00",
       "row_count": 107,
       "rows": [
         {
           "date_of_injury": "2026-02-01",
-          "days_since_injury": "287",
+          "days_since_injury": "288",
           "type": "rider",
           "slug": "archie-ryan",
           "name": "RYAN Archie",
@@ -23225,7 +23225,7 @@
         },
         {
           "date_of_injury": "2026-02-10",
-          "days_since_injury": "278",
+          "days_since_injury": "279",
           "type": "rider",
           "slug": "damien-touze",
           "name": "TOUZÉ Damien",
@@ -23233,7 +23233,7 @@
         },
         {
           "date_of_injury": "2026-02-15",
-          "days_since_injury": "273",
+          "days_since_injury": "274",
           "type": "rider",
           "slug": "ivann-ravaleu",
           "name": "RAVALEU Ivann",
@@ -23241,7 +23241,7 @@
         },
         {
           "date_of_injury": "2026-03-02",
-          "days_since_injury": "258",
+          "days_since_injury": "259",
           "type": "rider",
           "slug": "libby-smithson",
           "name": "SMITHSON Libby",
@@ -23249,7 +23249,7 @@
         },
         {
           "date_of_injury": "2026-03-05",
-          "days_since_injury": "255",
+          "days_since_injury": "256",
           "type": "rider",
           "slug": "ander-ganzabal-bilbao",
           "name": "GANZABAL Ander",
@@ -23257,7 +23257,7 @@
         },
         {
           "date_of_injury": "2026-03-09",
-          "days_since_injury": "251",
+          "days_since_injury": "252",
           "type": "rider",
           "slug": "marc-cabedo",
           "name": "CABEDO Marc",
@@ -23265,7 +23265,7 @@
         },
         {
           "date_of_injury": "2026-03-31",
-          "days_since_injury": "229",
+          "days_since_injury": "230",
           "type": "rider",
           "slug": "jaume-guardeno",
           "name": "GUARDEÑO Jaume",
@@ -23273,7 +23273,7 @@
         },
         {
           "date_of_injury": "2026-04-12",
-          "days_since_injury": "217",
+          "days_since_injury": "218",
           "type": "rider",
           "slug": "kamilla-aasebo",
           "name": "AASEBØ Kamilla",
@@ -23281,7 +23281,7 @@
         },
         {
           "date_of_injury": "2026-04-30",
-          "days_since_injury": "199",
+          "days_since_injury": "200",
           "type": "rider",
           "slug": "harry-sweeny",
           "name": "SWEENY Harry",
@@ -23289,7 +23289,7 @@
         },
         {
           "date_of_injury": "2026-05-10",
-          "days_since_injury": "189",
+          "days_since_injury": "190",
           "type": "rider",
           "slug": "albert-withen-philipsen",
           "name": "WITHEN PHILIPSEN Albert",
@@ -23297,7 +23297,7 @@
         },
         {
           "date_of_injury": "2026-05-11",
-          "days_since_injury": "188",
+          "days_since_injury": "189",
           "type": "rider",
           "slug": "neve-bradbury",
           "name": "BRADBURY Neve",
@@ -23305,7 +23305,7 @@
         },
         {
           "date_of_injury": "2026-05-11",
-          "days_since_injury": "188",
+          "days_since_injury": "189",
           "type": "rider",
           "slug": "harry-hudson",
           "name": "HUDSON Harry",
@@ -23313,7 +23313,7 @@
         },
         {
           "date_of_injury": "2026-05-29",
-          "days_since_injury": "170",
+          "days_since_injury": "171",
           "type": "rider",
           "slug": "yoan-morin",
           "name": "MORIN Yoan",
@@ -23321,7 +23321,7 @@
         },
         {
           "date_of_injury": "2026-06-05",
-          "days_since_injury": "163",
+          "days_since_injury": "164",
           "type": "rider",
           "slug": "gonzalo-serrano",
           "name": "SERRANO Gonzalo",
@@ -23329,7 +23329,7 @@
         },
         {
           "date_of_injury": "2026-06-16",
-          "days_since_injury": "152",
+          "days_since_injury": "153",
           "type": "rider",
           "slug": "szymon-wozniak",
           "name": "WOŹNIAK Szymon",
@@ -23337,7 +23337,7 @@
         },
         {
           "date_of_injury": "2026-06-16",
-          "days_since_injury": "152",
+          "days_since_injury": "153",
           "type": "rider",
           "slug": "gustavo-romao",
           "name": "ROMÃO Gustavo",
@@ -23345,7 +23345,7 @@
         },
         {
           "date_of_injury": "2026-06-17",
-          "days_since_injury": "151",
+          "days_since_injury": "152",
           "type": "rider",
           "slug": "matthew-dinham",
           "name": "DINHAM Matthew",
@@ -23353,7 +23353,7 @@
         },
         {
           "date_of_injury": "2026-06-18",
-          "days_since_injury": "150",
+          "days_since_injury": "151",
           "type": "rider",
           "slug": "eduard-prades",
           "name": "PRADES Eduard",
@@ -23361,7 +23361,7 @@
         },
         {
           "date_of_injury": "2026-06-22",
-          "days_since_injury": "146",
+          "days_since_injury": "147",
           "type": "rider",
           "slug": "axel-zingle",
           "name": "ZINGLE Axel",
@@ -23369,7 +23369,7 @@
         },
         {
           "date_of_injury": "2026-06-27",
-          "days_since_injury": "141",
+          "days_since_injury": "142",
           "type": "rider",
           "slug": "mara-roldan",
           "name": "ROLDAN Mara",
@@ -23377,7 +23377,7 @@
         },
         {
           "date_of_injury": "2026-07-03",
-          "days_since_injury": "135",
+          "days_since_injury": "136",
           "type": "rider",
           "slug": "victor-martinez-garcia",
           "name": "MARTÍNEZ Victor",
@@ -23385,7 +23385,7 @@
         },
         {
           "date_of_injury": "2026-07-14",
-          "days_since_injury": "124",
+          "days_since_injury": "125",
           "type": "rider",
           "slug": "chris-harper",
           "name": "HARPER Chris",
@@ -23393,7 +23393,7 @@
         },
         {
           "date_of_injury": "2026-07-17",
-          "days_since_injury": "121",
+          "days_since_injury": "122",
           "type": "rider",
           "slug": "hugo-bartolini",
           "name": "BARTOLINI Hugo",
@@ -23401,7 +23401,7 @@
         },
         {
           "date_of_injury": "2026-07-18",
-          "days_since_injury": "120",
+          "days_since_injury": "121",
           "type": "rider",
           "slug": "matyas-bingler",
           "name": "BINGLER Matyas",
@@ -23409,7 +23409,7 @@
         },
         {
           "date_of_injury": "2026-07-19",
-          "days_since_injury": "119",
+          "days_since_injury": "120",
           "type": "rider",
           "slug": "jonas-vingegaard",
           "name": "VINGEGAARD Jonas",
@@ -23417,7 +23417,7 @@
         },
         {
           "date_of_injury": "2026-07-21",
-          "days_since_injury": "117",
+          "days_since_injury": "118",
           "type": "rider",
           "slug": "igor-bellido2",
           "name": "BELLIDO Igor",
@@ -23425,7 +23425,7 @@
         },
         {
           "date_of_injury": "2026-07-22",
-          "days_since_injury": "116",
+          "days_since_injury": "117",
           "type": "rider",
           "slug": "anna-kolyzhuk",
           "name": "KOLYZHUK Anna",
@@ -23433,7 +23433,7 @@
         },
         {
           "date_of_injury": "2026-07-24",
-          "days_since_injury": "114",
+          "days_since_injury": "115",
           "type": "rider",
           "slug": "tobias-lund-andresen",
           "name": "ANDRESEN Tobias Lund",
@@ -23441,7 +23441,7 @@
         },
         {
           "date_of_injury": "2026-07-26",
-          "days_since_injury": "112",
+          "days_since_injury": "113",
           "type": "rider",
           "slug": "johannes-staune-mittet",
           "name": "STAUNE-MITTET Johannes",
@@ -23449,7 +23449,7 @@
         },
         {
           "date_of_injury": "2026-07-26",
-          "days_since_injury": "112",
+          "days_since_injury": "113",
           "type": "rider",
           "slug": "goncalo-leaca",
           "name": "LEAÇA Gonçalo",
@@ -23457,7 +23457,7 @@
         },
         {
           "date_of_injury": "2026-08-02",
-          "days_since_injury": "105",
+          "days_since_injury": "106",
           "type": "rider",
           "slug": "toon-aerts",
           "name": "AERTS Toon",
@@ -23465,7 +23465,7 @@
         },
         {
           "date_of_injury": "2026-08-04",
-          "days_since_injury": "103",
+          "days_since_injury": "104",
           "type": "rider",
           "slug": "yanis-berthoud",
           "name": "BERTHOUD Yanis",
@@ -23473,7 +23473,7 @@
         },
         {
           "date_of_injury": "2026-08-06",
-          "days_since_injury": "101",
+          "days_since_injury": "102",
           "type": "rider",
           "slug": "bram-danklof",
           "name": "DANKLOF Bram",
@@ -23481,7 +23481,7 @@
         },
         {
           "date_of_injury": "2026-08-07",
-          "days_since_injury": "100",
+          "days_since_injury": "101",
           "type": "rider",
           "slug": "junior-lecerf",
           "name": "LECERF Junior",
@@ -23489,7 +23489,7 @@
         },
         {
           "date_of_injury": "2026-08-07",
-          "days_since_injury": "100",
+          "days_since_injury": "101",
           "type": "rider",
           "slug": "romain-bardet",
           "name": "BARDET Romain",
@@ -23497,7 +23497,7 @@
         },
         {
           "date_of_injury": "2026-08-08",
-          "days_since_injury": "99",
+          "days_since_injury": "100",
           "type": "rider",
           "slug": "alice-coutinho",
           "name": "COUTINHO Alice",
@@ -23505,7 +23505,7 @@
         },
         {
           "date_of_injury": "2026-08-08",
-          "days_since_injury": "99",
+          "days_since_injury": "100",
           "type": "rider",
           "slug": "goncalo-rodrigues",
           "name": "RODRIGUES Gonçalo",
@@ -23513,7 +23513,7 @@
         },
         {
           "date_of_injury": "2026-08-10",
-          "days_since_injury": "97",
+          "days_since_injury": "98",
           "type": "rider",
           "slug": "albert-withen-philipsen",
           "name": "WITHEN PHILIPSEN Albert",
@@ -23521,7 +23521,7 @@
         },
         {
           "date_of_injury": "2026-08-12",
-          "days_since_injury": "95",
+          "days_since_injury": "96",
           "type": "rider",
           "slug": "stian-fredheim",
           "name": "EDVARDSEN-FREDHEIM Stian",
@@ -23529,7 +23529,7 @@
         },
         {
           "date_of_injury": "2026-08-16",
-          "days_since_injury": "91",
+          "days_since_injury": "92",
           "type": "rider",
           "slug": "justine-nisole",
           "name": "NISOLE Justine",
@@ -23537,7 +23537,7 @@
         },
         {
           "date_of_injury": "2026-08-19",
-          "days_since_injury": "88",
+          "days_since_injury": "89",
           "type": "rider",
           "slug": "gladys-verhulst-wild",
           "name": "VERHULST-WILD Gladys",
@@ -23545,7 +23545,7 @@
         },
         {
           "date_of_injury": "2026-08-19",
-          "days_since_injury": "88",
+          "days_since_injury": "89",
           "type": "rider",
           "slug": "sandy-dujardin",
           "name": "DUJARDIN Sandy",
@@ -23553,7 +23553,7 @@
         },
         {
           "date_of_injury": "2026-08-20",
-          "days_since_injury": "87",
+          "days_since_injury": "88",
           "type": "rider",
           "slug": "amaury-capiot",
           "name": "CAPIOT Amaury",
@@ -23561,7 +23561,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "86",
+          "days_since_injury": "87",
           "type": "rider",
           "slug": "albert-torres",
           "name": "TORRES Albert",
@@ -23569,7 +23569,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "86",
+          "days_since_injury": "87",
           "type": "rider",
           "slug": "jeremy-lecroq",
           "name": "LECROQ Jérémy",
@@ -23577,7 +23577,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "86",
+          "days_since_injury": "87",
           "type": "rider",
           "slug": "huub-artz",
           "name": "ARTZ Huub",
@@ -23585,7 +23585,7 @@
         },
         {
           "date_of_injury": "2026-08-23",
-          "days_since_injury": "84",
+          "days_since_injury": "85",
           "type": "rider",
           "slug": "sergio-geovani-chumil-gonzalez",
           "name": "CHUMIL Sergio Geovani",
@@ -23593,7 +23593,7 @@
         },
         {
           "date_of_injury": "2026-08-26",
-          "days_since_injury": "81",
+          "days_since_injury": "82",
           "type": "rider",
           "slug": "susanne-andersen",
           "name": "ANDERSEN Susanne",
@@ -23601,7 +23601,7 @@
         },
         {
           "date_of_injury": "2026-08-29",
-          "days_since_injury": "78",
+          "days_since_injury": "79",
           "type": "rider",
           "slug": "diego-uriarte-belzunegi",
           "name": "URIARTE Diego",
@@ -23609,7 +23609,7 @@
         },
         {
           "date_of_injury": "2026-08-29",
-          "days_since_injury": "78",
+          "days_since_injury": "79",
           "type": "rider",
           "slug": "tadej-pogacar",
           "name": "POGAČAR Tadej",
@@ -23617,7 +23617,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "77",
+          "days_since_injury": "78",
           "type": "rider",
           "slug": "pablo-torres-arias",
           "name": "TORRES Pablo",
@@ -23625,7 +23625,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "77",
+          "days_since_injury": "78",
           "type": "rider",
           "slug": "ezra-caudell",
           "name": "CAUDELL Ezra",
@@ -23633,7 +23633,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "77",
+          "days_since_injury": "78",
           "type": "rider",
           "slug": "milan-menten",
           "name": "MENTEN Milan",
@@ -23641,7 +23641,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "77",
+          "days_since_injury": "78",
           "type": "rider",
           "slug": "paul-keller",
           "name": "KELLER Paul",
@@ -23649,7 +23649,7 @@
         },
         {
           "date_of_injury": "2026-09-01",
-          "days_since_injury": "75",
+          "days_since_injury": "76",
           "type": "rider",
           "slug": "tom-crabbe",
           "name": "CRABBE Tom",
@@ -23657,7 +23657,7 @@
         },
         {
           "date_of_injury": "2026-09-03",
-          "days_since_injury": "73",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "hamish-mckenzie",
           "name": "MCKENZIE Hamish",
@@ -23665,7 +23665,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "72",
+          "days_since_injury": "73",
           "type": "rider",
           "slug": "gregor-muhlberger",
           "name": "MÜHLBERGER Gregor",
@@ -23673,7 +23673,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "72",
+          "days_since_injury": "73",
           "type": "rider",
           "slug": "libby-smithson",
           "name": "SMITHSON Libby",
@@ -23681,7 +23681,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "72",
+          "days_since_injury": "73",
           "type": "rider",
           "slug": "winand-breuckers",
           "name": "BREUCKERS Winand",
@@ -23689,7 +23689,7 @@
         },
         {
           "date_of_injury": "2026-09-05",
-          "days_since_injury": "71",
+          "days_since_injury": "72",
           "type": "rider",
           "slug": "letizia-paternoster",
           "name": "PATERNOSTER Letizia",
@@ -23697,7 +23697,7 @@
         },
         {
           "date_of_injury": "2026-09-07",
-          "days_since_injury": "69",
+          "days_since_injury": "70",
           "type": "rider",
           "slug": "soen-le-pann",
           "name": "LE PANN Soen",
@@ -23705,7 +23705,7 @@
         },
         {
           "date_of_injury": "2026-09-08",
-          "days_since_injury": "68",
+          "days_since_injury": "69",
           "type": "rider",
           "slug": "jan-hernandez-reilhe",
           "name": "HERNÁNDEZ Jan",
@@ -23713,7 +23713,7 @@
         },
         {
           "date_of_injury": "2026-09-09",
-          "days_since_injury": "67",
+          "days_since_injury": "68",
           "type": "rider",
           "slug": "lucas-froget",
           "name": "FROGET Lucas",
@@ -23721,7 +23721,7 @@
         },
         {
           "date_of_injury": "2026-09-09",
-          "days_since_injury": "67",
+          "days_since_injury": "68",
           "type": "rider",
           "slug": "tom-munnix",
           "name": "MUNNIX Tom",
@@ -23729,7 +23729,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "karl-herzog",
           "name": "HERZOG Karl",
@@ -23737,7 +23737,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "ilse-pluimers",
           "name": "PLUIMERS Ilse",
@@ -23745,7 +23745,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "ville-merlov1",
           "name": "MERLÖV Ville",
@@ -23753,7 +23753,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "mikayla-harvey",
           "name": "HARVEY Mikayla",
@@ -23761,7 +23761,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "justine-ghekiere",
           "name": "GHEKIERE Justine",
@@ -23769,7 +23769,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "66",
+          "days_since_injury": "67",
           "type": "rider",
           "slug": "mischa-bredewold",
           "name": "BREDEWOLD Mischa",
@@ -23777,7 +23777,7 @@
         },
         {
           "date_of_injury": "2026-09-12",
-          "days_since_injury": "64",
+          "days_since_injury": "65",
           "type": "rider",
           "slug": "urska-zigart",
           "name": "ŽIGART Urška",
@@ -23785,7 +23785,7 @@
         },
         {
           "date_of_injury": "2026-09-12",
-          "days_since_injury": "64",
+          "days_since_injury": "65",
           "type": "rider",
           "slug": "chris-hamilton",
           "name": "HAMILTON Chris",
@@ -23793,7 +23793,7 @@
         },
         {
           "date_of_injury": "2026-09-13",
-          "days_since_injury": "63",
+          "days_since_injury": "64",
           "type": "rider",
           "slug": "alice-towers",
           "name": "TOWERS Alice",
@@ -23801,7 +23801,7 @@
         },
         {
           "date_of_injury": "2026-09-13",
-          "days_since_injury": "63",
+          "days_since_injury": "64",
           "type": "rider",
           "slug": "derek-gee",
           "name": "GEE-WEST Derek",
@@ -23809,7 +23809,7 @@
         },
         {
           "date_of_injury": "2026-09-15",
-          "days_since_injury": "61",
+          "days_since_injury": "62",
           "type": "rider",
           "slug": "hugo-page",
           "name": "PAGE Hugo",
@@ -23817,7 +23817,7 @@
         },
         {
           "date_of_injury": "2026-09-16",
-          "days_since_injury": "60",
+          "days_since_injury": "61",
           "type": "rider",
           "slug": "theo-leveque",
           "name": "LÉVÊQUE Théo",
@@ -23825,7 +23825,7 @@
         },
         {
           "date_of_injury": "2026-09-21",
-          "days_since_injury": "55",
+          "days_since_injury": "56",
           "type": "rider",
           "slug": "seff-van-kerckhove",
           "name": "VAN KERCKHOVE Seff",
@@ -23833,7 +23833,7 @@
         },
         {
           "date_of_injury": "2026-09-24",
-          "days_since_injury": "52",
+          "days_since_injury": "53",
           "type": "rider",
           "slug": "leo-hayter",
           "name": "HAYTER Leo",
@@ -23841,7 +23841,7 @@
         },
         {
           "date_of_injury": "2026-09-25",
-          "days_since_injury": "51",
+          "days_since_injury": "52",
           "type": "rider",
           "slug": "sandra-alonso",
           "name": "ALONSO Sandra",
@@ -23849,7 +23849,7 @@
         },
         {
           "date_of_injury": "2026-09-25",
-          "days_since_injury": "51",
+          "days_since_injury": "52",
           "type": "rider",
           "slug": "maria-okrucinska",
           "name": "OKRUCIŃSKA Maria",
@@ -23857,7 +23857,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "caroline-andersson",
           "name": "ANDERSSON Caroline",
@@ -23865,7 +23865,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "lauretta-hanson",
           "name": "HANSON Lauretta",
@@ -23873,7 +23873,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "flora-perkins",
           "name": "PERKINS Flora",
@@ -23881,7 +23881,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "sigrid-ytterhus-haugset",
           "name": "HAUGSET Sigrid Ytterhus",
@@ -23889,7 +23889,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "kim-le-court-pienaar",
           "name": "LE COURT-PIENAAR Kim",
@@ -23897,7 +23897,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "50",
+          "days_since_injury": "51",
           "type": "rider",
           "slug": "paula-blasi",
           "name": "BLASI Paula",
@@ -23905,7 +23905,7 @@
         },
         {
           "date_of_injury": "2026-09-27",
-          "days_since_injury": "49",
+          "days_since_injury": "50",
           "type": "rider",
           "slug": "geoffrey-bouchard",
           "name": "BOUCHARD Geoffrey",
@@ -23913,7 +23913,7 @@
         },
         {
           "date_of_injury": "2026-09-30",
-          "days_since_injury": "46",
+          "days_since_injury": "47",
           "type": "rider",
           "slug": "mattia-gaffuri",
           "name": "GAFFURI Mattia",
@@ -23921,7 +23921,7 @@
         },
         {
           "date_of_injury": "2026-10-02",
-          "days_since_injury": "44",
+          "days_since_injury": "45",
           "type": "rider",
           "slug": "ronan-auge",
           "name": "AUGÉ Ronan",
@@ -23929,7 +23929,7 @@
         },
         {
           "date_of_injury": "2026-10-05",
-          "days_since_injury": "41",
+          "days_since_injury": "42",
           "type": "rider",
           "slug": "andrea-raccagni-noviero",
           "name": "RACCAGNI NOVIERO Andrea",
@@ -23937,7 +23937,7 @@
         },
         {
           "date_of_injury": "2026-10-05",
-          "days_since_injury": "41",
+          "days_since_injury": "42",
           "type": "rider",
           "slug": "alex-aranburu",
           "name": "ARANBURU Alex",
@@ -23945,7 +23945,7 @@
         },
         {
           "date_of_injury": "2026-10-06",
-          "days_since_injury": "40",
+          "days_since_injury": "41",
           "type": "rider",
           "slug": "luke-plapp",
           "name": "PLAPP Luke",
@@ -23953,7 +23953,7 @@
         },
         {
           "date_of_injury": "2026-10-06",
-          "days_since_injury": "40",
+          "days_since_injury": "41",
           "type": "rider",
           "slug": "gabriela-guerra",
           "name": "GUERRA Gabriela",
@@ -23961,7 +23961,7 @@
         },
         {
           "date_of_injury": "2026-10-07",
-          "days_since_injury": "39",
+          "days_since_injury": "40",
           "type": "rider",
           "slug": "dylan-van-baarle",
           "name": "VAN BAARLE Dylan",
@@ -23969,7 +23969,7 @@
         },
         {
           "date_of_injury": "2026-10-08",
-          "days_since_injury": "38",
+          "days_since_injury": "39",
           "type": "rider",
           "slug": "tofik-beshir",
           "name": "BESHIR Tofik",
@@ -23977,7 +23977,7 @@
         },
         {
           "date_of_injury": "2026-10-10",
-          "days_since_injury": "36",
+          "days_since_injury": "37",
           "type": "rider",
           "slug": "geerike-schreurs",
           "name": "SCHREURS Geerike",
@@ -23985,7 +23985,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "35",
+          "days_since_injury": "36",
           "type": "rider",
           "slug": "tim-marsman",
           "name": "MARSMAN Tim",
@@ -23993,7 +23993,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "35",
+          "days_since_injury": "36",
           "type": "rider",
           "slug": "tim-marsman",
           "name": "MARSMAN Tim",
@@ -24001,7 +24001,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "35",
+          "days_since_injury": "36",
           "type": "rider",
           "slug": "thomas-gachignard",
           "name": "GACHIGNARD Thomas",
@@ -24009,7 +24009,7 @@
         },
         {
           "date_of_injury": "2026-10-15",
-          "days_since_injury": "31",
+          "days_since_injury": "32",
           "type": "rider",
           "slug": "ally-wollaston",
           "name": "WOLLASTON Ally",
@@ -24017,7 +24017,7 @@
         },
         {
           "date_of_injury": "2026-10-24",
-          "days_since_injury": "22",
+          "days_since_injury": "23",
           "type": "rider",
           "slug": "marion-norbert-riberolle",
           "name": "NORBERT RIBEROLLE Marion",
@@ -24025,7 +24025,7 @@
         },
         {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "15",
+          "days_since_injury": "16",
           "type": "rider",
           "slug": "donovan-ramirez",
           "name": "RAMÍREZ Donovan",
@@ -24033,7 +24033,7 @@
         },
         {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "15",
+          "days_since_injury": "16",
           "type": "rider",
           "slug": "moussa-oumarou",
           "name": "OUMAROU Moussa",
@@ -24041,7 +24041,7 @@
         },
         {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "15",
+          "days_since_injury": "16",
           "type": "rider",
           "slug": "souleymane-kone",
           "name": "KONE Souleymane",
@@ -24049,7 +24049,7 @@
         },
         {
           "date_of_injury": "2026-11-01",
-          "days_since_injury": "14",
+          "days_since_injury": "15",
           "type": "rider",
           "slug": "paula-blasi",
           "name": "BLASI Paula",
@@ -24057,7 +24057,7 @@
         },
         {
           "date_of_injury": "2026-11-05",
-          "days_since_injury": "10",
+          "days_since_injury": "11",
           "type": "rider",
           "slug": "andrea-alzate-gomez",
           "name": "ALZATE Andrea",
@@ -24065,7 +24065,7 @@
         },
         {
           "date_of_injury": "2026-11-07",
-          "days_since_injury": "8",
+          "days_since_injury": "9",
           "type": "rider",
           "slug": "ceylin-del-carmen-alvarado",
           "name": "ALVARADO Ceylin del Carmen",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T14:46:17.592566+00:00",
+  "updated_at": "2026-11-19T19:18:37.435048+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
@@ -14,10 +14,10 @@
     "data_teams": 33,
     "rider_profiles": 2961,
     "live_races": 0,
-    "scraped_at": "2026-11-18T23:13:54.831200+00:00",
-    "data_age_hours": 15.5,
+    "scraped_at": "2026-11-19T19:17:36.291179+00:00",
+    "data_age_hours": 0.0,
     "index_html_bytes": 330574,
-    "scrape_log_run_at": "2026-11-19 00:12 UTC",
+    "scrape_log_run_at": "2026-11-19 20:16 UTC",
     "rider_roster": 1443,
     "rider_missing_profile": 92,
     "rider_missing_palmares": 1211

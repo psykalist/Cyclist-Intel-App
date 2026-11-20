@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T23:56:39.684772+00:00",
+  "updated_at": "2026-11-20T04:52:57.854807+00:00",
   "source": "ci",
   "overall": "warning",
   "errors": [],
@@ -15,7 +15,7 @@
     "rider_profiles": 2961,
     "live_races": 0,
     "scraped_at": "2026-11-19T23:21:30.604118+00:00",
-    "data_age_hours": 0.6,
+    "data_age_hours": 5.5,
     "index_html_bytes": 330574,
     "scrape_log_run_at": "2026-11-20 00:20 UTC",
     "rider_roster": 1443,

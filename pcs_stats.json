@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T17:32:06.972528+00:00",
+  "updated_at": "2026-11-23T19:33:10.387799+00:00",
   "stats": {
     "riders/king-of-classics": {
       "label": "King of the classics",
@@ -9,7 +9,7 @@
       "notes": "Career points in one-day races; grows",
       "description": "Who is the best classics rider of alltime? Eddy Merckx has accumulated 22346 points over his career in one day races, Marianne Vos has 20118 points and Roger De Vlaeminck has 19525 points.",
       "url": "https://www.procyclingstats.com/statistics/riders/king-of-the-classics",
-      "fetched_at": "2026-11-16T17:29:10.568201+00:00",
+      "fetched_at": "2026-11-23T19:30:12.817821+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -635,7 +635,7 @@
       "notes": "Career achievement; grows",
       "description": "Tadej Pogačar has accumulated the most badges in cycling.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-badges",
-      "fetched_at": "2026-11-16T17:29:26.542950+00:00",
+      "fetched_at": "2026-11-23T19:30:28.948445+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -650,28 +650,28 @@
           "type": "rider",
           "slug": "alejandro-valverde",
           "name": "VALVERDE Alejandro",
-          "badges": "41"
+          "badges": "42"
         },
         {
           "pos": 3,
           "type": "rider",
           "slug": "philippe-gilbert",
           "name": "GILBERT Philippe",
-          "badges": "40"
+          "badges": "41"
         },
         {
           "pos": 4,
           "type": "rider",
-          "slug": "peter-sagan",
-          "name": "SAGAN Peter",
-          "badges": "39"
+          "slug": "eddy-merckx",
+          "name": "MERCKX Eddy",
+          "badges": "40"
         },
         {
           "pos": 5,
           "type": "rider",
-          "slug": "eddy-merckx",
-          "name": "MERCKX Eddy",
-          "badges": "39"
+          "slug": "peter-sagan",
+          "name": "SAGAN Peter",
+          "badges": "40"
         },
         {
           "pos": 6,
@@ -683,15 +683,15 @@
         {
           "pos": 7,
           "type": "rider",
-          "slug": "vincenzo-nibali",
-          "name": "NIBALI Vincenzo",
+          "slug": "bernard-hinault",
+          "name": "HINAULT Bernard",
           "badges": "38"
         },
         {
           "pos": 8,
           "type": "rider",
-          "slug": "bernard-hinault",
-          "name": "HINAULT Bernard",
+          "slug": "vincenzo-nibali",
+          "name": "NIBALI Vincenzo",
           "badges": "38"
         },
         {
@@ -711,8 +711,8 @@
         {
           "pos": 11,
           "type": "rider",
-          "slug": "alexander-kristoff",
-          "name": "KRISTOFF Alexander",
+          "slug": "laurent-jalabert",
+          "name": "JALABERT Laurent",
           "badges": "36"
         },
         {
@@ -720,14 +720,14 @@
           "type": "rider",
           "slug": "erik-zabel",
           "name": "ZABEL Erik",
-          "badges": "35"
+          "badges": "36"
         },
         {
           "pos": 13,
           "type": "rider",
-          "slug": "tom-boonen",
-          "name": "BOONEN Tom",
-          "badges": "35"
+          "slug": "alexander-kristoff",
+          "name": "KRISTOFF Alexander",
+          "badges": "36"
         },
         {
           "pos": 14,
@@ -739,8 +739,8 @@
         {
           "pos": 15,
           "type": "rider",
-          "slug": "laurent-jalabert",
-          "name": "JALABERT Laurent",
+          "slug": "tom-boonen",
+          "name": "BOONEN Tom",
           "badges": "35"
         },
         {
@@ -748,21 +748,21 @@
           "type": "rider",
           "slug": "greg-van-avermaet",
           "name": "VAN AVERMAET Greg",
-          "badges": "34"
+          "badges": "35"
         },
         {
           "pos": 17,
           "type": "rider",
-          "slug": "marianne-vos",
-          "name": "VOS Marianne",
+          "slug": "sean-kelly",
+          "name": "KELLY Sean",
           "badges": "34"
         },
         {
           "pos": 18,
           "type": "rider",
-          "slug": "sean-kelly",
-          "name": "KELLY Sean",
-          "badges": "33"
+          "slug": "marianne-vos",
+          "name": "VOS Marianne",
+          "badges": "34"
         },
         {
           "pos": 19,
@@ -774,57 +774,57 @@
         {
           "pos": 20,
           "type": "rider",
+          "slug": "davide-rebellin",
+          "name": "REBELLIN Davide",
+          "badges": "33"
+        },
+        {
+          "pos": 21,
+          "type": "rider",
           "slug": "roger-de-vlaeminck",
           "name": "DE VLAEMINCK Roger",
           "badges": "33"
         },
         {
-          "pos": 21,
+          "pos": 22,
+          "type": "rider",
+          "slug": "mark-cavendish",
+          "name": "CAVENDISH Mark",
+          "badges": "32"
+        },
+        {
+          "pos": 23,
+          "type": "rider",
+          "slug": "michal-kwiatkowski",
+          "name": "KWIATKOWSKI Michał",
+          "badges": "32"
+        },
+        {
+          "pos": 24,
           "type": "rider",
           "slug": "wout-van-aert",
           "name": "VAN AERT Wout",
           "badges": "32"
         },
         {
-          "pos": 22,
-          "type": "rider",
-          "slug": "davide-rebellin",
-          "name": "REBELLIN Davide",
-          "badges": "32"
-        },
-        {
-          "pos": 23,
-          "type": "rider",
-          "slug": "freddy-maertens",
-          "name": "MAERTENS Freddy",
-          "badges": "31"
-        },
-        {
-          "pos": 24,
-          "type": "rider",
-          "slug": "christopher-froome",
-          "name": "FROOME Chris",
-          "badges": "31"
-        },
-        {
           "pos": 25,
-          "type": "rider",
-          "slug": "julian-alaphilippe",
-          "name": "ALAPHILIPPE Julian",
-          "badges": "31"
-        },
-        {
-          "pos": 26,
           "type": "rider",
           "slug": "mathieu-van-der-poel",
           "name": "VAN DER POEL Mathieu",
           "badges": "31"
         },
         {
+          "pos": 26,
+          "type": "rider",
+          "slug": "julian-alaphilippe",
+          "name": "ALAPHILIPPE Julian",
+          "badges": "31"
+        },
+        {
           "pos": 27,
           "type": "rider",
-          "slug": "mark-cavendish",
-          "name": "CAVENDISH Mark",
+          "slug": "christopher-froome",
+          "name": "FROOME Chris",
           "badges": "31"
         },
         {
@@ -837,50 +837,50 @@
         {
           "pos": 29,
           "type": "rider",
-          "slug": "edvald-boasson-hagen",
-          "name": "BOASSON HAGEN Edvald",
-          "badges": "30"
+          "slug": "mads-pedersen",
+          "name": "PEDERSEN Mads",
+          "badges": "31"
         },
         {
           "pos": 30,
           "type": "rider",
-          "slug": "anna-van-der-breggen",
-          "name": "VAN DER BREGGEN Anna",
-          "badges": "30"
+          "slug": "joop-zoetemelk",
+          "name": "ZOETEMELK Joop",
+          "badges": "31"
         },
         {
           "pos": 31,
           "type": "rider",
-          "slug": "mads-pedersen",
-          "name": "PEDERSEN Mads",
-          "badges": "30"
+          "slug": "freddy-maertens",
+          "name": "MAERTENS Freddy",
+          "badges": "31"
         },
         {
           "pos": 32,
           "type": "rider",
-          "slug": "michal-kwiatkowski",
-          "name": "KWIATKOWSKI Michał",
+          "slug": "felice-gimondi",
+          "name": "GIMONDI Felice",
           "badges": "30"
         },
         {
           "pos": 33,
           "type": "rider",
-          "slug": "miguel-indurain",
-          "name": "INDURÁIN Miguel",
+          "slug": "edvald-boasson-hagen",
+          "name": "BOASSON HAGEN Edvald",
           "badges": "30"
         },
         {
           "pos": 34,
           "type": "rider",
-          "slug": "joop-zoetemelk",
-          "name": "ZOETEMELK Joop",
+          "slug": "jakob-fuglsang",
+          "name": "FUGLSANG Jakob",
           "badges": "30"
         },
         {
           "pos": 35,
           "type": "rider",
-          "slug": "felice-gimondi",
-          "name": "GIMONDI Felice",
+          "slug": "miguel-indurain",
+          "name": "INDURÁIN Miguel",
           "badges": "30"
         },
         {
@@ -893,16 +893,16 @@
         {
           "pos": 37,
           "type": "rider",
-          "slug": "alessandro-petacchi",
-          "name": "PETACCHI Alessandro",
-          "badges": "29"
+          "slug": "sylvain-chavanel",
+          "name": "CHAVANEL Sylvain",
+          "badges": "30"
         },
         {
           "pos": 38,
           "type": "rider",
-          "slug": "andre-greipel",
-          "name": "GREIPEL André",
-          "badges": "29"
+          "slug": "anna-van-der-breggen",
+          "name": "VAN DER BREGGEN Anna",
+          "badges": "30"
         },
         {
           "pos": 39,
@@ -914,365 +914,365 @@
         {
           "pos": 40,
           "type": "rider",
-          "slug": "sylvain-chavanel",
-          "name": "CHAVANEL Sylvain",
-          "badges": "29"
-        },
-        {
-          "pos": 41,
-          "type": "rider",
           "slug": "arnaud-demare",
           "name": "DÉMARE Arnaud",
           "badges": "29"
         },
         {
+          "pos": 41,
+          "type": "rider",
+          "slug": "andre-greipel",
+          "name": "GREIPEL André",
+          "badges": "29"
+        },
+        {
           "pos": 42,
           "type": "rider",
-          "slug": "louison-bobet",
-          "name": "BOBET Louison",
-          "badges": "28"
+          "slug": "alessandro-petacchi",
+          "name": "PETACCHI Alessandro",
+          "badges": "29"
         },
         {
           "pos": 43,
           "type": "rider",
-          "slug": "jakob-fuglsang",
-          "name": "FUGLSANG Jakob",
-          "badges": "28"
+          "slug": "michael-matthews",
+          "name": "MATTHEWS Michael",
+          "badges": "29"
         },
         {
           "pos": 44,
-          "type": "rider",
-          "slug": "bradley-wiggins",
-          "name": "WIGGINS Bradley",
-          "badges": "28"
-        },
-        {
-          "pos": 45,
           "type": "rider",
           "slug": "annemiek-van-vleuten",
           "name": "VAN VLEUTEN Annemiek",
           "badges": "28"
         },
         {
+          "pos": 45,
+          "type": "rider",
+          "slug": "louison-bobet",
+          "name": "BOBET Louison",
+          "badges": "28"
+        },
+        {
           "pos": 46,
+          "type": "rider",
+          "slug": "thor-hushovd",
+          "name": "HUSHOVD Thor",
+          "badges": "28"
+        },
+        {
+          "pos": 47,
+          "type": "rider",
+          "slug": "damiano-cunego",
+          "name": "CUNEGO Damiano",
+          "badges": "28"
+        },
+        {
+          "pos": 48,
+          "type": "rider",
+          "slug": "bradley-wiggins",
+          "name": "WIGGINS Bradley",
+          "badges": "28"
+        },
+        {
+          "pos": 49,
           "type": "rider",
           "slug": "geraint-thomas",
           "name": "THOMAS Geraint",
           "badges": "28"
         },
         {
-          "pos": 47,
-          "type": "rider",
-          "slug": "michael-matthews",
-          "name": "MATTHEWS Michael",
-          "badges": "28"
-        },
-        {
-          "pos": 48,
+          "pos": 50,
           "type": "rider",
           "slug": "laurent-fignon",
           "name": "FIGNON Laurent",
           "badges": "28"
         },
         {
-          "pos": 49,
-          "type": "rider",
-          "slug": "thor-hushovd",
-          "name": "HUSHOVD Thor",
-          "badges": "27"
-        },
-        {
-          "pos": 50,
-          "type": "rider",
-          "slug": "thibaut-pinot",
-          "name": "PINOT Thibaut",
-          "badges": "27"
-        },
-        {
           "pos": 51,
-          "type": "rider",
-          "slug": "fausto-coppi",
-          "name": "COPPI Fausto",
-          "badges": "27"
-        },
-        {
-          "pos": 52,
-          "type": "rider",
-          "slug": "elia-viviani",
-          "name": "VIVIANI Elia",
-          "badges": "27"
-        },
-        {
-          "pos": 53,
           "type": "rider",
           "slug": "alexandr-vinokourov",
           "name": "VINOKUROV Alexandr",
-          "badges": "27"
+          "badges": "28"
         },
         {
-          "pos": 54,
-          "type": "rider",
-          "slug": "giuseppe-saronni",
-          "name": "SARONNI Giuseppe",
-          "badges": "27"
-        },
-        {
-          "pos": 55,
+          "pos": 52,
           "type": "rider",
           "slug": "alberto-contador",
           "name": "CONTADOR Alberto",
           "badges": "27"
         },
         {
-          "pos": 56,
-          "type": "rider",
-          "slug": "rik-van-steenbergen",
-          "name": "VAN STEENBERGEN Rik",
-          "badges": "27"
-        },
-        {
-          "pos": 57,
-          "type": "rider",
-          "slug": "raymond-poulidor",
-          "name": "POULIDOR Raymond",
-          "badges": "27"
-        },
-        {
-          "pos": 58,
+          "pos": 53,
           "type": "rider",
           "slug": "cadel-evans",
           "name": "EVANS Cadel",
           "badges": "27"
         },
         {
+          "pos": 54,
+          "type": "rider",
+          "slug": "elia-viviani",
+          "name": "VIVIANI Elia",
+          "badges": "27"
+        },
+        {
+          "pos": 55,
+          "type": "rider",
+          "slug": "tony-rominger",
+          "name": "ROMINGER Tony",
+          "badges": "27"
+        },
+        {
+          "pos": 56,
+          "type": "rider",
+          "slug": "johan-museeuw",
+          "name": "MUSEEUW Johan",
+          "badges": "27"
+        },
+        {
+          "pos": 57,
+          "type": "rider",
+          "slug": "gianni-bugno",
+          "name": "BUGNO Gianni",
+          "badges": "27"
+        },
+        {
+          "pos": 58,
+          "type": "rider",
+          "slug": "richard-carapaz",
+          "name": "CARAPAZ Richard",
+          "badges": "27"
+        },
+        {
           "pos": 59,
           "type": "rider",
-          "slug": "damiano-cunego",
-          "name": "CUNEGO Damiano",
+          "slug": "raymond-poulidor",
+          "name": "POULIDOR Raymond",
           "badges": "27"
         },
         {
           "pos": 60,
           "type": "rider",
-          "slug": "rui-costa",
-          "name": "COSTA Rui",
-          "badges": "26"
+          "slug": "rik-van-steenbergen",
+          "name": "VAN STEENBERGEN Rik",
+          "badges": "27"
         },
         {
           "pos": 61,
+          "type": "rider",
+          "slug": "giuseppe-saronni",
+          "name": "SARONNI Giuseppe",
+          "badges": "27"
+        },
+        {
+          "pos": 62,
+          "type": "rider",
+          "slug": "fausto-coppi",
+          "name": "COPPI Fausto",
+          "badges": "27"
+        },
+        {
+          "pos": 63,
+          "type": "rider",
+          "slug": "thibaut-pinot",
+          "name": "PINOT Thibaut",
+          "badges": "27"
+        },
+        {
+          "pos": 64,
+          "type": "rider",
+          "slug": "paolo-bettini",
+          "name": "BETTINI Paolo",
+          "badges": "27"
+        },
+        {
+          "pos": 65,
           "type": "rider",
           "slug": "nairo-quintana",
           "name": "QUINTANA Nairo",
           "badges": "26"
         },
         {
-          "pos": 62,
-          "type": "rider",
-          "slug": "tony-rominger",
-          "name": "ROMINGER Tony",
-          "badges": "26"
-        },
-        {
-          "pos": 63,
-          "type": "rider",
-          "slug": "richard-carapaz",
-          "name": "CARAPAZ Richard",
-          "badges": "26"
-        },
-        {
-          "pos": 64,
-          "type": "rider",
-          "slug": "gianni-bugno",
-          "name": "BUGNO Gianni",
-          "badges": "26"
-        },
-        {
-          "pos": 65,
-          "type": "rider",
-          "slug": "paolo-bettini",
-          "name": "BETTINI Paolo",
-          "badges": "26"
-        },
-        {
           "pos": 66,
+          "type": "rider",
+          "slug": "matej-mohoric",
+          "name": "MOHORIČ Matej",
+          "badges": "26"
+        },
+        {
+          "pos": 67,
+          "type": "rider",
+          "slug": "rui-costa",
+          "name": "COSTA Rui",
+          "badges": "26"
+        },
+        {
+          "pos": 68,
+          "type": "rider",
+          "slug": "luis-leon-sanchez",
+          "name": "SÁNCHEZ Luis León",
+          "badges": "26"
+        },
+        {
+          "pos": 69,
+          "type": "rider",
+          "slug": "thomas-voeckler",
+          "name": "VOECKLER Thomas",
+          "badges": "26"
+        },
+        {
+          "pos": 70,
           "type": "rider",
           "slug": "maurizio-fondriest",
           "name": "FONDRIEST Maurizio",
           "badges": "26"
         },
         {
-          "pos": 67,
-          "type": "rider",
-          "slug": "johan-museeuw",
-          "name": "MUSEEUW Johan",
-          "badges": "26"
-        },
-        {
-          "pos": 68,
-          "type": "rider",
-          "slug": "hennie-kuiper",
-          "name": "KUIPER Hennie",
-          "badges": "25"
-        },
-        {
-          "pos": 69,
-          "type": "rider",
-          "slug": "greg-lemond",
-          "name": "LEMOND Greg",
-          "badges": "25"
-        },
-        {
-          "pos": 70,
+          "pos": 71,
           "type": "rider",
           "slug": "simon-clarke",
           "name": "CLARKE Simon",
-          "badges": "25"
-        },
-        {
-          "pos": 71,
-          "type": "rider",
-          "slug": "joaquim-rodriguez",
-          "name": "RODRÍGUEZ Joaquim",
-          "badges": "25"
+          "badges": "26"
         },
         {
           "pos": 72,
-          "type": "rider",
-          "slug": "rafal-majka",
-          "name": "MAJKA Rafał",
-          "badges": "25"
-        },
-        {
-          "pos": 73,
           "type": "rider",
           "slug": "oscar-freire",
           "name": "FREIRE Óscar",
           "badges": "25"
         },
         {
+          "pos": 73,
+          "type": "rider",
+          "slug": "hennie-kuiper",
+          "name": "KUIPER Hennie",
+          "badges": "25"
+        },
+        {
           "pos": 74,
           "type": "rider",
-          "slug": "luis-leon-sanchez",
-          "name": "SÁNCHEZ Luis León",
+          "slug": "greg-lemond",
+          "name": "LEMOND Greg",
           "badges": "25"
         },
         {
           "pos": 75,
+          "type": "rider",
+          "slug": "daryl-impey",
+          "name": "IMPEY Daryl",
+          "badges": "25"
+        },
+        {
+          "pos": 76,
           "type": "rider",
           "slug": "john-degenkolb",
           "name": "DEGENKOLB John",
           "badges": "25"
         },
         {
-          "pos": 76,
-          "type": "rider",
-          "slug": "thomas-voeckler",
-          "name": "VOECKLER Thomas",
-          "badges": "25"
-        },
-        {
           "pos": 77,
           "type": "rider",
-          "slug": "matej-mohoric",
-          "name": "MOHORIČ Matej",
+          "slug": "robbie-mcewen",
+          "name": "MCEWEN Robbie",
           "badges": "25"
         },
         {
           "pos": 78,
           "type": "rider",
-          "slug": "dietrich-thurau",
-          "name": "THURAU Dietrich",
-          "badges": "24"
+          "slug": "joaquim-rodriguez",
+          "name": "RODRÍGUEZ Joaquim",
+          "badges": "25"
         },
         {
           "pos": 79,
           "type": "rider",
-          "slug": "daryl-impey",
-          "name": "IMPEY Daryl",
-          "badges": "24"
+          "slug": "rafal-majka",
+          "name": "MAJKA Rafał",
+          "badges": "25"
         },
         {
           "pos": 80,
           "type": "rider",
-          "slug": "robbie-mcewen",
-          "name": "MCEWEN Robbie",
-          "badges": "24"
+          "slug": "erik-dekker",
+          "name": "DEKKER Erik",
+          "badges": "25"
         },
         {
           "pos": 81,
           "type": "rider",
-          "slug": "moreno-argentin",
-          "name": "ARGENTIN Moreno",
-          "badges": "24"
+          "slug": "bob-jungels",
+          "name": "JUNGELS Bob",
+          "badges": "25"
         },
         {
           "pos": 82,
           "type": "rider",
-          "slug": "rudi-altig",
-          "name": "ALTIG Rudi",
-          "badges": "24"
+          "slug": "rein-taaramae",
+          "name": "TAARAMÄE Rein",
+          "badges": "25"
         },
         {
           "pos": 83,
+          "type": "rider",
+          "slug": "vasil-kiryienka",
+          "name": "KIRYIENKA Vasil",
+          "badges": "25"
+        },
+        {
+          "pos": 84,
+          "type": "rider",
+          "slug": "thomas-de-gendt",
+          "name": "DE GENDT Thomas",
+          "badges": "25"
+        },
+        {
+          "pos": 85,
+          "type": "rider",
+          "slug": "rigoberto-uran",
+          "name": "URÁN Rigoberto",
+          "badges": "24"
+        },
+        {
+          "pos": 86,
           "type": "rider",
           "slug": "tom-dumoulin",
           "name": "DUMOULIN Tom",
           "badges": "24"
         },
         {
-          "pos": 84,
-          "type": "rider",
-          "slug": "lotte-kopecky",
-          "name": "KOPECKY Lotte",
-          "badges": "24"
-        },
-        {
-          "pos": 85,
-          "type": "rider",
-          "slug": "charly-mottet",
-          "name": "MOTTET Charly",
-          "badges": "24"
-        },
-        {
-          "pos": 86,
-          "type": "rider",
-          "slug": "ferdinand-kubler",
-          "name": "KÜBLER Ferdinand",
-          "badges": "24"
-        },
-        {
           "pos": 87,
           "type": "rider",
-          "slug": "tony-martin",
-          "name": "MARTIN Tony",
+          "slug": "jan-janssen",
+          "name": "JANSSEN Jan",
           "badges": "24"
         },
         {
           "pos": 88,
           "type": "rider",
-          "slug": "gino-bartali",
-          "name": "BARTALI Gino",
+          "slug": "filippo-ganna",
+          "name": "GANNA Filippo",
           "badges": "24"
         },
         {
           "pos": 89,
           "type": "rider",
-          "slug": "rein-taaramae",
-          "name": "TAARAMÄE Rein",
+          "slug": "alex-zulle",
+          "name": "ZÜLLE Alex",
           "badges": "24"
         },
         {
           "pos": 90,
           "type": "rider",
-          "slug": "francisco-mancebo",
-          "name": "MANCEBO Francisco",
+          "slug": "laurent-brochard",
+          "name": "BROCHARD Laurent",
           "badges": "24"
         },
         {
           "pos": 91,
           "type": "rider",
-          "slug": "vasil-kiryienka",
-          "name": "KIRYIENKA Vasil",
+          "slug": "charly-mottet",
+          "name": "MOTTET Charly",
           "badges": "24"
         },
         {
@@ -1285,58 +1285,58 @@
         {
           "pos": 93,
           "type": "rider",
-          "slug": "egan-bernal",
-          "name": "BERNAL Egan",
+          "slug": "ferdinand-kubler",
+          "name": "KÜBLER Ferdinand",
           "badges": "24"
         },
         {
           "pos": 94,
           "type": "rider",
-          "slug": "alex-zulle",
-          "name": "ZÜLLE Alex",
+          "slug": "francisco-mancebo",
+          "name": "MANCEBO Francisco",
           "badges": "24"
         },
         {
           "pos": 95,
           "type": "rider",
-          "slug": "erik-dekker",
-          "name": "DEKKER Erik",
+          "slug": "roman-kreuziger",
+          "name": "KREUZIGER Roman",
           "badges": "24"
         },
         {
           "pos": 96,
           "type": "rider",
-          "slug": "bob-jungels",
-          "name": "JUNGELS Bob",
+          "slug": "gino-bartali",
+          "name": "BARTALI Gino",
           "badges": "24"
         },
         {
           "pos": 97,
           "type": "rider",
-          "slug": "jan-janssen",
-          "name": "JANSSEN Jan",
+          "slug": "dietrich-thurau",
+          "name": "THURAU Dietrich",
           "badges": "24"
         },
         {
           "pos": 98,
           "type": "rider",
-          "slug": "roman-kreuziger",
-          "name": "KREUZIGER Roman",
-          "badges": "23"
+          "slug": "moreno-argentin",
+          "name": "ARGENTIN Moreno",
+          "badges": "24"
         },
         {
           "pos": 99,
           "type": "rider",
-          "slug": "michele-bartoli",
-          "name": "BARTOLI Michele",
-          "badges": "23"
+          "slug": "tony-martin",
+          "name": "MARTIN Tony",
+          "badges": "24"
         },
         {
           "pos": 100,
           "type": "rider",
-          "slug": "simon-yates",
-          "name": "YATES Simon",
-          "badges": "23"
+          "slug": "david-millar",
+          "name": "MILLAR David",
+          "badges": "24"
         }
       ]
     },
@@ -1945,7 +1945,7 @@
       "notes": "Dynamic; shrinks after each DNF",
       "description": "",
       "url": "https://www.procyclingstats.com/statistics/riders/riders-without-dnf",
-      "fetched_at": "2026-11-16T17:29:36.938286+00:00",
+      "fetched_at": "2026-11-23T19:30:39.365920+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -2308,7 +2308,7 @@
       "notes": "Career total; grows",
       "description": "List of riders with the most victories in the UCI WorldTour in 2026",
       "url": "https://www.procyclingstats.com/statistics/riders/wins-on-wt-level",
-      "fetched_at": "2026-11-16T17:29:48.492726+00:00",
+      "fetched_at": "2026-11-23T19:30:50.615367+00:00",
       "row_count": 93,
       "rows": [
         {
@@ -3344,7 +3344,7 @@
       "notes": "Career total; grows",
       "description": "How many victories had each world champion? had 23 wins when he was the world champion",
       "url": "https://www.procyclingstats.com/statistics/riders/wins-by-world-champions",
-      "fetched_at": "2026-11-16T17:29:58.803980+00:00",
+      "fetched_at": "2026-11-23T19:31:01.141744+00:00",
       "row_count": 84,
       "rows": [
         {
@@ -3945,7 +3945,7 @@
       "notes": "Career total; grows",
       "description": "has scored 1250 points in one day races in the WorldTour like Tour of Flanders, Paris-Roubaix and Classica San Sebastian.",
       "url": "https://www.procyclingstats.com/statistics/riders/wt-classics-ranking",
-      "fetched_at": "2026-11-16T17:30:14.838191+00:00",
+      "fetched_at": "2026-11-23T19:31:17.059138+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -4308,7 +4308,7 @@
       "notes": "Career total; grows",
       "description": "has done a solo of 79.2 kilometre in Strade Bianche, which was the longest solo in 2026 in the WorldTour.",
       "url": "https://www.procyclingstats.com/statistics/riders/solo-victories",
-      "fetched_at": "2026-11-16T17:30:20.466456+00:00",
+      "fetched_at": "2026-11-23T19:31:22.623374+00:00",
       "row_count": 91,
       "rows": [
         {
@@ -5140,7 +5140,7 @@
       "notes": "Current season lineups",
       "description": "Will Tadej Pogačar, Jonas Vingegaard, Isaac del Toro compete in the Tour de France, Giro d",
       "url": "https://www.procyclingstats.com/statistics/riders/grand-tour-roster-for-top-gc-riders",
-      "fetched_at": "2026-11-16T17:30:35.973260+00:00",
+      "fetched_at": "2026-11-23T19:31:39.148846+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -5603,7 +5603,7 @@
       "notes": "Current season; updates early in year",
       "description": "For so far known, Tadej Pogačar will start his season in Tour de France. Remco Evenepoel is scheduled for and Isaac del Toro is on the startlist of . This table lists the starting race of the top-100 best riders for the 2027 season.",
       "url": "https://www.procyclingstats.com/statistics/riders/where-will-the-top-100-start-their-season",
-      "fetched_at": "2026-11-16T17:30:41.263690+00:00",
+      "fetched_at": "2026-11-23T19:31:44.465906+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -5630,7 +5630,9 @@
           "pos": 4,
           "type": "rider",
           "slug": "paul-seixas",
-          "name": "SEIXAS Paul"
+          "name": "SEIXAS Paul",
+          "date": "2027-03-06",
+          "race": "Strade Bianche"
         },
         {
           "pos": 5,
@@ -6004,7 +6006,9 @@
           "pos": 65,
           "type": "rider",
           "slug": "santiago-buitrago-sanchez",
-          "name": "BUITRAGO Santiago"
+          "name": "BUITRAGO Santiago",
+          "date": "2027-01-26",
+          "race": "Tour Colombia"
         },
         {
           "pos": 66,
@@ -6124,7 +6128,9 @@
           "pos": 85,
           "type": "rider",
           "slug": "michael-storer",
-          "name": "STORER Michael"
+          "name": "STORER Michael",
+          "date": "2027-01-19",
+          "race": "Santos Tour Down Under ME"
         },
         {
           "pos": 86,
@@ -6226,7 +6232,7 @@
       "notes": "PCS scores; update seasonally",
       "description": "Looking at the 5 specialties of climbing, sprinting, classics, time trial and classification, Philippe Gilbert ranks the highest of the active riders before Wout Aert and Mathieu Poel.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-allround-riders",
-      "fetched_at": "2026-11-16T17:30:46.404153+00:00",
+      "fetched_at": "2026-11-23T19:31:49.615212+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -6310,7 +6316,7 @@
           "one_day_races": "13526",
           "time_trial": "4946",
           "sprint": "590",
-          "climber": "17478",
+          "climber": "16716",
           "hills": "7378"
         },
         {
@@ -6322,7 +6328,7 @@
           "one_day_races": "11338",
           "time_trial": "577",
           "sprint": "2294",
-          "climber": "3574",
+          "climber": "3560",
           "hills": "6107"
         },
         {
@@ -6442,7 +6448,7 @@
           "one_day_races": "4517",
           "time_trial": "3619",
           "sprint": "345",
-          "climber": "3413",
+          "climber": "3351",
           "hills": "3612"
         },
         {
@@ -6478,7 +6484,7 @@
           "one_day_races": "695",
           "time_trial": "1019",
           "sprint": "746",
-          "climber": "483",
+          "climber": "481",
           "hills": "1656"
         },
         {
@@ -6526,7 +6532,7 @@
           "one_day_races": "6288",
           "time_trial": "309",
           "sprint": "4681",
-          "climber": "316",
+          "climber": "314",
           "hills": "3345"
         },
         {
@@ -6766,7 +6772,7 @@
           "one_day_races": "4238",
           "time_trial": "1625",
           "sprint": "224",
-          "climber": "5655",
+          "climber": "5598",
           "hills": "2807"
         },
         {
@@ -6839,7 +6845,7 @@
       "notes": "PCS scores; update seasonally",
       "description": "Mark Cavendish has scored the most points in the sprint, far more than any other cycling specialty. Philippe Gilbert has scored most points in classics, where Tony Martin has the most points in time trials.",
       "url": "https://www.procyclingstats.com/statistics/riders/single-specialty-riders",
-      "fetched_at": "2026-11-16T17:30:51.551666+00:00",
+      "fetched_at": "2026-11-23T19:31:54.779435+00:00",
       "row_count": 20,
       "rows": [
         {
@@ -6904,7 +6910,7 @@
           "gc": "663",
           "classic": "1873",
           "time_trial": "833",
-          "climb": "4",
+          "climb": "1",
           "hills": "231"
         },
         {
@@ -7112,7 +7118,7 @@
       "notes": "Career total; grows",
       "description": "has 63 victories in time trials and a grand total of 1130 points. Runner-up is with 1017 points in time trials and has 957 points obtained in his career.",
       "url": "https://www.procyclingstats.com/statistics/riders/all-time-time-trial-ranking",
-      "fetched_at": "2026-11-16T17:30:56.876941+00:00",
+      "fetched_at": "2026-11-23T19:32:00.132866+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -7925,7 +7931,7 @@
       "notes": "Career total; grows",
       "description": "The rider with the most starts in grand tours is TOSATTO Matteo with 34 starts. He started 12 times in the Tour de France, 13 times in the Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-starts",
-      "fetched_at": "2026-11-16T17:31:12.828853+00:00",
+      "fetched_at": "2026-11-23T19:32:16.128610+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -8488,7 +8494,7 @@
       "notes": "Career total; grows",
       "description": "Who has the most grand tour wins? has won 11 grand tours, before (10) and (9).",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-wins",
-      "fetched_at": "2026-11-16T17:31:17.990675+00:00",
+      "fetched_at": "2026-11-23T19:32:21.361530+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -8951,7 +8957,7 @@
       "notes": "Career achievement; grows",
       "description": "There are 116 riders that have won at least one stage in the grand tours Tour de France, Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/stage-winners-in-all-3-gts",
-      "fetched_at": "2026-11-16T17:31:23.375240+00:00",
+      "fetched_at": "2026-11-23T19:32:26.645271+00:00",
       "row_count": 116,
       "rows": [
         {
@@ -10240,7 +10246,7 @@
       "notes": "Career total; grows",
       "description": "With a total of 64 stage wins, Eddy Merckx has won the most stages in the grand tours. He won 24 stage in the Giro d",
       "url": "https://www.procyclingstats.com/statistics/grandtours/most-stage-wins",
-      "fetched_at": "2026-11-16T17:31:28.766312+00:00",
+      "fetched_at": "2026-11-23T19:32:32.042833+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -10753,7 +10759,7 @@
       "notes": "Career total; grows",
       "description": "Soudal Quick-Step has won 106 stages in the last 10 season in the grand tours. Second is UAE Team Emirates - XRG with 89 wins, before Team Visma | Lease a Bike with 80 victories.",
       "url": "https://www.procyclingstats.com/statistics/grandtours/stage-wins-by-teams",
-      "fetched_at": "2026-11-16T17:31:33.981826+00:00",
+      "fetched_at": "2026-11-23T19:32:37.296062+00:00",
       "row_count": 42,
       "rows": [
         {
@@ -11102,7 +11108,7 @@
       "notes": "Career total; grows",
       "description": "There are 123 riders that have won more than one monumental classic. Eddy Merckx has won the most monuments, 19 in total. With 229 victories, Belgium has the most victories by nation.",
       "url": "https://www.procyclingstats.com/statistics/monuments/most-wins",
-      "fetched_at": "2026-11-16T17:31:39.127185+00:00",
+      "fetched_at": "2026-11-23T19:32:42.582644+00:00",
       "row_count": 123,
       "rows": [
         {
@@ -13517,7 +13523,7 @@
       "notes": "Current season team stats",
       "description": "What team has the most wins? Who has the youngest or oldest riders on their squad? And which team is on average the youngest this season? You can find all team related statistics on this page.",
       "url": "https://www.procyclingstats.com/statistics/teams",
-      "fetched_at": "2026-11-16T17:31:45.347233+00:00",
+      "fetched_at": "2026-11-23T19:32:48.971188+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -13850,7 +13856,7 @@
       "notes": "Current season nation stats",
       "description": "There are 76 from Belgium listed at a WorldTour team in 2026. Italy and France are respectively 2nd and 3rd with 57 and 56 riders.",
       "url": "https://www.procyclingstats.com/statistics/nations",
-      "fetched_at": "2026-11-16T17:31:50.567717+00:00",
+      "fetched_at": "2026-11-23T19:32:54.124652+00:00",
       "row_count": 39,
       "rows": [
         {
@@ -14683,7 +14689,7 @@
       "notes": "Career totals; grows",
       "description": "Statistics on the seven major tours in cycling; Volta a Catalunya, Itzulia Basque Country, Paris-Nice, Tour de Suisse, Critérium du Dauphiné, Tour de Romandie and Tirreno-Adriatico.",
       "url": "https://www.procyclingstats.com/statistics/major-tours",
-      "fetched_at": "2026-11-16T17:31:55.857993+00:00",
+      "fetched_at": "2026-11-23T19:32:59.365569+00:00",
       "row_count": 7,
       "rows": [
         {
@@ -14757,7 +14763,7 @@
       "notes": "Updates as teams change equipment",
       "description": "Alpecin - Premier Tech is riding on Canyon bikes, Shimano for the groupset and Shimano wheels.",
       "url": "https://www.procyclingstats.com/statistics/gear",
-      "fetched_at": "2026-11-16T17:32:01.013332+00:00",
+      "fetched_at": "2026-11-23T19:33:04.527276+00:00",
       "row_count": 18,
       "rows": [
         {
@@ -14950,7 +14956,7 @@
       "notes": "Career totals; grows",
       "description": "The Montjuïc was visited 280 times in all races, 280 more than Col du Tourmalet (115) and Col d",
       "url": "https://www.procyclingstats.com/statistics/climbs/most-visited",
-      "fetched_at": "2026-11-16T17:32:06.972497+00:00",
+      "fetched_at": "2026-11-23T19:33:10.387777+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -14986,20 +14992,20 @@
           "type": "other",
           "slug": "",
           "name": "VAM-berg",
-          "number_of_visits": "71"
+          "number_of_visits": "77"
         },
         {
           "pos": 6,
           "type": "other",
           "slug": "",
-          "name": "Col du Galibier",
+          "name": "Mur de Huy",
           "number_of_visits": "68"
         },
         {
           "pos": 7,
           "type": "other",
           "slug": "",
-          "name": "Mur de Huy",
+          "name": "Col du Galibier",
           "number_of_visits": "68"
         },
         {
@@ -15013,36 +15019,36 @@
           "pos": 9,
           "type": "other",
           "slug": "",
-          "name": "Col de Peyresourde",
+          "name": "Les Gets",
           "number_of_visits": "66"
         },
         {
           "pos": 10,
           "type": "other",
           "slug": "",
-          "name": "Côte de la Redoute",
-          "number_of_visits": "65"
+          "name": "Col de Peyresourde",
+          "number_of_visits": "66"
         },
         {
           "pos": 11,
           "type": "other",
           "slug": "",
-          "name": "Lagunas de Neila",
+          "name": "Côte de la Redoute",
           "number_of_visits": "65"
         },
         {
           "pos": 12,
           "type": "other",
           "slug": "",
-          "name": "Côte Camillien-Houde",
-          "number_of_visits": "64"
+          "name": "Lagunas de Neila",
+          "number_of_visits": "65"
         },
         {
           "pos": 13,
           "type": "other",
           "slug": "",
-          "name": "Urkaregi",
-          "number_of_visits": "60"
+          "name": "Côte Camillien-Houde",
+          "number_of_visits": "64"
         },
         {
           "pos": 14,
@@ -15055,15 +15061,15 @@
           "pos": 15,
           "type": "other",
           "slug": "",
-          "name": "Côte de Wanne",
-          "number_of_visits": "59"
+          "name": "Urkaregi",
+          "number_of_visits": "60"
         },
         {
           "pos": 16,
           "type": "other",
           "slug": "",
-          "name": "Nokereberg",
-          "number_of_visits": "58"
+          "name": "Côte de Wanne",
+          "number_of_visits": "59"
         },
         {
           "pos": 17,
@@ -15076,21 +15082,21 @@
           "pos": 18,
           "type": "other",
           "slug": "",
-          "name": "Côte de Châteaufort",
-          "number_of_visits": "57"
+          "name": "Nokereberg",
+          "number_of_visits": "58"
         },
         {
           "pos": 19,
           "type": "other",
           "slug": "",
-          "name": "L'Alpe d'Huez",
-          "number_of_visits": "56"
+          "name": "Côte de Châteaufort",
+          "number_of_visits": "57"
         },
         {
           "pos": 20,
           "type": "other",
           "slug": "",
-          "name": "Willunga Hill",
+          "name": "Col du Rosier",
           "number_of_visits": "56"
         },
         {
@@ -15104,98 +15110,98 @@
           "pos": 22,
           "type": "other",
           "slug": "",
-          "name": "Col du Rosier",
+          "name": "Willunga Hill",
           "number_of_visits": "56"
         },
         {
           "pos": 23,
           "type": "other",
           "slug": "",
+          "name": "L'Alpe d'Huez",
+          "number_of_visits": "56"
+        },
+        {
+          "pos": 24,
+          "type": "other",
+          "slug": "",
           "name": "Mont Ventoux",
           "number_of_visits": "55"
         },
         {
-          "pos": 24,
+          "pos": 25,
           "type": "other",
           "slug": "",
           "name": "Col d'Aubisque",
           "number_of_visits": "53"
         },
         {
-          "pos": 25,
+          "pos": 26,
           "type": "other",
           "slug": "",
           "name": "Alto de Izua",
           "number_of_visits": "52"
         },
         {
-          "pos": 26,
+          "pos": 27,
           "type": "other",
           "slug": "",
           "name": "Côte des Glacis",
           "number_of_visits": "51"
         },
         {
-          "pos": 27,
+          "pos": 28,
           "type": "other",
           "slug": "",
           "name": "Muur van Geraardsbergen",
           "number_of_visits": "51"
         },
         {
-          "pos": 28,
+          "pos": 29,
           "type": "other",
           "slug": "",
           "name": "Col de la Madeleine",
           "number_of_visits": "51"
         },
         {
-          "pos": 29,
+          "pos": 30,
           "type": "other",
           "slug": "",
           "name": "Alto de Abaltzisketa",
           "number_of_visits": "49"
         },
         {
-          "pos": 30,
+          "pos": 31,
           "type": "other",
           "slug": "",
           "name": "Alto do Malhão",
           "number_of_visits": "48"
         },
         {
-          "pos": 31,
-          "type": "other",
-          "slug": "",
-          "name": "Knokteberg-Trieu",
-          "number_of_visits": "47"
-        },
-        {
           "pos": 32,
-          "type": "other",
-          "slug": "",
-          "name": "San Luca",
-          "number_of_visits": "47"
-        },
-        {
-          "pos": 33,
           "type": "other",
           "slug": "",
           "name": "Alto de Jaizkibel",
           "number_of_visits": "47"
         },
         {
+          "pos": 33,
+          "type": "other",
+          "slug": "",
+          "name": "Knokteberg-Trieu",
+          "number_of_visits": "47"
+        },
+        {
           "pos": 34,
           "type": "other",
           "slug": "",
-          "name": "Montefiore Hill",
-          "number_of_visits": "45"
+          "name": "San Luca",
+          "number_of_visits": "47"
         },
         {
           "pos": 35,
           "type": "other",
           "slug": "",
-          "name": "Torre",
+          "name": "Montefiore Hill",
           "number_of_visits": "45"
         },
         {
@@ -15209,36 +15215,36 @@
           "pos": 37,
           "type": "other",
           "slug": "",
-          "name": "Puerto de Navacerrada",
-          "number_of_visits": "44"
+          "name": "Torre",
+          "number_of_visits": "45"
         },
         {
           "pos": 38,
           "type": "other",
           "slug": "",
-          "name": "Stockeu",
+          "name": "Puerto de Navacerrada",
           "number_of_visits": "44"
         },
         {
           "pos": 39,
           "type": "other",
           "slug": "",
-          "name": "Passo Pordoi",
+          "name": "Stockeu",
           "number_of_visits": "44"
         },
         {
           "pos": 40,
           "type": "other",
           "slug": "",
-          "name": "Watersley",
+          "name": "Passo Pordoi",
           "number_of_visits": "44"
         },
         {
           "pos": 41,
           "type": "other",
           "slug": "",
-          "name": "Rotberg",
-          "number_of_visits": "43"
+          "name": "Watersley",
+          "number_of_visits": "44"
         },
         {
           "pos": 42,
@@ -15251,14 +15257,14 @@
           "pos": 43,
           "type": "other",
           "slug": "",
-          "name": "Col de la Croix-de-Fer",
-          "number_of_visits": "42"
+          "name": "Rotberg",
+          "number_of_visits": "43"
         },
         {
           "pos": 44,
           "type": "other",
           "slug": "",
-          "name": "Col d'Izoard",
+          "name": "Arinsal",
           "number_of_visits": "42"
         },
         {
@@ -15272,36 +15278,36 @@
           "pos": 46,
           "type": "other",
           "slug": "",
-          "name": "Côte des Forges",
-          "number_of_visits": "41"
+          "name": "Cauberg",
+          "number_of_visits": "42"
         },
         {
           "pos": 47,
+          "type": "other",
+          "slug": "",
+          "name": "Col d'Izoard",
+          "number_of_visits": "42"
+        },
+        {
+          "pos": 48,
+          "type": "other",
+          "slug": "",
+          "name": "Col de la Croix-de-Fer",
+          "number_of_visits": "42"
+        },
+        {
+          "pos": 49,
           "type": "other",
           "slug": "",
           "name": "Mount Fuji",
           "number_of_visits": "41"
         },
         {
-          "pos": 48,
-          "type": "other",
-          "slug": "",
-          "name": "Cauberg",
-          "number_of_visits": "40"
-        },
-        {
-          "pos": 49,
-          "type": "other",
-          "slug": "",
-          "name": "Bosberg",
-          "number_of_visits": "40"
-        },
-        {
           "pos": 50,
           "type": "other",
           "slug": "",
-          "name": "Col des Aravis",
-          "number_of_visits": "40"
+          "name": "Côte des Forges",
+          "number_of_visits": "41"
         }
       ]
     },
@@ -15313,7 +15319,7 @@
       "notes": "Shrinks as season progresses",
       "description": "Bram Welten, Stephen Williams and Archie Ryan are among the riders with no start yet this season.",
       "url": "https://www.procyclingstats.com/statistics/riders/riders-with-no-starts-yet",
-      "fetched_at": "2026-11-16T17:28:52.942241+00:00",
+      "fetched_at": "2026-11-23T19:29:55.118803+00:00",
       "row_count": 7,
       "rows": [
         {
@@ -15382,7 +15388,7 @@
       "notes": "Career total; grows for active riders",
       "description": "Huub Duijn has started in a total number of 203 different races. He stays ahead of Reinier Honig (192) and Davide Rebellin (192). There are 129 riders that started in more than 150 races.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-races-started",
-      "fetched_at": "2026-11-16T17:28:58.196377+00:00",
+      "fetched_at": "2026-11-23T19:30:00.274469+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -15465,29 +15471,29 @@
         {
           "pos": 12,
           "type": "rider",
-          "slug": "kevyn-ista",
-          "name": "ISTA Kevyn",
-          "number_of_different_races": "176"
-        },
-        {
-          "pos": 13,
-          "type": "rider",
           "slug": "boy-van-poppel",
           "name": "VAN POPPEL Boy",
           "number_of_different_races": "176"
         },
         {
+          "pos": 13,
+          "type": "rider",
+          "slug": "kevyn-ista",
+          "name": "ISTA Kevyn",
+          "number_of_different_races": "176"
+        },
+        {
           "pos": 14,
           "type": "rider",
-          "slug": "baptiste-planckaert",
-          "name": "PLANCKAERT Baptiste",
+          "slug": "michel-kreder",
+          "name": "KREDER Michel",
           "number_of_different_races": "174"
         },
         {
           "pos": 15,
           "type": "rider",
-          "slug": "michel-kreder",
-          "name": "KREDER Michel",
+          "slug": "baptiste-planckaert",
+          "name": "PLANCKAERT Baptiste",
           "number_of_different_races": "174"
         },
         {
@@ -15507,29 +15513,29 @@
         {
           "pos": 18,
           "type": "rider",
-          "slug": "jenthe-biermans",
-          "name": "BIERMANS Jenthe",
-          "number_of_different_races": "171"
-        },
-        {
-          "pos": 19,
-          "type": "rider",
-          "slug": "guillaume-boivin",
-          "name": "BOIVIN Guillaume",
-          "number_of_different_races": "171"
-        },
-        {
-          "pos": 20,
-          "type": "rider",
           "slug": "krists-neilands",
           "name": "NEILANDS Krists",
           "number_of_different_races": "171"
         },
         {
-          "pos": 21,
+          "pos": 19,
           "type": "rider",
           "slug": "maciej-paterski",
           "name": "PATERSKI Maciej",
+          "number_of_different_races": "171"
+        },
+        {
+          "pos": 20,
+          "type": "rider",
+          "slug": "jenthe-biermans",
+          "name": "BIERMANS Jenthe",
+          "number_of_different_races": "171"
+        },
+        {
+          "pos": 21,
+          "type": "rider",
+          "slug": "guillaume-boivin",
+          "name": "BOIVIN Guillaume",
           "number_of_different_races": "171"
         },
         {
@@ -15542,36 +15548,36 @@
         {
           "pos": 23,
           "type": "rider",
-          "slug": "dennis-van-winden",
-          "name": "VAN WINDEN Dennis",
+          "slug": "oscar-riesebeek",
+          "name": "RIESEBEEK Oscar",
           "number_of_different_races": "170"
         },
         {
           "pos": 24,
-          "type": "rider",
-          "slug": "sergey-firsanov",
-          "name": "FIRSANOV Sergei",
-          "number_of_different_races": "170"
-        },
-        {
-          "pos": 25,
           "type": "rider",
           "slug": "wesley-kreder",
           "name": "KREDER Wesley",
           "number_of_different_races": "170"
         },
         {
+          "pos": 25,
+          "type": "rider",
+          "slug": "dennis-van-winden",
+          "name": "VAN WINDEN Dennis",
+          "number_of_different_races": "170"
+        },
+        {
           "pos": 26,
           "type": "rider",
-          "slug": "ben-hermans",
-          "name": "HERMANS Ben",
+          "slug": "sergey-firsanov",
+          "name": "FIRSANOV Sergei",
           "number_of_different_races": "170"
         },
         {
           "pos": 27,
           "type": "rider",
-          "slug": "oscar-riesebeek",
-          "name": "RIESEBEEK Oscar",
+          "slug": "ben-hermans",
+          "name": "HERMANS Ben",
           "number_of_different_races": "170"
         },
         {
@@ -15591,22 +15597,22 @@
         {
           "pos": 30,
           "type": "rider",
-          "slug": "nikolay-trusov",
-          "name": "TRUSOV Nikolay",
-          "number_of_different_races": "168"
-        },
-        {
-          "pos": 31,
-          "type": "rider",
           "slug": "simon-pellaud",
           "name": "PELLAUD Simon",
           "number_of_different_races": "168"
         },
         {
+          "pos": 31,
+          "type": "rider",
+          "slug": "nikolay-trusov",
+          "name": "TRUSOV Nikolay",
+          "number_of_different_races": "168"
+        },
+        {
           "pos": 32,
           "type": "rider",
-          "slug": "jonas-ljungblad",
-          "name": "LJUNGBLAD Jonas",
+          "slug": "rob-ruijgh",
+          "name": "RUIJGH Rob",
           "number_of_different_races": "167"
         },
         {
@@ -15619,36 +15625,36 @@
         {
           "pos": 34,
           "type": "rider",
-          "slug": "rob-ruijgh",
-          "name": "RUIJGH Rob",
+          "slug": "jonas-ljungblad",
+          "name": "LJUNGBLAD Jonas",
           "number_of_different_races": "167"
         },
         {
           "pos": 35,
-          "type": "rider",
-          "slug": "andrei-solomennikov",
-          "name": "SOLOMENNIKOV Andrei",
-          "number_of_different_races": "166"
-        },
-        {
-          "pos": 36,
           "type": "rider",
           "slug": "mihkel-raim",
           "name": "RÄIM Mihkel",
           "number_of_different_races": "166"
         },
         {
+          "pos": 36,
+          "type": "rider",
+          "slug": "branislau-samoilau",
+          "name": "SAMOILAU Branislau",
+          "number_of_different_races": "166"
+        },
+        {
           "pos": 37,
           "type": "rider",
-          "slug": "yukiya-arashiro",
-          "name": "ARASHIRO Yukiya",
+          "slug": "andrei-solomennikov",
+          "name": "SOLOMENNIKOV Andrei",
           "number_of_different_races": "166"
         },
         {
           "pos": 38,
           "type": "rider",
-          "slug": "branislau-samoilau",
-          "name": "SAMOILAU Branislau",
+          "slug": "yukiya-arashiro",
+          "name": "ARASHIRO Yukiya",
           "number_of_different_races": "166"
         },
         {
@@ -15675,29 +15681,29 @@
         {
           "pos": 42,
           "type": "rider",
-          "slug": "artem-ovechkin",
-          "name": "OVECHKIN Artem",
+          "slug": "nick-van-der-lijke",
+          "name": "VAN DER LIJKE Nick",
           "number_of_different_races": "164"
         },
         {
           "pos": 43,
-          "type": "rider",
-          "slug": "reinardt-janse-van-rensburg",
-          "name": "JANSE VAN RENSBURG Reinardt",
-          "number_of_different_races": "164"
-        },
-        {
-          "pos": 44,
           "type": "rider",
           "slug": "pavel-brutt",
           "name": "BRUTT Pavel",
           "number_of_different_races": "164"
         },
         {
-          "pos": 45,
+          "pos": 44,
           "type": "rider",
           "slug": "pavel-kochetkov",
           "name": "KOCHETKOV Pavel",
+          "number_of_different_races": "164"
+        },
+        {
+          "pos": 45,
+          "type": "rider",
+          "slug": "vitaliy-buts",
+          "name": "BUTS Vitaliy",
           "number_of_different_races": "164"
         },
         {
@@ -15710,50 +15716,50 @@
         {
           "pos": 47,
           "type": "rider",
-          "slug": "vitaliy-buts",
-          "name": "BUTS Vitaliy",
+          "slug": "reinardt-janse-van-rensburg",
+          "name": "JANSE VAN RENSBURG Reinardt",
           "number_of_different_races": "164"
         },
         {
           "pos": 48,
-          "type": "rider",
-          "slug": "tim-declercq",
-          "name": "DECLERCQ Tim",
-          "number_of_different_races": "164"
-        },
-        {
-          "pos": 49,
           "type": "rider",
           "slug": "dimitri-peyskens",
           "name": "PEYSKENS Dimitri",
           "number_of_different_races": "164"
         },
         {
-          "pos": 50,
-          "type": "rider",
-          "slug": "nick-van-der-lijke",
-          "name": "VAN DER LIJKE Nick",
-          "number_of_different_races": "164"
-        },
-        {
-          "pos": 51,
+          "pos": 49,
           "type": "rider",
           "slug": "christopher-juul-jensen",
           "name": "JUUL-JENSEN Christopher",
           "number_of_different_races": "164"
         },
         {
+          "pos": 50,
+          "type": "rider",
+          "slug": "artem-ovechkin",
+          "name": "OVECHKIN Artem",
+          "number_of_different_races": "164"
+        },
+        {
+          "pos": 51,
+          "type": "rider",
+          "slug": "tim-declercq",
+          "name": "DECLERCQ Tim",
+          "number_of_different_races": "164"
+        },
+        {
           "pos": 52,
           "type": "rider",
-          "slug": "marc-de-maar",
-          "name": "DE MAAR Marc",
+          "slug": "pieter-vanspeybrouck",
+          "name": "VANSPEYBROUCK Pieter",
           "number_of_different_races": "163"
         },
         {
           "pos": 53,
           "type": "rider",
-          "slug": "pieter-vanspeybrouck",
-          "name": "VANSPEYBROUCK Pieter",
+          "slug": "marc-de-maar",
+          "name": "DE MAAR Marc",
           "number_of_different_races": "163"
         },
         {
@@ -15766,22 +15772,22 @@
         {
           "pos": 55,
           "type": "rider",
-          "slug": "tom-leezer",
-          "name": "LEEZER Tom",
-          "number_of_different_races": "163"
-        },
-        {
-          "pos": 56,
-          "type": "rider",
           "slug": "loic-vliegen",
           "name": "VLIEGEN Loïc",
           "number_of_different_races": "163"
         },
         {
+          "pos": 56,
+          "type": "rider",
+          "slug": "tom-leezer",
+          "name": "LEEZER Tom",
+          "number_of_different_races": "163"
+        },
+        {
           "pos": 57,
           "type": "rider",
-          "slug": "youcef-reguigui",
-          "name": "REGUIGUI Youcef",
+          "slug": "jonas-koch",
+          "name": "KOCH Jonas",
           "number_of_different_races": "162"
         },
         {
@@ -15794,8 +15800,8 @@
         {
           "pos": 59,
           "type": "rider",
-          "slug": "jonas-koch",
-          "name": "KOCH Jonas",
+          "slug": "youcef-reguigui",
+          "name": "REGUIGUI Youcef",
           "number_of_different_races": "162"
         },
         {
@@ -15815,15 +15821,15 @@
         {
           "pos": 62,
           "type": "rider",
-          "slug": "tony-gallopin",
-          "name": "GALLOPIN Tony",
+          "slug": "jerome-baugnies",
+          "name": "BAUGNIES Jérôme",
           "number_of_different_races": "160"
         },
         {
           "pos": 63,
           "type": "rider",
-          "slug": "jerome-baugnies",
-          "name": "BAUGNIES Jérôme",
+          "slug": "tony-gallopin",
+          "name": "GALLOPIN Tony",
           "number_of_different_races": "160"
         },
         {
@@ -15836,15 +15842,15 @@
         {
           "pos": 65,
           "type": "rider",
-          "slug": "sebastian-schonberger",
-          "name": "SCHÖNBERGER Sebastian",
+          "slug": "jeroen-meijers",
+          "name": "MEIJERS Jeroen",
           "number_of_different_races": "159"
         },
         {
           "pos": 66,
           "type": "rider",
-          "slug": "martin-velits",
-          "name": "VELITS Martin",
+          "slug": "dimitri-claeys",
+          "name": "CLAEYS Dimitri",
           "number_of_different_races": "159"
         },
         {
@@ -15857,29 +15863,29 @@
         {
           "pos": 68,
           "type": "rider",
-          "slug": "jeroen-meijers",
-          "name": "MEIJERS Jeroen",
+          "slug": "martin-velits",
+          "name": "VELITS Martin",
           "number_of_different_races": "159"
         },
         {
           "pos": 69,
+          "type": "rider",
+          "slug": "sebastian-schonberger",
+          "name": "SCHÖNBERGER Sebastian",
+          "number_of_different_races": "159"
+        },
+        {
+          "pos": 70,
           "type": "rider",
           "slug": "simon-clarke",
           "name": "CLARKE Simon",
           "number_of_different_races": "159"
         },
         {
-          "pos": 70,
+          "pos": 71,
           "type": "rider",
           "slug": "kevin-van-melsen",
           "name": "VAN MELSEN Kévin",
-          "number_of_different_races": "159"
-        },
-        {
-          "pos": 71,
-          "type": "rider",
-          "slug": "dimitri-claeys",
-          "name": "CLAEYS Dimitri",
           "number_of_different_races": "159"
         },
         {
@@ -15892,50 +15898,50 @@
         {
           "pos": 73,
           "type": "rider",
-          "slug": "markus-hoelgaard",
-          "name": "HOELGAARD Markus",
-          "number_of_different_races": "158"
-        },
-        {
-          "pos": 74,
-          "type": "rider",
           "slug": "jan-ghyselinck",
           "name": "GHYSELINCK Jan",
           "number_of_different_races": "158"
         },
         {
+          "pos": 74,
+          "type": "rider",
+          "slug": "markus-hoelgaard",
+          "name": "HOELGAARD Markus",
+          "number_of_different_races": "158"
+        },
+        {
           "pos": 75,
-          "type": "rider",
-          "slug": "daniel-mclay",
-          "name": "MCLAY Daniel",
-          "number_of_different_races": "158"
-        },
-        {
-          "pos": 76,
-          "type": "rider",
-          "slug": "rein-taaramae",
-          "name": "TAARAMÄE Rein",
-          "number_of_different_races": "158"
-        },
-        {
-          "pos": 77,
-          "type": "rider",
-          "slug": "serge-pauwels",
-          "name": "PAUWELS Serge",
-          "number_of_different_races": "158"
-        },
-        {
-          "pos": 78,
           "type": "rider",
           "slug": "giovanni-visconti",
           "name": "VISCONTI Giovanni",
           "number_of_different_races": "158"
         },
         {
+          "pos": 76,
+          "type": "rider",
+          "slug": "serge-pauwels",
+          "name": "PAUWELS Serge",
+          "number_of_different_races": "158"
+        },
+        {
+          "pos": 77,
+          "type": "rider",
+          "slug": "daniel-mclay",
+          "name": "MCLAY Daniel",
+          "number_of_different_races": "158"
+        },
+        {
+          "pos": 78,
+          "type": "rider",
+          "slug": "rein-taaramae",
+          "name": "TAARAMÄE Rein",
+          "number_of_different_races": "158"
+        },
+        {
           "pos": 79,
           "type": "rider",
-          "slug": "cesare-benedetti",
-          "name": "BENEDETTI Cesare",
+          "slug": "juraj-sagan",
+          "name": "SAGAN Juraj",
           "number_of_different_races": "157"
         },
         {
@@ -15948,22 +15954,22 @@
         {
           "pos": 81,
           "type": "rider",
-          "slug": "martin-mortensen",
-          "name": "MORTENSEN Martin",
+          "slug": "cesare-benedetti",
+          "name": "BENEDETTI Cesare",
           "number_of_different_races": "157"
         },
         {
           "pos": 82,
           "type": "rider",
-          "slug": "filippo-pozzato",
-          "name": "POZZATO Filippo",
+          "slug": "martin-mortensen",
+          "name": "MORTENSEN Martin",
           "number_of_different_races": "157"
         },
         {
           "pos": 83,
           "type": "rider",
-          "slug": "aleksejs-saramotins",
-          "name": "SARAMOTINS Aleksejs",
+          "slug": "filippo-pozzato",
+          "name": "POZZATO Filippo",
           "number_of_different_races": "157"
         },
         {
@@ -15976,85 +15982,85 @@
         {
           "pos": 85,
           "type": "rider",
-          "slug": "juraj-sagan",
-          "name": "SAGAN Juraj",
+          "slug": "aleksejs-saramotins",
+          "name": "SARAMOTINS Aleksejs",
           "number_of_different_races": "157"
         },
         {
           "pos": 86,
-          "type": "rider",
-          "slug": "fumiyuki-beppu",
-          "name": "BEPPU Fumiyuki",
-          "number_of_different_races": "156"
-        },
-        {
-          "pos": 87,
           "type": "rider",
           "slug": "fabio-felline",
           "name": "FELLINE Fabio",
           "number_of_different_races": "156"
         },
         {
+          "pos": 87,
+          "type": "rider",
+          "slug": "fumiyuki-beppu",
+          "name": "BEPPU Fumiyuki",
+          "number_of_different_races": "156"
+        },
+        {
           "pos": 88,
-          "type": "rider",
-          "slug": "otto-vergaerde",
-          "name": "VERGAERDE Otto",
-          "number_of_different_races": "155"
-        },
-        {
-          "pos": 89,
-          "type": "rider",
-          "slug": "xandro-meurisse",
-          "name": "MEURISSE Xandro",
-          "number_of_different_races": "155"
-        },
-        {
-          "pos": 90,
-          "type": "rider",
-          "slug": "jan-tratnik",
-          "name": "TRATNIK Jan",
-          "number_of_different_races": "155"
-        },
-        {
-          "pos": 91,
           "type": "rider",
           "slug": "anthony-delaplace",
           "name": "DELAPLACE Anthony",
           "number_of_different_races": "155"
         },
         {
-          "pos": 92,
-          "type": "rider",
-          "slug": "elmar-reinders",
-          "name": "REINDERS Elmar",
-          "number_of_different_races": "155"
-        },
-        {
-          "pos": 93,
+          "pos": 89,
           "type": "rider",
           "slug": "eduard-prades",
           "name": "PRADES Eduard",
           "number_of_different_races": "155"
         },
         {
-          "pos": 94,
+          "pos": 90,
+          "type": "rider",
+          "slug": "elmar-reinders",
+          "name": "REINDERS Elmar",
+          "number_of_different_races": "155"
+        },
+        {
+          "pos": 91,
+          "type": "rider",
+          "slug": "otto-vergaerde",
+          "name": "VERGAERDE Otto",
+          "number_of_different_races": "155"
+        },
+        {
+          "pos": 92,
+          "type": "rider",
+          "slug": "jan-tratnik",
+          "name": "TRATNIK Jan",
+          "number_of_different_races": "155"
+        },
+        {
+          "pos": 93,
           "type": "rider",
           "slug": "peter-kusztor",
           "name": "KUSZTOR Péter",
           "number_of_different_races": "155"
         },
         {
+          "pos": 94,
+          "type": "rider",
+          "slug": "xandro-meurisse",
+          "name": "MEURISSE Xandro",
+          "number_of_different_races": "155"
+        },
+        {
           "pos": 95,
           "type": "rider",
-          "slug": "grega-bole",
-          "name": "BOLE Grega",
+          "slug": "matthew-brammeier",
+          "name": "BRAMMEIER Matt",
           "number_of_different_races": "154"
         },
         {
           "pos": 96,
           "type": "rider",
-          "slug": "nico-sijmens",
-          "name": "SIJMENS Nico",
+          "slug": "aime-de-gendt",
+          "name": "DE GENDT Aimé",
           "number_of_different_races": "154"
         },
         {
@@ -16067,22 +16073,22 @@
         {
           "pos": 98,
           "type": "rider",
-          "slug": "matthew-brammeier",
-          "name": "BRAMMEIER Matt",
+          "slug": "alexis-guerin",
+          "name": "GUERIN Alexis",
           "number_of_different_races": "154"
         },
         {
           "pos": 99,
           "type": "rider",
-          "slug": "staf-scheirlinckx",
-          "name": "SCHEIRLINCKX Staf",
+          "slug": "philippe-gilbert",
+          "name": "GILBERT Philippe",
           "number_of_different_races": "154"
         },
         {
           "pos": 100,
           "type": "rider",
-          "slug": "philippe-gilbert",
-          "name": "GILBERT Philippe",
+          "slug": "nico-sijmens",
+          "name": "SIJMENS Nico",
           "number_of_different_races": "154"
         }
       ]
@@ -16095,7 +16101,7 @@
       "notes": "Career total",
       "description": "Briek Schotte has competed 20 times in Ronde van Vlaanderen ME, which is the most starts in a WorldTour level race.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-competed-in-one-race",
-      "fetched_at": "2026-11-16T17:29:05.425494+00:00",
+      "fetched_at": "2026-11-23T19:30:07.618990+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -16508,9 +16514,23 @@
       "notes": "Updated as riders pass away",
       "description": "Overview of former professional riders that passed away.",
       "url": "https://www.procyclingstats.com/statistics/riders/recently-passed-away",
-      "fetched_at": "2026-11-16T17:29:15.874150+00:00",
+      "fetched_at": "2026-11-23T19:30:18.266837+00:00",
       "row_count": 50,
       "rows": [
+        {
+          "date": "2026-11-19",
+          "type": "rider",
+          "slug": "hugo-hellemans",
+          "name": "HELLEMANS Hugo",
+          "age": "87"
+        },
+        {
+          "date": "2026-11-18",
+          "type": "rider",
+          "slug": "alberto-hierro",
+          "name": "HIERRO Alberto",
+          "age": "48"
+        },
         {
           "date": "2026-11-11",
           "type": "rider",
@@ -16533,11 +16553,25 @@
           "age": "59"
         },
         {
+          "date": "2026-11-04",
+          "type": "rider",
+          "slug": "herman-decan",
+          "name": "DECAN Herman",
+          "age": "82"
+        },
+        {
           "date": "2026-11-03",
           "type": "rider",
           "slug": "biagio-d-arcangelo",
           "name": "D'ARCANGELO Biagio",
           "age": "79"
+        },
+        {
+          "date": "2026-10-30",
+          "type": "rider",
+          "slug": "henk-hoekstra",
+          "name": "HOEKSTRA Henk",
+          "age": "86"
         },
         {
           "date": "2026-10-30",
@@ -16652,6 +16686,13 @@
           "age": "79"
         },
         {
+          "date": "2026-09-24",
+          "type": "rider",
+          "slug": "gaxento-onaederra",
+          "name": "ONAEDERRA Gaxento",
+          "age": "60"
+        },
+        {
           "date": "2026-09-14",
           "type": "rider",
           "slug": "henri-parmentier",
@@ -16689,16 +16730,16 @@
         {
           "date": "2026-09-08",
           "type": "rider",
-          "slug": "stanislaw-czaja",
-          "name": "CZAJA Stanisław",
-          "age": "71"
+          "slug": "pierfranco-vianelli",
+          "name": "VIANELLI Pierfranco",
+          "age": "79"
         },
         {
           "date": "2026-09-08",
           "type": "rider",
-          "slug": "pierfranco-vianelli",
-          "name": "VIANELLI Pierfranco",
-          "age": "79"
+          "slug": "stanislaw-czaja",
+          "name": "CZAJA Stanisław",
+          "age": "71"
         },
         {
           "date": "2026-09-05",
@@ -16815,51 +16856,16 @@
         {
           "date": "2026-07-30",
           "type": "rider",
-          "slug": "honorio-rua",
-          "name": "RÚA Honorio",
-          "age": "91"
-        },
-        {
-          "date": "2026-07-30",
-          "type": "rider",
           "slug": "noa-borochovitch",
           "name": "BOROCHOVITCH Noa",
           "age": "30"
         },
         {
-          "date": "2026-07-26",
+          "date": "2026-07-30",
           "type": "rider",
-          "slug": "ignacio-ascasibar",
-          "name": "ASCASIBAR José Ignacio",
-          "age": "82"
-        },
-        {
-          "date": "2026-07-25",
-          "type": "rider",
-          "slug": "ambrogio-colombo",
-          "name": "COLOMBO Ambrogio",
-          "age": "86"
-        },
-        {
-          "date": "2026-07-20",
-          "type": "rider",
-          "slug": "vladimir-kuznetsov",
-          "name": "KUZNETSOV Vladimir",
-          "age": "81"
-        },
-        {
-          "date": "2026-07-17",
-          "type": "rider",
-          "slug": "herman-flabat",
-          "name": "FLABAT Herman",
-          "age": "81"
-        },
-        {
-          "date": "2026-07-14",
-          "type": "rider",
-          "slug": "szymon-lachowicz",
-          "name": "LACHOWICZ Szymon",
-          "age": "20"
+          "slug": "honorio-rua",
+          "name": "RÚA Honorio",
+          "age": "91"
         }
       ]
     },
@@ -16871,7 +16877,7 @@
       "notes": "Past seasons frozen; current season grows",
       "description": "The youngest winner in the WorldTour in 2026 was in Itzulia Basque Country | Stage 1 (ITT) at age 19y + 194d. Runner-up is in La Vuelta Ciclista a España | Stage 12 and in Tour Down Under | Stage 5.",
       "url": "https://www.procyclingstats.com/statistics/riders/youngest-winners-per-season",
-      "fetched_at": "2026-11-16T17:29:21.070365+00:00",
+      "fetched_at": "2026-11-23T19:30:23.522182+00:00",
       "row_count": 20,
       "rows": [
         {
@@ -17064,7 +17070,7 @@
       "notes": "Career total; grows",
       "description": "In season 2026 Alexys Brunel had 17 DNFs or did not finishes. The woman with the most DNFs was Georgia Gardiner with 12 DNFs to her name.",
       "url": "https://www.procyclingstats.com/statistics/riders/most-dnf",
-      "fetched_at": "2026-11-16T17:29:31.802974+00:00",
+      "fetched_at": "2026-11-23T19:30:34.116994+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -17427,7 +17433,7 @@
       "notes": "Current season efficiency",
       "description": "The most effective rider measured in points per raceday in 2026 was Tadej Pogačar with 3715 points in 45 racedays. Second was Remco Evenepoel with 61.7 points per raceday and third Paul Seixas with a ratio of 50.7.",
       "url": "https://www.procyclingstats.com/statistics/riders/points-per-raceday",
-      "fetched_at": "2026-11-16T17:29:43.036454+00:00",
+      "fetched_at": "2026-11-23T19:30:45.259082+00:00",
       "row_count": 100,
       "rows": [
         {
@@ -18340,7 +18346,7 @@
       "notes": "Streak; changes each race",
       "description": "Romain Grégoire has done 239 days of racing since his last DNF (Did Not Finish). He is followed by Mike Teunissen (237) and Dorian Godon (236).",
       "url": "https://www.procyclingstats.com/statistics/riders/longest-without-dnf",
-      "fetched_at": "2026-11-16T17:29:53.630407+00:00",
+      "fetched_at": "2026-11-23T19:30:55.883081+00:00",
       "row_count": 50,
       "rows": [
         {
@@ -18803,7 +18809,7 @@
       "notes": "Updated after each ruling",
       "description": "Tomas Contte has accumulated 100 penalty points in 2026.",
       "url": "https://www.procyclingstats.com/statistics/riders/penalty-points-ranking",
-      "fetched_at": "2026-11-16T17:30:04.004215+00:00",
+      "fetched_at": "2026-11-23T19:31:06.513989+00:00",
       "row_count": 40,
       "rows": [
         {
@@ -19096,7 +19102,7 @@
       "notes": "Updated after each ruling",
       "description": "In 2025 it was Lidl - Trek with 200 penalty points who had the most points subtracted, before Team Visma | Lease a Bike (185) and Red Bull - BORA - hansgrohe (150).",
       "url": "https://www.procyclingstats.com/statistics/riders/penalty-points-ranking-teams",
-      "fetched_at": "2026-11-16T17:30:09.259681+00:00",
+      "fetched_at": "2026-11-23T19:31:11.777180+00:00",
       "row_count": 25,
       "rows": [
         {
@@ -19284,7 +19290,7 @@
       "notes": "Current U23 cohort",
       "description": "In 2026 16.0 percent of the total points were scored by riders under 23, compared to around 5% in the early 2000s.",
       "url": "https://www.procyclingstats.com/statistics/riders/points-scored-by-riders-u23",
-      "fetched_at": "2026-11-16T17:30:25.603569+00:00",
+      "fetched_at": "2026-11-23T19:31:27.757623+00:00",
       "row_count": 26,
       "rows": [
         {
@@ -19505,7 +19511,7 @@
       "notes": "Updates each season",
       "description": "Riders with their last season being their best season.",
       "url": "https://www.procyclingstats.com/statistics/riders/last-season-best-season",
-      "fetched_at": "2026-11-16T17:30:30.737459+00:00",
+      "fetched_at": "2026-11-23T19:31:33.002743+00:00",
       "row_count": 41,
       "rows": [
         {
@@ -19805,8 +19811,8 @@
       "notes": "Current season; updates frequently",
       "description": "Full list of rider injuries in season 2026.",
       "url": "https://www.procyclingstats.com/statistics/riders/season-injuries",
-      "fetched_at": "2026-11-16T17:31:02.074878+00:00",
-      "row_count": 429,
+      "fetched_at": "2026-11-23T19:32:05.354143+00:00",
+      "row_count": 430,
       "rows": [
         {
           "pos": 1,
@@ -23201,6 +23207,14 @@
           "name": "ALVARADO Ceylin del Carmen",
           "rider": "ALVARADO Ceylin del Carmen",
           "val2": "Crash in Cyclo-Cross European Championships"
+        },
+        {
+          "pos": 430,
+          "type": "rider",
+          "slug": "jasper-de-buyst",
+          "name": "DE BUYST Jasper",
+          "rider": "DE BUYST Jasper",
+          "val2": "Crash in Six Days of Ghent"
         }
       ]
     },
@@ -23210,14 +23224,14 @@
       "subcategory": "injuries",
       "is_static": false,
       "notes": "Live; updates as riders return",
-      "description": "It has been 288 days since the injury of Knee injury, for Abdominal trauma,Fractured femur,Ruptured spleen it has been 279 days.",
+      "description": "It has been 295 days since the injury of Knee injury, for Abdominal trauma,Fractured femur,Ruptured spleen it has been 286 days.",
       "url": "https://www.procyclingstats.com/statistics/riders/not-back-in-action-after-injury",
-      "fetched_at": "2026-11-16T17:31:07.657557+00:00",
-      "row_count": 107,
+      "fetched_at": "2026-11-23T19:32:10.846175+00:00",
+      "row_count": 105,
       "rows": [
         {
           "date_of_injury": "2026-02-01",
-          "days_since_injury": "288",
+          "days_since_injury": "295",
           "type": "rider",
           "slug": "archie-ryan",
           "name": "RYAN Archie",
@@ -23225,7 +23239,7 @@
         },
         {
           "date_of_injury": "2026-02-10",
-          "days_since_injury": "279",
+          "days_since_injury": "286",
           "type": "rider",
           "slug": "damien-touze",
           "name": "TOUZÉ Damien",
@@ -23233,7 +23247,7 @@
         },
         {
           "date_of_injury": "2026-02-15",
-          "days_since_injury": "274",
+          "days_since_injury": "281",
           "type": "rider",
           "slug": "ivann-ravaleu",
           "name": "RAVALEU Ivann",
@@ -23241,7 +23255,7 @@
         },
         {
           "date_of_injury": "2026-03-02",
-          "days_since_injury": "259",
+          "days_since_injury": "266",
           "type": "rider",
           "slug": "libby-smithson",
           "name": "SMITHSON Libby",
@@ -23249,7 +23263,7 @@
         },
         {
           "date_of_injury": "2026-03-05",
-          "days_since_injury": "256",
+          "days_since_injury": "263",
           "type": "rider",
           "slug": "ander-ganzabal-bilbao",
           "name": "GANZABAL Ander",
@@ -23257,7 +23271,7 @@
         },
         {
           "date_of_injury": "2026-03-09",
-          "days_since_injury": "252",
+          "days_since_injury": "259",
           "type": "rider",
           "slug": "marc-cabedo",
           "name": "CABEDO Marc",
@@ -23265,7 +23279,7 @@
         },
         {
           "date_of_injury": "2026-03-31",
-          "days_since_injury": "230",
+          "days_since_injury": "237",
           "type": "rider",
           "slug": "jaume-guardeno",
           "name": "GUARDEÑO Jaume",
@@ -23273,7 +23287,7 @@
         },
         {
           "date_of_injury": "2026-04-12",
-          "days_since_injury": "218",
+          "days_since_injury": "225",
           "type": "rider",
           "slug": "kamilla-aasebo",
           "name": "AASEBØ Kamilla",
@@ -23281,7 +23295,7 @@
         },
         {
           "date_of_injury": "2026-04-30",
-          "days_since_injury": "200",
+          "days_since_injury": "207",
           "type": "rider",
           "slug": "harry-sweeny",
           "name": "SWEENY Harry",
@@ -23289,7 +23303,7 @@
         },
         {
           "date_of_injury": "2026-05-10",
-          "days_since_injury": "190",
+          "days_since_injury": "197",
           "type": "rider",
           "slug": "albert-withen-philipsen",
           "name": "WITHEN PHILIPSEN Albert",
@@ -23297,7 +23311,7 @@
         },
         {
           "date_of_injury": "2026-05-11",
-          "days_since_injury": "189",
+          "days_since_injury": "196",
           "type": "rider",
           "slug": "neve-bradbury",
           "name": "BRADBURY Neve",
@@ -23305,7 +23319,7 @@
         },
         {
           "date_of_injury": "2026-05-11",
-          "days_since_injury": "189",
+          "days_since_injury": "196",
           "type": "rider",
           "slug": "harry-hudson",
           "name": "HUDSON Harry",
@@ -23313,7 +23327,7 @@
         },
         {
           "date_of_injury": "2026-05-29",
-          "days_since_injury": "171",
+          "days_since_injury": "178",
           "type": "rider",
           "slug": "yoan-morin",
           "name": "MORIN Yoan",
@@ -23321,7 +23335,7 @@
         },
         {
           "date_of_injury": "2026-06-05",
-          "days_since_injury": "164",
+          "days_since_injury": "171",
           "type": "rider",
           "slug": "gonzalo-serrano",
           "name": "SERRANO Gonzalo",
@@ -23329,7 +23343,7 @@
         },
         {
           "date_of_injury": "2026-06-16",
-          "days_since_injury": "153",
+          "days_since_injury": "160",
           "type": "rider",
           "slug": "szymon-wozniak",
           "name": "WOŹNIAK Szymon",
@@ -23337,7 +23351,7 @@
         },
         {
           "date_of_injury": "2026-06-16",
-          "days_since_injury": "153",
+          "days_since_injury": "160",
           "type": "rider",
           "slug": "gustavo-romao",
           "name": "ROMÃO Gustavo",
@@ -23345,7 +23359,7 @@
         },
         {
           "date_of_injury": "2026-06-17",
-          "days_since_injury": "152",
+          "days_since_injury": "159",
           "type": "rider",
           "slug": "matthew-dinham",
           "name": "DINHAM Matthew",
@@ -23353,7 +23367,7 @@
         },
         {
           "date_of_injury": "2026-06-18",
-          "days_since_injury": "151",
+          "days_since_injury": "158",
           "type": "rider",
           "slug": "eduard-prades",
           "name": "PRADES Eduard",
@@ -23361,7 +23375,7 @@
         },
         {
           "date_of_injury": "2026-06-22",
-          "days_since_injury": "147",
+          "days_since_injury": "154",
           "type": "rider",
           "slug": "axel-zingle",
           "name": "ZINGLE Axel",
@@ -23369,7 +23383,7 @@
         },
         {
           "date_of_injury": "2026-06-27",
-          "days_since_injury": "142",
+          "days_since_injury": "149",
           "type": "rider",
           "slug": "mara-roldan",
           "name": "ROLDAN Mara",
@@ -23377,7 +23391,7 @@
         },
         {
           "date_of_injury": "2026-07-03",
-          "days_since_injury": "136",
+          "days_since_injury": "143",
           "type": "rider",
           "slug": "victor-martinez-garcia",
           "name": "MARTÍNEZ Victor",
@@ -23385,7 +23399,7 @@
         },
         {
           "date_of_injury": "2026-07-14",
-          "days_since_injury": "125",
+          "days_since_injury": "132",
           "type": "rider",
           "slug": "chris-harper",
           "name": "HARPER Chris",
@@ -23393,7 +23407,7 @@
         },
         {
           "date_of_injury": "2026-07-17",
-          "days_since_injury": "122",
+          "days_since_injury": "129",
           "type": "rider",
           "slug": "hugo-bartolini",
           "name": "BARTOLINI Hugo",
@@ -23401,7 +23415,7 @@
         },
         {
           "date_of_injury": "2026-07-18",
-          "days_since_injury": "121",
+          "days_since_injury": "128",
           "type": "rider",
           "slug": "matyas-bingler",
           "name": "BINGLER Matyas",
@@ -23409,7 +23423,7 @@
         },
         {
           "date_of_injury": "2026-07-19",
-          "days_since_injury": "120",
+          "days_since_injury": "127",
           "type": "rider",
           "slug": "jonas-vingegaard",
           "name": "VINGEGAARD Jonas",
@@ -23417,7 +23431,7 @@
         },
         {
           "date_of_injury": "2026-07-21",
-          "days_since_injury": "118",
+          "days_since_injury": "125",
           "type": "rider",
           "slug": "igor-bellido2",
           "name": "BELLIDO Igor",
@@ -23425,7 +23439,7 @@
         },
         {
           "date_of_injury": "2026-07-22",
-          "days_since_injury": "117",
+          "days_since_injury": "124",
           "type": "rider",
           "slug": "anna-kolyzhuk",
           "name": "KOLYZHUK Anna",
@@ -23433,7 +23447,7 @@
         },
         {
           "date_of_injury": "2026-07-24",
-          "days_since_injury": "115",
+          "days_since_injury": "122",
           "type": "rider",
           "slug": "tobias-lund-andresen",
           "name": "ANDRESEN Tobias Lund",
@@ -23441,7 +23455,7 @@
         },
         {
           "date_of_injury": "2026-07-26",
-          "days_since_injury": "113",
+          "days_since_injury": "120",
           "type": "rider",
           "slug": "johannes-staune-mittet",
           "name": "STAUNE-MITTET Johannes",
@@ -23449,7 +23463,7 @@
         },
         {
           "date_of_injury": "2026-07-26",
-          "days_since_injury": "113",
+          "days_since_injury": "120",
           "type": "rider",
           "slug": "goncalo-leaca",
           "name": "LEAÇA Gonçalo",
@@ -23457,7 +23471,7 @@
         },
         {
           "date_of_injury": "2026-08-02",
-          "days_since_injury": "106",
+          "days_since_injury": "113",
           "type": "rider",
           "slug": "toon-aerts",
           "name": "AERTS Toon",
@@ -23465,7 +23479,7 @@
         },
         {
           "date_of_injury": "2026-08-04",
-          "days_since_injury": "104",
+          "days_since_injury": "111",
           "type": "rider",
           "slug": "yanis-berthoud",
           "name": "BERTHOUD Yanis",
@@ -23473,7 +23487,7 @@
         },
         {
           "date_of_injury": "2026-08-06",
-          "days_since_injury": "102",
+          "days_since_injury": "109",
           "type": "rider",
           "slug": "bram-danklof",
           "name": "DANKLOF Bram",
@@ -23481,7 +23495,7 @@
         },
         {
           "date_of_injury": "2026-08-07",
-          "days_since_injury": "101",
+          "days_since_injury": "108",
           "type": "rider",
           "slug": "junior-lecerf",
           "name": "LECERF Junior",
@@ -23489,7 +23503,7 @@
         },
         {
           "date_of_injury": "2026-08-07",
-          "days_since_injury": "101",
+          "days_since_injury": "108",
           "type": "rider",
           "slug": "romain-bardet",
           "name": "BARDET Romain",
@@ -23497,7 +23511,7 @@
         },
         {
           "date_of_injury": "2026-08-08",
-          "days_since_injury": "100",
+          "days_since_injury": "107",
           "type": "rider",
           "slug": "alice-coutinho",
           "name": "COUTINHO Alice",
@@ -23505,7 +23519,7 @@
         },
         {
           "date_of_injury": "2026-08-08",
-          "days_since_injury": "100",
+          "days_since_injury": "107",
           "type": "rider",
           "slug": "goncalo-rodrigues",
           "name": "RODRIGUES Gonçalo",
@@ -23513,7 +23527,7 @@
         },
         {
           "date_of_injury": "2026-08-10",
-          "days_since_injury": "98",
+          "days_since_injury": "105",
           "type": "rider",
           "slug": "albert-withen-philipsen",
           "name": "WITHEN PHILIPSEN Albert",
@@ -23521,7 +23535,7 @@
         },
         {
           "date_of_injury": "2026-08-12",
-          "days_since_injury": "96",
+          "days_since_injury": "103",
           "type": "rider",
           "slug": "stian-fredheim",
           "name": "EDVARDSEN-FREDHEIM Stian",
@@ -23529,7 +23543,7 @@
         },
         {
           "date_of_injury": "2026-08-16",
-          "days_since_injury": "92",
+          "days_since_injury": "99",
           "type": "rider",
           "slug": "justine-nisole",
           "name": "NISOLE Justine",
@@ -23537,7 +23551,7 @@
         },
         {
           "date_of_injury": "2026-08-19",
-          "days_since_injury": "89",
+          "days_since_injury": "96",
           "type": "rider",
           "slug": "gladys-verhulst-wild",
           "name": "VERHULST-WILD Gladys",
@@ -23545,7 +23559,7 @@
         },
         {
           "date_of_injury": "2026-08-19",
-          "days_since_injury": "89",
+          "days_since_injury": "96",
           "type": "rider",
           "slug": "sandy-dujardin",
           "name": "DUJARDIN Sandy",
@@ -23553,7 +23567,7 @@
         },
         {
           "date_of_injury": "2026-08-20",
-          "days_since_injury": "88",
+          "days_since_injury": "95",
           "type": "rider",
           "slug": "amaury-capiot",
           "name": "CAPIOT Amaury",
@@ -23561,7 +23575,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "87",
+          "days_since_injury": "94",
           "type": "rider",
           "slug": "albert-torres",
           "name": "TORRES Albert",
@@ -23569,7 +23583,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "87",
+          "days_since_injury": "94",
           "type": "rider",
           "slug": "jeremy-lecroq",
           "name": "LECROQ Jérémy",
@@ -23577,7 +23591,7 @@
         },
         {
           "date_of_injury": "2026-08-21",
-          "days_since_injury": "87",
+          "days_since_injury": "94",
           "type": "rider",
           "slug": "huub-artz",
           "name": "ARTZ Huub",
@@ -23585,7 +23599,7 @@
         },
         {
           "date_of_injury": "2026-08-23",
-          "days_since_injury": "85",
+          "days_since_injury": "92",
           "type": "rider",
           "slug": "sergio-geovani-chumil-gonzalez",
           "name": "CHUMIL Sergio Geovani",
@@ -23593,7 +23607,7 @@
         },
         {
           "date_of_injury": "2026-08-26",
-          "days_since_injury": "82",
+          "days_since_injury": "89",
           "type": "rider",
           "slug": "susanne-andersen",
           "name": "ANDERSEN Susanne",
@@ -23601,7 +23615,7 @@
         },
         {
           "date_of_injury": "2026-08-29",
-          "days_since_injury": "79",
+          "days_since_injury": "86",
           "type": "rider",
           "slug": "diego-uriarte-belzunegi",
           "name": "URIARTE Diego",
@@ -23609,7 +23623,7 @@
         },
         {
           "date_of_injury": "2026-08-29",
-          "days_since_injury": "79",
+          "days_since_injury": "86",
           "type": "rider",
           "slug": "tadej-pogacar",
           "name": "POGAČAR Tadej",
@@ -23617,7 +23631,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "78",
+          "days_since_injury": "85",
           "type": "rider",
           "slug": "pablo-torres-arias",
           "name": "TORRES Pablo",
@@ -23625,7 +23639,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "78",
+          "days_since_injury": "85",
           "type": "rider",
           "slug": "ezra-caudell",
           "name": "CAUDELL Ezra",
@@ -23633,7 +23647,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "78",
+          "days_since_injury": "85",
           "type": "rider",
           "slug": "milan-menten",
           "name": "MENTEN Milan",
@@ -23641,7 +23655,7 @@
         },
         {
           "date_of_injury": "2026-08-30",
-          "days_since_injury": "78",
+          "days_since_injury": "85",
           "type": "rider",
           "slug": "paul-keller",
           "name": "KELLER Paul",
@@ -23649,7 +23663,7 @@
         },
         {
           "date_of_injury": "2026-09-01",
-          "days_since_injury": "76",
+          "days_since_injury": "83",
           "type": "rider",
           "slug": "tom-crabbe",
           "name": "CRABBE Tom",
@@ -23657,7 +23671,7 @@
         },
         {
           "date_of_injury": "2026-09-03",
-          "days_since_injury": "74",
+          "days_since_injury": "81",
           "type": "rider",
           "slug": "hamish-mckenzie",
           "name": "MCKENZIE Hamish",
@@ -23665,7 +23679,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "73",
+          "days_since_injury": "80",
           "type": "rider",
           "slug": "gregor-muhlberger",
           "name": "MÜHLBERGER Gregor",
@@ -23673,7 +23687,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "73",
+          "days_since_injury": "80",
           "type": "rider",
           "slug": "libby-smithson",
           "name": "SMITHSON Libby",
@@ -23681,7 +23695,7 @@
         },
         {
           "date_of_injury": "2026-09-04",
-          "days_since_injury": "73",
+          "days_since_injury": "80",
           "type": "rider",
           "slug": "winand-breuckers",
           "name": "BREUCKERS Winand",
@@ -23689,23 +23703,15 @@
         },
         {
           "date_of_injury": "2026-09-05",
-          "days_since_injury": "72",
+          "days_since_injury": "79",
           "type": "rider",
           "slug": "letizia-paternoster",
           "name": "PATERNOSTER Letizia",
           "injury": "Microfracture"
         },
         {
-          "date_of_injury": "2026-09-07",
-          "days_since_injury": "70",
-          "type": "rider",
-          "slug": "soen-le-pann",
-          "name": "LE PANN Soen",
-          "injury": "Crash in training"
-        },
-        {
           "date_of_injury": "2026-09-08",
-          "days_since_injury": "69",
+          "days_since_injury": "76",
           "type": "rider",
           "slug": "jan-hernandez-reilhe",
           "name": "HERNÁNDEZ Jan",
@@ -23713,7 +23719,7 @@
         },
         {
           "date_of_injury": "2026-09-09",
-          "days_since_injury": "68",
+          "days_since_injury": "75",
           "type": "rider",
           "slug": "lucas-froget",
           "name": "FROGET Lucas",
@@ -23721,7 +23727,7 @@
         },
         {
           "date_of_injury": "2026-09-09",
-          "days_since_injury": "68",
+          "days_since_injury": "75",
           "type": "rider",
           "slug": "tom-munnix",
           "name": "MUNNIX Tom",
@@ -23729,7 +23735,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "karl-herzog",
           "name": "HERZOG Karl",
@@ -23737,7 +23743,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "ilse-pluimers",
           "name": "PLUIMERS Ilse",
@@ -23745,7 +23751,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "ville-merlov1",
           "name": "MERLÖV Ville",
@@ -23753,7 +23759,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "mikayla-harvey",
           "name": "HARVEY Mikayla",
@@ -23761,7 +23767,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "justine-ghekiere",
           "name": "GHEKIERE Justine",
@@ -23769,7 +23775,7 @@
         },
         {
           "date_of_injury": "2026-09-10",
-          "days_since_injury": "67",
+          "days_since_injury": "74",
           "type": "rider",
           "slug": "mischa-bredewold",
           "name": "BREDEWOLD Mischa",
@@ -23777,7 +23783,7 @@
         },
         {
           "date_of_injury": "2026-09-12",
-          "days_since_injury": "65",
+          "days_since_injury": "72",
           "type": "rider",
           "slug": "urska-zigart",
           "name": "ŽIGART Urška",
@@ -23785,7 +23791,7 @@
         },
         {
           "date_of_injury": "2026-09-12",
-          "days_since_injury": "65",
+          "days_since_injury": "72",
           "type": "rider",
           "slug": "chris-hamilton",
           "name": "HAMILTON Chris",
@@ -23793,7 +23799,7 @@
         },
         {
           "date_of_injury": "2026-09-13",
-          "days_since_injury": "64",
+          "days_since_injury": "71",
           "type": "rider",
           "slug": "alice-towers",
           "name": "TOWERS Alice",
@@ -23801,7 +23807,7 @@
         },
         {
           "date_of_injury": "2026-09-13",
-          "days_since_injury": "64",
+          "days_since_injury": "71",
           "type": "rider",
           "slug": "derek-gee",
           "name": "GEE-WEST Derek",
@@ -23809,7 +23815,7 @@
         },
         {
           "date_of_injury": "2026-09-15",
-          "days_since_injury": "62",
+          "days_since_injury": "69",
           "type": "rider",
           "slug": "hugo-page",
           "name": "PAGE Hugo",
@@ -23817,7 +23823,7 @@
         },
         {
           "date_of_injury": "2026-09-16",
-          "days_since_injury": "61",
+          "days_since_injury": "68",
           "type": "rider",
           "slug": "theo-leveque",
           "name": "LÉVÊQUE Théo",
@@ -23825,7 +23831,7 @@
         },
         {
           "date_of_injury": "2026-09-21",
-          "days_since_injury": "56",
+          "days_since_injury": "63",
           "type": "rider",
           "slug": "seff-van-kerckhove",
           "name": "VAN KERCKHOVE Seff",
@@ -23833,7 +23839,7 @@
         },
         {
           "date_of_injury": "2026-09-24",
-          "days_since_injury": "53",
+          "days_since_injury": "60",
           "type": "rider",
           "slug": "leo-hayter",
           "name": "HAYTER Leo",
@@ -23841,7 +23847,7 @@
         },
         {
           "date_of_injury": "2026-09-25",
-          "days_since_injury": "52",
+          "days_since_injury": "59",
           "type": "rider",
           "slug": "sandra-alonso",
           "name": "ALONSO Sandra",
@@ -23849,7 +23855,7 @@
         },
         {
           "date_of_injury": "2026-09-25",
-          "days_since_injury": "52",
+          "days_since_injury": "59",
           "type": "rider",
           "slug": "maria-okrucinska",
           "name": "OKRUCIŃSKA Maria",
@@ -23857,7 +23863,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "caroline-andersson",
           "name": "ANDERSSON Caroline",
@@ -23865,7 +23871,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "lauretta-hanson",
           "name": "HANSON Lauretta",
@@ -23873,7 +23879,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "flora-perkins",
           "name": "PERKINS Flora",
@@ -23881,7 +23887,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "sigrid-ytterhus-haugset",
           "name": "HAUGSET Sigrid Ytterhus",
@@ -23889,7 +23895,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "kim-le-court-pienaar",
           "name": "LE COURT-PIENAAR Kim",
@@ -23897,7 +23903,7 @@
         },
         {
           "date_of_injury": "2026-09-26",
-          "days_since_injury": "51",
+          "days_since_injury": "58",
           "type": "rider",
           "slug": "paula-blasi",
           "name": "BLASI Paula",
@@ -23905,7 +23911,7 @@
         },
         {
           "date_of_injury": "2026-09-27",
-          "days_since_injury": "50",
+          "days_since_injury": "57",
           "type": "rider",
           "slug": "geoffrey-bouchard",
           "name": "BOUCHARD Geoffrey",
@@ -23913,7 +23919,7 @@
         },
         {
           "date_of_injury": "2026-09-30",
-          "days_since_injury": "47",
+          "days_since_injury": "54",
           "type": "rider",
           "slug": "mattia-gaffuri",
           "name": "GAFFURI Mattia",
@@ -23921,7 +23927,7 @@
         },
         {
           "date_of_injury": "2026-10-02",
-          "days_since_injury": "45",
+          "days_since_injury": "52",
           "type": "rider",
           "slug": "ronan-auge",
           "name": "AUGÉ Ronan",
@@ -23929,7 +23935,7 @@
         },
         {
           "date_of_injury": "2026-10-05",
-          "days_since_injury": "42",
+          "days_since_injury": "49",
           "type": "rider",
           "slug": "andrea-raccagni-noviero",
           "name": "RACCAGNI NOVIERO Andrea",
@@ -23937,7 +23943,7 @@
         },
         {
           "date_of_injury": "2026-10-05",
-          "days_since_injury": "42",
+          "days_since_injury": "49",
           "type": "rider",
           "slug": "alex-aranburu",
           "name": "ARANBURU Alex",
@@ -23945,7 +23951,7 @@
         },
         {
           "date_of_injury": "2026-10-06",
-          "days_since_injury": "41",
+          "days_since_injury": "48",
           "type": "rider",
           "slug": "luke-plapp",
           "name": "PLAPP Luke",
@@ -23953,7 +23959,7 @@
         },
         {
           "date_of_injury": "2026-10-06",
-          "days_since_injury": "41",
+          "days_since_injury": "48",
           "type": "rider",
           "slug": "gabriela-guerra",
           "name": "GUERRA Gabriela",
@@ -23961,7 +23967,7 @@
         },
         {
           "date_of_injury": "2026-10-07",
-          "days_since_injury": "40",
+          "days_since_injury": "47",
           "type": "rider",
           "slug": "dylan-van-baarle",
           "name": "VAN BAARLE Dylan",
@@ -23969,7 +23975,7 @@
         },
         {
           "date_of_injury": "2026-10-08",
-          "days_since_injury": "39",
+          "days_since_injury": "46",
           "type": "rider",
           "slug": "tofik-beshir",
           "name": "BESHIR Tofik",
@@ -23977,7 +23983,7 @@
         },
         {
           "date_of_injury": "2026-10-10",
-          "days_since_injury": "37",
+          "days_since_injury": "44",
           "type": "rider",
           "slug": "geerike-schreurs",
           "name": "SCHREURS Geerike",
@@ -23985,7 +23991,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "36",
+          "days_since_injury": "43",
           "type": "rider",
           "slug": "tim-marsman",
           "name": "MARSMAN Tim",
@@ -23993,7 +23999,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "36",
+          "days_since_injury": "43",
           "type": "rider",
           "slug": "tim-marsman",
           "name": "MARSMAN Tim",
@@ -24001,7 +24007,7 @@
         },
         {
           "date_of_injury": "2026-10-11",
-          "days_since_injury": "36",
+          "days_since_injury": "43",
           "type": "rider",
           "slug": "thomas-gachignard",
           "name": "GACHIGNARD Thomas",
@@ -24009,23 +24015,15 @@
         },
         {
           "date_of_injury": "2026-10-15",
-          "days_since_injury": "32",
+          "days_since_injury": "39",
           "type": "rider",
           "slug": "ally-wollaston",
           "name": "WOLLASTON Ally",
           "injury": ""
         },
         {
-          "date_of_injury": "2026-10-24",
-          "days_since_injury": "23",
-          "type": "rider",
-          "slug": "marion-norbert-riberolle",
-          "name": "NORBERT RIBEROLLE Marion",
-          "injury": ""
-        },
-        {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "16",
+          "days_since_injury": "23",
           "type": "rider",
           "slug": "donovan-ramirez",
           "name": "RAMÍREZ Donovan",
@@ -24033,7 +24031,7 @@
         },
         {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "16",
+          "days_since_injury": "23",
           "type": "rider",
           "slug": "moussa-oumarou",
           "name": "OUMAROU Moussa",
@@ -24041,7 +24039,7 @@
         },
         {
           "date_of_injury": "2026-10-31",
-          "days_since_injury": "16",
+          "days_since_injury": "23",
           "type": "rider",
           "slug": "souleymane-kone",
           "name": "KONE Souleymane",
@@ -24049,7 +24047,7 @@
         },
         {
           "date_of_injury": "2026-11-01",
-          "days_since_injury": "15",
+          "days_since_injury": "22",
           "type": "rider",
           "slug": "paula-blasi",
           "name": "BLASI Paula",
@@ -24057,19 +24055,19 @@
         },
         {
           "date_of_injury": "2026-11-05",
-          "days_since_injury": "11",
+          "days_since_injury": "18",
           "type": "rider",
           "slug": "andrea-alzate-gomez",
           "name": "ALZATE Andrea",
           "injury": "Crash during Tour Femenino Stage 2 (ITT)"
         },
         {
-          "date_of_injury": "2026-11-07",
-          "days_since_injury": "9",
+          "date_of_injury": "2026-11-17",
+          "days_since_injury": "6",
           "type": "rider",
-          "slug": "ceylin-del-carmen-alvarado",
-          "name": "ALVARADO Ceylin del Carmen",
-          "injury": "Crash in Cyclo-Cross European Championships"
+          "slug": "jasper-de-buyst",
+          "name": "DE BUYST Jasper",
+          "injury": "Crash in Six Days of Ghent"
         }
       ]
     }
